@@ -1,0 +1,8 @@
+sequenceDiagram
+ participant O as Account Owner
+ participant S as Account Servicer
+ O->>S: AccountReportingRequest
+ Note right of S: Based on the request, the account servicer<br/>will send back the correct message definition
+ S->>O: BankToCustomerAccountReport
+ S->>O: BankToCustomerStatement
+ S->>O: BankToCustomerDebitCreditNotification

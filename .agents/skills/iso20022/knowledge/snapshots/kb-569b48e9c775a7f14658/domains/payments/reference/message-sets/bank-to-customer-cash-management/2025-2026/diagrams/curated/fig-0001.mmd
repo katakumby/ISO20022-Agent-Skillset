@@ -1,0 +1,15 @@
+classDiagram
+ class O["AccountOwner"]
+ class S["AccountServicer"]
+ class C["Creditor"]
+ class D["Debtor"]
+ class CA["CreditorAgent"]
+ class DA["DebtorAgent"]
+ class R["Recipient"]
+ class F["ForwardingAgent"]
+ O <|-- C
+ O <|-- D
+ O <|-- CA
+ O <|-- DA
+ S <|-- CA
+ S <|-- DA
