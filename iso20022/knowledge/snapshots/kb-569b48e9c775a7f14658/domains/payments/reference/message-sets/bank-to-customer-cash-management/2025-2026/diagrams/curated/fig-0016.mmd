@@ -1,9 +1,0 @@
-sequenceDiagram
- participant O as Account Owner
- participant F as Forwarding Agent
- participant S as Account Servicer
- O->>F: AccountReportingRequest
- F->>S: AccountReportingRequest
- S->>F: BankToCustomerAccountReport
- F->>O: BankToCustomerAccountReport
- Note over O,S: Same principle applies to the statement<br/>and the debit/credit notification messages
