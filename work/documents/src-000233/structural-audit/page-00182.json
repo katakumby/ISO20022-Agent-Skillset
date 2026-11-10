@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 182,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 103,
+    "2": 187
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 175,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "8ea81687c580bc637339b473e3bf417defac26010173ad8f1c23feca911d8bd0",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        84.5394,
+        78.3237,
+        328.3519,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        350.098,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        327.3519,
+        78.3237,
+        350.598,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        350.098,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 274,
+      "bbox": [
+        144.5686,
+        454.1237,
+        327.2093,
+        455.1237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        445.4929,
+        326.7093,
+        455.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 276,
+      "bbox": [
+        331.7659,
+        454.1237,
+        456.0325,
+        455.1237
+      ],
+      "link_annotation_bbox": [
+        332.2659,
+        445.4929,
+        455.5325,
+        455.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0270",
+      "file_page": 182,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.590576,
+        357.2928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0270.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "750ec2d3a55ff221524a624f112a9d138ee227a5397a5cba1faed4aaaf0e370a",
+      "cell_geometry_sha256": "66e952d56128dd8b4ba6c891330371c1959cecc26bd49add8c3db8b984198319",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

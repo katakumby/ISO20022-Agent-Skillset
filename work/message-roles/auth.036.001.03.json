@@ -1,0 +1,130 @@
+{
+  "message_id": "auth.036.001.03",
+  "publications": [
+    {
+      "source_id": "src-000321",
+      "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+      "heading": "8 auth.036.001.03 FinancialInstrumentReportingReferenceDataDeltaReportV03",
+      "definition_pages": [
+        91,
+        165
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The FinancialInstrumentReportingReferenceDataDeltaReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the national competent authority",
+            "labels": [
+              {
+                "label": "the national competent authority",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000320-nca",
+                  "path": "shared/reference/participants/participant-src-000320-nca.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the trading venues",
+            "labels": [
+              {
+                "label": "the trading venues",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000321-trading-venue",
+                  "path": "shared/reference/participants/participant-functionality-src-000321-trading-venue.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000321-auth.036.001.03-p91-c001-d1",
+          "source_id": "src-000321",
+          "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+          "heading": "8 auth.036.001.03 FinancialInstrumentReportingReferenceDataDeltaReportV03",
+          "file_pages": [
+            91
+          ],
+          "section": "scope",
+          "quote": "The FinancialInstrumentReportingReferenceDataDeltaReport message is sent by the trading venues to the national competent authority to report on changes that have occurred in the base data between reference data file generation.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The FinancialInstrumentReportingReferenceDataDeltaReport message is sent by the trading venues to the national competent authority to report on changes that have occurred in the base data between reference data file generation.",
+          "raw_quote": "The FinancialInstrumentReportingReferenceDataDeltaReport message is sent by the trading venues to\nthe national competent authority to report on changes that have occurred in the base data between\nreference data file generation.",
+          "file_pages": [
+            91
+          ],
+          "section": "scope",
+          "evidence_id": "src-000321-auth.036.001.03-p91-c001",
+          "mentions": [
+            {
+              "label": "trading venues",
+              "start": 80,
+              "end": 94,
+              "resolution": {
+                "label": "trading venues",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000321-trading-venue",
+                  "path": "shared/reference/participants/participant-functionality-src-000321-trading-venue.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "national competent authority",
+              "start": 102,
+              "end": 130,
+              "resolution": {
+                "label": "national competent authority",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000320-nca",
+                  "path": "shared/reference/participants/participant-src-000320-nca.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000321-auth.036.001.03-p91-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        91
+      ],
+      "file_pages": [
+        91
+      ]
+    }
+  ]
+}

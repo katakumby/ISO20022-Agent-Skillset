@@ -1,0 +1,142 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 43,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 77,
+    "2": 83
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 71,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f41ec952db51eebbc4763d25ddbc71071b70d8df1f545e3fd959b071409044e1",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 14,
+      "bbox": [
+        144.5687,
+        219.5237,
+        326.0862,
+        220.5237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        210.8929,
+        325.5862,
+        220.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 16,
+      "bbox": [
+        330.6429,
+        219.5237,
+        508.8499,
+        220.5237
+      ],
+      "link_annotation_bbox": [
+        331.1429,
+        210.8929,
+        508.3499,
+        220.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 20,
+      "bbox": [
+        84.5394,
+        249.5237,
+        275.5491,
+        250.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        240.8929,
+        297.2952,
+        250.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 22,
+      "bbox": [
+        274.5491,
+        249.5237,
+        297.7952,
+        250.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        240.8929,
+        297.2952,
+        250.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 147,
+      "bbox": [
+        144.5686,
+        608.3239,
+        302.7562,
+        609.3239
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        599.693,
+        302.2562,
+        609.693
+      ]
+    },
+    {
+      "path_object_ordinal": 149,
+      "bbox": [
+        307.3128,
+        608.3239,
+        455.5101,
+        609.3239
+      ],
+      "link_annotation_bbox": [
+        307.8128,
+        599.693,
+        455.0101,
+        609.693
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0042",
+      "file_page": 43,
+      "bbox": [
+        85.03936999999996,
+        257.89291000000014,
+        555.5905714285715,
+        366.8929100000002
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-0042.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "4e23164b6b38513639c2e4cac9da8810532748735b07ca49f9b554d81777d809",
+      "cell_geometry_sha256": "eac0687f6a4c1df80049c9f04c3ff1ed5d49222f2e9cfae9c659a0880d2a093a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

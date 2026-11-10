@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 56,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 168,
+    "2": 283
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 270,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "74cf22d531e01b3ed3f60b2eebdda6c8b60ee274827385451c653812355d7dfb",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 412,
+      "bbox": [
+        130.1204,
+        662.4238,
+        266.6526,
+        663.4238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        653.7931,
+        282.8372,
+        663.7931
+      ]
+    },
+    {
+      "path_object_ordinal": 414,
+      "bbox": [
+        265.6526,
+        662.4238,
+        283.3372,
+        663.4238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        653.7931,
+        282.8372,
+        663.7931
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0054",
+      "file_page": 56,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905771428572,
+        466.49295000000006
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0054.md",
+      "rows": 19,
+      "matrix_cells": 114,
+      "physical_cells": 114,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7fc13bb12b6cc55f704fa455f356eb967559904384b02cb4422f198de9427f02",
+      "cell_geometry_sha256": "25d82d41cbfb483826afb33e6b7fa915bbd0a4f28a2c724df4d2d996eda80cdb",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 114,
+      "independent_cells_match": 114,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0055",
+      "file_page": 56,
+      "bbox": [
+        85.03936999999996,
+        670.7930700000001,
+        510.236225,
+        713.1930699999999
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0055.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a186dff91c134e0c523767f5dc5be2b388030121d6682da7f6cd74ad516c813d",
+      "cell_geometry_sha256": "5bb355a8506d77370f1058325c9d4ff9a1b12ed542e9439528c18965f071c596",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

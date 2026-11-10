@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 375,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 171,
+    "2": 273
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 259,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "4099fb2cb479ea91da17c5eeefda6d3b41e04a01bdbfbd96d70ecdf3f2d45f63",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 420,
+      "bbox": [
+        130.1204,
+        646.1237,
+        218.2737,
+        647.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        637.4929,
+        240.0198,
+        647.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 422,
+      "bbox": [
+        217.2737,
+        646.1237,
+        240.5198,
+        647.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        637.4929,
+        240.0198,
+        647.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 430,
+      "bbox": [
+        130.1204,
+        724.1237,
+        218.2737,
+        725.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        715.4929,
+        240.0198,
+        725.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 432,
+      "bbox": [
+        217.2737,
+        724.1237,
+        240.5198,
+        725.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        715.4929,
+        240.0198,
+        725.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0566",
+      "file_page": 375,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905747826088,
+        357.2928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0566.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "5d74ddd059d2fcb716b42a9baf3975e486c27659179a5d7c6adecf2b848f0323",
+      "cell_geometry_sha256": "257e2a38c11c04a883d7f6298a5ff152398107e33f7fe0db7bcf9fa8431bd8b4",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0567",
+      "file_page": 375,
+      "bbox": [
+        85.03936999999996,
+        441.2928900000001,
+        555.5905747826088,
+        570.4928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0567.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "e439b61930627e69724ba97cedec3228d7f524640841624d459dac8688cfe592",
+      "cell_geometry_sha256": "17649c1fc7129f69861cf76be9cad885d21bfa97e6562782088f9a5d6a010f35",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

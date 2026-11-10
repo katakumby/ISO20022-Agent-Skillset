@@ -1,0 +1,154 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 267,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 63,
+    "1": 76
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 52,
+    "link-annotation-underline": 5,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "8d0a4bfdceddd59d15991ed150952629a350de85f81bd1e61a53761811dd2435",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 102,
+      "bbox": [
+        130.1204,
+        459.7238,
+        234.9486,
+        460.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        451.093,
+        256.6946,
+        461.093
+      ]
+    },
+    {
+      "path_object_ordinal": 104,
+      "bbox": [
+        233.9486,
+        459.7238,
+        257.1946,
+        460.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        451.093,
+        256.6946,
+        461.093
+      ]
+    },
+    {
+      "path_object_ordinal": 112,
+      "bbox": [
+        144.5687,
+        537.7238,
+        280.471,
+        538.7238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        529.093,
+        279.971,
+        539.093
+      ]
+    },
+    {
+      "path_object_ordinal": 115,
+      "bbox": [
+        130.1204,
+        555.7238,
+        391.6624,
+        556.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        547.093,
+        413.4085,
+        557.093
+      ]
+    },
+    {
+      "path_object_ordinal": 117,
+      "bbox": [
+        390.6624,
+        555.7238,
+        413.9085,
+        556.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        547.093,
+        413.4085,
+        557.093
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0319",
+      "file_page": 267,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362333333333,
+        384.0929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-0319.md",
+      "rows": 7,
+      "matrix_cells": 21,
+      "physical_cells": 21,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "d74bcf1c6461106a88591b75ea47a20e42a99a575b75d19f55d40a6c70fc00e7",
+      "cell_geometry_sha256": "899d323084c7b975102d3b6fed3e5a3a275aafc8b87b4e6ae8421ffbd91f2e4e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 21,
+      "independent_cells_match": 19,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            151.29291000000012,
+            510.2362333333333,
+            249.49292000000014
+          ],
+          "stored_value": "Share-related profit. This is a tax specific\nto the German market. The share-\nrelated-profit gives the fund the\nopportunity to pass on to the institutional\ninvestor redeeming fund units certain\ntax-free income from equity. The\ncalculation method is based on the old\nInvestment Tax Act\n(Investmentsteuergesetz).",
+          "pdfium_value": "Share-related profit. This is a tax specific\r\nto the German market. The share\u0002related-profit gives the fund the\r\nopportunity to pass on to the institutional\r\ninvestor redeeming fund units certain\r\ntax-free income from equity. The\r\ncalculation method is based on the old\r\nInvestment Tax Act\r\n(Investmentsteuergesetz)."
+        },
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            249.49292000000014,
+            510.2362333333333,
+            347.69291000000004
+          ],
+          "stored_value": "Share-related profit. This is a tax specific\nto the German market. The share-\nrelated-profit gives the fund the\nopportunity to pass on to the institutional\ninvestor redeeming fund units certain\ntax-free income from equity. The\ncalculation method is based on the new\nInvestment Tax Act\n(Investmentsteuergesetz).",
+          "pdfium_value": "Share-related profit. This is a tax specific\r\nto the German market. The share\u0002related-profit gives the fund the\r\nopportunity to pass on to the institutional\r\ninvestor redeeming fund units certain\r\ntax-free income from equity. The\r\ncalculation method is based on the new\r\nInvestment Tax Act\r\n(Investmentsteuergesetz)."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,22 @@
+sequenceDiagram
+  participant A as Instructing Party
+  participant B as Executing Servicing Party
+  A->>B: SecuritiesSettlementTransactionInstruction
+  opt Optional
+    B->>A: SecuritiesSettlementTransactionStatusAdvice
+  end
+  A->>B: SecuritiesSettlementConditionsModificationRequest (Hold:Y)
+  opt Optional
+    B->>A: SecuritiesSettlementConditionModificationStatusAdvice
+  end
+  opt Optional
+    B->>A: SecuritiesSettlementTransactionStatusAdvice
+  end
+  A->>B: SecuritiesSettlementConditionsModificationRequest (Release)
+  opt Optional
+    B->>A: SecuritiesSettlementConditionModificationStatusAdvice
+  end
+  opt Optional
+    B->>A: SecuritiesSettlementTransactionStatusAdvice
+  end
+  B->>A: SecuritiesSettlementTransactionConfirmation

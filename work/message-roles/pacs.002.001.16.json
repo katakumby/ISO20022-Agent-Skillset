@@ -1,0 +1,398 @@
+{
+  "message_id": "pacs.002.001.16",
+  "publications": [
+    {
+      "source_id": "src-000163",
+      "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+      "heading": "2 pacs.002.001.16 FIToFIPaymentStatusReportV16",
+      "definition_pages": [
+        6,
+        131
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The FIToFIPaymentStatusReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the previous party in the payment chain",
+            "labels": [
+              {
+                "label": "the previous party in the payment chain",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-previous-party-in-the-payment-chain",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-previous-party-in-the-payment-chain.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an instructed agent",
+            "labels": [
+              {
+                "label": "an instructed agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-instructed-agent",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-instructed-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000163-pacs.002.001.16-p6-c001-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "2 pacs.002.001.16 FIToFIPaymentStatusReportV16",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "quote": "The FIToFIPaymentStatusReport message is sent by an instructed agent to the previous party in the payment chain.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The FIToFIPaymentStatusReport message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "agents",
+            "labels": [
+              {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000163-pacs.002.001.16-p6-c004-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "2 pacs.002.001.16 FIToFIPaymentStatusReportV16",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "quote": "The FIToFIPaymentStatusReport message is exchanged between agents to provide status information about instructions previously sent.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "Additional conditional receiver in a real-time payment scenario; both transaction sides must be informed. The full credited/rejected alternatives remain in the quote.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "7f8c95c44220fb4c5dbf2cfa61d5a0cac118e475e54a5fb4a3684a7644b061be",
+          "receiver": {
+            "expression": "receiver of the payment",
+            "labels": [
+              {
+                "label": "receiver of the payment",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-receiver-of-the-payment",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-receiver-of-the-payment.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000163-pacs.002.001.16-p6-c008-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "2 pacs.002.001.16 FIToFIPaymentStatusReportV16",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "quote": "The FIToFIPaymentStatusReport may also be sent to the receiver of the payment in a real time payment scenario, as both sides of the transactions must be informed of the status of the transaction (for example either the beneficiary is credited, or the transaction is rejected).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "may",
+            "must",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The FIToFIPaymentStatusReport message is sent by an instructed agent to the previous party in the payment chain.",
+          "raw_quote": "Scope\nThe FIToFIPaymentStatusReport message is sent by an instructed agent to the previous party in the\npayment chain.",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c001",
+          "mentions": [
+            {
+              "label": "instructed agent",
+              "start": 52,
+              "end": 68,
+              "resolution": {
+                "label": "instructed agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-instructed-agent",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-instructed-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "previous party in the payment chain",
+              "start": 76,
+              "end": 111,
+              "resolution": {
+                "label": "previous party in the payment chain",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-previous-party-in-the-payment-chain",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-previous-party-in-the-payment-chain.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.002.001.16-p6-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to inform this party about the positive or negative status of an instruction (either single or file).",
+          "raw_quote": "It is used to inform this party about the positive or negative status of an instruction\n(either single or file).",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "It is also used to report on a pending instruction.",
+          "raw_quote": "It is also used to report on a pending instruction.",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusReport message is exchanged between agents to provide status information about instructions previously sent.",
+          "raw_quote": "Usage\nThe FIToFIPaymentStatusReport message is exchanged between agents to provide status information\nabout instructions previously sent.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c004",
+          "mentions": [
+            {
+              "label": "agents",
+              "start": 59,
+              "end": 65,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.002.001.16-p6-c004-d1"
+          ]
+        },
+        {
+          "quote": "Its usage may be governed by a bilateral or multilateral agreement between the agents.",
+          "raw_quote": "Its usage may be governed by a bilateral or multilateral agreement\nbetween the agents.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c005",
+          "mentions": [
+            {
+              "label": "agents",
+              "start": 79,
+              "end": 85,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusReport message can be used to provide information about the status (e.g. rejection, acceptance) of a credit transfer instruction, a direct debit instruction, as well as other intra- agent instructions (for example FIToFIPaymentCancellationRequest).",
+          "raw_quote": "The FIToFIPaymentStatusReport message can be used to provide information about the status (e.g.\nrejection, acceptance) of a credit transfer instruction, a direct debit instruction, as well as other intra-\nagent instructions (for example FIToFIPaymentCancellationRequest).",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c006",
+          "mentions": [
+            {
+              "label": "agent",
+              "start": 205,
+              "end": 210,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusReport message refers to the original instruction(s) by means of references only or by means of references and a set of elements from the original instruction.",
+          "raw_quote": "The FIToFIPaymentStatusReport message refers to the original instruction(s) by means of references\nonly or by means of references and a set of elements from the original instruction.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c007",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusReport may also be sent to the receiver of the payment in a real time payment scenario, as both sides of the transactions must be informed of the status of the transaction (for example either the beneficiary is credited, or the transaction is rejected).",
+          "raw_quote": "The FIToFIPaymentStatusReport may also be sent to the receiver of the payment in a real time\npayment scenario, as both sides of the transactions must be informed of the status of the transaction\n(for example either the beneficiary is credited, or the transaction is rejected).",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c008",
+          "mentions": [
+            {
+              "label": "receiver of the payment",
+              "start": 54,
+              "end": 77,
+              "resolution": {
+                "label": "receiver of the payment",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-receiver-of-the-payment",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-receiver-of-the-payment.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "beneficiary",
+              "start": 219,
+              "end": 230,
+              "resolution": {
+                "label": "beneficiary",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-beneficiary",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-beneficiary.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.002.001.16-p6-c008-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The FIToFIPaymentStatusReport message can be used in domestic and cross-border scenarios.",
+          "raw_quote": "The FIToFIPaymentStatusReport message can be used in domestic and cross-border scenarios.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        6
+      ],
+      "file_pages": [
+        6
+      ]
+    }
+  ]
+}

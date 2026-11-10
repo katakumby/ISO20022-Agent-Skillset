@@ -1,0 +1,352 @@
+{
+  "message_id": "seev.033.001.14",
+  "publications": [
+    {
+      "source_id": "src-000080",
+      "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+      "heading": "5 seev.033.001.14 CorporateActionInstructionV14",
+      "definition_pages": [
+        274,
+        319
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CorporateActionInstruction message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account servicer",
+            "labels": [
+              {
+                "label": "an account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an account owner",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.033.001.14-p274-c001-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "5 seev.033.001.14 CorporateActionInstructionV14",
+          "file_pages": [
+            274
+          ],
+          "section": "scope",
+          "quote": "The CorporateActionInstruction message is sent by an account owner to an account servicer to instruct election on a corporate action event.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "4b513527273fc41a2bd7a7734d92a67daf68358e96997eb5d8033ad4d44398b3",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.033.001.14-p274-c006-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "5 seev.033.001.14 CorporateActionInstructionV14",
+          "file_pages": [
+            274
+          ],
+          "section": "usage",
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CorporateActionInstruction message is sent by an account owner to an account servicer to instruct election on a corporate action event.",
+          "raw_quote": "Scope\nThe CorporateActionInstruction message is sent by an account owner to an account servicer to instruct\nelection on a corporate action event.",
+          "file_pages": [
+            274
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c001",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 53,
+              "end": 66,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 73,
+              "end": 89,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 116,
+              "end": 125,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.033.001.14-p274-c001-d1"
+          ]
+        },
+        {
+          "quote": "This message is used to provide the custodian with instructions on how the account owner wishes to proceed with a corporate action event.",
+          "raw_quote": "This message is used to provide the custodian with instructions on how the account owner wishes to\nproceed with a corporate action event.",
+          "file_pages": [
+            274
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c002",
+          "mentions": [
+            {
+              "label": "custodian",
+              "start": 36,
+              "end": 45,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-custodian",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-custodian.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 75,
+              "end": 88,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 114,
+              "end": 123,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Instructions include investment decisions regarding the exercise of rights issues, the election of stock or cash when the option is available, and decisions on the conversion or tendering of securities.",
+          "raw_quote": "Instructions include investment decisions regarding the exercise\nof rights issues, the election of stock or cash when the option is available, and decisions on the\nconversion or tendering of securities.",
+          "file_pages": [
+            274
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "raw_quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "file_pages": [
+            274
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy),",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\nCopy),",
+          "file_pages": [
+            274
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c005",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "raw_quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy\nDuplicate), using the relevant elements in the business application header (BAH).",
+          "file_pages": [
+            274
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c006",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.033.001.14-p274-c006-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "Usage\nThe message may also be used to:",
+          "file_pages": [
+            274
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        274
+      ],
+      "file_pages": [
+        274,
+        275
+      ]
+    }
+  ]
+}

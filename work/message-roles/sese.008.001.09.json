@@ -1,0 +1,250 @@
+{
+  "message_id": "sese.008.001.09",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "31 sese.008.001.09 ReversalOfTransferInConfirmationV09",
+      "definition_pages": [
+        778,
+        783
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The ReversalOfTransferInConfirmation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the instructing party, for example, an investment manager or its authorised representative"
+          },
+          "sender": {
+            "expression": "an executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an executing party, for example, a transfer agent"
+          },
+          "claim_id": "src-000096-sese.008.001.09-p778-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "31 sese.008.001.09 ReversalOfTransferInConfirmationV09",
+          "file_pages": [
+            778
+          ],
+          "section": "scope",
+          "quote": "The ReversalOfTransferInConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to cancel a previously sent transfer in confirmation.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReversalOfTransferInConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to cancel a previously sent transfer in confirmation.",
+          "raw_quote": "Scope\nThe ReversalOfTransferInConfirmation message is sent by an executing party, for example, a transfer\nagent, to the instructing party, for example, an investment manager or its authorised representative, to\ncancel a previously sent transfer in confirmation.",
+          "file_pages": [
+            778
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.008.001.09-p778-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 59,
+              "end": 74,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 91,
+              "end": 105,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 114,
+              "end": 131,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 149,
+              "end": 167,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 175,
+              "end": 200,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.008.001.09-p778-c001-d1"
+          ]
+        },
+        {
+          "quote": "The ReversalOfTransferInConfirmation message is used to reverse a previously sent transfer in confirmation.",
+          "raw_quote": "Usage\nThe ReversalOfTransferInConfirmation message is used to reverse a previously sent transfer in\nconfirmation.",
+          "file_pages": [
+            778
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.008.001.09-p778-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "To request the reversal of a transfer in confirmation, the transfer reference of the transfer in instruction, as specified in the original TransferInInstruction message, is specified in the transfer reference element.",
+          "raw_quote": "To request the reversal of a transfer in confirmation, the transfer reference of the transfer in instruction,\nas specified in the original TransferInInstruction message, is specified in the transfer reference element.",
+          "file_pages": [
+            778
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.008.001.09-p778-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The executing party's reference for the execution of the transfer may also be specified in the TransferConfirmationReference element.",
+          "raw_quote": "The executing party's reference for the execution of the transfer may also be specified in the\nTransferConfirmationReference element.",
+          "file_pages": [
+            778
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.008.001.09-p778-c004",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 4,
+              "end": 19,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message identification of the original TransferInConfirmation message may also be quoted in PreviousReference but this is not recommended.",
+          "raw_quote": "The message identification of the original TransferInConfirmation message may also be quoted in\nPreviousReference but this is not recommended.",
+          "file_pages": [
+            778
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        778
+      ],
+      "file_pages": [
+        778,
+        779
+      ]
+    }
+  ]
+}

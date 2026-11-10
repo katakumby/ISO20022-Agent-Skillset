@@ -1,0 +1,65 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class AccountPartyRole["AccountPartyRole"] {
+<<BusinessComponent>>
+}
+class AccountStatus["AccountStatus"] {
+<<BusinessComponent>>
+}
+class AccountIdentification["AccountIdentification"] {
+<<BusinessComponent>>
+}
+class Account["Account"] {
+<<BusinessComponent>>
+}
+class Balance["Balance"] {
+<<BusinessComponent>>
+}
+class Entry["Entry"] {
+<<BusinessComponent>>
+}
+class CashEntry["CashEntry"] {
+<<BusinessComponent>>
+}
+class CashAccount["CashAccount"] {
+<<BusinessComponent>>
+}
+class SecuritiesAccount["SecuritiesAccount"] {
+<<BusinessComponent>>
+}
+}
+class AccountServicerRole["AccountServicerRole"] {
+<<BusinessComponent>>
+}
+class AccountOwnerRole["AccountOwnerRole"] {
+<<BusinessComponent>>
+}
+class Interest["Interest"] {
+<<BusinessComponent>>
+}
+class Tax["Tax"] {
+<<BusinessComponent>>
+}
+class Payment["Payment"] {
+<<BusinessComponent>>
+}
+class PaymentIdentification["PaymentIdentification"] {
+<<BusinessComponent>>
+}
+AccountServicerRole --|> AccountPartyRole
+AccountOwnerRole --|> AccountPartyRole
+Account -- AccountPartyRole : + PartyRole
+Account -- AccountStatus : + Status
+Account -- AccountIdentification
+Account -- Balance
+Account -- Account : + SubAccount / + ParentAccount
+Account -- Entry
+CashAccount --|> Account
+SecuritiesAccount --|> Account
+CashEntry --|> Entry
+CashEntry -- CashAccount
+Balance -- Interest : + AccountBalance
+Interest -- Tax : + InterestTax
+CashAccount -- Payment : - Account
+Payment -- PaymentIdentification : + PaymentRelatedIdentifications

@@ -1,0 +1,43 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    IA("Instruct a securities/cash split settlement")
+    IM("Monitor Matching and Settlement Process") --> ID{"Settled?"}
+    ID -->|No| IU("Update Status")
+    IU --> IM
+    ID -->|Yes| IX(["Settle trade"])
+  end
+  subgraph E["Securities-cash instruction Executing party"]
+    Split("Split securities/cash instruction")
+    In@{shape: fork, label: " "} --> Monitor("Monitor securities and cash settlement process")
+    Monitor --> CashD{"Cash Settled?"}
+    CashD -->|No| U("Update Status")
+    CashD -->|Yes| SecD{"Securities Settled?"}
+    SecD -->|No| U
+    SecD -->|Yes| Trade(["Settle trade"])
+    U --> Monitor
+    U --> Out@{shape: fork, label: " "}
+    Trade --> Out
+  end
+  subgraph SL["Securities leg executing party"]
+    SP("Processing, matching and settlement of securities leg") --> SD{"Settled?"}
+    SD -->|No| SU("Update Status")
+    SU --> SP
+    SD -->|Yes| SX(["Settle Securities"])
+  end
+  subgraph CL["Cash leg executing party"]
+    CP("Process cash leg") --> CX(["Settle Cash"])
+  end
+  IA --> Split
+  Split --> SP
+  Split --> CP
+  SU --> In
+  SX --> In
+  CX --> In
+  Out --> IM
+  classDef main fill:#d1d8b8,stroke:#111,color:#111
+  classDef context fill:#c0d1e5,stroke:#111,color:#111
+  class IA,Split,Monitor,CashD,SecD,U,Trade main
+  class IM,ID,IU,IX,SP,SD,SU,SX,CP,CX context
+  classDef fork fill:#111,stroke:#111
+  class In,Out fork

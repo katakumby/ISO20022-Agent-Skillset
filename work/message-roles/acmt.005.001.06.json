@@ -1,0 +1,263 @@
+{
+  "message_id": "acmt.005.001.06",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "5 acmt.005.001.06 RequestForAccountManagementStatusReportV06",
+      "definition_pages": [
+        77,
+        85
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The RequestForAccountManagementStatusReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the account servicer, for example, a registrar, transfer agent, custodian bank or securities depository",
+            "labels": [
+              {
+                "label": "the account servicer",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the account servicer, for example, a registrar, transfer agent, custodian bank or securities depository"
+          },
+          "sender": {
+            "expression": "an account owner, for example, an investor or its designated agent",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an account owner, for example, an investor or its designated agent"
+          },
+          "claim_id": "src-000096-acmt.005.001.06-p77-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "5 acmt.005.001.06 RequestForAccountManagementStatusReportV06",
+          "file_pages": [
+            77
+          ],
+          "section": "scope",
+          "quote": "The RequestForAccountManagementStatusReport message is sent by an account owner, for example, an investor or its designated agent, to the account servicer, for example, a registrar, transfer agent, custodian bank or securities depository to request the status of an AccountOpeningInstruction, GetAccountDetails or an AccountModificationInstruction.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The RequestForAccountManagementStatusReport message is sent by an account owner, for example, an investor or its designated agent, to the account servicer, for example, a registrar, transfer agent, custodian bank or securities depository to request the status of an AccountOpeningInstruction, GetAccountDetails or an AccountModificationInstruction.",
+          "raw_quote": "Scope\nThe RequestForAccountManagementStatusReport message is sent by an account owner, for example,\nan investor or its designated agent, to the account servicer, for example, a registrar, transfer agent,\ncustodian bank or securities depository to request the status of an AccountOpeningInstruction,\nGetAccountDetails or an AccountModificationInstruction.",
+          "file_pages": [
+            77
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-acmt.005.001.06-p77-c001",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 66,
+              "end": 79,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investor",
+              "start": 97,
+              "end": 105,
+              "resolution": {
+                "label": "investor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investor",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "designated agent",
+              "start": 113,
+              "end": 129,
+              "resolution": {
+                "label": "designated agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-designated-agent",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 138,
+              "end": 154,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "registrar",
+              "start": 171,
+              "end": 180,
+              "resolution": {
+                "label": "registrar",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-registrar",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-registrar.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 182,
+              "end": 196,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "custodian",
+              "start": 198,
+              "end": 207,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-custodian",
+                  "path": "shared/reference/participants/participant-src-000095-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "bank",
+              "start": 208,
+              "end": 212,
+              "resolution": {
+                "label": "bank",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "securities depository",
+              "start": 216,
+              "end": 237,
+              "resolution": {
+                "label": "securities depository",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-acmt.005.001.06-p77-c001-d1"
+          ]
+        },
+        {
+          "quote": "The RequestForAccountManagementStatusReport message is used to request the processing status of a previously sent AccountOpeningInstruction, GetAccountDetails or an AccountModificationInstruction message for which an AccountDetailsConfirmation message has not yet been received.",
+          "raw_quote": "Usage\nThe RequestForAccountManagementStatusReport message is used to request the processing status of\na previously sent AccountOpeningInstruction, GetAccountDetails or an AccountModificationInstruction\nmessage for which an AccountDetailsConfirmation message has not yet been received.",
+          "file_pages": [
+            77
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-acmt.005.001.06-p77-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "usage-condition-or-related-message-context",
+            "rationale": "The sentence supplies purpose, response linkage, timing, content, status or a condition. It does not independently identify an additional complete current-message sender/receiver direction. Its full literal wording remains available.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        77
+      ],
+      "file_pages": [
+        77
+      ]
+    }
+  ]
+}

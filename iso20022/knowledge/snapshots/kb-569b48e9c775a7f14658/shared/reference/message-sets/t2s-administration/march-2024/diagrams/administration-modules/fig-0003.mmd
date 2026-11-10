@@ -1,0 +1,74 @@
+flowchart TB
+subgraph group0["Inbound Processing Module – A2A"]
+stored["Stored inbound communication - A2A individual message"]
+schema(["A2A Message Schema"])
+sd{"#160;"}
+valid["A2A Schema validated inbound message"]
+parse(["A2A Message Parsing"])
+pd{"#160;"}
+data1["Inbound business data"]
+priv(["Check Privilege"])
+vd{"#160;"}
+data2["Inbound business data"]
+router(["Information Router"])
+data3["Inbound business data"]
+route{"#160;"}
+permission(["Check Permission - Resend"])
+permissionDecision{"#160;"}
+fork@{ shape: fork }
+schemaReject["Inbound processing rejection – A2A Schema"]
+permissionReject["Inbound processing rejection - Permission"]
+result["Validation result - resend"]
+resend["Resend message"]
+store1["&lt;&lt;data store&gt;&gt; Resendable messages"]
+store2["&lt;&lt;data store&gt;&gt; Permission relevant Static Data"]
+end
+subgraph group1["Adjacent modules"]
+comm(["INTF: Communication Module - A2A"])
+liquid(["LIQUIDITY MANAGEMENT"])
+lcmm(["LCMM"])
+static(["STATIC DATA MANAGEMENT"])
+stats(["STATISTICS, QUERIES, REPORTS AND ARCHIVE"])
+ops(["OPERATIONAL SERVICES"])
+out(["INTF: Outbound Processing Module - A2A"])
+end
+subgraph group2["Outbound-bound merges"]
+merge1{"#160;"}
+merge2{"#160;"}
+merge3{"#160;"}
+end
+comm --> stored
+stored --> schema
+schema --> sd
+sd -->|"Schema validation not ok"| schemaReject
+sd -->|"Schema validation ok"| valid
+valid --> parse
+parse --> pd
+pd -->|"Additional technical validation or duplicate check ok"| data1
+data1 --> priv
+priv --> vd
+vd -->|"Privilege ok"| data2
+data2 --> router
+router --> data3
+data3 --> route
+route -->|"Resend Message"| permission
+store1 --> permission
+store2 --> permission
+permission --> permissionDecision
+permissionDecision -->|"Message not found or permission not ok"| permissionReject
+permissionDecision -->|"Permission ok"| fork
+fork --> result
+fork --> resend
+route -->|"any request except Resend Message"| liquid
+route -->|"any request except Resend Message"| lcmm
+route -->|"any request except Resend Message"| static
+route -->|"any request except Resend Message"| stats
+route -->|"any request except Resend Message"| ops
+schemaReject --> merge1
+permissionReject --> merge1
+merge1 --> merge2
+merge2 --> merge3
+merge3 --> out
+result --> merge2
+resend --> merge3
+style fork fill:#222,stroke:#222

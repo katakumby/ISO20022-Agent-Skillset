@@ -1,0 +1,52 @@
+{
+  "source_id": "src-000349",
+  "source_sha256": "914aa2235d5fde9dd8eb7f234e00a2d33f5a3ba7bc9d1d5e4acfd8db90807627",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        200.09292000000016,
+        510.236225,
+        506.49293000000023
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          200.09292000000016,
+          283.46457,
+          218.2929200000002
+        ],
+        [
+          85.03936999999999,
+          218.2929200000002,
+          283.46457,
+          506.49293000000023
+        ],
+        [
+          283.46457,
+          200.09292000000016,
+          510.236225,
+          218.2929200000002
+        ],
+        [
+          283.46457,
+          218.2929200000002,
+          510.236225,
+          506.49293000000023
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "head.002.001.01\nBusinessFileHeaderV01",
+          "The Business File Header contains information about\nthe parties involved in the file exchange, as well as\ninformation about the content and its structure.\nThe Business File headers has four major functions:\n- Provides information about the sender of the file.\n- Identifies the file exchanged: each file must have a\nunique File Identifier.\n- Describes the type of message(s) exchanged: by\ndefault, the type of messages contained in a file will be\nISO 20022 message definitions.\n- Provides processing information to the receiving\nparty: that would be, for instance, the total number of\nmessages included in the file.\nUsage: The Business File Header (head.002) is to be\nused exclusively in existing implementations, such as\nthe Eurosystem, and will be replaced for general use\nby the upcoming next version defined as the Business\nFile Envelope (nvlp.002). The Business File Header\n(head.002) will therefore not be maintained in the\nfuture and any new implementation must use the\nBusiness File Envelope (nvlp.002)."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

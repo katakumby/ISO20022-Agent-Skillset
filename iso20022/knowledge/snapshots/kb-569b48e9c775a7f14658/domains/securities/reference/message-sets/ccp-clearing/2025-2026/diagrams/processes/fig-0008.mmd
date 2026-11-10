@@ -1,0 +1,38 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart TB
+  subgraph C["CCP"]
+    S(("Start"))
+    Calc("Calculate a risk<br/>(initial and variation margin)")
+    Follow("Margin Call follow up")
+    Accept{"Accept?"}
+    Fork["━━━"]:::bar
+    Debit("OPTIONAL<br/>Direct debit from CM cash account<br/>(OUT of SCOPE)"):::outside
+    Receive("Receive Securities/Cash<br/>(OUT of SCOPE)"):::outside
+  end
+  subgraph M["Clearing Member"]
+    Process("Process Information")
+    EndInfo((("End")))
+    Propose("Optional: Propose Collateral")
+    New{"New proposal?"}
+    EndNo((("End")))
+    Deliver("Deliver Securities/Cash<br/>(OUT of SCOPE)"):::outside
+  end
+  E((("End")))
+  S --> Calc --> Process --> EndInfo
+  S --> Follow
+  Follow -->|Scenario 1| Debit --> E
+  Follow -->|Scenario 2| Propose --> Accept
+  Accept -->|No| New
+  New -->|Yes| Propose
+  New -->|No| EndNo
+  Accept -->|Yes| Fork
+  Fork --> Receive --> E
+  Fork --> Deliver --> E
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

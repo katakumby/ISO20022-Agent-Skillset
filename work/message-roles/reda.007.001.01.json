@@ -1,0 +1,1151 @@
+{
+  "message_id": "reda.007.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "28 reda.007.001.01 SecurityMaintenanceRequestV01",
+      "definition_pages": [
+        825,
+        1752
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a SecurityMaintenanceRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an executing/servicing party",
+            "labels": [
+              {
+                "label": "an executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "An instructing party",
+            "labels": [
+              {
+                "label": "An instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.007.001.01-p825-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "28 reda.007.001.01 SecurityMaintenanceRequestV01",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "quote": "An instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to request the maintenance of financial instrument details in their system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "An instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to request the maintenance of financial instrument details in their system.",
+          "raw_quote": "SCOPE\nAn instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to\nrequest the maintenance of financial instrument details in their system.",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 3,
+              "end": 20,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 70,
+              "end": 95,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000233-reda.007.001.01-p825-c001-d1"
+          ]
+        },
+        {
+          "quote": "The instructing party - executing/servicing party relationship may be:",
+          "raw_quote": "The instructing party - executing/servicing party relationship may be:",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c002",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 24,
+              "end": 49,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Corporate, or",
+          "raw_quote": "a Corporate, or",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c003",
+          "mentions": [
+            {
+              "label": "Corporate",
+              "start": 2,
+              "end": 11,
+              "resolution": {
+                "label": "Corporate",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-corporate.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Bank, or",
+          "raw_quote": "a Bank, or",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c004",
+          "mentions": [
+            {
+              "label": "Bank",
+              "start": 2,
+              "end": 6,
+              "resolution": {
+                "label": "Bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-bank.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Infrastructure, or",
+          "raw_quote": "a Market Infrastructure, or",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c005",
+          "mentions": [
+            {
+              "label": "Market Infrastructure",
+              "start": 2,
+              "end": 23,
+              "resolution": {
+                "label": "Market Infrastructure",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-infrastructure.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Data Provider.",
+          "raw_quote": "a Market Data Provider.",
+          "file_pages": [
+            825
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c006",
+          "mentions": [
+            {
+              "label": "Market Data Provider",
+              "start": 2,
+              "end": 22,
+              "resolution": {
+                "label": "Market Data Provider",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-data-provider",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-data-provider.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The request is sent when the instructing party identified a gap in the security data within the executing/ servicing party system.",
+          "raw_quote": "USAGE\nThe request is sent when the instructing party identified a gap in the security data within the executing/\nservicing party system.",
+          "file_pages": [
+            825
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c007",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 29,
+              "end": 46,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 107,
+              "end": 122,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The instructing party needs this security to be updated at the executing / servicing party to perform its activities.",
+          "raw_quote": "The instructing party needs this security to be updated at the executing /\nservicing party to perform its activities.",
+          "file_pages": [
+            825
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c008",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 75,
+              "end": 90,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Initiator: instructing party.",
+          "raw_quote": "Initiator: instructing party.",
+          "file_pages": [
+            825
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c009",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 11,
+              "end": 28,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      825
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+                        "file_pages": [
+                          21
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "raw_quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "file_pages": [
+            825
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        825
+      ],
+      "file_pages": [
+        825
+      ]
+    },
+    {
+      "source_id": "src-000378",
+      "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+      "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+      "definition_pages": [
+        21,
+        65
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a SecurityMaintenanceRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an executing/servicing party",
+            "labels": [
+              {
+                "label": "an executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "An instructing party",
+            "labels": [
+              {
+                "label": "An instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000378-reda.007.001.01-p21-c001-d1",
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "quote": "An instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to request the maintenance of financial instrument details in their system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "An instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to request the maintenance of financial instrument details in their system.",
+          "raw_quote": "SCOPE\nAn instructing party sends a SecurityMaintenanceRequest message to an executing/servicing party to\nrequest the maintenance of financial instrument details in their system.",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 3,
+              "end": 20,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 70,
+              "end": 95,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000378-reda.007.001.01-p21-c001-d1"
+          ]
+        },
+        {
+          "quote": "The instructing party - executing/servicing party relationship may be:",
+          "raw_quote": "The instructing party - executing/servicing party relationship may be:",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c002",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 24,
+              "end": 49,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Corporate, or",
+          "raw_quote": "a Corporate, or",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c003",
+          "mentions": [
+            {
+              "label": "Corporate",
+              "start": 2,
+              "end": 11,
+              "resolution": {
+                "label": "Corporate",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Bank, or",
+          "raw_quote": "a Bank, or",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c004",
+          "mentions": [
+            {
+              "label": "Bank",
+              "start": 2,
+              "end": 6,
+              "resolution": {
+                "label": "Bank",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Infrastructure, or",
+          "raw_quote": "a Market Infrastructure, or",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c005",
+          "mentions": [
+            {
+              "label": "Market Infrastructure",
+              "start": 2,
+              "end": 23,
+              "resolution": {
+                "label": "Market Infrastructure",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-infrastructure.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Data Provider.",
+          "raw_quote": "a Market Data Provider.",
+          "file_pages": [
+            21
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c006",
+          "mentions": [
+            {
+              "label": "Market Data Provider",
+              "start": 2,
+              "end": 22,
+              "resolution": {
+                "label": "Market Data Provider",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-data-provider",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-data-provider.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The request is sent when the instructing party identified a gap in the security data within the executing/ servicing party system.",
+          "raw_quote": "USAGE\nThe request is sent when the instructing party identified a gap in the security data within the executing/\nservicing party system.",
+          "file_pages": [
+            21
+          ],
+          "section": "usage",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c007",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 29,
+              "end": 46,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 107,
+              "end": 122,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The instructing party needs this security to be updated at the executing / servicing party to perform its activities.",
+          "raw_quote": "The instructing party needs this security to be updated at the executing /\nservicing party to perform its activities.",
+          "file_pages": [
+            21
+          ],
+          "section": "usage",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c008",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 75,
+              "end": 90,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Initiator: instructing party.",
+          "raw_quote": "Initiator: instructing party.",
+          "file_pages": [
+            21
+          ],
+          "section": "usage",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c009",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 11,
+              "end": 28,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "raw_quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "file_pages": [
+            21
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        21
+      ],
+      "file_pages": [
+        21
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "source_id": "src-000080",
+  "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+  "file_page": 1199,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 147,
+    "1": 90
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 139,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "8d8018588dbe53681e7a98a72a439cff058be2604874e67fad93fe48e2510301",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-2158",
+      "file_page": 1199,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362347826087,
+        167.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-2158.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ccceccef5ed6d06524350917e7d36433df74195a23c625e9d9fad60199792b63",
+      "cell_geometry_sha256": "79ef7b3594637fafbf46d9d9e09e6a90399dc63c72d66968a41f564437a70c81",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-2159",
+      "file_page": 1199,
+      "bbox": [
+        85.03936999999996,
+        238.0929000000001,
+        510.2362347826087,
+        708.8929700000002
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-2159.md",
+      "rows": 14,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "dc2f70820d8f8c488763bc529fedef3d8a6161d72a3ca0919fdd0fdde66a6ff0",
+      "cell_geometry_sha256": "3766d8ce351fd2e399488351ec1124d96e6cbf8e83d9f186cb6d32679f59d69b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 41,
+      "exceptions": [
+        {
+          "row": 14,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            684.6929500000001,
+            510.2362347826087,
+            708.8929700000002
+          ],
+          "stored_value": "Option for the account owner not to take\npart in the event. This would include opt-",
+          "pdfium_value": "Option for the account owner not to take\r\npart in the event. This would include opt\u0002"
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

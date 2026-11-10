@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant I as Instructing Party
+  participant E as Executing Servicing Party
+  I->>E: SecuritiesSettlementTransactionInstruction
+  opt Optional processing status
+    E->>I: SecuritiesSettlementTransactionStatusAdvice
+  end
+  opt Optional settlement status
+    E->>I: SecuritiesSettlementTransactionStatusAdvice
+  end
+  E->>I: SecuritiesSettlementTransactionConfirmation

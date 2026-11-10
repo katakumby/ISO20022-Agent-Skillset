@@ -1,0 +1,8 @@
+sequenceDiagram
+participant O as Account Owner
+participant M as Intermediary
+participant S as Account Servicer
+O->>M: AccountModificationInstruction
+M->>S: AccountModificationInstruction
+S->>M: AccountManagementStatusReport #60;Rjctd#62;
+M->>O: AccountManagementStatusReport #60;Rjctd#62;

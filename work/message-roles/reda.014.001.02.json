@@ -1,0 +1,371 @@
+{
+  "message_id": "reda.014.001.02",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "34 reda.014.001.02 PartyCreationRequestV02",
+      "definition_pages": [
+        2043,
+        2054
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyCreationRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.014.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2043
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+                        "file_pages": [
+                          6
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.014.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2043
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+                        "file_pages": [
+                          6
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.014.001.02-p2043-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "34 reda.014.001.02 PartyCreationRequestV02",
+          "file_pages": [
+            2043
+          ],
+          "section": "scope",
+          "quote": "The PartyCreationRequest message is sent by an instructing party to the executing party to request for the creation of party reference data for a new party in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyCreationRequest message is sent by an instructing party to the executing party to request for the creation of party reference data for a new party in the executing system.",
+          "raw_quote": "Scope:\nThe PartyCreationRequest message is sent by an instructing party to the executing party to request for\nthe creation of party reference data for a new party in the executing system.",
+          "file_pages": [
+            2043
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.014.001.02-p2043-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 47,
+              "end": 64,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.014.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2043
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+                        "file_pages": [
+                          6
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 72,
+              "end": 87,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.014.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2043
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+                        "file_pages": [
+                          6
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.014.001.02-p2043-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the creation of a new party with corresponding details.",
+          "raw_quote": "Usage:\nIt aims at instructing the creation of a new party with corresponding details.",
+          "file_pages": [
+            2043
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.014.001.02-p2043-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing and confirmation of the party creation request are provided via a party status advice.",
+          "raw_quote": "Processing and confirmation of the party creation request are provided via a party status advice.",
+          "file_pages": [
+            2043
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.014.001.02-p2043-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2043
+      ],
+      "file_pages": [
+        2043
+      ]
+    },
+    {
+      "source_id": "src-000369",
+      "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+      "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+      "definition_pages": [
+        6,
+        17
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyCreationRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000369-reda.014.001.02-p6-c001-d1",
+          "source_id": "src-000369",
+          "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+          "heading": "2 reda.014.001.02 PartyCreationRequestV02",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "quote": "The PartyCreationRequest message is sent by an instructing party to the executing party to request for the creation of party reference data for a new party in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyCreationRequest message is sent by an instructing party to the executing party to request for the creation of party reference data for a new party in the executing system.",
+          "raw_quote": "Scope:\nThe PartyCreationRequest message is sent by an instructing party to the executing party to request for\nthe creation of party reference data for a new party in the executing system.",
+          "file_pages": [
+            6
+          ],
+          "section": "scope",
+          "evidence_id": "src-000369-reda.014.001.02-p6-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 47,
+              "end": 64,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 72,
+              "end": 87,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000369-reda.014.001.02-p6-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the creation of a new party with corresponding details.",
+          "raw_quote": "Usage:\nIt aims at instructing the creation of a new party with corresponding details.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.014.001.02-p6-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing and confirmation of the party creation request are provided via a party status advice.",
+          "raw_quote": "Processing and confirmation of the party creation request are provided via a party status advice.",
+          "file_pages": [
+            6
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.014.001.02-p6-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        6
+      ],
+      "file_pages": [
+        6
+      ]
+    }
+  ]
+}

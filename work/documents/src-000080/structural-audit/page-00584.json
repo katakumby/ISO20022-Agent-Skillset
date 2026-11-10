@@ -1,0 +1,150 @@
+{
+  "source_id": "src-000080",
+  "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+  "file_page": 584,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 89,
+    "2": 103
+  },
+  "path_classes": {
+    "link-annotation-underline": 5,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 90,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "35c8613c54d6e9fe68d558eb876646430aa8516ccf0239a2325c759c669ab6ba",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        84.5394,
+        146.7238,
+        283.8597,
+        147.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        138.0929,
+        300.0443,
+        148.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 11,
+      "bbox": [
+        282.8597,
+        146.7238,
+        300.5443,
+        147.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        138.0929,
+        300.0443,
+        148.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 86,
+      "bbox": [
+        144.5686,
+        303.7237,
+        236.0276,
+        304.7237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        295.0929,
+        235.5276,
+        305.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 89,
+      "bbox": [
+        130.1204,
+        321.7237,
+        271.6282,
+        322.7237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        313.0929,
+        293.3743,
+        323.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 91,
+      "bbox": [
+        270.6282,
+        321.7237,
+        293.8743,
+        322.7237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        313.0929,
+        293.3743,
+        323.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0908",
+      "file_page": 584,
+      "bbox": [
+        85.03936999999996,
+        155.09291000000007,
+        555.590568,
+        223.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-0908.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c0f2d3bf328647ce78ec585346ccfbeba515c975c42307becccfd5eff2575a28",
+      "cell_geometry_sha256": "a2c78ecc83beeea1a0dedf68886de3ed6eda606e75ca56009c1dabbdbdb9f083",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0909",
+      "file_page": 584,
+      "bbox": [
+        85.03936999999996,
+        513.2929200000001,
+        555.590568,
+        581.8929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-0909.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "b8cc9b24dd7126451c2cc1e303ac8d33e1c79fada68a7dfb5e353625a06f8cea",
+      "cell_geometry_sha256": "11683a8805efcffca7ad126fe29091cf84869d5870205528267ccac768360ee0",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

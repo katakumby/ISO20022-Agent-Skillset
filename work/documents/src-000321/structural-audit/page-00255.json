@@ -1,0 +1,179 @@
+{
+  "source_id": "src-000321",
+  "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+  "file_page": 255,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 85,
+    "2": 90
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 76,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "7965aa91ad0acaaf5680907ac6c69ecc288e7c0b0e611a97d12e49181a7c19f8",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 2,
+      "bbox": [
+        130.1204,
+        66.3237,
+        296.1009,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        57.6929,
+        312.2855,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        295.1009,
+        66.3237,
+        312.7855,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        57.6929,
+        312.2855,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 47,
+      "bbox": [
+        130.1204,
+        209.3237,
+        274.9632,
+        210.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        200.6929,
+        291.1478,
+        210.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 49,
+      "bbox": [
+        273.9632,
+        209.3237,
+        291.6478,
+        210.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        200.6929,
+        291.1478,
+        210.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 159,
+      "bbox": [
+        130.1204,
+        695.1238,
+        234.9486,
+        696.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        686.4929,
+        251.1331,
+        696.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 161,
+      "bbox": [
+        233.9486,
+        695.1238,
+        251.6331,
+        696.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        686.4929,
+        251.1331,
+        696.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0338",
+      "file_page": 255,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        510.2362314285714,
+        129.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0338.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "856b0f51e98aec83ac191f494282c883205036e082d953da9fd68565d2a6c301",
+      "cell_geometry_sha256": "624211f3edbc8678f84da6a18b297c962fcd64ace7fd12cc442f07f4e910c398",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0339",
+      "file_page": 255,
+      "bbox": [
+        85.03936999999996,
+        217.69291000000013,
+        510.2362314285714,
+        615.09292
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0339.md",
+      "rows": 7,
+      "matrix_cells": 21,
+      "physical_cells": 21,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ade77dcfdbf8e45d8f752944b1c96c7b82cbe96e1a3e9f1080016743343174ff",
+      "cell_geometry_sha256": "a8e309060195b192daf2e74c354bb92d2898a7234c80a8e312b36075c4b0989a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 21,
+      "independent_cells_match": 20,
+      "exceptions": [
+        {
+          "row": 3,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            284.09291000000013,
+            510.2362314285714,
+            362.29291000000006
+          ],
+          "stored_value": "Provider which will consolidate post-\ntrade information into a continuous\nelectronic data stream and make it\npublicly available as close to real time as\ntechnologically possible on a reasonable\ncommercial basis and free of charge\nafter 15 minutes.",
+          "pdfium_value": "Provider which will consolidate post\u0002trade information into a continuous\r\nelectronic data stream and make it\r\npublicly available as close to real time as\r\ntechnologically possible on a reasonable\r\ncommercial basis and free of charge\r\nafter 15 minutes."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

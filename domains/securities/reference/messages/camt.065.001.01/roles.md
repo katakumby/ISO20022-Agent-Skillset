@@ -1,0 +1,98 @@
+---
+template: false
+document_kind: "message-roles"
+review_status: "needs-review"
+title: "camt.065.001.01 participant and direction evidence"
+domain: "securities"
+message_id: "camt.065.001.01"
+message_family: "camt.065"
+namespace: "urn:iso:std:iso:20022:tech:xsd:camt.065.001.01"
+source_ids: ["src-000233", "src-000241", "src-000363"]
+message_sets: ["t2s", "t2s-limit-utilisation-journal"]
+role_labels: ["a central securities depository", "a directly connected system party", "bank", "central counter party", "central securities depository", "central securities depository participant", "central system", "directly connected system party", "system participant", "the central system"]
+search_terms: ["a central securities depository", "a directly connected system party", "bank", "central counter party", "central securities depository", "central securities depository participant", "central system", "directly connected system party", "system participant", "the central system"]
+participant_ids: ["participant-functionality-src-000363-central-system", "participant-narrative-src-000363-bank", "participant-narrative-src-000363-central-counter-party", "participant-narrative-src-000363-central-securities-depository", "participant-narrative-src-000363-central-securities-depository-participant", "participant-narrative-src-000363-directly-connected-system-participant", "participant-narrative-src-000363-system-participant"]
+role_extraction_status: "role-evidence-extracted-needs-review"
+source_locations: [{"source_id": "src-000233", "heading": "6 camt.065.001.01 LimitUtilisationJournalReportV01", "file_pages": [73, 92]}, {"source_id": "src-000363", "heading": "3 camt.065.001.01 LimitUtilisationJournalReportV01", "file_pages": [9, 28]}]
+limitations: ["Lexical extraction is incomplete for pronouns, implied roles, complex conditions and unrecognised narrative constructions; no unchecked assertion is marked reviewed.", "Only exact definition headings are matched. A missing or pending MDR definition is not evidence of absent business roles.", "Sender is not assumed to be initiator. Functional participant roles are not equated with institutional examples.", "Different publication statements remain distinct. Same-name participants are linked only by explicit labels within source/publication scope."]
+updated: "2026-11-09"
+---
+
+# camt.065.001.01 participants and message directions
+
+This page retrieves literal role statements from the **exact message definition**. Sender, receiver and initiator are separate assertions. Institutional examples, intermediaries, copies, conditional paths and negative statements remain in their source context. Automatic extraction is not a completed semantic review.
+
+Coverage: **role-evidence-extracted-needs-review**. 2 direction/initiator/exchange clauses; 7 uniquely resolved participant references.
+
+## src-000233 — 6 camt.065.001.01 LimitUtilisationJournalReportV01
+
+[src-000233](../../../../../raw-input/target2securities_t2s/ISO20022_MDRPart2_Target2Securities_August_2026_v1.pdf); Functionality file pp73; publication August 2026.
+
+### Direction and initiation clauses
+
+#### src-000233-camt.065.001.01-p73-c001-d1
+
+Kind: exchange-participants; message applicability: **current-message**; src-000233 file p73, scope.
+
+- Exchange participants: **the central system and a central securities depository or a directly connected system party (the central securities depository participant granted direct access, like a bank or central counter party)**. [the central system](../../../../../shared/reference/participants/participant-functionality-src-000363-central-system.md); [a central securities depository](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md); [a directly connected system party](../../../../../shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md).
+
+> The LimitUtilisationJournalReport message is exchanged between the central system and a central securities depository or a directly connected system party (the central securities depository participant granted direct access, like a bank or central counter party) and is used to return information about the limit.
+
+An exchange-between statement establishes participation, not sender/receiver direction.
+
+### Additional role mentions, actions and scenario context
+
+These are narrative mentions and literal action clauses, not additional assumed senders or receivers. The quoted text determines whether a role is an example, intermediary, recipient of a copy, excluded party, or conditional participant.
+
+**src-000233-camt.065.001.01-p73-c001 — file p73, scope.**
+
+Mentioned roles: [central system](../../../../../shared/reference/participants/participant-functionality-src-000363-central-system.md); [central securities depository](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md); [directly connected system party](../../../../../shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md); [central securities depository participant](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository-participant.md); [bank](../../../../../shared/reference/participants/participant-narrative-src-000363-bank.md); [central counter party](../../../../../shared/reference/participants/participant-narrative-src-000363-central-counter-party.md).
+
+Quoted above in src-000233-camt.065.001.01-p73-c001-d1.
+
+**src-000233-camt.065.001.01-p73-c002 — file p73, scope.**
+
+Mentioned roles: [system participant](../../../../../shared/reference/participants/participant-narrative-src-000363-system-participant.md).
+
+> Its purpose is to report information regarding the journal of transactions impacting the utilisation of limits that have been defined by the system participant.
+
+## src-000363 — 3 camt.065.001.01 LimitUtilisationJournalReportV01
+
+[src-000363](../../../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_LimitUtilisationJournal_MessageSet/ISO20022_MDRPart2_Target2Securities_LimitUtilisationJournal_v1.pdf`; Functionality file pp9; publication february-2025.
+
+### Direction and initiation clauses
+
+#### src-000363-camt.065.001.01-p9-c001-d1
+
+Kind: exchange-participants; message applicability: **current-message**; src-000363 file p9, scope.
+
+- Exchange participants: **the central system and a central securities depository or a directly connected system party (the central securities depository participant granted direct access, like a bank or central counter party)**. [the central system](../../../../../shared/reference/participants/participant-functionality-src-000363-central-system.md); [a central securities depository](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md); [a directly connected system party](../../../../../shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md).
+
+> The LimitUtilisationJournalReport message is exchanged between the central system and a central securities depository or a directly connected system party (the central securities depository participant granted direct access, like a bank or central counter party) and is used to return information about the limit.
+
+An exchange-between statement establishes participation, not sender/receiver direction.
+
+### Additional role mentions, actions and scenario context
+
+These are narrative mentions and literal action clauses, not additional assumed senders or receivers. The quoted text determines whether a role is an example, intermediary, recipient of a copy, excluded party, or conditional participant.
+
+**src-000363-camt.065.001.01-p9-c001 — file p9, scope.**
+
+Mentioned roles: [central system](../../../../../shared/reference/participants/participant-functionality-src-000363-central-system.md); [central securities depository](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md); [directly connected system party](../../../../../shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md); [central securities depository participant](../../../../../shared/reference/participants/participant-narrative-src-000363-central-securities-depository-participant.md); [bank](../../../../../shared/reference/participants/participant-narrative-src-000363-bank.md); [central counter party](../../../../../shared/reference/participants/participant-narrative-src-000363-central-counter-party.md).
+
+Quoted above in src-000363-camt.065.001.01-p9-c001-d1.
+
+**src-000363-camt.065.001.01-p9-c002 — file p9, scope.**
+
+Mentioned roles: [system participant](../../../../../shared/reference/participants/participant-narrative-src-000363-system-participant.md).
+
+> Its purpose is to report information regarding the journal of transactions impacting the utilisation of limits that have been defined by the system participant.
+
+## Limitations and navigation
+
+- Lexical extraction is incomplete for pronouns, implied roles, complex conditions and unrecognised narrative constructions; no unchecked assertion is marked reviewed.
+- Only exact definition headings are matched. A missing or pending MDR definition is not evidence of absent business roles.
+- Sender is not assumed to be initiator. Functional participant roles are not equated with institutional examples.
+- Different publication statements remain distinct. Same-name participants are linked only by explicit labels within source/publication scope.
+
+[Canonical message](index.md) · [Full Functionality and detailed MDR evidence](mdr-evidence.md) · [Issue register](../../../../../tracking/issues.md)

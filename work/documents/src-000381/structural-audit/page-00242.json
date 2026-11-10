@@ -1,0 +1,185 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 242,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 105,
+    "2": 155
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 141,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "21e83c685463d65c06bfeb7859c5d824ab3e0b5fbe344a2fc273b1e335e7ed19",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        342.4544,
+        121.5237,
+        494.5433,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        342.9544,
+        112.8929,
+        510.7278,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 10,
+      "bbox": [
+        493.5433,
+        121.5237,
+        511.2278,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        342.9544,
+        112.8929,
+        510.7278,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 176,
+      "bbox": [
+        130.1204,
+        441.5237,
+        302.7659,
+        442.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        432.8929,
+        318.9505,
+        442.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 178,
+      "bbox": [
+        301.7659,
+        441.5237,
+        319.4505,
+        442.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        432.8929,
+        318.9505,
+        442.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0404",
+      "file_page": 242,
+      "bbox": [
+        85.03936999999996,
+        141.89291000000014,
+        555.5905690909091,
+        230.69292000000019
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0404.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7251f32e65a1c9a984e105e98f5140da1c63529723ff8222bca18bc8106fcf89",
+      "cell_geometry_sha256": "57242ad3609a304452278b9956d5f219c3f61c9aa5342cd5695aeb239f5e4520",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0405",
+      "file_page": 242,
+      "bbox": [
+        85.03936999999996,
+        295.0929000000001,
+        555.5905690909091,
+        363.69290000000007
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0405.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c9abdc4b7b94c052988f4d01b3e7f47d421a106c3e88819214e9ce8f8927ef2e",
+      "cell_geometry_sha256": "edc5be9ffab16c9596f548e833e3b91eef91900bb655437dfd9e822f7a2191b3",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0406",
+      "file_page": 242,
+      "bbox": [
+        85.03936999999996,
+        449.8929200000001,
+        510.2362314285714,
+        710.8929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0406.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f1c59c6c4ffa4ba77d263cdceb00f7d3493e7211aba98c73904005563661a535",
+      "cell_geometry_sha256": "7ba274180a4825295114dba7cabfde93afbbcf935ffbdbafc20003f06d77471a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 13,
+      "exceptions": [
+        {
+          "row": 3,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            516.2929200000001,
+            510.2362314285714,
+            574.4929200000001
+          ],
+          "stored_value": "Addition of a securities restriction\nreference representing a securities sub-\nposition to be utilised within the\nsettlement instruction for the delivery or\nreceipt of securities.",
+          "pdfium_value": "Addition of a securities restriction\r\nreference representing a securities sub\u0002position to be utilised within the\r\nsettlement instruction for the delivery or\r\nreceipt of securities."
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            574.4929200000001,
+            510.2362314285714,
+            642.6929300000002
+          ],
+          "stored_value": "Removal of a cash restriction reference,\nalready present within the settlement\ninstruction, representing a cash sub-\nbalance to be utilised within the\nsettlement instruction for the debiting or\ncrediting of cash.",
+          "pdfium_value": "Removal of a cash restriction reference,\r\nalready present within the settlement\r\ninstruction, representing a cash sub\u0002balance to be utilised within the\r\nsettlement instruction for the debiting or\r\ncrediting of cash."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

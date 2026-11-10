@@ -1,0 +1,61 @@
+flowchart TB
+subgraph laneC["Creditor"]
+returnC["Reconcile Return Direct Debit"]
+endC((("Reconciled Direct Debit")))
+end
+subgraph laneD["Debtor"]
+start(("Start"))
+request["Request Refund (from Process Direct Debit)"]
+insufficient{"Insufficient information?"}
+correctD["Correct and Resubmit"]
+rejectedD((("Rejected Request")))
+creditD["Reconcile Credit Entry"]
+endD((("Reconciled Credit Entry")))
+end
+subgraph laneCA["Creditor Agent"]
+processCA["Process Cleared Return"]
+debitCA["Reconcile Debit Entry"]
+endCA(((" ")))
+end
+subgraph laneACH["ACH (System Transaction Administrator)"]
+acceptClearing{"accept?"}
+rejectClearing["Reject Direct Debit Return Instruction"]
+clear["Clear Direct Debit Return"]
+end
+subgraph laneS["Settlement Agent"]
+settle["Settle Direct Debit Return Proceeds"]
+end
+subgraph laneDA["Debtor Agent"]
+return["Issue Direct Debit Return"]
+correctDA["Correct and Resubmit Rejected Return Instruction"]
+creditDA["Reconcile Credit Entry"]
+acceptRequest{"accept request?"}
+rejectRequest["Reject Request for Refund"]
+dematerialise["Dematerialise the Request for Refund"]
+informD["Inform Debtor"]
+end
+return --> acceptClearing
+acceptClearing --> |"no"| rejectClearing
+rejectClearing --> correctDA
+correctDA --> return
+acceptClearing --> |"yes"| clear
+clear --> processCA
+processCA --> returnC
+returnC --> endC
+clear --> settle
+settle --> debitCA
+debitCA --> endCA
+settle --> creditDA
+start --> request
+request --> acceptRequest
+acceptRequest --> |"no"| rejectRequest
+rejectRequest --> insufficient
+insufficient --> |"yes"| correctD
+insufficient --> |"no"| rejectedD
+correctD --> request
+acceptRequest --> |"yes"| dematerialise
+dematerialise --> return
+creditDA --> informD
+informD --> creditD
+creditD --> endD
+style start fill:#222,stroke:#222,color:#fff

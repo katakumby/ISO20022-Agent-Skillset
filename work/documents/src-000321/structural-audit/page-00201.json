@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000321",
+  "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+  "file_page": 201,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 86,
+    "2": 90
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 76,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "d943c52be52a99747f05c196704e9fad090e7636790d73543438c27cbe55f228",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        144.5687,
+        120.3237,
+        319.4212,
+        121.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        111.6929,
+        318.9212,
+        121.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        323.9778,
+        120.3237,
+        463.8157,
+        121.3237
+      ],
+      "link_annotation_bbox": [
+        324.4778,
+        111.6929,
+        463.3157,
+        121.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 13,
+      "bbox": [
+        320.2278,
+        138.3237,
+        468.4153,
+        139.3237
+      ],
+      "link_annotation_bbox": [
+        320.7278,
+        129.6929,
+        484.5999,
+        139.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 15,
+      "bbox": [
+        467.4153,
+        138.3237,
+        485.0999,
+        139.3237
+      ],
+      "link_annotation_bbox": [
+        320.7278,
+        129.6929,
+        484.5999,
+        139.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 107,
+      "bbox": [
+        130.1204,
+        550.4238,
+        261.0862,
+        551.4238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        541.7929,
+        277.2708,
+        551.7929
+      ]
+    },
+    {
+      "path_object_ordinal": 109,
+      "bbox": [
+        260.0862,
+        550.4238,
+        277.7708,
+        551.4238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        541.7929,
+        277.2708,
+        551.7929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0255",
+      "file_page": 201,
+      "bbox": [
+        85.03936999999996,
+        146.6929100000001,
+        555.590568,
+        215.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0255.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a871dad1d91d218bd98cbfe85659207b47d31e009789d13a11ebc12b2bb84fde",
+      "cell_geometry_sha256": "90a79b96622241649e31486ce6000deb47aefb3f0f6489d2336ae998ff501a5c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0256",
+      "file_page": 201,
+      "bbox": [
+        85.03936999999996,
+        558.7929800000002,
+        510.23623,
+        661.5929900000001
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0256.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "6fa990d6a45cd2dfb5d3cbd88afaaf7e034e6433410e8acae32e5c32c38b79b7",
+      "cell_geometry_sha256": "07bb20a2a430a20b313d5febeb7fa589aca6015f7c652efc0a3750e4775664e6",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

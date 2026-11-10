@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 458,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 146,
+    "2": 288
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 10,
+    "table-associated-axis-line": 272,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "3df16ddae0b6dab454ad7202aecef648ec728b59b943a6ae18db36636f16c826",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        342.4544,
+        66.3237,
+        494.5433,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        342.9544,
+        57.6929,
+        510.7278,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        493.5433,
+        66.3237,
+        511.2278,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        342.9544,
+        57.6929,
+        510.7278,
+        67.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0863",
+      "file_page": 458,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905750000001,
+        175.49292000000014
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0863.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f8cecd3d042870bdb42afb4d1f05730f6359c19160ca5453f913f886820b63c1",
+      "cell_geometry_sha256": "a1cac789552ed5bfdb08b3e5ea54a7ac8c4ce69b02f1715188730b78916a051f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0864",
+      "file_page": 458,
+      "bbox": [
+        85.03936999999996,
+        261.09292000000016,
+        555.5905750000001,
+        592.2929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0864.md",
+      "rows": 16,
+      "matrix_cells": 96,
+      "physical_cells": 96,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "19f64429fbc1926481216bd866a30cdf21fb4e81b6788792d00d28437b0cca2c",
+      "cell_geometry_sha256": "c77ee0426c96881fc03c93bc860db984603149ad43e941f9190e3839369b4182",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 96,
+      "independent_cells_match": 96,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

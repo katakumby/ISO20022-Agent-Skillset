@@ -1,0 +1,68 @@
+{
+  "source_id": "src-000346",
+  "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.2362279999999,
+        698.6929200000002
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          320.4929200000002
+        ],
+        [
+          85.03936999999999,
+          320.4929200000002,
+          283.46457,
+          698.6929200000002
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.2362279999999,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.2362279999999,
+          320.4929200000002
+        ],
+        [
+          283.46457,
+          320.4929200000002,
+          510.2362279999999,
+          698.6929200000002
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "camt.076.001.01\nBillingReportRequestV01",
+          "The BillingReportRequest message is sent by the\nsystem member to the system transaction\nadministrator to request cumulative or itemised billing\ndata. The billing data may be cumulative information or\naggregated information on the level of a single\nsecurities or a dedicated cash account within a given\nperiod for each service item."
+        ],
+        [
+          "camt.077.001.01\nBillingReportV01",
+          "The BillingReport message is exchanged between the\nsystem transaction administrator and a system\nmember. It aims at providing the invoice or invoice\ncancellation and informing about data providing\ncumulative or itemised details backing an invoice.\nBillingReport is used for the following usages:\n- Invoice\nThe Cumulative Invoice will consist of the following:\n- Sum of the total number of units per service item for\neach CSD or CB;\n- Sum of the amounts based on the total number of\nunits per service item for each CSD or CB;\n- Cancellation status of the invoice data.\n- Invoice Cancellation\n- Cumulative Billing Data Query Response:\nThe BillingReport message is also used to inform the\nsystem member about details backing an invoice. This\ncan be sent via cumulative billing data or itemised\nbilling data as response to an invoice query message.\nItemised Billing Data Query Response: The\nBillingReport message is also used to inform the\nsystem member about details backing an invoice. This\ncan be via cumulative billing data or itemised billing\ndata as response to an invoice query message."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

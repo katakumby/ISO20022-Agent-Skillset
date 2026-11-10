@@ -1,0 +1,116 @@
+flowchart TB
+subgraph laneI["Initiating Party / Debtor"]
+start((" "))
+prepare["1 Prepare, authorise and send payment order(s)"]
+statusI["4 Receive Status Report"]
+repairChoice{"Is repair possible?"}
+repair["Repair Payment Order(s)"]
+recycle["Recycle Payment Order(s)"]
+track["6 Reconcile and track Payment"]
+tracked{"Reconciliation/tracking OK?"}
+investigate["Investigation/claim and resolve"]
+receiveChequeI["9.1 Receive cheque"]
+endI(((" ")))
+end
+subgraph laneF["Forwarding Agent"]
+authF["2 Receive and check authentication"]
+technicalF["3.1 Technical validation"]
+businessF["3.3 Apply business rules"]
+riskF["3.2 Assess static/dynamic risk"]
+rebuildF["3.4 Rebuild and forward payment order(s)"]
+ackF["5.3 Receive and forward acceptance acknowledgement"]
+debitF["7.1 Receive and forward Debit advices"]
+executionF["11.1 Receive and forward Execution status"]
+statusF0["4 Receive and forward Status Report"]
+statusF1["4 Receive and forward Status Report"]
+statusF2["4 Receive and forward Status Report"]
+statusF3["4 Receive and forward Status Report"]
+end
+subgraph laneDA["Debtor Agent"]
+authDA["Receive and check authentication"]
+technicalDA["3.1 Technical validation"]
+businessDA["3.3 Apply business rules"]
+riskDA["3.2 Assess static/dynamic risk"]
+confirmDA["5.1 Confirm acceptance"]
+ackDA["5.2 Send acceptance acknowledgement"]
+debitDA["7 Debit Customer Account and credit internal account"]
+adviceDA["7.1 Prepare and send Debit Advice(s)"]
+route{"Payment Routing"}
+bookDA["8 Internal book keeping"]
+chequeDA["9 Print Cheques"]
+rebuildDA["10 Rebuild Payments Order(s)"]
+executeDA["11 Execution Status"]
+end
+subgraph laneCA["Creditor Agent"]
+sortCA["Sort cheque(s) and credit transfers"]
+bookCA["8 Internal book keeping"]
+chequeCA["9 Print cheques"]
+end
+subgraph laneC["Creditor"]
+chequeC["9.1 Receive cheques"]
+infoC["Receive account information"]
+reconcileC["Reconciliation"]
+endC(((" ")))
+end
+start --> prepare
+prepare --> |"Authorisation"| authF
+prepare --> |"Payment order"| authF
+authF --> technicalF
+technicalF --> businessF
+businessF --> riskF
+riskF --> rebuildF
+rebuildF --> |"Payment order"| authDA
+statusI --> repairChoice
+repairChoice --> |"Yes"| repair
+repairChoice --> |"No"| recycle
+repair --> prepare
+recycle --> prepare
+statusI --> track
+track --> tracked
+tracked --> |"Yes"| endI
+tracked --> |"No"| investigate
+investigate --> endI
+receiveChequeI --> endI
+authDA --> technicalDA
+technicalDA --> businessDA
+businessDA --> riskDA
+riskDA --> confirmDA
+confirmDA --> ackDA
+ackDA --> ackF
+ackF --> track
+confirmDA --> debitDA
+debitDA --> adviceDA
+adviceDA --> debitF
+debitF --> track
+adviceDA --> route
+route --> |"On us"| bookDA
+route --> |"Cheque"| chequeDA
+route --> |"Not on us"| rebuildDA
+bookDA --> executeDA
+chequeDA --> executeDA
+rebuildDA --> executeDA
+executeDA --> executionF
+executionF --> track
+chequeDA --> |"Cheques"| receiveChequeI
+chequeDA --> |"Cheques"| chequeC
+rebuildDA --> |"Payment order"| sortCA
+sortCA --> bookCA
+sortCA --> chequeCA
+bookCA --> |"Account information"| infoC
+chequeCA --> |"Cheques"| chequeC
+chequeC --> reconcileC
+infoC --> reconcileC
+reconcileC --> endC
+technicalF --> statusI
+businessF --> statusI
+riskF --> statusI
+rebuildF --> statusI
+technicalDA --> statusF0
+statusF0 --> statusI
+businessDA --> statusF1
+statusF1 --> statusI
+riskDA --> statusF2
+statusF2 --> statusI
+debitDA --> statusF3
+statusF3 --> statusI
+style start fill:#222,stroke:#222,color:#222

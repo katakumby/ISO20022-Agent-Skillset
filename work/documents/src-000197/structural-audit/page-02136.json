@@ -1,0 +1,123 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 2136,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 103,
+    "1": 80
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 93,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "9a5e267302107862a8f3432c9b8283db88b7ed09a01fab343d6e3d65d8d71305",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-3749",
+      "file_page": 2136,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362299999999,
+        103.09291000000019
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3749.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c55b244cbfe5d609019148f7839f7e77a288f1ee16c13fd3ae9ebabbd0219c15",
+      "cell_geometry_sha256": "d9f538e5a6b110b25fb3de6368b5c7d5ee1f53124d13b3bce78d1ec6cfcb8ea0",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3750",
+      "file_page": 2136,
+      "bbox": [
+        85.03936999999996,
+        185.49291000000005,
+        510.2362299999999,
+        326.49291000000005
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3750.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a073455177037725e25f2bf8e31c8dc5594a0461864213085d529e0d767f5e3e",
+      "cell_geometry_sha256": "8a098cf581b1539f92d7bd4cfa112f8d2eb157e12ba5ad831d8f911fef2df000",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3751",
+      "file_page": 2136,
+      "bbox": [
+        85.03936999999996,
+        467.6929100000001,
+        510.2362299999999,
+        728.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3751.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f1c59c6c4ffa4ba77d263cdceb00f7d3493e7211aba98c73904005563661a535",
+      "cell_geometry_sha256": "c4ab09c929e14f04898d3cda67e3954324bf2314b7fcace94007bfeb7451cb61",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 13,
+      "exceptions": [
+        {
+          "row": 3,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            534.0929100000001,
+            510.2362299999999,
+            592.2929100000001
+          ],
+          "stored_value": "Addition of a securities restriction\nreference representing a securities sub-\nposition to be utilised within the\nsettlement instruction for the delivery or\nreceipt of securities.",
+          "pdfium_value": "Addition of a securities restriction\r\nreference representing a securities sub\u0002position to be utilised within the\r\nsettlement instruction for the delivery or\r\nreceipt of securities."
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            592.2929100000001,
+            510.2362299999999,
+            660.4929200000001
+          ],
+          "stored_value": "Removal of a cash restriction reference,\nalready present within the settlement\ninstruction, representing a cash sub-\nbalance to be utilised within the\nsettlement instruction for the debiting or\ncrediting of cash.",
+          "pdfium_value": "Removal of a cash restriction reference,\r\nalready present within the settlement\r\ninstruction, representing a cash sub\u0002balance to be utilised within the\r\nsettlement instruction for the debiting or\r\ncrediting of cash."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

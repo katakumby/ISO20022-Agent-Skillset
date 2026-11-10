@@ -1,0 +1,371 @@
+{
+  "message_id": "reda.031.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "51 reda.031.001.01 PartyDeletionRequestV01",
+      "definition_pages": [
+        2213,
+        2215
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyDeletionRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.031.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2213
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+                        "file_pages": [
+                          76
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.031.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2213
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+                        "file_pages": [
+                          76
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.031.001.01-p2213-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "51 reda.031.001.01 PartyDeletionRequestV01",
+          "file_pages": [
+            2213
+          ],
+          "section": "scope",
+          "quote": "The PartyDeletionRequest message is sent by the instructing party to the executing party to request a deletion of a party defined in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyDeletionRequest message is sent by the instructing party to the executing party to request a deletion of a party defined in the executing system.",
+          "raw_quote": "Scope:\nThe PartyDeletionRequest message is sent by the instructing party to the executing party to request a\ndeletion of a party defined in the executing system.",
+          "file_pages": [
+            2213
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.031.001.01-p2213-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 48,
+              "end": 65,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.031.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2213
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+                        "file_pages": [
+                          76
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 73,
+              "end": 88,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.031.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2213
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+                        "file_pages": [
+                          76
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.031.001.01-p2213-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the deletion of an existing party by providing its identification.",
+          "raw_quote": "Usage:\nIt aims at instructing the deletion of an existing party by providing its identification.",
+          "file_pages": [
+            2213
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.031.001.01-p2213-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing of the party deletion request message is provided via a party status advice.",
+          "raw_quote": "Processing of the party deletion request message is provided via a party status advice.",
+          "file_pages": [
+            2213
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.031.001.01-p2213-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2213
+      ],
+      "file_pages": [
+        2213
+      ]
+    },
+    {
+      "source_id": "src-000369",
+      "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+      "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+      "definition_pages": [
+        76,
+        78
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyDeletionRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000369-reda.031.001.01-p76-c001-d1",
+          "source_id": "src-000369",
+          "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+          "heading": "7 reda.031.001.01 PartyDeletionRequestV01",
+          "file_pages": [
+            76
+          ],
+          "section": "scope",
+          "quote": "The PartyDeletionRequest message is sent by the instructing party to the executing party to request a deletion of a party defined in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyDeletionRequest message is sent by the instructing party to the executing party to request a deletion of a party defined in the executing system.",
+          "raw_quote": "Scope:\nThe PartyDeletionRequest message is sent by the instructing party to the executing party to request a\ndeletion of a party defined in the executing system.",
+          "file_pages": [
+            76
+          ],
+          "section": "scope",
+          "evidence_id": "src-000369-reda.031.001.01-p76-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 48,
+              "end": 65,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 73,
+              "end": 88,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000369-reda.031.001.01-p76-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the deletion of an existing party by providing its identification.",
+          "raw_quote": "Usage:\nIt aims at instructing the deletion of an existing party by providing its identification.",
+          "file_pages": [
+            76
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.031.001.01-p76-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing of the party deletion request message is provided via a party status advice.",
+          "raw_quote": "Processing of the party deletion request message is provided via a party status advice.",
+          "file_pages": [
+            76
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.031.001.01-p76-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        76
+      ],
+      "file_pages": [
+        76
+      ]
+    }
+  ]
+}

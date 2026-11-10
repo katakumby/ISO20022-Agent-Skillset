@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000080",
+  "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+  "file_page": 269,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 110,
+    "2": 155
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 5,
+    "table-associated-axis-line": 142,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "35ae1e9ec53b540176de1dff89bbf6788725df2de1ea460f3ec8d7b576c7493b",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        84.5394,
+        96.3237,
+        247.1898,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        263.3743,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        246.1898,
+        96.3237,
+        263.8743,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        263.3743,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 123,
+      "bbox": [
+        144.5686,
+        333.7238,
+        236.5989,
+        334.7238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        325.093,
+        236.0989,
+        335.093
+      ]
+    },
+    {
+      "path_object_ordinal": 125,
+      "bbox": [
+        241.1556,
+        333.7238,
+        439.348,
+        334.7238
+      ],
+      "link_annotation_bbox": [
+        241.6556,
+        325.093,
+        438.848,
+        335.093
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0415",
+      "file_page": 269,
+      "bbox": [
+        85.03936999999996,
+        104.6929100000001,
+        555.5905714285715,
+        229.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-0415.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "26f61c2b424cc599ee18854642c4db1792f152f2831c94c8fe3d2ea673f3588e",
+      "cell_geometry_sha256": "faf3d1b48842e55900fc65617477c98b6ef7c0cbfb89fecd32a05d4d5e7943f7",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0416",
+      "file_page": 269,
+      "bbox": [
+        85.03936999999996,
+        372.0929300000001,
+        555.5905714285715,
+        489.0929300000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-0416.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "97f7c3210f9b079b4fc467fa0ffb5b99d1575b0e52efbc8e1c4ccba75917233b",
+      "cell_geometry_sha256": "e158bb4344c6996ec5fa4a5d9e19c1258f6da32616eccf82ac4535d2021c356b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

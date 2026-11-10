@@ -1,0 +1,97 @@
+classDiagram
+direction TB
+class Role {
+<<BusinessComponent>>
+}
+class AssetPartyRole {
+<<BusinessComponent>>
+}
+class GuaranteePartyRole {
+<<BusinessComponent>>
+}
+class IssuerRole {
+<<BusinessComponent>>
+}
+class GuarantorRole {
+<<BusinessComponent>>
+}
+class InvestmentFundPartyRole {
+<<BusinessComponent>>
+}
+class InvestmentFund {
+<<BusinessComponent>>
+}
+class AccountPartyRole {
+<<BusinessComponent>>
+}
+class Account {
+<<BusinessComponent>>
+}
+class InvestmentAccountPartyRole {
+<<BusinessComponent>>
+}
+class InvestmentAccount {
+<<BusinessComponent>>
+}
+class FundOrderDesk {
+<<BusinessComponent>>
+}
+class Auditor {
+<<BusinessComponent>>
+}
+class FundManagerRole {
+<<BusinessComponent>>
+}
+class PlacementAgent {
+<<BusinessComponent>>
+}
+class Settlor {
+<<BusinessComponent>>
+}
+class FundAdministratorRole {
+<<BusinessComponent>>
+}
+class Grantor {
+<<BusinessComponent>>
+}
+class FundAccountantRole {
+<<BusinessComponent>>
+}
+class FundPromoter {
+<<BusinessComponent>>
+}
+class LegalGuardianRole {
+<<BusinessComponent>>
+}
+class TrusteeRole {
+<<BusinessComponent>>
+}
+class AdministratorRole {
+<<BusinessComponent>>
+}
+class Nominee {
+<<BusinessComponent>>
+}
+AssetPartyRole --|> Role
+GuaranteePartyRole --|> Role
+InvestmentFundPartyRole --|> Role
+AccountPartyRole --|> Role
+IssuerRole --|> AssetPartyRole
+GuarantorRole --|> GuaranteePartyRole
+FundOrderDesk --|> InvestmentFundPartyRole
+Auditor --|> InvestmentFundPartyRole
+FundManagerRole --|> InvestmentFundPartyRole
+PlacementAgent --|> InvestmentFundPartyRole
+Settlor --|> InvestmentFundPartyRole
+FundAdministratorRole --|> InvestmentFundPartyRole
+Grantor --|> InvestmentFundPartyRole
+FundAccountantRole --|> InvestmentFundPartyRole
+FundPromoter --|> FundManagerRole
+InvestmentAccountPartyRole --|> AccountPartyRole
+LegalGuardianRole --|> InvestmentAccountPartyRole
+TrusteeRole --|> InvestmentAccountPartyRole
+AdministratorRole --|> InvestmentAccountPartyRole
+Nominee --|> InvestmentAccountPartyRole
+InvestmentAccount --|> Account
+InvestmentFund -- InvestmentFundPartyRole : + PartyRole
+AccountPartyRole -- Account : + PartyRole

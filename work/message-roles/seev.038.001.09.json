@@ -1,0 +1,349 @@
+{
+  "message_id": "seev.038.001.09",
+  "publications": [
+    {
+      "source_id": "src-000080",
+      "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+      "heading": "10 seev.038.001.09 CorporateActionNarrativeV09",
+      "definition_pages": [
+        692,
+        700
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "“Sent between” establishes participants, not an ordered sender/receiver direction. Designated agent remains an alternative to account owner.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "26832dc35322b2c13f5406d52f6a2ef4320e514cc756081d7585952da77a31b3",
+          "exchange_participants": {
+            "expression": "account servicer and account owner or its designated agent",
+            "labels": [
+              {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.038.001.09-p692-c001-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "10 seev.038.001.09 CorporateActionNarrativeV09",
+          "file_pages": [
+            692
+          ],
+          "section": "scope",
+          "quote": "The CorporateActionNarrative message is sent between an account servicer and an account owner or its designated agent to cater for such processes that cannot be handled using messages such as the CorporateActionNotification.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "4b513527273fc41a2bd7a7734d92a67daf68358e96997eb5d8033ad4d44398b3",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.038.001.09-p692-c004-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "10 seev.038.001.09 CorporateActionNarrativeV09",
+          "file_pages": [
+            692
+          ],
+          "section": "usage",
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CorporateActionNarrative message is sent between an account servicer and an account owner or its designated agent to cater for such processes that cannot be handled using messages such as the CorporateActionNotification.",
+          "raw_quote": "Scope\nThe CorporateActionNarrative message is sent between an account servicer and an account owner or\nits designated agent to cater for such processes that cannot be handled using messages such as the\nCorporateActionNotification.",
+          "file_pages": [
+            692
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c001",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 56,
+              "end": 72,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 80,
+              "end": 93,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "its designated agent",
+              "start": 97,
+              "end": 117,
+              "resolution": {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.038.001.09-p692-c001-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "raw_quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "file_pages": [
+            692
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy),",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\nCopy),",
+          "file_pages": [
+            692
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c003",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "raw_quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy\nDuplicate), using the relevant elements in the business application header (BAH).",
+          "file_pages": [
+            692
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c004",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.038.001.09-p692-c004-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "It is not to be used for event narrative as that should be included in the CorporateActionNotification.",
+          "raw_quote": "It is not to be used for event narrative as that should be included in the\nCorporateActionNotification.",
+          "file_pages": [
+            692
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Examples of when the CorporateActionNarrative message may be used include tax reclaims, restrictions, documentation requirements.",
+          "raw_quote": "Examples of when the CorporateActionNarrative message may be used\ninclude tax reclaims, restrictions, documentation requirements.",
+          "file_pages": [
+            692
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "This message should only be used when bilaterally agreed.",
+          "raw_quote": "This message should only be used\nwhen bilaterally agreed.",
+          "file_pages": [
+            692
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "This message is bi-directional.",
+          "raw_quote": "This message is bi-directional.",
+          "file_pages": [
+            692
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "Usage\nThe message may also be used to:",
+          "file_pages": [
+            692
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        692
+      ],
+      "file_pages": [
+        692
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000080",
+        "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+        "message_id": "seev.038.001.09",
+        "heading": "10 seev.038.001.09 CorporateActionNarrativeV09",
+        "file_pages": [
+          692
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "26832dc35322b2c13f5406d52f6a2ef4320e514cc756081d7585952da77a31b3",
+          "7a49b6ec9d14dc0b7490d29f9ec971f1cc7e6b18b275e7b94dd935352c44030c",
+          "4770f48bf8e0e65419b7cfb6ca35b33a5e0d73d0e8f3b13ad2d610651864019e",
+          "4b513527273fc41a2bd7a7734d92a67daf68358e96997eb5d8033ad4d44398b3",
+          "3c629e4bbfa4efe28c36a85c6c2262cb74637e698faba99a09a8a24da60bd4bc",
+          "51872751d5717addc643a2080d1d4f546acb6f11f2ea8b16d45ca749119916e9",
+          "7631bb0355e964a05617d7147a2ae33fc31949a350305543c7342c5a03dcd837",
+          "afbc0b708e210f7d5eb4e98359623e1cf6635c3754d009f7a74daa821ffdf024",
+          "76c74fbce617bac1742affbdab19855442da8691b340fe897670a951e0c3a645"
+        ]
+      }
+    }
+  ]
+}

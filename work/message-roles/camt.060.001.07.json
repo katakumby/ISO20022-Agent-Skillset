@@ -1,0 +1,219 @@
+{
+  "message_id": "camt.060.001.07",
+  "publications": [
+    {
+      "source_id": "src-000005",
+      "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+      "heading": "5 camt.060.001.07 AccountReportingRequestV07",
+      "definition_pages": [
+        781,
+        795
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The AccountReportingRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "one of its account servicing institutions",
+            "labels": [
+              {
+                "label": "one of its account servicing institutions",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000005-account-servicing-institution",
+                  "path": "shared/reference/participants/participant-functionality-src-000005-account-servicing-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the account owner, either directly or through a forwarding agent",
+            "labels": [
+              {
+                "label": "the account owner",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000004-account-owner",
+                  "path": "shared/reference/participants/participant-src-000004-account-owner.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the account owner, either directly or through a forwarding agent"
+          },
+          "claim_id": "src-000005-camt.060.001.07-p781-c001-d1",
+          "source_id": "src-000005",
+          "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+          "heading": "5 camt.060.001.07 AccountReportingRequestV07",
+          "file_pages": [
+            781
+          ],
+          "section": "scope",
+          "quote": "The AccountReportingRequest message is sent by the account owner, either directly or through a forwarding agent, to one of its account servicing institutions.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or",
+            "through"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The AccountReportingRequest message is sent by the account owner, either directly or through a forwarding agent, to one of its account servicing institutions.",
+          "raw_quote": "Scope\nThe AccountReportingRequest message is sent by the account owner, either directly or through a\nforwarding agent, to one of its account servicing institutions.",
+          "file_pages": [
+            781
+          ],
+          "section": "scope",
+          "evidence_id": "src-000005-camt.060.001.07-p781-c001",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 51,
+              "end": 64,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000004-account-owner",
+                  "path": "shared/reference/participants/participant-src-000004-account-owner.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "forwarding agent",
+              "start": 95,
+              "end": 111,
+              "resolution": {
+                "label": "forwarding agent",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000004-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000004-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "one of its account servicing institutions",
+              "start": 116,
+              "end": 157,
+              "resolution": {
+                "label": "one of its account servicing institutions",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000005-account-servicing-institution",
+                  "path": "shared/reference/participants/participant-functionality-src-000005-account-servicing-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000005-camt.060.001.07-p781-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to ask the account servicing institution to send a report on the account owner's account in a BankToCustomerAccountReport (camt.052), a BankToCustomerStatement (camt.053) or a BankToCustomerDebitCreditNotification (camt.054).",
+          "raw_quote": "It is used to ask the account servicing\ninstitution to send a report on the account owner's account in a BankToCustomerAccountReport\n(camt.052), a BankToCustomerStatement (camt.053) or a BankToCustomerDebitCreditNotification\n(camt.054).",
+          "file_pages": [
+            781
+          ],
+          "section": "scope",
+          "evidence_id": "src-000005-camt.060.001.07-p781-c002",
+          "mentions": [
+            {
+              "label": "account servicing institution",
+              "start": 22,
+              "end": 51,
+              "resolution": {
+                "label": "account servicing institution",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000005-account-servicing-institution",
+                  "path": "shared/reference/participants/participant-functionality-src-000005-account-servicing-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 76,
+              "end": 89,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000004-account-owner",
+                  "path": "shared/reference/participants/participant-src-000004-account-owner.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "account servicing institution",
+                "scope_source_id": "src-000005",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000005-account-servicing-institution",
+                  "path": "shared/reference/participants/participant-functionality-src-000005-account-servicing-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "is asked to send",
+              "voice": "source-reviewed-literal-clause",
+              "limitation": "The requested objects are camt.052, camt.053 or camt.054 reports; no report receiver or complete current-message direction is supplied here.",
+              "clause_review_date": "2026-11-09"
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "source-explicit-role-action",
+            "rationale": "The actor and action are named in this sentence; the action object and conditions are retained and are not automatically the indexed message.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        781
+      ],
+      "file_pages": [
+        781
+      ]
+    }
+  ]
+}

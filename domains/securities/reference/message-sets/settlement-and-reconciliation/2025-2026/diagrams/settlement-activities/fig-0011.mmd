@@ -1,0 +1,48 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    IS@{shape: f-circ, label: " "}
+    IF@{shape: framed-circle, label: " "}
+    IA("Instruct intra-position movement")
+    IM("Monitor Intra-position movement instruction")
+    ID{"Executed?"}
+    IU("Update Status")
+    IX(["Move position"])
+    IS --> IA
+    IM --> ID
+    ID -->|No| IU
+    IU --> IM
+    ID -->|Yes| IX
+    IX --> IF
+  end
+  subgraph E["Executing/Servicing Party"]
+    EP("Process instruction")
+    ED{"Processed?"}
+    EU("Update Status")
+    EM("Intra-position movement process")
+    ES{"Executed?"}
+    UP("Update Status")
+    EX(["Move position"])
+    EF@{shape: framed-circle, label: " "}
+    EP --> ED
+    ED -->|No| EU
+    ED -->|Yes| EM
+    EM --> ES
+    ES -->|No| UP
+    UP --> EM
+    ES -->|Yes| EX
+    EX --> EF
+  end
+  IA --> EP
+  EU --> IA
+  UP --> IM
+  EX --> IM
+  classDef main fill:#d1d8b8,stroke:#111,color:#111
+  classDef status fill:#c0d1e5,stroke:#111,color:#111
+  class IA,IM,ID,IX,EP,ED,EM,ES,EX main
+  class IU,EU,UP status
+  classDef start fill:#4472c4,stroke:#4472c4
+  classDef terminal fill:#fff,stroke:#111,stroke-width:3px
+  classDef synchronization fill:#111,stroke:#111
+  class IS start
+  class IF,EF terminal

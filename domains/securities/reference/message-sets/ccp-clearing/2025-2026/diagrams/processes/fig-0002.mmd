@@ -1,0 +1,34 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart TB
+  C["Clearing"]
+  T(["Trade Management"])
+  subgraph R["Risk Management"]
+    N(["Netting and Margining"])
+    D(["Default Fund Contribution"])
+  end
+  subgraph S["Settlement Management"]
+    SN(["Settlement (Netting)"])
+    B(["Buy in"])
+  end
+  subgraph RP["Reporting"]
+    Cash(["Cash"])
+    Fails(["Fails"])
+  end
+  CM(["Collateral Management"])
+  C --> T
+  C --> N
+  C --> D
+  C --> SN
+  C --> B
+  C --> RP
+  C --> CM
+  style RP fill:#b0b0b0
+  style CM fill:#b0b0b0
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

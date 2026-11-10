@@ -1,0 +1,23 @@
+# Local caches and dependencies (may contain machine-specific paths).
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.DS_Store
+Thumbs.db
+# Original local backups and unpublished audit scratch files.
+/tracking/history/
+/work/publication/
+# Local authentication and editor state.
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+# SQLite transient sidecars; packaged databases remain versioned.
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal

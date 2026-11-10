@@ -1,0 +1,24 @@
+---
+template: false
+document_kind: "business-rule"
+review_status: "needs-review"
+title: "C3 AdditionalDetailsRule"
+domain: "securities"
+source_ids: ["src-000197"]
+source_editions: ["March 2026"]
+message_sets: ["settlement-and-reconciliation"]
+updated: "2026-11-08"
+message_ids: ["sese.023.001.13"]
+rule_id: "C3"
+source_locations: [{"source_id": "src-000197", "file_pages": [498], "printed_pages": [498], "heading": "17.3 Constraints", "constraint": "C3"}]
+---
+
+# C3 AdditionalDetailsRule
+
+Source wording: [src-000197](../../../../../../evidence/omitted/e96bb98c659322ed5684b325.md), §17.3, file/printed page(s) 498. Wrapped lines are retained. This MDR rule is distinct from XSD validation; it may specify cross-field, market-data or business conditions beyond the schema.
+
+Unless bilaterally agreed between the sender and receiver, if FXAdditionalDetails and/or
+SettlementInstructionProcessingAdditionalDetails are present, then they must not contain
+information that can be provided in a structured field.
+
+[Constraint index](../rules-business.md)

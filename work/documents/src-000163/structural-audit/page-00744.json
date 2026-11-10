@@ -1,0 +1,127 @@
+{
+  "source_id": "src-000163",
+  "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+  "file_page": 744,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 100,
+    "2": 108
+  },
+  "path_classes": {
+    "link-annotation-underline": 5,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 97,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "78238794849de986df978204be12624bb9227378c92cde65717384fd91775bcc",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        130.1204,
+        160.7238,
+        242.7415,
+        161.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        152.0929,
+        264.4876,
+        162.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 11,
+      "bbox": [
+        241.7415,
+        160.7238,
+        264.9876,
+        161.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        152.0929,
+        264.4876,
+        162.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 182,
+      "bbox": [
+        144.5686,
+        538.7238,
+        280.471,
+        539.7238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        530.0929,
+        279.971,
+        540.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 185,
+      "bbox": [
+        130.1204,
+        556.7238,
+        316.0716,
+        557.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        548.0929,
+        337.8177,
+        558.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 187,
+      "bbox": [
+        315.0716,
+        556.7238,
+        338.3177,
+        557.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        548.0929,
+        337.8177,
+        558.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0852",
+      "file_page": 744,
+      "bbox": [
+        85.03936999999996,
+        299.4929100000001,
+        555.5905733333334,
+        448.8929100000001
+      ],
+      "output": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/documents/src-000163/tables/tbl-0852.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f48e039290149fb83dc0bda36e73150e4162af1e4796c6cdcf9f13d13e2d2bcb",
+      "cell_geometry_sha256": "cbf60cb1e33b7fbcbaf7ca4d83ff16298cc6dca166dd6128dd3d67792dfcc036",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

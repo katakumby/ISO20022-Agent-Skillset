@@ -1,0 +1,259 @@
+{
+  "message_id": "sese.002.001.09",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "25 sese.002.001.09 TransferOutCancellationRequestV09",
+      "definition_pages": [
+        513,
+        518
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The TransferOutCancellationRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the executing party, for example, a transfer agent"
+          },
+          "sender": {
+            "expression": "an instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an instructing party, for example, an investment manager or its authorised representative"
+          },
+          "claim_id": "src-000096-sese.002.001.09-p513-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "25 sese.002.001.09 TransferOutCancellationRequestV09",
+          "file_pages": [
+            513
+          ],
+          "section": "scope",
+          "quote": "The TransferOutCancellationRequest message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to request the cancellation of a previously sent transfer out instruction.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The TransferOutCancellationRequest message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to request the cancellation of a previously sent transfer out instruction.",
+          "raw_quote": "Scope\nThe TransferOutCancellationRequest message is sent by an instructing party, for example, an\ninvestment manager or its authorised representative, to the executing party, for example, a transfer\nagent, to request the cancellation of a previously sent transfer out instruction.",
+          "file_pages": [
+            513
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.002.001.09-p513-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 57,
+              "end": 74,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 92,
+              "end": 110,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 118,
+              "end": 143,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 152,
+              "end": 167,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 184,
+              "end": 198,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.002.001.09-p513-c001-d1"
+          ]
+        },
+        {
+          "quote": "The TransferOutCancellationRequest message is used to request the cancellation of one or more transfer out instructions.",
+          "raw_quote": "Usage\nThe TransferOutCancellationRequest message is used to request the cancellation of one or more\ntransfer out instructions.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.002.001.09-p513-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "There is no amendment, but a cancellation and re-instruct policy.",
+          "raw_quote": "There is no amendment, but a cancellation and re-instruct policy.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.002.001.09-p513-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "To request the cancellation of one or more transfer out instructions, the transfer reference of the transfer, as specified in the original TransferOutInstruction message, is specified in the transfer reference element.",
+          "raw_quote": "To request the cancellation of one or more transfer out instructions, the transfer reference of the\ntransfer, as specified in the original TransferOutInstruction message, is specified in the transfer\nreference element.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.002.001.09-p513-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message identification of the original TransferOutInstruction message may also be quoted in PreviousReference but this is not recommended.",
+          "raw_quote": "The message identification of the original TransferOutInstruction message may also be quoted in\nPreviousReference but this is not recommended.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The deadline and acceptance of a cancellation request is subject to a service level agreement (SLA).",
+          "raw_quote": "The deadline and acceptance of a cancellation request is subject to a service level agreement (SLA).",
+          "file_pages": [
+            513
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "This cancellation message is a cancellation request.",
+          "raw_quote": "This cancellation message is a cancellation request.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "There is no automatic acceptance of the cancellation.",
+          "raw_quote": "There is no automatic acceptance of the\ncancellation.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The rejection or acceptance of a TransferOutCancellationRequest is made using a TransferCancellationStatusReport message.",
+          "raw_quote": "The rejection or acceptance of a TransferOutCancellationRequest is made using a\nTransferCancellationStatusReport message.",
+          "file_pages": [
+            513
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        513
+      ],
+      "file_pages": [
+        513,
+        514
+      ]
+    }
+  ]
+}

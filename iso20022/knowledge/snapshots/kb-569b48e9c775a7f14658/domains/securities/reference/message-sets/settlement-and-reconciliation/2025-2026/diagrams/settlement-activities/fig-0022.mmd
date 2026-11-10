@@ -1,0 +1,25 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  S@{shape: f-circ,label: " "}
+  T["Technical and business validation Process?"]
+  A{"Accepted for further processing?"}
+  Reject@{shape: doc,label: "Rejection Status"}
+  Accepted@{shape: doc,label: "Accepted status"}
+  R@{shape: f-circ,label: " "}
+  IP["Internal Processing?"]
+  P{"Pending?"}
+  PS@{shape: doc,label: "Pending Status"}
+  Done[["Intra-position advice"]]
+  S ==> T
+  S ==> R
+  T -->|Y| A
+  T -->|N| R
+  A -->|N| Reject
+  A -->|Y| Accepted
+  Accepted --> R
+  R ==> IP
+  IP -->|Y| P
+  IP -->|N| Done
+  P -->|Y| PS
+  PS --> P
+  P -->|N| Done

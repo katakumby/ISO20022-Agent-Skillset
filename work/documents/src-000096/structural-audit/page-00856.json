@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 856,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 131,
+    "2": 234
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 220,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "1b7a1280effe93f30ef14919b7f6d78dfc95ac2ac5ee5cb61864295066f1d9b7",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        358.011,
+        66.3237,
+        461.7308,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        358.511,
+        57.6929,
+        483.4769,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        460.7308,
+        66.3237,
+        483.9769,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        358.511,
+        57.6929,
+        483.4769,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 165,
+      "bbox": [
+        362.4446,
+        378.7237,
+        467.8294,
+        379.7237
+      ],
+      "link_annotation_bbox": [
+        362.9446,
+        370.0929,
+        489.5755,
+        380.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 167,
+      "bbox": [
+        466.8294,
+        378.7237,
+        490.0755,
+        379.7237
+      ],
+      "link_annotation_bbox": [
+        362.9446,
+        370.0929,
+        489.5755,
+        380.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1179",
+      "file_page": 856,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905740000001,
+        224.0929100000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-1179.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "5cc0a0c330563b658363a4e5c8f21cf41f997c8d4119e23e82f3c125fb03075f",
+      "cell_geometry_sha256": "a235800cc34afec5821eb2eaf2f5885712c9ec5d3444d51184a5973e1892aa99",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1180",
+      "file_page": 856,
+      "bbox": [
+        85.03936999999996,
+        387.0929000000001,
+        555.5905740000001,
+        576.8928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-1180.md",
+      "rows": 9,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0429064a7a2e887fda2bec6ee05c924f7d4467073f6c58f63f5ec510f6a059b0",
+      "cell_geometry_sha256": "8b7a32c5aa1f7efa04d06f167f02c1c5fe4b752bdab40904c89423b14b88617b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

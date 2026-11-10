@@ -1,0 +1,371 @@
+{
+  "message_id": "reda.022.001.02",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "42 reda.022.001.02 PartyModificationRequestV02",
+      "definition_pages": [
+        2140,
+        2154
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyModificationRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.022.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2140
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+                        "file_pages": [
+                          61
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.022.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2140
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+                        "file_pages": [
+                          61
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.022.001.02-p2140-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "42 reda.022.001.02 PartyModificationRequestV02",
+          "file_pages": [
+            2140
+          ],
+          "section": "scope",
+          "quote": "The PartyModificationRequest message is sent by the instructing party to the executing party to request for an update of the party reference data of a party defined in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyModificationRequest message is sent by the instructing party to the executing party to request for an update of the party reference data of a party defined in the executing system.",
+          "raw_quote": "Scope:\nThe PartyModificationRequest message is sent by the instructing party to the executing party to request\nfor an update of the party reference data of a party defined in the executing system.",
+          "file_pages": [
+            2140
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.022.001.02-p2140-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 52,
+              "end": 69,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.022.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2140
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+                        "file_pages": [
+                          61
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 77,
+              "end": 92,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.022.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2140
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+                        "file_pages": [
+                          61
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.022.001.02-p2140-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the update of an existing party by amending its existing details or by providing additional details.",
+          "raw_quote": "Usage:\nIt aims at instructing the update of an existing party by amending its existing details or by providing\nadditional details.",
+          "file_pages": [
+            2140
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.022.001.02-p2140-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing and confirmation of the party modification request message are provided via a party status advice.",
+          "raw_quote": "Processing and confirmation of the party modification request message are provided via a party status\nadvice.",
+          "file_pages": [
+            2140
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.022.001.02-p2140-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2140
+      ],
+      "file_pages": [
+        2140
+      ]
+    },
+    {
+      "source_id": "src-000369",
+      "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+      "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+      "definition_pages": [
+        61,
+        75
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyModificationRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000369-reda.022.001.02-p61-c001-d1",
+          "source_id": "src-000369",
+          "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+          "heading": "6 reda.022.001.02 PartyModificationRequestV02",
+          "file_pages": [
+            61
+          ],
+          "section": "scope",
+          "quote": "The PartyModificationRequest message is sent by the instructing party to the executing party to request for an update of the party reference data of a party defined in the executing system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyModificationRequest message is sent by the instructing party to the executing party to request for an update of the party reference data of a party defined in the executing system.",
+          "raw_quote": "Scope:\nThe PartyModificationRequest message is sent by the instructing party to the executing party to request\nfor an update of the party reference data of a party defined in the executing system.",
+          "file_pages": [
+            61
+          ],
+          "section": "scope",
+          "evidence_id": "src-000369-reda.022.001.02-p61-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 52,
+              "end": 69,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 77,
+              "end": 92,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000369-reda.022.001.02-p61-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the update of an existing party by amending its existing details or by providing additional details.",
+          "raw_quote": "Usage:\nIt aims at instructing the update of an existing party by amending its existing details or by providing\nadditional details.",
+          "file_pages": [
+            61
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.022.001.02-p61-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Processing and confirmation of the party modification request message are provided via a party status advice.",
+          "raw_quote": "Processing and confirmation of the party modification request message are provided via a party status\nadvice.",
+          "file_pages": [
+            61
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.022.001.02-p61-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        61
+      ],
+      "file_pages": [
+        61
+      ]
+    }
+  ]
+}

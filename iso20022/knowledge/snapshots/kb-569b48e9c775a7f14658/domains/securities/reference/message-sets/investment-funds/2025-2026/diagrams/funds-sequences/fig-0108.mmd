@@ -1,0 +1,10 @@
+%%{init: {"sequence": {"mirrorActors": false}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000", "actorLineColor": "#000000", "signalColor": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+  participant A as Transferee / New Plan Manager / Instructing Party / Acquiring Party
+  participant B as Transferor / Old Plan Manager / Executing Party / Ceding Party
+  A-)B: AccountHoldingInformationRequest
+  B-)A: AccountHoldingInformation
+  A-)B: PortfolioTransferInstruction
+  B-)A: PortfolioTransferConfirmation
+  Note over A,B: Individual Asset Transfers
+  B-)A: PortfolioTransferCompletion

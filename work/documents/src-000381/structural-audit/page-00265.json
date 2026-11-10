@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 265,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 90,
+    "2": 105
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 97,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f2748bf07b54aa6848ecf4887b5971ee19154ecb4b44d288d65817ba7714c932",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        130.1204,
+        96.3237,
+        304.9827,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        87.6929,
+        321.1673,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        303.9827,
+        96.3237,
+        321.6673,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        87.6929,
+        321.1673,
+        97.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0467",
+      "file_page": 265,
+      "bbox": [
+        85.03936999999996,
+        208.29290000000003,
+        555.5905733333334,
+        357.6929
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0467.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "5d0a6b6367abfffdf179cf346fbc9802a49ab546701706cc47139d00e026946c",
+      "cell_geometry_sha256": "d6acfa9fa2706dac265ddd7ee565c42517ae9861c42ae4e9dfbbef30a638773d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

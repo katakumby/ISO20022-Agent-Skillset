@@ -1,0 +1,40 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Bank-to-Customer Cash Management"
+source_ids: ["src-000005"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["1 Message Set Overview", "2.4 Message Building Blocks", "2.4.2 Report <Rpt>", "2.4.2.15 Entry <Ntry>", "2.4.2.15.18 EntryDetails <NtryDtls>", "2.4.2.15.18.2 TransactionDetails <TxDtls>", "2.4.2.15.18.2.9 RelatedParties <RltdPties>", "2.4.2.15.18.2.9.1 InitiatingParty <InitgPty>", "2.4.2.15.18.2.9.1.1 Party <Pty>"]
+file_pages: [134]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.052.001.14"]
+---
+
+# 2.4.2.15.18.2.9.1.1 Party <Pty>
+
+Source: [src-000005](../../../../../../../../../evidence/omitted/4704d0f065c82a397d84d52d.md). Locator: one-based file pages 134 to 134.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 134
+
+```text
+InitiatingParty <InitgPty> contains one of the following Party50Choice elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Party <Pty> [1..1] ± 134
+Or}   Agent <Agt> [1..1] ± 135
+2.4.2.15.18.2.9.1.1  Party <Pty>
+Presence: [1..1]
+Definition: Identification of a person or an organisation.
+Approved by the Payments SEG on 12 January 2026 camt.052.001.14
+BankToCustomerAccountReportV14
+Bank-to-Customer Cash Management - Maintenance 2025 -
+2026
+134 March 2026
+```
+

@@ -1,0 +1,12 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  CM1["CM (ICM or GCM)"] <-.-> CCP["CCP"]
+  CCP <-.-> CM2["CM (ICM or GCM)"]
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

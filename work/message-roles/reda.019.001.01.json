@@ -1,0 +1,371 @@
+{
+  "message_id": "reda.019.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "39 reda.019.001.01 SecuritiesAccountQueryV01",
+      "definition_pages": [
+        2106,
+        2117
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "current-message",
+          "message_subject": "SecuritiesAccountQuery",
+          "limitation": "The source omits the verb “is” before “sent”; the explicit by/to roles are retained literally.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "96affbf3fcb8e9ae15d9937fc929f076a24a41aa0d53bddbdf8e3a65ec02d3ab",
+          "sender": {
+            "expression": "instructing party",
+            "labels": [
+              {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000371-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000371-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.019.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2106
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000372",
+                        "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+                        "file_pages": [
+                          14
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "executing party",
+            "labels": [
+              {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000372-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000372-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.019.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2106
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000372",
+                        "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+                        "file_pages": [
+                          14
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.019.001.01-p2106-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "39 reda.019.001.01 SecuritiesAccountQueryV01",
+          "file_pages": [
+            2106
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the details related to the securities account.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the details related to the securities account.",
+          "raw_quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the\ndetails related to the securities account.",
+          "file_pages": [
+            2106
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.019.001.01-p2106-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 46,
+              "end": 63,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000371-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000371-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.019.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2106
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000372",
+                        "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+                        "file_pages": [
+                          14
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 71,
+              "end": 86,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000372-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000372-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.019.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2106
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000372",
+                        "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+                        "file_pages": [
+                          14
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.019.001.01-p2106-c001-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2106
+      ],
+      "file_pages": [
+        2106
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000233",
+        "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+        "message_id": "reda.019.001.01",
+        "heading": "39 reda.019.001.01 SecuritiesAccountQueryV01",
+        "file_pages": [
+          2106
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "96affbf3fcb8e9ae15d9937fc929f076a24a41aa0d53bddbdf8e3a65ec02d3ab"
+        ]
+      }
+    },
+    {
+      "source_id": "src-000372",
+      "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+      "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+      "definition_pages": [
+        14,
+        25
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "current-message",
+          "message_subject": "SecuritiesAccountQuery",
+          "limitation": "The source omits the verb “is” before “sent”; the explicit by/to roles are retained literally.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "96affbf3fcb8e9ae15d9937fc929f076a24a41aa0d53bddbdf8e3a65ec02d3ab",
+          "sender": {
+            "expression": "instructing party",
+            "labels": [
+              {
+                "label": "instructing party",
+                "scope_source_id": "src-000372",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000371-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000371-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "executing party",
+            "labels": [
+              {
+                "label": "executing party",
+                "scope_source_id": "src-000372",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000372-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000372-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000372-reda.019.001.01-p14-c001-d1",
+          "source_id": "src-000372",
+          "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+          "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+          "file_pages": [
+            14
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the details related to the securities account.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the details related to the securities account.",
+          "raw_quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the\ndetails related to the securities account.",
+          "file_pages": [
+            14
+          ],
+          "section": "scope",
+          "evidence_id": "src-000372-reda.019.001.01-p14-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 46,
+              "end": 63,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000372",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000371-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000371-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 71,
+              "end": 86,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000372",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000372-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000372-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000372-reda.019.001.01-p14-c001-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        14
+      ],
+      "file_pages": [
+        14
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000372",
+        "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+        "message_id": "reda.019.001.01",
+        "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01",
+        "file_pages": [
+          14
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "96affbf3fcb8e9ae15d9937fc929f076a24a41aa0d53bddbdf8e3a65ec02d3ab"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+flowchart LR
+subgraph X["SubscriptionOrderConfirmationCancellationInstructionV02"]
+direction LR
+ROOT["SbcptOrdrConfCxlInstr"] --> SEQ["source sequence"]
+SEQ --> MID["MsgId"]
+SEQ -.-> POOL["PoolRef"]
+SEQ -.-> PREV["PrvsRef: 0..∞"]
+SEQ -.-> REL["RltdRef"]
+SEQ --> AMEND["AmdmntInd"]
+SEQ -.-> MASTER["MstrRef"]
+SEQ --> ORDERS["OrdrRefs: 1..∞"]
+SEQ -.-> COPY["CpyDtls"]
+end
+PREV --> CONF["setr.012.001.04; SubscriptionOrderConfirmationV04"]
+REL --> ORDER["setr.010.001.04; SubscriptionOrderV04"]

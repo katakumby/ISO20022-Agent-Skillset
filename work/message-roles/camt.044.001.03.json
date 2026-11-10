@@ -1,0 +1,233 @@
+{
+  "message_id": "camt.044.001.03",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "11 camt.044.001.03 FundConfirmedCashForecastReportCancellationV03",
+      "definition_pages": [
+        146,
+        152
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "the FundConfirmedCashForecastReportCancellation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the report user, such as an investment manager or pricing agent",
+            "labels": [
+              {
+                "label": "the report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the report user, such as an investment manager or pricing agent"
+          },
+          "sender": {
+            "expression": "A report provider, such as a transfer agent",
+            "labels": [
+              {
+                "label": "A report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "A report provider, such as a transfer agent"
+          },
+          "claim_id": "src-000096-camt.044.001.03-p146-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "11 camt.044.001.03 FundConfirmedCashForecastReportCancellationV03",
+          "file_pages": [
+            146
+          ],
+          "section": "scope",
+          "quote": "A report provider, such as a transfer agent, sends the FundConfirmedCashForecastReportCancellation message to the report user, such as an investment manager or pricing agent, to cancel a previously sent FundConfirmedCashForecastReport message.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A report provider, such as a transfer agent, sends the FundConfirmedCashForecastReportCancellation message to the report user, such as an investment manager or pricing agent, to cancel a previously sent FundConfirmedCashForecastReport message.",
+          "raw_quote": "Scope\nA report provider, such as a transfer agent, sends the FundConfirmedCashForecastReportCancellation\nmessage to the report user, such as an investment manager or pricing agent, to cancel a previously\nsent FundConfirmedCashForecastReport message.",
+          "file_pages": [
+            146
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-camt.044.001.03-p146-c001",
+          "mentions": [
+            {
+              "label": "report provider",
+              "start": 2,
+              "end": 17,
+              "resolution": {
+                "label": "report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 29,
+              "end": 43,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "report user",
+              "start": 114,
+              "end": 125,
+              "resolution": {
+                "label": "report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 138,
+              "end": 156,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "agent",
+              "start": 168,
+              "end": 173,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-camt.044.001.03-p146-c001-d1"
+          ]
+        },
+        {
+          "quote": "The FundConfirmedCashForecastReportCancellation message is used to cancel an entire FundConfirmedCashForecastReport message that was previously sent by the report provider.",
+          "raw_quote": "Usage\nThe FundConfirmedCashForecastReportCancellation message is used to cancel an entire\nFundConfirmedCashForecastReport message that was previously sent by the report provider.",
+          "file_pages": [
+            146
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-camt.044.001.03-p146-c002",
+          "mentions": [
+            {
+              "label": "report provider",
+              "start": 156,
+              "end": 171,
+              "resolution": {
+                "label": "report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "usage-condition-or-related-message-context",
+            "rationale": "The sentence supplies purpose, response linkage, timing, content, status or a condition. It does not independently identify an additional complete current-message sender/receiver direction. Its full literal wording remains available.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "This message must contain reference to the of the message being cancelled.",
+          "raw_quote": "This\nmessage must contain reference to the of the message being cancelled.",
+          "file_pages": [
+            146
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "This message may also contain details of the message to be cancelled, but this is not recommended.",
+          "raw_quote": "This message may also contain details of the message to be cancelled, but this is not recommended.",
+          "file_pages": [
+            146
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        146
+      ],
+      "file_pages": [
+        146
+      ]
+    }
+  ]
+}

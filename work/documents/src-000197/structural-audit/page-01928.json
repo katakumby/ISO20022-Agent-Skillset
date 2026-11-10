@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 1928,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 103,
+    "2": 184
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 174,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "2633a87cb7fc9465734dd18e251c6d1a761e3d4be4ce695069bde9519bd6c131",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 77,
+      "bbox": [
+        130.1204,
+        241.5237,
+        300.5589,
+        242.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        232.8929,
+        322.305,
+        242.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 79,
+      "bbox": [
+        299.5589,
+        241.5237,
+        322.805,
+        242.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        232.8929,
+        322.305,
+        242.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-3240",
+      "file_page": 1928,
+      "bbox": [
+        85.03936999999996,
+        95.09291000000007,
+        555.590568,
+        163.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3240.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "38615bb5bbc7a881577600e2cd22e41ddaad0fb3e5f85dd94cdb09268b7ff814",
+      "cell_geometry_sha256": "58e6ed44b2638b9a56a3e575f7119d49bd6bfa9ec4b173db4c968284aa35d0e6",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3241",
+      "file_page": 1928,
+      "bbox": [
+        85.03936999999996,
+        249.89292000000015,
+        510.23623699999996,
+        707.4929700000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3241.md",
+      "rows": 18,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c3476d550f80e091f465d703186963a78e7140ccb47c15ba9f3383fb566a696e",
+      "cell_geometry_sha256": "3461b8df8986ab3428cef4f9eb5f527c6d214774bed74c7104d6d197bee0494e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

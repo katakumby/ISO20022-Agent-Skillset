@@ -1,0 +1,10 @@
+flowchart LR
+  subgraph S["Account Servicer"]
+    START(("Start")) --> A("Movement preliminary advice process")
+  end
+  subgraph O["Account Owner"]
+    B("Process movement preliminary advice")
+  end
+  A --> B
+  NOTE["Movement preliminary advice process will typically occur between the balance and entitlement notification process and the movement confirmation process."]
+  style NOTE fill:#fffbe6,stroke:#999

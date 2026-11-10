@@ -1,0 +1,71 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Transactions and Financial Instruments Data Reporting"
+source_ids: ["src-000321"]
+source_editions: ["July 2025"]
+message_ids: []
+heading_path: ["8 auth.036.001.03 FinancialInstrumentReportingReferenceDataDeltaReportV03", "8.4 Message Building Blocks", "8.4.2 FinancialInstrument <FinInstrm>", "8.4.2.2 NewRecord <NewRcrd>", "8.4.2.2.6 DerivativeInstrumentAttributes <DerivInstrmAttrbts>", "8.4.2.2.6.8 AssetClassSpecificAttributes <AsstClssSpcfcAttrbts>", "8.4.2.2.6.8.3 ForeignExchange <FX>"]
+file_pages: [140]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["auth.036.001.03"]
+---
+
+# 8.4.2.2.6.8.3 ForeignExchange <FX>
+
+Source: [src-000321](../../../../../../../../../raw-input/transactions_and_financial_instruments_data_reporting_fitrr/ISO20022_MDRPart2_FITRR_TransactionAndFinancialInstrumentsDataReporting_FastTrackMaintenance2025_v1.pdf). Locator: one-based file pages 140 to 140.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 140
+
+```text
+OtherLegInterestRate <OthrLegIntrstRate> contains one of the following elements (see
+"InterestRate8Choice" on page 362 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Fixed <Fxd> [1..1] Rate 362
+Or}   Floating <Fltg> [1..1] ± 362
+8.4.2.2.6.8.3  ForeignExchange <FX>
+Presence: [0..1]
+Definition: The fields in this section should only be populated for instruments that have non-financial
+instrument of type foreign exchange as underlying.
+ForeignExchange <FX> contains the following DerivativeForeignExchange3 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   FXType <FxTp> [0..1] CodeSet 140
+   OtherNotionalCurrency <OthrNtnlCcy> [0..1] CodeSet C2 140
+8.4.2.2.6.8.3.1  FXType <FxTp>
+Presence: [0..1]
+Definition: Type of the underlying currency.
+Datatype: "AssetFXSubProductType1Code" on page 431
+CodeName Name Definition
+FXCR ForeignExchangeCrossRate Commodity attribute of type foreign
+exchange cross rate.
+FXEM ForeignExchangeEmergingMarket Commodity attribute of type foreign
+exchange emerging markets.
+FXMJ ForeignExchangeMajor Commodity attribute of type foreign
+exchange majors.
+8.4.2.2.6.8.3.2  OtherNotionalCurrency <OthrNtnlCcy>
+Presence: [0..1]
+Definition: Underlying currency 2 of the currency pair (the currency 1 will be populated in the notional
+currency).
+Impacted by: C2 "ActiveOrHistoricCurrency"
+Datatype: "ActiveOrHistoricCurrencyCode" on page 417
+Constraints
+• ActiveOrHistoricCurrency
+The Currency Code must be registered, or have already been registered. Valid active or historic
+currency codes are registered with the ISO 4217 Maintenance Agency, consist of three (3)
+Approved by the Securities SEG on 17 July 2025 auth.036.001.03
+FinancialInstrumentReportingReferenceDataDeltaR
+eportV03
+Financial Instruments and Transactions Regulatory Reporting
+(Transactions and Financial Instruments Data Reporting) -
+Fast Track Minatnenance 2025
+140 July 2025
+```
+

@@ -1,0 +1,38 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    S@{shape: f-circ, label: " "} --> Create("Create Instruction")
+    Create --> Monitor("Monitor Matching and Settlement Process")
+    Monitor --> Needed{"Hold/Process needed?"}
+    Needed -->|No| Monitor
+    Needed -->|Yes| Choice{"Hold or Release?"}
+    Monitor --> Settled{"Settled?"}
+    Settled -->|No| Update("Update Status")
+    Update --> Monitor
+    Settled -->|Yes| Trade(["Settle trade"])
+    Trade --> EndI@{shape: framed-circle, label: " "}
+  end
+  subgraph E["Executing/Servicing Party"]
+    Release("Process Release Instruction") --> Join@{shape: fork, label: " "}
+    Hold("Process Hold Instruction") --> Join
+    Join --> Process("Processing, Matching and Settlement Process")
+    Process --> ESettled{"Settled?"}
+    ESettled -->|No| EUpdate("Update Status")
+    EUpdate --> Process
+    ESettled -->|Yes| ETrade(["Settle trade"])
+    ETrade --- EndE@{shape: framed-circle, label: " "}
+  end
+  Create --> Process
+  Choice -->|Release| Release
+  Choice -->|Hold| Hold
+  EUpdate --> Monitor
+  classDef focus fill:#d1d8b8,stroke:#111,color:#111
+  classDef context fill:#c0d1e5,stroke:#111,color:#111
+  class Needed,Choice,Release,Hold focus
+  class Create,Monitor,Settled,Update,Trade,Process,ESettled,EUpdate,ETrade context
+  classDef fork fill:#111,stroke:#111
+  class Join fork
+  classDef framedcircle fill:#fff,stroke:#111,stroke-width:3px
+  class EndI,EndE framedcircle
+  classDef fcirc fill:#4472c4,stroke:#4472c4
+  class S fcirc

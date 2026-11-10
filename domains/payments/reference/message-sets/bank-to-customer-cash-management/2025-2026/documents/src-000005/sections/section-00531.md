@@ -1,0 +1,63 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Bank-to-Customer Cash Management"
+source_ids: ["src-000005"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["3 camt.053.001.14 BankToCustomerStatementV14", "4.4 Message Building Blocks", "4.4.1 GroupHeader <GrpHdr>", "4.4.2.14 Entry <Ntry>", "4.4.2.14.18 EntryDetails <NtryDtls>", "4.4.2.14.18.2 TransactionDetails <TxDtls>", "4.4.2.14.18.2.26 CardTransaction <CardTx>", "4.4.2.14.18.2.26.2 POI <POI>", "4.4.2.14.18.2.26.2.4 Capabilities <Cpblties>", "4.4.2.14.18.2.26.2.4.4 DisplayCapabilities <DispCpblties>"]
+file_pages: [762]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.054.001.14"]
+---
+
+# 4.4.2.14.18.2.26.2.4.4 DisplayCapabilities <DispCpblties>
+
+Source: [src-000005](../../../../../../../../../raw-input/banktocustomer_cash_management/ISO20022_MDRPart2_BanktoCustomerCashManagement_2025_2026_v1.pdf). Locator: one-based file pages 762 to 762.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 762
+
+```text
+4.4.2.14.18.2.26.2.4.4  DisplayCapabilities <DispCpblties>
+Presence: [0..*]
+Definition: Capabilities of the display components performing the transaction.
+DisplayCapabilities <DispCpblties> contains the following DisplayCapabilities1 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   DisplayType <DispTp> [1..1] CodeSet 762
+   NumberOfLines <NbOfLines> [1..1] Text 762
+   LineWidth <LineWidth> [1..1] Text 762
+4.4.2.14.18.2.26.2.4.4.1  DisplayType <DispTp>
+Presence: [1..1]
+Definition: Type of display (for example merchant or cardholder).
+Datatype: "UserInterface2Code" on page 908
+CodeName Name Definition
+MDSP MerchantDisplay Merchant display or interface.
+CDSP CardholderDisplay Cardholder display or interface.
+4.4.2.14.18.2.26.2.4.4.2  NumberOfLines <NbOfLines>
+Presence: [1..1]
+Definition: Number of lines of the display component.
+Datatype: "Max3NumericText" on page 916
+4.4.2.14.18.2.26.2.4.4.3  LineWidth <LineWidth>
+Presence: [1..1]
+Definition: Number of columns of the display component.
+Datatype: "Max3NumericText" on page 916
+4.4.2.14.18.2.26.2.4.5  PrintLineWidth <PrtLineWidth>
+Presence: [0..1]
+Definition: Number of columns of the printer component.
+Datatype: "Max3NumericText" on page 916
+4.4.2.14.18.2.26.2.5  Component <Cmpnt>
+Presence: [0..*]
+Definition: Data related to a component of the POI performing the transaction.
+Approved by the Payments SEG on 12 January 2026 camt.054.001.14
+BankToCustomerDebitCreditNotificationV14
+Bank-to-Customer Cash Management - Maintenance 2025 -
+2026
+762 March 2026
+```
+

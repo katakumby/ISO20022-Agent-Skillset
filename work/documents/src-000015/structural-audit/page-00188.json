@@ -1,0 +1,87 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 188,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 190,
+    "1": 127
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 180,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "3c4570116e6001f7206503237bdc1c71012e4b02ae7757dcb6a3d60e0df8ab86",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0230",
+      "file_page": 188,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.23623,
+        399.49289000000016
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0230.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "2990795ad335ec16228b409fa312a3cd4cff12ce44c3cf6141c3aabe3e4b1f7f",
+      "cell_geometry_sha256": "cb6e3e1dc09633d27124b3868b9ee9dd6428bdc8c15123acd447afe641078de3",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 11,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            74.89291000000014,
+            510.23623,
+            233.09292000000016
+          ],
+          "stored_value": "Booked means that the transfer of\nmoney has been completed between\naccount servicer and account owner\nUsage:\nStatus Booked does not necessarily\nimply finality of money as this depends\non other factors such as the payment\nsystem used, the completion of the end-\nto-end transaction and the terms agreed\nbetween account servicer and owner.\nStatus Booked is the only status that can\nbe reversed.",
+          "pdfium_value": "Booked means that the transfer of\r\nmoney has been completed between\r\naccount servicer and account owner\r\nUsage:\r\nStatus Booked does not necessarily\r\nimply finality of money as this depends\r\non other factors such as the payment\r\nsystem used, the completion of the end\u0002to-end transaction and the terms agreed\r\nbetween account servicer and owner.\r\nStatus Booked is the only status that can\r\nbe reversed."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0231",
+      "file_page": 188,
+      "bbox": [
+        85.03936999999996,
+        483.4929000000001,
+        555.5905753846154,
+        713.6928800000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0231.md",
+      "rows": 11,
+      "matrix_cells": 66,
+      "physical_cells": 66,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ecc930f7e716d428e09dc68258fab9925f8752ca6fc29ce7526c47b849d6a19a",
+      "cell_geometry_sha256": "4632a296f3d0845a8b461dda282a0fac13b0eef25ed5f23505f217f31d3ccd26",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 66,
+      "independent_cells_match": 66,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

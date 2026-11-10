@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000360",
+  "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+  "file_page": 303,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 144,
+    "1": 112
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 136,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "24f56018888d18b10f8e2be4e828821976dec406822f8901de5ec8ba402dc9c9",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0523",
+      "file_page": 303,
+      "bbox": [
+        51.023619999999994,
+        56.6929100000001,
+        555.5905750000001,
+        274.6929000000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0523.md",
+      "rows": 10,
+      "matrix_cells": 60,
+      "physical_cells": 60,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "09975388c4e82353fedf661b3b0dcc2685e82bc68e596e0590577244705d9fe0",
+      "cell_geometry_sha256": "45ff6e39295cf28356a2d54b3a8b60c9d8ec19b20832dcf54bf08a092c6ca108",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 60,
+      "independent_cells_match": 60,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

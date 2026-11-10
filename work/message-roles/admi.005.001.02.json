@@ -1,0 +1,345 @@
+{
+  "message_id": "admi.005.001.02",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+      "definition_pages": [
+        34,
+        56
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The ReportQueryRequest message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "system member and system transaction administrator",
+            "labels": [
+              {
+                "label": "system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.005.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      34
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000343-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.005.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      34
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000233-admi.005.001.02-p34-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+          "file_pages": [
+            34
+          ],
+          "section": "scope",
+          "quote": "The ReportQueryRequest message is exchanged between system member and system transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReportQueryRequest message is exchanged between system member and system transaction administrator.",
+          "raw_quote": "The ReportQueryRequest message is exchanged between system member and system transaction\nadministrator.",
+          "file_pages": [
+            34
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.005.001.02-p34-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 52,
+              "end": 65,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.005.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      34
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system transaction administrator",
+              "start": 70,
+              "end": 102,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000343-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.005.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      34
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-admi.005.001.02-p34-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "It aims at querying the latest available report data of a specific report type.",
+          "raw_quote": "It aims at querying the latest available report data of a specific report type.",
+          "file_pages": [
+            34
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "A report is stored and available for query until the event occurs again report is replaced.",
+          "raw_quote": "A report is stored and\navailable for query until the event occurs again report is replaced.",
+          "file_pages": [
+            34
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        34
+      ],
+      "file_pages": [
+        34
+      ]
+    },
+    {
+      "source_id": "src-000344",
+      "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+      "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+      "definition_pages": [
+        4,
+        26
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The ReportQueryRequest message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "system member and system transaction administrator",
+            "labels": [
+              {
+                "label": "system member",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000343-system-transaction-administrator.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000344-admi.005.001.02-p4-c001-d1",
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "heading": "2 admi.005.001.02 ReportQueryRequestV02",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "quote": "The ReportQueryRequest message is exchanged between system member and system transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReportQueryRequest message is exchanged between system member and system transaction administrator.",
+          "raw_quote": "The ReportQueryRequest message is exchanged between system member and system transaction\nadministrator.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.005.001.02-p4-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 52,
+              "end": 65,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system transaction administrator",
+              "start": 70,
+              "end": 102,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000343-system-transaction-administrator.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000344-admi.005.001.02-p4-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "It aims at querying the latest available report data of a specific report type.",
+          "raw_quote": "It aims at querying the latest available report data of a specific report type.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "A report is stored and available for query until the event occurs again report is replaced.",
+          "raw_quote": "A report is stored and\navailable for query until the event occurs again report is replaced.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4
+      ],
+      "file_pages": [
+        4
+      ]
+    }
+  ]
+}

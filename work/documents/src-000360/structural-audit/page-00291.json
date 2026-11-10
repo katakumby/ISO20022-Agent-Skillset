@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000360",
+  "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+  "file_page": 291,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 210,
+    "2": 371
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 8,
+    "table-associated-axis-line": 357,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "3d8aa9b078bd6ace4ff07a685b5db346a17118d5d6ef2f087acaa71fa2dd0bee",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 566,
+      "bbox": [
+        130.1204,
+        708.1238,
+        323.3372,
+        709.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        699.4931,
+        339.5218,
+        709.4931
+      ]
+    },
+    {
+      "path_object_ordinal": 568,
+      "bbox": [
+        322.3372,
+        708.1238,
+        340.0218,
+        709.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        699.4931,
+        339.5218,
+        709.4931
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0504",
+      "file_page": 291,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905779310345,
+        628.09304
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0504.md",
+      "rows": 27,
+      "matrix_cells": 162,
+      "physical_cells": 162,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "80f263072276ade7d9d43e032796ca8538b915a5480f29c0db82c4f9e510481b",
+      "cell_geometry_sha256": "bcfc2fd19ef62d54415ce74feff3f8baf15738118c85a64cce58411a2152223d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 162,
+      "independent_cells_match": 162,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

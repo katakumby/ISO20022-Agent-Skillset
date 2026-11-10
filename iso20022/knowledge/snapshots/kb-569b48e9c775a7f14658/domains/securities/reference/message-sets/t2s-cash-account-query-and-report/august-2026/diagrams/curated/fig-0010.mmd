@@ -1,0 +1,7 @@
+sequenceDiagram
+ participant I as Instructing Party
+ participant E as Executing/Servicing Party
+ Note over I,E: Account Query/List Process
+ I->>E: AccountQueryList (acmt.025)
+ E-->>I: AccountListReport (acmt.026): ERROR
+ E->>I: AccountListReport (acmt.026)

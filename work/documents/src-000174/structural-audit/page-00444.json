@@ -1,0 +1,120 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 444,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 206,
+    "1": 127
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 5,
+    "table-associated-axis-line": 194,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "2ba70a89d58a1a8fb83ac3e3ed5c6732050d9b74fae2f0f6036c040ec2865b92",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 228,
+      "bbox": [
+        397.4398,
+        464.3237,
+        520.6126,
+        465.3237
+      ],
+      "link_annotation_bbox": [
+        397.9398,
+        455.6929,
+        520.1126,
+        465.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 230,
+      "bbox": [
+        84.5394,
+        476.3237,
+        110.5638,
+        477.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        467.6929,
+        126.7484,
+        477.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 232,
+      "bbox": [
+        109.5638,
+        476.3237,
+        127.2484,
+        477.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        467.6929,
+        126.7484,
+        477.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0511",
+      "file_page": 444,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        555.5905733333334,
+        282.69290000000007
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0511.md",
+      "rows": 10,
+      "matrix_cells": 60,
+      "physical_cells": 60,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c2f2503d74330c9544cb3aae490e5f286ef03b228deab49c5ee179f1a31add64",
+      "cell_geometry_sha256": "94338e3a591df6c31b43abd60a60ca3fbcf666bc0ba9ba496be67596a2c26eeb",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 60,
+      "independent_cells_match": 60,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0512",
+      "file_page": 444,
+      "bbox": [
+        85.03936999999996,
+        484.6929100000001,
+        555.5905733333334,
+        573.4929200000001
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0512.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "4671ecadb441ed287445a0ae6436428e9d197534ddadb1c2a012c6ba8fc46151",
+      "cell_geometry_sha256": "87742e1872ef7173ef032206b04d144455497ec0d24d68b10447e8ea4e763604",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,99 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class SecuritiesModification["SecuritiesModification"] {
+<<BusinessComponent>>
+}
+class CorporateActionEvent["CorporateActionEvent"] {
+<<BusinessComponent>>
+}
+class MandatoryCorporateAction["MandatoryCorporateAction"] {
+<<BusinessComponent>>
+}
+class VoluntaryCorporateAction["VoluntaryCorporateAction"] {
+<<BusinessComponent>>
+}
+class ChoiceCorporateAction["ChoiceCorporateAction"] {
+<<BusinessComponent>>
+}
+class ProceedsDefinition["ProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class CashProceedsDefinition["CashProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class SecuritiesProceedsDefinition["SecuritiesProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class CorporateActionOption["CorporateActionOption"] {
+<<BusinessComponent>>
+}
+class CorporateActionOptionServicing["CorporateActionOptionServicing"] {
+<<BusinessComponent>>
+}
+class CorporateActionServicing["CorporateActionServicing"] {
+<<BusinessComponent>>
+}
+class CorporateActionProceedsDeliveryInstruction["CorporateActionProceedsDeliveryInstruction"] {
+<<BusinessComponent>>
+}
+class CorporateActionDistribution["CorporateActionDistribution"] {
+<<BusinessComponent>>
+}
+class SecuritiesAccount["SecuritiesAccount"] {
+<<BusinessComponent>>
+}
+class CorporateActionNotification["CorporateActionNotification"] {
+<<BusinessComponent>>
+}
+class SecuritiesDeliveryObligation["SecuritiesDeliveryObligation"] {
+<<BusinessComponent>>
+}
+class PaymentObligation["PaymentObligation"] {
+<<BusinessComponent>>
+}
+class CorporateActionElection["CorporateActionElection"] {
+<<BusinessComponent>>
+}
+class CorporateActionEntitlement["CorporateActionEntitlement"] {
+<<BusinessComponent>>
+}
+class CorporateActionCashEntitlement["CorporateActionCashEntitlement"] {
+<<BusinessComponent>>
+}
+class CorporateActionSecuritiesEntitlement["CorporateActionSecuritiesEntitlement"] {
+<<BusinessComponent>>
+}
+class CorporateActionProtectProcess["CorporateActionProtectProcess"] {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity["SecuritiesQuantity"] {
+<<BusinessComponent>>
+}
+}
+SecuritiesModification -- CorporateActionEvent
+MandatoryCorporateAction --|> CorporateActionEvent
+VoluntaryCorporateAction --|> CorporateActionEvent
+ChoiceCorporateAction --|> MandatoryCorporateAction
+CashProceedsDefinition --|> ProceedsDefinition
+SecuritiesProceedsDefinition --|> ProceedsDefinition
+CorporateActionCashEntitlement --|> CorporateActionEntitlement
+CorporateActionSecuritiesEntitlement --|> CorporateActionEntitlement
+CorporateActionOption -- ChoiceCorporateAction
+ProceedsDefinition -- CorporateActionOption : + Option
+CorporateActionOption -- CorporateActionOptionServicing
+CorporateActionOption -- CorporateActionDistribution : + Option / + Distribution
+CorporateActionOptionServicing -- CorporateActionServicing
+CorporateActionEvent -- CorporateActionServicing : + Event / + Services
+CorporateActionServicing -- SecuritiesAccount
+CorporateActionServicing -- CorporateActionNotification
+CorporateActionServicing -- CorporateActionElection
+CorporateActionServicing -- CorporateActionEntitlement
+CorporateActionServicing -- CorporateActionDistribution
+CorporateActionDistribution -- CorporateActionProceedsDeliveryInstruction
+CorporateActionProceedsDeliveryInstruction -- SecuritiesDeliveryObligation : + SecuritiesProceedsMovement
+CorporateActionProceedsDeliveryInstruction -- PaymentObligation : + CashProceedsMovement
+CorporateActionElection -- CorporateActionProtectProcess : - RelatedCorporateActionElection / - ProtectProcess
+CorporateActionProtectProcess -- SecuritiesQuantity : - RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity
+CorporateActionSecuritiesEntitlement -- SecuritiesQuantity : + SecuritiesEntitlement / - EntitledSecuritiesQuantity
+CorporateActionEvent -- SecuritiesQuantity

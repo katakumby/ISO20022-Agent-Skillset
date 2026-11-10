@@ -1,0 +1,74 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Corporate Actions"
+source_ids: ["src-000080"]
+source_editions: ["February 2026"]
+message_ids: []
+heading_path: ["16 Message Items Types", "16.2 Message Datatypes", "16.2.2 CodeSet", "16.2.2.37 CorporateActionNotificationType1Code"]
+file_pages: [1196]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 16.2.2.37 CorporateActionNotificationType1Code
+
+Source: [src-000080](../../../../../../../../../raw-input/corporate_actions/ISO20022_MDRPart2_CorporateActions_2025_2026_v1.pdf). Locator: one-based file pages 1196 to 1196.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 1196
+
+```text
+CodeName Name Definition
+Depository (ICSD) refuses a mark-up/
+mark-down confirmation sent by the
+account servicer.
+PAUT ChasingOfPriorAuthorization International Central Securities
+Depository (ICSD) chases the
+authorisation from the account servicer
+in order to process the exchange from
+global temporary to global permanent.
+CTIN ConfirmationOfHoldingTransfer Confirmation of transfer of interests
+between International Central Securities
+Depositories (ICSDs) following a
+corporate actions.
+16.2.2.37  CorporateActionNotificationType1Code
+Definition: Type of notification advice.
+Type: CodeSet
+CodeName Name Definition
+NEWM New New notification.
+REPL Replacement Notification replacing a previously sent
+notification.
+RMDR Reminder Notification sent as a reminder of an
+event taking place.
+16.2.2.38  CorporateActionOption11Code
+Definition: Specifies the type of corporate action options.
+Type: CodeSet
+CodeName Name Definition
+ABST Abstain Vote expressed as abstain. In this case,
+the issuing company will add the number
+of shares to the quorum of the meeting.
+If the voting right is not executed, it will
+not be added to the quorum. In this case,
+code NOAC should be used.
+BSPL BonusSharePlan Receive equities from the share
+premium reserve of the company and
+considered as a capital distribution
+rather than a disbursement of income
+with different tax implications (typically
+found in Australia).
+BUYA BuyUp Buy additional securities to round up
+position.
+CASE CashAndSecurity Option to choose between different
+security and cash options.
+CASH Cash Option to choose cash.
+CEXC ConsentAndExchange Vote to consent to change the terms of
+the securities agreement and to
+exchange securities.
+Approved by the Securities SEG on 27 January 2026 Message Items Types
+Corporate Actions - Maintenance 2025 - 2026 1196 February 2026
+```
+

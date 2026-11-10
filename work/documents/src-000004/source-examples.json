@@ -1,0 +1,160 @@
+[
+  {
+    "source_id": "src-000004",
+    "path": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/examples/intraday-report.md",
+    "title": "Intraday account report",
+    "message_id": "camt.052.001.14",
+    "narrative_paragraphs": [
+      159,
+      159
+    ],
+    "payload_paragraphs": [
+      162,
+      266
+    ],
+    "root": "BkToCstmrAcctRpt",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      25,
+      26,
+      27
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 105,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000007",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.052.001.14",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000060"
+    ]
+  },
+  {
+    "source_id": "src-000004",
+    "path": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/examples/end-of-day-statement.md",
+    "title": "End-of-day statement",
+    "message_id": "camt.053.001.14",
+    "narrative_paragraphs": [
+      269,
+      269
+    ],
+    "payload_paragraphs": [
+      272,
+      442
+    ],
+    "root": "BkToCstmrStmt",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 171,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000008",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.053.001.14",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000060"
+    ]
+  },
+  {
+    "source_id": "src-000004",
+    "path": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/examples/credit-notification.md",
+    "title": "Credit notification",
+    "message_id": "camt.054.001.14",
+    "narrative_paragraphs": [
+      445,
+      445
+    ],
+    "payload_paragraphs": [
+      448,
+      514
+    ],
+    "root": "BkToCstmrDbtCdtNtfctn",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      36,
+      37,
+      38
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 67,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000009",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.054.001.14",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000060"
+    ]
+  },
+  {
+    "source_id": "src-000004",
+    "path": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/examples/reporting-request.md",
+    "title": "Account reporting request",
+    "message_id": "camt.060.001.07",
+    "narrative_paragraphs": [
+      517,
+      517
+    ],
+    "payload_paragraphs": [
+      520,
+      551
+    ],
+    "root": "AcctRptgReq",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      39,
+      40
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 32,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000010",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.060.001.07",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000060"
+    ]
+  }
+]

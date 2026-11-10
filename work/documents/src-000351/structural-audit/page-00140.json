@@ -1,0 +1,90 @@
+{
+  "source_id": "src-000351",
+  "source_sha256": "e9d8e518dafbe038ad773d4753ce4e7b9eddf0228060442513989c9b0b2fd61c",
+  "file_page": 140,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 154,
+    "2": 283
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 272,
+    "link-annotation-underline": 1,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "7248bbf4efa8ef6f21f154cdb2c098dcf4060517516f7a2cf08f2b100774bf9e",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 426,
+      "bbox": [
+        144.5686,
+        724.9236,
+        193.7864,
+        725.9236
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        716.2929,
+        193.2864,
+        726.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0180",
+      "file_page": 140,
+      "bbox": [
+        85.03936999999996,
+        107.09290999999999,
+        555.5905750000001,
+        377.69289
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-cash-account-query-and-report/august-2026/documents/src-000351/tables/tbl-0180.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "9eb8a65836dda4b322e110e511133d231531adb1a4999528b70601325f387e03",
+      "cell_geometry_sha256": "6651611158ac103d4832ffd8d860306a1e665486a43dc47b198dd632dd5b76f1",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0181",
+      "file_page": 140,
+      "bbox": [
+        85.03936999999996,
+        487.89288999999997,
+        555.5905750000001,
+        637.2928899999999
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-cash-account-query-and-report/august-2026/documents/src-000351/tables/tbl-0181.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "4376aa4aea1ef94153fb12cdbb60c1acfec9ff5e18515b50aeb38cf0556521ea",
+      "cell_geometry_sha256": "36e818d6a53c7c4fb43fd7f8ff7af52701b276b444ba6d4e647fae3171b67c8e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

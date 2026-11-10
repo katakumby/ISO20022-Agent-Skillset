@@ -1,0 +1,21 @@
+sequenceDiagram
+participant C as Creditor
+participant U as Ultimate Debtor
+participant D as Debtor (initiating party)
+participant F as Forwarding Agent
+participant DA as Debtor Agent
+participant CA as Creditor Agent
+C->>U: Invoice
+U->>D: Invoice
+D->>F: CustomerCreditTransferInitiation
+F->>D: CustomerPaymentStatusReport
+F->>DA: CustomerCreditTransferInitiation
+DA->>F: CustomerPaymentStatusReport
+DA->>CA: FIToFICustomerCreditTransfer
+F->>D: CustomerPaymentStatusReport
+DA->>F: Notification
+F->>D: Notification
+DA->>F: Statement
+F->>D: Statement
+CA->>C: Notification
+CA->>C: Statement

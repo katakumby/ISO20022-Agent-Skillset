@@ -1,0 +1,288 @@
+{
+  "message_id": "setr.001.001.05",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "41 setr.001.001.05 RedemptionBulkOrderV05",
+      "definition_pages": [
+        1685,
+        1886
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The RedemptionBulkOrder message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the executing party, for example, a transfer agent"
+          },
+          "sender": {
+            "expression": "an instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an instructing party, for example, an investment manager or its authorised representative"
+          },
+          "claim_id": "src-000096-setr.001.001.05-p1685-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "41 setr.001.001.05 RedemptionBulkOrderV05",
+          "file_pages": [
+            1685
+          ],
+          "section": "scope",
+          "quote": "The RedemptionBulkOrder message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to instruct a redemption from a financial instrument for two or more accounts.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The RedemptionBulkOrder message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to instruct a redemption from a financial instrument for two or more accounts.",
+          "raw_quote": "Scope\nThe RedemptionBulkOrder message is sent by an instructing party, for example, an investment\nmanager or its authorised representative, to the executing party, for example, a transfer agent, to\ninstruct a redemption from a financial instrument for two or more accounts.",
+          "file_pages": [
+            1685
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-setr.001.001.05-p1685-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 46,
+              "end": 63,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 81,
+              "end": 99,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 107,
+              "end": 132,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 141,
+              "end": 156,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 173,
+              "end": 187,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-setr.001.001.05-p1685-c001-d1"
+          ]
+        },
+        {
+          "quote": "The individual orders come from different instructing parties, that is, account owners, but are for the same financial instrument.",
+          "raw_quote": "The\nindividual orders come from different instructing parties, that is, account owners, but are for the same\nfinancial instrument.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.001.001.05-p1685-c002",
+          "mentions": [
+            {
+              "label": "account owners",
+              "start": 72,
+              "end": 86,
+              "resolution": {
+                "label": "account owners",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "This message will be typically used by a party collecting orders, that is, a concentrator, bulking these individual orders into one bulk order before sending it to an executing party.",
+          "raw_quote": "This message will be typically used by a party collecting orders, that is, a concentrator, bulking these\nindividual orders into one bulk order before sending it to an executing party.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.001.001.05-p1685-c003",
+          "mentions": [
+            {
+              "label": "concentrator",
+              "start": 77,
+              "end": 89,
+              "resolution": {
+                "label": "concentrator",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-concentrator",
+                  "path": "shared/reference/participants/participant-src-000095-concentrator.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 167,
+              "end": 182,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The RedemptionBulkOrder message is used to bulk several individual orders into one bulk order.",
+          "raw_quote": "Usage\nThe RedemptionBulkOrder message is used to bulk several individual orders into one bulk order.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The RedemptionBulkOrder can result in one single bulk cash settlement or several individual cash settlements.",
+          "raw_quote": "The RedemptionBulkOrder can result in one single bulk cash settlement or several\nindividual cash settlements.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "For a single redemption order, the RedemptionOrder message, not the RedemptionBulkOrder message, must be used.",
+          "raw_quote": "For a single redemption order, the RedemptionOrder message, not the RedemptionBulkOrder\nmessage, must be used.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "If there are redemption orders for different financial instruments but for the same account, then the RedemptionOrder must be used.",
+          "raw_quote": "If there are redemption orders for different financial instruments but for the same account, then the\nRedemptionOrder must be used.",
+          "file_pages": [
+            1685
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1685
+      ],
+      "file_pages": [
+        1685
+      ]
+    }
+  ]
+}

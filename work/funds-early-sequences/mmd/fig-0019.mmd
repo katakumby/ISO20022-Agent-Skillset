@@ -1,0 +1,8 @@
+sequenceDiagram
+participant O as Account Owner
+participant M as Intermediary
+participant S as Account Servicer
+O->>M: AccountOpeningInstruction
+M->>S: AccountOpeningInstruction
+S->>M: AccountDetailsConfirmation (ACCO)
+M->>O: AccountDetailsConfirmation (ACCO)

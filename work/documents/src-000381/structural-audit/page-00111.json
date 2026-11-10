@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 111,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 221,
+    "2": 392
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 5,
+    "table-associated-axis-line": 383,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "dcb416a0705803ed6114c910dca5d669f6b734efb2a5650d745b28a346a18bdf",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0158",
+      "file_page": 111,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905780645162,
+        718.4930700000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0158.md",
+      "rows": 29,
+      "matrix_cells": 174,
+      "physical_cells": 174,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0042d85a471edbd819dfd078814ef5b889b0e2612a08eabcdc5ab56067dd1b9d",
+      "cell_geometry_sha256": "cc1296fbcdeccae215302b543062c62efdb8f8cf8689400c5f66204a35b5fcb2",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 174,
+      "independent_cells_match": 174,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

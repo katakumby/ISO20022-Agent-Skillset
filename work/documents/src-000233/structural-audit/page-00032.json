@@ -1,0 +1,77 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 32,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 33,
+    "1": 56
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 27,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "570a9040ee993d23e33ffc0170ab87e26b26da78c658ad486df37b4f0d3e4be9",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0020",
+      "file_page": 32,
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.23623142857144,
+        663.6929
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0020.md",
+      "rows": 5,
+      "matrix_cells": 10,
+      "physical_cells": 10,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "eba39a894b6b387b48bd78716e72067d158e8ec298e92babbca1abc93cdb3793",
+      "cell_geometry_sha256": "c27190f24b796a0bd33c64530f5f8ba4b231fec703565faae2118b5f3ae93bbb",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 10,
+      "independent_cells_match": 8,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            74.89291000000014,
+            510.23623142857144,
+            149.0929100000002
+          ],
+          "stored_value": "- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        },
+        {
+          "row": 4,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            387.2929100000001,
+            510.23623142857144,
+            595.4929000000001
+          ],
+          "stored_value": "This IntraPositionMovementPendingReport message is\nsent from a settlement infrastructure to an account\nowner/request to report the intra-position movement\ninstructions, previously sent by the account owner, that\nhave a pending status.\nThe message may also be used to:\n- re-send a message sent by the account owner to the\naccount servicer (the sub-function of the message is\n\"Duplicate\")\n- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "This IntraPositionMovementPendingReport message is\r\nsent from a settlement infrastructure to an account\r\nowner/request to report the intra-position movement\r\ninstructions, previously sent by the account owner, that\r\nhave a pending status.\r\nThe message may also be used to:\r\n- re-send a message sent by the account owner to the\r\naccount servicer (the sub-function of the message is\r\n\"Duplicate\")\r\n- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

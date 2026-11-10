@@ -1,0 +1,183 @@
+classDiagram
+direction TB
+class Collateral["Collateral"] {
+<<BusinessComponent>>
+}
+class Account["Account"] {
+<<BusinessComponent>>
+}
+class SecuritiesAccount["SecuritiesAccount"] {
+<<BusinessComponent>>
+}
+class System["System"] {
+<<BusinessComponent>>
+}
+class SystemPartyRole["SystemPartyRole"] {
+<<BusinessComponent>>
+}
+class Location["Location"] {
+<<BusinessComponent>>
+}
+class Country["Country"] {
+<<BusinessComponent>>
+}
+class PostalAddress["PostalAddress"] {
+<<BusinessComponent>>
+}
+class ContactPoint["ContactPoint"] {
+<<BusinessComponent>>
+}
+class AccountIdentification["AccountIdentification"] {
+<<BusinessComponent>>
+}
+class GenericIdentification["GenericIdentification"] {
+<<BusinessComponent>>
+}
+class PartyIdentificationPrimary["PartyIdentificationInformation"] {
+<<BusinessComponent>>
+}
+class PartyIdentificationRepeated["PartyIdentificationInformation"] {
+<<BusinessComponent>>
+}
+class PartyName["PartyName"] {
+<<BusinessComponent>>
+}
+class OrganisationIdentification["OrganisationIdentification"] {
+<<BusinessComponent>>
+}
+class Organisation["Organisation"] {
+<<BusinessComponent>>
+}
+class Scheme["Scheme"] {
+<<BusinessComponent>>
+}
+class StatusReason["StatusReason"] {
+<<BusinessComponent>>
+}
+class Status["Status"] {
+<<BusinessComponent>>
+}
+class SecuritiesStatus["SecuritiesStatus"] {
+<<BusinessComponent>>
+}
+class AssetHolding["AssetHolding"] {
+<<BusinessComponent>>
+}
+class HaircutValuation["HaircutValuation"] {
+<<BusinessComponent>>
+}
+class Asset["Asset"] {
+<<BusinessComponent>>
+}
+class AssetClassification["AssetClassification"] {
+<<BusinessComponent>>
+}
+class Derivative["Derivative"] {
+<<BusinessComponent>>
+}
+class Option["Option"] {
+<<BusinessComponent>>
+}
+class Future["Future"] {
+<<BusinessComponent>>
+}
+class Issuance["Issuance"] {
+<<BusinessComponent>>
+}
+class SecuritiesPricing["SecuritiesPricing"] {
+<<BusinessComponent>>
+}
+class YieldCalculation["YieldCalculation"] {
+<<BusinessComponent>>
+}
+class RateAndAmount["RateAndAmount"] {
+<<BusinessComponent>>
+}
+class VariableInterest["VariableInterest"] {
+<<BusinessComponent>>
+}
+class InterestCalculation["InterestCalculation"] {
+<<BusinessComponent>>
+}
+class SecuritiesTax["SecuritiesTax"] {
+<<BusinessComponent>>
+}
+class TradingMarket["TradingMarket"] {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity["SecuritiesQuantity"] {
+<<BusinessComponent>>
+}
+class Security["Security"] {
+<<BusinessComponent>>
+}
+class Warrant["Warrant"] {
+<<BusinessComponent>>
+}
+class Debt["Debt"] {
+<<BusinessComponent>>
+}
+class DateTimePeriod["DateTimePeriod"] {
+<<BusinessComponent>>
+}
+class SecuritiesRestriction["SecuritiesRestriction"] {
+<<BusinessComponent>>
+}
+Collateral -- Account : + RelatedCollateralProcess / + CollateralAccount
+Collateral -- AssetHolding : - IndependentAmountCollateral / + SegregatedIndependentAmountAssetHolding
+AssetHolding -- HaircutValuation : + Haircut
+AssetHolding -- Asset : + AssetValue
+Asset -- AssetClassification
+Asset -- Issuance : + IssuedAsset
+AssetClassification -- Scheme : - AssetClassScheme
+Derivative --|> Asset
+Derivative -- Asset : + UnderlyingAsset
+Option --|> Derivative
+Future --|> Derivative
+Derivative -- SecuritiesPricing : + ExercisePrice
+Issuance -- SecuritiesPricing : - OriginalIssueDiscount
+YieldCalculation -- SecuritiesPricing : + RedemptionPrice
+YieldCalculation -- RateAndAmount : - YieldRange
+YieldCalculation -- VariableInterest : + RelatedYieldCalculation
+RateAndAmount -- SecuritiesTax : - RelatedTax
+VariableInterest -- InterestCalculation
+VariableInterest -- Security : + RelatedVariableInterest / + BenchmarkReference
+InterestCalculation -- Debt : + NextInterest / + DebtInstrument
+InterestCalculation -- DateTimePeriod : + RelatedInterestCalculation / + InterestPeriod
+SecuritiesTax -- Security : + TaxDetails
+Security -- SecuritiesRestriction : + Restriction
+Security -- SecuritiesQuantity : + SecurityIdentification
+Warrant --|> Security
+Debt --|> Security
+SecuritiesPricing -- Warrant : - SubscriptionPrice / + RelatedWarrant
+SecuritiesQuantity -- Debt : - MinimumDenomination / + MinimumDenominationDebt
+SecuritiesQuantity -- Debt : - MinimumIncrement / + MinimumIncrementDebt
+TradingMarket -- SecuritiesQuantity : - MaximumTradedQuantityMarket / - MaximumTradedNominalQuantity
+TradingMarket -- SecuritiesQuantity : - MinimumTradedQuantityMarket / - MinimumTradedNominalQuantity
+TradingMarket -- Security : + PlaceOfListing / + ListedSecurity
+TradingMarket -- Security : + TradedSecurity
+Debt -- DateTimePeriod : + ExtendiblePeriodDebt / - ExtendiblePeriod
+Debt -- DateTimePeriod : + CustomDateDebt / - CustomDate
+SecuritiesStatus --|> Status
+StatusReason -- Status
+SecuritiesStatus -- Security
+System -- Account
+System -- SystemPartyRole : + RelatedSystem / + PartyRole
+System -- Location
+Location -- PostalAddress : + Address
+Country -- PostalAddress : + PostalAddressSpecification
+PostalAddress --|> ContactPoint
+ContactPoint -- GenericIdentification : + IdentificationForContactPoint / + Identification
+Account -- AccountIdentification : + Identification
+SecuritiesAccount --|> Account
+AccountIdentification -- GenericIdentification : + IdentificationForAccountCostReferencePattern / + CostReferencePattern
+GenericIdentification -- Scheme : + Identification
+GenericIdentification -- StatusReason : + DataSourceScheme / - RelatedStatusReason
+GenericIdentification -- PartyIdentificationPrimary : - OtherIdentification / + RelatedPartyIdentification
+GenericIdentification -- PartyIdentificationRepeated : - OtherIdentification / + RelatedPartyIdentification
+PartyIdentificationPrimary -- PartyName : + PartyIdentification
+PartyIdentificationRepeated -- PartyName : + PartyName / + PartyIdentification
+OrganisationIdentification --|> PartyIdentificationPrimary
+OrganisationIdentification --|> PartyIdentificationRepeated
+OrganisationIdentification -- Organisation
+PartyIdentificationRepeated -- DateTimePeriod : - RelatedIdentification / + ValidityPeriod

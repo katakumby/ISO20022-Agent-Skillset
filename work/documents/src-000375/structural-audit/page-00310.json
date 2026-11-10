@@ -1,0 +1,150 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 310,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 93,
+    "2": 142
+  },
+  "path_classes": {
+    "link-annotation-underline": 5,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 129,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "cd19fa9ef8d3668241995228156255bd177bc763f345fadb9ead16d019b47c92",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        84.5394,
+        133.5237,
+        244.4114,
+        134.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        124.8929,
+        260.596,
+        134.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 10,
+      "bbox": [
+        243.4114,
+        133.5237,
+        261.096,
+        134.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        124.8929,
+        260.596,
+        134.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 85,
+      "bbox": [
+        144.5686,
+        288.3237,
+        219.9339,
+        289.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        279.6929,
+        219.4339,
+        289.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 89,
+      "bbox": [
+        360.804,
+        306.3237,
+        494.5384,
+        307.3237
+      ],
+      "link_annotation_bbox": [
+        361.304,
+        297.6929,
+        510.723,
+        307.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 91,
+      "bbox": [
+        493.5384,
+        306.3237,
+        511.223,
+        307.3237
+      ],
+      "link_annotation_bbox": [
+        361.304,
+        297.6929,
+        510.723,
+        307.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0519",
+      "file_page": 310,
+      "bbox": [
+        85.03936999999996,
+        141.89291000000014,
+        555.5905707692308,
+        210.49291000000017
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0519.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3ee5a22e25e0fd2d32c2d7aa59b689147c420061e83c86913ee88bfe949a419c",
+      "cell_geometry_sha256": "b1d055601e11aee097a0bb89ba251e5c329ff97b2f28bbd69d8b4b34722b2a10",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0520",
+      "file_page": 310,
+      "bbox": [
+        85.03936999999996,
+        326.6929100000001,
+        555.5905707692308,
+        455.8929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0520.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a249c0984f5d2cd0885c18ef837ccb2307396c411468fd00f50d34e82c1bba7b",
+      "cell_geometry_sha256": "95812dee8be637689f785e10e65dd946d40fa6a36f14b90a3115e4510d75f963",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,637 @@
+{
+  "message_id": "setr.030.001.03",
+  "publications": [
+    {
+      "source_id": "src-000181",
+      "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+      "heading": "5 setr.030.001.03 SecuritiesTradeConfirmationResponseV03",
+      "definition_pages": [
+        148,
+        161
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "scope-sent-by",
+          "message_subject": "This message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an executing party (local matching) or to Central Matching Utility (CMU)",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "to Central Matching Utility",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-central-matching-utility",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-central-matching-utility.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": "an executing party (local matching) or to Central Matching Utility (CMU)"
+          },
+          "sender": {
+            "expression": "an instructing party, a custodian or an affirming party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000180-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a custodian",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-custodian",
+                  "path": "shared/reference/participants/participant-src-000180-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "an affirming party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-affirming-party",
+                  "path": "shared/reference/participants/participant-src-000180-affirming-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000181-setr.030.001.03-p148-c001-d1",
+          "source_id": "src-000181",
+          "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+          "heading": "5 setr.030.001.03 SecuritiesTradeConfirmationResponseV03",
+          "file_pages": [
+            148
+          ],
+          "section": "scope",
+          "quote": "Sent by an instructing party, a custodian or an affirming party to an executing party (local matching) or to Central Matching Utility (CMU) to affirm (accept) or disaffirm (reject) (central matching) the SecuritiesTradeConfirmation message.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "Sent by an instructing party, a custodian or an affirming party to an executing party (local matching) or to Central Matching Utility (CMU) to affirm (accept) or disaffirm (reject) (central matching) the SecuritiesTradeConfirmation message.",
+          "raw_quote": "Scope\nSent by an instructing party, a custodian or an affirming party to an executing party (local matching) or\nto Central Matching Utility (CMU) to affirm (accept) or disaffirm (reject) (central matching) the\nSecuritiesTradeConfirmation message.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 11,
+              "end": 28,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000180-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "custodian",
+              "start": 32,
+              "end": 41,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-custodian",
+                  "path": "shared/reference/participants/participant-src-000180-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "affirming party",
+              "start": 48,
+              "end": 63,
+              "resolution": {
+                "label": "affirming party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-affirming-party",
+                  "path": "shared/reference/participants/participant-src-000180-affirming-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 70,
+              "end": 85,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Central Matching Utility (CMU)",
+              "start": 109,
+              "end": 139,
+              "resolution": {
+                "label": "Central Matching Utility (CMU)",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-central-matching-utility-cmu",
+                  "path": "shared/reference/participants/participant-src-000180-central-matching-utility-cmu.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000181-setr.030.001.03-p148-c001-d1"
+          ]
+        },
+        {
+          "quote": "The executing party is typically the broker/dealer or an intermediary system/vendor communicating on behalf of the broker/dealer.",
+          "raw_quote": "The executing party is typically the broker/dealer or an intermediary system/vendor communicating on\nbehalf of the broker/dealer.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c002",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 4,
+              "end": 19,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "broker/dealer",
+              "start": 37,
+              "end": 50,
+              "resolution": {
+                "label": "broker/dealer",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-broker-dealer",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-broker-dealer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "intermediary",
+              "start": 57,
+              "end": 69,
+              "resolution": {
+                "label": "intermediary",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-intermediary",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-intermediary.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "broker/dealer",
+              "start": 115,
+              "end": 128,
+              "resolution": {
+                "label": "broker/dealer",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-broker-dealer",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-broker-dealer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The instructing party is typically the investment manager or an intermediary system/vendor communicating on behalf of the investment manager or of other categories of investors.",
+          "raw_quote": "The instructing party is typically the investment manager or an intermediary system/vendor\ncommunicating on behalf of the investment manager or of other categories of investors.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c003",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000180-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 39,
+              "end": 57,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-investment-manager",
+                  "path": "shared/reference/participants/participant-src-000180-investment-manager.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "intermediary",
+              "start": 64,
+              "end": 76,
+              "resolution": {
+                "label": "intermediary",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-intermediary",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-intermediary.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 122,
+              "end": 140,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-investment-manager",
+                  "path": "shared/reference/participants/participant-src-000180-investment-manager.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investors",
+              "start": 167,
+              "end": 176,
+              "resolution": {
+                "label": "investors",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-investor",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The custodian or an affirming party is typically the custodian, trustee, financial institution, intermediary system/vendor communicating on behalf of them, or their agent.",
+          "raw_quote": "The custodian or an affirming party is typically the custodian, trustee, financial institution, intermediary\nsystem/vendor communicating on behalf of them, or their agent.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c004",
+          "mentions": [
+            {
+              "label": "custodian",
+              "start": 4,
+              "end": 13,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-custodian",
+                  "path": "shared/reference/participants/participant-src-000180-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "affirming party",
+              "start": 20,
+              "end": 35,
+              "resolution": {
+                "label": "affirming party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-affirming-party",
+                  "path": "shared/reference/participants/participant-src-000180-affirming-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "custodian",
+              "start": 53,
+              "end": 62,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-custodian",
+                  "path": "shared/reference/participants/participant-src-000180-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "trustee",
+              "start": 64,
+              "end": 71,
+              "resolution": {
+                "label": "trustee",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-trustee",
+                  "path": "shared/reference/participants/participant-src-000180-trustee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "intermediary",
+              "start": 96,
+              "end": 108,
+              "resolution": {
+                "label": "intermediary",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-intermediary",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-intermediary.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "agent",
+              "start": 165,
+              "end": 170,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000181-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000181-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Initiator: Both in local and central matching, the Initiator may be the Instructing Party, Custodian or Affirming party.",
+          "raw_quote": "Usage\nInitiator: Both in local and central matching, the Initiator may be the Instructing Party, Custodian or\nAffirming party.",
+          "file_pages": [
+            148
+          ],
+          "section": "usage",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c005",
+          "mentions": [
+            {
+              "label": "Instructing Party",
+              "start": 72,
+              "end": 89,
+              "resolution": {
+                "label": "Instructing Party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000180-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Custodian",
+              "start": 91,
+              "end": 100,
+              "resolution": {
+                "label": "Custodian",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-custodian",
+                  "path": "shared/reference/participants/participant-src-000180-custodian.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Affirming party",
+              "start": 104,
+              "end": 119,
+              "resolution": {
+                "label": "Affirming party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000180-affirming-party",
+                  "path": "shared/reference/participants/participant-src-000180-affirming-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Respondent: Executing party does not need to respond if an affirmation.",
+          "raw_quote": "Respondent: Executing party does not need to respond if an affirmation.",
+          "file_pages": [
+            148
+          ],
+          "section": "usage",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c006",
+          "mentions": [
+            {
+              "label": "Executing party",
+              "start": 12,
+              "end": 27,
+              "resolution": {
+                "label": "Executing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Executing party may respond with modification or cancellation of the rejected SecuritiesTradeConfirmation message.",
+          "raw_quote": "Executing party may respond\nwith modification or cancellation of the rejected SecuritiesTradeConfirmation message.",
+          "file_pages": [
+            148
+          ],
+          "section": "usage",
+          "evidence_id": "src-000181-setr.030.001.03-p148-c007",
+          "mentions": [
+            {
+              "label": "Executing party",
+              "start": 0,
+              "end": 15,
+              "resolution": {
+                "label": "Executing party",
+                "scope_source_id": "src-000181",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000181-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000181-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "If accepting the SecuritiesTradeConfirmation message, then the trade is ready for settlement processing.",
+          "raw_quote": "If accepting the SecuritiesTradeConfirmation message, then the\ntrade is ready for settlement processing.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "If rejecting the SecuritiesTradeConfirmation message, then the trade is not ready for settlement.",
+          "raw_quote": "If rejecting the SecuritiesTradeConfirmation message, then the\ntrade is not ready for settlement.",
+          "file_pages": [
+            148
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The ISO 20022 Business Application Header must be used",
+          "raw_quote": "The ISO 20022 Business Application Header must be used",
+          "file_pages": [
+            148
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        148
+      ],
+      "file_pages": [
+        148,
+        149
+      ]
+    }
+  ]
+}

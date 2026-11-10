@@ -1,0 +1,6 @@
+sequenceDiagram
+participant O as Account Owner
+participant S as Account Servicer
+O->>S: AccountModificationInstruction (CLOS)
+S->>O: AccountManagementStatusReport (RECE)
+S->>O: AccountDetailsConfirmation (ACCM) + #60;Clsd#62;

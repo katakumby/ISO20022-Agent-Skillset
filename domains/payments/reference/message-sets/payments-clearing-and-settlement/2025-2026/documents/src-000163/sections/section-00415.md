@@ -1,0 +1,60 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Payments Clearing and Settlement"
+source_ids: ["src-000163"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["4 pacs.004.001.15 PaymentReturnV15", "4.4 Message Building Blocks", "4.4.4 SupplementaryData <SplmtryData>"]
+file_pages: [561]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["pacs.004.001.15"]
+---
+
+# 4.4.4 SupplementaryData <SplmtryData>
+
+Source: [src-000163](../../../../../../../../../raw-input/payments_clearing_and_settlement/ISO20022_MDRPart2_PaymentsClearingandSettlement_2025_2026_v1.pdf). Locator: one-based file pages 561 to 561.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 561
+
+```text
+Definition: Additional information that cannot be captured in the structured elements and/or any other
+specific block.
+Impacted by: C68 "SupplementaryDataRule"
+SupplementaryData <SplmtryData> contains the following elements (see "SupplementaryData1" on
+page 1190 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   PlaceAndName <PlcAndNm> [0..1] Text 1191
+   Envelope <Envlp> [1..1] (External Schema) 1191
+Constraints
+• SupplementaryDataRule
+This component may not be used without the explicit approval of a SEG and submission to the RA of
+ISO 20022 compliant structure(s) to be used in the Envelope element.
+4.4.4 SupplementaryData <SplmtryData>
+Presence: [0..*]
+Definition: Additional information that cannot be captured in the structured elements and/or any other
+specific block.
+Impacted by: C68 "SupplementaryDataRule"
+SupplementaryData <SplmtryData> contains the following elements (see "SupplementaryData1" on
+page 1190 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   PlaceAndName <PlcAndNm> [0..1] Text 1191
+   Envelope <Envlp> [1..1] (External Schema) 1191
+Constraints
+• SupplementaryDataRule
+This component may not be used without the explicit approval of a SEG and submission to the RA of
+ISO 20022 compliant structure(s) to be used in the Envelope element.
+Approved by the Payments SEG on 12 January 2026 pacs.004.001.15 PaymentReturnV15
+Payments Clearing and Settlement - Maintenance 2025 -
+2026
+561 March 2026
+```
+

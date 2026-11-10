@@ -1,0 +1,94 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["3 acmt.002.001.08 AccountDetailsConfirmationV08"]
+file_pages: [38, 39]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["acmt.002.001.08"]
+---
+
+# 3 acmt.002.001.08 AccountDetailsConfirmationV08
+
+Source: [src-000096](../../../../../../../../../raw-input/investment_funds/ISO20022_MDRPart2_Investment-Funds_2025_2026_v2.pdf). Locator: one-based file pages 38 to 39.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 38
+
+```text
+3 acmt.002.001.08
+AccountDetailsConfirmationV08
+3.1 MessageDefinition Functionality
+Scope
+The AccountDetailsConfirmation message is sent by an account servicer, for example, a registrar,
+transfer agent, custodian bank or securities depository to the account owner, for example, an investor to
+confirm the opening of an account, execution of an AccountModificationInstruction or to return
+information requested in a GetAccountDetails message.
+Usage
+The AccountDetailsConfirmation message is used to confirm the opening of an account, modification of
+an account or the provision of information requested in a previously sent GetAccountDetails message.
+The message contains detailed information relevant to the opened account.
+When the AccountDetailsConfirmation is used to confirm execution of an AccountModificationInstruction
+message, it may:
+- contain the modified subsets of account details that were specified in the
+AccountModificationInstruction, and/or
+- provide the status of the account.
+When the AccountModificationInstruction message is used to instruct the closure of an account, the
+AccountDetailsConfirmation message is used to confirm the account has been closed.
+When the AccountDetailsConfirmation is used to reply to a GetAccountDetails message, it returns the
+selected subsets of account details that were specified in the GetAccountDetails message.
+Outline
+The AccountDetailsConfirmationV08 MessageDefinition is composed of 16 MessageBuildingBlocks:
+A. MessageIdentification
+Reference that uniquely identifies the message from a business application standpoint.
+B. OrderReference
+Identifies a related order or settlement transaction.
+C. RelatedReference
+Reference to a linked message that was previously received.
+D. ConfirmationDetails
+Information about the request or instruction which triggered this confirmation.
+E. InvestmentAccount
+Confirmation of the information related to the investment account.
+F. AccountParties
+Approved by the Securities SEG on 27 January 2026 acmt.002.001.08 AccountDetailsConfirmationV08
+Investment Funds - Maintenance 2025 - 2026 38 May 2026
+```
+
+## File page 39
+
+```text
+Confirmation of information related to parties that are related to the account, for example, primary
+account owner.
+G. Intermediaries
+Confirmation of an intermediary or other party related to the management of the account.
+H. Placement
+Confirmation of referral information.
+I. NewIssueAllocation
+Confirmation of eligibility conditions applicable when there is an allocation of new issues for hedge
+fund account opening.
+J. SavingsInvestmentPlan
+Confirmation of the information related to a savings plan that is related to the account.
+K. WithdrawalInvestmentPlan
+Confirmation of the information related to a withdrawal plan that is related to the account.
+L. CashSettlement
+Confirmation of a cash settlement standing instruction associated to transactions on the account.
+M. ServiceLevelAgreement
+Identifies documents to be provided for the account opening.
+N. AdditionalInformation
+Additional information such as remarks or notes that must be conveyed about the party and or
+limitations and restrictions.
+O. MarketPracticeVersion
+Identifies the market practice to which the message conforms.
+P. Extension
+Additional information that cannot be captured in the structured elements and/or any other specific
+block.
+Approved by the Securities SEG on 27 January 2026 acmt.002.001.08 AccountDetailsConfirmationV08
+Investment Funds - Maintenance 2025 - 2026 39 May 2026
+```
+

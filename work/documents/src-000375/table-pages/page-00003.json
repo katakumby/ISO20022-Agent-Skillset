@@ -1,0 +1,100 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.23623142857144,
+        665.0929100000001
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          460.49293000000023
+        ],
+        [
+          85.03936999999999,
+          460.49293000000023,
+          283.46457,
+          538.6929100000002
+        ],
+        [
+          85.03936999999999,
+          538.6929100000002,
+          283.46457,
+          596.8929000000002
+        ],
+        [
+          85.03936999999999,
+          596.8929000000002,
+          283.46457,
+          665.0929100000001
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.23623142857144,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.23623142857144,
+          460.49293000000023
+        ],
+        [
+          283.46457,
+          460.49293000000023,
+          510.23623142857144,
+          538.6929100000002
+        ],
+        [
+          283.46457,
+          538.6929100000002,
+          510.23623142857144,
+          596.8929000000002
+        ],
+        [
+          283.46457,
+          596.8929000000002,
+          510.23623142857144,
+          665.0929100000001
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "semt.025.001.01\nSecuritiesAccountPositionQueryV01",
+          "The SecuritiesAccountPositionQuery message is sent\nby an account owner to an account servicer or\nservicing party to request an account view on the\nposition at a particular point in time period, or during a\nparticular time period, where all positions are\nsummarised in the account structure that is compatible\nwith the query.\nUsage:\nThe message may also be used to:\n-re-send a message previously sent (the sub-function\nof the message is Duplicate),\n- provide a third party with a copy of a message for\ninformation (the sub-function of the message is Copy),\n-re-send to a third party a copy of a message for\ninformation (the sub-function of the message is\nCopyDuplicate)."
+        ],
+        [
+          "semt.026.001.01\nSecuritiesSettlementTransactionQueryV01",
+          "The SecuritiesSettlementInstructionQuery message is\nsent from an account owner/requestor to a settlement\ninfrastructure.\nThe message is used to query information on the\nsecurities settlement instructions, that satisfy the\ndefined selection criteria."
+        ],
+        [
+          "semt.027.001.01\nSecuritiesSettlementTransactionQueryRespons\neV01",
+          "The SecuritiesSettlementResponse message is sent\nfrom a settlement infrastructure to an account owner/\nrequestor to provide the details of the securities\nsettlement instructions, as selected in the search\ncriteria defined in the request."
+        ],
+        [
+          "semt.040.001.01\nSecuritiesAccountPositionResponseV01",
+          "The SecuritiesAccountPositionResponse message is\nsent by a market infrastructure to an instructing party to\nreport the securities positions for the given date period\nas requested in the query, for all securities across all\naccounts satisfying the query criteria."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,227 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 4727,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 84,
+    "1": 76
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 73,
+    "unclassified-painted-path": 3,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "c2b95393f769be64561559b14eed5a3bb46212fd23569091ca1f2f3d05237165",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 143,
+      "bbox": [
+        130.1204,
+        604.9238,
+        262.7708,
+        605.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        596.2928,
+        284.5169,
+        606.2928
+      ]
+    },
+    {
+      "path_object_ordinal": 145,
+      "bbox": [
+        261.7708,
+        604.9238,
+        285.0169,
+        605.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        596.2928,
+        284.5169,
+        606.2928
+      ]
+    }
+  ],
+  "unclassified_objects": [
+    {
+      "object_ordinal": 135,
+      "object_type": 2,
+      "form_depth": 0,
+      "bbox": [
+        85.0394,
+        546.9929,
+        544.252,
+        570.9929
+      ],
+      "segments": 5,
+      "segment_types": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "points": [
+        [
+          85.0394,
+          546.9929
+        ],
+        [
+          544.252,
+          546.9929
+        ],
+        [
+          544.252,
+          570.9929
+        ],
+        [
+          85.0394,
+          570.9929
+        ],
+        [
+          85.0394,
+          546.9929
+        ]
+      ],
+      "closed_segments": [
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "axis_aligned": true,
+      "axis_line": false,
+      "axis_rectangle": true,
+      "fill_mode": 1,
+      "stroke": false,
+      "disposition": "unclassified-painted-path",
+      "overlapping_table_ids": []
+    },
+    {
+      "object_ordinal": 138,
+      "object_type": 2,
+      "form_depth": 0,
+      "bbox": [
+        84.7394,
+        546.5429,
+        544.552,
+        547.1429
+      ],
+      "segments": 2,
+      "segment_types": [
+        2,
+        0
+      ],
+      "points": [
+        [
+          85.0394,
+          546.8429
+        ],
+        [
+          544.252,
+          546.8429
+        ]
+      ],
+      "closed_segments": [
+        false,
+        false
+      ],
+      "axis_aligned": true,
+      "axis_line": true,
+      "axis_rectangle": false,
+      "fill_mode": 0,
+      "stroke": true,
+      "disposition": "unclassified-painted-path",
+      "overlapping_table_ids": []
+    },
+    {
+      "object_ordinal": 139,
+      "object_type": 2,
+      "form_depth": 0,
+      "bbox": [
+        84.7393,
+        570.8429,
+        544.5521,
+        571.443
+      ],
+      "segments": 2,
+      "segment_types": [
+        2,
+        0
+      ],
+      "points": [
+        [
+          544.252,
+          571.1429
+        ],
+        [
+          85.0394,
+          571.1429
+        ]
+      ],
+      "closed_segments": [
+        false,
+        false
+      ],
+      "axis_aligned": true,
+      "axis_line": true,
+      "axis_rectangle": false,
+      "fill_mode": 0,
+      "stroke": true,
+      "disposition": "unclassified-painted-path",
+      "overlapping_table_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "tbl-6982",
+      "file_page": 4727,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.236235,
+        498.6929600000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-6982.md",
+      "rows": 10,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "cf71527df664872d8e8dcab1ae171e384a9fcf6da4796c164dc8755e0d262df9",
+      "cell_geometry_sha256": "9a5438e6e19a223c8b6125b1939f261cdea56df78a28ef83c40f098ff500517f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 29,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            74.89291000000014,
+            510.236235,
+            153.0929100000002
+          ],
+          "stored_value": "Price is the calculated creation price of a\ndual-priced investment fund (creation-\ncancellation prices) and the highest\npossible buying price of the units before\nthe initial charge. The actual buying or\noffer price, which includes charges, will\nbe higher.",
+          "pdfium_value": "Price is the calculated creation price of a\r\ndual-priced investment fund (creation\u0002cancellation prices) and the highest\r\npossible buying price of the units before\r\nthe initial charge. The actual buying or\r\noffer price, which includes charges, will\r\nbe higher."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

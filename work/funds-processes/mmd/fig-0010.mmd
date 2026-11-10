@@ -1,0 +1,20 @@
+flowchart TB
+subgraph laneI["Instructing Party"]
+start((" "))
+instruct["Instruct Account Modification"]
+status(["Status Received"])
+confirmed(["Account Modification Confirmed"])
+finalNode(((" ")))
+end
+subgraph laneE["Executing Party"]
+validation{"Validation"}
+provideStatus["Provide Status"]
+provideConfirm["Provide Confirmation"]
+end
+start --> instruct
+instruct --> |"Instruction"| validation
+validation --- provideStatus
+provideStatus --> |"Status"| status
+provideConfirm --- |"Confirmed"| confirmed
+confirmed --> finalNode
+style start fill:#222,stroke:#222,color:#222

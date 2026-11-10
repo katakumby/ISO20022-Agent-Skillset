@@ -1,0 +1,63 @@
+classDiagram
+direction TB
+class AccountService {
+<<BusinessComponent>>
+}
+class Account {
+<<BusinessComponent>>
+}
+class AccountRestriction {
+}
+class DateTimePeriod {
+}
+class ReportingService {
+<<BusinessComponent>>
+}
+class CashAccountService {
+<<BusinessComponent>>
+}
+class CashAccountMandate {
+<<BusinessComponent>>
+}
+class ContactPoint {
+<<BusinessComponent>>
+}
+class PhoneAddress {
+<<BusinessComponent>>
+}
+class PostalAddress {
+<<BusinessComponent>>
+}
+class ElectronicAddress {
+<<BusinessComponent>>
+}
+class BankOperation {
+<<BusinessComponent>>
+}
+class DebitCreditFacility {
+<<BusinessComponent>>
+}
+class CashManagementService {
+<<BusinessComponent>>
+}
+class BankTransaction {
+<<BusinessComponent>>
+}
+class OperationThreshold {
+<<BusinessComponent>>
+}
+AccountService -- Account
+Account -- AccountRestriction
+AccountRestriction -- DateTimePeriod : + ValidityPeriod
+ReportingService --|> AccountService
+CashAccountService --|> AccountService
+ContactPoint -- ReportingService : + ReportingChannel / + RelatedReportingService
+PhoneAddress --|> ContactPoint
+PostalAddress --|> ContactPoint
+ElectronicAddress --|> ContactPoint
+BankOperation --|> CashAccountService
+DebitCreditFacility --|> CashAccountService
+CashManagementService --|> CashAccountService
+CashAccountService -- CashAccountMandate : + Services
+BankOperation -- BankTransaction : - OperationType
+BankOperation -- OperationThreshold

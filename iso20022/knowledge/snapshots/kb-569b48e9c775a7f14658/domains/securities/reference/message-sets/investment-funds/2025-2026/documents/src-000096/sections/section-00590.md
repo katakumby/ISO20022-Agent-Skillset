@@ -1,0 +1,65 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["31 sese.008.001.09 ReversalOfTransferInConfirmationV09", "32.4 Message Building Blocks", "32.4.2.7 Instrument <Instrm>", "32.4.2.7.1 Security <Scty>", "32.4.2.7.1.1 Identification <Id>", "32.4.2.7.1.1.10 Dutch <Dtch>"]
+file_pages: [798]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["sese.009.001.09"]
+---
+
+# 32.4.2.7.1.1.10 Dutch <Dtch>
+
+Source: [src-000096](../../../../../../../../../evidence/omitted/fffd4ab68b421d059524ec38.md). Locator: one-based file pages 798 to 798.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 798
+
+```text
+32.4.2.7.1.1.10  Dutch <Dtch>
+Presence: [1..1]
+Definition: Identifier for Dutch securities.
+Datatype: "DutchIdentifier" on page 5392
+32.4.2.7.1.1.11  Valoren <Vlrn>
+Presence: [1..1]
+Definition: Identifier for Swiss securities assigned by Telekurs Financial, the Swiss numbering agency.
+Datatype: "ValorenIdentifier" on page 5399
+32.4.2.7.1.1.12  Sicovam <SCVM>
+Presence: [1..1]
+Definition: Identifier for French securities assigned by the Societe Interprofessionnelle Pour La
+Compensation des Valeurs Mobilieres in France. The Sicovam is composed of 5-digits.
+Datatype: "SicovamIdentifier" on page 5397
+32.4.2.7.1.1.13  Belgian <Belgn>
+Presence: [1..1]
+Definition: Identifier for Belgian securities.
+Datatype: "BelgianIdentifier" on page 5390
+32.4.2.7.1.1.14  Common <Cmon>
+Presence: [1..1]
+Definition: Identifier of securities issued in Luxembourg. The common code is a 9-digit code that
+replaces the CEDEL (Clearstream) and Euroclear codes.
+Datatype: "EuroclearClearstreamIdentifier" on page 5393
+32.4.2.7.1.1.15  DTI <DTI>
+Presence: [1..1]
+Definition: Digital Token Identifier, as defined in ISO 24165.
+Datatype: "DTI2024Identifier" on page 5392
+32.4.2.7.1.1.16  OtherProprietaryIdentification <OthrPrtryId>
+Presence: [1..1]
+Definition: Proprietary identification of the security assigned by an institution or organisation.
+OtherProprietaryIdentification <OthrPrtryId> contains the following
+AlternateSecurityIdentification7 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 799
+   IdentificationSource <IdSrc> [1..1] ± 799
+Approved by the Securities SEG on 27 January 2026 sese.009.001.09
+RequestForTransferStatusReportV09
+Investment Funds - Maintenance 2025 - 2026 798 May 2026
+```
+

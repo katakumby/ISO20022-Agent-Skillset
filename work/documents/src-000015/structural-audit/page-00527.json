@@ -1,0 +1,97 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 527,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 188,
+    "2": 319
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 305,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "1cb912e9d30b59d3f786c9d270bc43d4d26229804d1dbc0c252ebfa28b3741f8",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 487,
+      "bbox": [
+        130.1204,
+        625.1237,
+        229.387,
+        626.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        616.493,
+        245.5716,
+        626.493
+      ]
+    },
+    {
+      "path_object_ordinal": 489,
+      "bbox": [
+        228.387,
+        625.1237,
+        246.0716,
+        626.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        616.493,
+        245.5716,
+        626.493
+      ]
+    },
+    {
+      "path_object_ordinal": 497,
+      "bbox": [
+        144.5686,
+        705.3237,
+        343.8499,
+        706.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        696.6929,
+        343.3499,
+        706.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0693",
+      "file_page": 527,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905776000001,
+        547.2930000000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0693.md",
+      "rows": 23,
+      "matrix_cells": 138,
+      "physical_cells": 138,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0638c95f5edfad1537c140574abed39cafe8e56d91f273b38685691dd6772e67",
+      "cell_geometry_sha256": "873ff68f31994f859fcb1a6847d36e6dd4b2c7a66a2d712b151ae78908985637",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 138,
+      "independent_cells_match": 138,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

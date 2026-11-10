@@ -1,0 +1,648 @@
+[
+  {
+    "id": "fig-0002",
+    "title": "Clearing, obligations, buy-in and settlement",
+    "nodes": [
+      {
+        "id": "ObligationFulfilment",
+        "name": "ObligationFulfilment",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Clearing",
+        "name": "Clearing",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "ClearingSystem",
+        "name": "ClearingSystem",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesClearing",
+        "name": "SecuritiesClearing",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "BuyIn",
+        "name": "BuyIn",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "PaymentObligation",
+        "name": "PaymentObligation",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "PaymentExecution",
+        "name": "PaymentExecution",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesPartyRole",
+        "name": "SecuritiesPartyRole",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "PaymentPartyRole",
+        "name": "PaymentPartyRole",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesSettlement",
+        "name": "SecuritiesSettlement",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesTradeExecution",
+        "name": "SecuritiesTradeExecution",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesPricing",
+        "name": "SecuritiesPricing",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesTrade",
+        "name": "SecuritiesTrade",
+        "stereotype": "",
+        "package": "DICO_BusinessComponents"
+      }
+    ],
+    "edges": [
+      {
+        "a": "Clearing",
+        "b": "ObligationFulfilment",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "Payment",
+        "b": "ObligationFulfilment",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "BuyIn",
+        "b": "ObligationFulfilment",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesClearing",
+        "b": "Clearing",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "Clearing",
+        "label": "+ ClearingSystem / + Clearing",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesClearing",
+        "b": "BuyIn",
+        "label": "+ RelatedSecuritiesClearingProcess / + BuyIn",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesClearing",
+        "b": "SecuritiesSettlement",
+        "label": "+ SecuritiesClearing / + SecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "PaymentExecution",
+        "b": "Payment",
+        "label": "+ PaymentExecution / + Payment",
+        "kind": "--"
+      },
+      {
+        "a": "Payment",
+        "b": "CashAccount",
+        "label": "- Payment / - Account",
+        "kind": "--"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentPartyRole",
+        "label": "+ Payment / + PartyRole",
+        "kind": "--"
+      },
+      {
+        "a": "CashAccount",
+        "b": "SecuritiesPartyRole",
+        "label": "+ CashAccount / + SecuritiesPartyRole",
+        "kind": "--"
+      },
+      {
+        "a": "CashAccount",
+        "b": "PaymentPartyRole",
+        "label": "+ CashAccount / + PaymentPartyRole",
+        "kind": "--"
+      },
+      {
+        "a": "Payment",
+        "b": "SecuritiesSettlement",
+        "label": "+ Payment / + RelatedSecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentObligation",
+        "label": "+ PaymentOffset / + PaymentObligation",
+        "kind": "--"
+      },
+      {
+        "a": "PaymentObligation",
+        "b": "BuyIn",
+        "label": "+ CashCompensation / + PaymentSourceBuyIn",
+        "kind": "--"
+      },
+      {
+        "a": "BuyIn",
+        "b": "SecuritiesQuantity",
+        "label": "+ RelatedBuyIn / + SecuritiesCompensation",
+        "kind": "--"
+      },
+      {
+        "a": "BuyIn",
+        "b": "SecuritiesPricing",
+        "label": "- RelatedBuyIn / + BuyInPrice",
+        "kind": "--"
+      },
+      {
+        "a": "PaymentObligation",
+        "b": "SecuritiesTradeExecution",
+        "label": "+ PaymentObligation / ExecutedSecuritiesTrade",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTradeExecution",
+        "b": "SecuritiesSettlement",
+        "label": "+ SecuritiesTradeExecution / + SecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTradeExecution",
+        "b": "SecuritiesQuantity",
+        "label": "+ SecuritiesTradeExecution / + ExecutedTradeQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTradeExecution",
+        "b": "SecuritiesTrade",
+        "label": "+ TradingExecution / + RelatedTrade",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTradeExecution",
+        "b": "SecuritiesPricing",
+        "label": "+ SecuritiesTradeExecution / - DealPrice",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesSettlement",
+        "b": "SecuritiesQuantity",
+        "label": "+ SecuritiesSettlement / - SettlementQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesQuantity",
+        "b": "SecuritiesTrade",
+        "label": "+ TradeQuantity / + Trade",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTrade",
+        "b": "SecuritiesPricing",
+        "label": "+ SecuritiesTrade / + TradePrice",
+        "kind": "--"
+      }
+    ],
+    "meaning": "Clearing, Payment and BuyIn specialize ObligationFulfilment; SecuritiesClearing specializes Clearing. The model links clearing system and clearing process to buy-in, cash compensation, securities compensation, buy-in price and settlement. Payment is linked independently to payment execution, cash account, payment party role, related securities settlement and payment obligation. Securities trading, execution, settlement, price and quantity associations retain their separately named ends. The outer long lines from SecuritiesClearing to SecuritiesSettlement and from BuyIn to SecuritiesPricing are separate complete associations. Most boxes omit a printed stereotype; those omissions are preserved rather than supplied from other boxes.",
+    "limitations": [],
+    "source_id": "src-000054",
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>28</ns0:col><ns0:colOff>66675</ns0:colOff><ns0:row>45</ns0:row><ns0:rowOff>114300</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"3\" name=\"Picture 2\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{81B5A287-39DD-EE60-34EA-207F0D8895A2}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"17135475\" cy=\"8258175\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 28,
+        "colOff": 66675,
+        "row": 45,
+        "rowOff": 114300
+      },
+      "to_cell": "AC46",
+      "figure_id": "fig-0002",
+      "sheet": "Clearing",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/securities/assets/src-000054/media/image2.png",
+      "sha256": "348bf5de853df70f5ea35f56c941963c77b4e339357bfd1c4a4bfdae60b5e1eb",
+      "page": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/workbooks/src-000054/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass ObligationFulfilment[\"ObligationFulfilment\"] {\n<<BusinessComponent>>\n}\nclass Clearing[\"Clearing\"] {\n<<BusinessComponent>>\n}\nclass ClearingSystem[\"ClearingSystem\"]\nclass SecuritiesClearing[\"SecuritiesClearing\"] {\n<<BusinessComponent>>\n}\nclass BuyIn[\"BuyIn\"]\nclass Payment[\"Payment\"]\nclass PaymentObligation[\"PaymentObligation\"]\nclass PaymentExecution[\"PaymentExecution\"]\nclass SecuritiesPartyRole[\"SecuritiesPartyRole\"]\nclass CashAccount[\"CashAccount\"]\nclass PaymentPartyRole[\"PaymentPartyRole\"]\nclass SecuritiesSettlement[\"SecuritiesSettlement\"]\nclass SecuritiesTradeExecution[\"SecuritiesTradeExecution\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesPricing[\"SecuritiesPricing\"]\nclass SecuritiesQuantity[\"SecuritiesQuantity\"]\nclass SecuritiesTrade[\"SecuritiesTrade\"]\n}\nClearing --|> ObligationFulfilment\nPayment --|> ObligationFulfilment\nBuyIn --|> ObligationFulfilment\nSecuritiesClearing --|> Clearing\nClearingSystem -- Clearing : + ClearingSystem / + Clearing\nSecuritiesClearing -- BuyIn : + RelatedSecuritiesClearingProcess / + BuyIn\nSecuritiesClearing -- SecuritiesSettlement : + SecuritiesClearing / + SecuritiesSettlement\nPaymentExecution -- Payment : + PaymentExecution / + Payment\nPayment -- CashAccount : - Payment / - Account\nPayment -- PaymentPartyRole : + Payment / + PartyRole\nCashAccount -- SecuritiesPartyRole : + CashAccount / + SecuritiesPartyRole\nCashAccount -- PaymentPartyRole : + CashAccount / + PaymentPartyRole\nPayment -- SecuritiesSettlement : + Payment / + RelatedSecuritiesSettlement\nPayment -- PaymentObligation : + PaymentOffset / + PaymentObligation\nPaymentObligation -- BuyIn : + CashCompensation / + PaymentSourceBuyIn\nBuyIn -- SecuritiesQuantity : + RelatedBuyIn / + SecuritiesCompensation\nBuyIn -- SecuritiesPricing : - RelatedBuyIn / + BuyInPrice\nPaymentObligation -- SecuritiesTradeExecution : + PaymentObligation / ExecutedSecuritiesTrade\nSecuritiesTradeExecution -- SecuritiesSettlement : + SecuritiesTradeExecution / + SecuritiesSettlement\nSecuritiesTradeExecution -- SecuritiesQuantity : + SecuritiesTradeExecution / + ExecutedTradeQuantity\nSecuritiesTradeExecution -- SecuritiesTrade : + TradingExecution / + RelatedTrade\nSecuritiesTradeExecution -- SecuritiesPricing : + SecuritiesTradeExecution / - DealPrice\nSecuritiesSettlement -- SecuritiesQuantity : + SecuritiesSettlement / - SettlementQuantity\nSecuritiesQuantity -- SecuritiesTrade : + TradeQuantity / + Trade\nSecuritiesTrade -- SecuritiesPricing : + SecuritiesTrade / + TradePrice\n",
+    "render_prefix": "src-000054-fig-0002",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Compared every visible entity, package label, printed stereotype, relationship endpoint, literal end label and hollow-triangle inheritance marker against the complete source artwork. Checked the ClearingMemberRole self-loop at rendered full resolution. Long outer associations, parallel account relationships and source-omitted stereotypes are retained. No numerical multiplicities are printed. Re-layout differs; native SVG remains zoomable."
+    }
+  },
+  {
+    "id": "fig-0003",
+    "title": "CCP position, clearing membership and trade context",
+    "nodes": [
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Position",
+        "name": "Position",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesPricing",
+        "name": "SecuritiesPricing",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SystemPartyRole",
+        "name": "SystemPartyRole",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "ThirdPartyRole",
+        "name": "ThirdPartyRole",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "NonClearingMemberRole",
+        "name": "NonClearingMemberRole",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "ClearingMemberRole",
+        "name": "ClearingMemberRole",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesAccount",
+        "name": "SecuritiesAccount",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "System",
+        "name": "System",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "ClearingSystem",
+        "name": "ClearingSystem",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Clearing",
+        "name": "Clearing",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesClearing",
+        "name": "SecuritiesClearing",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Trade",
+        "name": "Trade",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "TradePartyRole",
+        "name": "TradePartyRole",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Market",
+        "name": "Market",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Leg",
+        "name": "Leg",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Asset",
+        "name": "Asset",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesTrade",
+        "name": "SecuritiesTrade",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesTradeExecution",
+        "name": "SecuritiesTradeExecution",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "SecuritiesSettlement",
+        "name": "SecuritiesSettlement",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "Interest",
+        "name": "Interest",
+        "stereotype": "BusinessComponent",
+        "package": "DICO_BusinessComponents"
+      },
+      {
+        "id": "TradingCapacityCode",
+        "name": "TradingCapacityCode",
+        "stereotype": "CodeSet",
+        "package": "Codes"
+      },
+      {
+        "id": "Security",
+        "name": "Security",
+        "stereotype": "BusinessComponent",
+        "package": "Securities"
+      }
+    ],
+    "edges": [
+      {
+        "a": "ThirdPartyRole",
+        "b": "SystemPartyRole",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "SystemPartyRole",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "NonClearingMemberRole",
+        "b": "ThirdPartyRole",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "System",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesClearing",
+        "b": "Clearing",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesTrade",
+        "b": "Trade",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "Security",
+        "b": "Asset",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesQuantity",
+        "b": "Position",
+        "label": "- NetQuantity / - Position",
+        "kind": "--"
+      },
+      {
+        "a": "Position",
+        "b": "SecuritiesPricing",
+        "label": "- RelatedPosition / - Price",
+        "kind": "--"
+      },
+      {
+        "a": "Position",
+        "b": "System",
+        "label": "- TradesPosition / - System",
+        "kind": "--"
+      },
+      {
+        "a": "Position",
+        "b": "SecuritiesSettlement",
+        "label": "- Position / - SecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "SystemPartyRole",
+        "b": "System",
+        "label": "+ PartyRole / + RelatedSystem",
+        "kind": "--"
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "ClearingMemberRole",
+        "label": "- ClearingSegment / - RelatedClearingMemberRole",
+        "kind": "--"
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "SecuritiesAccount",
+        "label": "+ DeliveryAccountOwner / + DeliveryAccount",
+        "kind": "--"
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "SecuritiesAccount",
+        "label": "+ ClearingAccountOwner / + ClearingAccount",
+        "kind": "--"
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "Clearing",
+        "label": "+ ClearingSystem / + Clearing",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesClearing",
+        "b": "SecuritiesSettlement",
+        "label": "+ SecuritiesClearing / + SecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "System",
+        "b": "Trade",
+        "label": "- System / - Trade",
+        "kind": "--"
+      },
+      {
+        "a": "Trade",
+        "b": "TradePartyRole",
+        "label": "+ Trade / - TradePartyRole",
+        "kind": "--"
+      },
+      {
+        "a": "TradePartyRole",
+        "b": "TradingCapacityCode",
+        "label": "+ TradingPartyCapacity",
+        "kind": "-->"
+      },
+      {
+        "a": "Trade",
+        "b": "Market",
+        "label": "- Trade / - Market",
+        "kind": "--"
+      },
+      {
+        "a": "Trade",
+        "b": "Leg",
+        "label": "- Trade / + Leg",
+        "kind": "--"
+      },
+      {
+        "a": "Leg",
+        "b": "Asset",
+        "label": "+ LegAdditionalInformation / + RelatedAsset",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTrade",
+        "b": "Security",
+        "label": "- SecuritiesTrade / + Security",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTrade",
+        "b": "SecuritiesTradeExecution",
+        "label": "+ RelatedTrade / + TradingExecution",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesTradeExecution",
+        "b": "SecuritiesSettlement",
+        "label": "+ SecuritiesTradeExecution / + SecuritiesSettlement",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesSettlement",
+        "b": "Interest",
+        "label": "+ SecuritiesSettlement / + AccruedInterest",
+        "kind": "--"
+      }
+    ],
+    "meaning": "Position links net securities quantity, price, system and securities settlement. SystemPartyRole generalizes ThirdPartyRole and ClearingMemberRole; NonClearingMemberRole specializes ThirdPartyRole. ClearingMemberRole has a self-association for clearing segment and two distinct securities-account associations for delivery account and clearing account. These role classes describe contextual business relationships, not fixed institution identities. The system/clearing hierarchy and trade/securities-trade hierarchy connect settlement, security, leg, asset, interest, market and trade-party trading capacity. The source uses a directed type arrow only for TradingPartyCapacity; the other non-inheritance lines are associations.",
+    "limitations": [],
+    "source_id": "src-000054",
+    "source": {
+      "drawing_part": "xl/drawings/drawing3.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>26</ns0:col><ns0:colOff>209550</ns0:colOff><ns0:row>37</ns0:row><ns0:rowOff>76200</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{151E86DF-5959-B89C-36D6-71F997757C2A}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"16059150\" cy=\"7124700\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 26,
+        "colOff": 209550,
+        "row": 37,
+        "rowOff": 76200
+      },
+      "to_cell": "AA38",
+      "figure_id": "fig-0003",
+      "sheet": "Position",
+      "media_part": "xl/media/image3.png",
+      "asset": "domains/securities/assets/src-000054/media/image3.png",
+      "sha256": "c4b5a09200b4d8577c801aab62a84b39ac0210dfd8c10d6d8f643c2811802e9b",
+      "page": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/workbooks/src-000054/diagrams/fig-0003.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "mermaid": "classDiagram\ndirection LR\nnamespace Codes {\nclass TradingCapacityCode[\"TradingCapacityCode\"] {\n<<CodeSet>>\n}\n}\nnamespace DICO_BusinessComponents {\nclass SecuritiesQuantity[\"SecuritiesQuantity\"] {\n<<BusinessComponent>>\n}\nclass Position[\"Position\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesPricing[\"SecuritiesPricing\"] {\n<<BusinessComponent>>\n}\nclass SystemPartyRole[\"SystemPartyRole\"] {\n<<BusinessComponent>>\n}\nclass ThirdPartyRole[\"ThirdPartyRole\"] {\n<<BusinessComponent>>\n}\nclass NonClearingMemberRole[\"NonClearingMemberRole\"] {\n<<BusinessComponent>>\n}\nclass ClearingMemberRole[\"ClearingMemberRole\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesAccount[\"SecuritiesAccount\"] {\n<<BusinessComponent>>\n}\nclass System[\"System\"] {\n<<BusinessComponent>>\n}\nclass ClearingSystem[\"ClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass Clearing[\"Clearing\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesClearing[\"SecuritiesClearing\"] {\n<<BusinessComponent>>\n}\nclass Trade[\"Trade\"] {\n<<BusinessComponent>>\n}\nclass TradePartyRole[\"TradePartyRole\"] {\n<<BusinessComponent>>\n}\nclass Market[\"Market\"] {\n<<BusinessComponent>>\n}\nclass Leg[\"Leg\"] {\n<<BusinessComponent>>\n}\nclass Asset[\"Asset\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesTrade[\"SecuritiesTrade\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesTradeExecution[\"SecuritiesTradeExecution\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesSettlement[\"SecuritiesSettlement\"] {\n<<BusinessComponent>>\n}\nclass Interest[\"Interest\"] {\n<<BusinessComponent>>\n}\n}\nnamespace Securities {\nclass Security[\"Security\"] {\n<<BusinessComponent>>\n}\n}\nThirdPartyRole --|> SystemPartyRole\nClearingMemberRole --|> SystemPartyRole\nNonClearingMemberRole --|> ThirdPartyRole\nClearingSystem --|> System\nSecuritiesClearing --|> Clearing\nSecuritiesTrade --|> Trade\nSecurity --|> Asset\nSecuritiesQuantity -- Position : - NetQuantity / - Position\nPosition -- SecuritiesPricing : - RelatedPosition / - Price\nPosition -- System : - TradesPosition / - System\nPosition -- SecuritiesSettlement : - Position / - SecuritiesSettlement\nSystemPartyRole -- System : + PartyRole / + RelatedSystem\nClearingMemberRole -- ClearingMemberRole : - ClearingSegment / - RelatedClearingMemberRole\nClearingMemberRole -- SecuritiesAccount : + DeliveryAccountOwner / + DeliveryAccount\nClearingMemberRole -- SecuritiesAccount : + ClearingAccountOwner / + ClearingAccount\nClearingSystem -- Clearing : + ClearingSystem / + Clearing\nSecuritiesClearing -- SecuritiesSettlement : + SecuritiesClearing / + SecuritiesSettlement\nSystem -- Trade : - System / - Trade\nTrade -- TradePartyRole : + Trade / - TradePartyRole\nTradePartyRole --> TradingCapacityCode : + TradingPartyCapacity\nTrade -- Market : - Trade / - Market\nTrade -- Leg : - Trade / + Leg\nLeg -- Asset : + LegAdditionalInformation / + RelatedAsset\nSecuritiesTrade -- Security : - SecuritiesTrade / + Security\nSecuritiesTrade -- SecuritiesTradeExecution : + RelatedTrade / + TradingExecution\nSecuritiesTradeExecution -- SecuritiesSettlement : + SecuritiesTradeExecution / + SecuritiesSettlement\nSecuritiesSettlement -- Interest : + SecuritiesSettlement / + AccruedInterest\n",
+    "render_prefix": "src-000054-fig-0003",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Compared every visible entity, package label, printed stereotype, relationship endpoint, literal end label and hollow-triangle inheritance marker against the complete source artwork. Checked the ClearingMemberRole self-loop at rendered full resolution. Long outer associations, parallel account relationships and source-omitted stereotypes are retained. No numerical multiplicities are printed. Re-layout differs; native SVG remains zoomable."
+    }
+  }
+]

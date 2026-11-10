@@ -1,0 +1,73 @@
+classDiagram
+direction TB
+class GenericIdentification {
+  <<BusinessComponent>>
+}
+class PartyIdentificationInformation {
+  <<BusinessComponent>>
+}
+class Scheme {
+  <<BusinessComponent>>
+}
+class InformationPartyRole {
+  <<BusinessComponent>>
+}
+class IdentificationIssuerRole {
+  <<BusinessComponent>>
+}
+class AccountIdentification {
+  <<BusinessComponent>>
+}
+class DateTimePeriod {
+  <<BusinessComponent>>
+}
+class OrganisationIdentification {
+  <<BusinessComponent>>
+}
+class Account {
+  <<BusinessComponent>>
+}
+class CashAccount {
+  <<BusinessComponent>>
+}
+class CashBalance {
+  <<BusinessComponent>>
+}
+class SystemPartyRole {
+  <<BusinessComponent>>
+}
+class System {
+  <<BusinessComponent>>
+}
+class ClearingSystem {
+  <<BusinessComponent>>
+}
+class CashClearingSystem {
+  <<BusinessComponent>>
+}
+class ClearingMemberRole {
+  <<BusinessComponent>>
+}
+class CashClearingSystemMember {
+  <<BusinessComponent>>
+}
+GenericIdentification -- PartyIdentificationInformation : OtherIdentification / + RelatedPartyIdentification
+GenericIdentification -- AccountIdentification : - ProprietaryIdentification / + IdentificationForAccount
+GenericIdentification -- Scheme : + Identification
+InformationPartyRole -- Scheme
+InformationPartyRole <|-- IdentificationIssuerRole
+Account -- AccountIdentification : + Identification
+Account <|-- CashAccount
+Account -- DateTimePeriod : + ReportedPeriod
+Scheme -- DateTimePeriod : + AssessmentValidityScheme / - AssessmentValidityPeriod
+PartyIdentificationInformation -- DateTimePeriod : - RelatedIdentification / + ValidityPeriod
+PartyIdentificationInformation <|-- OrganisationIdentification
+OrganisationIdentification -- CashClearingSystemMember : + ClearingSystemMemberIdentificationType
+CashAccount -- CashBalance
+SystemPartyRole <|-- ClearingMemberRole
+SystemPartyRole -- System : + PartyRole / + RelatedSystem
+System <|-- ClearingSystem
+ClearingSystem <|-- CashClearingSystem
+Account -- ClearingMemberRole : + DefaultFundAccount / + DefaultFundAccountOwner
+ClearingMemberRole -- CashClearingSystemMember : + ClearingMember / - ClearingSystemMemberIdentification
+note "GenericIdentification, Scheme, DateTimePeriod and CashClearingSystemMember: from DICO_BusinessComponentsDataTypes. All other shown classes: from DICO_BusinessComponents."

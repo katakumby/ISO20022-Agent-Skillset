@@ -1,0 +1,7 @@
+%%{init: {"sequence": {"mirrorActors": false}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000", "actorLineColor": "#000000", "signalColor": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+  participant A as Transferee / New Plan Manager / Instructing Party
+  participant B as Transferor / Old Plan Manager / Executing Party
+  A-)B: PortfolioTransferInstruction
+  A-)B: RequestForTransferStatusReport
+  A-)B: TransferInstructionStatusReport (PACK)

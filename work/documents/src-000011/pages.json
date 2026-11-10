@@ -1,0 +1,681 @@
+{
+  "source_id": "src-000011",
+  "source_sha256": "d931c69cb7232292fda5f39f9f72f9b983b678b1098ac2ba76a173ce360006ce",
+  "pages": [
+    {
+      "page": 1,
+      "text": " \nBusiness Application Header - Version 4\n \n \nMessage Definition Report\nApproved by the Cross-SEG Harmonisation SEG on 20 February\n2024\nThis document provides details of the Message Definitions for Business Application Header - Version 4.\nMarch 2024\n \nISO 20022",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 2,
+      "text": "Table of Contents\n1 Message Set Overview  ...................................................................................................................................... 3\n1.1 List of MessageDefinitions  ...........................................................................................................................  3\n2 head.001.001.04 BusinessApplicationHeaderV04  ................................................................................  4\n2.1 MessageDefinition Functionality  .................................................................................................................. 4\n2.2 Structure  .......................................................................................................................................................... 7\n2.3 Constraints  ...................................................................................................................................................... 8\n2.4 Message Building Blocks  .............................................................................................................................. 9\n3 Message Items Types  ......................................................................................................................................  26\n3.1 MessageComponents  .................................................................................................................................  26\n3.2 Message Datatypes  ..................................................................................................................................... 50\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Table of Contents\nBusiness Application Header - Version 4 2 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 3,
+      "text": "1 Message Set Overview\nIntroduction\nTThis document describes the Business Application Header, which includes the changes that have\nbeen implemented as part of the maintenance cycle 2023-2024 (See MCR #234) and approved by the\nCross-SEG Harmonisation Group on 20 February 2024.\n1.1 List of MessageDefinitions\nThe following table lists all MessageDefinitions described in this book.\nMessageDefinition Definition\nhead.001.001.04\nBusinessApplicationHeaderV04\nThe Business Layer deals with Business Messages.\nThe behaviour of the Business Messages is fully\ndescribed by the Business Transaction and the\nstructure of the Business Messages is fully described\nby the Message Definitions and related Message\nRules, Rules and Market Practices. All of which are\nregistered in the ISO 20022 Repository.\nA single new Business Message (with its\naccompagnying business application header) is\ncreated - by the sending MessagingEndpoint - for each\nbusiness event; that is each interaction in a Business\nTransaction. A Business Message adheres to the\nfollowing principles:\n\" A Business Message (and its business application\nheader) must not contain information about the\nMessage Transport System or the mechanics or\nmechanism of message sending, transportation, or\nreceipt.\n\" A Business Message must be comprehensible\noutside of the context of the Transport Message. That\nis the Business Message must not require knowledge\nof the Transport Message to be understood.\n\" A Business Message may contain headers, footers,\nand envelopes that are meaningful for the business.\nWhen present, they are treated as any other message\ncontent, which means that they are considered part of\nthe Message Definition of the Business Message and\nas such will be part of the ISO 20022 Repository.\n\" A Business Message refers to Business Actors by\ntheir Name. Each instance of a Business Actor has one\nName. The Business Actor must not be referred to in\nthe Transport Layer.\nSpecific usage of this BusinessMessageHeader may\nbe defined by the relevant SEG.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Set Overview\nBusiness Application Header - Version 4 3 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 4,
+      "text": "2 head.001.001.04\nBusinessApplicationHeaderV04\n2.1 MessageDefinition Functionality\nThe Business Layer deals with Business Messages. The behaviour of the Business Messages is fully\ndescribed by the Business Transaction and the structure of the Business Messages is fully described by\nthe Message Definitions and related Message Rules, Rules and Market Practices. All of which are\nregistered in the ISO 20022 Repository.\nA single new Business Message (with its accompagnying business application header) is created - by\nthe sending MessagingEndpoint - for each business event; that is each interaction in a Business\nTransaction. A Business Message adheres to the following principles:\n\" A Business Message (and its business application header) must not contain information about the\nMessage Transport System or the mechanics or mechanism of message sending, transportation, or\nreceipt.\n\" A Business Message must be comprehensible outside of the context of the Transport Message. That\nis the Business Message must not require knowledge of the Transport Message to be understood.\n\" A Business Message may contain headers, footers, and envelopes that are meaningful for the\nbusiness. When present, they are treated as any other message content, which means that they are\nconsidered part of the Message Definition of the Business Message and as such will be part of the ISO\n20022 Repository.\n\" A Business Message refers to Business Actors by their Name. Each instance of a Business Actor has\none Name. The Business Actor must not be referred to in the Transport Layer.\nSpecific usage of this BusinessMessageHeader may be defined by the relevant SEG.\nOutline\nThe BusinessApplicationHeaderV04 MessageDefinition is composed of 14 MessageBuildingBlocks:\nA. CharacterSet\nContains the character set of the text-based elements used in the Business Message.\nB. From\nThe sending MessagingEndpoint that has created this Business Message for the receiving\nMessagingEndpoint that will process this Business Message.\nNote the sending MessagingEndpoint might be different from the sending address potentially\ncontained in the transport header (as defined in the transport layer).\nC. To\nThe MessagingEndpoint designated by the sending MessagingEndpoint to be the recipient who will\nultimately process this Business Message.\nNote the receiving MessagingEndpoint might be different from the receiving address potentially\ncontained in the transport header (as defined in the transport layer).\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 4 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 5,
+      "text": "D. BusinessMessageIdentifier\nUnambiguously identifies the Business Message to the MessagingEndpoint that has created the\nBusiness Message.\nE. MessageDefinitionIdentifier\nThe Message Definition Identifier of the Business Message instance with which this Business\nApplication Header instance is associated.\nF. BusinessService\nSpecifies the business service agreed between the two MessagingEndpoints under which rules this\nBusiness Message is exchanged.\nTo be used when there is a choice of processing services or processing service levels.\nExample:\n\"marketx.hvps.01\" and \"marketx.xbdr.01\" might be used to indicate that the associated messages\nare subject to different processing levels for domestic high value payments versus cross-border\npayments within the same market practice.\nG. MarketPractice\nSpecifies the market practice to which the message conforms. The market practices are a set of\nrules agreed between parties that restricts the usage of the messages in order to achieve better\nSTP (Straight Through Processing) rates.\nA market practice specification may also extend the underlying message specification by using\nextensions or supplementary data of this underlying message.\nH. CreationDate\nDate and time when this Business Message (header) was created.\nI. BusinessProcessingDate\nProcessing date and time indicated by the sender for the receiver of the business message. This\ndate may be different from the date and time provided in the CreationDate.\nUsage: Market practice or bilateral agreement should specify how this element should be used.\nJ. CopyDuplicate\nIndicates whether the message is a Copy, a Duplicate or a copy of a duplicate of a previously sent\nISO 20022 Message.\nK. PossibleDuplicate\nFlag indicating if the Business Message exchanged between the MessagingEndpoints is possibly a\nduplicate.\nIf the receiving MessagingEndpoint did not receive the original, then this Business Message should\nbe processed as if it were the original.\nIf the receiving MessagingEndpoint did receive the original, then it should perform necessary\nactions to avoid processing this Business Message again.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 5 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 6,
+      "text": "This will guarantee business idempotent behaviour.\nNOTE: this is named \"PossResend\" in FIX - this is an application level resend not a network level\nretransmission.\nL. Priority\nRelative indication of the processing precedence of the message over a (set of) Business\nMessages with assigned priorities.\nM. Signature\nContains the digital signature of the Business Entity authorised to sign this Business Message.\nN. Related\nSpecifies the Business Application Header(s) of the Business Message(s) to which this Business\nMessage relates.\nCan be used when replying to a query; can also be used when canceling or amending.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 6 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 7,
+      "text": "2.2 Structure\nOr MessageElement/BuildingBlock<XML Tag> Mult. Type Constr.\nNo.\nPage\nMessage root <Document> <AppHdr> [1..1]  C5\n   CharacterSet <CharSet> [0..1] CodeSet C6 9\n   From <Fr> [1..1]  9\n{Or     OrganisationIdentification <OrgId> [1..1] ± 9\nOr}     FinancialInstitutionIdentification <FIId> [1..1] ± 10\n   To <To> [1..1]  11\n{Or     OrganisationIdentification <OrgId> [1..1] ± 11\nOr}     FinancialInstitutionIdentification <FIId> [1..1] ± 12\n   BusinessMessageIdentifier <BizMsgIdr> [1..1] Text 13\n   MessageDefinitionIdentifier <MsgDefIdr> [1..1] Text 13\n   BusinessService <BizSvc> [0..1] Text 13\n   MarketPractice <MktPrctc> [0..1]  14\n     Registry <Regy> [1..1] Text 14\n     Identification <Id> [1..1] Text 14\n   CreationDate <CreDt> [1..1] DateTime 14\n   BusinessProcessingDate <BizPrcgDt> [0..1] DateTime 14\n   CopyDuplicate <CpyDplct> [0..1] CodeSet 15\n   PossibleDuplicate <PssblDplct> [0..1] Indicator 15\n   Priority <Prty> [0..1] CodeSet C7 16\n   Signature <Sgntr> [0..1] (External Schema) 16\n   Related <Rltd> [0..*]  16\n     CharacterSet <CharSet> [0..1] CodeSet C6 17\n     From <Fr> [1..1]  17\n{Or       OrganisationIdentification <OrgId> [1..1] ± 18\nOr}       FinancialInstitutionIdentification <FIId> [1..1] ± 19\n     To <To> [1..1]  20\n{Or       OrganisationIdentification <OrgId> [1..1] ± 20\nOr}       FinancialInstitutionIdentification <FIId> [1..1] ± 21\n     BusinessMessageIdentifier <BizMsgIdr> [1..1] Text 22\n     MessageDefinitionIdentifier <MsgDefIdr> [1..1] Text 22\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 7 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 8,
+      "text": "Or MessageElement/BuildingBlock<XML Tag> Mult. Type Constr.\nNo.\nPage\n     BusinessService <BizSvc> [0..1] Text 22\n     MarketPractice <MktPrctc> [0..1]  23\n       Registry <Regy> [1..1] Text 23\n       Identification <Id> [1..1] Text 23\n     CreationDate <CreDt> [1..1] DateTime 23\n     BusinessProcessingDate <BizPrcgDt> [0..1] DateTime 23\n     CopyDuplicate <CpyDplct> [0..1] CodeSet 24\n     PossibleDuplicate <PssblDplct> [0..1] Indicator 24\n     Priority <Prty> [0..1] CodeSet C7 25\n     Signature <Sgntr> [0..1] (External Schema) 25\n2.3 Constraints\nC1 AnyBIC\nOnly a valid Business identifier code is allowed. Business identifier codes for financial or non-\nfinancial institutions are registered and published by the ISO 9362 Registration Authority in the\nISO directory of BICs, and consists of eight (8) or eleven (11) contiguous characters.\nC2 BICFI\nValid BICs for financial institutions are registered and published by the ISO 9362 Registration\nAuthority in the ISO directory of BICs, and consist of eight (8) or eleven (11) contiguous\ncharacters.\nC3 Country\nThe code is checked against the list of country names obtained from the United Nations (ISO\n3166, Alpha-2 code).\nC4 OnlySignatureElement\nThe XML Signature namespace (\"http://www.w3.org/2000/09/xmldsig#\") allows for different\nXML elements to be root elements. This means the user has to choose amongst these global\nelements which one to use as the root element. Only the XML element Signature is allowed.\nC5 RelatedPresentWhenCopyDupl\nRelated MUST contain the relevant BusinessMessageHeader elements of the\nBusinessMessage to which this BusinessMessage relates.\nIf CopyDuplicate is present, then Related MUST be present.\nOn Condition\n    /CopyDuplicate is present\nFollowing Must be True\n    /Related[1] Must be present\nThis constraint is defined at the MessageDefinition level.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 8 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 9,
+      "text": "C6 ValidationByTable\nC7 ValidationByTable\n2.4 Message Building Blocks\nThis chapter describes the MessageBuildingBlocks of this MessageDefinition.\n2.4.1 CharacterSet <CharSet>\nPresence: [0..1]\nDefinition: Contains the character set of the text-based elements used in the Business Message.\nImpacted by: C6 \"ValidationByTable\"\nDatatype: \"UnicodeChartsCode\" on page 53\nConstraints\n• ValidationByTable\n2.4.2 From <Fr>\nPresence: [1..1]\nDefinition: The sending MessagingEndpoint that has created this Business Message for the receiving\nMessagingEndpoint that will process this Business Message.\nNote the sending MessagingEndpoint might be different from the sending address potentially contained\nin the transport header (as defined in the transport layer).\nFrom <Fr> contains one of the following Party51Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   OrganisationIdentification <OrgId> [1..1] ± 9\nOr}   FinancialInstitutionIdentification <FIId> [1..1] ± 10\n2.4.2.1  OrganisationIdentification <OrgId>\nPresence: [1..1]\nDefinition: Identification of a person or an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 9 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 10,
+      "text": "OrganisationIdentification <OrgId> contains the following elements (see \"PartyIdentification272\" on\npage 33 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Name <Nm> [0..1] Text 34\n   PostalAddress <PstlAdr> [0..1] ± 35\n   Identification <Id> [0..1]  35\n{Or     OrganisationIdentification <OrgId> [1..1]  36\n       AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n       LEI <LEI> [0..1] IdentifierSet 37\n       Other <Othr> [0..*]  37\n         Identification <Id> [1..1] Text 38\n         SchemeName <SchmeNm> [0..1]  38\n{Or           Code <Cd> [1..1] CodeSet 38\nOr}           Proprietary <Prtry> [1..1] Text 38\n         Issuer <Issr> [0..1] Text 38\nOr}     PrivateIdentification <PrvtId> [1..1]  38\n       DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n         BirthDate <BirthDt> [1..1] Date 39\n         ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n         CityOfBirth <CityOfBirth> [1..1] Text 40\n         CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n       Other <Othr> [0..*]  40\n         Identification <Id> [1..1] Text 40\n         SchemeName <SchmeNm> [0..1]  40\n{Or           Code <Cd> [1..1] CodeSet 41\nOr}           Proprietary <Prtry> [1..1] Text 41\n         Issuer <Issr> [0..1] Text 41\n   CountryOfResidence <CtryOfRes> [0..1] CodeSet C3 41\n   ContactDetails <CtctDtls> [0..1] ± 41\n2.4.2.2  FinancialInstitutionIdentification <FIId>\nPresence: [1..1]\nDefinition: Identification of a financial institution.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 10 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 11,
+      "text": "FinancialInstitutionIdentification <FIId> contains the following elements (see\n\"BranchAndFinancialInstitutionIdentification8\" on page 26 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   FinancialInstitutionIdentification <FinInstnId> [1..1]  27\n     BICFI <BICFI> [0..1] IdentifierSet C2 27\n     ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n     LEI <LEI> [0..1] IdentifierSet 28\n     Name <Nm> [0..1] Text 28\n     PostalAddress <PstlAdr> [0..1] ± 28\n     Other <Othr> [0..1] ± 29\n   BranchIdentification <BrnchId> [0..1]  30\n     Identification <Id> [0..1] Text 30\n     LEI <LEI> [0..1] IdentifierSet 30\n     Name <Nm> [0..1] Text 30\n     PostalAddress <PstlAdr> [0..1] ± 30\n2.4.3 To <To>\nPresence: [1..1]\nDefinition: The MessagingEndpoint designated by the sending MessagingEndpoint to be the recipient\nwho will ultimately process this Business Message.\nNote the receiving MessagingEndpoint might be different from the receiving address potentially\ncontained in the transport header (as defined in the transport layer).\nTo <To> contains one of the following Party51Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   OrganisationIdentification <OrgId> [1..1] ± 11\nOr}   FinancialInstitutionIdentification <FIId> [1..1] ± 12\n2.4.3.1  OrganisationIdentification <OrgId>\nPresence: [1..1]\nDefinition: Identification of a person or an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 11 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 12,
+      "text": "OrganisationIdentification <OrgId> contains the following elements (see \"PartyIdentification272\" on\npage 33 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Name <Nm> [0..1] Text 34\n   PostalAddress <PstlAdr> [0..1] ± 35\n   Identification <Id> [0..1]  35\n{Or     OrganisationIdentification <OrgId> [1..1]  36\n       AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n       LEI <LEI> [0..1] IdentifierSet 37\n       Other <Othr> [0..*]  37\n         Identification <Id> [1..1] Text 38\n         SchemeName <SchmeNm> [0..1]  38\n{Or           Code <Cd> [1..1] CodeSet 38\nOr}           Proprietary <Prtry> [1..1] Text 38\n         Issuer <Issr> [0..1] Text 38\nOr}     PrivateIdentification <PrvtId> [1..1]  38\n       DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n         BirthDate <BirthDt> [1..1] Date 39\n         ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n         CityOfBirth <CityOfBirth> [1..1] Text 40\n         CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n       Other <Othr> [0..*]  40\n         Identification <Id> [1..1] Text 40\n         SchemeName <SchmeNm> [0..1]  40\n{Or           Code <Cd> [1..1] CodeSet 41\nOr}           Proprietary <Prtry> [1..1] Text 41\n         Issuer <Issr> [0..1] Text 41\n   CountryOfResidence <CtryOfRes> [0..1] CodeSet C3 41\n   ContactDetails <CtctDtls> [0..1] ± 41\n2.4.3.2  FinancialInstitutionIdentification <FIId>\nPresence: [1..1]\nDefinition: Identification of a financial institution.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 12 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 13,
+      "text": "FinancialInstitutionIdentification <FIId> contains the following elements (see\n\"BranchAndFinancialInstitutionIdentification8\" on page 26 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   FinancialInstitutionIdentification <FinInstnId> [1..1]  27\n     BICFI <BICFI> [0..1] IdentifierSet C2 27\n     ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n     LEI <LEI> [0..1] IdentifierSet 28\n     Name <Nm> [0..1] Text 28\n     PostalAddress <PstlAdr> [0..1] ± 28\n     Other <Othr> [0..1] ± 29\n   BranchIdentification <BrnchId> [0..1]  30\n     Identification <Id> [0..1] Text 30\n     LEI <LEI> [0..1] IdentifierSet 30\n     Name <Nm> [0..1] Text 30\n     PostalAddress <PstlAdr> [0..1] ± 30\n2.4.4 BusinessMessageIdentifier <BizMsgIdr>\nPresence: [1..1]\nDefinition: Unambiguously identifies the Business Message to the MessagingEndpoint that has created\nthe Business Message.\nDatatype: \"Max35Text\" on page 57\n2.4.5 MessageDefinitionIdentifier <MsgDefIdr>\nPresence: [1..1]\nDefinition: The Message Definition Identifier of the Business Message instance with which this Business\nApplication Header instance is associated.\nDatatype: \"Max35Text\" on page 57\n2.4.6 BusinessService <BizSvc>\nPresence: [0..1]\nDefinition: Specifies the business service agreed between the two MessagingEndpoints under which\nrules this Business Message is exchanged.\nTo be used when there is a choice of processing services or processing service levels.\nExample:\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 13 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 14,
+      "text": "\"marketx.hvps.01\" and \"marketx.xbdr.01\" might be used to indicate that the associated messages are\nsubject to different processing levels for domestic high value payments versus cross-border payments\nwithin the same market practice.\nDatatype: \"Max35Text\" on page 57\n2.4.7 MarketPractice <MktPrctc>\nPresence: [0..1]\nDefinition: Specifies the market practice to which the message conforms. The market practices are a\nset of rules agreed between parties that restricts the usage of the messages in order to achieve better\nSTP (Straight Through Processing) rates.\nA market practice specification may also extend the underlying message specification by using\nextensions or supplementary data of this underlying message.\nMarketPractice <MktPrctc> contains the following ImplementationSpecification1 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Registry <Regy> [1..1] Text 14\n   Identification <Id> [1..1] Text 14\n2.4.7.1  Registry <Regy>\nPresence: [1..1]\nDefinition: Name of the implementation specification registry in which the implementation specification\nof the ISO 20022 message is maintained.\nFor example, \"MyStandards\".\nDatatype: \"Max350Text\" on page 56\n2.4.7.2  Identification <Id>\nPresence: [1..1]\nDefinition: Identifier which unambiguously identifies, within the implementation specification registry, the\nimplementation specification to which the ISO 20022 message is compliant. This can be done via a\nURN. It can also contain a version number or date.\nFor instance, \"2018-01-01 - Version 2\" or \"urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66\".\nDatatype: \"Max2048Text\" on page 56\n2.4.8 CreationDate <CreDt>\nPresence: [1..1]\nDefinition: Date and time when this Business Message (header) was created.\nDatatype: \"ISODateTime\" on page 54\n2.4.9 BusinessProcessingDate <BizPrcgDt>\nPresence: [0..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 14 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 15,
+      "text": "Definition: Processing date and time indicated by the sender for the receiver of the business message.\nThis date may be different from the date and time provided in the CreationDate.\nUsage: Market practice or bilateral agreement should specify how this element should be used.\nDatatype: \"ISODateTime\" on page 54\n2.4.10 CopyDuplicate <CpyDplct>\nPresence: [0..1]\nDefinition: Indicates whether the message is a Copy, a Duplicate or a copy of a duplicate of a previously\nsent ISO 20022 Message.\nDatatype: \"CopyDuplicate1Code\" on page 51\nCodeName Name Definition\nCODU CopyDuplicate Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes and the message\nis a duplicate of a message previously\nsent.\nCOPY Copy Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes.\nDUPL Duplicate Message is for information/confirmation\npurposes. It is a duplicate of a message\npreviously sent.\n2.4.11 PossibleDuplicate <PssblDplct>\nPresence: [0..1]\nDefinition: Flag indicating if the Business Message exchanged between the MessagingEndpoints is\npossibly a duplicate.\nIf the receiving MessagingEndpoint did not receive the original, then this Business Message should be\nprocessed as if it were the original.\nIf the receiving MessagingEndpoint did receive the original, then it should perform necessary actions to\navoid processing this Business Message again.\nThis will guarantee business idempotent behaviour.\nNOTE: this is named \"PossResend\" in FIX - this is an application level resend not a network level\nretransmission.\nDatatype: One of the following values must be used (see \"YesNoIndicator\" on page 55):\n• Meaning When True: Yes\n• Meaning When False: No\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 15 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 16,
+      "text": "2.4.12 Priority <Prty>\nPresence: [0..1]\nDefinition: Relative indication of the processing precedence of the message over a (set of) Business\nMessages with assigned priorities.\nImpacted by: C7 \"ValidationByTable\"\nDatatype: \"BusinessMessagePriorityCode\" on page 50\nConstraints\n• ValidationByTable\n2.4.13 Signature <Sgntr>\nPresence: [0..1]\nDefinition: Contains the digital signature of the Business Entity authorised to sign this Business\nMessage.\nType: (External Schema)\nThe W3C XML Schema that specifies following standard signature:\nXML Signature Syntax and Processing (Second Edition) W3C Recommendation 10 June 2008\nhttp://www.w3.org/TR/2008/REC-xmldsig-core-20080610/.\n2.4.14 Related <Rltd>\nPresence: [0..*]\nDefinition: Specifies the Business Application Header(s) of the Business Message(s) to which this\nBusiness Message relates.\nCan be used when replying to a query; can also be used when canceling or amending.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 16 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 17,
+      "text": "Related <Rltd> contains the following BusinessApplicationHeader8 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   CharacterSet <CharSet> [0..1] CodeSet C6 17\n   From <Fr> [1..1]  17\n{Or     OrganisationIdentification <OrgId> [1..1] ± 18\nOr}     FinancialInstitutionIdentification <FIId> [1..1] ± 19\n   To <To> [1..1]  20\n{Or     OrganisationIdentification <OrgId> [1..1] ± 20\nOr}     FinancialInstitutionIdentification <FIId> [1..1] ± 21\n   BusinessMessageIdentifier <BizMsgIdr> [1..1] Text 22\n   MessageDefinitionIdentifier <MsgDefIdr> [1..1] Text 22\n   BusinessService <BizSvc> [0..1] Text 22\n   MarketPractice <MktPrctc> [0..1]  23\n     Registry <Regy> [1..1] Text 23\n     Identification <Id> [1..1] Text 23\n   CreationDate <CreDt> [1..1] DateTime 23\n   BusinessProcessingDate <BizPrcgDt> [0..1] DateTime 23\n   CopyDuplicate <CpyDplct> [0..1] CodeSet 24\n   PossibleDuplicate <PssblDplct> [0..1] Indicator 24\n   Priority <Prty> [0..1] CodeSet C7 25\n   Signature <Sgntr> [0..1] (External Schema) 25\n2.4.14.1  CharacterSet <CharSet>\nPresence: [0..1]\nDefinition: Contains the character set of the text-based elements used in the Business Message.\nImpacted by: C6 \"ValidationByTable\"\nDatatype: \"UnicodeChartsCode\" on page 53\nConstraints\n• ValidationByTable\n2.4.14.2  From <Fr>\nPresence: [1..1]\nDefinition: The sending MessagingEndpoint that has created this Business Message for the receiving\nMessagingEndpoint that will process this Business Message.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 17 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 18,
+      "text": "Note the sending MessagingEndpoint might be different from the sending address potentially contained\nin the transport header (as defined in the transport layer).\nFrom <Fr> contains one of the following Party51Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   OrganisationIdentification <OrgId> [1..1] ± 18\nOr}   FinancialInstitutionIdentification <FIId> [1..1] ± 19\n2.4.14.2.1  OrganisationIdentification <OrgId>\nPresence: [1..1]\nDefinition: Identification of a person or an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 18 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 19,
+      "text": "OrganisationIdentification <OrgId> contains the following elements (see \"PartyIdentification272\" on\npage 33 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Name <Nm> [0..1] Text 34\n   PostalAddress <PstlAdr> [0..1] ± 35\n   Identification <Id> [0..1]  35\n{Or     OrganisationIdentification <OrgId> [1..1]  36\n       AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n       LEI <LEI> [0..1] IdentifierSet 37\n       Other <Othr> [0..*]  37\n         Identification <Id> [1..1] Text 38\n         SchemeName <SchmeNm> [0..1]  38\n{Or           Code <Cd> [1..1] CodeSet 38\nOr}           Proprietary <Prtry> [1..1] Text 38\n         Issuer <Issr> [0..1] Text 38\nOr}     PrivateIdentification <PrvtId> [1..1]  38\n       DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n         BirthDate <BirthDt> [1..1] Date 39\n         ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n         CityOfBirth <CityOfBirth> [1..1] Text 40\n         CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n       Other <Othr> [0..*]  40\n         Identification <Id> [1..1] Text 40\n         SchemeName <SchmeNm> [0..1]  40\n{Or           Code <Cd> [1..1] CodeSet 41\nOr}           Proprietary <Prtry> [1..1] Text 41\n         Issuer <Issr> [0..1] Text 41\n   CountryOfResidence <CtryOfRes> [0..1] CodeSet C3 41\n   ContactDetails <CtctDtls> [0..1] ± 41\n2.4.14.2.2  FinancialInstitutionIdentification <FIId>\nPresence: [1..1]\nDefinition: Identification of a financial institution.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 19 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 20,
+      "text": "FinancialInstitutionIdentification <FIId> contains the following elements (see\n\"BranchAndFinancialInstitutionIdentification8\" on page 26 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   FinancialInstitutionIdentification <FinInstnId> [1..1]  27\n     BICFI <BICFI> [0..1] IdentifierSet C2 27\n     ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n     LEI <LEI> [0..1] IdentifierSet 28\n     Name <Nm> [0..1] Text 28\n     PostalAddress <PstlAdr> [0..1] ± 28\n     Other <Othr> [0..1] ± 29\n   BranchIdentification <BrnchId> [0..1]  30\n     Identification <Id> [0..1] Text 30\n     LEI <LEI> [0..1] IdentifierSet 30\n     Name <Nm> [0..1] Text 30\n     PostalAddress <PstlAdr> [0..1] ± 30\n2.4.14.3  To <To>\nPresence: [1..1]\nDefinition: The MessagingEndpoint designated by the sending MessagingEndpoint to be the recipient\nwho will ultimately process this Business Message.\nNote the receiving MessagingEndpoint might be different from the receiving address potentially\ncontained in the transport header (as defined in the transport layer).\nTo <To> contains one of the following Party51Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   OrganisationIdentification <OrgId> [1..1] ± 20\nOr}   FinancialInstitutionIdentification <FIId> [1..1] ± 21\n2.4.14.3.1  OrganisationIdentification <OrgId>\nPresence: [1..1]\nDefinition: Identification of a person or an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 20 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 21,
+      "text": "OrganisationIdentification <OrgId> contains the following elements (see \"PartyIdentification272\" on\npage 33 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Name <Nm> [0..1] Text 34\n   PostalAddress <PstlAdr> [0..1] ± 35\n   Identification <Id> [0..1]  35\n{Or     OrganisationIdentification <OrgId> [1..1]  36\n       AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n       LEI <LEI> [0..1] IdentifierSet 37\n       Other <Othr> [0..*]  37\n         Identification <Id> [1..1] Text 38\n         SchemeName <SchmeNm> [0..1]  38\n{Or           Code <Cd> [1..1] CodeSet 38\nOr}           Proprietary <Prtry> [1..1] Text 38\n         Issuer <Issr> [0..1] Text 38\nOr}     PrivateIdentification <PrvtId> [1..1]  38\n       DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n         BirthDate <BirthDt> [1..1] Date 39\n         ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n         CityOfBirth <CityOfBirth> [1..1] Text 40\n         CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n       Other <Othr> [0..*]  40\n         Identification <Id> [1..1] Text 40\n         SchemeName <SchmeNm> [0..1]  40\n{Or           Code <Cd> [1..1] CodeSet 41\nOr}           Proprietary <Prtry> [1..1] Text 41\n         Issuer <Issr> [0..1] Text 41\n   CountryOfResidence <CtryOfRes> [0..1] CodeSet C3 41\n   ContactDetails <CtctDtls> [0..1] ± 41\n2.4.14.3.2  FinancialInstitutionIdentification <FIId>\nPresence: [1..1]\nDefinition: Identification of a financial institution.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 21 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 22,
+      "text": "FinancialInstitutionIdentification <FIId> contains the following elements (see\n\"BranchAndFinancialInstitutionIdentification8\" on page 26 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   FinancialInstitutionIdentification <FinInstnId> [1..1]  27\n     BICFI <BICFI> [0..1] IdentifierSet C2 27\n     ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n     LEI <LEI> [0..1] IdentifierSet 28\n     Name <Nm> [0..1] Text 28\n     PostalAddress <PstlAdr> [0..1] ± 28\n     Other <Othr> [0..1] ± 29\n   BranchIdentification <BrnchId> [0..1]  30\n     Identification <Id> [0..1] Text 30\n     LEI <LEI> [0..1] IdentifierSet 30\n     Name <Nm> [0..1] Text 30\n     PostalAddress <PstlAdr> [0..1] ± 30\n2.4.14.4  BusinessMessageIdentifier <BizMsgIdr>\nPresence: [1..1]\nDefinition: Unambiguously identifies the Business Message to the MessagingEndpoint that has created\nthe Business Message.\nDatatype: \"Max35Text\" on page 57\n2.4.14.5  MessageDefinitionIdentifier <MsgDefIdr>\nPresence: [1..1]\nDefinition: The Message Definition Identifier of the Business Message instance with which this Business\nApplication Header instance is associated.\nDatatype: \"Max35Text\" on page 57\n2.4.14.6  BusinessService <BizSvc>\nPresence: [0..1]\nDefinition: Specifies the business service agreed between the two MessagingEndpoints under which\nrules this Business Message is exchanged.\nTo be used when there is a choice of processing services or processing service levels.\nExample:\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 22 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 23,
+      "text": "\"marketx.hvps.01\" and \"marketx.xbdr.01\" might be used to indicate that the associated messages are\nsubject to different processing levels for domestic high value payments versus cross-border payments\nwithin the same market practice.\nDatatype: \"Max35Text\" on page 57\n2.4.14.7  MarketPractice <MktPrctc>\nPresence: [0..1]\nDefinition: Specifies the market practice to which the message conforms. The market practices are a\nset of rules agreed between parties that restricts the usage of the messages in order to achieve better\nSTP (Straight Through Processing) rates.\nA market practice specification may also extend the underlying message specification by using\nextensions or supplementary data of this underlying message.\nMarketPractice <MktPrctc> contains the following ImplementationSpecification1 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Registry <Regy> [1..1] Text 23\n   Identification <Id> [1..1] Text 23\n2.4.14.7.1  Registry <Regy>\nPresence: [1..1]\nDefinition: Name of the implementation specification registry in which the implementation specification\nof the ISO 20022 message is maintained.\nFor example, \"MyStandards\".\nDatatype: \"Max350Text\" on page 56\n2.4.14.7.2  Identification <Id>\nPresence: [1..1]\nDefinition: Identifier which unambiguously identifies, within the implementation specification registry, the\nimplementation specification to which the ISO 20022 message is compliant. This can be done via a\nURN. It can also contain a version number or date.\nFor instance, \"2018-01-01 - Version 2\" or \"urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66\".\nDatatype: \"Max2048Text\" on page 56\n2.4.14.8  CreationDate <CreDt>\nPresence: [1..1]\nDefinition: Date and time when this Business Message (header) was created.\nNote Times must be normalized, using the \"Z\" annotation.\nDatatype: \"ISODateTime\" on page 54\n2.4.14.9  BusinessProcessingDate <BizPrcgDt>\nPresence: [0..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 23 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 24,
+      "text": "Definition: Processing date and time indicated by the sender for the receiver of the business message.\nThis date may be different from the date and time provided in the CreationDate.\nUsage: Market practice or bilateral agreement should specify how this element should be used.\nDatatype: \"ISODateTime\" on page 54\n2.4.14.10  CopyDuplicate <CpyDplct>\nPresence: [0..1]\nDefinition: Indicates whether the message is a Copy, a Duplicate or a copy of a duplicate of a previously\nsent ISO 20022 Message.\nDatatype: \"CopyDuplicate1Code\" on page 51\nCodeName Name Definition\nCODU CopyDuplicate Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes and the message\nis a duplicate of a message previously\nsent.\nCOPY Copy Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes.\nDUPL Duplicate Message is for information/confirmation\npurposes. It is a duplicate of a message\npreviously sent.\n2.4.14.11  PossibleDuplicate <PssblDplct>\nPresence: [0..1]\nDefinition: Flag indicating if the Business Message exchanged between the MessagingEndpoints is\npossibly a duplicate.\nIf the receiving MessagingEndpoint did not receive the original, then this Business Message should be\nprocessed as if it were the original.\nIf the receiving MessagingEndpoint did receive the original, then it should perform necessary actions to\navoid processing this Business Message again.\nThis will guarantee business idempotent behaviour.\nNOTE: this is named \"PossResend\" in FIX - this is an application level resend not a network level\nretransmission.\nDatatype: One of the following values must be used (see \"YesNoIndicator\" on page 55):\n• Meaning When True: Yes\n• Meaning When False: No\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 24 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 25,
+      "text": "2.4.14.12  Priority <Prty>\nPresence: [0..1]\nDefinition: Relative indication of the processing precedence of the message over a (set of) Business\nMessages with assigned priorities.\nImpacted by: C7 \"ValidationByTable\"\nDatatype: \"BusinessMessagePriorityCode\" on page 50\nConstraints\n• ValidationByTable\n2.4.14.13  Signature <Sgntr>\nPresence: [0..1]\nDefinition: Contains the digital signature of the Business Entity authorised to sign this Business\nMessage.\nType: (External Schema)\nThe W3C XML Schema that specifies following standard signature:\nXML Signature Syntax and Processing (Second Edition) W3C Recommendation 10 June 2008\nhttp://www.w3.org/TR/2008/REC-xmldsig-core-20080610/.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 head.001.001.04 BusinessApplicationHeaderV04\nBusiness Application Header - Version 4 25 March 2024",
+      "message_ids": [
+        "head.001.001.04"
+      ],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 26,
+      "text": "3 Message Items Types\n3.1 MessageComponents\n3.1.1 Financial Institution Identification\n3.1.1.1  ClearingSystemMemberIdentification2\nDefinition: Unique identification, as assigned by a clearing system, to unambiguously identify a member\nof the clearing system.\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   ClearingSystemIdentification <ClrSysId> [0..1] ± 26\n   MemberIdentification <MmbId> [1..1] Text 26\n3.1.1.1.1  ClearingSystemIdentification <ClrSysId>\nPresence: [0..1]\nDefinition: Specification of a pre-agreed offering between clearing agents or the channel through which\nthe payment instruction is processed.\nClearingSystemIdentification <ClrSysId> contains one of the following elements (see\n\"ClearingSystemIdentification2Choice\" on page 49 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 50\nOr}   Proprietary <Prtry> [1..1] Text 50\n3.1.1.1.2  MemberIdentification <MmbId>\nPresence: [1..1]\nDefinition: Identification of a member of a clearing system.\nDatatype: \"Max35Text\" on page 57\n3.1.1.2  BranchAndFinancialInstitutionIdentification8\nDefinition: Unique and unambiguous identification of a financial institution or a branch of a financial\ninstitution.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 26 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 27,
+      "text": "Or MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   FinancialInstitutionIdentification <FinInstnId> [1..1]  27\n     BICFI <BICFI> [0..1] IdentifierSet C2 27\n     ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n     LEI <LEI> [0..1] IdentifierSet 28\n     Name <Nm> [0..1] Text 28\n     PostalAddress <PstlAdr> [0..1] ± 28\n     Other <Othr> [0..1] ± 29\n   BranchIdentification <BrnchId> [0..1]  30\n     Identification <Id> [0..1] Text 30\n     LEI <LEI> [0..1] IdentifierSet 30\n     Name <Nm> [0..1] Text 30\n     PostalAddress <PstlAdr> [0..1] ± 30\n3.1.1.2.1  FinancialInstitutionIdentification <FinInstnId>\nPresence: [1..1]\nDefinition: Unique and unambiguous identification of a financial institution, as assigned under an\ninternationally recognised or proprietary identification scheme.\nFinancialInstitutionIdentification <FinInstnId> contains the following\nFinancialInstitutionIdentification23 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   BICFI <BICFI> [0..1] IdentifierSet C2 27\n   ClearingSystemMemberIdentification <ClrSysMmbId> [0..1] ± 28\n   LEI <LEI> [0..1] IdentifierSet 28\n   Name <Nm> [0..1] Text 28\n   PostalAddress <PstlAdr> [0..1] ± 28\n   Other <Othr> [0..1] ± 29\n3.1.1.2.1.1  BICFI <BICFI>\nPresence: [0..1]\nDefinition: Code allocated to a financial institution by the ISO 9362 Registration Authority as described\nin ISO 9362 \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".\nImpacted by: C2 \"BICFI\"\nDatatype: \"BICFIDec2014Identifier\" on page 54\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 27 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 28,
+      "text": "Constraints\n• BICFI\nValid BICs for financial institutions are registered and published by the ISO 9362 Registration\nAuthority in the ISO directory of BICs, and consist of eight (8) or eleven (11) contiguous characters.\n3.1.1.2.1.2  ClearingSystemMemberIdentification <ClrSysMmbId>\nPresence: [0..1]\nDefinition: Information used to identify a member within a clearing system.\nClearingSystemMemberIdentification <ClrSysMmbId> contains the following elements (see\n\"ClearingSystemMemberIdentification2\" on page 26 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   ClearingSystemIdentification <ClrSysId> [0..1] ± 26\n   MemberIdentification <MmbId> [1..1] Text 26\n3.1.1.2.1.3  LEI <LEI>\nPresence: [0..1]\nDefinition: Legal entity identifier of the financial institution.\nDatatype: \"LEIIdentifier\" on page 55\n3.1.1.2.1.4  Name <Nm>\nPresence: [0..1]\nDefinition: Name by which an agent is known and which is usually used to identify that agent.\nDatatype: \"Max140Text\" on page 56\n3.1.1.2.1.5  PostalAddress <PstlAdr>\nPresence: [0..1]\nDefinition: Information that locates and identifies a specific address, as defined by postal services.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 28 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 29,
+      "text": "PostalAddress <PstlAdr> contains the following elements (see \"PostalAddress27\" on page 46 for\ndetails)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   AddressType <AdrTp> [0..1]  46\n{Or     Code <Cd> [1..1] CodeSet 47\nOr}     Proprietary <Prtry> [1..1] ± 47\n   CareOf <CareOf> [0..1] Text 47\n   Department <Dept> [0..1] Text 47\n   SubDepartment <SubDept> [0..1] Text 47\n   StreetName <StrtNm> [0..1] Text 48\n   BuildingNumber <BldgNb> [0..1] Text 48\n   BuildingName <BldgNm> [0..1] Text 48\n   Floor <Flr> [0..1] Text 48\n   UnitNumber <UnitNb> [0..1] Text 48\n   PostBox <PstBx> [0..1] Text 48\n   Room <Room> [0..1] Text 48\n   PostCode <PstCd> [0..1] Text 48\n   TownName <TwnNm> [0..1] Text 49\n   TownLocationName <TwnLctnNm> [0..1] Text 49\n   DistrictName <DstrctNm> [0..1] Text 49\n   CountrySubDivision <CtrySubDvsn> [0..1] Text 49\n   Country <Ctry> [0..1] CodeSet C3 49\n   AddressLine <AdrLine> [0..7] Text 49\n3.1.1.2.1.6  Other <Othr>\nPresence: [0..1]\nDefinition: Unique identification of an agent, as assigned by an institution, using an identification\nscheme.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 29 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 30,
+      "text": "Other <Othr> contains the following elements (see \"GenericFinancialIdentification1\" on page 31 for\ndetails)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 32\n   SchemeName <SchmeNm> [0..1]  32\n{Or     Code <Cd> [1..1] CodeSet 32\nOr}     Proprietary <Prtry> [1..1] Text 32\n   Issuer <Issr> [0..1] Text 32\n3.1.1.2.2  BranchIdentification <BrnchId>\nPresence: [0..1]\nDefinition: Identifies a specific branch of a financial institution.\nUsage: This component should be used in case the identification information in the financial institution\ncomponent does not provide identification up to branch level.\nBranchIdentification <BrnchId> contains the following BranchData5 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [0..1] Text 30\n   LEI <LEI> [0..1] IdentifierSet 30\n   Name <Nm> [0..1] Text 30\n   PostalAddress <PstlAdr> [0..1] ± 30\n3.1.1.2.2.1  Identification <Id>\nPresence: [0..1]\nDefinition: Unique and unambiguous identification of a branch of a financial institution.\nDatatype: \"Max35Text\" on page 57\n3.1.1.2.2.2  LEI <LEI>\nPresence: [0..1]\nDefinition: Legal entity identification for the branch of the financial institution.\nDatatype: \"LEIIdentifier\" on page 55\n3.1.1.2.2.3  Name <Nm>\nPresence: [0..1]\nDefinition: Name by which an agent is known and which is usually used to identify that agent.\nDatatype: \"Max140Text\" on page 56\n3.1.1.2.2.4  PostalAddress <PstlAdr>\nPresence: [0..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 30 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 31,
+      "text": "Definition: Information that locates and identifies a specific address, as defined by postal services.\nPostalAddress <PstlAdr> contains the following elements (see \"PostalAddress27\" on page 46 for\ndetails)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   AddressType <AdrTp> [0..1]  46\n{Or     Code <Cd> [1..1] CodeSet 47\nOr}     Proprietary <Prtry> [1..1] ± 47\n   CareOf <CareOf> [0..1] Text 47\n   Department <Dept> [0..1] Text 47\n   SubDepartment <SubDept> [0..1] Text 47\n   StreetName <StrtNm> [0..1] Text 48\n   BuildingNumber <BldgNb> [0..1] Text 48\n   BuildingName <BldgNm> [0..1] Text 48\n   Floor <Flr> [0..1] Text 48\n   UnitNumber <UnitNb> [0..1] Text 48\n   PostBox <PstBx> [0..1] Text 48\n   Room <Room> [0..1] Text 48\n   PostCode <PstCd> [0..1] Text 48\n   TownName <TwnNm> [0..1] Text 49\n   TownLocationName <TwnLctnNm> [0..1] Text 49\n   DistrictName <DstrctNm> [0..1] Text 49\n   CountrySubDivision <CtrySubDvsn> [0..1] Text 49\n   Country <Ctry> [0..1] CodeSet C3 49\n   AddressLine <AdrLine> [0..7] Text 49\n3.1.1.3  GenericFinancialIdentification1\nDefinition: Information related to an identification of a financial institution.\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 32\n   SchemeName <SchmeNm> [0..1]  32\n{Or     Code <Cd> [1..1] CodeSet 32\nOr}     Proprietary <Prtry> [1..1] Text 32\n   Issuer <Issr> [0..1] Text 32\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 31 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 32,
+      "text": "3.1.1.3.1  Identification <Id>\nPresence: [1..1]\nDefinition: Unique and unambiguous identification of a person.\nDatatype: \"Max35Text\" on page 57\n3.1.1.3.2  SchemeName <SchmeNm>\nPresence: [0..1]\nDefinition: Name of the identification scheme.\nSchemeName <SchmeNm> contains one of the following\nFinancialIdentificationSchemeName1Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 32\nOr}   Proprietary <Prtry> [1..1] Text 32\n3.1.1.3.2.1  Code <Cd>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a coded form as published in an external list.\nDatatype: \"ExternalFinancialInstitutionIdentification1Code\" on page 52\n3.1.1.3.2.2  Proprietary <Prtry>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a free text form.\nDatatype: \"Max35Text\" on page 57\n3.1.1.3.3  Issuer <Issr>\nPresence: [0..1]\nDefinition: Entity that assigns the identification.\nDatatype: \"Max35Text\" on page 57\n3.1.2 Identification Information\n3.1.2.1  GenericIdentification30\nDefinition: Information related to an identification, for example, party identification or account\nidentification.\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 33\n   Issuer <Issr> [1..1] Text 33\n   SchemeName <SchmeNm> [0..1] Text 33\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 32 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 33,
+      "text": "3.1.2.1.1  Identification <Id>\nPresence: [1..1]\nDefinition: Proprietary information, often a code, issued by the data source scheme issuer.\nDatatype: \"Exact4AlphaNumericText\" on page 55\n3.1.2.1.2  Issuer <Issr>\nPresence: [1..1]\nDefinition: Entity that assigns the identification.\nDatatype: \"Max35Text\" on page 57\n3.1.2.1.3  SchemeName <SchmeNm>\nPresence: [0..1]\nDefinition: Short textual description of the scheme.\nDatatype: \"Max35Text\" on page 57\n3.1.3 Party Identification\n3.1.3.1  PartyIdentification272\nDefinition: Specifies the identification of a person or an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 33 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 34,
+      "text": "Or MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Name <Nm> [0..1] Text 34\n   PostalAddress <PstlAdr> [0..1] ± 35\n   Identification <Id> [0..1]  35\n{Or     OrganisationIdentification <OrgId> [1..1]  36\n       AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n       LEI <LEI> [0..1] IdentifierSet 37\n       Other <Othr> [0..*]  37\n         Identification <Id> [1..1] Text 38\n         SchemeName <SchmeNm> [0..1]  38\n{Or           Code <Cd> [1..1] CodeSet 38\nOr}           Proprietary <Prtry> [1..1] Text 38\n         Issuer <Issr> [0..1] Text 38\nOr}     PrivateIdentification <PrvtId> [1..1]  38\n       DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n         BirthDate <BirthDt> [1..1] Date 39\n         ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n         CityOfBirth <CityOfBirth> [1..1] Text 40\n         CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n       Other <Othr> [0..*]  40\n         Identification <Id> [1..1] Text 40\n         SchemeName <SchmeNm> [0..1]  40\n{Or           Code <Cd> [1..1] CodeSet 41\nOr}           Proprietary <Prtry> [1..1] Text 41\n         Issuer <Issr> [0..1] Text 41\n   CountryOfResidence <CtryOfRes> [0..1] CodeSet C3 41\n   ContactDetails <CtctDtls> [0..1] ± 41\n3.1.3.1.1  Name <Nm>\nPresence: [0..1]\nDefinition: Name by which a party is known and which is usually used to identify that party.\nDatatype: \"Max140Text\" on page 56\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 34 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 35,
+      "text": "3.1.3.1.2  PostalAddress <PstlAdr>\nPresence: [0..1]\nDefinition: Information that locates and identifies a specific address, as defined by postal services.\nPostalAddress <PstlAdr> contains the following elements (see \"PostalAddress27\" on page 46 for\ndetails)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   AddressType <AdrTp> [0..1]  46\n{Or     Code <Cd> [1..1] CodeSet 47\nOr}     Proprietary <Prtry> [1..1] ± 47\n   CareOf <CareOf> [0..1] Text 47\n   Department <Dept> [0..1] Text 47\n   SubDepartment <SubDept> [0..1] Text 47\n   StreetName <StrtNm> [0..1] Text 48\n   BuildingNumber <BldgNb> [0..1] Text 48\n   BuildingName <BldgNm> [0..1] Text 48\n   Floor <Flr> [0..1] Text 48\n   UnitNumber <UnitNb> [0..1] Text 48\n   PostBox <PstBx> [0..1] Text 48\n   Room <Room> [0..1] Text 48\n   PostCode <PstCd> [0..1] Text 48\n   TownName <TwnNm> [0..1] Text 49\n   TownLocationName <TwnLctnNm> [0..1] Text 49\n   DistrictName <DstrctNm> [0..1] Text 49\n   CountrySubDivision <CtrySubDvsn> [0..1] Text 49\n   Country <Ctry> [0..1] CodeSet C3 49\n   AddressLine <AdrLine> [0..7] Text 49\n3.1.3.1.3  Identification <Id>\nPresence: [0..1]\nDefinition: Unique and unambiguous identification of a party.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 35 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 36,
+      "text": "Identification <Id> contains one of the following Party52Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   OrganisationIdentification <OrgId> [1..1]  36\n     AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n     LEI <LEI> [0..1] IdentifierSet 37\n     Other <Othr> [0..*]  37\n       Identification <Id> [1..1] Text 38\n       SchemeName <SchmeNm> [0..1]  38\n{Or         Code <Cd> [1..1] CodeSet 38\nOr}         Proprietary <Prtry> [1..1] Text 38\n       Issuer <Issr> [0..1] Text 38\nOr}   PrivateIdentification <PrvtId> [1..1]  38\n     DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n       BirthDate <BirthDt> [1..1] Date 39\n       ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n       CityOfBirth <CityOfBirth> [1..1] Text 40\n       CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n     Other <Othr> [0..*]  40\n       Identification <Id> [1..1] Text 40\n       SchemeName <SchmeNm> [0..1]  40\n{Or         Code <Cd> [1..1] CodeSet 41\nOr}         Proprietary <Prtry> [1..1] Text 41\n       Issuer <Issr> [0..1] Text 41\n3.1.3.1.3.1  OrganisationIdentification <OrgId>\nPresence: [1..1]\nDefinition: Unique and unambiguous way to identify an organisation.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 36 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 37,
+      "text": "OrganisationIdentification <OrgId> contains the following OrganisationIdentification39 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   AnyBIC <AnyBIC> [0..1] IdentifierSet C1 37\n   LEI <LEI> [0..1] IdentifierSet 37\n   Other <Othr> [0..*]  37\n     Identification <Id> [1..1] Text 38\n     SchemeName <SchmeNm> [0..1]  38\n{Or       Code <Cd> [1..1] CodeSet 38\nOr}       Proprietary <Prtry> [1..1] Text 38\n     Issuer <Issr> [0..1] Text 38\n3.1.3.1.3.1.1  AnyBIC <AnyBIC>\nPresence: [0..1]\nDefinition: Business identification code of the organisation.\nImpacted by: C1 \"AnyBIC\"\nDatatype: \"AnyBICDec2014Identifier\" on page 54\nConstraints\n• AnyBIC\nOnly a valid Business identifier code is allowed. Business identifier codes for financial or non-\nfinancial institutions are registered and published by the ISO 9362 Registration Authority in the ISO\ndirectory of BICs, and consists of eight (8) or eleven (11) contiguous characters.\n3.1.3.1.3.1.2  LEI <LEI>\nPresence: [0..1]\nDefinition: Legal entity identification as an alternate identification for a party.\nDatatype: \"LEIIdentifier\" on page 55\n3.1.3.1.3.1.3  Other <Othr>\nPresence: [0..*]\nDefinition: Unique identification of an organisation, as assigned by an institution, using an identification\nscheme.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 37 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 38,
+      "text": "Other <Othr> contains the following GenericOrganisationIdentification3 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 38\n   SchemeName <SchmeNm> [0..1]  38\n{Or     Code <Cd> [1..1] CodeSet 38\nOr}     Proprietary <Prtry> [1..1] Text 38\n   Issuer <Issr> [0..1] Text 38\n3.1.3.1.3.1.3.1  Identification <Id>\nPresence: [1..1]\nDefinition: Identification assigned by an institution.\nDatatype: \"Max256Text\" on page 56\n3.1.3.1.3.1.3.2  SchemeName <SchmeNm>\nPresence: [0..1]\nDefinition: Name of the identification scheme.\nSchemeName <SchmeNm> contains one of the following\nOrganisationIdentificationSchemeName1Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 38\nOr}   Proprietary <Prtry> [1..1] Text 38\n3.1.3.1.3.1.3.2.1  Code <Cd>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a coded form as published in an external list.\nDatatype: \"ExternalOrganisationIdentification1Code\" on page 52\n3.1.3.1.3.1.3.2.2  Proprietary <Prtry>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a free text form.\nDatatype: \"Max35Text\" on page 57\n3.1.3.1.3.1.3.3  Issuer <Issr>\nPresence: [0..1]\nDefinition: Entity that assigns the identification.\nDatatype: \"Max35Text\" on page 57\n3.1.3.1.3.2  PrivateIdentification <PrvtId>\nPresence: [1..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 38 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 39,
+      "text": "Definition: Unique and unambiguous identification of a person, for example a passport.\nPrivateIdentification <PrvtId> contains the following PersonIdentification18 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   DateAndPlaceOfBirth <DtAndPlcOfBirth> [0..1]  39\n     BirthDate <BirthDt> [1..1] Date 39\n     ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n     CityOfBirth <CityOfBirth> [1..1] Text 40\n     CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n   Other <Othr> [0..*]  40\n     Identification <Id> [1..1] Text 40\n     SchemeName <SchmeNm> [0..1]  40\n{Or       Code <Cd> [1..1] CodeSet 41\nOr}       Proprietary <Prtry> [1..1] Text 41\n     Issuer <Issr> [0..1] Text 41\n3.1.3.1.3.2.1  DateAndPlaceOfBirth <DtAndPlcOfBirth>\nPresence: [0..1]\nDefinition: Date and place of birth of a person.\nDateAndPlaceOfBirth <DtAndPlcOfBirth> contains the following DateAndPlaceOfBirth1 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   BirthDate <BirthDt> [1..1] Date 39\n   ProvinceOfBirth <PrvcOfBirth> [0..1] Text 39\n   CityOfBirth <CityOfBirth> [1..1] Text 40\n   CountryOfBirth <CtryOfBirth> [1..1] CodeSet C3 40\n3.1.3.1.3.2.1.1  BirthDate <BirthDt>\nPresence: [1..1]\nDefinition: Date on which a person is born.\nDatatype: \"ISODate\" on page 53\n3.1.3.1.3.2.1.2  ProvinceOfBirth <PrvcOfBirth>\nPresence: [0..1]\nDefinition: Province where a person was born.\nDatatype: \"Max35Text\" on page 57\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 39 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 40,
+      "text": "3.1.3.1.3.2.1.3  CityOfBirth <CityOfBirth>\nPresence: [1..1]\nDefinition: City where a person was born.\nDatatype: \"Max35Text\" on page 57\n3.1.3.1.3.2.1.4  CountryOfBirth <CtryOfBirth>\nPresence: [1..1]\nDefinition: Country where a person was born.\nImpacted by: C3 \"Country\"\nDatatype: \"CountryCode\" on page 51\nConstraints\n• Country\nThe code is checked against the list of country names obtained from the United Nations (ISO 3166,\nAlpha-2 code).\n3.1.3.1.3.2.2  Other <Othr>\nPresence: [0..*]\nDefinition: Unique identification of a person, as assigned by an institution, using an identification\nscheme.\nOther <Othr> contains the following GenericPersonIdentification2 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 40\n   SchemeName <SchmeNm> [0..1]  40\n{Or     Code <Cd> [1..1] CodeSet 41\nOr}     Proprietary <Prtry> [1..1] Text 41\n   Issuer <Issr> [0..1] Text 41\n3.1.3.1.3.2.2.1  Identification <Id>\nPresence: [1..1]\nDefinition: Unique and unambiguous identification of a person.\nDatatype: \"Max256Text\" on page 56\n3.1.3.1.3.2.2.2  SchemeName <SchmeNm>\nPresence: [0..1]\nDefinition: Name of the identification scheme.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 40 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 41,
+      "text": "SchemeName <SchmeNm> contains one of the following\nPersonIdentificationSchemeName1Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 41\nOr}   Proprietary <Prtry> [1..1] Text 41\n3.1.3.1.3.2.2.2.1  Code <Cd>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a coded form as published in an external list.\nDatatype: \"ExternalPersonIdentification1Code\" on page 52\n3.1.3.1.3.2.2.2.2  Proprietary <Prtry>\nPresence: [1..1]\nDefinition: Name of the identification scheme, in a free text form.\nDatatype: \"Max35Text\" on page 57\n3.1.3.1.3.2.2.3  Issuer <Issr>\nPresence: [0..1]\nDefinition: Entity that assigns the identification.\nDatatype: \"Max35Text\" on page 57\n3.1.3.1.4  CountryOfResidence <CtryOfRes>\nPresence: [0..1]\nDefinition: Country in which a person resides (the place of a person's home). In the case of a company,\nit is the country from which the affairs of that company are directed.\nImpacted by: C3 \"Country\"\nDatatype: \"CountryCode\" on page 51\nConstraints\n• Country\nThe code is checked against the list of country names obtained from the United Nations (ISO 3166,\nAlpha-2 code).\n3.1.3.1.5  ContactDetails <CtctDtls>\nPresence: [0..1]\nDefinition: Set of elements used to indicate how to contact the party.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 41 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 42,
+      "text": "ContactDetails <CtctDtls> contains the following elements (see \"Contact13\" on page 42 for details)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   NamePrefix <NmPrfx> [0..1] CodeSet 43\n   Name <Nm> [0..1] Text 43\n   PhoneNumber <PhneNb> [0..1] Text 43\n   MobileNumber <MobNb> [0..1] Text 44\n   FaxNumber <FaxNb> [0..1] Text 44\n   URLAddress <URLAdr> [0..1] Text 44\n   EmailAddress <EmailAdr> [0..1] Text 44\n   EmailPurpose <EmailPurp> [0..1] Text 44\n   JobTitle <JobTitl> [0..1] Text 44\n   Responsibility <Rspnsblty> [0..1] Text 44\n   Department <Dept> [0..1] Text 44\n   Other <Othr> [0..*]  45\n     ChannelType <ChanlTp> [1..1] Text 45\n     Identification <Id> [0..1] Text 45\n   PreferredMethod <PrefrdMtd> [0..1] CodeSet 45\n3.1.4 Person Identification\n3.1.4.1  Contact13\nDefinition: Specifies the details of the contact person.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 42 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 43,
+      "text": "Or MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   NamePrefix <NmPrfx> [0..1] CodeSet 43\n   Name <Nm> [0..1] Text 43\n   PhoneNumber <PhneNb> [0..1] Text 43\n   MobileNumber <MobNb> [0..1] Text 44\n   FaxNumber <FaxNb> [0..1] Text 44\n   URLAddress <URLAdr> [0..1] Text 44\n   EmailAddress <EmailAdr> [0..1] Text 44\n   EmailPurpose <EmailPurp> [0..1] Text 44\n   JobTitle <JobTitl> [0..1] Text 44\n   Responsibility <Rspnsblty> [0..1] Text 44\n   Department <Dept> [0..1] Text 44\n   Other <Othr> [0..*]  45\n     ChannelType <ChanlTp> [1..1] Text 45\n     Identification <Id> [0..1] Text 45\n   PreferredMethod <PrefrdMtd> [0..1] CodeSet 45\n3.1.4.1.1  NamePrefix <NmPrfx>\nPresence: [0..1]\nDefinition: Specifies the terms used to formally address a person.\nDatatype: \"NamePrefix2Code\" on page 52\nCodeName Name Definition\nDOCT Doctor Title of the person is Doctor or Dr.\nMADM Madam Title of the person is Madam.\nMISS Miss Title of the person is Miss.\nMIST Mister Title of the person is Mister or Mr.\nMIKS GenderNeutral Title of the person is gender neutral\n(Mx).\n3.1.4.1.2  Name <Nm>\nPresence: [0..1]\nDefinition: Name by which a party is known and which is usually used to identify that party.\nDatatype: \"Max140Text\" on page 56\n3.1.4.1.3  PhoneNumber <PhneNb>\nPresence: [0..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 43 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 44,
+      "text": "Definition: Collection of information that identifies a phone number, as defined by telecom services.\nDatatype: \"PhoneNumber\" on page 57\n3.1.4.1.4  MobileNumber <MobNb>\nPresence: [0..1]\nDefinition: Collection of information that identifies a mobile phone number, as defined by telecom\nservices.\nDatatype: \"PhoneNumber\" on page 57\n3.1.4.1.5  FaxNumber <FaxNb>\nPresence: [0..1]\nDefinition: Collection of information that identifies a FAX number, as defined by telecom services.\nDatatype: \"PhoneNumber\" on page 57\n3.1.4.1.6  URLAddress <URLAdr>\nPresence: [0..1]\nDefinition: Address for the Universal Resource Locator (URL), for example an address used over the\nwww (HTTP) service.\nDatatype: \"Max2048Text\" on page 56\n3.1.4.1.7  EmailAddress <EmailAdr>\nPresence: [0..1]\nDefinition: Address for electronic mail (e-mail).\nDatatype: \"Max256Text\" on page 56\n3.1.4.1.8  EmailPurpose <EmailPurp>\nPresence: [0..1]\nDefinition: Purpose for which an email address may be used.\nDatatype: \"Max35Text\" on page 57\n3.1.4.1.9  JobTitle <JobTitl>\nPresence: [0..1]\nDefinition: Title of the function.\nDatatype: \"Max35Text\" on page 57\n3.1.4.1.10  Responsibility <Rspnsblty>\nPresence: [0..1]\nDefinition: Role of a person in an organisation.\nDatatype: \"Max35Text\" on page 57\n3.1.4.1.11  Department <Dept>\nPresence: [0..1]\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 44 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 45,
+      "text": "Definition: Identification of a division of a large organisation or building.\nDatatype: \"Max70Text\" on page 57\n3.1.4.1.12  Other <Othr>\nPresence: [0..*]\nDefinition: Contact details in another form.\nOther <Othr> contains the following OtherContact1 elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   ChannelType <ChanlTp> [1..1] Text 45\n   Identification <Id> [0..1] Text 45\n3.1.4.1.12.1  ChannelType <ChanlTp>\nPresence: [1..1]\nDefinition: Method used to contact the financial institution's contact for the specific tax region.\nDatatype: \"Max4Text\" on page 57\n3.1.4.1.12.2  Identification <Id>\nPresence: [0..1]\nDefinition: Communication value such as phone number or email address.\nDatatype: \"Max128Text\" on page 55\n3.1.4.1.13  PreferredMethod <PrefrdMtd>\nPresence: [0..1]\nDefinition: Preferred method used to reach the contact.\nDatatype: \"PreferredContactMethod2Code\" on page 53\nCodeName Name Definition\nMAIL Email Preferred method used to reach the\ncontact is per email.\nFAXX Fax Preferred method used to reach the\ncontact is per fax.\nLETT Letter Preferred method used to reach the\ncontact is per letter.\nCELL MobileOrCellPhone Preferred method used to reach the\ncontact is per mobile or cell phone.\nONLI Online Preferred method used to reach the\ncontact is online.\nPHON Phone Preferred method used to reach the\ncontact is per phone.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 45 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 46,
+      "text": "3.1.5 Postal Address\n3.1.5.1  PostalAddress27\nDefinition: Information that locates and identifies a specific address, as defined by postal services.\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   AddressType <AdrTp> [0..1]  46\n{Or     Code <Cd> [1..1] CodeSet 47\nOr}     Proprietary <Prtry> [1..1] ± 47\n   CareOf <CareOf> [0..1] Text 47\n   Department <Dept> [0..1] Text 47\n   SubDepartment <SubDept> [0..1] Text 47\n   StreetName <StrtNm> [0..1] Text 48\n   BuildingNumber <BldgNb> [0..1] Text 48\n   BuildingName <BldgNm> [0..1] Text 48\n   Floor <Flr> [0..1] Text 48\n   UnitNumber <UnitNb> [0..1] Text 48\n   PostBox <PstBx> [0..1] Text 48\n   Room <Room> [0..1] Text 48\n   PostCode <PstCd> [0..1] Text 48\n   TownName <TwnNm> [0..1] Text 49\n   TownLocationName <TwnLctnNm> [0..1] Text 49\n   DistrictName <DstrctNm> [0..1] Text 49\n   CountrySubDivision <CtrySubDvsn> [0..1] Text 49\n   Country <Ctry> [0..1] CodeSet C3 49\n   AddressLine <AdrLine> [0..7] Text 49\n3.1.5.1.1  AddressType <AdrTp>\nPresence: [0..1]\nDefinition: Identifies the nature of the postal address.\nAddressType <AdrTp> contains one of the following AddressType3Choice elements\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 47\nOr}   Proprietary <Prtry> [1..1] ± 47\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 46 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 47,
+      "text": "3.1.5.1.1.1  Code <Cd>\nPresence: [1..1]\nDefinition: Type of address expressed as a code.\nDatatype: \"AddressType2Code\" on page 50\nCodeName Name Definition\nADDR Postal Address is the complete postal address.\nPBOX POBox Address is a postal office (PO) box.\nHOME Residential Address is the home address.\nBIZZ Business Address is the business address.\nMLTO MailTo Address is the address to which mail is\nsent.\nDLVY DeliveryTo Address is the address to which delivery\nis to take place.\n3.1.5.1.1.2  Proprietary <Prtry>\nPresence: [1..1]\nDefinition: Type of address expressed as a proprietary code.\nProprietary <Prtry> contains the following elements (see \"GenericIdentification30\" on page 32 for\ndetails)\nOr MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n   Identification <Id> [1..1] Text 33\n   Issuer <Issr> [1..1] Text 33\n   SchemeName <SchmeNm> [0..1] Text 33\n3.1.5.1.2  CareOf <CareOf>\nPresence: [0..1]\nDefinition: Identifies an addressee that is accepting the correspondence for the intended recipient.\nUsing care of ensures the correspondence reaches the right recipient rather than getting returned to the\nsender.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.3  Department <Dept>\nPresence: [0..1]\nDefinition: Identification of a division of a large organisation or building.\nDatatype: \"Max70Text\" on page 57\n3.1.5.1.4  SubDepartment <SubDept>\nPresence: [0..1]\nDefinition: Identification of a sub-division of a large organisation or building.\nDatatype: \"Max70Text\" on page 57\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 47 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 48,
+      "text": "3.1.5.1.5  StreetName <StrtNm>\nPresence: [0..1]\nDefinition: Name of a street or thoroughfare.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.6  BuildingNumber <BldgNb>\nPresence: [0..1]\nDefinition: Number that identifies the position of a building on a street.\nDatatype: \"Max16Text\" on page 56\n3.1.5.1.7  BuildingName <BldgNm>\nPresence: [0..1]\nDefinition: Name of the building or house.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.8  Floor <Flr>\nPresence: [0..1]\nDefinition: Floor or storey within a building.\nDatatype: \"Max70Text\" on page 57\n3.1.5.1.9  UnitNumber <UnitNb>\nPresence: [0..1]\nDefinition: Identifies a flat or dwelling within the building.\nDatatype: \"Max16Text\" on page 56\n3.1.5.1.10  PostBox <PstBx>\nPresence: [0..1]\nDefinition: Numbered box in a post office, assigned to a person or organisation, where letters are kept\nuntil called for.\nDatatype: \"Max16Text\" on page 56\n3.1.5.1.11  Room <Room>\nPresence: [0..1]\nDefinition: Building room number.\nDatatype: \"Max70Text\" on page 57\n3.1.5.1.12  PostCode <PstCd>\nPresence: [0..1]\nDefinition: Identifier consisting of a group of letters and/or numbers that is added to a postal address to\nassist the sorting of mail.\nDatatype: \"Max16Text\" on page 56\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 48 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 49,
+      "text": "3.1.5.1.13  TownName <TwnNm>\nPresence: [0..1]\nDefinition: Name of a built-up area, with defined boundaries, and a local government.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.14  TownLocationName <TwnLctnNm>\nPresence: [0..1]\nDefinition: Specific location name within the town.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.15  DistrictName <DstrctNm>\nPresence: [0..1]\nDefinition: Identifies a subdivision within a country sub-division.\nDatatype: \"Max140Text\" on page 56\n3.1.5.1.16  CountrySubDivision <CtrySubDvsn>\nPresence: [0..1]\nDefinition: Identifies a subdivision of a country such as state, region, county.\nDatatype: \"Max35Text\" on page 57\n3.1.5.1.17  Country <Ctry>\nPresence: [0..1]\nDefinition: Nation with its own government.\nImpacted by: C3 \"Country\"\nDatatype: \"CountryCode\" on page 51\nConstraints\n• Country\nThe code is checked against the list of country names obtained from the United Nations (ISO 3166,\nAlpha-2 code).\n3.1.5.1.18  AddressLine <AdrLine>\nPresence: [0..7]\nDefinition: Information that locates and identifies a specific address, as defined by postal services,\npresented in free format text.\nDatatype: \"Max70Text\" on page 57\n3.1.6 System Identification\n3.1.6.1  ClearingSystemIdentification2Choice\nDefinition: Choice of a clearing system identifier.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 49 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 50,
+      "text": "Or MessageElement<XML Tag> Mult. Type Constr.\nNo.\nPage\n{Or   Code <Cd> [1..1] CodeSet 50\nOr}   Proprietary <Prtry> [1..1] Text 50\n3.1.6.1.1  Code <Cd>\nPresence: [1..1]\nDefinition: Identification of a clearing system, in a coded form as published in an external list.\nDatatype: \"ExternalClearingSystemIdentification1Code\" on page 51\n3.1.6.1.2  Proprietary <Prtry>\nPresence: [1..1]\nDefinition: Identification code for a clearing system, that has not yet been identified in the list of clearing\nsystems.\nDatatype: \"Max35Text\" on page 57\n3.2 Message Datatypes\n3.2.1 CodeSet\n3.2.1.1  AddressType2Code\nDefinition: Specifies the type of address.\nType: CodeSet\nCodeName Name Definition\nADDR Postal Address is the complete postal address.\nPBOX POBox Address is a postal office (PO) box.\nHOME Residential Address is the home address.\nBIZZ Business Address is the business address.\nMLTO MailTo Address is the address to which mail is\nsent.\nDLVY DeliveryTo Address is the address to which delivery\nis to take place.\n3.2.1.2  BusinessMessagePriorityCode\nDefinition: Specifies the priority levels for the BusinessMessage.\nThe different priorities are typically user / service / implementation dependent. The semantics of the\ndifferent values for a Mesage (Set) need to be defined by the relevant user community (SEG.).\nType: CodeSet\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 50 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 51,
+      "text": "Constraints\n• ValidationByTable\n3.2.1.3  CopyDuplicate1Code\nDefinition: Specifies if this document is a copy, a duplicate, or a duplicate of a copy.\nType: CodeSet\nCodeName Name Definition\nCODU CopyDuplicate Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes and the message\nis a duplicate of a message previously\nsent.\nCOPY Copy Message is being sent as a copy to a\nparty other than the account owner, for\ninformation purposes.\nDUPL Duplicate Message is for information/confirmation\npurposes. It is a duplicate of a message\npreviously sent.\n3.2.1.4  CountryCode\nDefinition: Code to identify a country, a dependency, or another area of particular geopolitical interest,\non the basis of country names obtained from the United Nations (ISO 3166, Alpha-2 code).\nType: CodeSet\nFormat\npattern [A-Z]{2,2}\nConstraints\n• Country\nThe code is checked against the list of country names obtained from the United Nations (ISO 3166,\nAlpha-2 code).\n3.2.1.5  ExternalClearingSystemIdentification1Code\nDefinition: Specifies the clearing system identification code, as published in an external clearing system\nidentification code list.\nExternal code sets can be downloaded from www.iso20022.org.\nType: CodeSet\nFormat\nminLength 1\nmaxLength 5\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 51 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 52,
+      "text": "3.2.1.6  ExternalFinancialInstitutionIdentification1Code\nDefinition: Specifies the external financial institution identification scheme name code in the format of\ncharacter string with a maximum length of 4 characters.\nThe list of valid codes is an external code list published separately.\nExternal code sets can be downloaded from www.iso20022.org.\nType: CodeSet\nFormat\nminLength 1\nmaxLength 4\n3.2.1.7  ExternalOrganisationIdentification1Code\nDefinition: Specifies the external organisation identification scheme name code in the format of\ncharacter string with a maximum length of 4 characters.\nThe list of valid codes is an external code list published separately.\nExternal code sets can be downloaded from www.iso20022.org.\nType: CodeSet\nFormat\nminLength 1\nmaxLength 4\n3.2.1.8  ExternalPersonIdentification1Code\nDefinition: Specifies the external person identification scheme name code in the format of character\nstring with a maximum length of 4 characters.\nThe list of valid codes is an external code list published separately.\nExternal code sets can be downloaded from www.iso20022.org.\nType: CodeSet\nFormat\nminLength 1\nmaxLength 4\n3.2.1.9  NamePrefix2Code\nDefinition: Specifies the terms used to formally address a person.\nType: CodeSet\nCodeName Name Definition\nDOCT Doctor Title of the person is Doctor or Dr.\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 52 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 53,
+      "text": "CodeName Name Definition\nMADM Madam Title of the person is Madam.\nMISS Miss Title of the person is Miss.\nMIST Mister Title of the person is Mister or Mr.\nMIKS GenderNeutral Title of the person is gender neutral\n(Mx).\n3.2.1.10  PreferredContactMethod2Code\nDefinition: Preferred method used to reach the individual contact within an organisation.\nType: CodeSet\nCodeName Name Definition\nMAIL Email Preferred method used to reach the\ncontact is per email.\nFAXX Fax Preferred method used to reach the\ncontact is per fax.\nLETT Letter Preferred method used to reach the\ncontact is per letter.\nCELL MobileOrCellPhone Preferred method used to reach the\ncontact is per mobile or cell phone.\nONLI Online Preferred method used to reach the\ncontact is online.\nPHON Phone Preferred method used to reach the\ncontact is per phone.\n3.2.1.11  UnicodeChartsCode\nDefinition: codelist containing the names of the UNICODE code block name as specified on http://\nunicode.org/Public/UNIDATA/Blocks.txt.\nType: CodeSet\nConstraints\n• ValidationByTable\n3.2.2 Date\n3.2.2.1  ISODate\nDefinition: A particular point in the progression of time in a calendar year expressed in the YYYY-MM-\nDD format. This representation is defined in \"XML Schema Part 2: Datatypes Second Edition - W3C\nRecommendation 28 October 2004\" which is aligned with ISO 8601.\nType: Date\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 53 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 54,
+      "text": "3.2.3 DateTime\n3.2.3.1  ISODateTime\nDefinition: A particular point in the progression of time defined by a mandatory date and a mandatory\ntime component, expressed in either UTC time format (YYYY-MM-DDThh:mm:ss.sssZ), local time with\nUTC offset format (YYYY-MM-DDThh:mm:ss.sss+/-hh:mm), or local time format (YYYY-MM-\nDDThh:mm:ss.sss). These representations are defined in \"XML Schema Part 2: Datatypes Second\nEdition - W3C Recommendation 28 October 2004\" which is aligned with ISO 8601.\nNote on the time format:\n1) beginning / end of calendar day\n00:00:00 = the beginning of a calendar day\n24:00:00 = the end of a calendar day\n2) fractions of second in time format\nDecimal fractions of seconds may be included. In this case, the involved parties shall agree on the\nmaximum number of digits that are allowed.\nType: DateTime\n3.2.4 IdentifierSet\n3.2.4.1  AnyBICDec2014Identifier\nDefinition: Code allocated to a financial or non-financial institution by the ISO 9362 Registration\nAuthority, as described in ISO 9362: 2014 - \"Banking - Banking telecommunication messages -\nBusiness identifier code (BIC)\".\nType: IdentifierSet\nIdentification scheme: SWIFT; AnyBICIdentifier\nFormat\npattern [A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}\nConstraints\n• AnyBIC\nOnly a valid Business identifier code is allowed. Business identifier codes for financial or non-\nfinancial institutions are registered and published by the ISO 9362 Registration Authority in the ISO\ndirectory of BICs, and consists of eight (8) or eleven (11) contiguous characters.\n3.2.4.2  BICFIDec2014Identifier\nDefinition: Code allocated to a financial institution by the ISO 9362 Registration Authority as described\nin ISO 9362: 2014 - \"Banking - Banking telecommunication messages - Business identifier code (BIC)\".\nType: IdentifierSet\nIdentification scheme: SWIFT; BICIdentifier\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 54 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 55,
+      "text": "Format\npattern [A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}\nConstraints\n• BICFI\nValid BICs for financial institutions are registered and published by the ISO 9362 Registration\nAuthority in the ISO directory of BICs, and consist of eight (8) or eleven (11) contiguous characters.\n3.2.4.3  LEIIdentifier\nDefinition: Legal Entity Identifier is a code allocated to a party as described in ISO 17442 \"Financial\nServices - Legal Entity Identifier (LEI)\".\nType: IdentifierSet\nIdentification scheme: Global LEI System; LEIIdentifier\nFormat\npattern [A-Z0-9]{18,18}[0-9]{2,2}\n3.2.5 Indicator\n3.2.5.1  YesNoIndicator\nDefinition: Indicates a \"Yes\" or \"No\" type of answer for an element.\nType: Indicator\nMeaning When True: Yes\nMeaning When False: No\n3.2.6 Text\n3.2.6.1  Exact4AlphaNumericText\nDefinition: Specifies an alphanumeric string with a length of 4 characters.\nType: Text\nFormat\npattern [a-zA-Z0-9]{4}\n3.2.6.2  Max128Text\nDefinition: Specifies a character string with a maximum length of 128 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 128\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 55 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 56,
+      "text": "3.2.6.3  Max140Text\nDefinition: Specifies a character string with a maximum length of 140 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 140\n3.2.6.4  Max16Text\nDefinition: Specifies a character string with a maximum length of 16 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 16\n3.2.6.5  Max2048Text\nDefinition: Specifies a character string with a maximum length of 2048 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 2048\n3.2.6.6  Max256Text\nDefinition: Specifies a character string with a maximum length of 256 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 256\n3.2.6.7  Max350Text\nDefinition: Specifies a character string with a maximum length of 350 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 350\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 56 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    },
+    {
+      "page": 57,
+      "text": "3.2.6.8  Max35Text\nDefinition: Specifies a character string with a maximum length of 35 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 35\n3.2.6.9  Max4Text\nDefinition: Specifies a character string with a maximum length of 4 characters.\nType: Text\nFormat\nminLength 1\nmaxLength 4\n3.2.6.10  Max70Text\nDefinition: Specifies a character string with a maximum length of 70characters.\nType: Text\nFormat\nminLength 1\nmaxLength 70\n3.2.6.11  PhoneNumber\nDefinition: The collection of information which identifies a specific phone or FAX number as defined by\ntelecom services.\nIt consists of a \"+\" followed by the country code (from 1 to 3 characters) then a \"-\" and finally, any\ncombination of numbers, \"(\", \")\", \"+\" and \"-\" (up to 30 characters).\nType: Text\nFormat\npattern \\+[0-9]{1,3}-[0-9()+\\-]{1,30}\nApproved by the Cross-SEG Harmonisation SEG on 20 February 2024 Message Items Types\nBusiness Application Header - Version 4 57 March 2024",
+      "message_ids": [],
+      "mediabox": [
+        0.0,
+        0.0,
+        595.27563,
+        793.4173
+      ]
+    }
+  ]
+}

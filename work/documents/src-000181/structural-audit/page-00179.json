@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000181",
+  "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+  "file_page": 179,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 108,
+    "2": 158
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 142,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "76605ffec209eb769e98243b7fac262c084e5d54ca105325e7ef9de4712cb5bd",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 12,
+      "bbox": [
+        144.5687,
+        198.5237,
+        320.5394,
+        199.5237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        189.8929,
+        320.0394,
+        199.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 16,
+      "bbox": [
+        360.2083,
+        216.5237,
+        498.9476,
+        217.5237
+      ],
+      "link_annotation_bbox": [
+        360.7083,
+        207.8929,
+        515.1321,
+        217.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 18,
+      "bbox": [
+        497.9476,
+        216.5237,
+        515.6321,
+        217.5237
+      ],
+      "link_annotation_bbox": [
+        360.7083,
+        207.8929,
+        515.1321,
+        217.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 100,
+      "bbox": [
+        84.5394,
+        474.3237,
+        257.1995,
+        475.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        465.6929,
+        273.3841,
+        475.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 102,
+      "bbox": [
+        256.1995,
+        474.3237,
+        273.8841,
+        475.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        465.6929,
+        273.3841,
+        475.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 255,
+      "bbox": [
+        144.5686,
+        712.1238,
+        320.5394,
+        713.1238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        703.4929,
+        320.0394,
+        713.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0243",
+      "file_page": 179,
+      "bbox": [
+        85.03936999999996,
+        236.89291000000014,
+        555.5905714285715,
+        305.4929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0243.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "fd3e1195f4f028db89cf3b8c2a189e6b4c0bb227348d7be33a09bd80baf81909",
+      "cell_geometry_sha256": "bed97cf3023e2c52359cf12e59115d956bd8f7601afacf9d05c73e9acd38e8df",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0244",
+      "file_page": 179,
+      "bbox": [
+        85.03936999999996,
+        482.6929100000001,
+        555.5905714285715,
+        632.0929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0244.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "9406cf989f3814415d0e16365207bdf7e357adef64667eb0bebc2329e2ee8ccb",
+      "cell_geometry_sha256": "441b93adf2a0c99112ada4909566712e759d7c15e20d9e90b357cfebdb90f383",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

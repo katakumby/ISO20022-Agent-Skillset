@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000357",
+  "source_sha256": "bba13c1299fa1a9db3c2476ee7a5f5b178abbaeb6fb01f85dcafc956dae80b57",
+  "file_page": 51,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 184,
+    "2": 375
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 363,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "a8efc638f18ccbc05cab4d9bc89598152a2f572b654e0856d95e95daaaa9e5f6",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        371.3411,
+        84.3237,
+        496.7454,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        371.8411,
+        75.6929,
+        507.3685,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        495.7454,
+        84.3237,
+        507.8685,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        371.8411,
+        75.6929,
+        507.3685,
+        85.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0070",
+      "file_page": 51,
+      "bbox": [
+        85.03936999999996,
+        104.6929100000001,
+        555.5905761290322,
+        536.8929700000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000357/tables/tbl-0070.md",
+      "rows": 21,
+      "matrix_cells": 126,
+      "physical_cells": 126,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a24ce90fd3c91e49e654945f38ea4826a1808acfa317f4af065983876b795dbd",
+      "cell_geometry_sha256": "203b3b20e3b482a92f9952d9f934b6eedaa682249fe73f5f2e441af5e10605d8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 126,
+      "independent_cells_match": 126,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0071",
+      "file_page": 51,
+      "bbox": [
+        85.03936999999996,
+        589.2930100000001,
+        555.5905761290322,
+        718.4930100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000357/tables/tbl-0071.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "2f34c6e14c7cf74ab2e511c56245dc5cd6f5d3794f7b52b9ca43d82cd1a5bf39",
+      "cell_geometry_sha256": "4a9c89a7693e0ceef470a53f87f7a06afba0b184b1fec397293759732e5a1d2d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

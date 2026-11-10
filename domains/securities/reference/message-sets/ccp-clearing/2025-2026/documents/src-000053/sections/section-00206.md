@@ -1,0 +1,112 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "CCP Clearing"
+source_ids: ["src-000053"]
+source_editions: ["March 2026; Standards MX November 2026 release"]
+message_ids: []
+heading_path: ["8 MX secl.007.001.03 BuyInNotificationV03", "8.4 Message Building Blocks", "8.4.4 OriginalSettlementObligation <OrgnlSttlmOblgtn>", "8.4.4.8 NonClearingMember <NonClrMmb>"]
+file_pages: [268, 269]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["secl.007.001.03"]
+---
+
+# 8.4.4.8 NonClearingMember <NonClrMmb>
+
+Source: [src-000053](../../../../../../../../../raw-input/central_counterparty_clearing_ccp_clearing/ISO20022_MDRPart2_CentralCounterPartySecuritiesClearing_Maintenance_2025_2026_v1.pdf). Locator: one-based file pages 268 to 269.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 268
+
+```text
+Note: This field allows clearing member firm to segregate flows coming from clearing counterparty's
+clearing system. Indeed, clearing member firms receive messages from the same system (same
+sender) and this field allows them to know if the message is related to equities or derivatives.
+ClearingSegment <ClrSgmt> contains one of the following elements (see PartyIdentification35Choice
+on page 452 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   BIC <BIC> [1..1] IdentifierSet   'C4 452
+Or}   ProprietaryIdentification <PrtryId> [1..1] ± 452
+8.4.4.8  NonClearingMember <NonClrMmb>
+Presence: [0..1]
+Definition: Provides the identification for the non-clearing member and account.
+NonClearingMember <NonClrMmb> contains the following elements (see
+PartyIdentificationAndAccount31 on page 450 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] ± 450
+   AlternateIdentification <AltrnId> [0..1] ± 450
+   AdditionalInformation <AddtlInf> [0..1] ± C3 451
+   ClearingAccount <ClrAcct> [0..1] ± 451
+8.4.4.9  IntendedSettlementDate <IntnddSttlmDt>
+Presence: [0..1]
+Definition: Provides the intended settlement date of the position.
+Datatype: ISODate on page 487
+8.4.4.10  FinancialInstrumentIdentification <FinInstrmId>
+Presence: [1..1]
+Definition: Provides details about the security identification.
+Impacted by:   'C9 DescriptionPresenceRule  ', C10 DescriptionUsageRule, C11 ISINGuideline,
+  'C12 ISINPresenceRule  ',   'C13 OtherIdentificationPresenceRule  '
+Message Definition Report - Part 2
+Central CounterParty (CCP) Securities Clearing - November 2026 for
+Standards MX
+MX secl.007.001.03 BuyInNotificationV03
+March 2026 268
+```
+
+## File page 269
+
+```text
+FinancialInstrumentIdentification <FinInstrmId> contains the following elements (see
+SecurityIdentification14 on page 393 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   ISIN <ISIN> [0..1] IdentifierSet 394
+   OtherIdentification <OthrId> [0..*]  395
+     Identification <Id> [1..1] Text 395
+     Suffix <Sfx> [0..1] Text 395
+     Type <Tp> [1..1] ± 395
+   Description <Desc> [0..1] Text 395
+Constraints
+• DescriptionPresenceRule
+(Rule)
+If Description is not present then either ISIN or at least one occurrence of OtherIdentification must be
+present.
+On Condition
+    /Description is absent
+Following Must be True
+    /ISIN Must be present
+ Or    /OtherIdentification[*] Must be present
+Error handling:
+– Error severity: Fatal
+– Error Code: X00192
+– Error Text: At least one identification must be present.
+• DescriptionUsageRule
+(Rule)
+Description must be used alone as the last resort.
+• ISINGuideline
+(Rule)
+When a ISIN code exist. It is strongly recommended that the ISIN be used.
+• ISINPresenceRule
+(Rule)
+If ISIN is not present then either Description or at least one occurrence of OtherIdentification must be
+present.
+On Condition
+    /ISIN is absent
+Following Must be True
+    /OtherIdentification[*] Must be present
+ Or    /Description Must be present
+Message Definition Report - Part 2
+Central CounterParty (CCP) Securities Clearing - November 2026 for
+Standards MX
+MX secl.007.001.03 BuyInNotificationV03
+March 2026 269
+```
+

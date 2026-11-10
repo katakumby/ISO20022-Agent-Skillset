@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000378",
+  "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+  "file_page": 244,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 207,
+    "2": 439
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 11,
+    "table-associated-axis-line": 422,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "32709fed908f14ed0e50733068b1deea5481d201570da4d8b094085aa90a5d09",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        338.5775,
+        66.3237,
+        438.4007,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        339.0775,
+        57.6929,
+        454.5853,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        437.4007,
+        66.3237,
+        455.0853,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        339.0775,
+        57.6929,
+        454.5853,
+        67.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0332",
+      "file_page": 244,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905782352942,
+        729.0931100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-reference-data/march-2024/documents/src-000378/tables/tbl-0332.md",
+      "rows": 32,
+      "matrix_cells": 192,
+      "physical_cells": 192,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "9203df58cff6e06fb215cecd99503d5dfac5c6fdf49fccc483b427c2df7d6d60",
+      "cell_geometry_sha256": "3578d13fd9232fb17e27ecb28f3c7ad2aa0fabe8bfa7131ac10e4f7dab758058",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 192,
+      "independent_cells_match": 192,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

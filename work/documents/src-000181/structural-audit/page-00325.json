@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000181",
+  "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+  "file_page": 325,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 96,
+    "2": 153
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 143,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "d7760d56fef4da8d5fd2c9358738d83cee35904f7807197b255a48bd530718fe",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        130.1204,
+        121.5237,
+        240.4954,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        256.68,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        239.4954,
+        121.5237,
+        257.18,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        256.68,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 18,
+      "bbox": [
+        130.1204,
+        213.7237,
+        276.638,
+        214.7237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        205.0928,
+        292.8226,
+        215.0928
+      ]
+    },
+    {
+      "path_object_ordinal": 20,
+      "bbox": [
+        275.638,
+        213.7237,
+        293.3226,
+        214.7237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        205.0928,
+        292.8226,
+        215.0928
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0548",
+      "file_page": 325,
+      "bbox": [
+        85.03936999999996,
+        222.0929000000001,
+        510.2362372727272,
+        726.09298
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0548.md",
+      "rows": 20,
+      "matrix_cells": 60,
+      "physical_cells": 60,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "1a20150ef8a1ade27d5df2b2950b9ee9432694dfe841b39f3b5714e06eeca330",
+      "cell_geometry_sha256": "2dbc9ba992d4c716b61a4ba6ddb7c9465f4b59041de66c8a556aca6cb8578e42",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 60,
+      "independent_cells_match": 60,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

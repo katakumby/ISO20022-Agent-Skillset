@@ -1,0 +1,323 @@
+{
+  "message_id": "reda.034.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "54 reda.034.001.01 SecuritiesAuditTrailReportV01",
+      "definition_pages": [
+        2224,
+        2235
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesAuditTrailReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.034.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2224
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+                        "file_pages": [
+                          134
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.034.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2224
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+                        "file_pages": [
+                          134
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.034.001.01-p2224-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "54 reda.034.001.01 SecuritiesAuditTrailReportV01",
+          "file_pages": [
+            2224
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide detailed information on the requested securities audit trail recorded in the system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide detailed information on the requested securities audit trail recorded in the system.",
+          "raw_quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide\ndetailed information on the requested securities audit trail recorded in the system.",
+          "file_pages": [
+            2224
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.034.001.01-p2224-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 54,
+              "end": 69,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.034.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2224
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+                        "file_pages": [
+                          134
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 76,
+              "end": 93,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.034.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2224
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+                        "file_pages": [
+                          134
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.034.001.01-p2224-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2224
+      ],
+      "file_pages": [
+        2224
+      ]
+    },
+    {
+      "source_id": "src-000378",
+      "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+      "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+      "definition_pages": [
+        134,
+        145
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesAuditTrailReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000378-reda.034.001.01-p134-c001-d1",
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "heading": "12 reda.034.001.01 SecuritiesAuditTrailReportV01",
+          "file_pages": [
+            134
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide detailed information on the requested securities audit trail recorded in the system.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide detailed information on the requested securities audit trail recorded in the system.",
+          "raw_quote": "The SecuritiesAuditTrailReport message is sent by the executing party to an instructing party to provide\ndetailed information on the requested securities audit trail recorded in the system.",
+          "file_pages": [
+            134
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.034.001.01-p134-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 54,
+              "end": 69,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 76,
+              "end": 93,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000378-reda.034.001.01-p134-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        134
+      ],
+      "file_pages": [
+        134
+      ]
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "message_id": "pain.008.001.12",
+  "publications": [
+    {
+      "source_id": "src-000174",
+      "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+      "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+      "definition_pages": [
+        403,
+        526
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CustomerDirectDebitInitiation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the forwarding agent or creditor agent",
+            "labels": [
+              {
+                "label": "the forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the initiating party",
+            "labels": [
+              {
+                "label": "the initiating party",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-initiating-party",
+                  "path": "shared/reference/participants/participant-src-000173-initiating-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000174-pain.008.001.12-p403-c001-d1",
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+          "file_pages": [
+            403
+          ],
+          "section": "scope",
+          "quote": "The CustomerDirectDebitInitiation message is sent by the initiating party to the forwarding agent or creditor agent.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "pattern": "passive-sent-to",
+          "message_subject": "the message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the creditor agent",
+            "labels": [
+              {
+                "label": "the creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "limitation": "Sender is not supplied by this clause; pronouns or scenario context are not expanded.",
+          "claim_id": "src-000174-pain.008.001.12-p403-c004-d1",
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "quote": "In a direct scenario, the message is sent directly to the creditor agent.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "pattern": "passive-sent-to",
+          "message_subject": "the message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a forwarding agent",
+            "labels": [
+              {
+                "label": "a forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "limitation": "Sender is not supplied by this clause; pronouns or scenario context are not expanded.",
+          "claim_id": "src-000174-pain.008.001.12-p403-c006-d1",
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "quote": "In a relay scenario, the message is sent to a forwarding agent.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "pattern": "active",
+          "message_subject": "the CustomerDirectDebitInitiation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the creditor agent",
+            "labels": [
+              {
+                "label": "the creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "unresolved_sender_reference": "It",
+          "limitation": "Sender is a pronoun/reference in this clause; it is retained in the quote and is not resolved automatically.",
+          "claim_id": "src-000174-pain.008.001.12-p403-c008-d1",
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "quote": "It will forward the CustomerDirectDebitInitiation message to the creditor agent.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "Conditional authorized use: the initiating party has authority to send on behalf of the creditor. The principal is not thereby equated with the functional sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "929c1df9a7316686d8f09fbdd48f6ec71a4073dae3b6b7d7d1959a236a9307b4",
+          "sender": {
+            "expression": "initiating party",
+            "labels": [
+              {
+                "label": "initiating party",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-initiating-party",
+                  "path": "shared/reference/participants/participant-src-000173-initiating-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000174-pain.008.001.12-p403-c009-d1",
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "quote": "The message can also be used by an initiating party that has authority to send the message on behalf of the creditor.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "can",
+            "on behalf of"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CustomerDirectDebitInitiation message is sent by the initiating party to the forwarding agent or creditor agent.",
+          "raw_quote": "Scope\nThe CustomerDirectDebitInitiation message is sent by the initiating party to the forwarding agent or\ncreditor agent.",
+          "file_pages": [
+            403
+          ],
+          "section": "scope",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c001",
+          "mentions": [
+            {
+              "label": "initiating party",
+              "start": 57,
+              "end": 73,
+              "resolution": {
+                "label": "initiating party",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-initiating-party",
+                  "path": "shared/reference/participants/participant-src-000173-initiating-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "forwarding agent",
+              "start": 81,
+              "end": 97,
+              "resolution": {
+                "label": "forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor agent",
+              "start": 101,
+              "end": 115,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000174-pain.008.001.12-p403-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request single or bulk collection(s) of funds from one or various debtor's account(s) for a creditor.",
+          "raw_quote": "It is used to request single or bulk collection(s) of funds from one or various debtor's\naccount(s) for a creditor.",
+          "file_pages": [
+            403
+          ],
+          "section": "scope",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c002",
+          "mentions": [
+            {
+              "label": "debtor",
+              "start": 80,
+              "end": 86,
+              "resolution": {
+                "label": "debtor",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-debtor",
+                  "path": "shared/reference/participants/participant-src-000173-debtor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 106,
+              "end": 114,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor",
+                  "path": "shared/reference/participants/participant-src-000173-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The CustomerDirectDebitInitiation message can contain one or more direct debit instructions.",
+          "raw_quote": "Usage\nThe CustomerDirectDebitInitiation message can contain one or more direct debit instructions.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "In a direct scenario, the message is sent directly to the creditor agent.",
+          "raw_quote": "In a direct scenario, the message is sent directly to the creditor agent.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c004",
+          "mentions": [
+            {
+              "label": "creditor agent",
+              "start": 58,
+              "end": 72,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000174-pain.008.001.12-p403-c004-d1"
+          ]
+        },
+        {
+          "quote": "The creditor agent is the account servicer of the creditor.",
+          "raw_quote": "The creditor agent is the\naccount servicer of the creditor.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c005",
+          "mentions": [
+            {
+              "label": "creditor agent",
+              "start": 4,
+              "end": 18,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 26,
+              "end": 42,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000173-account-servicer.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 50,
+              "end": 58,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor",
+                  "path": "shared/reference/participants/participant-src-000173-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "In a relay scenario, the message is sent to a forwarding agent.",
+          "raw_quote": "In a relay scenario, the message is sent to a forwarding agent.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c006",
+          "mentions": [
+            {
+              "label": "forwarding agent",
+              "start": 46,
+              "end": 62,
+              "resolution": {
+                "label": "forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000174-pain.008.001.12-p403-c006-d1"
+          ]
+        },
+        {
+          "quote": "The forwarding agent acts as a concentrating financial institution.",
+          "raw_quote": "The forwarding agent acts as a\nconcentrating financial institution.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c007",
+          "mentions": [
+            {
+              "label": "forwarding agent",
+              "start": 4,
+              "end": 20,
+              "resolution": {
+                "label": "forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "financial institution",
+              "start": 45,
+              "end": 66,
+              "resolution": {
+                "label": "financial institution",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-financial-institution",
+                  "path": "shared/reference/participants/participant-src-000173-financial-institution.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "forwarding agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-forwarding-agent",
+                  "path": "shared/reference/participants/participant-src-000173-forwarding-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              "action_verb": "acts",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "It will forward the CustomerDirectDebitInitiation message to the creditor agent.",
+          "raw_quote": "It will forward the CustomerDirectDebitInitiation message to the\ncreditor agent.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c008",
+          "mentions": [
+            {
+              "label": "creditor agent",
+              "start": 65,
+              "end": 79,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000174-pain.008.001.12-p403-c008-d1"
+          ]
+        },
+        {
+          "quote": "The message can also be used by an initiating party that has authority to send the message on behalf of the creditor.",
+          "raw_quote": "The message can also be used by an initiating party that has authority to send the message on behalf\nof the creditor.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c009",
+          "mentions": [
+            {
+              "label": "initiating party",
+              "start": 35,
+              "end": 51,
+              "resolution": {
+                "label": "initiating party",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-initiating-party",
+                  "path": "shared/reference/participants/participant-src-000173-initiating-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 108,
+              "end": 116,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor",
+                  "path": "shared/reference/participants/participant-src-000173-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000174-pain.008.001.12-p403-c009-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "This caters for example for the scenario of a payments factory initiating all payments on behalf of a large corporate.",
+          "raw_quote": "This caters for example for the scenario of a payments factory initiating all payments on\nbehalf of a large corporate.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c010",
+          "mentions": [
+            {
+              "label": "payments factory",
+              "start": 46,
+              "end": 62,
+              "resolution": {
+                "label": "payments factory",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000174-payments-factory",
+                  "path": "shared/reference/participants/participant-narrative-src-000174-payments-factory.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 108,
+              "end": 117,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000174-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000174-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The CustomerDirectDebitInitiation message must not be used by the creditor agent to execute the direct debit instruction(s).",
+          "raw_quote": "The CustomerDirectDebitInitiation message must not be used by the creditor agent to execute the\ndirect debit instruction(s).",
+          "file_pages": [
+            403
+          ],
+          "section": "usage",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c011",
+          "mentions": [
+            {
+              "label": "creditor agent",
+              "start": 66,
+              "end": 80,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000174",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000173-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000173-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message can be used in a direct or a relay scenario:",
+          "raw_quote": "The message can be used in a direct or a relay scenario:",
+          "file_pages": [
+            403
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The CustomerDirectDebitInitiation message can be used in domestic and cross-border scenarios.",
+          "raw_quote": "The CustomerDirectDebitInitiation message can be used in domestic and cross-border scenarios.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The CustomerDirectDebitInitiation may or may not contain mandate related information, i.e. extracts from a mandate, such as MandateIdentification or DateOfSignature.",
+          "raw_quote": "The CustomerDirectDebitInitiation may or may not contain mandate related information, i.e. extracts\nfrom a mandate, such as MandateIdentification or DateOfSignature.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The CustomerDirectDebitInitiation message must not be considered as a mandate.",
+          "raw_quote": "The CustomerDirectDebitInitiation\nmessage must not be considered as a mandate.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The FIToFICustomerDirectDebit message must be used instead.",
+          "raw_quote": "The FIToFICustomerDirectDebit message must be used instead.",
+          "file_pages": [
+            403
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        403
+      ],
+      "file_pages": [
+        403
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+classDiagram
+direction TB
+class Account {
+<<BusinessComponent>>
+}
+class SecuritiesAccount {
+<<BusinessComponent>>
+}
+class CashAccount {
+<<BusinessComponent>>
+}
+class AccountIdentification {
+<<BusinessComponent>>
+}
+class PartyIdentificationInformation {
+<<BusinessComponent>>
+}
+class AccountLink {
+<<BusinessComponent>>
+}
+SecuritiesAccount --|> Account
+CashAccount --|> Account
+Account *--> AccountIdentification
+Account *--> PartyIdentificationInformation
+AccountLink "1" *--> "1" SecuritiesAccount
+AccountLink "1" *--> "1" CashAccount

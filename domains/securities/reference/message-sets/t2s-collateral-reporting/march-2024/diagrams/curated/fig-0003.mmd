@@ -1,0 +1,25 @@
+flowchart TB
+ Top("Interface") --> Q1["Collateral Value<br/>of securities<br/>query"]
+ subgraph QM["Query Management"]
+ P("1 - Plausibility Check") --> D1{" "}
+ D1 -->|ok| Q2["Collateral Value<br/>of securities<br/>query"]
+ Q2 --> Check("2 - Check Permission On Query Request")
+ Check --> D2{" "}
+ D2 -->|ok| Q3["Collateral Value<br/>of securities<br/>query"]
+ Q3 --> Extract("3 - Extracting Data for Query")
+ Extract --> D3{" "}
+ D3 -->|ok| Data["Queried data"]
+ D1 -->|Not ok| Merge{" "}
+ D2 -->|Not ok| Merge
+ D3 -->|Not ok| Merge
+ Merge --> Error["Error data queries"]
+ SD["&lt;&lt;data store&gt;&gt;<br/>SD"] --- Bus((" "))
+ DD["&lt;&lt;data store&gt;&gt;<br/>DD"] --- Bus
+ Bus --> P
+ Bus --> Check
+ Bus --> Extract
+ end
+ Q1 --> P
+ Data --> Bottom("Interface")
+ Error --> Bottom
+ style Bus fill:none,stroke:none

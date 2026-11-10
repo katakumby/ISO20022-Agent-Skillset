@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000372",
+  "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+  "file_page": 42,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 94,
+    "2": 97
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 83,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "7ee371a887a91a45fe149227363c096131570a03f1bbea82ca093e6468f38269",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 6,
+      "bbox": [
+        338.0159,
+        156.3237,
+        471.1888,
+        157.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        147.6929,
+        481.8118,
+        157.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        470.1888,
+        156.3237,
+        482.3118,
+        157.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        147.6929,
+        481.8118,
+        157.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 23,
+      "bbox": [
+        338.0159,
+        276.3237,
+        471.1888,
+        277.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        267.6929,
+        481.8118,
+        277.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 25,
+      "bbox": [
+        470.1888,
+        276.3237,
+        482.3118,
+        277.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        267.6929,
+        481.8118,
+        277.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 117,
+      "bbox": [
+        130.1204,
+        548.9237,
+        345.0023,
+        549.9237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        540.2929,
+        355.6253,
+        550.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 119,
+      "bbox": [
+        344.0023,
+        548.9237,
+        356.1253,
+        549.9237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        540.2929,
+        355.6253,
+        550.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0048",
+      "file_page": 42,
+      "bbox": [
+        85.03936999999996,
+        404.6929100000001,
+        555.590568,
+        473.29291000000006
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/documents/src-000372/tables/tbl-0048.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3f9646e454293eb3a42f74663e805a530831cb15277d8f66f1a3c84cc4f6cd43",
+      "cell_geometry_sha256": "0f849abd9cfdb6661995904ab67af55b4b57e07b925255b9b2dd15bf6261cdc5",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0049",
+      "file_page": 42,
+      "bbox": [
+        85.03936999999996,
+        557.2929200000001,
+        510.2362314285714,
+        728.2929200000002
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/documents/src-000372/tables/tbl-0049.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ac9dd8c07d0883c7e1bf0f0321cec408521b04b99a7caacb830aaa54f821853a",
+      "cell_geometry_sha256": "c03b9a94f9b31a0eec7017369ffe1d65e2ac6ed482ed50a6f349e6897ecaf2ee",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

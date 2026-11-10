@@ -1,0 +1,70 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "TARGET2-Securities"
+source_ids: ["src-000233"]
+source_editions: ["August 2026"]
+message_ids: []
+heading_path: ["22 camt.084.001.02 IntraBalanceMovementPostingReportV02", "22.4 Message Building Blocks", "22.4.7 SubBalance <SubBal>", "22.4.7.2 Movement <Mvmnt>", "22.4.7.2.7 BalanceTo <BalTo>", "22.4.7.2.7.2 QuantityBreakdown <QtyBrkdwn>", "22.4.7.2.7.2.2 LotAmount <LotAmt>"]
+file_pages: [542]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.084.001.02"]
+---
+
+# 22.4.7.2.7.2.2 LotAmount <LotAmt>
+
+Source: [src-000233](../../../../../../../../../raw-input/target2securities_t2s/ISO20022_MDRPart2_Target2Securities_August_2026_v1.pdf). Locator: one-based file pages 542 to 542.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 542
+
+```text
+22.4.7.2.7.2.2  LotAmount <LotAmt>
+Presence: [0..1]
+Definition: Amount of money that is part of the lot described.
+LotAmount <LotAmt> contains the following elements (see "AmountAndDirection5" on page 2841 for
+details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Amount <Amt> [1..1] Amount C1, C4 2841
+   CreditDebit <CdtDbt> [0..1] CodeSet 2842
+22.4.7.2.7.2.3  LotQuantity <LotQty>
+Presence: [0..1]
+Definition: Quantity of financial instruments that is part of the lot described.
+LotQuantity <LotQty> contains one of the following elements (see
+"FinancialInstrumentQuantity1Choice" on page 2953 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Unit <Unit> [1..1] Quantity 2954
+Or   FaceAmount <FaceAmt> [1..1] Amount 2954
+Or}   AmortisedValue <AmtsdVal> [1..1] Amount 2954
+22.4.7.2.7.2.4  CashSubBalanceType <CshSubBalTp>
+Presence: [0..1]
+Definition: Specifies the securities sub balance type indicator (example restriction type for a market
+infrastructure).
+CashSubBalanceType <CshSubBalTp> contains the following elements (see
+"GenericIdentification30" on page 2966 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 2967
+   Issuer <Issr> [1..1] Text 2967
+   SchemeName <SchmeNm> [0..1] Text 2967
+22.4.7.2.8  SettledAmount <SttldAmt>
+Presence: [1..1]
+Definition: Amount of money effectively settled and which will be credited to/debited from the account
+owner's cash account. It may differ from the instructed settlement amount based on market tolerance
+level.
+Approved by the Securities and Payments SEGs under the leadership of the
+Securities SEG and by the Cross-SEG Harmonisation for the Business File
+Header (last message set approved on 18 June 2026).
+camt.084.001.02
+IntraBalanceMovementPostingReportV02
+Target2-Securities 542 August 2026
+```
+

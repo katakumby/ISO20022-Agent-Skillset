@@ -1,0 +1,10 @@
+sequenceDiagram
+participant A as System Member
+participant B as System Transaction Administrator
+A-)B: ReportQueryrequest
+alt 1: Rejection
+B-)A: ReceiptAcknowledgement (negative)
+end
+alt 2: Execution
+B-)A: Report
+end

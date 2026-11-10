@@ -1,0 +1,9 @@
+sequenceDiagram
+participant D as Debtor
+participant DA as Debtor Agent
+participant M as Intermediary Agent 1 or Instructed or Instructing Reimbursement Agent
+participant CA as Creditor Agent
+participant C as Creditor
+D->>C: FinancialInstitutionCreditTransfer
+C->>D: PaymentReturn
+D->>C: FIToFIPaymentStatusReport

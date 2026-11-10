@@ -1,0 +1,23 @@
+flowchart TB
+subgraph SIGN["XML Digital Signature Signing Process"]
+direction LR
+M["Message"] --> CM["Canonicalize Message"] --> DG["Digest"] --> SI["SignedInfo containing Digest"] --> CSI["Canonicalize SignedInfo"] --> SG["Sign"] --> SV["SignatureValue"]
+PK["Private Key"] --> SG
+end
+M --> SEND["Construct signed message and send"]
+SV --> SEND
+SEND --> NET["Any network"] --> RECEIVE["Receive signed message"]
+subgraph VERIFY["XML Digital Signature Verification Process"]
+direction LR
+VSI["SignedInfo containing Digest"] --> VCSI["Canonicalize SignedInfo"] --> CRYPTO["Verify crypto algorithm"]
+PUB["Public Key"] --> CRYPTO
+VSV["SignatureValue"] --> CRYPTO
+CRYPTO -->|KO| FAIL1["Verification failure"]
+CRYPTO -->|OK| VM["Message"] --> VCM["Canonicalize Message"] --> VD["Digest"] --> COMP["Compare digests"]
+OLD["SignedInfo containing Digest"] --> COMP
+COMP -->|KO| FAIL2["Verification failure"]
+COMP -->|OK| OK["Signature OK"]
+end
+RECEIVE -. "received signed content" .-> VSI
+RECEIVE -. "received signed content" .-> VSV
+RECEIVE -. "received message" .-> VM

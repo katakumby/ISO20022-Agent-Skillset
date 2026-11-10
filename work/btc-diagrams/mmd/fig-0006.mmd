@@ -1,0 +1,38 @@
+flowchart LR
+  N1["Bank Transaction Code"]
+  N2["Payments"]
+  N3["Received Credit transfers"]
+  N4["Issued Credit Transfers"]
+  N5["Received Cash Concentration"]
+  N6["Issued Cash Concentration"]
+  N7["Received Direct Debits"]
+  N8["Issued Direct Debits"]
+  N9["Received Cheques"]
+  N10["Issued Cheques"]
+  N11["Customer Card Transactions"]
+  N12["Merchant Card Transactions"]
+  N13["Counter Transactions"]
+  N14["LockBox Transactions"]
+  N15["Drafts / Bill Of Orders"]
+  N16["Generic Family Codes"]
+  N17["Issued Real-Time Credit Transfers"]
+  N18["Received Real-Time Credit Transfers"]
+  N1 --- N2
+  N2 --- N3
+  N2 --- N4
+  N2 --- N5
+  N2 --- N6
+  N2 --- N7
+  N2 --- N8
+  N2 --- N9
+  N2 --- N10
+  N2 --- N11
+  N2 --- N12
+  N2 --- N13
+  N2 --- N14
+  N2 --- N15
+  N2 --- N16
+  N2 --- N17
+  N2 --- N18
+  classDef generic fill:#dce8ee,stroke:#1b637f,color:#444,font-style:italic;
+  class N16 generic;

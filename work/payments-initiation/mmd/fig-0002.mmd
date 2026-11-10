@@ -1,0 +1,45 @@
+usecase-beta
+direction TB
+N0("Process Direct Debit end-to-end")
+N1("Process customer-to-bank Direct Debit")
+N2("Process interbank Direct Debit")
+N3("Report")
+N4("Manage Direct Debit Mandate")
+N5("Initiate collection of 1st/1-off Direct Debit")
+N6("Initiate collection of recurrent Direct Debit")
+N7("Process reject")
+N8("Process return/request for refund")
+N9("Process reversal")
+N10("Process request for cancellation/Revocation")
+N0 --> N1
+N0 --> N2
+N0 --> N3
+N1 --> N5
+N1 --> N6
+N1 --> N7
+N1 --> N8
+N1 --> N9
+N1 --> N10
+actor A5_0("Forwarding Agent")
+actor A5_1("Initiating Party")
+actor A5_2("Creditor")
+actor A5_3("Creditor Agent")
+actor A6_0("Forwarding Agent")
+actor A6_1("Initiating Party")
+actor A6_2("Creditor")
+actor A6_3("Creditor Agent")
+actor A7_0("Forwarding Agent")
+actor A7_1("Initiating Party")
+actor A7_2("Creditor")
+actor A7_3("Creditor Agent")
+actor A8_0("Forwarding Agent")
+actor A8_1("Initiating Party")
+actor A8_2("Creditor")
+actor A8_3("Creditor Agent")
+actor A9_0("Forwarding Agent")
+actor A9_1("Creditor")
+actor A9_2("Creditor Agent")
+actor A10_0("Forwarding Agent")
+actor A10_1("Initiating Party")
+actor A10_2("Creditor")
+actor A10_3("Creditor Agent")

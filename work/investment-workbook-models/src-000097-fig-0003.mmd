@@ -1,0 +1,118 @@
+classDiagram
+direction TB
+class UmbrellaFund {
+<<BusinessComponent>>
+}
+class InvestmentFundFamily {
+<<BusinessComponent>>
+}
+class InvestmentFund {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class InvestmentFundClass {
+<<BusinessComponent>>
+}
+class NetAssetValueCalculation {
+<<BusinessComponent>>
+}
+class PerformanceFactors {
+<<BusinessComponent>>
+}
+class ValuationStatistics {
+<<BusinessComponent>>
+}
+class InvestmentFundTransaction {
+<<BusinessComponent>>
+}
+class SecuritiesTradeExecution {
+<<BusinessComponent>>
+}
+class InvestmentFundOrder {
+<<BusinessComponent>>
+}
+class InvestmentFundOrderExecution {
+<<BusinessComponent>>
+}
+class RedemptionOrder {
+<<BusinessComponent>>
+}
+class SubscriptionOrder {
+<<BusinessComponent>>
+}
+class SwitchOrder {
+<<BusinessComponent>>
+}
+class RedemptionExecution {
+<<BusinessComponent>>
+}
+class SubscriptionExecution {
+<<BusinessComponent>>
+}
+class SwitchExecution {
+<<BusinessComponent>>
+}
+class SwitchRedemptionLeg {
+<<BusinessComponent>>
+}
+class SwitchSubscriptionLeg {
+<<BusinessComponent>>
+}
+class SwitchExecutionRedemptionLeg {
+<<BusinessComponent>>
+}
+class SwitchExecutionSubscriptionLeg {
+<<BusinessComponent>>
+}
+class TaxEfficientProduct {
+<<BusinessComponent>>
+}
+class InvestmentPlan {
+<<BusinessComponent>>
+}
+class Pension {
+<<BusinessComponent>>
+}
+class Asset {
+<<BusinessComponent>>
+}
+class Drawdown {
+<<BusinessComponent>>
+}
+class CappedLimit {
+<<BusinessComponent>>
+}
+UmbrellaFund -- InvestmentFund : + SubFund
+InvestmentFundFamily -- InvestmentFund : + Family
+InvestmentFund -- InvestmentFundClass
+InvestmentFundClass --|> Security
+InvestmentFundClass -- NetAssetValueCalculation
+NetAssetValueCalculation -- PerformanceFactors
+NetAssetValueCalculation -- ValuationStatistics
+InvestmentFundClass -- InvestmentFundTransaction : + InvestmentFundClass
+InvestmentFundTransaction -- InvestmentFundOrder
+InvestmentFundTransaction -- InvestmentFundOrderExecution
+InvestmentFundOrder -- InvestmentFundOrderExecution : + Order
+InvestmentFundOrderExecution --|> SecuritiesTradeExecution
+RedemptionOrder --|> InvestmentFundOrder
+SubscriptionOrder --|> InvestmentFundOrder
+SwitchOrder --|> InvestmentFundOrder
+SwitchRedemptionLeg --|> RedemptionOrder
+SwitchSubscriptionLeg --|> SubscriptionOrder
+SwitchOrder -- SwitchRedemptionLeg : + RedemptionRelatedSwitchOrder / + RedemptionLeg
+SwitchOrder -- SwitchSubscriptionLeg : + SubscriptionRelatedSwitchOrder / + SubscriptionLeg
+RedemptionExecution --|> InvestmentFundOrderExecution
+SubscriptionExecution --|> InvestmentFundOrderExecution
+SwitchExecution --|> InvestmentFundOrderExecution
+SwitchExecutionRedemptionLeg --|> RedemptionExecution
+SwitchExecutionSubscriptionLeg --|> SubscriptionExecution
+SwitchExecution -- SwitchExecutionRedemptionLeg : + RedemptionLeg
+SwitchExecution -- SwitchExecutionSubscriptionLeg : + SubscriptionLeg
+SubscriptionExecution -- TaxEfficientProduct : - CurrentYearSubscription
+TaxEfficientProduct -- InvestmentPlan : - RelatedInvestmentPlan
+InvestmentPlan -- Pension : - RelatedInvestmentPlan
+InvestmentPlan -- Asset
+Pension -- Drawdown
+Drawdown -- CappedLimit : - RelatedDrawdown

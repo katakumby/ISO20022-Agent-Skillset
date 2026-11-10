@@ -1,0 +1,64 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 6,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 23,
+    "1": 31
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 17,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "cd7dfb537e09bcd72c5a5759c572113875ca18d3cae931a49d1ebd2ced95630f",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0003",
+      "file_page": 6,
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.2362279999999,
+        417.2929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0003.md",
+      "rows": 3,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "83a8af21409b0ad30cab39ee70b4f6646f19f11f9dd9ce8f82cc84884ccb6c38",
+      "cell_geometry_sha256": "c74e87cf180239abff845240735cc34daf02ca48206d42df03a0d052bb01543a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 5,
+      "exceptions": [
+        {
+          "row": 3,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            209.09292000000016,
+            510.2362279999999,
+            417.2929100000001
+          ],
+          "stored_value": "This IntraPositionMovementPendingReport message is\nsent from a settlement infrastructure to an account\nowner/request to report the intra-position movement\ninstructions, previously sent by the account owner, that\nhave a pending status.\nThe message may also be used to:\n- re-send a message sent by the account owner to the\naccount servicer (the sub-function of the message is\n\"Duplicate\")\n- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "This IntraPositionMovementPendingReport message is\r\nsent from a settlement infrastructure to an account\r\nowner/request to report the intra-position movement\r\ninstructions, previously sent by the account owner, that\r\nhave a pending status.\r\nThe message may also be used to:\r\n- re-send a message sent by the account owner to the\r\naccount servicer (the sub-function of the message is\r\n\"Duplicate\")\r\n- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

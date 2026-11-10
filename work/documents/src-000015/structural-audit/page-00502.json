@@ -1,0 +1,143 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 502,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 181,
+    "1": 115
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 168,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "e657535b99d20a34d333051c429e8668f4d0ab495f08443ea0c284ff064b7456",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 214,
+      "bbox": [
+        401.9222,
+        600.9238,
+        533.4349,
+        601.9238
+      ],
+      "link_annotation_bbox": [
+        402.4222,
+        592.2929,
+        532.9349,
+        602.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 216,
+      "bbox": [
+        84.5394,
+        612.9238,
+        124.4651,
+        613.9238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        604.2929,
+        140.6497,
+        614.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 218,
+      "bbox": [
+        123.4651,
+        612.9238,
+        141.1497,
+        613.9238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        604.2929,
+        140.6497,
+        614.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0663",
+      "file_page": 502,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362333333333,
+        330.0929100000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0663.md",
+      "rows": 7,
+      "matrix_cells": 21,
+      "physical_cells": 21,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "6d65eb003a19a7024a550f34d2004ef4ae9e1aac1767c7ef1d3099088efe20cf",
+      "cell_geometry_sha256": "5f5cc4b5c4498089d23b7aa96aae9f1c23d9a1b661bf874712c1221bfad2aacb",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 21,
+      "independent_cells_match": 21,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0664",
+      "file_page": 502,
+      "bbox": [
+        85.03936999999996,
+        416.2929200000001,
+        555.59057,
+        525.2929200000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0664.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "42aa2e935e29091a199d888b0006a80eae2169fdfd69825a555474d75cd82fe7",
+      "cell_geometry_sha256": "c7163f8beeebfab66dff6e43bcb60476b800ef2d782f3d745a8c2ec35cc5b18e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0665",
+      "file_page": 502,
+      "bbox": [
+        85.03936999999996,
+        621.29289,
+        555.59057,
+        689.8928900000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0665.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a6b3733b891e920e9e9027b84acab8792cc0c8ec00a471a74d1698f4697b27de",
+      "cell_geometry_sha256": "7fdac5f0cb1d9966ff14f0c9ab253354de910600b03acf762e7f60b3071ac3d3",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

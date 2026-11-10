@@ -1,0 +1,232 @@
+{
+  "message_id": "camt.045.001.03",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "12 camt.045.001.03 FundDetailedConfirmedCashForecastReportCancellationV03",
+      "definition_pages": [
+        153,
+        158
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "the FundDetailedConfirmedCashForecastReportCancellation messages",
+          "message_target": "current-message-scope-name-variant",
+          "receiver": {
+            "expression": "the report user, such as an investment manager, fund accountant or any other interested party",
+            "labels": [
+              {
+                "label": "the report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the report user, such as an investment manager, fund accountant or any other interested party"
+          },
+          "sender": {
+            "expression": "A report provider, such as a transfer agent",
+            "labels": [
+              {
+                "label": "A report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "A report provider, such as a transfer agent"
+          },
+          "claim_id": "src-000096-camt.045.001.03-p153-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "12 camt.045.001.03 FundDetailedConfirmedCashForecastReportCancellationV03",
+          "file_pages": [
+            153
+          ],
+          "section": "scope",
+          "quote": "A report provider, such as a transfer agent, sends the FundDetailedConfirmedCashForecastReportCancellation messages to the report user, such as an investment manager, fund accountant or any other interested party, to cancel a previously sent FundDetailedConfirmedCashForecastReport.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A report provider, such as a transfer agent, sends the FundDetailedConfirmedCashForecastReportCancellation messages to the report user, such as an investment manager, fund accountant or any other interested party, to cancel a previously sent FundDetailedConfirmedCashForecastReport.",
+          "raw_quote": "Scope\nA report provider, such as a transfer agent, sends the\nFundDetailedConfirmedCashForecastReportCancellation messages to the report user, such as an\ninvestment manager, fund accountant or any other interested party, to cancel a previously sent\nFundDetailedConfirmedCashForecastReport.",
+          "file_pages": [
+            153
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-camt.045.001.03-p153-c001",
+          "mentions": [
+            {
+              "label": "report provider",
+              "start": 2,
+              "end": 17,
+              "resolution": {
+                "label": "report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 29,
+              "end": 43,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "report user",
+              "start": 123,
+              "end": 134,
+              "resolution": {
+                "label": "report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 147,
+              "end": 165,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "fund accountant",
+              "start": 167,
+              "end": 182,
+              "resolution": {
+                "label": "fund accountant",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-fund-accountant",
+                  "path": "shared/reference/participants/participant-src-000095-fund-accountant.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "other interested party",
+              "start": 190,
+              "end": 212,
+              "resolution": {
+                "label": "other interested party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-other-interested-party",
+                  "path": "shared/reference/participants/participant-src-000095-other-interested-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-camt.045.001.03-p153-c001-d1"
+          ]
+        },
+        {
+          "quote": "The FundDetailedConfirmedCashForecastReportCancellation message is used to cancel an entire FundDetailedConfirmedCashForecastReport message that was previously sent.",
+          "raw_quote": "Usage\nThe FundDetailedConfirmedCashForecastReportCancellation message is used to cancel an entire\nFundDetailedConfirmedCashForecastReport message that was previously sent.",
+          "file_pages": [
+            153
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-camt.045.001.03-p153-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "This message must contain the reference of the message to be cancelled.",
+          "raw_quote": "This message must\ncontain the reference of the message to be cancelled.",
+          "file_pages": [
+            153
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "This message may also contain details of the message to be cancelled, but this is not recommended.",
+          "raw_quote": "This message may also contain details of the message to be cancelled, but this is not recommended.",
+          "file_pages": [
+            153
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        153
+      ],
+      "file_pages": [
+        153
+      ]
+    }
+  ]
+}

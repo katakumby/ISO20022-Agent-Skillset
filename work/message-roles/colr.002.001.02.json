@@ -1,0 +1,380 @@
+{
+  "message_id": "colr.002.001.02",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "25 colr.002.001.02 CollateralValueReportV02",
+      "definition_pages": [
+        590,
+        613
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CollateralValueReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a system member (such as a directly connected party)",
+            "labels": [
+              {
+                "label": "a system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-member",
+                  "path": "shared/reference/participants/participant-src-000356-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "colr.002.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      590
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000357",
+                        "heading": "3 colr.002.001.02 CollateralValueReportV02",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a system member (such as a directly connected party)"
+          },
+          "sender": {
+            "expression": "the system transaction administrator",
+            "labels": [
+              {
+                "label": "the system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000356-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "colr.002.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      590
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000357",
+                        "heading": "3 colr.002.001.02 CollateralValueReportV02",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-colr.002.001.02-p590-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "25 colr.002.001.02 CollateralValueReportV02",
+          "file_pages": [
+            590
+          ],
+          "section": "scope",
+          "quote": "The CollateralValueReport message is sent by the system transaction administrator to a system member (such as a directly connected party) to provide further information the current available value of securities for auto collateralisation for one specific or several cash accounts.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CollateralValueReport message is sent by the system transaction administrator to a system member (such as a directly connected party) to provide further information the current available value of securities for auto collateralisation for one specific or several cash accounts.",
+          "raw_quote": "The CollateralValueReport message is sent by the system transaction administrator to a system\nmember (such as a directly connected party) to provide further information the current available value of\nsecurities for auto collateralisation for one specific or several cash accounts.",
+          "file_pages": [
+            590
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-colr.002.001.02-p590-c001",
+          "mentions": [
+            {
+              "label": "system transaction administrator",
+              "start": 49,
+              "end": 81,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000356-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "colr.002.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      590
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000357",
+                        "heading": "3 colr.002.001.02 CollateralValueReportV02",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system member",
+              "start": 87,
+              "end": 100,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-member",
+                  "path": "shared/reference/participants/participant-src-000356-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "colr.002.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      590
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000357",
+                        "heading": "3 colr.002.001.02 CollateralValueReportV02",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "directly connected party",
+              "start": 112,
+              "end": 136,
+              "resolution": {
+                "label": "directly connected party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000357-directly-connected-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000357-directly-connected-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "colr.002.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      590
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000357",
+                        "heading": "3 colr.002.001.02 CollateralValueReportV02",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-colr.002.001.02-p590-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        590
+      ],
+      "file_pages": [
+        590
+      ]
+    },
+    {
+      "source_id": "src-000357",
+      "source_sha256": "bba13c1299fa1a9db3c2476ee7a5f5b178abbaeb6fb01f85dcafc956dae80b57",
+      "heading": "3 colr.002.001.02 CollateralValueReportV02",
+      "definition_pages": [
+        16,
+        39
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CollateralValueReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a system member (such as a directly connected party)",
+            "labels": [
+              {
+                "label": "a system member",
+                "scope_source_id": "src-000357",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-member",
+                  "path": "shared/reference/participants/participant-src-000356-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a system member (such as a directly connected party)"
+          },
+          "sender": {
+            "expression": "the system transaction administrator",
+            "labels": [
+              {
+                "label": "the system transaction administrator",
+                "scope_source_id": "src-000357",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000356-system-transaction-administrator.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000357-colr.002.001.02-p16-c001-d1",
+          "source_id": "src-000357",
+          "source_sha256": "bba13c1299fa1a9db3c2476ee7a5f5b178abbaeb6fb01f85dcafc956dae80b57",
+          "heading": "3 colr.002.001.02 CollateralValueReportV02",
+          "file_pages": [
+            16
+          ],
+          "section": "scope",
+          "quote": "The CollateralValueReport message is sent by the system transaction administrator to a system member (such as a directly connected party) to provide further information the current available value of securities for auto collateralisation for one specific or several cash accounts.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CollateralValueReport message is sent by the system transaction administrator to a system member (such as a directly connected party) to provide further information the current available value of securities for auto collateralisation for one specific or several cash accounts.",
+          "raw_quote": "The CollateralValueReport message is sent by the system transaction administrator to a system\nmember (such as a directly connected party) to provide further information the current available value of\nsecurities for auto collateralisation for one specific or several cash accounts.",
+          "file_pages": [
+            16
+          ],
+          "section": "scope",
+          "evidence_id": "src-000357-colr.002.001.02-p16-c001",
+          "mentions": [
+            {
+              "label": "system transaction administrator",
+              "start": 49,
+              "end": 81,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000357",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-src-000356-system-transaction-administrator.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system member",
+              "start": 87,
+              "end": 100,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000357",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000356-system-member",
+                  "path": "shared/reference/participants/participant-src-000356-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "directly connected party",
+              "start": 112,
+              "end": 136,
+              "resolution": {
+                "label": "directly connected party",
+                "scope_source_id": "src-000357",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000357-directly-connected-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000357-directly-connected-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000357-colr.002.001.02-p16-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        16
+      ],
+      "file_pages": [
+        16
+      ]
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "source_id": "src-000380",
+  "source_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+  "source_occurrences": [
+    {
+      "path": "raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip",
+      "archive_member": "ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_SettlementRestrictions_MessageSet/ISO20022_MDRPart1_Target2Securities_SettlementRestrictions_v2.docx",
+      "sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "size_bytes": 874186
+    }
+  ],
+  "native_member_count": 9,
+  "ole_object_count": 9,
+  "native_members": [
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject1.bin",
+      "sha256": "376f90c6f7bbff5fafaf689dd0940c724c0ba5ca7d967679d74f68d0b68e5fd8",
+      "size_bytes": 227328,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject1.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId32",
+          "member": "word/embeddings/oleObject1.bin",
+          "target": "embeddings/oleObject1.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1025",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738494",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId32"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P251",
+          "xml_path": "/w:document/w:body/w:p[251]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "BusinessProcess Description"
+          ],
+          "figure_id": "fig-0005",
+          "previews": [
+            {
+              "relationship_id": "rId31",
+              "member": "word/media/image7.emf",
+              "sha256": "b4f7e76f53c1146958334e4515418638dd2bbc7243ed5b64177d840810a85d13",
+              "asset": "domains/securities/assets/src-000380/originals/image7.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId32",
+          "target": "embeddings/oleObject1.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject1.bin"
+        }
+      ],
+      "disposition": "binary-visio-streams-preserved",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering was unavailable. Static stream/page inventory and Word preview curation do not prove all native visual semantics or binary internal pages/layers reviewed."
+      ],
+      "canonical_reference": "shared/reference/native-assets/376f90c6f7bbff5fafaf689dd0940c724c0ba5ca7d967679d74f68d0b68e5fd8.md",
+      "issue_ids": [
+        "issue-000028"
+      ],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject2.bin",
+      "sha256": "9a9fcb9963fe64a4fe7e6eaa5f296c45483d29e3e23ec09c5d7ff35bd5570cba",
+      "size_bytes": 4096,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject2.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId34",
+          "member": "word/embeddings/oleObject2.bin",
+          "target": "embeddings/oleObject2.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "PBrush",
+            "ShapeID": "_x0000_i1026",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738495",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId34"
+          },
+          "program_id": "PBrush",
+          "object_type": "Embed",
+          "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities"
+          ],
+          "figure_id": "fig-0006",
+          "previews": [
+            {
+              "relationship_id": "rId33",
+              "member": "word/media/image8.png",
+              "sha256": "753435056ccd00377fa789c039d67bee715f5f6a8d9343d74aee1fc5782ecdb8",
+              "asset": "domains/securities/assets/src-000380/originals/image8.png"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId34",
+          "target": "embeddings/oleObject2.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject2.bin"
+        }
+      ],
+      "disposition": "reviewed-legend-bitmap",
+      "activation": "not-activated",
+      "review_status": "reviewed",
+      "limitations": [],
+      "canonical_reference": "shared/reference/native-assets/9a9fcb9963fe64a4fe7e6eaa5f296c45483d29e3e23ec09c5d7ff35bd5570cba.md",
+      "issue_ids": [],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject3.bin",
+      "sha256": "45f0bbb74e25ee38d29eadd14d8b9f5929b54f1944342bc9c50c4d0dd78f8086",
+      "size_bytes": 6144,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject3.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId36",
+          "member": "word/embeddings/oleObject3.bin",
+          "target": "embeddings/oleObject3.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "PBrush",
+            "ShapeID": "_x0000_i1027",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738496",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId36"
+          },
+          "program_id": "PBrush",
+          "object_type": "Embed",
+          "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[3]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[3]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities"
+          ],
+          "figure_id": "fig-0007",
+          "previews": [
+            {
+              "relationship_id": "rId35",
+              "member": "word/media/image9.png",
+              "sha256": "416ec2d0da67da840d63718473bef11935369ba398b78246c53eb332027eb13d",
+              "asset": "domains/securities/assets/src-000380/originals/image9.png"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId36",
+          "target": "embeddings/oleObject3.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject3.bin"
+        }
+      ],
+      "disposition": "reviewed-legend-bitmap",
+      "activation": "not-activated",
+      "review_status": "reviewed",
+      "limitations": [],
+      "canonical_reference": "shared/reference/native-assets/45f0bbb74e25ee38d29eadd14d8b9f5929b54f1944342bc9c50c4d0dd78f8086.md",
+      "issue_ids": [],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject4.bin",
+      "sha256": "9bd394be78b3fa07f5eecf89f59cf96ec640525f3eb29e0aab7b14144b1cf817",
+      "size_bytes": 5632,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject4.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId38",
+          "member": "word/embeddings/oleObject4.bin",
+          "target": "embeddings/oleObject4.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "PBrush",
+            "ShapeID": "_x0000_i1028",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738497",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId38"
+          },
+          "program_id": "PBrush",
+          "object_type": "Embed",
+          "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[4]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[4]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities"
+          ],
+          "figure_id": "fig-0008",
+          "previews": [
+            {
+              "relationship_id": "rId37",
+              "member": "word/media/image10.png",
+              "sha256": "2c9a29da41a10dede04f82356c9d59e2406ce3a30f1143fa91edf06fde3a6040",
+              "asset": "domains/securities/assets/src-000380/originals/image10.png"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId38",
+          "target": "embeddings/oleObject4.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject4.bin"
+        }
+      ],
+      "disposition": "reviewed-legend-bitmap",
+      "activation": "not-activated",
+      "review_status": "reviewed",
+      "limitations": [],
+      "canonical_reference": "shared/reference/native-assets/9bd394be78b3fa07f5eecf89f59cf96ec640525f3eb29e0aab7b14144b1cf817.md",
+      "issue_ids": [],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject5.bin",
+      "sha256": "f47be6a4bb815d272c1d564368bc82e43325703407cac15bf3594daaa933fa81",
+      "size_bytes": 8192,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject5.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId40",
+          "member": "word/embeddings/oleObject5.bin",
+          "target": "embeddings/oleObject5.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "PBrush",
+            "ShapeID": "_x0000_i1029",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738498",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId40"
+          },
+          "program_id": "PBrush",
+          "object_type": "Embed",
+          "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[5]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[5]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities"
+          ],
+          "figure_id": "fig-0009",
+          "previews": [
+            {
+              "relationship_id": "rId39",
+              "member": "word/media/image11.png",
+              "sha256": "8d85be86c730d3c41866718d41e9bbcc504a417500e49a1749aeb69d07de1f88",
+              "asset": "domains/securities/assets/src-000380/originals/image11.png"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId40",
+          "target": "embeddings/oleObject5.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject5.bin"
+        }
+      ],
+      "disposition": "reviewed-legend-bitmap",
+      "activation": "not-activated",
+      "review_status": "reviewed",
+      "limitations": [],
+      "canonical_reference": "shared/reference/native-assets/f47be6a4bb815d272c1d564368bc82e43325703407cac15bf3594daaa933fa81.md",
+      "issue_ids": [],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject6.bin",
+      "sha256": "a33b1f4526d4ae764668ddb4e7c4f997742fa83415a8e2f939d288adb6885b53",
+      "size_bytes": 50176,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject6.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId42",
+          "member": "word/embeddings/oleObject6.bin",
+          "target": "embeddings/oleObject6.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1030",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738499",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId42"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P260",
+          "xml_path": "/w:document/w:body/w:p[260]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities",
+            "Intra Position Movement Query, Query Response and Pending Report",
+            "Pull mode"
+          ],
+          "figure_id": "fig-0010",
+          "previews": [
+            {
+              "relationship_id": "rId41",
+              "member": "word/media/image12.emf",
+              "sha256": "b45883f20b6975aa14f0c8d61a6fe42da41af41e9afc56806a6098ea7cdfd18a",
+              "asset": "domains/securities/assets/src-000380/originals/image12.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId42",
+          "target": "embeddings/oleObject6.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject6.bin"
+        }
+      ],
+      "disposition": "binary-visio-streams-preserved",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering was unavailable. Static stream/page inventory and Word preview curation do not prove all native visual semantics or binary internal pages/layers reviewed."
+      ],
+      "canonical_reference": "shared/reference/native-assets/a33b1f4526d4ae764668ddb4e7c4f997742fa83415a8e2f939d288adb6885b53.md",
+      "issue_ids": [
+        "issue-000028"
+      ],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject7.bin",
+      "sha256": "03f4e688a97e0c58c869af569f559a2d998a7ca15cbb16966cd20fdbe2e1c122",
+      "size_bytes": 229888,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject7.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId44",
+          "member": "word/embeddings/oleObject7.bin",
+          "target": "embeddings/oleObject7.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1031",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738500",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId44"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P264",
+          "xml_path": "/w:document/w:body/w:p[264]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities",
+            "Intra Position Movement Query, Query Response and Pending Report",
+            "Push mode"
+          ],
+          "figure_id": "fig-0011",
+          "previews": [
+            {
+              "relationship_id": "rId43",
+              "member": "word/media/image13.emf",
+              "sha256": "720c3dd202f25a0fd9324aad5cdd182588efa28d9a4ace23f54696dfad291e32",
+              "asset": "domains/securities/assets/src-000380/originals/image13.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId44",
+          "target": "embeddings/oleObject7.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject7.bin"
+        }
+      ],
+      "disposition": "binary-visio-streams-preserved",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering was unavailable. Static stream/page inventory and Word preview curation do not prove all native visual semantics or binary internal pages/layers reviewed."
+      ],
+      "canonical_reference": "shared/reference/native-assets/03f4e688a97e0c58c869af569f559a2d998a7ca15cbb16966cd20fdbe2e1c122.md",
+      "issue_ids": [
+        "issue-000028"
+      ],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject8.bin",
+      "sha256": "884d03cbeb6854ade11bd033d8f705a2e1ad84e4c0a39fe6e4361f0d231c66db",
+      "size_bytes": 184832,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject8.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId47",
+          "member": "word/embeddings/oleObject8.bin",
+          "target": "embeddings/oleObject8.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1032",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738501",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId47"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P273",
+          "xml_path": "/w:document/w:body/w:p[273]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities",
+            "Securities Transaction Cancellation/Modification Request Query/Report",
+            "Push mode"
+          ],
+          "figure_id": "fig-0013",
+          "previews": [
+            {
+              "relationship_id": "rId46",
+              "member": "word/media/image15.emf",
+              "sha256": "88d1c14026066de0071433099aa1ad0aa051fb1dd21f25ecdb8f84758f47a0d4",
+              "asset": "domains/securities/assets/src-000380/originals/image15.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId47",
+          "target": "embeddings/oleObject8.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject8.bin"
+        }
+      ],
+      "disposition": "binary-visio-streams-preserved",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering was unavailable. Static stream/page inventory and Word preview curation do not prove all native visual semantics or binary internal pages/layers reviewed."
+      ],
+      "canonical_reference": "shared/reference/native-assets/884d03cbeb6854ade11bd033d8f705a2e1ad84e4c0a39fe6e4361f0d231c66db.md",
+      "issue_ids": [
+        "issue-000028"
+      ],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    },
+    {
+      "source_id": "src-000380",
+      "parent_sha256": "886006489adff8e33f8ac0c027d0b9d13389fdace351835321f09e1311956b14",
+      "archive_member": "word/embeddings/oleObject9.bin",
+      "sha256": "e196c268dddcd11aca90304842a6cd429effbc797bceb1b6385ba5fecf4d7d83",
+      "size_bytes": 113152,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000380/native-embeddings/oleObject9.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId49",
+          "member": "word/embeddings/oleObject9.bin",
+          "target": "embeddings/oleObject9.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1033",
+            "DrawAspect": "Content",
+            "ObjectID": "_1820738502",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId49"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P280",
+          "xml_path": "/w:document/w:body/w:p[280]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "BusinessTransactions"
+          ],
+          "figure_id": "fig-0014",
+          "previews": [
+            {
+              "relationship_id": "rId48",
+              "member": "word/media/image16.emf",
+              "sha256": "96a63357db74aa8c924bca045c7ebbdc8531e4f30e906ea6b1582b7c026407c6",
+              "asset": "domains/securities/assets/src-000380/originals/image16.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId49",
+          "target": "embeddings/oleObject9.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject9.bin"
+        }
+      ],
+      "disposition": "binary-visio-streams-preserved",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering was unavailable. Static stream/page inventory and Word preview curation do not prove all native visual semantics or binary internal pages/layers reviewed."
+      ],
+      "canonical_reference": "shared/reference/native-assets/e196c268dddcd11aca90304842a6cd429effbc797bceb1b6385ba5fecf4d7d83.md",
+      "issue_ids": [
+        "issue-000028"
+      ],
+      "review_date": "2026-11-09",
+      "review_basis": "Maintained canonical native-object metadata; source identity unchanged."
+    }
+  ],
+  "objects": [
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId32",
+      "member": "word/embeddings/oleObject1.bin",
+      "target": "embeddings/oleObject1.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "Visio.Drawing.11",
+        "ShapeID": "_x0000_i1025",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738494",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId32"
+      },
+      "program_id": "Visio.Drawing.11",
+      "object_type": "Embed",
+      "source_locator": "direct-body paragraph P251",
+      "xml_path": "/w:document/w:body/w:p[251]/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "BusinessProcess Description"
+      ],
+      "figure_id": "fig-0005",
+      "previews": [
+        {
+          "relationship_id": "rId31",
+          "member": "word/media/image7.emf",
+          "sha256": "b4f7e76f53c1146958334e4515418638dd2bbc7243ed5b64177d840810a85d13",
+          "asset": "domains/securities/assets/src-000380/originals/image7.emf"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId34",
+      "member": "word/embeddings/oleObject2.bin",
+      "target": "embeddings/oleObject2.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "PBrush",
+        "ShapeID": "_x0000_i1026",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738495",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId34"
+      },
+      "program_id": "PBrush",
+      "object_type": "Embed",
+      "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities"
+      ],
+      "figure_id": "fig-0006",
+      "previews": [
+        {
+          "relationship_id": "rId33",
+          "member": "word/media/image8.png",
+          "sha256": "753435056ccd00377fa789c039d67bee715f5f6a8d9343d74aee1fc5782ecdb8",
+          "asset": "domains/securities/assets/src-000380/originals/image8.png"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId36",
+      "member": "word/embeddings/oleObject3.bin",
+      "target": "embeddings/oleObject3.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "PBrush",
+        "ShapeID": "_x0000_i1027",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738496",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId36"
+      },
+      "program_id": "PBrush",
+      "object_type": "Embed",
+      "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[3]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[3]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities"
+      ],
+      "figure_id": "fig-0007",
+      "previews": [
+        {
+          "relationship_id": "rId35",
+          "member": "word/media/image9.png",
+          "sha256": "416ec2d0da67da840d63718473bef11935369ba398b78246c53eb332027eb13d",
+          "asset": "domains/securities/assets/src-000380/originals/image9.png"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId38",
+      "member": "word/embeddings/oleObject4.bin",
+      "target": "embeddings/oleObject4.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "PBrush",
+        "ShapeID": "_x0000_i1028",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738497",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId38"
+      },
+      "program_id": "PBrush",
+      "object_type": "Embed",
+      "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[4]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[4]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities"
+      ],
+      "figure_id": "fig-0008",
+      "previews": [
+        {
+          "relationship_id": "rId37",
+          "member": "word/media/image10.png",
+          "sha256": "2c9a29da41a10dede04f82356c9d59e2406ce3a30f1143fa91edf06fde3a6040",
+          "asset": "domains/securities/assets/src-000380/originals/image10.png"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId40",
+      "member": "word/embeddings/oleObject5.bin",
+      "target": "embeddings/oleObject5.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "PBrush",
+        "ShapeID": "_x0000_i1029",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738498",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId40"
+      },
+      "program_id": "PBrush",
+      "object_type": "Embed",
+      "source_locator": "direct-body table T9; /w:document/w:body/w:tbl[9]/w:tr[5]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "xml_path": "/w:document/w:body/w:tbl[9]/w:tr[5]/w:tc[1]/w:p/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities"
+      ],
+      "figure_id": "fig-0009",
+      "previews": [
+        {
+          "relationship_id": "rId39",
+          "member": "word/media/image11.png",
+          "sha256": "8d85be86c730d3c41866718d41e9bbcc504a417500e49a1749aeb69d07de1f88",
+          "asset": "domains/securities/assets/src-000380/originals/image11.png"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId42",
+      "member": "word/embeddings/oleObject6.bin",
+      "target": "embeddings/oleObject6.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "Visio.Drawing.11",
+        "ShapeID": "_x0000_i1030",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738499",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId42"
+      },
+      "program_id": "Visio.Drawing.11",
+      "object_type": "Embed",
+      "source_locator": "direct-body paragraph P260",
+      "xml_path": "/w:document/w:body/w:p[260]/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities",
+        "Intra Position Movement Query, Query Response and Pending Report",
+        "Pull mode"
+      ],
+      "figure_id": "fig-0010",
+      "previews": [
+        {
+          "relationship_id": "rId41",
+          "member": "word/media/image12.emf",
+          "sha256": "b45883f20b6975aa14f0c8d61a6fe42da41af41e9afc56806a6098ea7cdfd18a",
+          "asset": "domains/securities/assets/src-000380/originals/image12.emf"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId44",
+      "member": "word/embeddings/oleObject7.bin",
+      "target": "embeddings/oleObject7.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "Visio.Drawing.11",
+        "ShapeID": "_x0000_i1031",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738500",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId44"
+      },
+      "program_id": "Visio.Drawing.11",
+      "object_type": "Embed",
+      "source_locator": "direct-body paragraph P264",
+      "xml_path": "/w:document/w:body/w:p[264]/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities",
+        "Intra Position Movement Query, Query Response and Pending Report",
+        "Push mode"
+      ],
+      "figure_id": "fig-0011",
+      "previews": [
+        {
+          "relationship_id": "rId43",
+          "member": "word/media/image13.emf",
+          "sha256": "720c3dd202f25a0fd9324aad5cdd182588efa28d9a4ace23f54696dfad291e32",
+          "asset": "domains/securities/assets/src-000380/originals/image13.emf"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId47",
+      "member": "word/embeddings/oleObject8.bin",
+      "target": "embeddings/oleObject8.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "Visio.Drawing.11",
+        "ShapeID": "_x0000_i1032",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738501",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId47"
+      },
+      "program_id": "Visio.Drawing.11",
+      "object_type": "Embed",
+      "source_locator": "direct-body paragraph P273",
+      "xml_path": "/w:document/w:body/w:p[273]/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "Description of BusinessActivities",
+        "Securities Transaction Cancellation/Modification Request Query/Report",
+        "Push mode"
+      ],
+      "figure_id": "fig-0013",
+      "previews": [
+        {
+          "relationship_id": "rId46",
+          "member": "word/media/image15.emf",
+          "sha256": "88d1c14026066de0071433099aa1ad0aa051fb1dd21f25ecdb8f84758f47a0d4",
+          "asset": "domains/securities/assets/src-000380/originals/image15.emf"
+        }
+      ],
+      "activation": "not-activated"
+    },
+    {
+      "part": "word/document.xml",
+      "relationship_id": "rId49",
+      "member": "word/embeddings/oleObject9.bin",
+      "target": "embeddings/oleObject9.bin",
+      "target_mode": null,
+      "object_attributes": {
+        "Type": "Embed",
+        "ProgID": "Visio.Drawing.11",
+        "ShapeID": "_x0000_i1033",
+        "DrawAspect": "Content",
+        "ObjectID": "_1820738502",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId49"
+      },
+      "program_id": "Visio.Drawing.11",
+      "object_type": "Embed",
+      "source_locator": "direct-body paragraph P280",
+      "xml_path": "/w:document/w:body/w:p[280]/w:r/w:object/o:OLEObject",
+      "heading_path": [
+        "BusinessTransactions"
+      ],
+      "figure_id": "fig-0014",
+      "previews": [
+        {
+          "relationship_id": "rId48",
+          "member": "word/media/image16.emf",
+          "sha256": "96a63357db74aa8c924bca045c7ebbdc8531e4f30e906ea6b1582b7c026407c6",
+          "asset": "domains/securities/assets/src-000380/originals/image16.emf"
+        }
+      ],
+      "activation": "not-activated"
+    }
+  ],
+  "scan_date": "2026-11-09",
+  "timezone": "Europe/Warsaw",
+  "disposition": "native-originals-preserved",
+  "limitations": [
+    "Native objects are preserved without activation. Native pages, layers, and editing-only content require format-specific inspection before complete semantic equivalence can be claimed."
+  ]
+}

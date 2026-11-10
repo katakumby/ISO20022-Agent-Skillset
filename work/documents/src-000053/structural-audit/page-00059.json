@@ -1,0 +1,128 @@
+{
+  "source_id": "src-000053",
+  "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+  "file_page": 59,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 152,
+    "2": 233
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 9,
+    "table-associated-axis-line": 218,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "470b7120182bdd4c864fdacbd311ecd1fcff8c8df4092554ae4f0f46e84fdf63",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        130.1204,
+        84.3237,
+        261.7698,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        277.9544,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 6,
+      "bbox": [
+        260.7698,
+        84.3237,
+        278.4544,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        277.9544,
+        85.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0082",
+      "file_page": 59,
+      "bbox": [
+        85.03936999999996,
+        92.6929100000001,
+        510.2362279999999,
+        177.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0082.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7fef57909f92210ddaaa2c09c873c8ccf96c0c11e01e5fca577b0db664bd954b",
+      "cell_geometry_sha256": "fb22a9b31014b672304719e88c10e8f2b15b3c5aeaaa30830f556992f79c292d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0083",
+      "file_page": 59,
+      "bbox": [
+        85.03936999999996,
+        301.6929100000001,
+        555.5905733333334,
+        531.8928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0083.md",
+      "rows": 11,
+      "matrix_cells": 66,
+      "physical_cells": 66,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "6da4d7d498cf7c0b08a2098a9a97c9a0a56cc405aac551c58a4f65c0cc15355c",
+      "cell_geometry_sha256": "c8e576481f6b75c17754d040f46c9ce7a150e7e135e188abeb7486921f2a7640",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 66,
+      "independent_cells_match": 66,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0084",
+      "file_page": 59,
+      "bbox": [
+        85.03936999999996,
+        618.0929300000001,
+        555.5905733333334,
+        686.6929300000002
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0084.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "2d0f1612bef6eb09d743bc44ee71da3dbc5aecb9eeaf2b6cf637b49e164189f9",
+      "cell_geometry_sha256": "6b07d360fc1180dd82aa8ddbf45af24137307940610e7c5b8284d976a95b4757",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

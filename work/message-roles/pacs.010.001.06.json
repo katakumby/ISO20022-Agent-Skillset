@@ -1,0 +1,425 @@
+{
+  "message_id": "pacs.010.001.06",
+  "publications": [
+    {
+      "source_id": "src-000163",
+      "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+      "heading": "8 pacs.010.001.06 FinancialInstitutionDirectDebitV06",
+      "definition_pages": [
+        1016,
+        1048
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The FinancialInstitutionDirectDebit message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the DebtorAgent",
+            "labels": [
+              {
+                "label": "the DebtorAgent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-debtor-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an exchange or clearing house, or a financial institution, directly or through another agent",
+            "labels": [
+              {
+                "label": "an exchange",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-exchange",
+                  "path": "shared/reference/participants/participant-src-000162-exchange.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "clearing house",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-clearing-house",
+                  "path": "shared/reference/participants/participant-src-000162-clearing-house.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a financial institution",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-financial-institution",
+                  "path": "shared/reference/participants/participant-src-000162-financial-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": "an exchange or clearing house, or a financial institution, directly or through another agent"
+          },
+          "claim_id": "src-000163-pacs.010.001.06-p1016-c001-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "8 pacs.010.001.06 FinancialInstitutionDirectDebitV06",
+          "file_pages": [
+            1016
+          ],
+          "section": "scope",
+          "quote": "The FinancialInstitutionDirectDebit message is sent by an exchange or clearing house, or a financial institution, directly or through another agent, to the DebtorAgent.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or",
+            "through"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The FinancialInstitutionDirectDebit message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "agents",
+            "labels": [
+              {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000163-pacs.010.001.06-p1016-c003-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "8 pacs.010.001.06 FinancialInstitutionDirectDebitV06",
+          "file_pages": [
+            1016
+          ],
+          "section": "usage",
+          "quote": "The FinancialInstitutionDirectDebit message is exchanged between agents and can contain one or more financial institution direct debit instruction(s) for one or more creditor(s).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "can",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The FinancialInstitutionDirectDebit message is sent by an exchange or clearing house, or a financial institution, directly or through another agent, to the DebtorAgent.",
+          "raw_quote": "Scope:\nThe FinancialInstitutionDirectDebit message is sent by an exchange or clearing house, or a financial\ninstitution, directly or through another agent, to the DebtorAgent.",
+          "file_pages": [
+            1016
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.010.001.06-p1016-c001",
+          "mentions": [
+            {
+              "label": "exchange",
+              "start": 58,
+              "end": 66,
+              "resolution": {
+                "label": "exchange",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-exchange",
+                  "path": "shared/reference/participants/participant-src-000162-exchange.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "clearing house",
+              "start": 70,
+              "end": 84,
+              "resolution": {
+                "label": "clearing house",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-clearing-house",
+                  "path": "shared/reference/participants/participant-src-000162-clearing-house.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "financial institution",
+              "start": 91,
+              "end": 112,
+              "resolution": {
+                "label": "financial institution",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-financial-institution",
+                  "path": "shared/reference/participants/participant-src-000162-financial-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "agent",
+              "start": 142,
+              "end": 147,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "DebtorAgent",
+              "start": 156,
+              "end": 167,
+              "resolution": {
+                "label": "DebtorAgent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-debtor-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.010.001.06-p1016-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to instruct the DebtorAgent to move funds from one or more debtor(s) account(s) to one or more creditor(s), where both debtor and creditor are financial institutions.",
+          "raw_quote": "It is used to instruct the DebtorAgent\nto move funds from one or more debtor(s) account(s) to one or more creditor(s), where both debtor and\ncreditor are financial institutions.",
+          "file_pages": [
+            1016
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.010.001.06-p1016-c002",
+          "mentions": [
+            {
+              "label": "DebtorAgent",
+              "start": 27,
+              "end": 38,
+              "resolution": {
+                "label": "DebtorAgent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-debtor-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "debtor",
+              "start": 70,
+              "end": 76,
+              "resolution": {
+                "label": "debtor",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor",
+                  "path": "shared/reference/participants/participant-src-000162-debtor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 106,
+              "end": 114,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-creditor",
+                  "path": "shared/reference/participants/participant-src-000162-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "debtor",
+              "start": 130,
+              "end": 136,
+              "resolution": {
+                "label": "debtor",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor",
+                  "path": "shared/reference/participants/participant-src-000162-debtor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 141,
+              "end": 149,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-creditor",
+                  "path": "shared/reference/participants/participant-src-000162-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "financial institutions",
+              "start": 154,
+              "end": 176,
+              "resolution": {
+                "label": "financial institutions",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-financial-institution",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-financial-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FinancialInstitutionDirectDebit message is exchanged between agents and can contain one or more financial institution direct debit instruction(s) for one or more creditor(s).",
+          "raw_quote": "Usage:\nThe FinancialInstitutionDirectDebit message is exchanged between agents and can contain one or\nmore financial institution direct debit instruction(s) for one or more creditor(s).",
+          "file_pages": [
+            1016
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.010.001.06-p1016-c003",
+          "mentions": [
+            {
+              "label": "agents",
+              "start": 65,
+              "end": 71,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "financial institution",
+              "start": 100,
+              "end": 121,
+              "resolution": {
+                "label": "financial institution",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-financial-institution",
+                  "path": "shared/reference/participants/participant-src-000162-financial-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor",
+              "start": 166,
+              "end": 174,
+              "resolution": {
+                "label": "creditor",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-creditor",
+                  "path": "shared/reference/participants/participant-src-000162-creditor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.010.001.06-p1016-c003-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The FinancialInstitutionDirectDebit message can be used in domestic and cross-border scenarios.",
+          "raw_quote": "The\nFinancialInstitutionDirectDebit message can be used in domestic and cross-border scenarios.",
+          "file_pages": [
+            1016
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1016
+      ],
+      "file_pages": [
+        1016
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "message_id": "camt.076.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "14 camt.076.001.01 BillingReportRequestV01",
+      "definition_pages": [
+        233,
+        239
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The BillingReportRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the system transaction administrator",
+            "labels": [
+              {
+                "label": "the system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.076.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      233
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000346",
+                        "heading": "2 camt.076.001.01 BillingReportRequestV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the system member",
+            "labels": [
+              {
+                "label": "the system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.076.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      233
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000346",
+                        "heading": "2 camt.076.001.01 BillingReportRequestV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-camt.076.001.01-p233-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "14 camt.076.001.01 BillingReportRequestV01",
+          "file_pages": [
+            233
+          ],
+          "section": "scope",
+          "quote": "The BillingReportRequest message is sent by the system member to the system transaction administrator to request cumulative or itemised billing data.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The BillingReportRequest message is sent by the system member to the system transaction administrator to request cumulative or itemised billing data.",
+          "raw_quote": "The BillingReportRequest message is sent by the system member to the system transaction\nadministrator to request cumulative or itemised billing data.",
+          "file_pages": [
+            233
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.076.001.01-p233-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 48,
+              "end": 61,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.076.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      233
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000346",
+                        "heading": "2 camt.076.001.01 BillingReportRequestV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system transaction administrator",
+              "start": 69,
+              "end": 101,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.076.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      233
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000346",
+                        "heading": "2 camt.076.001.01 BillingReportRequestV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-camt.076.001.01-p233-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The billing data may be cumulative information or aggregated information on the level of a single securities or a dedicated cash account within a given period for each service item.",
+          "raw_quote": "The billing data may be cumulative\ninformation or aggregated information on the level of a single securities or a dedicated cash account\nwithin a given period for each service item.",
+          "file_pages": [
+            233
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        233
+      ],
+      "file_pages": [
+        233
+      ]
+    },
+    {
+      "source_id": "src-000346",
+      "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+      "heading": "2 camt.076.001.01 BillingReportRequestV01",
+      "definition_pages": [
+        4,
+        10
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The BillingReportRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the system transaction administrator",
+            "labels": [
+              {
+                "label": "the system transaction administrator",
+                "scope_source_id": "src-000346",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the system member",
+            "labels": [
+              {
+                "label": "the system member",
+                "scope_source_id": "src-000346",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000346-camt.076.001.01-p4-c001-d1",
+          "source_id": "src-000346",
+          "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+          "heading": "2 camt.076.001.01 BillingReportRequestV01",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "quote": "The BillingReportRequest message is sent by the system member to the system transaction administrator to request cumulative or itemised billing data.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The BillingReportRequest message is sent by the system member to the system transaction administrator to request cumulative or itemised billing data.",
+          "raw_quote": "The BillingReportRequest message is sent by the system member to the system transaction\nadministrator to request cumulative or itemised billing data.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000346-camt.076.001.01-p4-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 48,
+              "end": 61,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000346",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "system transaction administrator",
+              "start": 69,
+              "end": 101,
+              "resolution": {
+                "label": "system transaction administrator",
+                "scope_source_id": "src-000346",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000346-system-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000346-system-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000346-camt.076.001.01-p4-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The billing data may be cumulative information or aggregated information on the level of a single securities or a dedicated cash account within a given period for each service item.",
+          "raw_quote": "The billing data may be cumulative\ninformation or aggregated information on the level of a single securities or a dedicated cash account\nwithin a given period for each service item.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4
+      ],
+      "file_pages": [
+        4
+      ]
+    }
+  ]
+}

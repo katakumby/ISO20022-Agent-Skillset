@@ -1,0 +1,73 @@
+{
+  "source_id": "src-000360",
+  "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+  "file_page": 218,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 321,
+    "1": 184
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 311,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "a64082f1a196ee12f5e4a91bdfffc6f28b67c2457cb83eaf301a668a85da1a1e",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0373",
+      "file_page": 218,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        555.5905755555556,
+        395.4929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0373.md",
+      "rows": 14,
+      "matrix_cells": 84,
+      "physical_cells": 84,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c1657f7f1d25e52a197c5582aa80eed0fea0453c8fb17763b09457d1e26ce0a2",
+      "cell_geometry_sha256": "e1e93bd32019eafbe93fe241705b3eade79058e09c38b94498d6749728a3f3ab",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 84,
+      "independent_cells_match": 84,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0374",
+      "file_page": 218,
+      "bbox": [
+        85.03936999999996,
+        491.4929300000001,
+        555.5905755555556,
+        681.2929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0374.md",
+      "rows": 9,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ea13171867a0726cf8f8f001b83092a3efcddd842e2550b105c4e1a16707cfd3",
+      "cell_geometry_sha256": "29a8b1ffa8ee0ccba684f68f51d96dc055f2ea3852ee4493ddb60d8e83ef38d2",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

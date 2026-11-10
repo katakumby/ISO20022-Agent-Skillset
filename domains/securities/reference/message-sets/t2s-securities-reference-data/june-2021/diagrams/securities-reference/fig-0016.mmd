@@ -1,0 +1,7 @@
+%%{init: {"sequence": {"mirrorActors": false, "width": 230}, "themeVariables": {"actorBkg": "#bfd4ee", "actorBorder": "#222"}}}%%
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+A->>B: Security Deletion Request (reda.013)
+B-->>A: Security Deletion Status Advice (reda.030): QUEUED
+B->>A: Security Deletion Status Advice (reda.030): COMPLETED

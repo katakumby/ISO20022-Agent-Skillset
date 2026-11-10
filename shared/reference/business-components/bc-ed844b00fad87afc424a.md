@@ -1,0 +1,105 @@
+---
+template: false
+review_status: "needs-review"
+document_kind: "business-concept"
+concept_id: "bc-ed844b00fad87afc424a"
+title: "UltimateDebtorRole"
+business_component_name: "UltimateDebtorRole"
+aliases: []
+domain: "shared"
+domains: ["payments", "securities", "shared"]
+message_sets: ["bank-to-customer-cash-management", "cash-management", "ccp-clearing", "corporate-actions", "fitrr", "investment-funds", "payments-clearing-and-settlement", "payments-initiation", "post-trade-matching", "settlement-and-reconciliation", "t2s-administration", "t2s-billing", "t2s-cash-account-query-and-report", "t2s-collateral-management-reference-data", "t2s-collateral-reporting", "t2s-intra-balance-movement", "t2s-limit-utilisation-journal", "t2s-link-reference-data", "t2s-party-reference-data", "t2s-securities-account-reference-data", "t2s-securities-and-penalty-reporting", "t2s-securities-reference-data", "t2s-settlement-restrictions"]
+applicability: "source-publication-provenance; message usage requires Traces evidence"
+source_ids: ["src-000006", "src-000016", "src-000054", "src-000081", "src-000097", "src-000164", "src-000175", "src-000182", "src-000198", "src-000322", "src-000345", "src-000348", "src-000352", "src-000355", "src-000358", "src-000361", "src-000364", "src-000367", "src-000370", "src-000373", "src-000376", "src-000379", "src-000382"]
+source_editions: ["2024-2025", "2025", "2025-2026", "august-2026", "december-2019", "december-2024", "december-2025", "february-2025", "june-2021", "march-2024", "march-2026", "may-2025", "september-2025"]
+source_locations: [{"source_id": "src-000006", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000016", "worksheet": "FullBusinessModel", "ranges": ["A5192:F5192"]}, {"source_id": "src-000054", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000081", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000097", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000164", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000175", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000182", "worksheet": "FullBusinessModel", "ranges": ["A5192:F5192"]}, {"source_id": "src-000198", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000322", "worksheet": "FullBusinessModel", "ranges": ["A5231:F5231"]}, {"source_id": "src-000345", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000348", "worksheet": "FullBusinessModel", "ranges": ["A5231:F5231"]}, {"source_id": "src-000352", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000355", "worksheet": "FullBusinessModel", "ranges": ["A5165:F5165"]}, {"source_id": "src-000358", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000361", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000364", "worksheet": "FullBusinessModel", "ranges": ["A5165:F5165"]}, {"source_id": "src-000367", "worksheet": "FullBusinessModel", "ranges": ["A5165:F5165"]}, {"source_id": "src-000370", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000373", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000376", "worksheet": "FullBusinessModel", "ranges": ["A5262:F5262"]}, {"source_id": "src-000379", "worksheet": "FullBusinessModel", "ranges": ["A3493:F3493"]}, {"source_id": "src-000382", "worksheet": "FullBusinessModel", "ranges": ["A5231:F5231"]}]
+content_sha256: "ed844b00fad87afc424a27f2d99e34550c14f9eb6e1acd943af7a787f824815d"
+parent_names: ["PaymentObligationPartyRole"]
+related_component_names: []
+limitations: ["Conceptual business model; not an XML type, database definition or institutional participant assignment.", "Cardinalities, composition and ownership are not inferred from this six-column table.", "Same-name components with different complete row content remain separate.", "Source message-set/domain metadata records publication provenance, not proof that every component is used by every message in those sets. Consult the workbook Traces for message-component usage."]
+---
+
+# UltimateDebtorRole
+
+## Definition
+
+Ultimate party that owes an amount of money to the (ultimate) creditor.
+
+## Complete component rows
+
+`∅` marks a blank source value. Component rows are preserved in source order; the row ordinal maps to every occurrence listed below. The component header and every field, definition, parent, type and opposite-end value remain intact.
+
+| Row ordinal | Business Component Name | Business Element Name | Business Component Parent Name | Documentation | Business Element Type Name | Name of Opposite End |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | UltimateDebtorRole | ∅ | PaymentObligationPartyRole | Ultimate party that owes an amount of money to the (ultimate) creditor. | ∅ | ∅ |
+
+## Provenance and all equivalent occurrences
+
+Complete row-content SHA-256: `ed844b00fad87afc424a27f2d99e34550c14f9eb6e1acd943af7a787f824815d`. Equivalence includes exact typed values, formula/cache values and number formats; position and style IDs are not a claim of business difference. No alias equivalence is inferred.
+
+| Source | Worksheet/range | Source row order | Original occurrence | Workbook component lookup |
+| --- | --- | --- | --- | --- |
+| src-000006 | FullBusinessModel!A5262:F5262 | 5262 | [src-000006 original](<../../../raw-input/banktocustomer_cash_management/ISO20022_MDRPart3_BanktoCustomerCashManagement_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/workbooks/src-000006/components.md>) |
+| src-000016 | FullBusinessModel!A5192:F5192 | 5192 | [src-000016 original](<../../../raw-input/cash_management/ISO20022_MDRPart3_CashManagement_2024_2025_v1.xlsx>) | [Lookup](<../../../domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/components.md>) |
+| src-000054 | FullBusinessModel!A5262:F5262 | 5262 | [src-000054 original](<../../../raw-input/central_counterparty_clearing_ccp_clearing/ISO20022_MDRPart3_CentralCounterParty_SecuritiesClearing_Maintenance_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/ccp-clearing/2025-2026/workbooks/src-000054/components.md>) |
+| src-000081 | FullBusinessModel!A5262:F5262 | 5262 | [src-000081 original](<../../../raw-input/corporate_actions/ISO20022_MDRPart3_CorporateActions_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/corporate-actions/2025-2026/workbooks/src-000081/components.md>) |
+| src-000097 | FullBusinessModel!A5262:F5262 | 5262 | [src-000097 original](<../../../raw-input/investment_funds/ISO20022_MDRPart3_Investment-Funds_2025_2026_v2.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/investment-funds/2025-2026/workbooks/src-000097/components.md>) |
+| src-000164 | FullBusinessModel!A5262:F5262 | 5262 | [src-000164 original](<../../../raw-input/payments_clearing_and_settlement/ISO20022_MDRPart3_PaymentsClearingandSettlement_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/workbooks/src-000164/components.md>) |
+| src-000175 | FullBusinessModel!A5262:F5262 | 5262 | [src-000175 original](<../../../raw-input/payments_initiation/ISO20022_MDRPart3_PaymentsInitiation_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/payments/reference/message-sets/payments-initiation/2025-2026/workbooks/src-000175/components.md>) |
+| src-000182 | FullBusinessModel!A5192:F5192 | 5192 | [src-000182 original](<../../../raw-input/post_trade_matching/ISO20022_MDRPart3_PostTradeMatching_2024_2025_v1.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/post-trade-matching/2024-2025/workbooks/src-000182/components.md>) |
+| src-000198 | FullBusinessModel!A5262:F5262 | 5262 | [src-000198 original](<../../../raw-input/settlement_and_reconciliation/ISO20022_MDRPart3_SettlementAndReconciliation_2025_2026_v1.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/workbooks/src-000198/components.md>) |
+| src-000322 | FullBusinessModel!A5231:F5231 | 5231 | [src-000322 original](<../../../raw-input/transactions_and_financial_instruments_data_reporting_fitrr/ISO20022_MDRPart3_FITRR_TransactionAndFinancialInstrumentsDataReporting_FastTrackMaintenance2025_v1.xlsx>) | [Lookup](<../../../domains/securities/reference/message-sets/fitrr/2025/workbooks/src-000322/components.md>) |
+| src-000345 | FullBusinessModel!A3493:F3493 | 3493 | [src-000345 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_Administration_MessageSet/ISO20022_MDRPart3_Target2Securities_Administration_2023_2024_v1.xlsx` | [Lookup](<../message-sets/t2s-administration/march-2024/workbooks/src-000345/components.md>) |
+| src-000348 | FullBusinessModel!A5231:F5231 | 5231 | [src-000348 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_Billing_MessageSet/ISO20022_MDRPart3_Target2Securities_Billing_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-billing/december-2025/workbooks/src-000348/components.md>) |
+| src-000352 | FullBusinessModel!A5262:F5262 | 5262 | [src-000352 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_CashAccountQueryAndReport_MessageSet/ISO20022_MDRPart3_Target2Securities_CashAccountQueryAndReport_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-cash-account-query-and-report/august-2026/workbooks/src-000352/components.md>) |
+| src-000355 | FullBusinessModel!A5165:F5165 | 5165 | [src-000355 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_CollateralManagementReferenceData_MessageSet/ISO20022_MDRPart3_Target2Securities_CollateralManagementReferenceData_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-collateral-management-reference-data/may-2025/workbooks/src-000355/components.md>) |
+| src-000358 | FullBusinessModel!A3493:F3493 | 3493 | [src-000358 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_CollateralReporting_MessageSet/ISO20022_MDRPart3_Target2Securities_CollateralReporting_2023_2024_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/workbooks/src-000358/components.md>) |
+| src-000361 | FullBusinessModel!A3493:F3493 | 3493 | [src-000361 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_IntraBalanceMovement_MessageSet/ISO20022_MDRPart3_Target2Securities_IntraBalanceMovement_2023_2024_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/workbooks/src-000361/components.md>) |
+| src-000364 | FullBusinessModel!A5165:F5165 | 5165 | [src-000364 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_LimitUtilisationJournal_MessageSet/ISO20022_MDRPart3_Target2Securities_LimitUtilisationJournal_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-limit-utilisation-journal/february-2025/workbooks/src-000364/components.md>) |
+| src-000367 | FullBusinessModel!A5165:F5165 | 5165 | [src-000367 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_LinkReferenceData_MessageSet/ISO20022_MDRPart3_Target2Securities_LinkReferenceData_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/workbooks/src-000367/components.md>) |
+| src-000370 | FullBusinessModel!A3493:F3493 | 3493 | [src-000370 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_PartyReferenceData_MessageSet/ISO20022_MDRPart3_Target2Securities_PartyReferenceData_2023_2024_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-party-reference-data/march-2024/workbooks/src-000370/components.md>) |
+| src-000373 | FullBusinessModel!A3493:F3493 | 3493 | [src-000373 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_SecuritiesAccountReferenceData_MessageSet/ISO20022_MDRPart3_Target2Securities_SecuritiesAccountReferenceData_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/workbooks/src-000373/components.md>) |
+| src-000376 | FullBusinessModel!A5262:F5262 | 5262 | [src-000376 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_SecuritiesAndPenaltyReporting_MessageSet/ISO20022_MDRPart3_Target2Securities_SecuritiesAndPenaltyReporting_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/workbooks/src-000376/components.md>) |
+| src-000379 | FullBusinessModel!A3493:F3493 | 3493 | [src-000379 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_SecuritiesReferenceData_MessageSet/ISO20022_MDRPart3_Target2Securities_SecuritiesReferenceData_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-securities-reference-data/june-2021/workbooks/src-000379/components.md>) |
+| src-000382 | FullBusinessModel!A5231:F5231 | 5231 | [src-000382 original](<../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip>) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_SettlementRestrictions_MessageSet/ISO20022_MDRPart3_Target2Securities_SettlementRestrictions_v1.xlsx` | [Lookup](<../../../domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/workbooks/src-000382/components.md>) |
+
+## Parent and field-type relationships by source context
+
+Targets are resolved only inside the same supplied worksheet. A matching label in another edition is not a substitute. A target absent from this component table may be a datatype or another model item; this index does not invent its definition. Opposite-end labels remain in the complete rows above.
+
+| Source | Relationship | Source row/cell | Referenced name | Same-source target |
+| --- | --- | --- | --- | --- |
+| src-000006 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000016 | parent | C5192 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000054 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000081 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000097 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000164 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000175 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000182 | parent | C5192 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000198 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000322 | parent | C5231 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000345 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000348 | parent | C5231 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000352 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000355 | parent | C5165 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000358 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000361 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000364 | parent | C5165 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000367 | parent | C5165 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000370 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000373 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000376 | parent | C5262 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000379 | parent | C3493 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+| src-000382 | parent | C5231 | PaymentObligationPartyRole | [PaymentObligationPartyRole](<bc-3b789ee6fae33e9c93b9.md>) |
+
+## Interpretation and review
+
+- Conceptual business model; not an XML type, database definition or institutional participant assignment.
+- Cardinalities, composition and ownership are not inferred from this six-column table.
+- Same-name components with different complete row content remain separate.
+- Source message-set/domain metadata records publication provenance, not proof that every component is used by every message in those sets. Consult the workbook Traces for message-component usage.
+
+The presence of a role-like name does not make every component a participant. Field types refer to conceptual business elements, not automatically to XSD declaration names. Source records were checked for exact input fingerprints and complete nonblank-row assignment. Visual diagram reconciliation is tracked independently.
+
+[Business-component index](<index.md>) · [Known limitations and issues](<../../../tracking/issues.md>)

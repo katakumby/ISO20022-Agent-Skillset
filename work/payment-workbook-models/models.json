@@ -1,0 +1,2270 @@
+[
+  {
+    "id": "fig-0002",
+    "source_id": "src-000175",
+    "title": "Payments initiation conceptual model",
+    "nodes": [
+      {
+        "id": "ContactPoint",
+        "name": "ContactPoint",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentProcessing",
+        "name": "PaymentProcessing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Mandate",
+        "name": "Mandate",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CreditTransferMandate",
+        "name": "CreditTransferMandate",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DirectDebitMandate",
+        "name": "DirectDebitMandate",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Document",
+        "name": "Document",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentIdentification",
+        "name": "PaymentIdentification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentStatus",
+        "name": "PaymentStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentObligation",
+        "name": "PaymentObligation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentExecution",
+        "name": "PaymentExecution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentInstruction",
+        "name": "PaymentInstruction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashSettlement",
+        "name": "CashSettlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentTerms",
+        "name": "PaymentTerms",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "BankingTransaction",
+        "name": "BankingTransaction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentInitiation",
+        "name": "PaymentInitiation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CurrencyExchange",
+        "name": "CurrencyExchange",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Tax",
+        "name": "Tax",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Cheque",
+        "name": "Cheque",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Garnishment",
+        "name": "Garnishment",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentTracker",
+        "name": "PaymentTracker",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "ContactPoint",
+        "b": "PaymentProcessing",
+        "kind": "--",
+        "label": "- RelatedPayment"
+      },
+      {
+        "a": "ContactPoint",
+        "b": "Document",
+        "kind": "--",
+        "label": "+ PlaceOfStorage / + StoredDocument"
+      },
+      {
+        "a": "Document",
+        "b": "PaymentObligation",
+        "kind": "--",
+        "label": "+ AssociatedDocument"
+      },
+      {
+        "a": "PaymentObligation",
+        "b": "Payment",
+        "kind": "--",
+        "label": "+ PaymentOffset"
+      },
+      {
+        "a": "PaymentObligation",
+        "b": "PaymentTerms",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "BankingTransaction",
+        "b": "PaymentObligation",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Garnishment",
+        "b": "PaymentObligation",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentIdentification",
+        "kind": "--",
+        "label": "+ PaymentRelatedIdentifications"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentStatus",
+        "kind": "--",
+        "label": "+ PaymentStatus"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentExecution",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentProcessing",
+        "kind": "--",
+        "label": "+ ProcessingInstructions"
+      },
+      {
+        "a": "PaymentProcessing",
+        "b": "Mandate",
+        "kind": "--",
+        "label": "+ MandatePaymentType / + RelatedMandate"
+      },
+      {
+        "a": "CreditTransferMandate",
+        "b": "Mandate",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "DirectDebitMandate",
+        "b": "Mandate",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentInitiation",
+        "b": "PaymentExecution",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentExecution",
+        "b": "PaymentInstruction",
+        "kind": "--",
+        "label": "+ Previous / + Next"
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "CashSettlement",
+        "kind": "--",
+        "label": "+ SettlementInstruction"
+      },
+      {
+        "a": "CashSettlement",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ SettlementAccount"
+      },
+      {
+        "a": "CashAccount",
+        "b": "Cheque",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Tax",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ TaxAccount"
+      },
+      {
+        "a": "Payment",
+        "b": "Tax",
+        "kind": "--",
+        "label": "+ TaxOnPayment"
+      },
+      {
+        "a": "Payment",
+        "b": "CurrencyExchange",
+        "kind": "--",
+        "label": "- RelatedPayment / - ExchangeRateData"
+      },
+      {
+        "a": "CurrencyExchange",
+        "b": "Tax",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CurrencyExchange",
+        "b": "PaymentTracker",
+        "kind": "--",
+        "label": "- RelatedPaymentTracker"
+      },
+      {
+        "a": "Payment",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ RelatedPaymentSettlement"
+      }
+    ],
+    "meaning": "Payment connects obligation, processing, identification, status, execution, tax, currency exchange and settlement account. Initiation specializes execution; credit-transfer and direct-debit mandates specialize Mandate; Garnishment specializes PaymentObligation. The long lower association connects Payment and CashAccount. Relationship-end labels are retained together without inferring message sender/receiver roles.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "oneCellAnchor",
+      "attributes": {},
+      "xml": "<ns0:oneCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:ext cx=\"20123150\" cy=\"8048625\" /><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{5F838B84-AC34-4009-9C38-2AE601BD08B7}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"20123150\" cy=\"8048625\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:oneCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "figure_id": "fig-0002",
+      "sheet": "PaymentsInitiation",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/payments/assets/src-000175/media/image2.png",
+      "sha256": "a5740b47f6f3cf50ca350c0c1f351db16630f0ee4522419c4cd897df562c9080",
+      "page": "domains/payments/reference/message-sets/payments-initiation/2025-2026/workbooks/src-000175/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000175-fig-0002",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nclass ContactPoint[\"ContactPoint\"] {\n<<BusinessComponent>>\n}\nclass Mandate[\"Mandate\"] {\n<<BusinessComponent>>\n}\nclass CreditTransferMandate[\"CreditTransferMandate\"] {\n<<BusinessComponent>>\n}\nclass DirectDebitMandate[\"DirectDebitMandate\"] {\n<<BusinessComponent>>\n}\nclass Document[\"Document\"] {\n<<BusinessComponent>>\n}\nclass CurrencyExchange[\"CurrencyExchange\"] {\n<<BusinessComponent>>\n}\nclass Tax[\"Tax\"] {\n<<BusinessComponent>>\n}\nclass Garnishment[\"Garnishment\"] {\n<<BusinessComponent>>\n}\nclass PaymentTracker[\"PaymentTracker\"] {\n<<BusinessComponent>>\n}\nnamespace DICO_BusinessComponents {\nclass PaymentProcessing[\"PaymentProcessing\"] {\n<<BusinessComponent>>\n}\nclass PaymentIdentification[\"PaymentIdentification\"] {\n<<BusinessComponent>>\n}\nclass PaymentStatus[\"PaymentStatus\"] {\n<<BusinessComponent>>\n}\nclass PaymentObligation[\"PaymentObligation\"] {\n<<BusinessComponent>>\n}\nclass Payment[\"Payment\"] {\n<<BusinessComponent>>\n}\nclass PaymentExecution[\"PaymentExecution\"] {\n<<BusinessComponent>>\n}\nclass PaymentInstruction[\"PaymentInstruction\"] {\n<<BusinessComponent>>\n}\nclass CashSettlement[\"CashSettlement\"] {\n<<BusinessComponent>>\n}\nclass PaymentTerms[\"PaymentTerms\"] {\n<<BusinessComponent>>\n}\nclass BankingTransaction[\"BankingTransaction\"] {\n<<BusinessComponent>>\n}\nclass PaymentInitiation[\"PaymentInitiation\"] {\n<<BusinessComponent>>\n}\nclass CashAccount[\"CashAccount\"] {\n<<BusinessComponent>>\n}\nclass Cheque[\"Cheque\"] {\n<<BusinessComponent>>\n}\n}\nContactPoint -- PaymentProcessing : - RelatedPayment\nContactPoint -- Document : + PlaceOfStorage / + StoredDocument\nDocument -- PaymentObligation : + AssociatedDocument\nPaymentObligation -- Payment : + PaymentOffset\nPaymentObligation -- PaymentTerms\nBankingTransaction -- PaymentObligation\nGarnishment --|> PaymentObligation\nPayment -- PaymentIdentification : + PaymentRelatedIdentifications\nPayment -- PaymentStatus : + PaymentStatus\nPayment -- PaymentExecution\nPayment -- PaymentProcessing : + ProcessingInstructions\nPaymentProcessing -- Mandate : + MandatePaymentType / + RelatedMandate\nCreditTransferMandate --|> Mandate\nDirectDebitMandate --|> Mandate\nPaymentInitiation --|> PaymentExecution\nPaymentExecution -- PaymentInstruction : + Previous / + Next\nPaymentInstruction -- CashSettlement : + SettlementInstruction\nCashSettlement -- CashAccount : + SettlementAccount\nCashAccount -- Cheque\nTax -- CashAccount : + TaxAccount\nPayment -- Tax : + TaxOnPayment\nPayment -- CurrencyExchange : - RelatedPayment / - ExchangeRateData\nCurrencyExchange -- Tax\nCurrencyExchange -- PaymentTracker : - RelatedPaymentTracker\nPayment -- CashAccount : + RelatedPaymentSettlement\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 22 visible node occurrences, 25 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "a5740b47f6f3cf50ca350c0c1f351db16630f0ee4522419c4cd897df562c9080",
+      "rendered_png_sha256": "965baa10eddea69d35f46db1f66a20519cc76050e04c9f3b7f6169fee2f6549a"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0002",
+    "source_id": "src-000164",
+    "title": "Payments clearing and settlement conceptual model",
+    "nodes": [
+      {
+        "id": "ServiceLevel",
+        "name": "ServiceLevel",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "BankTransaction",
+        "name": "BankTransaction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentProcessing",
+        "name": "PaymentProcessing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentExecution",
+        "name": "PaymentExecution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentIdentification",
+        "name": "PaymentIdentification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SettlementTimeRequest",
+        "name": "SettlementTimeRequest",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentStatus",
+        "name": "PaymentStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Mandate",
+        "name": "Mandate",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DirectDebitMandate",
+        "name": "DirectDebitMandate",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DirectDebit",
+        "name": "DirectDebit",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CreditTransferMandate",
+        "name": "CreditTransferMandate",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ContactPoint",
+        "name": "ContactPoint",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Party",
+        "name": "Party",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Organisation",
+        "name": "Organisation",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "OrganisationIdentification",
+        "name": "OrganisationIdentification",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashClearingSystemMember",
+        "name": "CashClearingSystemMember",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashSettlement",
+        "name": "CashSettlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentPartyRole",
+        "name": "PaymentPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CreditorAgentRole",
+        "name": "CreditorAgentRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DebtorAgentRole",
+        "name": "DebtorAgentRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentInstruction",
+        "name": "PaymentInstruction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "System",
+        "name": "System",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ClearingSystem",
+        "name": "ClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashClearingSystem",
+        "name": "CashClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "ServiceLevel",
+        "b": "PaymentProcessing",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "BankTransaction",
+        "b": "PaymentProcessing",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "PaymentProcessing",
+        "b": "PaymentExecution",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "PaymentExecution",
+        "b": "Payment",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentIdentification",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "SettlementTimeRequest",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentStatus",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "- Account"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentPartyRole",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "PaymentProcessing",
+        "b": "Mandate",
+        "kind": "--",
+        "label": "+ MandatePaymentType / + RelatedMandate"
+      },
+      {
+        "a": "PaymentProcessing",
+        "b": "ContactPoint",
+        "kind": "--",
+        "label": "- RelatedPayment"
+      },
+      {
+        "a": "DirectDebitMandate",
+        "b": "Mandate",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CreditTransferMandate",
+        "b": "Mandate",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "DirectDebitMandate",
+        "b": "DirectDebit",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "ContactPoint",
+        "b": "Party",
+        "kind": "--",
+        "label": "+ RelatedParty"
+      },
+      {
+        "a": "Organisation",
+        "b": "Party",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Organisation",
+        "b": "Organisation",
+        "kind": "--",
+        "label": "+ ParentOrganisation / + Branch"
+      },
+      {
+        "a": "Organisation",
+        "b": "OrganisationIdentification",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "OrganisationIdentification",
+        "b": "CashClearingSystemMember",
+        "kind": "--",
+        "label": "+ ClearingSystemMemberIdentificationType"
+      },
+      {
+        "a": "CashSettlement",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ SettlementAccount"
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "CashSettlement",
+        "kind": "--",
+        "label": "+ SettlementInstruction"
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "PaymentExecution",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "PaymentPartyRole",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CreditorAgentRole",
+        "b": "PaymentPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "DebtorAgentRole",
+        "b": "PaymentPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "- ProcessingValidityTime"
+      },
+      {
+        "a": "DateTimePeriod",
+        "b": "System",
+        "kind": "--",
+        "label": "- VersionValidityPeriod"
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "System",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashClearingSystem",
+        "b": "ClearingSystem",
+        "kind": "--|>",
+        "label": ""
+      }
+    ],
+    "meaning": "Payment processing connects execution, service level, bank-transaction classification, mandate and contact point. Payment connects account, payment-party role, identification, timing request and status. Cash settlement connects instruction and cash account. Role and system specializations, organisation self-association and every unlabelled source line are retained. The source places “+ ClearingSystemMemberIdentificationType” above the organisation-identification/member region, away from its connector. The label is assigned to the existing OrganisationIdentification–CashClearingSystemMember line using the same workbook FullBusinessModel!A2990:F2990 and inverse A635:F635, which explicitly identify both endpoints and this association-end name. This is a documented resolution of layout ambiguity, not an added relationship; see issue-000025. No CashClearingSystemMember–CashClearingSystem association is drawn in the supplied figure.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>31</ns0:col><ns0:colOff>466725</ns0:colOff><ns0:row>60</ns0:row><ns0:rowOff>104775</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{2935D524-CC9F-46A4-9C55-A848119A2D24}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"19361150\" cy=\"10960100\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 31,
+        "colOff": 466725,
+        "row": 60,
+        "rowOff": 104775
+      },
+      "to_cell": "AF61",
+      "figure_id": "fig-0002",
+      "sheet": "PaymentsClearingAndSettlement",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/payments/assets/src-000164/media/image2.png",
+      "sha256": "0c384532c2adf5f4c1b345e7a96fece18a8e424fa3d068181cff85c4a0dda3f0",
+      "page": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/workbooks/src-000164/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000164-fig-0002",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass ServiceLevel[\"ServiceLevel\"] {\n<<BusinessComponent>>\n}\nclass BankTransaction[\"BankTransaction\"] {\n<<BusinessComponent>>\n}\nclass PaymentProcessing[\"PaymentProcessing\"] {\n<<BusinessComponent>>\n}\nclass PaymentExecution[\"PaymentExecution\"] {\n<<BusinessComponent>>\n}\nclass Payment[\"Payment\"] {\n<<BusinessComponent>>\n}\nclass PaymentIdentification[\"PaymentIdentification\"] {\n<<BusinessComponent>>\n}\nclass SettlementTimeRequest[\"SettlementTimeRequest\"] {\n<<BusinessComponent>>\n}\nclass PaymentStatus[\"PaymentStatus\"] {\n<<BusinessComponent>>\n}\nclass DirectDebitMandate[\"DirectDebitMandate\"] {\n<<BusinessComponent>>\n}\nclass DirectDebit[\"DirectDebit\"] {\n<<BusinessComponent>>\n}\nclass CreditTransferMandate[\"CreditTransferMandate\"] {\n<<BusinessComponent>>\n}\nclass CashSettlement[\"CashSettlement\"] {\n<<BusinessComponent>>\n}\nclass CashAccount[\"CashAccount\"] {\n<<BusinessComponent>>\n}\nclass PaymentPartyRole[\"PaymentPartyRole\"] {\n<<BusinessComponent>>\n}\nclass CreditorAgentRole[\"CreditorAgentRole\"] {\n<<BusinessComponent>>\n}\nclass DebtorAgentRole[\"DebtorAgentRole\"] {\n<<BusinessComponent>>\n}\nclass PaymentInstruction[\"PaymentInstruction\"] {\n<<BusinessComponent>>\n}\nclass System[\"System\"] {\n<<BusinessComponent>>\n}\nclass ClearingSystem[\"ClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass CashClearingSystem[\"CashClearingSystem\"] {\n<<BusinessComponent>>\n}\n}\nclass Mandate[\"Mandate\"] {\n<<BusinessComponent>>\n}\nclass ContactPoint[\"ContactPoint\"] {\n<<BusinessComponent>>\n}\nclass Party[\"Party\"] {\n<<BusinessComponent>>\n}\nclass Organisation[\"Organisation\"] {\n<<BusinessComponent>>\n}\nclass OrganisationIdentification[\"OrganisationIdentification\"] {\n<<BusinessComponent>>\n}\nclass CashClearingSystemMember[\"CashClearingSystemMember\"] {\n<<BusinessComponent>>\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass DateTimePeriod[\"DateTimePeriod\"] {\n<<BusinessComponent>>\n}\n}\nServiceLevel -- PaymentProcessing\nBankTransaction -- PaymentProcessing\nPaymentProcessing -- PaymentExecution\nPaymentExecution -- Payment\nPayment -- PaymentIdentification\nPayment -- SettlementTimeRequest\nPayment -- PaymentStatus\nPayment -- CashAccount : - Account\nPayment -- PaymentPartyRole\nPaymentProcessing -- Mandate : + MandatePaymentType / + RelatedMandate\nPaymentProcessing -- ContactPoint : - RelatedPayment\nDirectDebitMandate --|> Mandate\nCreditTransferMandate --|> Mandate\nDirectDebitMandate -- DirectDebit\nContactPoint -- Party : + RelatedParty\nOrganisation --|> Party\nOrganisation -- Organisation : + ParentOrganisation / + Branch\nOrganisation -- OrganisationIdentification\nOrganisationIdentification -- CashClearingSystemMember : + ClearingSystemMemberIdentificationType\nCashSettlement -- CashAccount : + SettlementAccount\nPaymentInstruction -- CashSettlement : + SettlementInstruction\nPaymentInstruction --|> PaymentExecution\nCashAccount -- PaymentPartyRole\nCreditorAgentRole --|> PaymentPartyRole\nDebtorAgentRole --|> PaymentPartyRole\nPaymentInstruction -- DateTimePeriod : - ProcessingValidityTime\nDateTimePeriod -- System : - VersionValidityPeriod\nClearingSystem --|> System\nCashClearingSystem --|> ClearingSystem\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 27 visible node occurrences, 29 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "0c384532c2adf5f4c1b345e7a96fece18a8e424fa3d068181cff85c4a0dda3f0",
+      "rendered_png_sha256": "02092ef039538bc78e46b81b45f4edd7d3fc129de487c72aa4d0e03d8774ffbc"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0002",
+    "source_id": "src-000016",
+    "title": "Operational cash-management role players",
+    "nodes": [
+      {
+        "id": "Role",
+        "name": "Role",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "RolePlayer",
+        "name": "RolePlayer",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "InformationPartyRole",
+        "name": "InformationPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentPartyRole",
+        "name": "PaymentPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemPartyRole",
+        "name": "SystemPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "System",
+        "name": "System",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Party",
+        "name": "Party",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "IdentificationIssuerRole",
+        "name": "IdentificationIssuerRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "InstructingAgentRole",
+        "name": "InstructingAgentRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashClearingSystemMember",
+        "name": "CashClearingSystemMember",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ClearingMemberRole",
+        "name": "ClearingMemberRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ClearingSystem",
+        "name": "ClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Person",
+        "name": "Person",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Organisation",
+        "name": "Organisation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "TransactionAdministrator",
+        "name": "TransactionAdministrator",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashClearingSystem",
+        "name": "CashClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "FinancialInstitution",
+        "name": "FinancialInstitution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "Role",
+        "b": "RolePlayer",
+        "kind": "--",
+        "label": "+ Player"
+      },
+      {
+        "a": "InformationPartyRole",
+        "b": "Role",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentPartyRole",
+        "b": "Role",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SystemPartyRole",
+        "b": "Role",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "IdentificationIssuerRole",
+        "b": "InformationPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "InstructingAgentRole",
+        "b": "PaymentPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "SystemPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "TransactionAdministrator",
+        "b": "SystemPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SystemPartyRole",
+        "b": "System",
+        "kind": "--",
+        "label": "+ RelatedSystem / + PartyRole"
+      },
+      {
+        "a": "System",
+        "b": "RolePlayer",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Party",
+        "b": "RolePlayer",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "System",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashClearingSystem",
+        "b": "ClearingSystem",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Person",
+        "b": "Party",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Organisation",
+        "b": "Party",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "FinancialInstitution",
+        "b": "Organisation",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "ClearingMemberRole",
+        "b": "CashClearingSystemMember",
+        "kind": "--",
+        "label": "+ ClearingMember / - ClearingSystemMemberIdentification"
+      },
+      {
+        "a": "TransactionAdministrator",
+        "b": "CashClearingSystem",
+        "kind": "--",
+        "label": ""
+      }
+    ],
+    "meaning": "Role associates with its RolePlayer. Information, payment and system-party roles specialize Role, while Party and System specialize RolePlayer. System roles and clearing-member identification remain distinct from the party or institution playing them. TransactionAdministrator specializes SystemPartyRole and associates with CashClearingSystem.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "oneCellAnchor",
+      "attributes": {},
+      "xml": "<ns0:oneCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:ext cx=\"15078075\" cy=\"5810250\" /><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{EFCDBAE3-D915-4F6C-9644-DBC8BB7E66F5}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"15078075\" cy=\"5810250\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:oneCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "figure_id": "fig-0002",
+      "sheet": "RolePlayers",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/payments/assets/src-000016/media/image2.png",
+      "sha256": "710177933794856013ede2a5093526038c4e457f7e3dfbf7719e7d8bea4ea424",
+      "page": "domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000016-fig-0002",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass Role[\"Role\"] {\n<<BusinessComponent>>\n}\nclass RolePlayer[\"RolePlayer\"] {\n<<BusinessComponent>>\n}\nclass InformationPartyRole[\"InformationPartyRole\"] {\n<<BusinessComponent>>\n}\nclass PaymentPartyRole[\"PaymentPartyRole\"] {\n<<BusinessComponent>>\n}\nclass SystemPartyRole[\"SystemPartyRole\"] {\n<<BusinessComponent>>\n}\nclass System[\"System\"] {\n<<BusinessComponent>>\n}\nclass Party[\"Party\"] {\n<<BusinessComponent>>\n}\nclass IdentificationIssuerRole[\"IdentificationIssuerRole\"] {\n<<BusinessComponent>>\n}\nclass InstructingAgentRole[\"InstructingAgentRole\"] {\n<<BusinessComponent>>\n}\nclass ClearingMemberRole[\"ClearingMemberRole\"] {\n<<BusinessComponent>>\n}\nclass ClearingSystem[\"ClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass Person[\"Person\"] {\n<<BusinessComponent>>\n}\nclass Organisation[\"Organisation\"] {\n<<BusinessComponent>>\n}\nclass TransactionAdministrator[\"TransactionAdministrator\"] {\n<<BusinessComponent>>\n}\nclass CashClearingSystem[\"CashClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass FinancialInstitution[\"FinancialInstitution\"] {\n<<BusinessComponent>>\n}\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass CashClearingSystemMember[\"CashClearingSystemMember\"] {\n<<BusinessComponent>>\n}\n}\nRole -- RolePlayer : + Player\nInformationPartyRole --|> Role\nPaymentPartyRole --|> Role\nSystemPartyRole --|> Role\nIdentificationIssuerRole --|> InformationPartyRole\nInstructingAgentRole --|> PaymentPartyRole\nClearingMemberRole --|> SystemPartyRole\nTransactionAdministrator --|> SystemPartyRole\nSystemPartyRole -- System : + RelatedSystem / + PartyRole\nSystem --|> RolePlayer\nParty --|> RolePlayer\nClearingSystem --|> System\nCashClearingSystem --|> ClearingSystem\nPerson --|> Party\nOrganisation --|> Party\nFinancialInstitution --|> Organisation\nClearingMemberRole -- CashClearingSystemMember : + ClearingMember / - ClearingSystemMemberIdentification\nTransactionAdministrator -- CashClearingSystem\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 17 visible node occurrences, 18 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "710177933794856013ede2a5093526038c4e457f7e3dfbf7719e7d8bea4ea424",
+      "rendered_png_sha256": "9d8e1c035db16619e2869be8fb67a08c59c947d7b6e286c3fdc872fdf0fe8d8f"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0003",
+    "source_id": "src-000016",
+    "title": "Operational cash-management payment-related components",
+    "nodes": [
+      {
+        "id": "PaymentExecution",
+        "name": "PaymentExecution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentInstruction",
+        "name": "PaymentInstruction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Account",
+        "name": "Account",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Balance",
+        "name": "Balance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentObligation",
+        "name": "PaymentObligation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashBalance",
+        "name": "CashBalance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentStatus",
+        "name": "PaymentStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashSettlement",
+        "name": "CashSettlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashEntry",
+        "name": "CashEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CreditInstrument",
+        "name": "CreditInstrument",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "BookEntry",
+        "name": "BookEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "PaymentInstruction",
+        "b": "PaymentExecution",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "PaymentExecution",
+        "kind": "--",
+        "label": "+ Previous / + Next"
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "- ProcessingValidityTime"
+      },
+      {
+        "a": "Account",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "+ ReportedPeriod"
+      },
+      {
+        "a": "Account",
+        "b": "Balance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "Account",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashBalance",
+        "b": "Balance",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "PaymentExecution",
+        "b": "Payment",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentObligation",
+        "kind": "--",
+        "label": "+ PaymentOffset"
+      },
+      {
+        "a": "Payment",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashBalance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentStatus",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "CreditInstrument",
+        "kind": "--",
+        "label": "+ RelatedPayment / + CreditMethod"
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashSettlement",
+        "kind": "--",
+        "label": "+ SettlementAccount / + RelatedSettlementInstruction"
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashEntry",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashEntry",
+        "b": "CashBalance",
+        "kind": "--",
+        "label": "+ CashBalanceEntry"
+      },
+      {
+        "a": "CashEntry",
+        "b": "BookEntry",
+        "kind": "--",
+        "label": "+ RelatedBookEntry"
+      },
+      {
+        "a": "BookEntry",
+        "b": "CreditInstrument",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "BookEntry",
+        "b": "CashSettlement",
+        "kind": "--",
+        "label": "+ RelatedSettlementInstruction"
+      }
+    ],
+    "meaning": "Payment instruction has both a generalization to PaymentExecution and a separate Previous/Next association. Payment relates to its obligation, status, cash account and credit method. BookEntry specializes CreditInstrument and connects CashEntry and CashSettlement. Cash-account, balance and date-period relationships are preserved without deriving payment directions.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing3.xml",
+      "anchor_id": 1,
+      "anchor_type": "oneCellAnchor",
+      "attributes": {},
+      "xml": "<ns0:oneCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:ext cx=\"12430125\" cy=\"7391400\" /><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{5E9441DA-2E0C-4DD5-BB35-BA6F1D7DE44B}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"12430125\" cy=\"7391400\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:oneCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "figure_id": "fig-0003",
+      "sheet": "PaymentsRelatedBCs",
+      "media_part": "xl/media/image3.png",
+      "asset": "domains/payments/assets/src-000016/media/image3.png",
+      "sha256": "59d4a58a0bc28dae93762c2d8cd4a8eb99982bc61bd5bbcf088e61cb56d49ba5",
+      "page": "domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/diagrams/fig-0003.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000016-fig-0003",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass PaymentExecution[\"PaymentExecution\"] {\n<<BusinessComponent>>\n}\nclass PaymentInstruction[\"PaymentInstruction\"] {\n<<BusinessComponent>>\n}\nclass Account[\"Account\"] {\n<<BusinessComponent>>\n}\nclass Balance[\"Balance\"] {\n<<BusinessComponent>>\n}\nclass PaymentObligation[\"PaymentObligation\"] {\n<<BusinessComponent>>\n}\nclass Payment[\"Payment\"] {\n<<BusinessComponent>>\n}\nclass CashAccount[\"CashAccount\"] {\n<<BusinessComponent>>\n}\nclass CashBalance[\"CashBalance\"] {\n<<BusinessComponent>>\n}\nclass PaymentStatus[\"PaymentStatus\"] {\n<<BusinessComponent>>\n}\nclass CashSettlement[\"CashSettlement\"] {\n<<BusinessComponent>>\n}\nclass CashEntry[\"CashEntry\"] {\n<<BusinessComponent>>\n}\nclass CreditInstrument[\"CreditInstrument\"] {\n<<BusinessComponent>>\n}\nclass BookEntry[\"BookEntry\"] {\n<<BusinessComponent>>\n}\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass DateTimePeriod[\"DateTimePeriod\"] {\n<<BusinessComponent>>\n}\n}\nPaymentInstruction --|> PaymentExecution\nPaymentInstruction -- PaymentExecution : + Previous / + Next\nPaymentInstruction -- DateTimePeriod : - ProcessingValidityTime\nAccount -- DateTimePeriod : + ReportedPeriod\nAccount -- Balance\nCashAccount --|> Account\nCashBalance --|> Balance\nPaymentExecution -- Payment\nPayment -- PaymentObligation : + PaymentOffset\nPayment -- CashAccount\nCashAccount -- CashBalance\nPayment -- PaymentStatus\nPayment -- CreditInstrument : + RelatedPayment / + CreditMethod\nCashAccount -- CashSettlement : + SettlementAccount / + RelatedSettlementInstruction\nCashAccount -- CashEntry\nCashEntry -- CashBalance : + CashBalanceEntry\nCashEntry -- BookEntry : + RelatedBookEntry\nBookEntry --|> CreditInstrument\nBookEntry -- CashSettlement : + RelatedSettlementInstruction\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 14 visible node occurrences, 19 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "59d4a58a0bc28dae93762c2d8cd4a8eb99982bc61bd5bbcf088e61cb56d49ba5",
+      "rendered_png_sha256": "a4c4f2010c32296ce3a9ea694fadbd1ab24ae7f1c86c9c8678a0a8ecb9291e5e"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0004",
+    "source_id": "src-000016",
+    "title": "Operational transactions, system and account model",
+    "nodes": [
+      {
+        "id": "PartyIdentificationInformation",
+        "name": "PartyIdentificationInformation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentInstruction",
+        "name": "PaymentInstruction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "StandingOrder",
+        "name": "StandingOrder",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashStandingOrder",
+        "name": "CashStandingOrder",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashManagementService",
+        "name": "CashManagementService",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Limit",
+        "name": "Limit",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "LiquidityManagementLimit",
+        "name": "LiquidityManagementLimit",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CurrencyExchange",
+        "name": "CurrencyExchange",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Account",
+        "name": "Account",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "System",
+        "name": "System",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemBusinessInformation",
+        "name": "SystemBusinessInformation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "InformationQualifier",
+        "name": "InformationQualifier",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemIdentification",
+        "name": "SystemIdentification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemEventInformation",
+        "name": "SystemEventInformation",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemAvailability",
+        "name": "SystemAvailability",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemStatus",
+        "name": "SystemStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ClearingSystem",
+        "name": "ClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashClearingSystem",
+        "name": "CashClearingSystem",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "TransactionAdministrator",
+        "name": "TransactionAdministrator",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemPartyRole",
+        "name": "SystemPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SystemMemberRole",
+        "name": "SystemMemberRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Balance",
+        "name": "Balance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashBalance",
+        "name": "CashBalance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "PartyIdentificationInformation",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "- RelatedIdentification / + ValidityPeriod"
+      },
+      {
+        "a": "DateTimePeriod",
+        "b": "PaymentInstruction",
+        "kind": "--",
+        "label": "- ProcessingValidityTime"
+      },
+      {
+        "a": "PaymentInstruction",
+        "b": "StandingOrder",
+        "kind": "--",
+        "label": "+ PaymentInstructionTrigger"
+      },
+      {
+        "a": "StandingOrder",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ RelatedCreditStandingOrder / + CreditAccount"
+      },
+      {
+        "a": "StandingOrder",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": "+ RelatedDebitStandingOrder / + DebitAccount"
+      },
+      {
+        "a": "CashStandingOrder",
+        "b": "StandingOrder",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashStandingOrder",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashStandingOrder",
+        "b": "CashManagementService",
+        "kind": "--",
+        "label": "+ StandingOrder / + RelatedCashServices"
+      },
+      {
+        "a": "CashManagementService",
+        "b": "LiquidityManagementLimit",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "LiquidityManagementLimit",
+        "b": "Limit",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CurrencyExchange",
+        "b": "LiquidityManagementLimit",
+        "kind": "--",
+        "label": "- RelatedLimitManagement"
+      },
+      {
+        "a": "CurrencyExchange",
+        "b": "Account",
+        "kind": "--",
+        "label": "- ReportedAccount"
+      },
+      {
+        "a": "CurrencyExchange",
+        "b": "TransactionAdministrator",
+        "kind": "--",
+        "label": "+ CurrencyExchangeForTransactionAdministrator"
+      },
+      {
+        "a": "Account",
+        "b": "System",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "Balance",
+        "kind": "--",
+        "label": "+ Account / + Balance"
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashBalance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashBalance",
+        "b": "Balance",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SystemMemberRole",
+        "b": "CashBalance",
+        "kind": "--",
+        "label": "+ Counterparty"
+      },
+      {
+        "a": "SystemMemberRole",
+        "b": "Account",
+        "kind": "--",
+        "label": "- SystemMember"
+      },
+      {
+        "a": "SystemMemberRole",
+        "b": "SystemStatus",
+        "kind": "--",
+        "label": "+ MemberStatus"
+      },
+      {
+        "a": "SystemMemberRole",
+        "b": "SystemPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "TransactionAdministrator",
+        "b": "SystemPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "TransactionAdministrator",
+        "b": "CashClearingSystem",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashClearingSystem",
+        "b": "ClearingSystem",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "ClearingSystem",
+        "b": "System",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "System",
+        "b": "SystemBusinessInformation",
+        "kind": "--",
+        "label": "+ SystemGeneratedInformation"
+      },
+      {
+        "a": "SystemBusinessInformation",
+        "b": "InformationQualifier",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "System",
+        "b": "SystemIdentification",
+        "kind": "--",
+        "label": "+ IdentificationForSystem"
+      },
+      {
+        "a": "System",
+        "b": "SystemEventInformation",
+        "kind": "--",
+        "label": "+ Event"
+      },
+      {
+        "a": "System",
+        "b": "SystemAvailability",
+        "kind": "--",
+        "label": "+ Availability"
+      },
+      {
+        "a": "System",
+        "b": "SystemStatus",
+        "kind": "--",
+        "label": "+ Status"
+      }
+    ],
+    "meaning": "Standing orders have separate credit-account and debit-account associations. CashStandingOrder specializes StandingOrder and links cash-management services. Liquidity limits connect service and exchange context. System information, identification, events, availability and status are separate components. SystemMemberRole and TransactionAdministrator specialize SystemPartyRole; their account, balance, system-status and clearing-system associations are retained. CashAccount and Account remain separate visible nodes; the source view does not draw a generalization between them.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing4.xml",
+      "anchor_id": 1,
+      "anchor_type": "oneCellAnchor",
+      "attributes": {},
+      "xml": "<ns0:oneCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:ext cx=\"19773900\" cy=\"10487025\" /><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{608F1D60-D8A9-4351-882B-532F14DA4CFE}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"19773900\" cy=\"10487025\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:oneCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "figure_id": "fig-0004",
+      "sheet": "TransactionsSystemAccount",
+      "media_part": "xl/media/image4.png",
+      "asset": "domains/payments/assets/src-000016/media/image4.png",
+      "sha256": "1b213ca779b38923a81e7d57e632bab3d13eac8c6e988637be0d2d76351da1df",
+      "page": "domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/diagrams/fig-0004.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000016-fig-0004",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass PartyIdentificationInformation[\"PartyIdentificationInformation\"] {\n<<BusinessComponent>>\n}\nclass PaymentInstruction[\"PaymentInstruction\"] {\n<<BusinessComponent>>\n}\nclass StandingOrder[\"StandingOrder\"] {\n<<BusinessComponent>>\n}\nclass CashAccount[\"CashAccount\"] {\n<<BusinessComponent>>\n}\nclass CashStandingOrder[\"CashStandingOrder\"] {\n<<BusinessComponent>>\n}\nclass CashManagementService[\"CashManagementService\"] {\n<<BusinessComponent>>\n}\nclass Limit[\"Limit\"] {\n<<BusinessComponent>>\n}\nclass LiquidityManagementLimit[\"LiquidityManagementLimit\"] {\n<<BusinessComponent>>\n}\nclass CurrencyExchange[\"CurrencyExchange\"] {\n<<BusinessComponent>>\n}\nclass Account[\"Account\"] {\n<<BusinessComponent>>\n}\nclass System[\"System\"] {\n<<BusinessComponent>>\n}\nclass SystemBusinessInformation[\"SystemBusinessInformation\"] {\n<<BusinessComponent>>\n}\nclass SystemIdentification[\"SystemIdentification\"] {\n<<BusinessComponent>>\n}\nclass SystemStatus[\"SystemStatus\"] {\n<<BusinessComponent>>\n}\nclass ClearingSystem[\"ClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass CashClearingSystem[\"CashClearingSystem\"] {\n<<BusinessComponent>>\n}\nclass TransactionAdministrator[\"TransactionAdministrator\"] {\n<<BusinessComponent>>\n}\nclass SystemPartyRole[\"SystemPartyRole\"] {\n<<BusinessComponent>>\n}\nclass SystemMemberRole[\"SystemMemberRole\"] {\n<<BusinessComponent>>\n}\nclass Balance[\"Balance\"] {\n<<BusinessComponent>>\n}\nclass CashBalance[\"CashBalance\"] {\n<<BusinessComponent>>\n}\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass DateTimePeriod[\"DateTimePeriod\"] {\n<<BusinessComponent>>\n}\nclass InformationQualifier[\"InformationQualifier\"] {\n<<BusinessComponent>>\n}\nclass SystemEventInformation[\"SystemEventInformation\"] {\n<<BusinessComponent>>\n}\nclass SystemAvailability[\"SystemAvailability\"] {\n<<BusinessComponent>>\n}\n}\nPartyIdentificationInformation -- DateTimePeriod : - RelatedIdentification / + ValidityPeriod\nDateTimePeriod -- PaymentInstruction : - ProcessingValidityTime\nPaymentInstruction -- StandingOrder : + PaymentInstructionTrigger\nStandingOrder -- CashAccount : + RelatedCreditStandingOrder / + CreditAccount\nStandingOrder -- CashAccount : + RelatedDebitStandingOrder / + DebitAccount\nCashStandingOrder --|> StandingOrder\nCashAccount -- CashStandingOrder\nCashStandingOrder -- CashManagementService : + StandingOrder / + RelatedCashServices\nCashManagementService -- LiquidityManagementLimit\nLiquidityManagementLimit --|> Limit\nCurrencyExchange -- LiquidityManagementLimit : - RelatedLimitManagement\nCurrencyExchange -- Account : - ReportedAccount\nCurrencyExchange -- TransactionAdministrator : + CurrencyExchangeForTransactionAdministrator\nAccount -- System\nAccount -- Balance : + Account / + Balance\nCashAccount -- CashBalance\nCashBalance --|> Balance\nSystemMemberRole -- CashBalance : + Counterparty\nSystemMemberRole -- Account : - SystemMember\nSystemMemberRole -- SystemStatus : + MemberStatus\nSystemMemberRole --|> SystemPartyRole\nTransactionAdministrator --|> SystemPartyRole\nTransactionAdministrator -- CashClearingSystem\nCashClearingSystem --|> ClearingSystem\nClearingSystem --|> System\nSystem -- SystemBusinessInformation : + SystemGeneratedInformation\nSystemBusinessInformation -- InformationQualifier\nSystem -- SystemIdentification : + IdentificationForSystem\nSystem -- SystemEventInformation : + Event\nSystem -- SystemAvailability : + Availability\nSystem -- SystemStatus : + Status\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 25 visible node occurrences, 31 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "1b213ca779b38923a81e7d57e632bab3d13eac8c6e988637be0d2d76351da1df",
+      "rendered_png_sha256": "e4d668c26ef8e336793e5390d8075a1d6c359a0d8054c3c7021864441ba8936e"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0002",
+    "source_id": "src-000006",
+    "title": "Bank-to-customer account conceptual model",
+    "nodes": [
+      {
+        "id": "AccountPartyRole",
+        "name": "AccountPartyRole",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "AccountServicerRole",
+        "name": "AccountServicerRole",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "AccountOwnerRole",
+        "name": "AccountOwnerRole",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "AccountStatus",
+        "name": "AccountStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "AccountIdentification",
+        "name": "AccountIdentification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Account",
+        "name": "Account",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Balance",
+        "name": "Balance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Entry",
+        "name": "Entry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashEntry",
+        "name": "CashEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesAccount",
+        "name": "SecuritiesAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Interest",
+        "name": "Interest",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Tax",
+        "name": "Tax",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentIdentification",
+        "name": "PaymentIdentification",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "AccountServicerRole",
+        "b": "AccountPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "AccountOwnerRole",
+        "b": "AccountPartyRole",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "AccountPartyRole",
+        "kind": "--",
+        "label": "+ PartyRole"
+      },
+      {
+        "a": "Account",
+        "b": "AccountStatus",
+        "kind": "--",
+        "label": "+ Status"
+      },
+      {
+        "a": "Account",
+        "b": "AccountIdentification",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "Balance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "Account",
+        "kind": "--",
+        "label": "+ SubAccount / + ParentAccount"
+      },
+      {
+        "a": "Account",
+        "b": "Entry",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "Account",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SecuritiesAccount",
+        "b": "Account",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashEntry",
+        "b": "Entry",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashEntry",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Balance",
+        "b": "Interest",
+        "kind": "--",
+        "label": "+ AccountBalance"
+      },
+      {
+        "a": "Interest",
+        "b": "Tax",
+        "kind": "--",
+        "label": "+ InterestTax"
+      },
+      {
+        "a": "CashAccount",
+        "b": "Payment",
+        "kind": "--",
+        "label": "- Account"
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentIdentification",
+        "kind": "--",
+        "label": "+ PaymentRelatedIdentifications"
+      }
+    ],
+    "meaning": "AccountOwnerRole and AccountServicerRole specialize AccountPartyRole. This preserves their conceptual role distinction without equating either with an institution. Account has status, identification, balance, entries and a parent/sub-account self-association. Cash and securities accounts specialize Account; CashEntry specializes Entry. Interest, interest tax, payment and payment identification remain explicitly connected.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>19</ns0:col><ns0:colOff>333375</ns0:colOff><ns0:row>53</ns0:row><ns0:rowOff>66675</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{42874670-3581-48F8-8E71-E67233A7A380}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"12455525\" cy=\"9655175\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 19,
+        "colOff": 333375,
+        "row": 53,
+        "rowOff": 66675
+      },
+      "to_cell": "T54",
+      "figure_id": "fig-0002",
+      "sheet": "Account",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/payments/assets/src-000006/media/image2.png",
+      "sha256": "3ef65cc36f6a0fd62985334e4c8e5493effdfa0c38ebe9553983470f1b664b9a",
+      "page": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/workbooks/src-000006/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000006-fig-0002",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass AccountPartyRole[\"AccountPartyRole\"] {\n<<BusinessComponent>>\n}\nclass AccountStatus[\"AccountStatus\"] {\n<<BusinessComponent>>\n}\nclass AccountIdentification[\"AccountIdentification\"] {\n<<BusinessComponent>>\n}\nclass Account[\"Account\"] {\n<<BusinessComponent>>\n}\nclass Balance[\"Balance\"] {\n<<BusinessComponent>>\n}\nclass Entry[\"Entry\"] {\n<<BusinessComponent>>\n}\nclass CashEntry[\"CashEntry\"] {\n<<BusinessComponent>>\n}\nclass CashAccount[\"CashAccount\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesAccount[\"SecuritiesAccount\"] {\n<<BusinessComponent>>\n}\n}\nclass AccountServicerRole[\"AccountServicerRole\"] {\n<<BusinessComponent>>\n}\nclass AccountOwnerRole[\"AccountOwnerRole\"] {\n<<BusinessComponent>>\n}\nclass Interest[\"Interest\"] {\n<<BusinessComponent>>\n}\nclass Tax[\"Tax\"] {\n<<BusinessComponent>>\n}\nclass Payment[\"Payment\"] {\n<<BusinessComponent>>\n}\nclass PaymentIdentification[\"PaymentIdentification\"] {\n<<BusinessComponent>>\n}\nAccountServicerRole --|> AccountPartyRole\nAccountOwnerRole --|> AccountPartyRole\nAccount -- AccountPartyRole : + PartyRole\nAccount -- AccountStatus : + Status\nAccount -- AccountIdentification\nAccount -- Balance\nAccount -- Account : + SubAccount / + ParentAccount\nAccount -- Entry\nCashAccount --|> Account\nSecuritiesAccount --|> Account\nCashEntry --|> Entry\nCashEntry -- CashAccount\nBalance -- Interest : + AccountBalance\nInterest -- Tax : + InterestTax\nCashAccount -- Payment : - Account\nPayment -- PaymentIdentification : + PaymentRelatedIdentifications\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 15 visible node occurrences, 16 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "3ef65cc36f6a0fd62985334e4c8e5493effdfa0c38ebe9553983470f1b664b9a",
+      "rendered_png_sha256": "730766cdcf11ac5aaacb1fb08aa149677d006c017f207366ef61af6cee226bf4"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0003",
+    "source_id": "src-000006",
+    "title": "Bank-to-customer accounts, balances and entries",
+    "nodes": [
+      {
+        "id": "GenericIdentification",
+        "name": "GenericIdentification",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": null
+      },
+      {
+        "id": "AccountStatus",
+        "name": "AccountStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": null
+      },
+      {
+        "id": "AccountIdentification",
+        "name": "AccountIdentification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "Account",
+        "name": "Account",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "SecuritiesAccount",
+        "name": "SecuritiesAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "AccountLink",
+        "name": "AccountLink",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "CashAccount",
+        "name": "CashAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "Entry",
+        "name": "Entry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "SecuritiesEntry",
+        "name": "SecuritiesEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "CashEntry",
+        "name": "CashEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "Balance",
+        "name": "Balance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "CashBalance",
+        "name": "CashBalance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "SecuritiesBalance",
+        "name": "SecuritiesBalance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "BankTransaction",
+        "name": "BankTransaction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Payment",
+        "name": "Payment",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentIdentification",
+        "name": "PaymentIdentification",
+        "package": "(package not printed)",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "Account",
+        "b": "Account",
+        "kind": "--",
+        "label": "+ SubAccount / + ParentAccount"
+      },
+      {
+        "a": "CashAccount",
+        "b": "Account",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SecuritiesAccount",
+        "b": "Account",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SecuritiesAccount",
+        "b": "AccountLink",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "AccountLink",
+        "b": "CashAccount",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "GenericIdentification",
+        "kind": "--",
+        "label": "+ Type"
+      },
+      {
+        "a": "GenericIdentification",
+        "b": "BankTransaction",
+        "kind": "--",
+        "label": "+ IdentificationForBankTransaction"
+      },
+      {
+        "a": "Account",
+        "b": "AccountStatus",
+        "kind": "--",
+        "label": "+ Status"
+      },
+      {
+        "a": "Account",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "+ ReportedPeriod"
+      },
+      {
+        "a": "Account",
+        "b": "AccountIdentification",
+        "kind": "--",
+        "label": "+ Identification"
+      },
+      {
+        "a": "Account",
+        "b": "Entry",
+        "kind": "--",
+        "label": "+ Entry"
+      },
+      {
+        "a": "Entry",
+        "b": "BankTransaction",
+        "kind": "--",
+        "label": "+ BankTransactionCode"
+      },
+      {
+        "a": "SecuritiesEntry",
+        "b": "Entry",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashEntry",
+        "b": "Entry",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "Balance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Entry",
+        "b": "Balance",
+        "kind": "--",
+        "label": "+ BalanceEntry"
+      },
+      {
+        "a": "CashBalance",
+        "b": "Balance",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "SecuritiesBalance",
+        "b": "Balance",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashAccount",
+        "b": "Payment",
+        "kind": "--",
+        "label": "- Account"
+      },
+      {
+        "a": "CashAccount",
+        "b": "CashBalance",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Payment",
+        "b": "PaymentIdentification",
+        "kind": "--",
+        "label": "+ PaymentRelatedIdentifications"
+      }
+    ],
+    "meaning": "Account, Entry and Balance each have cash and securities specializations. AccountLink connects SecuritiesAccount and CashAccount. Account types and bank transactions link to GenericIdentification; Entry connects BankTransaction through the printed BankTransactionCode end label. The general Account–Balance and specific CashAccount–CashBalance lines are both retained. Most source boxes omit stereotypes; only the printed BusinessComponent stereotypes are reconstructed.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing3.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>26</ns0:col><ns0:colOff>200025</ns0:colOff><ns0:row>36</ns0:row><ns0:rowOff>38100</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{9251A049-0F50-4568-A87F-51E70585688F}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"16789400\" cy=\"6553200\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 26,
+        "colOff": 200025,
+        "row": 36,
+        "rowOff": 38100
+      },
+      "to_cell": "AA37",
+      "figure_id": "fig-0003",
+      "sheet": "AccountBalanceEntry",
+      "media_part": "xl/media/image3.png",
+      "asset": "domains/payments/assets/src-000006/media/image3.png",
+      "sha256": "865748b24c4b326a237d91eefea7f2a8fc06c9c1c9e5b7fdf5534a46a1472852",
+      "page": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/workbooks/src-000006/diagrams/fig-0003.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000006-fig-0003",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponentsDataTypes {\nclass GenericIdentification[\"GenericIdentification\"]\nclass DateTimePeriod[\"DateTimePeriod\"]\n}\nnamespace DICO_BusinessComponents {\nclass AccountStatus[\"AccountStatus\"]\nclass AccountIdentification[\"AccountIdentification\"]\nclass Account[\"Account\"]\nclass SecuritiesAccount[\"SecuritiesAccount\"]\nclass AccountLink[\"AccountLink\"]\nclass CashAccount[\"CashAccount\"]\nclass Entry[\"Entry\"]\nclass SecuritiesEntry[\"SecuritiesEntry\"]\nclass CashEntry[\"CashEntry\"]\nclass Balance[\"Balance\"]\nclass CashBalance[\"CashBalance\"]\nclass SecuritiesBalance[\"SecuritiesBalance\"]\nclass BankTransaction[\"BankTransaction\"] {\n<<BusinessComponent>>\n}\n}\nclass Payment[\"Payment\"] {\n<<BusinessComponent>>\n}\nclass PaymentIdentification[\"PaymentIdentification\"] {\n<<BusinessComponent>>\n}\nAccount -- Account : + SubAccount / + ParentAccount\nCashAccount --|> Account\nSecuritiesAccount --|> Account\nSecuritiesAccount -- AccountLink\nAccountLink -- CashAccount\nAccount -- GenericIdentification : + Type\nGenericIdentification -- BankTransaction : + IdentificationForBankTransaction\nAccount -- AccountStatus : + Status\nAccount -- DateTimePeriod : + ReportedPeriod\nAccount -- AccountIdentification : + Identification\nAccount -- Entry : + Entry\nEntry -- BankTransaction : + BankTransactionCode\nSecuritiesEntry --|> Entry\nCashEntry --|> Entry\nAccount -- Balance\nEntry -- Balance : + BalanceEntry\nCashBalance --|> Balance\nSecuritiesBalance --|> Balance\nCashAccount -- Payment : - Account\nCashAccount -- CashBalance\nPayment -- PaymentIdentification : + PaymentRelatedIdentifications\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 17 visible node occurrences, 21 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "865748b24c4b326a237d91eefea7f2a8fc06c9c1c9e5b7fdf5534a46a1472852",
+      "rendered_png_sha256": "f546bb3efbd95e7edf8cb662149b084e07da65868af5b8e3d522e1445a661e77"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  },
+  {
+    "id": "fig-0004",
+    "source_id": "src-000006",
+    "title": "Bank-to-customer cash balance and availability",
+    "nodes": [
+      {
+        "id": "Entry",
+        "name": "Entry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Balance",
+        "name": "Balance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "Account",
+        "name": "Account",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Limit",
+        "name": "Limit",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "CashEntry",
+        "name": "CashEntry",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashAvailability",
+        "name": "CashAvailability",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      },
+      {
+        "id": "CashBalance",
+        "name": "CashBalance",
+        "package": "DICO_BusinessComponents",
+        "stereotype": null
+      }
+    ],
+    "edges": [
+      {
+        "a": "Entry",
+        "b": "Balance",
+        "kind": "--",
+        "label": "+ BalanceEntry"
+      },
+      {
+        "a": "Balance",
+        "b": "Account",
+        "kind": "--",
+        "label": ""
+      },
+      {
+        "a": "Account",
+        "b": "DateTimePeriod",
+        "kind": "--",
+        "label": "+ ReportedPeriod"
+      },
+      {
+        "a": "DateTimePeriod",
+        "b": "Limit",
+        "kind": "--",
+        "label": "+ ValidityPeriod"
+      },
+      {
+        "a": "CashEntry",
+        "b": "Entry",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashEntry",
+        "b": "CashAvailability",
+        "kind": "--",
+        "label": "Availability"
+      },
+      {
+        "a": "CashBalance",
+        "b": "Balance",
+        "kind": "--|>",
+        "label": ""
+      },
+      {
+        "a": "CashBalance",
+        "b": "CashAvailability",
+        "kind": "--",
+        "label": "+ Availability"
+      }
+    ],
+    "meaning": "CashEntry and CashBalance specialize Entry and Balance respectively and each associates separately with CashAvailability. Balance relates to Account; Account reports a DateTimePeriod, also used as the Limit validity period. The CashEntry–CashAvailability label is printed without a plus sign, unlike the CashBalance association.",
+    "limitations": [],
+    "source": {
+      "drawing_part": "xl/drawings/drawing4.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>31</ns0:col><ns0:colOff>371475</ns0:colOff><ns0:row>17</ns0:row><ns0:rowOff>66675</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{7443AD5A-CD37-4204-B1D3-C9331CD9B574}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"20151725\" cy=\"3140075\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 31,
+        "colOff": 371475,
+        "row": 17,
+        "rowOff": 66675
+      },
+      "to_cell": "AF18",
+      "figure_id": "fig-0004",
+      "sheet": "CashBalance",
+      "media_part": "xl/media/image4.png",
+      "asset": "domains/payments/assets/src-000006/media/image4.png",
+      "sha256": "202ab4449b30b2c7c4cba676aa36e4086a2e80f60068180cedbfb885c030fb92",
+      "page": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/workbooks/src-000006/diagrams/fig-0004.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000006-fig-0004",
+    "review_status": "reviewed",
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass Entry[\"Entry\"] {\n<<BusinessComponent>>\n}\nclass Balance[\"Balance\"]\nclass Account[\"Account\"] {\n<<BusinessComponent>>\n}\nclass Limit[\"Limit\"]\nclass CashEntry[\"CashEntry\"] {\n<<BusinessComponent>>\n}\nclass CashAvailability[\"CashAvailability\"]\nclass CashBalance[\"CashBalance\"]\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass DateTimePeriod[\"DateTimePeriod\"] {\n<<BusinessComponent>>\n}\n}\nEntry -- Balance : + BalanceEntry\nBalance -- Account\nAccount -- DateTimePeriod : + ReportedPeriod\nDateTimePeriod -- Limit : + ValidityPeriod\nCashEntry --|> Entry\nCashEntry -- CashAvailability : Availability\nCashBalance --|> Balance\nCashBalance -- CashAvailability : + Availability\n",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Direct comparison of each complete source image and rendered PNG; checked all 8 visible node occurrences, 8 relationship lines, literal endpoint labels, inheritance direction, package labels and printed/omitted stereotypes. No multiplicities are printed or inferred. The src-000164 displaced label is resolved from FullBusinessModel A2990:F2990 and A635:F635; original source retained.",
+      "source_image_sha256": "202ab4449b30b2c7c4cba676aa36e4086a2e80f60068180cedbfb885c030fb92",
+      "rendered_png_sha256": "294684b390afa58ee7a4b8a7386eb956fecd36f5ab87c45f9d65a2540a0684f3"
+    },
+    "package_note": "Namespaces group only printed from-package labels for readability; the source does not draw those enclosing boxes. Nodes with no printed package remain outside these groups. No package membership is inferred from the component name.",
+    "multiplicity_note": "No numeric multiplicities are printed in this source view; none are inferred."
+  }
+]

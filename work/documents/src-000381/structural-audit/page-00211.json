@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 211,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 204,
+    "1": 121
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 194,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "1d7897c59d31253d2d9771725db68d81d08521bb5b1e8260fe4fccef808e361b",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 241,
+      "bbox": [
+        84.5394,
+        552.5237,
+        257.7415,
+        553.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        543.8929,
+        273.9261,
+        553.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 243,
+      "bbox": [
+        256.7415,
+        552.5237,
+        274.4261,
+        553.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        543.8929,
+        273.9261,
+        553.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0334",
+      "file_page": 211,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        555.5905733333334,
+        322.8928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0334.md",
+      "rows": 11,
+      "matrix_cells": 66,
+      "physical_cells": 66,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "9f876688852c94a30b57c25064631fb9d5c30e31da9cb2b0449fd2791d0a0fa4",
+      "cell_geometry_sha256": "e38161716d9d54d90f88c2f1f2684987f42ddd1dbbecb53080b768d6053bcdbc",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 66,
+      "independent_cells_match": 66,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0335",
+      "file_page": 211,
+      "bbox": [
+        85.03936999999996,
+        560.8928900000001,
+        555.5905733333334,
+        629.4928900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0335.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ced4018075811e974ddac0b3c08c3c7fe950c3e8fc58a639afd85637289bf4eb",
+      "cell_geometry_sha256": "7adff2016bdd41dbad29eefa2ad6c481ab3aace223300ae370826217535d3504",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

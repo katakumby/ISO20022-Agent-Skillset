@@ -1,0 +1,35 @@
+%%{init: {"flowchart": {"htmlLabels": false, "wrappingWidth": 260}}}%%
+flowchart TB
+classDef green fill:#c5d0a5,stroke:#222,color:#000
+classDef blue fill:#bfd4ee,stroke:#222,color:#000
+classDef grey fill:#eeeeee,stroke:#555,color:#000
+classDef bar fill:#222,stroke:#222,color:#222
+subgraph A["IntructingParty"]
+S@{ shape: f-circ, label: " " }
+M("ManageCash"):::grey
+I("InstructSubBalanceMovement"):::green
+J["┃"]:::bar
+N("Monitor"):::green
+R("Reconcile"):::grey
+E@{ shape: fr-circ, label: " " }
+end
+subgraph B["ServicingExecutingParty"]
+P("ProcessInstruction"):::green
+V{"Validated"}:::green
+F["━━━━━━━━"]:::bar
+K["┃"]:::bar
+T("AdviseStatus"):::green
+X("SettleInstruction"):::green
+D{"Settled"}:::green
+C("ConfirmMovement"):::green
+end
+S --> M --> I --> P --> V
+V -->|No| K
+V -->|Yes| F
+F --> K
+F --> X --> D
+D -->|No| K
+D -->|Yes| C
+D -->|Partial Settlement| C
+K --> T --> J
+C --> J --> N --> R --> E

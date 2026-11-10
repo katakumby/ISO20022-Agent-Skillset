@@ -1,0 +1,46 @@
+classDiagram
+direction TB
+class Asset {
+<<BusinessComponent>>
+}
+class AssetClassification {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity {
+<<BusinessComponent>>
+}
+class SecuritiesRelatedFees {
+<<BusinessComponent>>
+}
+class InvestmentFundFamily {
+<<BusinessComponent>>
+}
+class UmbrellaFund {
+<<BusinessComponent>>
+}
+class InvestmentFund {
+<<BusinessComponent>>
+}
+class InvestmentFundClass {
+<<BusinessComponent>>
+}
+class InvestmentFundClassProcessingCharacteristics {
+<<BusinessComponent>>
+}
+class TimeFrame {
+<<BusinessComponent>>
+}
+Asset -- AssetClassification
+Security --|> Asset
+SecuritiesQuantity -- Security : - MinimumQuantity / + MinimumQuantityDebt
+Security -- SecuritiesRelatedFees : + Fees
+InvestmentFundFamily -- InvestmentFund : + Family
+UmbrellaFund -- InvestmentFund : + SubFund
+InvestmentFund -- InvestmentFundClass
+InvestmentFundClass --|> Security
+InvestmentFundClass -- InvestmentFundClassProcessingCharacteristics : + FundClass / + ProcessingCharacteristics
+InvestmentFundClassProcessingCharacteristics -- TimeFrame : - RelatedProcessingCharacteristics / - DealingCutOffTimeFrame
+InvestmentFundClassProcessingCharacteristics -- TimeFrame : + SubscriptionSettlementRelatedFundProcessing / + SettlementCycle

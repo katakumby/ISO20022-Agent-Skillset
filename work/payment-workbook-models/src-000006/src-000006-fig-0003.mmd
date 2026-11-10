@@ -1,0 +1,50 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponentsDataTypes {
+class GenericIdentification["GenericIdentification"]
+class DateTimePeriod["DateTimePeriod"]
+}
+namespace DICO_BusinessComponents {
+class AccountStatus["AccountStatus"]
+class AccountIdentification["AccountIdentification"]
+class Account["Account"]
+class SecuritiesAccount["SecuritiesAccount"]
+class AccountLink["AccountLink"]
+class CashAccount["CashAccount"]
+class Entry["Entry"]
+class SecuritiesEntry["SecuritiesEntry"]
+class CashEntry["CashEntry"]
+class Balance["Balance"]
+class CashBalance["CashBalance"]
+class SecuritiesBalance["SecuritiesBalance"]
+class BankTransaction["BankTransaction"] {
+<<BusinessComponent>>
+}
+}
+class Payment["Payment"] {
+<<BusinessComponent>>
+}
+class PaymentIdentification["PaymentIdentification"] {
+<<BusinessComponent>>
+}
+Account -- Account : + SubAccount / + ParentAccount
+CashAccount --|> Account
+SecuritiesAccount --|> Account
+SecuritiesAccount -- AccountLink
+AccountLink -- CashAccount
+Account -- GenericIdentification : + Type
+GenericIdentification -- BankTransaction : + IdentificationForBankTransaction
+Account -- AccountStatus : + Status
+Account -- DateTimePeriod : + ReportedPeriod
+Account -- AccountIdentification : + Identification
+Account -- Entry : + Entry
+Entry -- BankTransaction : + BankTransactionCode
+SecuritiesEntry --|> Entry
+CashEntry --|> Entry
+Account -- Balance
+Entry -- Balance : + BalanceEntry
+CashBalance --|> Balance
+SecuritiesBalance --|> Balance
+CashAccount -- Payment : - Account
+CashAccount -- CashBalance
+Payment -- PaymentIdentification : + PaymentRelatedIdentifications

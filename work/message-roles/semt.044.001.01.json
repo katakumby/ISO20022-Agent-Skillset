@@ -1,0 +1,497 @@
+{
+  "message_id": "semt.044.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "81 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+      "definition_pages": [
+        2761,
+        2827
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesTransactionPenaltiesReport V01 message",
+          "message_target": "current-message-scope-name-variant",
+          "receiver": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000374-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the Executing/Servicing Party",
+            "labels": [
+              {
+                "label": "the Executing/Servicing Party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-semt.044.001.01-p2761-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "81 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the instructing party to inform about the cash penalties:",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the instructing party to inform about the cash penalties:",
+          "raw_quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the\ninstructing party to inform about the cash penalties:",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-semt.044.001.01-p2761-c001",
+          "mentions": [
+            {
+              "label": "Executing/Servicing Party",
+              "start": 68,
+              "end": 93,
+              "resolution": {
+                "label": "Executing/Servicing Party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 101,
+              "end": 118,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000374-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-semt.044.001.01-p2761-c001-d1"
+          ]
+        },
+        {
+          "quote": "For example, in case of a CSD, the information shall include the cash penalties that are either imposed or credited to all of its participants and the CSD itself; in case of a CSD participant, the information shall include the cash penalties that are either imposed or credited to the CSD participant itself.",
+          "raw_quote": "For example, in case of a CSD, the information shall include the cash\npenalties that are either imposed or credited to all of its participants and the CSD itself; in case of a\nCSD participant, the information shall include the cash penalties that are either imposed or credited to\nthe CSD participant itself.",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-semt.044.001.01-p2761-c002",
+          "mentions": [
+            {
+              "label": "CSD participant",
+              "start": 176,
+              "end": 191,
+              "resolution": {
+                "label": "CSD participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-csd-participant",
+                  "path": "shared/reference/participants/participant-src-000374-csd-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "CSD participant",
+              "start": 285,
+              "end": 300,
+              "resolution": {
+                "label": "CSD participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-csd-participant",
+                  "path": "shared/reference/participants/participant-src-000374-csd-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.044.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2761
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+                        "file_pages": [
+                          179
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Newly computed cash penalties.",
+          "raw_quote": "Newly computed cash penalties.",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Modified penalties: to inform about the modifications occurred in existing cash penalties since the previous reporting.",
+          "raw_quote": "Modified penalties: to inform about the modifications occurred in existing cash penalties since the\nprevious reporting.",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Aggregated amounts of cash penalties: to inform about the aggregated amounts of the cash penalties computed for the business days of a given period, for example the previous month.",
+          "raw_quote": "Aggregated amounts of cash penalties: to inform about the aggregated amounts of the cash penalties\ncomputed for the business days of a given period, for example the previous month.",
+          "file_pages": [
+            2761
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2761
+      ],
+      "file_pages": [
+        2761
+      ]
+    },
+    {
+      "source_id": "src-000375",
+      "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+      "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+      "definition_pages": [
+        179,
+        245
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesTransactionPenaltiesReport V01 message",
+          "message_target": "current-message-scope-name-variant",
+          "receiver": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000374-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the Executing/Servicing Party",
+            "labels": [
+              {
+                "label": "the Executing/Servicing Party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-executing-servicing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000375-semt.044.001.01-p179-c001-d1",
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "heading": "6 semt.044.001.01 SecuritiesTransactionPenaltiesReportV01",
+          "file_pages": [
+            179
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the instructing party to inform about the cash penalties:",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the instructing party to inform about the cash penalties:",
+          "raw_quote": "The SecuritiesTransactionPenaltiesReport V01 message is sent by the Executing/Servicing Party to the\ninstructing party to inform about the cash penalties:",
+          "file_pages": [
+            179
+          ],
+          "section": "scope",
+          "evidence_id": "src-000375-semt.044.001.01-p179-c001",
+          "mentions": [
+            {
+              "label": "Executing/Servicing Party",
+              "start": 68,
+              "end": 93,
+              "resolution": {
+                "label": "Executing/Servicing Party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-executing-servicing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 101,
+              "end": 118,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000374-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000375-semt.044.001.01-p179-c001-d1"
+          ]
+        },
+        {
+          "quote": "For example, in case of a CSD, the information shall include the cash penalties that are either imposed or credited to all of its participants and the CSD itself; in case of a CSD participant, the information shall include the cash penalties that are either imposed or credited to the CSD participant itself.",
+          "raw_quote": "For example, in case of a CSD, the information shall include the cash\npenalties that are either imposed or credited to all of its participants and the CSD itself; in case of a\nCSD participant, the information shall include the cash penalties that are either imposed or credited to\nthe CSD participant itself.",
+          "file_pages": [
+            179
+          ],
+          "section": "scope",
+          "evidence_id": "src-000375-semt.044.001.01-p179-c002",
+          "mentions": [
+            {
+              "label": "CSD participant",
+              "start": 176,
+              "end": 191,
+              "resolution": {
+                "label": "CSD participant",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-csd-participant",
+                  "path": "shared/reference/participants/participant-src-000374-csd-participant.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "CSD participant",
+              "start": 285,
+              "end": 300,
+              "resolution": {
+                "label": "CSD participant",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-csd-participant",
+                  "path": "shared/reference/participants/participant-src-000374-csd-participant.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Newly computed cash penalties.",
+          "raw_quote": "Newly computed cash penalties.",
+          "file_pages": [
+            179
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Modified penalties: to inform about the modifications occurred in existing cash penalties since the previous reporting.",
+          "raw_quote": "Modified penalties: to inform about the modifications occurred in existing cash penalties since the\nprevious reporting.",
+          "file_pages": [
+            179
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Aggregated amounts of cash penalties: to inform about the aggregated amounts of the cash penalties computed for the business days of a given period, for example the previous month.",
+          "raw_quote": "Aggregated amounts of cash penalties: to inform about the aggregated amounts of the cash penalties\ncomputed for the business days of a given period, for example the previous month.",
+          "file_pages": [
+            179
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        179
+      ],
+      "file_pages": [
+        179
+      ]
+    }
+  ]
+}

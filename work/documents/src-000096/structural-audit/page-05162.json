@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 5162,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 158,
+    "2": 307
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 292,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "e70a8065db66d9e5914d11e5cf14460ba00cef3c1dc44ac32f85b27ca7651fb9",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        130.1204,
+        84.3237,
+        292.2337,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        313.9798,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 6,
+      "bbox": [
+        291.2337,
+        84.3237,
+        314.4798,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        313.9798,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 15,
+      "bbox": [
+        84.5394,
+        176.5237,
+        232.1702,
+        177.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        167.8929,
+        253.9163,
+        177.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 17,
+      "bbox": [
+        231.1702,
+        176.5237,
+        254.4163,
+        177.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        167.8929,
+        253.9163,
+        177.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-7840",
+      "file_page": 5162,
+      "bbox": [
+        85.03936999999996,
+        184.89291000000014,
+        555.5905775,
+        637.2929800000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-7840.md",
+      "rows": 22,
+      "matrix_cells": 132,
+      "physical_cells": 132,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "da28d9b3287aed8c092d0d43c978745f39160025459b6b74439b54ab3389d06a",
+      "cell_geometry_sha256": "2815e6c280f27fa657312b9efb039a825e1664c0d2294568bfdcfc02cdcd4f64",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 132,
+      "independent_cells_match": 132,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

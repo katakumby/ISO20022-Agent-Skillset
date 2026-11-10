@@ -1,0 +1,681 @@
+{
+  "message_id": "camt.020.001.04",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04",
+      "definition_pages": [
+        558,
+        567
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The GetGeneralBusinessInformation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.020.001.04-p558-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04",
+          "file_pages": [
+            558
+          ],
+          "section": "scope",
+          "quote": "The GetGeneralBusinessInformation message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "related-previous-broadcast-message",
+          "message_subject": "broadcast-type message",
+          "limitation": "All or some members receive the earlier broadcast-type message; this is not the GetGeneralBusinessInformation query direction.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "f9af0be1b8784b4dcb990f5f73f5a3413f8d43a0a4ac2ec0268e7df4328abb92",
+          "sender": {
+            "expression": "transaction administrator",
+            "labels": [
+              {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "members",
+            "labels": [
+              {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.020.001.04-p558-c002-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04",
+          "file_pages": [
+            558
+          ],
+          "section": "scope",
+          "quote": "It is used to request information on a broadcast-type message previously sent by the transaction administrator to all or some of the members, giving information related to the processing business.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "general business information messages",
+          "message_target": "related-or-unspecified-message",
+          "receiver": {
+            "expression": "the members, which may request further action from them",
+            "labels": [
+              {
+                "label": "the members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the members, which may request further action from them"
+          },
+          "sender": {
+            "expression": "The transaction administrator",
+            "labels": [
+              {
+                "label": "The transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.020.001.04-p558-c003-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "quote": "The transaction administrator can send general business information messages to the members, which may request further action from them.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "can",
+            "may"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The GetGeneralBusinessInformation message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe GetGeneralBusinessInformation message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            558
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 55,
+              "end": 61,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 69,
+              "end": 94,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.020.001.04-p558-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request information on a broadcast-type message previously sent by the transaction administrator to all or some of the members, giving information related to the processing business.",
+          "raw_quote": "It is used to request information on a broadcast-type message previously sent by the transaction\nadministrator to all or some of the members, giving information related to the processing business.",
+          "file_pages": [
+            558
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c002",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 85,
+              "end": 110,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 133,
+              "end": 140,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.020.001.04-p558-c002-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The transaction administrator can send general business information messages to the members, which may request further action from them.",
+          "raw_quote": "Usage\nThe transaction administrator can send general business information messages to the members, which\nmay request further action from them.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c003",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 4,
+              "end": 29,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 84,
+              "end": 91,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000015-camt.020.001.04-p558-c003-d1"
+          ]
+        },
+        {
+          "quote": "non-solicited reports are pushed by the transaction administrator to the (selected) members together with a reference, a qualifier and a subject line",
+          "raw_quote": "non-solicited reports are pushed by the transaction administrator to the (selected) members together\nwith a reference, a qualifier and a subject line",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c004",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 40,
+              "end": 65,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 84,
+              "end": 91,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "upon request from the members (pull mode), the transaction administrator delivers the full text/content of the message back to the user The Get General Business Information message is used in this second context.",
+          "raw_quote": "upon request from the members (pull mode), the transaction administrator delivers the full text/content\nof the message back to the user\nThe Get General Business Information message is used in this second context.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c005",
+          "mentions": [
+            {
+              "label": "members",
+              "start": 22,
+              "end": 29,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 47,
+              "end": 72,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about a report of general business information previously sent.",
+          "raw_quote": "At any time during the\noperating hours of the system, the member can query the transaction administrator to get information\nabout a report of general business information previously sent.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c006",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 58,
+              "end": 64,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 79,
+              "end": 104,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The member can request information based on the following elements:",
+          "raw_quote": "The member can request information based on the following elements:",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c007",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "priority of the report previously sent, and indication of its format.",
+          "raw_quote": "priority of the report previously sent, and indication of its format.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c008",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "This enumeration has to be agreed upon by the transaction administrator and the members of the system.)",
+          "raw_quote": "This enumeration has to be agreed upon by the\ntransaction administrator and the members of the system.)",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c009",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 46,
+              "end": 71,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 80,
+              "end": 87,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "details of the previously sent message This message will be replied to by a ReturnGeneralBusinessInformation message.",
+          "raw_quote": "details of the previously sent message\nThis message will be replied to by a ReturnGeneralBusinessInformation message.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c010",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "General business information can contain either static data announcing foreseen events affecting the system operations, or dynamic data warning or notifying about unexpected events.",
+          "raw_quote": "General business information can contain either static data\nannouncing foreseen events affecting the system operations, or dynamic data warning or notifying\nabout unexpected events.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "This type of information can be transmitted in either of the two following ways:",
+          "raw_quote": "This type of information can be transmitted in either of the two following ways:",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "reference of the report previously delivered",
+          "raw_quote": "reference of the report previously delivered",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "subject of the report previously delivered, detailing the purpose and content of the message",
+          "raw_quote": "subject of the report previously delivered, detailing the purpose and content of the message",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "(Note that if the format is indicated, the subject refers to a set of pre-agreed texts.",
+          "raw_quote": "(Note that if the format is indicated,\nthe subject refers to a set of pre-agreed texts.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Additional information on the generic design of the Get/Return messages can be found in the section How to Use the Cash Management Messages.",
+          "raw_quote": "Additional information on the generic design of the Get/Return messages can be found in the section\nHow to Use the Cash Management Messages.",
+          "file_pages": [
+            558
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        558
+      ],
+      "file_pages": [
+        558,
+        559
+      ]
+    }
+  ]
+}

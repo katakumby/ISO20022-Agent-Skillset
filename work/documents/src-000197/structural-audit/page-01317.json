@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 1317,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 88,
+    "2": 68
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 58,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "2663919456f76a5f90ebebd024fe286611ebbf7279e83639164583f9412e4526",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 32,
+      "bbox": [
+        130.1204,
+        433.3238,
+        281.6234,
+        434.3238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        424.693,
+        303.3694,
+        434.693
+      ]
+    },
+    {
+      "path_object_ordinal": 34,
+      "bbox": [
+        280.6234,
+        433.3238,
+        303.8694,
+        434.3238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        424.693,
+        303.3694,
+        434.693
+      ]
+    },
+    {
+      "path_object_ordinal": 142,
+      "bbox": [
+        130.1204,
+        710.3239,
+        256.6331,
+        711.3239
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        701.693,
+        278.3792,
+        711.693
+      ]
+    },
+    {
+      "path_object_ordinal": 144,
+      "bbox": [
+        255.6331,
+        710.3239,
+        278.8792,
+        711.3239
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        701.693,
+        278.3792,
+        711.693
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1774",
+      "file_page": 1317,
+      "bbox": [
+        85.03936999999998,
+        533.8930100000001,
+        555.59057,
+        622.6930200000002
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-1774.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f47a095799e4c0a4347b2f3947c1224b9f2627a594b7782fadf057c8d2cd9fb0",
+      "cell_geometry_sha256": "3a3eb9edca6f7e4b01935df64cfaf1dcde01fe1306d8a4b71d495cd3b08dde07",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

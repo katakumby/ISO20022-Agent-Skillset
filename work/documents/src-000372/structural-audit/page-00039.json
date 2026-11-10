@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000372",
+  "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+  "file_page": 39,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 43,
+    "2": 66
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 58,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "493db6c77cf51e3a9c090d395002e0260f08ceb8a2989224a34c4dbe0db1f79a",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        84.5394,
+        96.3237,
+        225.5052,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        236.1282,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        224.5052,
+        96.3237,
+        236.6282,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        236.1282,
+        97.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0045",
+      "file_page": 39,
+      "bbox": [
+        85.03936999999998,
+        104.6929100000001,
+        555.59057,
+        193.49292000000014
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/documents/src-000372/tables/tbl-0045.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a3169f8e80dad755f0ad5ee825ee48c2a4257137c87084b5425ac46bcb5471e3",
+      "cell_geometry_sha256": "92aabddd81564e48f790d58df05778ccb92445bdb8f7d6ad62e01e067056b490",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

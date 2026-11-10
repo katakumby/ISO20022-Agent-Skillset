@@ -1,0 +1,20 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  subgraph C["CCP"]
+    N["End Of Real<br/>Time Session"]
+    S(("Start"))
+    Net("Position Netting")
+  end
+  subgraph M["Clearing Member"]
+    Process("Process Information")
+    E((("End")))
+  end
+  N --> S --> Net --> Process --> E
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

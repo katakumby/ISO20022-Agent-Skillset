@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000080",
+  "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+  "file_page": 1203,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 152,
+    "1": 88
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 142,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "93206fba36e8c1af8e9571cbf4e4586a88104d2e626a66131fbc7bce52e6f277",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-2165",
+      "file_page": 1203,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362328,
+        467.49298000000016
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-2165.md",
+      "rows": 14,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "9c875eb147b2b83020b8b9cab962299b9e32188688fe4f2b9b7f8d83f20f57af",
+      "cell_geometry_sha256": "7870fe01e39695b829d6495b5548e0e71a650e4f36ae5c982a3c9f5719b4495b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 41,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            137.29291000000012,
+            510.2362328,
+            185.49292000000014
+          ],
+          "stored_value": "Option for the account owner not to take\npart in the event. This would include opt-\nout for class actions and lodging of\ndissenters' rights.",
+          "pdfium_value": "Option for the account owner not to take\r\npart in the event. This would include opt\u0002out for class actions and lodging of\r\ndissenters' rights."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-2166",
+      "file_page": 1203,
+      "bbox": [
+        85.03936999999996,
+        537.8930100000001,
+        510.2362328,
+        602.4930100000001
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-2166.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "19c92590e11a83a9511dfe981f318ed0d1628c5128cdef91468f683d063f6fab",
+      "cell_geometry_sha256": "73aa8cff25fac178c6fdfb81b3515e56c0e76a39debd140bfa2e7d224aef768e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-2167",
+      "file_page": 1203,
+      "bbox": [
+        85.03936999999996,
+        684.89304,
+        510.2362328,
+        721.29304
+      ],
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/documents/src-000080/tables/tbl-2167.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "daad61f9cfe8ad04cf5eda98a2c509efa83589334391aff3f989ac9e576841aa",
+      "cell_geometry_sha256": "a1dc0c69ac66a069fa3c667e630c654bce88a693c74371259ce4d05b50634b48",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

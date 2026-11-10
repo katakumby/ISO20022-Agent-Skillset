@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 5302,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 117,
+    "1": 84
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 107,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "c348e59fc48c69cce4a1e1396089c4564344e4a0d8f8e1c29de44164bd2b8f0a",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-8217",
+      "file_page": 5302,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.236231,
+        255.89291000000014
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8217.md",
+      "rows": 6,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "d20675d8c6783d4056a0027330c28a5f8777c65e23a1cf9a2e8ec83a6da99e5f",
+      "cell_geometry_sha256": "ae1f3494f28252ca75a4e5f8b21f5e8533e08e1b8e0e5448879ede9799c98b84",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 17,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            141.29291000000012,
+            510.236231,
+            169.49292000000014
+          ],
+          "stored_value": "Account pool reporting type is a non-\nparticipating foreign financial institution.",
+          "pdfium_value": "Account pool reporting type is a non\u0002participating foreign financial institution."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8218",
+      "file_page": 5302,
+      "bbox": [
+        85.03936999999996,
+        326.2928900000001,
+        510.236231,
+        439.0929000000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8218.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "fd7731048e0015ed8564ad7dc49eb799c5631f4e685e6d935c23838283d141fe",
+      "cell_geometry_sha256": "922a57e48699adb368565ab2ba089271db69d3c73bb6ebef9bfb52f44b13f2fa",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8219",
+      "file_page": 5302,
+      "bbox": [
+        85.03936999999996,
+        509.4929000000001,
+        510.236231,
+        712.2929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8219.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "cfe732d8c70355e64f7395fafb31b9a7033755506884eec15059d9ee289cf3e5",
+      "cell_geometry_sha256": "9d544073d3f7d09615c73c7ba4f2cb6275fa23897735f3a4ca4d6b154ded2e32",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

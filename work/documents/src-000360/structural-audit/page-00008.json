@@ -1,0 +1,90 @@
+{
+  "source_id": "src-000360",
+  "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+  "file_page": 8,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 33,
+    "1": 64
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 27,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "2aa9b2b24aee5e5493260e6b2300494f3f5938f24300a51cfefc61ca7d82dedf",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0004",
+      "file_page": 8,
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.23623142857144,
+        723.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0004.md",
+      "rows": 5,
+      "matrix_cells": 10,
+      "physical_cells": 10,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a2fc18dbc59518f0262d52aa9676e00648154bccf1f6aab6b8092e64de1c7970",
+      "cell_geometry_sha256": "2adda8472d9a57ca0c9de0bf5f5c76b4e393cf20e2becb31198c1a5ae99958d1",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 10,
+      "independent_cells_match": 7,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            74.89291000000014,
+            510.23623142857144,
+            149.0929100000002
+          ],
+          "stored_value": "- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            149.0929100000002,
+            510.23623142857144,
+            347.2929100000001
+          ],
+          "stored_value": "The IntraBalanceMovementModificationQuery\nmessage is sent from an account owner/requestor to a\nsettlement infrastructure to query for the status of intra-\nbalance movement modification instruction(s) based on\na set of search criteria or business attributes.\nThe message may also be used to:\n- re-send a message sent by the account owner to the\naccount servicer (the sub-function of the message is\n\"Duplicate\")\n- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "The IntraBalanceMovementModificationQuery\r\nmessage is sent from an account owner/requestor to a\r\nsettlement infrastructure to query for the status of intra\u0002balance movement modification instruction(s) based on\r\na set of search criteria or business attributes.\r\nThe message may also be used to:\r\n- re-send a message sent by the account owner to the\r\naccount servicer (the sub-function of the message is\r\n\"Duplicate\")\r\n- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        },
+        {
+          "row": 5,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            525.4929000000001,
+            510.23623142857144,
+            723.6929100000001
+          ],
+          "stored_value": "The IntraBalanceMovementCancellationQuery\nmessage is sent from an account owner/requestor to a\nsettlement infrastructure to query for the status of intra-\nbalance movement cancellation instruction(s) based on\na set of search criteria or business attributes.\nThe message may also be used to:\n- re-send a message sent by the account owner to the\naccount servicer (the sub-function of the message is\n\"Duplicate\")\n- provide a third party with a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy\")\n- re-send to a third party a copy of a message being\nsent by the account owner for information (the sub-\nfunction of the message is \"Copy Duplicate\").",
+          "pdfium_value": "The IntraBalanceMovementCancellationQuery\r\nmessage is sent from an account owner/requestor to a\r\nsettlement infrastructure to query for the status of intra\u0002balance movement cancellation instruction(s) based on\r\na set of search criteria or business attributes.\r\nThe message may also be used to:\r\n- re-send a message sent by the account owner to the\r\naccount servicer (the sub-function of the message is\r\n\"Duplicate\")\r\n- provide a third party with a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy\")\r\n- re-send to a third party a copy of a message being\r\nsent by the account owner for information (the sub\u0002function of the message is \"Copy Duplicate\")."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

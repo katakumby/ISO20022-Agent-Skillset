@@ -1,0 +1,75 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class Role["Role"] {
+<<BusinessComponent>>
+}
+class RolePlayer["RolePlayer"] {
+<<BusinessComponent>>
+}
+class InformationPartyRole["InformationPartyRole"] {
+<<BusinessComponent>>
+}
+class PaymentPartyRole["PaymentPartyRole"] {
+<<BusinessComponent>>
+}
+class SystemPartyRole["SystemPartyRole"] {
+<<BusinessComponent>>
+}
+class System["System"] {
+<<BusinessComponent>>
+}
+class Party["Party"] {
+<<BusinessComponent>>
+}
+class IdentificationIssuerRole["IdentificationIssuerRole"] {
+<<BusinessComponent>>
+}
+class InstructingAgentRole["InstructingAgentRole"] {
+<<BusinessComponent>>
+}
+class ClearingMemberRole["ClearingMemberRole"] {
+<<BusinessComponent>>
+}
+class ClearingSystem["ClearingSystem"] {
+<<BusinessComponent>>
+}
+class Person["Person"] {
+<<BusinessComponent>>
+}
+class Organisation["Organisation"] {
+<<BusinessComponent>>
+}
+class TransactionAdministrator["TransactionAdministrator"] {
+<<BusinessComponent>>
+}
+class CashClearingSystem["CashClearingSystem"] {
+<<BusinessComponent>>
+}
+class FinancialInstitution["FinancialInstitution"] {
+<<BusinessComponent>>
+}
+}
+namespace DICO_BusinessComponentsDataTypes {
+class CashClearingSystemMember["CashClearingSystemMember"] {
+<<BusinessComponent>>
+}
+}
+Role -- RolePlayer : + Player
+InformationPartyRole --|> Role
+PaymentPartyRole --|> Role
+SystemPartyRole --|> Role
+IdentificationIssuerRole --|> InformationPartyRole
+InstructingAgentRole --|> PaymentPartyRole
+ClearingMemberRole --|> SystemPartyRole
+TransactionAdministrator --|> SystemPartyRole
+SystemPartyRole -- System : + RelatedSystem / + PartyRole
+System --|> RolePlayer
+Party --|> RolePlayer
+ClearingSystem --|> System
+CashClearingSystem --|> ClearingSystem
+Person --|> Party
+Organisation --|> Party
+FinancialInstitution --|> Organisation
+ClearingMemberRole -- CashClearingSystemMember : + ClearingMember / - ClearingSystemMemberIdentification
+TransactionAdministrator -- CashClearingSystem

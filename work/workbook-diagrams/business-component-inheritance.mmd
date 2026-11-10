@@ -1,0 +1,16 @@
+classDiagram
+direction TB
+class Contract {
+  <<BusinessComponent>>
+}
+class AccountContract {
+  <<BusinessComponent>>
+}
+class CashAccountContract {
+  <<BusinessComponent>>
+}
+Contract <|-- AccountContract
+AccountContract <|-- CashAccountContract
+note for Contract "from DICO_BusinessComponents"
+note for AccountContract "from DICO_BusinessComponents"
+note for CashAccountContract "from DICO_BusinessComponents"

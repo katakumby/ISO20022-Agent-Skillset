@@ -1,0 +1,10 @@
+sequenceDiagram
+participant I as Instructing Party
+participant E as Executing Party
+I->>E: SubscriptionOrder with Order1, Order2, and Order3
+E->>I: OrderInstructionStatusReport for Order1
+E->>I: OrderInstructionStatusReport for Order2
+E->>I: OrderInstructionStatusReport for Order3
+E->>I: SubscriptionOrderConfirmation for Order1
+E->>I: SubscriptionOrderConfirmation for Order2
+E->>I: SubscriptionOrderConfirmation for Order3

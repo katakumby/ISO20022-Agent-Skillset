@@ -1,0 +1,64 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 4957,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 65,
+    "1": 80
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 59,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "ef0c146666bc8875671514b87d3521144fa9e60a12129e59ff445c71eb34b9e3",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-7420",
+      "file_page": 4957,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.23623399999997,
+        724.2929300000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-7420.md",
+      "rows": 8,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "02ec95fe194e1b9bb6185bdf3785604e73da30810ad893532f069709338f34ab",
+      "cell_geometry_sha256": "8635105b0523e8e4eb0a61a3b5dd47a4570b98937cf923b770b15fb52fcc2e4c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 23,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            367.2929100000001,
+            510.23623399999997,
+            545.4929000000001
+          ],
+          "stored_value": "Party appointed by the fund\nmanagement company. This party\nupdates records of investor accounts to\nreflect the daily investor purchases,\nredemptions, switches, transfers, and re-\nregistrations. It ensures the timely\nsettlement of transactions, and may\nprovide tax information to the investor\nand/or to its intermediaries. It may\ncalculate, collect, and rebate\ncommissions. It prepares and distributes\nconfirmations reflecting transactions,\nresulting in unit or cash account\nmovements to the investor or the\ninvestor's intermediary. It responds to\ninquiries concerning account status, and\nprocesses the income distribution.",
+          "pdfium_value": "Party appointed by the fund\r\nmanagement company. This party\r\nupdates records of investor accounts to\r\nreflect the daily investor purchases,\r\nredemptions, switches, transfers, and re\u0002registrations. It ensures the timely\r\nsettlement of transactions, and may\r\nprovide tax information to the investor\r\nand/or to its intermediaries. It may\r\ncalculate, collect, and rebate\r\ncommissions. It prepares and distributes\r\nconfirmations reflecting transactions,\r\nresulting in unit or cash account\r\nmovements to the investor or the\r\ninvestor's intermediary. It responds to\r\ninquiries concerning account status, and\r\nprocesses the income distribution."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

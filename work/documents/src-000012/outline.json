@@ -1,0 +1,424 @@
+[
+  {
+    "page": 3,
+    "title": "1 Introduction",
+    "heading_path": [
+      "1 Introduction"
+    ],
+    "level": 1
+  },
+  {
+    "page": 3,
+    "title": "1.1 How this Guide was created",
+    "heading_path": [
+      "1 Introduction",
+      "1.1 How this Guide was created"
+    ],
+    "level": 2
+  },
+  {
+    "page": 3,
+    "title": "1.2 The ISO 20022 Standard",
+    "heading_path": [
+      "1 Introduction",
+      "1.2 The ISO 20022 Standard"
+    ],
+    "level": 2
+  },
+  {
+    "page": 3,
+    "title": "1.3 Terminology",
+    "heading_path": [
+      "1 Introduction",
+      "1.3 Terminology"
+    ],
+    "level": 2
+  },
+  {
+    "page": 4,
+    "title": "1.4 Separation of layers",
+    "heading_path": [
+      "1 Introduction",
+      "1.4 Separation of layers"
+    ],
+    "level": 2
+  },
+  {
+    "page": 5,
+    "title": "1.5 Link between a Business Application Header and its Message",
+    "heading_path": [
+      "1 Introduction",
+      "1.5 Link between a Business Application Header and its Message"
+    ],
+    "level": 2
+  },
+  {
+    "page": 6,
+    "title": "1.6 Related Documents and Guides",
+    "heading_path": [
+      "1 Introduction",
+      "1.6 Related Documents and Guides"
+    ],
+    "level": 2
+  },
+  {
+    "page": 7,
+    "title": "2 Scenarios",
+    "heading_path": [
+      "2 Scenarios"
+    ],
+    "level": 1
+  },
+  {
+    "page": 8,
+    "title": "2.1 Business Application Header deployment options",
+    "heading_path": [
+      "2 Scenarios",
+      "2.1 Business Application Header deployment options"
+    ],
+    "level": 2
+  },
+  {
+    "page": 9,
+    "title": "2.2 Business Application A  sends a Business Message to  Business Application B",
+    "heading_path": [
+      "2 Scenarios",
+      "2.2 Business Application A  sends a Business Message to  Business Application B"
+    ],
+    "level": 2
+  },
+  {
+    "page": 11,
+    "title": "2.3 Business Application A informs Business Application B that Text based MessageElements (in the BAH or the BusinessMessage) may contain non-Basic-Latin characters",
+    "heading_path": [
+      "2 Scenarios",
+      "2.3 Business Application A informs Business Application B that Text based MessageElements (in the BAH or the BusinessMessage) may contain non-Basic-Latin characters"
+    ],
+    "level": 2
+  },
+  {
+    "page": 12,
+    "title": "2.4 Business Application A informs Business Application B of the Business Service within which this BusinessMessage is exchanged",
+    "heading_path": [
+      "2 Scenarios",
+      "2.4 Business Application A informs Business Application B of the Business Service within which this BusinessMessage is exchanged"
+    ],
+    "level": 2
+  },
+  {
+    "page": 13,
+    "title": "2.5 Business Application A sends a Business Message  with implementation specification",
+    "heading_path": [
+      "2 Scenarios",
+      "2.5 Business Application A sends a Business Message  with implementation specification"
+    ],
+    "level": 2
+  },
+  {
+    "page": 14,
+    "title": "2.6 Business Application A sends a Business Message  with instruction of business processing date",
+    "heading_path": [
+      "2 Scenarios",
+      "2.6 Business Application A sends a Business Message  with instruction of business processing date"
+    ],
+    "level": 2
+  },
+  {
+    "page": 16,
+    "title": "2.7 Business Application A sends a copy  of a previously sent Business Message",
+    "heading_path": [
+      "2 Scenarios",
+      "2.7 Business Application A sends a copy  of a previously sent Business Message"
+    ],
+    "level": 2
+  },
+  {
+    "page": 17,
+    "title": "2.8 Business Application A sends a duplicate  of a previously sent Business Message",
+    "heading_path": [
+      "2 Scenarios",
+      "2.8 Business Application A sends a duplicate  of a previously sent Business Message"
+    ],
+    "level": 2
+  },
+  {
+    "page": 18,
+    "title": "2.9 Business Application A sends a duplicate  of a previously sent copy of a Business Message",
+    "heading_path": [
+      "2 Scenarios",
+      "2.9 Business Application A sends a duplicate  of a previously sent copy of a Business Message"
+    ],
+    "level": 2
+  },
+  {
+    "page": 19,
+    "title": "2.10 Business Application A suspects Business Application B  has not received the BusinessMessage",
+    "heading_path": [
+      "2 Scenarios",
+      "2.10 Business Application A suspects Business Application B  has not received the BusinessMessage"
+    ],
+    "level": 2
+  },
+  {
+    "page": 20,
+    "title": "2.11  Business Application A sends a Business Message  to BusinessApplication B with a pre-agreed priority",
+    "heading_path": [
+      "2 Scenarios",
+      "2.11  Business Application A sends a Business Message  to BusinessApplication B with a pre-agreed priority"
+    ],
+    "level": 2
+  },
+  {
+    "page": 21,
+    "title": "2.12 Business Application A sends a signed Business Message  to BusinessApplication B",
+    "heading_path": [
+      "2 Scenarios",
+      "2.12 Business Application A sends a signed Business Message  to BusinessApplication B"
+    ],
+    "level": 2
+  },
+  {
+    "page": 21,
+    "title": "2.13 Business Application B sends a Business Message B  that relates to Business Message A",
+    "heading_path": [
+      "2 Scenarios",
+      "2.13 Business Application B sends a Business Message B  that relates to Business Message A"
+    ],
+    "level": 2
+  },
+  {
+    "page": 24,
+    "title": "3 Mapping of the BAH to other headers",
+    "heading_path": [
+      "3 Mapping of the BAH to other headers"
+    ],
+    "level": 1
+  },
+  {
+    "page": 24,
+    "title": "3.1 Introduction",
+    "heading_path": [
+      "3 Mapping of the BAH to other headers",
+      "3.1 Introduction"
+    ],
+    "level": 2
+  },
+  {
+    "page": 24,
+    "title": "3.2 BAH to SWIFTNet Application Header",
+    "heading_path": [
+      "3 Mapping of the BAH to other headers",
+      "3.2 BAH to SWIFTNet Application Header"
+    ],
+    "level": 2
+  },
+  {
+    "page": 26,
+    "title": "3.3 BAH to ebXML/ebMS Header",
+    "heading_path": [
+      "3 Mapping of the BAH to other headers",
+      "3.3 BAH to ebXML/ebMS Header"
+    ],
+    "level": 2
+  },
+  {
+    "page": 27,
+    "title": "3.4 BAH to FpML",
+    "heading_path": [
+      "3 Mapping of the BAH to other headers",
+      "3.4 BAH to FpML"
+    ],
+    "level": 2
+  },
+  {
+    "page": 28,
+    "title": "4 ANNEX A - Signature Guidelines",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines"
+    ],
+    "level": 1
+  },
+  {
+    "page": 28,
+    "title": "4.1 Preface",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.1 Preface"
+    ],
+    "level": 2
+  },
+  {
+    "page": 28,
+    "title": "4.2 Introduction",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.2 Introduction"
+    ],
+    "level": 2
+  },
+  {
+    "page": 28,
+    "title": "4.2.1 Current Signature Guidelines",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.2 Introduction",
+      "4.2.1 Current Signature Guidelines"
+    ],
+    "level": 3
+  },
+  {
+    "page": 29,
+    "title": "4.2.2 Short introduction to W3C Signatures",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.2 Introduction",
+      "4.2.2 Short introduction to W3C Signatures"
+    ],
+    "level": 3
+  },
+  {
+    "page": 30,
+    "title": "4.2.3 Scope of this documents Signature Guidelines",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.2 Introduction",
+      "4.2.3 Scope of this documents Signature Guidelines"
+    ],
+    "level": 3
+  },
+  {
+    "page": 31,
+    "title": "4.3 Structure of the Signature",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature"
+    ],
+    "level": 2
+  },
+  {
+    "page": 31,
+    "title": "4.2.4 Overview",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.4 Overview"
+    ],
+    "level": 3
+  },
+  {
+    "page": 31,
+    "title": "4.2.5 Algorithms used",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.5 Algorithms used"
+    ],
+    "level": 3
+  },
+  {
+    "page": 31,
+    "title": "4.2.6 KeyInfo",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.6 KeyInfo"
+    ],
+    "level": 3
+  },
+  {
+    "page": 32,
+    "title": "4.2.7 SignedInfo",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.7 SignedInfo"
+    ],
+    "level": 3
+  },
+  {
+    "page": 32,
+    "title": "4.2.8 Reference of ISO 20022 Message",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.8 Reference of ISO 20022 Message"
+    ],
+    "level": 3
+  },
+  {
+    "page": 32,
+    "title": "4.2.9 Reference of BAH",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.9 Reference of BAH"
+    ],
+    "level": 3
+  },
+  {
+    "page": 33,
+    "title": "4.2.10 Reference of KeyInfo",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.3 Structure of the Signature",
+      "4.2.10 Reference of KeyInfo"
+    ],
+    "level": 3
+  },
+  {
+    "page": 33,
+    "title": "4.4 Process for signing and verifying",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.4 Process for signing and verifying"
+    ],
+    "level": 2
+  },
+  {
+    "page": 33,
+    "title": "4.2.11 Signing is performed as last step in generating the Business Message",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.4 Process for signing and verifying",
+      "4.2.11 Signing is performed as last step in generating the Business Message"
+    ],
+    "level": 3
+  },
+  {
+    "page": 33,
+    "title": "4.2.12 Two node-sets",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.4 Process for signing and verifying",
+      "4.2.12 Two node-sets"
+    ],
+    "level": 3
+  },
+  {
+    "page": 34,
+    "title": "4.2.13 Signing a BAH",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.4 Process for signing and verifying",
+      "4.2.13 Signing a BAH"
+    ],
+    "level": 3
+  },
+  {
+    "page": 36,
+    "title": "4.5 Example",
+    "heading_path": [
+      "4 ANNEX A - Signature Guidelines",
+      "4.5 Example"
+    ],
+    "level": 2
+  },
+  {
+    "page": 38,
+    "title": "Disclaimer:",
+    "heading_path": [
+      "Disclaimer:"
+    ],
+    "level": 1
+  }
+]

@@ -1,0 +1,642 @@
+{
+  "message_id": "camt.081.001.02",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "19 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+      "definition_pages": [
+        436,
+        476
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The IntraBalanceMovementModificationReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account owner/requestor",
+            "labels": [
+              {
+                "label": "an account owner/requestor",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000360-account-owner-requestor",
+                  "path": "shared/reference/participants/participant-narrative-src-000360-account-owner-requestor.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a settlement infrastructure",
+            "labels": [
+              {
+                "label": "a settlement infrastructure",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-settlement-infrastructure",
+                  "path": "shared/reference/participants/participant-src-000359-settlement-infrastructure.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-camt.081.001.02-p436-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "19 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an account owner/requestor to provide full details or current status values of the intra-balance movement modification request(s), as defined within the query.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "a4713caf5fd2fc8349f02f4f61d14adae4d6ba9f0fbeec554cf5c2fb2edcb767",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-camt.081.001.02-p436-c004-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "19 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy Duplicate\").",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an account owner/requestor to provide full details or current status values of the intra-balance movement modification request(s), as defined within the query.",
+          "raw_quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an\naccount owner/requestor to provide full details or current status values of the intra-balance movement\nmodification request(s), as defined within the query.",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c001",
+          "mentions": [
+            {
+              "label": "settlement infrastructure",
+              "start": 66,
+              "end": 91,
+              "resolution": {
+                "label": "settlement infrastructure",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-settlement-infrastructure",
+                  "path": "shared/reference/participants/participant-src-000359-settlement-infrastructure.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner/requestor",
+              "start": 98,
+              "end": 121,
+              "resolution": {
+                "label": "account owner/requestor",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000360-account-owner-requestor",
+                  "path": "shared/reference/participants/participant-narrative-src-000360-account-owner-requestor.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-camt.081.001.02-p436-c001-d1"
+          ]
+        },
+        {
+          "quote": "re-send a message previously sent (the sub-function of the message is \"Duplicate\")",
+          "raw_quote": "re-send a message previously sent (the sub-function of the message is \"Duplicate\")",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is \"Copy\")",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\n\"Copy\")",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c003",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy Duplicate\").",
+          "raw_quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy\nDuplicate\").",
+          "file_pages": [
+            436
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c004",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.081.001.02",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      436
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000360",
+                        "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+                        "file_pages": [
+                          245
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-camt.081.001.02-p436-c004-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "The message may also be used to:",
+          "file_pages": [
+            436
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        436
+      ],
+      "file_pages": [
+        436
+      ]
+    },
+    {
+      "source_id": "src-000360",
+      "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+      "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+      "definition_pages": [
+        245,
+        285
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The IntraBalanceMovementModificationReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account owner/requestor",
+            "labels": [
+              {
+                "label": "an account owner/requestor",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000360-account-owner-requestor",
+                  "path": "shared/reference/participants/participant-narrative-src-000360-account-owner-requestor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a settlement infrastructure",
+            "labels": [
+              {
+                "label": "a settlement infrastructure",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-settlement-infrastructure",
+                  "path": "shared/reference/participants/participant-src-000359-settlement-infrastructure.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000360-camt.081.001.02-p245-c001-d1",
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an account owner/requestor to provide full details or current status values of the intra-balance movement modification request(s), as defined within the query.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "a4713caf5fd2fc8349f02f4f61d14adae4d6ba9f0fbeec554cf5c2fb2edcb767",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000360-camt.081.001.02-p245-c004-d1",
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy Duplicate\").",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an account owner/requestor to provide full details or current status values of the intra-balance movement modification request(s), as defined within the query.",
+          "raw_quote": "The IntraBalanceMovementModificationReport message is sent from a settlement infrastructure to an\naccount owner/requestor to provide full details or current status values of the intra-balance movement\nmodification request(s), as defined within the query.",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c001",
+          "mentions": [
+            {
+              "label": "settlement infrastructure",
+              "start": 66,
+              "end": 91,
+              "resolution": {
+                "label": "settlement infrastructure",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-settlement-infrastructure",
+                  "path": "shared/reference/participants/participant-src-000359-settlement-infrastructure.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner/requestor",
+              "start": 98,
+              "end": 121,
+              "resolution": {
+                "label": "account owner/requestor",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000360-account-owner-requestor",
+                  "path": "shared/reference/participants/participant-narrative-src-000360-account-owner-requestor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000360-camt.081.001.02-p245-c001-d1"
+          ]
+        },
+        {
+          "quote": "re-send a message previously sent (the sub-function of the message is \"Duplicate\")",
+          "raw_quote": "re-send a message previously sent (the sub-function of the message is \"Duplicate\")",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is \"Copy\")",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\n\"Copy\")",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c003",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy Duplicate\").",
+          "raw_quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy\nDuplicate\").",
+          "file_pages": [
+            245
+          ],
+          "section": "scope",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c004",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000360",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000359-third-party",
+                  "path": "shared/reference/participants/participant-src-000359-third-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000360-camt.081.001.02-p245-c004-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "The message may also be used to:",
+          "file_pages": [
+            245
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        245
+      ],
+      "file_pages": [
+        245
+      ]
+    }
+  ]
+}

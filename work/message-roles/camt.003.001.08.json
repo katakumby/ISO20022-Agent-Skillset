@@ -1,0 +1,443 @@
+{
+  "message_id": "camt.003.001.08",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "2 camt.003.001.08 GetAccountV08",
+      "definition_pages": [
+        13,
+        47
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The GetAccount message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.003.001.08-p13-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "2 camt.003.001.08 GetAccountV08",
+          "file_pages": [
+            13
+          ],
+          "section": "scope",
+          "quote": "The GetAccount message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The GetAccount message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe GetAccount message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            13
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.003.001.08-p13-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 36,
+              "end": 42,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 50,
+              "end": 75,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.003.001.08-p13-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request information on the details of one or more accounts held at the transaction administrator, including information on the balances.",
+          "raw_quote": "It is used to request information on the details of one or more accounts held at the transaction\nadministrator, including information on the balances.",
+          "file_pages": [
+            13
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.003.001.08-p13-c002",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 85,
+              "end": 110,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about the account(s) that the transaction administrator maintains for the member.",
+          "raw_quote": "Usage\nAt any time during the operating hours of the system, the member can query the transaction\nadministrator to get information about the account(s) that the transaction administrator maintains for the\nmember.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.003.001.08-p13-c003",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 58,
+              "end": 64,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 79,
+              "end": 104,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 154,
+              "end": 179,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 198,
+              "end": 204,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "maintains",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The member can request information about accounts through a series of criteria, corresponding to the known information stored at the transaction administrator.",
+          "raw_quote": "The member can request information about accounts through a series of criteria, corresponding to the\nknown information stored at the transaction administrator.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.003.001.08-p13-c004",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 133,
+              "end": 158,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The member can request information based on the following elements:",
+          "raw_quote": "The member can request information based on the following elements:",
+          "file_pages": [
+            13
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.003.001.08-p13-c005",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "For example, this may be necessary in order to perform the appropriate liquidity management and the funds transfers between accounts.",
+          "raw_quote": "For example, this may be necessary in order to perform the appropriate liquidity management and the\nfunds transfers between accounts.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The query can concern one or more specific accounts, accounts of a particular identification, or a particular type.",
+          "raw_quote": "The query can concern one or more specific accounts, accounts of a particular identification, or a\nparticular type.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The purpose of the query may be to obtain one or more types of balance.",
+          "raw_quote": "The purpose of the query may be to obtain one or more types of balance.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "account identification",
+          "raw_quote": "account identification",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "account type (this element can be used to refine the query when the account identification represents, for example, a group of accounts)",
+          "raw_quote": "account type (this element can be used to refine the query when the account identification represents,\nfor example, a group of accounts)",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "balance type (if not present, all balances are requested)",
+          "raw_quote": "balance type (if not present, all balances are requested)",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "type of counterparty: bilateral or multilateral (note that, by default, a balance is multilateral unless a particular counterparty is specified)",
+          "raw_quote": "type of counterparty: bilateral or multilateral (note that, by default, a balance is multilateral unless a\nparticular counterparty is specified)",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "identification of the counterparty when a bilateral balance is requested",
+          "raw_quote": "identification of the counterparty when a bilateral balance is requested",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "balance value date (if not present in the GetAccount message, the ReturnAccount message will contain the latest available balance) This message will be answered by a ReturnAccount message.",
+          "raw_quote": "balance value date (if not present in the GetAccount message, the ReturnAccount message will\ncontain the latest available balance)\nThis message will be answered by a ReturnAccount message.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Additional information on the generic design of the Get/Return messages can be found in the section How to Use the Cash Management Messages.",
+          "raw_quote": "Additional information on the generic design of the Get/Return messages can be found in the section\nHow to Use the Cash Management Messages.",
+          "file_pages": [
+            13
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        13
+      ],
+      "file_pages": [
+        13,
+        14
+      ]
+    }
+  ]
+}

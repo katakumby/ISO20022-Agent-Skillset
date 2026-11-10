@@ -1,0 +1,25 @@
+flowchart TB
+A["Fund Management Company, Promoter, Transfer Agent"]
+subgraph groupB[" "]
+B["Institutional Investor, Custodian, Distributor"]
+end
+C["Fund accountant"]
+subgraph groupD[" "]
+D["Transfer Agent, Fund Administrator"]
+end
+E["Investment manager"]
+F["New Plan Manager (Transferee)"]
+G["Old Plan Manager (Transferor)"]
+A -->|"Fund Reference Data"| B
+C -->|"Price Report"| D
+B <-->|"Fund Reference Data"| D
+B <-->|"Account Management"| D
+B <-->|"Order, Status, Order Confirmation"| D
+B <-->|"Statements"| D
+B <-->|"Asset Transfer, Status, Confirmation"| D
+D -->|"Fund Cash Forecast"| E
+F <-->|"Portfolio Transfer"| G
+F <-->|"Asset Transfer, Status, Confirmation"| D
+G <-->|"Asset Transfer, Status, Confirmation"| D
+style groupB fill:#fff,stroke-dasharray:4 4
+style groupD fill:#fff,stroke-dasharray:4 4

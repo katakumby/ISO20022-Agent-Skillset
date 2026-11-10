@@ -1,0 +1,84 @@
+{
+  "source_id": "src-000344",
+  "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.23623,
+        536.8929100000001
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          320.4929200000002
+        ],
+        [
+          85.03936999999999,
+          320.4929200000002,
+          283.46457,
+          418.69291000000015
+        ],
+        [
+          85.03936999999999,
+          418.69291000000015,
+          283.46457,
+          536.8929100000001
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.23623,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.23623,
+          320.4929200000002
+        ],
+        [
+          283.46457,
+          320.4929200000002,
+          510.23623,
+          418.69291000000015
+        ],
+        [
+          283.46457,
+          418.69291000000015,
+          510.23623,
+          536.8929100000001
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "admi.005.001.02\nReportQueryRequestV02",
+          "The ReportQueryRequest message is exchanged\nbetween system member and system transaction\nadministrator.\nIt aims at querying the latest available report data of a\nspecific report type. A report is stored and available for\nquery until the event occurs again report is replaced."
+        ],
+        [
+          "admi.006.001.01\nResendRequestV01",
+          "A system member or any parties authorised by them\nsend a ResendRequest message to the Central\nSystem (such as the T2S platform). The purpose of\nthis request is, that the requesting party wants to\nreceive the \"original\" message once again. This might\nbe caused through technical problems on the receiving\nside (message could not be received or processed or\nis missing in the message sequencing) or for archiving\npurposes."
+        ],
+        [
+          "admi.007.001.01\nReceiptAcknowledgementV01",
+          "The ReceiptAcknowledgement message is sent by the\ntransaction administrator to a member of the system\nand vice versa. It is sent to acknowledge the receipt of\none or multiple messages sent previously. The\nAcknowledgement message is 1) an application receipt\nacknowledgement and 2) conveys information about\nthe processing of the original message(s). In case of 2)\nthe ReceiptAcknowledgement can be used as a\nGeneric error message, which provides information\nabout the status (e.g. rejection, acceptance) of an\ninstruction."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

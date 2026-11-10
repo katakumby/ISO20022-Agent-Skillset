@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 645,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 139,
+    "2": 236
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 220,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "485245978f051c33604557a68cd96fe26f66054c2abc2ea89dce7f0e5b27166f",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        130.1204,
+        120.3237,
+        229.387,
+        121.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        111.6929,
+        245.5716,
+        121.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        228.387,
+        120.3237,
+        246.0716,
+        121.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        111.6929,
+        245.5716,
+        121.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 18,
+      "bbox": [
+        84.5394,
+        210.3237,
+        328.3519,
+        211.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        201.6929,
+        344.5364,
+        211.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 20,
+      "bbox": [
+        327.3519,
+        210.3237,
+        345.0364,
+        211.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        201.6929,
+        344.5364,
+        211.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 290,
+      "bbox": [
+        84.5394,
+        588.9237,
+        263.3128,
+        589.9237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        580.2928,
+        279.4974,
+        590.2928
+      ]
+    },
+    {
+      "path_object_ordinal": 292,
+      "bbox": [
+        262.3128,
+        588.9237,
+        279.9974,
+        589.9237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        580.2928,
+        279.4974,
+        590.2928
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0854",
+      "file_page": 645,
+      "bbox": [
+        85.03936999999996,
+        218.6929100000001,
+        555.5905740000001,
+        489.2928900000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0854.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "b6d5d1d9dac266237dab4182aace987b4ef12e2ce25f7bfe841071af74291c44",
+      "cell_geometry_sha256": "888531784370a380cb6b822677e21b461eafb5d8857c4579afce1bffa625cff7",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0855",
+      "file_page": 645,
+      "bbox": [
+        85.03936999999996,
+        597.29289,
+        555.5905740000001,
+        665.8928900000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0855.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "510733197b05e70b9b0e8c168799c4687b68268a8a7cf3026caf28e11ec9d14a",
+      "cell_geometry_sha256": "e13a7033d4c5a0b75c20e6fe534c65238793043ba9c8fc01d6647352535caaf2",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

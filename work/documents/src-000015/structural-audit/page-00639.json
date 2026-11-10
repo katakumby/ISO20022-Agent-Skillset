@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 639,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 78,
+    "2": 132
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 3,
+    "table-associated-axis-line": 123,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "087a0d2647c1828c15b08183324fcbe03462cc637f3878cea68977f9d7f3b20e",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 10,
+      "bbox": [
+        379.1292,
+        181.1237,
+        507.8685,
+        182.1237
+      ],
+      "link_annotation_bbox": [
+        379.6292,
+        172.4929,
+        524.053,
+        182.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 12,
+      "bbox": [
+        506.8685,
+        181.1237,
+        524.553,
+        182.1237
+      ],
+      "link_annotation_bbox": [
+        379.6292,
+        172.4929,
+        524.053,
+        182.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0845",
+      "file_page": 639,
+      "bbox": [
+        85.03936999999996,
+        201.49290000000008,
+        555.5905745454546,
+        391.29289
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0845.md",
+      "rows": 9,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "46ec6334f4b24ca6d7dbc1b03106f8bd380c821279add6201b56f088703b47c5",
+      "cell_geometry_sha256": "c42270cb0a74be0e6ad44c4c6519e28de1a136ec2b40e292af25da78dd90bbe7",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

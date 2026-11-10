@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000363",
+  "source_sha256": "9a2fa1a65d0aa94673163f85948f60752c8e5e03dbef930046337c8b381b9c49",
+  "file_page": 19,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 35,
+    "2": 53
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 45,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "4b3f39555be32b01637238fa0bf5a6545298dc652c95414d06a2a18418676934",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        84.5394,
+        78.3237,
+        252.7318,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        263.3548,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        251.7318,
+        78.3237,
+        263.8548,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        263.3548,
+        79.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0024",
+      "file_page": 19,
+      "bbox": [
+        85.03936999999998,
+        86.6929100000001,
+        555.590568,
+        155.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-limit-utilisation-journal/february-2025/documents/src-000363/tables/tbl-0024.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ac6dc4d1124bd585e47dc6391caa814317014050cdd38accc7114ea0a49c910d",
+      "cell_geometry_sha256": "9934b8b7e7f59c3dfb1e5c9afc7c36f96a4eef6126e33bc465fbfcb5a7b06ada",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

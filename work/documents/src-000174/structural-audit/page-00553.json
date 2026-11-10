@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 553,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 84,
+    "2": 95
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 83,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "fa9e8f7d0d122dc224a723ec122a29a9d99f640fe07d6d6560b9c94bd64a8928",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        130.1204,
+        121.5237,
+        267.761,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        283.9456,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        266.761,
+        121.5237,
+        284.4456,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        283.9456,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 84,
+      "bbox": [
+        130.1204,
+        418.7238,
+        234.9486,
+        419.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        410.0929,
+        251.1331,
+        420.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 86,
+      "bbox": [
+        233.9486,
+        418.7238,
+        251.6331,
+        419.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        410.0929,
+        251.1331,
+        420.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0664",
+      "file_page": 553,
+      "bbox": [
+        85.03936999999996,
+        129.89291000000014,
+        510.23623142857144,
+        340.89291000000014
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0664.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "1344ddabc74b66aef6d1d79add689295d955e6628b4429f04d5585f166e91fcc",
+      "cell_geometry_sha256": "9bdd9cfb4dc65f206adc3d08467699423c097aa795272c81cf4239f58665559f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0665",
+      "file_page": 553,
+      "bbox": [
+        85.03936999999996,
+        485.4929600000001,
+        555.590568,
+        554.0929600000001
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0665.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "427da01729938d306c5bc97997cbbc966cedb389b5a12312ba20190da582b5e7",
+      "cell_geometry_sha256": "03abfcd217affa3499b00ad0c4418caa1eef5f680884ec4568e2a70521178022",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

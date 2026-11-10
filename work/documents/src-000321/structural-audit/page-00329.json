@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000321",
+  "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+  "file_page": 329,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 108,
+    "2": 153
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 5,
+    "table-associated-axis-line": 142,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "18b6be4b86fa451b4a0180b27906a08fd442dfb8ebdb554e99e4d352c8d1ca92",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        309.1048,
+        84.3237,
+        454.5189,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        309.6048,
+        75.6929,
+        470.7034,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        453.5189,
+        84.3237,
+        471.2034,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        309.6048,
+        75.6929,
+        470.7034,
+        85.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0573",
+      "file_page": 329,
+      "bbox": [
+        85.03936999999996,
+        92.6929100000001,
+        555.5905714285715,
+        161.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0573.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "acff3e642a161f98781feed7bd7d94a1648626e52117fb894e9cc41a1bb54bd9",
+      "cell_geometry_sha256": "cf70937d49166f65829bd065e5fa049bc8b9afa1222925697c5af29db0e7c7d9",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0574",
+      "file_page": 329,
+      "bbox": [
+        85.03936999999996,
+        213.6929100000001,
+        555.5905714285715,
+        363.0929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0574.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f383c50497c579b06183dd0d49f6c622bb16cb1aff567a4e200c54001f33bf64",
+      "cell_geometry_sha256": "28c84d5c4cca16e45f9830aaa8347d8a2994db31002a7131a0743044261e94b8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

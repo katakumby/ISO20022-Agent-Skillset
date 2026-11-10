@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 579,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 132,
+    "2": 234
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 219,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "4638d772a95bfff3130f979aa1c6c5e42faa7a9c28af49fd6d0cdd2bfc65acbe",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        130.1204,
+        96.3237,
+        229.387,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        87.6929,
+        245.5716,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        228.387,
+        96.3237,
+        246.0716,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        87.6929,
+        245.5716,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 303,
+      "bbox": [
+        130.1204,
+        564.9237,
+        323.3421,
+        565.9237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        556.2929,
+        339.5267,
+        566.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 305,
+      "bbox": [
+        322.3421,
+        564.9237,
+        340.0267,
+        565.9237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        556.2929,
+        339.5267,
+        566.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0706",
+      "file_page": 579,
+      "bbox": [
+        85.03936999999996,
+        184.29290000000015,
+        555.59057625,
+        475.09288000000015
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0706.md",
+      "rows": 14,
+      "matrix_cells": 84,
+      "physical_cells": 84,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "4034765e53fefdbdf7852e0022754435dab9ee432c4967f1552286e152ec1993",
+      "cell_geometry_sha256": "1e7e94a42598f71baaf4cd3b70f548eff9d42573aa2aec4799713d93759fb80c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 84,
+      "independent_cells_match": 84,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0707",
+      "file_page": 579,
+      "bbox": [
+        85.03936999999996,
+        573.29289,
+        510.23623,
+        676.0929000000001
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0707.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c01c381f97ecd40397a2b4abbe257b061e3b029773db8e4522c6a75bf33cf48b",
+      "cell_geometry_sha256": "657a04fd0c1a945b17cd9b15fa523d324bde9b3d8b4243228b55affd455dcb58",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

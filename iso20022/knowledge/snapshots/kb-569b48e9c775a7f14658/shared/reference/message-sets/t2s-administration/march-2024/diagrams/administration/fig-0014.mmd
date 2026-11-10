@@ -1,0 +1,22 @@
+flowchart TB
+subgraph SM["System Member"]
+start(("Start"))
+instruction(["ProcessInstruction"])
+status(["PreocessStatus"])
+endSM((("End")))
+end
+subgraph STA["System Transaction Administrator"]
+check(["CheckProcessing"])
+decision{"Processing successful?"}
+reject(["Reject"])
+process(["ProcessMessage"])
+endSTA((("End")))
+end
+start --> instruction
+instruction --> check
+check --> decision
+decision -->|"No"| reject
+status --> endSM
+decision -->|"Yes"| process
+process --> endSTA
+reject --> status

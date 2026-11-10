@@ -1,0 +1,221 @@
+{
+  "message_id": "camt.102.001.03",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "34 camt.102.001.03 CreateStandingOrderV03",
+      "definition_pages": [
+        755,
+        766
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CreateStandingOrder message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.102.001.03-p755-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "34 camt.102.001.03 CreateStandingOrderV03",
+          "file_pages": [
+            755
+          ],
+          "section": "scope",
+          "quote": "The CreateStandingOrder message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CreateStandingOrder message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe CreateStandingOrder message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            755
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.102.001.03-p755-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 45,
+              "end": 51,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 59,
+              "end": 84,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.102.001.03-p755-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to create a permanent order for the transfer of funds between two accounts belonging to the same member and being held at the transaction administrator.",
+          "raw_quote": "It is used to create a permanent order for the transfer of funds between two accounts belonging to the\nsame member and being held at the transaction administrator.",
+          "file_pages": [
+            755
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.102.001.03-p755-c002",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 108,
+              "end": 114,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 137,
+              "end": 162,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Based on the criteria defined in the CreateStandingOrder message, the transaction administrator will execute or reject the requested creation and respond with a Receipt message as a reply to the request.",
+          "raw_quote": "Usage\nBased on the criteria defined in the CreateStandingOrder message, the transaction administrator will\nexecute or reject the requested creation and respond with a Receipt message as a reply to the request.",
+          "file_pages": [
+            755
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.102.001.03-p755-c003",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 70,
+              "end": 95,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "execute",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        755
+      ],
+      "file_pages": [
+        755
+      ]
+    }
+  ]
+}

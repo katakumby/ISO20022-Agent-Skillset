@@ -1,0 +1,8 @@
+sequenceDiagram
+participant I as Instructing Party
+participant M as Intermediary
+participant E as Executing Party
+I->>M: RedemptionOrder
+M->>E: RedemptionOrder
+E->>M: RedemptionOrderConfirmation
+M->>I: RedemptionOrderConfirmation

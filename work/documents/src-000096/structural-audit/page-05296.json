@@ -1,0 +1,136 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 5296,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 76,
+    "2": 89
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 79,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "cde7c59f0f384b828d858ceb226539099a944c0858f81a20fbaae84ee32b6fa1",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-8200",
+      "file_page": 5296,
+      "bbox": [
+        85.03936999999996,
+        113.09291000000007,
+        510.23622874999995,
+        159.49291000000017
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8200.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "bbac02623661c5b55cd261e6bbf98f1fe0de03e88e92b1715320aa4563cab8e5",
+      "cell_geometry_sha256": "b83d914e1a3d0a9c34343a5aec3ef90293b5517988984cfb2c0803a312f0777c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8201",
+      "file_page": 5296,
+      "bbox": [
+        85.03936999999996,
+        229.89291000000011,
+        510.23622874999995,
+        502.6929000000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8201.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "2b33e47d2213f8139073f27d8da8e2edcee517ac0b71d88e168fb69cdc33bd09",
+      "cell_geometry_sha256": "c40ae2af0e4ccd84c12003f3fbad688148ba7920005a0787e46bda2d1c3c5b42",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 9,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            248.09291000000022,
+            510.23622874999995,
+            356.2929100000002
+          ],
+          "stored_value": "Mandatory redemption of units\nprocessed either at redemption or\ncrystallization, whose proceeds are due\nto the asset manager as performance\nfee. Performance fee to be paid by the\ninvestor when the value of the\ninvestment fund units were below their\napplicable high-watermark on\nsubscription date, and above the high-\nwatermark on redemption date.",
+          "pdfium_value": "Mandatory redemption of units\r\nprocessed either at redemption or\r\ncrystallization, whose proceeds are due\r\nto the asset manager as performance\r\nfee. Performance fee to be paid by the\r\ninvestor when the value of the\r\ninvestment fund units were below their\r\napplicable high-watermark on\r\nsubscription date, and above the high\u0002watermark on redemption date."
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            356.2929100000002,
+            510.23622874999995,
+            414.49290000000013
+          ],
+          "stored_value": "Performance fee to be paid by the\ninvestor when the net asset value\nreaches the high-watermark if the net\nasset value was under the high-\nwatermark on subscription date.",
+          "pdfium_value": "Performance fee to be paid by the\r\ninvestor when the net asset value\r\nreaches the high-watermark if the net\r\nasset value was under the high\u0002watermark on subscription date."
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            414.49290000000013,
+            510.23622874999995,
+            502.6929000000002
+          ],
+          "stored_value": "Prepayment amount to be paid by the\ninvestor at the moment of the\nsubscription. The amount is based on\nthe positive difference between the gross\nasset value at subscription and the high-\nwatermark, when the investment fund\nunits are subscribed to above their high-\nwatermark.",
+          "pdfium_value": "Prepayment amount to be paid by the\r\ninvestor at the moment of the\r\nsubscription. The amount is based on\r\nthe positive difference between the gross\r\nasset value at subscription and the high\u0002watermark, when the investment fund\r\nunits are subscribed to above their high\u0002watermark."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8202",
+      "file_page": 5296,
+      "bbox": [
+        85.03936999999996,
+        597.0929300000001,
+        510.23622874999995,
+        699.8929400000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8202.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a3e2ee56f8a1ce59b45907edec7b293860d2f3e35329d7e496196e7f02a96d5e",
+      "cell_geometry_sha256": "49671c099778118c5c8aa535a01a73afd0fd64824ed6ce9158cd092e21e13222",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

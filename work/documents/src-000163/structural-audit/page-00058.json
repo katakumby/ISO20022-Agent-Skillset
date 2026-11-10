@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000163",
+  "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+  "file_page": 58,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 119,
+    "2": 187
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 175,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "812d2bd78f21fd270f397bcc8ea3caebf8432ebe1da83296dc3a810d4dff5fc2",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 22,
+      "bbox": [
+        84.5394,
+        328.8237,
+        328.3519,
+        329.8237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        320.1929,
+        350.098,
+        330.1929
+      ]
+    },
+    {
+      "path_object_ordinal": 24,
+      "bbox": [
+        327.3519,
+        328.8237,
+        350.598,
+        329.8237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        320.1929,
+        350.098,
+        330.1929
+      ]
+    },
+    {
+      "path_object_ordinal": 293,
+      "bbox": [
+        144.5686,
+        695.4237,
+        329.4212,
+        696.4237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        686.7928,
+        328.9212,
+        696.7928
+      ]
+    },
+    {
+      "path_object_ordinal": 295,
+      "bbox": [
+        333.9778,
+        695.4237,
+        504.9534,
+        696.4237
+      ],
+      "link_annotation_bbox": [
+        334.4778,
+        686.7928,
+        504.4534,
+        696.7928
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0056",
+      "file_page": 58,
+      "bbox": [
+        85.03936999999996,
+        337.1929100000001,
+        555.590576,
+        607.79289
+      ],
+      "output": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/documents/src-000163/tables/tbl-0056.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "51d12ebbc32876aea076c178933b24a53f75185c8daf435d347044aa9ca9b002",
+      "cell_geometry_sha256": "0f9712f6d5ca27b6eaa77d27441c81d7645bd8b57959d1a02a9580846efe1224",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

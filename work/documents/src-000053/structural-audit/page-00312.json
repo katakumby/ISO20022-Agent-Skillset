@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000053",
+  "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+  "file_page": 312,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 79,
+    "2": 55
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 45,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "e11a9de0bb32dadd032ff3d8602ef1621d738cd613aa3f3c2c57be253e4c03cb",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 38,
+      "bbox": [
+        130.1204,
+        405.2237,
+        211.1741,
+        406.2237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        396.5929,
+        227.3587,
+        406.5929
+      ]
+    },
+    {
+      "path_object_ordinal": 40,
+      "bbox": [
+        210.1741,
+        405.2237,
+        227.8587,
+        406.2237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        396.5929,
+        227.3587,
+        406.5929
+      ]
+    },
+    {
+      "path_object_ordinal": 49,
+      "bbox": [
+        351.3655,
+        487.6237,
+        422.4144,
+        488.6237
+      ],
+      "link_annotation_bbox": [
+        351.8655,
+        478.9929,
+        438.5989,
+        488.9929
+      ]
+    },
+    {
+      "path_object_ordinal": 51,
+      "bbox": [
+        421.4144,
+        487.6237,
+        439.0989,
+        488.6237
+      ],
+      "link_annotation_bbox": [
+        351.8655,
+        478.9929,
+        438.5989,
+        488.9929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0474",
+      "file_page": 312,
+      "bbox": [
+        85.03936999999998,
+        495.9929300000001,
+        555.590568,
+        564.5929300000001
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0474.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "b3bee3bc544e3105cd7ff623b191b4b26e3b12792129af13b563b5feebf8c27e",
+      "cell_geometry_sha256": "a8cd8c5e8794b019c631a4694e975402befa082d7a1427977c73b8859cccec33",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

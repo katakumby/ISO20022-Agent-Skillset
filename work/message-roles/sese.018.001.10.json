@@ -1,0 +1,183 @@
+{
+  "message_id": "sese.018.001.10",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "38 sese.018.001.10 AccountHoldingInformationV10",
+      "definition_pages": [
+        1308,
+        1441
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The AccountHoldingInformation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party, for example, a (new) plan manager (transferee)",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the instructing party, for example, a (new) plan manager (transferee)"
+          },
+          "sender": {
+            "expression": "an executing party, for example, a (old) plan manager (transferor)",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an executing party, for example, a (old) plan manager (transferor)"
+          },
+          "claim_id": "src-000096-sese.018.001.10-p1308-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "38 sese.018.001.10 AccountHoldingInformationV10",
+          "file_pages": [
+            1308
+          ],
+          "section": "scope",
+          "quote": "The AccountHoldingInformation message is sent by an executing party, for example, a (old) plan manager (transferor), to the instructing party, for example, a (new) plan manager (transferee), to provide information about financial instruments held on behalf of a client.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "on behalf of"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The AccountHoldingInformation message is sent by an executing party, for example, a (old) plan manager (transferor), to the instructing party, for example, a (new) plan manager (transferee), to provide information about financial instruments held on behalf of a client.",
+          "raw_quote": "Scope\nThe AccountHoldingInformation message is sent by an executing party, for example, a (old) plan\nmanager (transferor), to the instructing party, for example, a (new) plan manager (transferee), to\nprovide information about financial instruments held on behalf of a client.",
+          "file_pages": [
+            1308
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.018.001.10-p1308-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 52,
+              "end": 67,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferor",
+              "start": 104,
+              "end": 114,
+              "resolution": {
+                "label": "transferor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferor",
+                  "path": "shared/reference/participants/participant-src-000095-transferor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 124,
+              "end": 141,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferee",
+              "start": 178,
+              "end": 188,
+              "resolution": {
+                "label": "transferee",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferee",
+                  "path": "shared/reference/participants/participant-src-000095-transferee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.018.001.10-p1308-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The AccountHoldingInformation message is used to provide information on the individual assets held in a client's account.",
+          "raw_quote": "Usage\nThe AccountHoldingInformation message is used to provide information on the individual assets held in\na client's account.",
+          "file_pages": [
+            1308
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The assets may be part of a tax efficient product, a pension of general investment product.",
+          "raw_quote": "The assets may be part of a tax efficient product, a pension of general investment\nproduct.",
+          "file_pages": [
+            1308
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1308
+      ],
+      "file_pages": [
+        1308,
+        1309
+      ]
+    }
+  ]
+}

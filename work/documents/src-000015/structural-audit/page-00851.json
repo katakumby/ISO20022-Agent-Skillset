@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 851,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 75,
+    "1": 65
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 65,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "3c0eaf629fcfe4d0d70fff51d26bd9d79b9a01da67af33ee5605b2ed657402ad",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1184",
+      "file_page": 851,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362271428571,
+        121.29291000000012
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1184.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "fc9302a81189d31d6cdd07af5854a852e7885805a1b7e3ab0ddc6711a8aeaf27",
+      "cell_geometry_sha256": "b832a7d57779c44a8abc57fbd7110588eb54d92e525290b591628222eb5dd5a5",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1185",
+      "file_page": 851,
+      "bbox": [
+        85.03936999999996,
+        394.6929100000001,
+        510.2362271428571,
+        449.29291000000006
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1185.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "11aa1cb67e953e7b47c8c786ff1f72cfb993180612a4d370f3e42414b20502c5",
+      "cell_geometry_sha256": "a25842de12279fac5a3173277c9adc2bfd201ded450349191ff03498caf8d72f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1186",
+      "file_page": 851,
+      "bbox": [
+        85.03936999999996,
+        519.6929400000001,
+        510.2362271428571,
+        696.0929500000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1186.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ae484053a74630455bdf45a34a1c0f8f7621d60daf893e3f80598e47dc2be310",
+      "cell_geometry_sha256": "1e3d8b588e5716eaca515b05444c2c4ffbf147f38f33f3cdaa0052575a79cb3b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 5,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            537.8929400000001,
+            510.2362271428571,
+            696.0929500000001
+          ],
+          "stored_value": "Booked means that the transfer of\nmoney has been completed between\naccount servicer and account owner\nUsage:\nStatus Booked does not necessarily\nimply finality of money as this depends\non other factors such as the payment\nsystem used, the completion of the end-\nto-end transaction and the terms agreed\nbetween account servicer and owner.\nStatus Booked is the only status that can\nbe reversed.",
+          "pdfium_value": "Booked means that the transfer of\r\nmoney has been completed between\r\naccount servicer and account owner\r\nUsage:\r\nStatus Booked does not necessarily\r\nimply finality of money as this depends\r\non other factors such as the payment\r\nsystem used, the completion of the end\u0002to-end transaction and the terms agreed\r\nbetween account servicer and owner.\r\nStatus Booked is the only status that can\r\nbe reversed."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 79,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 56,
+    "2": 55
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 45,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "95b0ce92e24820c773043065193b9cb5a07ce357333c061b49f5866453139350",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 20,
+      "bbox": [
+        399.1097,
+        328.1237,
+        523.3958,
+        329.1237
+      ],
+      "link_annotation_bbox": [
+        399.6097,
+        319.4929,
+        522.8958,
+        329.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 22,
+      "bbox": [
+        84.5394,
+        340.1237,
+        110.5638,
+        341.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        331.4929,
+        132.3099,
+        341.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 24,
+      "bbox": [
+        109.5638,
+        340.1237,
+        132.8099,
+        341.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        331.4929,
+        132.3099,
+        341.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 100,
+      "bbox": [
+        144.5686,
+        513.9238,
+        416.7112,
+        514.9238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        505.2929,
+        416.2112,
+        515.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0074",
+      "file_page": 79,
+      "bbox": [
+        85.03936999999998,
+        348.4929300000001,
+        555.590568,
+        417.0929300000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-0074.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0211d7f422505086f9b5b214c4ce99fc72d8c77f09cffd6e72fabcc2e888bb2b",
+      "cell_geometry_sha256": "91d5a65897cc37645f29937aab60e41a982652379fcf9c44feb236b3cd802c14",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

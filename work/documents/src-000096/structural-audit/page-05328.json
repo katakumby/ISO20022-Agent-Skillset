@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 5328,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 77,
+    "2": 103
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 93,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "55b005b3dbde558c859a36b9ac4e32d2d84dfb1fe84f84f7c488baa29fbfbc95",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-8275",
+      "file_page": 5328,
+      "bbox": [
+        85.03936999999996,
+        113.09291000000007,
+        510.2362299999999,
+        244.09291000000007
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8275.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "69be9af3b1db553efeba9a70f9c613bc852de3ea4d98e37ee60cb0f6e8099404",
+      "cell_geometry_sha256": "a3ed9e93cac9aeb7612c02b3a99823102e427ffae65f58331155678cfbb84bca",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8276",
+      "file_page": 5328,
+      "bbox": [
+        85.03936999999996,
+        326.4929000000001,
+        510.2362299999999,
+        449.29291000000006
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8276.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "74b35a086e706a35ac80cb112fd4617d7c6ef898e2e1a735fe201c4f3a8f36d9",
+      "cell_geometry_sha256": "39481d927fa27e2bc1cc72570af29f83cf4e0d78602229ac63ad79301b3df6f4",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 11,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            401.09290000000004,
+            510.2362299999999,
+            449.29291000000006
+          ],
+          "stored_value": "Simple check, typically carried out on\naccounts that have a low risk of anti-\nmoney laundering, such as an account\nowned by a financial institution.",
+          "pdfium_value": "Simple check, typically carried out on\r\naccounts that have a low risk of anti\u0002money laundering, such as an account\r\nowned by a financial institution."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-8277",
+      "file_page": 5328,
+      "bbox": [
+        85.03936999999996,
+        648.8929200000001,
+        510.2362299999999,
+        723.4929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-8277.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "cda67b113aad7527ee3281f226eea7670377931b71e5593a392544427a277b9a",
+      "cell_geometry_sha256": "c13884d66268d97bf41f1f287085b51bb4b0b106f95f94ee83413f7f15802e90",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

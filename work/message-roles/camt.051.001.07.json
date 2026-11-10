@@ -1,0 +1,620 @@
+{
+  "message_id": "camt.051.001.07",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "29 camt.051.001.07 LiquidityDebitTransferV07",
+      "definition_pages": [
+        677,
+        685
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The LiquidityDebitTransfer message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.051.001.07-p677-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "29 camt.051.001.07 LiquidityDebitTransferV07",
+          "file_pages": [
+            677
+          ],
+          "section": "scope",
+          "quote": "The LiquidityDebitTransfer message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "pattern": "active",
+          "message_subject": "a Receipt message as a reply",
+          "message_target": "related-or-unspecified-message",
+          "sender": {
+            "expression": "In principle, the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "In principle, the transaction administrator"
+          },
+          "reply_target_expression": "the liquidity transfer request.",
+          "limitation": "The phrase following “to” is the request being answered, not an identified receiving participant.",
+          "claim_id": "src-000015-camt.051.001.07-p677-c009-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "29 camt.051.001.07 LiquidityDebitTransferV07",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "quote": "In principle, the transaction administrator may send a Receipt message as a reply to the liquidity transfer request.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "may"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The LiquidityDebitTransfer message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe LiquidityDebitTransfer message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            677
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 48,
+              "end": 54,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 62,
+              "end": 87,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.051.001.07-p677-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request a transfer of funds between two accounts belonging to the same member or the same group of accounts, and being held at the transaction administrator.",
+          "raw_quote": "It is used to request a transfer of funds between two accounts belonging to the same member or the\nsame group of accounts, and being held at the transaction administrator.",
+          "file_pages": [
+            677
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c002",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 85,
+              "end": 91,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 145,
+              "end": 170,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "At any time during the operating hours of the system, and to perform the appropriate liquidity management, the member can request the transaction administrator to execute the transfer of funds between two accounts that the transaction administrator maintains for the member.",
+          "raw_quote": "Usage\nAt any time during the operating hours of the system, and to perform the appropriate liquidity\nmanagement, the member can request the transaction administrator to execute the transfer of funds\nbetween two accounts that the transaction administrator maintains for the member.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c003",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 111,
+              "end": 117,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 134,
+              "end": 159,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 223,
+              "end": 248,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 267,
+              "end": 273,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            },
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "maintains",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The LiquidityDebitTransfer message can be used when the transactions to/from the member are unbalanced in value for the business day, or to unlock pending transactions at the end of day.",
+          "raw_quote": "The LiquidityDebitTransfer message can be used when the transactions to/from the member are\nunbalanced in value for the business day, or to unlock pending transactions at the end of day.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c004",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 81,
+              "end": 87,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The member can request the transfer by identifying the accounts stored at the transaction administrator:",
+          "raw_quote": "The member can request the transfer by identifying the accounts stored at the transaction administrator:",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c005",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 78,
+              "end": 103,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "If the accounts involved in the requested transfer are known without doubt to the transaction administrator, it is possible to indicate only the type of the account to be credited.",
+          "raw_quote": "If the accounts involved in the requested transfer are known without doubt to the transaction\nadministrator, it is possible to indicate only the type of the account to be credited.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c006",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 82,
+              "end": 107,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Note that transfers are processed only when the balance in the account to be debited is sufficient to pass the liquidity transfer instruction and remain positive.",
+          "raw_quote": "Note that transfers are processed only when the balance in the account to be debited is sufficient to\npass the liquidity transfer instruction and remain positive.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c007",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Based on the criteria received within the LiquidityDebitTransfer message, the transaction administrator will execute or reject the requested transfer.",
+          "raw_quote": "Based on the criteria received within the\nLiquidityDebitTransfer message, the transaction administrator will execute or reject the requested\ntransfer.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c008",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 78,
+              "end": 103,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "execute",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "In principle, the transaction administrator may send a Receipt message as a reply to the liquidity transfer request.",
+          "raw_quote": "In principle, the transaction administrator may send a Receipt message as a reply to the liquidity\ntransfer request.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c009",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 18,
+              "end": 43,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000015-camt.051.001.07-p677-c009-d1"
+          ]
+        },
+        {
+          "quote": "To verify the outcome of the request, the member may submit a GetTransaction or GetAccount message with the appropriate search criteria.",
+          "raw_quote": "To verify the outcome of the request, the member may submit a GetTransaction or\nGetAccount message with the appropriate search criteria.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c010",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 42,
+              "end": 48,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "submit",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "For instance, this may be an action resulting from a Get/Return Account pair of messages.",
+          "raw_quote": "For instance, this\nmay be an action resulting from a Get/Return Account pair of messages.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "If, on the contrary, more clarity is desired, it is possible to identify the accounts from and to which the funds should be transferred.",
+          "raw_quote": "If, on the contrary, more clarity is desired, it is possible to identify the accounts from and to which the\nfunds should be transferred.",
+          "file_pages": [
+            677
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        677
+      ],
+      "file_pages": [
+        677
+      ]
+    }
+  ]
+}

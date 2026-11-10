@@ -1,0 +1,25 @@
+flowchart LR
+ Cash["Cash accounts — source common branch"]
+ Cash --> Q7["Liquidity Information Query"]
+ Q7 -->|GetAccount| R7["Liquidity Information Query Response"]
+ R7 -.->|ReturnAccount| Q7
+ Cash --> Q8["Limit Utilisation Journal Query"]
+ Q8 -->|LimitUtilisation<br/>JournalQuery| R8["Limit Utilisation Journal Report"]
+ R8 -.->|LimitUtilisation<br/>JournalReport| Q8
+ Cash --> Q9["Limit Utilisation Query"]
+ Q9 -->|GetLimit| R9["Limit Utilisation Query Response"]
+ R9 -.->|ReturnLimit| Q9
+ Cash --> Q10["Total collateral value per T2S Dedicated Cash Account query"]
+ Q10 -->|CollateralValue Query| R10["Total collateral value per T2S Dedicated Cash Account query response"]
+ R10 -.->|CollateralValue Report| Q10
+ Cash --> Q11["Collateral Value per T2S Dedicated Cash Account query"]
+ Q11 -->|CollateralValue Query| R11["Collateral Value per T2S Dedicated Cash Account query response"]
+ R11 -.->|CollateralValue Report| Q11
+ Cash --> Q12["Collateral value of a security query"]
+ Q12 -->|CollateralValue Query| R12["Collateral Value of a Security query response"]
+ R12 -.->|CollateralValue Report| Q12
+ Cash --> Q13["Cash Account List Query"]
+ Q13 -->|AccountQueryList| R13["Cash Account List Query Response"]
+ R13 -.->|AccountListReport| Q13
+ classDef scope fill:#b1d39b,stroke:#739467
+ class Q8,R8 scope

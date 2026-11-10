@@ -1,0 +1,19 @@
+flowchart TB
+ subgraph I["Instructing Party"]
+ S((" ")) --> Reconcile("Reconcile Securities Positions")
+ Receive("Process Status") --> Success{"Succesful Process?"}
+ Success -->|No| Fail(((" ")))
+ Success -->|Yes| Update("Update Securities Account Position")
+ Update --> End(((" ")))
+ end
+ subgraph SP["Servicing Party"]
+ Validate("Validate Request") --> Access{"Does the Party have Access Right<br/>To Securities Account Position query"}
+ Access -->|No| Error("Update Status")
+ Access -->|Yes| Query("Querying process in function<br/>with the selected criteria")
+ end
+ Reconcile --> Validate
+ Error --> Receive
+ Query --> Receive
+ classDef stage fill:#c5cba6,stroke:black
+ class Reconcile,Receive,Update,Validate,Error,Query,Success,Access stage
+ style S fill:black,stroke:black

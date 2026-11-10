@@ -1,0 +1,158 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 514,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.23623249999997,
+        651.89291
+      ],
+      "cells": [
+        [
+          85.03936999999996,
+          56.6929100000001,
+          141.73228999999998,
+          74.89291000000014
+        ],
+        [
+          85.03936999999996,
+          74.89291000000014,
+          141.73228999999998,
+          109.09291000000019
+        ],
+        [
+          85.03936999999996,
+          109.09291000000019,
+          141.73228999999998,
+          427.2929200000001
+        ],
+        [
+          85.03936999999996,
+          427.2929200000001,
+          141.73228999999998,
+          565.4929300000001
+        ],
+        [
+          85.03936999999996,
+          565.4929300000001,
+          141.73228999999998,
+          623.6929
+        ],
+        [
+          85.03936999999996,
+          623.6929,
+          141.73228999999998,
+          651.89291
+        ],
+        [
+          141.73228999999998,
+          56.6929100000001,
+          340.15747,
+          74.89291000000014
+        ],
+        [
+          141.73228999999998,
+          74.89291000000014,
+          340.15747,
+          109.09291000000019
+        ],
+        [
+          141.73228999999998,
+          109.09291000000019,
+          340.15747,
+          427.2929200000001
+        ],
+        [
+          141.73228999999998,
+          427.2929200000001,
+          340.15747,
+          565.4929300000001
+        ],
+        [
+          141.73228999999998,
+          565.4929300000001,
+          340.15747,
+          623.6929
+        ],
+        [
+          141.73228999999998,
+          623.6929,
+          340.15747,
+          651.89291
+        ],
+        [
+          340.15747,
+          56.6929100000001,
+          510.23623249999997,
+          74.89291000000014
+        ],
+        [
+          340.15747,
+          74.89291000000014,
+          510.23623249999997,
+          109.09291000000019
+        ],
+        [
+          340.15747,
+          109.09291000000019,
+          510.23623249999997,
+          427.2929200000001
+        ],
+        [
+          340.15747,
+          427.2929200000001,
+          510.23623249999997,
+          565.4929300000001
+        ],
+        [
+          340.15747,
+          565.4929300000001,
+          510.23623249999997,
+          623.6929
+        ],
+        [
+          340.15747,
+          623.6929,
+          510.23623249999997,
+          651.89291
+        ]
+      ],
+      "rows": [
+        [
+          "CodeName",
+          "Name",
+          "Definition"
+        ],
+        [
+          "",
+          "",
+          "30/360 method for non-US straight and\nconvertible bonds issued before 1\nJanuary 1999."
+        ],
+        [
+          "A012",
+          "IC30E2360orEurobondbasismodel2",
+          "Method whereby interest is calculated\nbased on a 30-day month and a 360-day\nyear. Accrued interest to a value date on\nthe last day of a month shall be the\nsame as to the 30th calendar day of the\nsame month, except for the last day of\nFebruary whose day of the month value\nshall be adapted to the value of the first\nday of the interest period if the latter is\nhigher and if the period is one of a\nregular schedule. This means that the\n31st is assumed to be the 30th and 28\nFeb of a non-leap year is assumed to be\nequivalent to 29 Feb when the first day\nof the interest period is the 29th, or to 30\nFeb when the first day of the interest\nperiod is the 30th or the 31st. The 29th\nday of February in a leap year is\nassumed to be equivalent to 30 Feb\nwhen the first day of the interest period\nis the 30th or the 31st. Similarly, if the\ncoupon period starts on the last day of\nFebruary, it is assumed to produce only\none day of interest in February as if it\nwas starting on 30 Feb when the end of\nthe period is the 30th or the 31st, or two\ndays of interest in February when the\nend of the period is the 29th, or three\ndays of interest in February when it is 28\nFeb of a non-leap year and the end of\nthe period is before the 29th."
+        ],
+        [
+          "A013",
+          "IC30E3360orEurobondbasismodel3",
+          "Method whereby interest is calculated\nbased on a 30-day month and a 360-day\nyear. Accrued interest to a value date on\nthe last day of a month shall be the\nsame as to the 30th calendar day of the\nsame month. This means that the 31st is\nassumed to be the 30th and 28 Feb (or\n29 Feb for a leap year) is assumed to be\nequivalent to 30 Feb. It is a variation of\nthe 30E/360 (or Eurobond basis) method\nwhere the last day of February is always\nassumed to be the 30th, even if it is the\nlast day of the maturity coupon period."
+        ],
+        [
+          "A014",
+          "Actual365NL",
+          "Method whereby interest is calculated\nbased on the actual number of accrued\ndays in the interest period, excluding any\nleap day from the count, and a 365-day\nyear."
+        ],
+        [
+          "NARR",
+          "Narrative",
+          "Other method than A001-A020. See\nNarrative."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,142 @@
+{
+  "source_id": "src-000346",
+  "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+  "file_page": 93,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 139,
+    "2": 189
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 175,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "0e44424e3c7c845e4944a1bc05d8769fd891185b32804674e3dcf1bde3a25e67",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        130.1204,
+        84.3237,
+        215.4905,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        231.6751,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 6,
+      "bbox": [
+        214.4905,
+        84.3237,
+        232.1751,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        231.6751,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 14,
+      "bbox": [
+        144.5687,
+        162.3237,
+        236.0276,
+        163.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        153.6929,
+        235.5276,
+        163.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 16,
+      "bbox": [
+        240.5843,
+        162.3237,
+        339.2747,
+        163.3237
+      ],
+      "link_annotation_bbox": [
+        241.0843,
+        153.6929,
+        338.7747,
+        163.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 19,
+      "bbox": [
+        130.1204,
+        180.3237,
+        299.9778,
+        181.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        171.6929,
+        316.1624,
+        181.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 21,
+      "bbox": [
+        298.9778,
+        180.3237,
+        316.6624,
+        181.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        171.6929,
+        316.1624,
+        181.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0114",
+      "file_page": 93,
+      "bbox": [
+        85.03936999999996,
+        430.4929000000001,
+        555.590576,
+        701.09288
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-billing/december-2025/documents/src-000346/tables/tbl-0114.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0b8e69ebe11cbdb6b6c092d13696e0061ebea13135bf1ef67def080246cd25ea",
+      "cell_geometry_sha256": "178952a091a301a0217604754e06da077c87cbd8f25154a53996494e11a34c2f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

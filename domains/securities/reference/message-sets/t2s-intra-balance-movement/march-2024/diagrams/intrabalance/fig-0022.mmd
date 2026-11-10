@@ -1,0 +1,8 @@
+%%{init: {"sequence": {"mirrorActors": false, "width": 220}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+participant A as Instructing Party
+participant B as Servicing Party
+A->>B: IntraBalanceMovementCancellationRequest (camt.074)<br/>IntraBalanceMovementModificationRequest (camt.072)
+B-->>A: IntraBalanceMovementCancellationRequestStatusAdvice (camt.075)<br/>IntraBalanceMovementModificationRequestStatusAdvice (camt.073)
+B->>A: IntraBalanceMovementCancellationReport (camt.083)
+B->>A: IntraBalanceMovementModificationReport (camt.081)

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-09",
+  "participant_pages": 57,
+  "change_operations": 61,
+  "new_role_records": 44,
+  "label_update_operations": 17,
+  "links_checked": 696,
+  "missing_participant_ids": [],
+  "broken_links": [],
+  "placeholders": [],
+  "invalid_metadata": [],
+  "syntax_checked_helpers": [
+    "tools/checkpoint.py",
+    "tools/curate_functionality_roles.py",
+    "tools/curate_remaining_functionality_roles.py",
+    "tools/reconcile_workbook_status.py"
+  ],
+  "quote_specific_overrides": 19,
+  "limitations": [
+    "This audit checks participant reference consistency; the pilot agent independently audits message-role extraction, original quotes and override proof."
+  ]
+}

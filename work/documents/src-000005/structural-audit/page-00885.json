@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000005",
+  "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+  "file_page": 885,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 57,
+    "2": 44
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 34,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "934d37132dfb9ff81e3da00c49d14558d75068703a3b2968e023fc6470735c89",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 2,
+      "bbox": [
+        130.1204,
+        66.3237,
+        229.387,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        57.6929,
+        245.5716,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        228.387,
+        66.3237,
+        246.0716,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        57.6929,
+        245.5716,
+        67.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1218",
+      "file_page": 885,
+      "bbox": [
+        85.03936999999996,
+        241.89289000000008,
+        524.40946,
+        280.29289000000017
+      ],
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/documents/src-000005/tables/tbl-1218.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c36137e4a52ed00c4709ac0ca6d4effb6d7af3a5e98e5cf937017024acdccb0d",
+      "cell_geometry_sha256": "2476c3a2ced2beaf33d8f734c081289fe66b2d3ebc187db633fbc9255710833b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1219",
+      "file_page": 885,
+      "bbox": [
+        85.03936999999996,
+        666.29289,
+        524.40946,
+        704.6928899999999
+      ],
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/documents/src-000005/tables/tbl-1219.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "25cd2f51ddfd0f00c0610cbe23913fa74c12b81ab980b81275a8064985758705",
+      "cell_geometry_sha256": "556926937fda36707c622e789a97d02f9d2a1f04d46149fec0486a45a0ad285c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

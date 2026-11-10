@@ -1,0 +1,180 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 236,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 136,
+    "2": 237
+  },
+  "path_classes": {
+    "link-annotation-underline": 7,
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 220,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "cdcd36af279370883f00a5cead6808742ab22f9bf3192dbaff29c619ce076be5",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        84.5394,
+        78.3237,
+        328.3519,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        344.5364,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        327.3519,
+        78.3237,
+        345.0364,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        344.5364,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 273,
+      "bbox": [
+        144.5686,
+        432.9236,
+        203.2444,
+        433.9236
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        424.2929,
+        202.7444,
+        434.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 276,
+      "bbox": [
+        130.1204,
+        450.9236,
+        238.845,
+        451.9236
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        442.2929,
+        255.0296,
+        452.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 278,
+      "bbox": [
+        237.845,
+        450.9236,
+        255.5296,
+        451.9236
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        442.2929,
+        255.0296,
+        452.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 293,
+      "bbox": [
+        84.5394,
+        629.7236,
+        263.3128,
+        630.7236
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        621.0929,
+        279.4974,
+        631.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 295,
+      "bbox": [
+        262.3128,
+        629.7236,
+        279.9974,
+        630.7236
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        621.0929,
+        279.4974,
+        631.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0275",
+      "file_page": 236,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905740000001,
+        357.2928900000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0275.md",
+      "rows": 13,
+      "matrix_cells": 78,
+      "physical_cells": 78,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "b6d5d1d9dac266237dab4182aace987b4ef12e2ce25f7bfe841071af74291c44",
+      "cell_geometry_sha256": "a9f7af9348b8002ea29c6adf447a6b2458eafdccae7d4dfaf9817b0083dce512",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 78,
+      "independent_cells_match": 78,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0276",
+      "file_page": 236,
+      "bbox": [
+        85.03936999999996,
+        638.0928700000001,
+        555.5905740000001,
+        706.6928700000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0276.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "510733197b05e70b9b0e8c168799c4687b68268a8a7cf3026caf28e11ec9d14a",
+      "cell_geometry_sha256": "37a54c9fb5b3e40ef7eb0af6cecf7101371cfa3d161caca0c9dab6e2b090b4aa",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

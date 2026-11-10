@@ -1,0 +1,323 @@
+{
+  "message_id": "reda.002.001.05",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "14 reda.002.001.05 PriceReportCancellationV05",
+      "definition_pages": [
+        222,
+        290
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "the PriceReportCancellation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the report recipient, for example, a fund management company, transfer agent, market data provider, regulator or any other interested party",
+            "labels": [
+              {
+                "label": "the report recipient",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-report-recipient",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-report-recipient.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the report recipient, for example, a fund management company, transfer agent, market data provider, regulator or any other interested party"
+          },
+          "sender": {
+            "expression": "A report provider, for example, a transfer agent, fund accountant or market data provider",
+            "labels": [
+              {
+                "label": "A report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "A report provider, for example, a transfer agent, fund accountant or market data provider"
+          },
+          "claim_id": "src-000096-reda.002.001.05-p222-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "14 reda.002.001.05 PriceReportCancellationV05",
+          "file_pages": [
+            222
+          ],
+          "section": "scope",
+          "quote": "A report provider, for example, a transfer agent, fund accountant or market data provider, sends the PriceReportCancellation message to the report recipient, for example, a fund management company, transfer agent, market data provider, regulator or any other interested party to cancel previously sent prices.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A report provider, for example, a transfer agent, fund accountant or market data provider, sends the PriceReportCancellation message to the report recipient, for example, a fund management company, transfer agent, market data provider, regulator or any other interested party to cancel previously sent prices.",
+          "raw_quote": "SCOPE\nA report provider, for example, a transfer agent, fund accountant or market data provider, sends the\nPriceReportCancellation message to the report recipient, for example, a fund management company,\ntransfer agent, market data provider, regulator or any other interested party to cancel previously sent\nprices.",
+          "file_pages": [
+            222
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-reda.002.001.05-p222-c001",
+          "mentions": [
+            {
+              "label": "report provider",
+              "start": 2,
+              "end": 17,
+              "resolution": {
+                "label": "report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 34,
+              "end": 48,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "fund accountant",
+              "start": 50,
+              "end": 65,
+              "resolution": {
+                "label": "fund accountant",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-fund-accountant",
+                  "path": "shared/reference/participants/participant-src-000095-fund-accountant.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "market data provider",
+              "start": 69,
+              "end": 89,
+              "resolution": {
+                "label": "market data provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-market-data-provider",
+                  "path": "shared/reference/participants/participant-src-000095-market-data-provider.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "report recipient",
+              "start": 140,
+              "end": 156,
+              "resolution": {
+                "label": "report recipient",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-report-recipient",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-report-recipient.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "fund management company",
+              "start": 173,
+              "end": 196,
+              "resolution": {
+                "label": "fund management company",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-fund-management-company",
+                  "path": "shared/reference/participants/participant-src-000095-fund-management-company.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 198,
+              "end": 212,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "market data provider",
+              "start": 214,
+              "end": 234,
+              "resolution": {
+                "label": "market data provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-market-data-provider",
+                  "path": "shared/reference/participants/participant-src-000095-market-data-provider.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "regulator",
+              "start": 236,
+              "end": 245,
+              "resolution": {
+                "label": "regulator",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-regulator",
+                  "path": "shared/reference/participants/participant-src-000095-regulator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "other interested party",
+              "start": 253,
+              "end": 275,
+              "resolution": {
+                "label": "other interested party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-other-interested-party",
+                  "path": "shared/reference/participants/participant-src-000095-other-interested-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-reda.002.001.05-p222-c001-d1"
+          ]
+        },
+        {
+          "quote": "cancel an entire PriceReport that was previously sent (by quoting the business reference of the original price report in the PriceReportIdentification element), or,",
+          "raw_quote": "cancel an entire PriceReport that was previously sent (by quoting the business reference of the\noriginal price report in the PriceReportIdentification element), or,",
+          "file_pages": [
+            222
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-reda.002.001.05-p222-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "cancel one or more individual prices from a previously sent price report (by using the PriceDetailsToBeCancelled sequence).",
+          "raw_quote": "cancel one or more individual prices from a previously sent price report (by using the\nPriceDetailsToBeCancelled sequence).",
+          "file_pages": [
+            222
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-reda.002.001.05-p222-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The PriceReportCancellation message is used to either:",
+          "raw_quote": "USAGE\nThe PriceReportCancellation message is used to either:",
+          "file_pages": [
+            222
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Technically, it is possible to cancel all the prices individually by using the PriceDetailsToBeCancelled sequence, but this is not recommended.",
+          "raw_quote": "Technically, it is possible to cancel all the prices individually by using the PriceDetailsToBeCancelled\nsequence, but this is not recommended.",
+          "file_pages": [
+            222
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The cancellation should not contain the cancellation of prices for more than one NAV date.",
+          "raw_quote": "The cancellation should not contain the cancellation of prices for more than one NAV date.",
+          "file_pages": [
+            222
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        222
+      ],
+      "file_pages": [
+        222,
+        223
+      ]
+    }
+  ]
+}

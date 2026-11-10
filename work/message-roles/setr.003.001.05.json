@@ -1,0 +1,286 @@
+{
+  "message_id": "setr.003.001.05",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "43 setr.003.001.05 RedemptionBulkOrderConfirmationV05",
+      "definition_pages": [
+        1892,
+        2100
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The RedemptionBulkOrderConfirmation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the instructing party, for example, an investment manager or its authorised representative"
+          },
+          "sender": {
+            "expression": "an executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an executing party, for example, a transfer agent"
+          },
+          "claim_id": "src-000096-setr.003.001.05-p1892-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "43 setr.003.001.05 RedemptionBulkOrderConfirmationV05",
+          "file_pages": [
+            1892
+          ],
+          "section": "scope",
+          "quote": "The RedemptionBulkOrderConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to confirm the details of execution for a previously received RedemptionBulkOrder message.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The RedemptionBulkOrderConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to confirm the details of execution for a previously received RedemptionBulkOrder message.",
+          "raw_quote": "Scope\nThe RedemptionBulkOrderConfirmation message is sent by an executing party, for example, a transfer\nagent, to the instructing party, for example, an investment manager or its authorised representative, to\nconfirm the details of execution for a previously received RedemptionBulkOrder message.",
+          "file_pages": [
+            1892
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-setr.003.001.05-p1892-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 58,
+              "end": 73,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 90,
+              "end": 104,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 113,
+              "end": 130,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 148,
+              "end": 166,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 174,
+              "end": 199,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-setr.003.001.05-p1892-c001-d1"
+          ]
+        },
+        {
+          "quote": "The RedemptionBulkOrderConfirmation message is used to confirm the execution of all individual orders included in a previously sent RedemptionBulkOrder message.",
+          "raw_quote": "Usage\nThe RedemptionBulkOrderConfirmation message is used to confirm the execution of all individual\norders included in a previously sent RedemptionBulkOrder message.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.003.001.05-p1892-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "If the executing party needs to confirm a RedemptionOrder instruction, then the RedemptionOrderConfirmation must be used.",
+          "raw_quote": "If the executing party needs to confirm a RedemptionOrder instruction, then the\nRedemptionOrderConfirmation must be used.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.003.001.05-p1892-c003",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 7,
+              "end": 22,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "There is usually one bulk confirmation message for one bulk order message.",
+          "raw_quote": "There is usually one bulk confirmation message for one bulk order message.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Each individual order confirmation specified is identified in DealReference.",
+          "raw_quote": "Each individual order confirmation specified is identified in DealReference.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The reference of the original individual order is specified in OrderReference.",
+          "raw_quote": "The reference of the original\nindividual order is specified in OrderReference.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The message identification of the RedemptionBulkOrder message in which the individual order was conveyed may also be quoted in RelatedReference, but this is not recommended.",
+          "raw_quote": "The message identification of the RedemptionBulkOrder\nmessage in which the individual order was conveyed may also be quoted in RelatedReference, but this\nis not recommended.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "A RedemptionBulkOrder must in all cases be responded to by a RedemptionBulkOrderConfirmation and in no circumstances by a RedemptionOrderConfirmation.",
+          "raw_quote": "A RedemptionBulkOrder must in all cases be responded to by a RedemptionBulkOrderConfirmation\nand in no circumstances by a RedemptionOrderConfirmation.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "When the message is used to convey a confirmation amendment/s, the AmendmentIndicator must be present with the value 'true' or '1'.",
+          "raw_quote": "When the message is used to convey a confirmation amendment/s, the AmendmentIndicator must be\npresent with the value 'true' or '1'.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "When this is the case, the message must only contain a confirmation amendment/s and not contain both a confirmation amendment/s and a 'new' confirmation/s.",
+          "raw_quote": "When this is the case, the message must only contain a confirmation\namendment/s and not contain both a confirmation amendment/s and a 'new' confirmation/s.",
+          "file_pages": [
+            1892
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1892
+      ],
+      "file_pages": [
+        1892,
+        1893
+      ]
+    }
+  ]
+}

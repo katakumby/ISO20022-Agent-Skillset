@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000163",
+  "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+  "file_page": 7,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 204,
+    "2": 383
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 9,
+    "table-associated-axis-line": 370,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "dd112a3a295f48dd0a41adca8872381b6c6f9a93bfcfaf47badf9df0e6597f09",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0003",
+      "file_page": 7,
+      "bbox": [
+        51.02362,
+        84.29291000000003,
+        555.590578,
+        721.89306
+      ],
+      "output": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/documents/src-000163/tables/tbl-0003.md",
+      "rows": 28,
+      "matrix_cells": 168,
+      "physical_cells": 168,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0dad0fba8dd292108630592003b492d1236372627bd02d873abda2d9a0766d54",
+      "cell_geometry_sha256": "27f08bb8aa5b1a82ba9de3624577a8d595075dd27d6525db9a5313cbdcdd1a14",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 168,
+      "independent_cells_match": 168,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,70 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Post-Trade Matching"
+source_ids: ["src-000181"]
+source_editions: ["February 2025"]
+message_ids: []
+heading_path: ["7 Message Items Types", "7.1 MessageComponents", "7.1.19 Miscellaneous", "7.1.19.43 Order23", "7.1.19.43.8 Payment <Pmt>"]
+file_pages: [341]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 7.1.19.43.8 Payment <Pmt>
+
+Source: [src-000181](../../../../../../../../../raw-input/post_trade_matching/ISO20022_MDRPart2_PostTradeMatching_2024_2025_v1.pdf). Locator: one-based file pages 341 to 341.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 341
+
+```text
+CodeName Name Definition
+TWOS TwoSided Indicates that the side refers to both
+buys and sells.
+BUMI BuyMinus A round-lot market order to buy minus is
+an order to buy a stated amount of a
+stock provided that its price is:
+- not higher than the last sale if the last
+sale was a minus or zero minus tick and
+- not higher than the last sale minus the
+minimum fractional change in the stock if
+the last sale was a plus or zero plus tick.
+A limit price order to buy minus also
+states the highest price at which it can
+be executed.
+SEPL SellPlus A round-lot market order to sell plus is
+an order to sell a stated amount of a
+stock provided that its price is:
+- not lower than the last sale if the last
+sale was a plus or zero plus tick and
+- not lower than the last sale minus the
+minimum fractional change in the stock if
+the last sale was a minus or zero minus
+tick.
+A limit-price order to sell plus also states
+the lowest price at which it can be
+executed.
+SESH SellShort An order to sell a security that the seller
+does not own; a sale effected by
+delivering a security borrowed by, or for
+the account of, the seller. Can only be
+executed on a plus or zero plus tick.
+SSEX SellShortExempt Short sale exempt from short-sale rules.
+LEND Lend Order is to lend securities.
+BORW Borrow Order is to borrow securities.
+OPEX OptionExercise Exercise of an option contract.
+7.1.19.43.8  Payment <Pmt>
+Presence: [0..1]
+Definition: Specifies how the transaction is to be settled, for example, against payment.
+Datatype: "DeliveryReceiptType2Code" on page 623
+CodeName Name Definition
+FREE SeparateSettlement Settlement of the financial instrument
+and cash is separate.
+Approved by the Securities SEG on 13 February 2025 Message Items Types
+Post Trade Matching - Maintenance 2024 - 2025 341 February 2025
+```
+

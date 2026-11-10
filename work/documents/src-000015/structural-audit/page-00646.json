@@ -1,0 +1,128 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 646,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 156,
+    "2": 268
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 10,
+    "table-associated-axis-line": 252,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "7641fc47417e5c8897f4f8979783b30b9cbdbb9fab511860719ac1fd44a2628a",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 163,
+      "bbox": [
+        356.346,
+        311.7237,
+        465.0706,
+        312.7237
+      ],
+      "link_annotation_bbox": [
+        356.846,
+        303.0929,
+        481.2552,
+        313.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 165,
+      "bbox": [
+        464.0706,
+        311.7237,
+        481.7552,
+        312.7237
+      ],
+      "link_annotation_bbox": [
+        356.846,
+        303.0929,
+        481.2552,
+        313.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0856",
+      "file_page": 646,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905725,
+        236.0929100000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0856.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "ef66c0fde69e16af20eae93a8d5dd9cb56653d0a9bc8f15b616046fe00a170eb",
+      "cell_geometry_sha256": "788a6407cd529aa01b8c3b4db7a610eb4418b2ee5a8c7d79f1355b45a73f1050",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0857",
+      "file_page": 646,
+      "bbox": [
+        85.03936999999996,
+        320.0929000000001,
+        555.5905725,
+        449.2929000000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0857.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "d5cc4cb98e6daef7fb77bfd41d2d2c385a3d9e3db0c12b8465a01c83863d7879",
+      "cell_geometry_sha256": "7c9c1fe650d6cc1c70d48ed51c711fece67286bed787ea06fc4de651f33a1f8a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0858",
+      "file_page": 646,
+      "bbox": [
+        85.03936999999996,
+        533.2928900000002,
+        555.5905725,
+        642.2928900000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0858.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "e9dea78b67e9fc1c3ea7330b11cc8a08122ce1a48c6e15920bbfd34648084325",
+      "cell_geometry_sha256": "511bdb2443e3aa2b9674a63b3ed42a57ffb449c4223028f75ce8e69472165463",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

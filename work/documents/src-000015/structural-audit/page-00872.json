@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 872,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 131,
+    "1": 86
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 121,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "899c7d042cbb8672af068c50f935b0a1e7e9f21f79daaa934397329e6ddaa207",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1218",
+      "file_page": 872,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362318181818,
+        332.2929000000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1218.md",
+      "rows": 8,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "8a4578f642fbb17dff290f5e96771442505fd2ef3ca1e9f675c5649c873346e6",
+      "cell_geometry_sha256": "10a053569ca0cc6a27f1a22fbcaf1dd1caf9b56ca87d51707a87337b09a96684",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 23,
+      "exceptions": [
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            209.49292000000014,
+            510.2362318181818,
+            257.6929100000001
+          ],
+          "stored_value": "Restriction of linked to the balance type\nthat defines and manages position types\nfor securities positions for auto-\ncollateralisation.",
+          "pdfium_value": "Restriction of linked to the balance type\r\nthat defines and manages position types\r\nfor securities positions for auto\u0002collateralisation."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1219",
+      "file_page": 872,
+      "bbox": [
+        85.03936999999996,
+        414.6929400000001,
+        510.2362318181818,
+        575.6929400000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1219.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "33e8c244feb4cf136342f11786adf68eb82cdaebbacad2f52330b8f277330f49",
+      "cell_geometry_sha256": "1c5f7952c22ad2cdc9e0ed6e610bff2ef8afcad732fc3128cae716b196efb791",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1220",
+      "file_page": 872,
+      "bbox": [
+        85.03936999999996,
+        646.0929300000001,
+        510.2362318181818,
+        720.6929300000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1220.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "90b530d692e986768b8d5c5a8090ce3ca3f318073671b46be37c337754fe42d0",
+      "cell_geometry_sha256": "e34a3cd5366a9d019e3dbb790532485b668f6149caecab5b90012acffe075c57",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

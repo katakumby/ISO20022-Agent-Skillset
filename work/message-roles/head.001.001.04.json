@@ -1,0 +1,231 @@
+{
+  "message_id": "head.001.001.04",
+  "publications": [
+    {
+      "source_id": "src-000011",
+      "source_sha256": "d931c69cb7232292fda5f39f9f72f9b983b678b1098ac2ba76a173ce360006ce",
+      "heading": "2 head.001.001.04 BusinessApplicationHeaderV04",
+      "definition_pages": [
+        4,
+        25
+      ],
+      "directions": [
+        {
+          "kind": "creator",
+          "message_target": "business-message-with-accompanying-header",
+          "message_subject": "This message",
+          "limitation": "The source creates a Business Message with its accompanying BAH for each business event. This is not a fixed sender/receiver pair for every header use.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "fcbcc3919b20c42ed0a03d3feffa25bf5e4ae027d403c1b93a6d6e546b400552",
+          "creator": {
+            "expression": "sending MessagingEndpoint",
+            "labels": [
+              {
+                "label": "sending MessagingEndpoint",
+                "scope_source_id": "src-000011",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bah-sending-messaging-endpoint",
+                  "path": "shared/reference/participants/bah-sending-messaging-endpoint.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000011-head.001.001.04-p4-c001-d1",
+          "source_id": "src-000011",
+          "source_sha256": "d931c69cb7232292fda5f39f9f72f9b983b678b1098ac2ba76a173ce360006ce",
+          "heading": "2 head.001.001.04 BusinessApplicationHeaderV04",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "quote": "A single new Business Message (with its accompagnying business application header) is created - by the sending MessagingEndpoint - for each business event; that is each interaction in a Business Transaction.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A single new Business Message (with its accompagnying business application header) is created - by the sending MessagingEndpoint - for each business event; that is each interaction in a Business Transaction.",
+          "raw_quote": "A single new Business Message (with its accompagnying business application header) is created - by\nthe sending MessagingEndpoint - for each business event; that is each interaction in a Business\nTransaction.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000011-head.001.001.04-p4-c001",
+          "mentions": [
+            {
+              "label": "sending MessagingEndpoint",
+              "start": 103,
+              "end": 128,
+              "resolution": {
+                "label": "sending MessagingEndpoint",
+                "scope_source_id": "src-000011",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bah-sending-messaging-endpoint",
+                  "path": "shared/reference/participants/bah-sending-messaging-endpoint.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "sending MessagingEndpoint",
+                "scope_source_id": "src-000011",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bah-sending-messaging-endpoint",
+                  "path": "shared/reference/participants/bah-sending-messaging-endpoint.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "created",
+              "voice": "passive",
+              "limitation": "The source explicitly identifies the actor of this passive clause. The object, scope and conditions remain in the source sentence."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000011-head.001.001.04-p4-c001-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "Exact source Functionality was read. The retained role kind distinguishes creation/distribution/action from wire-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Functionality narrative; setr.058 source typo additionally compared with full PDF p4303."
+          }
+        },
+        {
+          "quote": "Each instance of a Business Actor has one Name.",
+          "raw_quote": "Each instance of a Business Actor has\none Name.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000011-head.001.001.04-p4-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The Business Actor must not be referred to in the Transport Layer.",
+          "raw_quote": "The Business Actor must not be referred to in the Transport Layer.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000011-head.001.001.04-p4-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Business Layer deals with Business Messages.",
+          "raw_quote": "The Business Layer deals with Business Messages.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The behaviour of the Business Messages is fully described by the Business Transaction and the structure of the Business Messages is fully described by the Message Definitions and related Message Rules, Rules and Market Practices.",
+          "raw_quote": "The behaviour of the Business Messages is fully\ndescribed by the Business Transaction and the structure of the Business Messages is fully described by\nthe Message Definitions and related Message Rules, Rules and Market Practices.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "All of which are registered in the ISO 20022 Repository.",
+          "raw_quote": "All of which are\nregistered in the ISO 20022 Repository.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "A Business Message adheres to the following principles: \" A Business Message (and its business application header) must not contain information about the Message Transport System or the mechanics or mechanism of message sending, transportation, or receipt. \" A Business Message must be comprehensible outside of the context of the Transport Message.",
+          "raw_quote": "A Business Message adheres to the following principles:\n\" A Business Message (and its business application header) must not contain information about the\nMessage Transport System or the mechanics or mechanism of message sending, transportation, or\nreceipt.\n\" A Business Message must be comprehensible outside of the context of the Transport Message.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "That is the Business Message must not require knowledge of the Transport Message to be understood. \" A Business Message may contain headers, footers, and envelopes that are meaningful for the business.",
+          "raw_quote": "That\nis the Business Message must not require knowledge of the Transport Message to be understood.\n\" A Business Message may contain headers, footers, and envelopes that are meaningful for the\nbusiness.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "When present, they are treated as any other message content, which means that they are considered part of the Message Definition of the Business Message and as such will be part of the ISO 20022 Repository. \" A Business Message refers to Business Actors by their Name.",
+          "raw_quote": "When present, they are treated as any other message content, which means that they are\nconsidered part of the Message Definition of the Business Message and as such will be part of the ISO\n20022 Repository.\n\" A Business Message refers to Business Actors by their Name.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Specific usage of this BusinessMessageHeader may be defined by the relevant SEG.",
+          "raw_quote": "Specific usage of this BusinessMessageHeader may be defined by the relevant SEG.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4
+      ],
+      "file_pages": [
+        4,
+        5,
+        6
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000011",
+        "source_sha256": "d931c69cb7232292fda5f39f9f72f9b983b678b1098ac2ba76a173ce360006ce",
+        "message_id": "head.001.001.04",
+        "heading": "2 head.001.001.04 BusinessApplicationHeaderV04",
+        "file_pages": [
+          4,
+          5,
+          6
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "fcbcc3919b20c42ed0a03d3feffa25bf5e4ae027d403c1b93a6d6e546b400552",
+          "f3b25f655501cb094218968b5384f929e6ca028f203dcb3e6b93e110028abc06",
+          "15c905789f068017380dfc009a743d7afcccb1100cf50af6dae4e80122c1584a",
+          "5330cd98880728e3f4687849b06338005ca4b66aa93ce7a3da7a0b08e3ad4881",
+          "e07496dabeeff5e46501ec642fbe1934ca51c04015730deb431725463900301f",
+          "7e7aec2f24e4ed8b71948dbab674216fd24361090cc805160344c39f6d831d23",
+          "9b119a14d280aa6cc559286ecbe3b8308df969fa7d7d7bb88d3e25d1432a7744",
+          "6fad03bcefdac78bc165df45d15c783c5303c1ec9bcbfea7f68d7eb65f7710b1",
+          "617a55b2ab0059a035dfca1f9462595dbb6efbc8e7ac34ef4d6eca95f2cbf5ca",
+          "8ce6a50a605346c2ff6b249e31721312ce5c5a7524bbcda4111d3eb6ba2549f9"
+        ]
+      }
+    }
+  ]
+}

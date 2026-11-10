@@ -1,0 +1,26 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "shared"
+message_set: "External code sets"
+source_ids: ["src-000003"]
+source_editions: ["November 2025 Version 8.0"]
+message_ids: []
+heading_path: ["External Code Sets ", "Section 4: Sub-Families within Families of Domains", "Securities Sub-Families definition", "\t\nBlocked Transactions & CSD Blocked Transactions"]
+content_origin: "source-transcription"
+---
+
+# 	
+Blocked Transactions & CSD Blocked Transactions
+
+Source: [src-000003](../../../../../../../../raw-input/ExternalCodeSets/BTC_ExternalCodeListDescription_Nov2025.docx). Locator: heading path External Code Sets  / Section 4: Sub-Families within Families of Domains / Securities Sub-Families definition / 	
+Blocked Transactions & CSD Blocked Transactions.
+
+Extracted evidence. Pagination, drawing completeness, and source semantics remain subject to visual review.
+
+**P292** 	  
+Blocked Transactions & CSD Blocked Transactions
+
+[T38 - complete table](../tables/tbl-0038.md)
+

@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 2469,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 170,
+    "1": 104
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 160,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "640c9a01bc452a17de3ffe02811880d8c5dc2cf284f0a6de0349928fb6ad8847",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 192,
+      "bbox": [
+        84.5394,
+        627.7238,
+        318.8939,
+        628.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        619.093,
+        340.64,
+        629.093
+      ]
+    },
+    {
+      "path_object_ordinal": 194,
+      "bbox": [
+        317.8939,
+        627.7238,
+        341.14,
+        628.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        619.093,
+        340.64,
+        629.093
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-3844",
+      "file_page": 2469,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362366666666,
+        537.8929700000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-3844.md",
+      "rows": 16,
+      "matrix_cells": 48,
+      "physical_cells": 48,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "189b8161208f2f2d0f9d7fc21361176b20f2ee3f4797eac56eb2f92ac4ef0d18",
+      "cell_geometry_sha256": "2e833c49ffa8b97ef45c6f1b07e995b2ce5fb7a03923db10dfa7806b705c1f40",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 48,
+      "independent_cells_match": 48,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3845",
+      "file_page": 2469,
+      "bbox": [
+        85.03936999999996,
+        636.0930000000001,
+        555.590568,
+        704.6930000000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-3845.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "14d7769b92f65ad61b363497fe89ed90eaf443947c5dc81947e1938b6e85bbd1",
+      "cell_geometry_sha256": "8de43cb334ec29e94717fb56e2c17c8a540ad4de1b57d09e2942e5533888b73d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,100 @@
+{
+  "source_id": "src-000354",
+  "source_sha256": "4cc1fdc26cca6cdab7548753e9778176847481840fc159386dc8990baa32514e",
+  "file_page": 4,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.23623142857144,
+        711.0929100000002
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          390.49293000000023
+        ],
+        [
+          85.03936999999999,
+          390.49293000000023,
+          283.46457,
+          538.6929200000002
+        ],
+        [
+          85.03936999999999,
+          538.6929200000002,
+          283.46457,
+          686.8929100000001
+        ],
+        [
+          85.03936999999999,
+          686.8929100000001,
+          283.46457,
+          711.0929100000002
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.23623142857144,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.23623142857144,
+          390.49293000000023
+        ],
+        [
+          283.46457,
+          390.49293000000023,
+          510.23623142857144,
+          538.6929200000002
+        ],
+        [
+          283.46457,
+          538.6929200000002,
+          510.23623142857144,
+          686.8929100000001
+        ],
+        [
+          283.46457,
+          686.8929100000001,
+          510.23623142857144,
+          711.0929100000002
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "reda.024.001.01\nCollateralValueCreationRequestV01",
+          "The CollateralValueCreationRequest message is sent\nby the instructing party to the executing party to\nrequest for the creation of a collateral value in the\nexecuting system collateral management reference\ndata.\nUsage:\nIt aims at instructing the creation of a new collateral\nvalue with corresponding details.\nProcessing and confirmation of the collateral value\ncreation request message are provided via a collateral\nmanagement status advice."
+        ],
+        [
+          "reda.025.001.01\nEligibleSecuritiesCreationRequestV01",
+          "The EligibleSecuritiesCreationRequest message is\nexchanged between an instructing party and the\nexecuting party to request for the creation of an eligible\nsecurities in the executing system collateral\nmanagement reference data.\nUsage:\nIt aims at instructing the creation of a new eligible\nsecurities with corresponding details.\nProcessing and confirmation of the eligible securities\ncreation request message are provided via a collateral\nmanagement status advice."
+        ],
+        [
+          "reda.026.001.01\nEligibleCounterpartCSDCreationRequestV01",
+          "The EligibleCounterpartCSDCreationRequest message\nis sent by an instructing party to the executing party to\nrequest for the creation of an eligible counterpart CSD\nin the executing system collateral management\nreference data.\nUsage:\nIt aims at instructing the creation of a new eligible\ncounterpart CSD with corresponding details.\nProcessing and confirmation of the eligible counterpart\nCSD creation request message are provided via a\ncollateral management status advice."
+        ],
+        [
+          "reda.027.001.01\nCloseLinkCreationRequestV01",
+          "The CloseLinkCreationRequest message is sent by an\ninstructing party to the executing party to request for"
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

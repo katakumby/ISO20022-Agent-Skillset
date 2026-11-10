@@ -1,0 +1,55 @@
+flowchart TB
+subgraph laneA["PaymentClearingAgent A"]
+startA((" "))
+prepareA["Prepare onward interbank payment"]
+sendA["Send payment"]
+assessA["Assess reject reason code"]
+repairQ{"Is repair needed?"}
+repairA["Repair payment order"]
+recycleA["Recycle payment order"]
+endA(((" ")))
+end
+subgraph laneB["PaymentClearingAgent B"]
+receiveB["Receive Payment Order"]
+technicalB["Apply Technical Validation"]
+correctQ{"Is payment order technically correct?"}
+businessB["Apply Business Validation"]
+validQ{"Is Payment Order valid?"}
+rejectB["Reject payment Order"]
+sortB["Sort interbank payment"]
+calculateB["Calculate settlement positions"]
+prepareB["Prepare onward interbank payment"]
+endB(((" ")))
+end
+subgraph laneS["PaymentSettlementAgent"]
+riskS["Assess Interbank Payment Risk"]
+settleQ{"Can Settlement take place?"}
+settleS["Settle Payment order"]
+informS["Inform about Settlement"]
+end
+startA --> prepareA
+prepareA --> sendA
+sendA --> |"SingleCreditTransfer message"| receiveB
+receiveB --> technicalB
+technicalB --> correctQ
+correctQ --> |"No"| rejectB
+correctQ --> |"Yes"| businessB
+businessB --> validQ
+validQ --> |"No"| rejectB
+validQ --> riskS
+rejectB --> |"SingleCreditTransferReject message"| assessA
+assessA --> repairQ
+repairQ --> |"Yes"| repairA
+repairA --> sendA
+repairQ --> |"No"| recycleA
+recycleA --> endA
+riskS --> settleQ
+settleQ --> |"No"| informS
+settleQ --> |"Yes"| settleS
+settleS --> informS
+informS --> |"Settlement failure"| rejectB
+informS --> |"Settlement passed"| sortB
+sortB --> calculateB
+calculateB --> prepareB
+prepareB --> endB
+style startA fill:#222,stroke:#222,color:#222

@@ -1,0 +1,100 @@
+{
+  "source_id": "src-000378",
+  "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+  "file_page": 5,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.23623142857144,
+        729.6929100000001
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          56.6929100000001,
+          283.46457,
+          74.89291000000014
+        ],
+        [
+          85.03936999999999,
+          74.89291000000014,
+          283.46457,
+          279.09292000000016
+        ],
+        [
+          85.03936999999999,
+          279.09292000000016,
+          283.46457,
+          377.2929000000001
+        ],
+        [
+          85.03936999999999,
+          377.2929000000001,
+          283.46457,
+          575.4929000000001
+        ],
+        [
+          85.03936999999999,
+          575.4929000000001,
+          283.46457,
+          729.6929100000001
+        ],
+        [
+          283.46457,
+          56.6929100000001,
+          510.23623142857144,
+          74.89291000000014
+        ],
+        [
+          283.46457,
+          74.89291000000014,
+          510.23623142857144,
+          279.09292000000016
+        ],
+        [
+          283.46457,
+          279.09292000000016,
+          510.23623142857144,
+          377.2929000000001
+        ],
+        [
+          283.46457,
+          377.2929000000001,
+          510.23623142857144,
+          575.4929000000001
+        ],
+        [
+          283.46457,
+          575.4929000000001,
+          510.23623142857144,
+          729.6929100000001
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "",
+          "The SecurityCreationStatusAdvice message may be\nsent as a response to the request of the instructing\nparty or not.\nThe instructing party - executing/servicing party\nrelationship may be:\n- Central Securities Depositories (CSD) who would like\nto publish security static data, or\n- a Corporate, or\n- a Bank, or\n- a Market Infrastructure, or\n- a Market Data Provider."
+        ],
+        [
+          "reda.009.001.01\nSecurityActivityAdviceV01",
+          "The SecurityActivityReport message is sent by the\nexecuting party to an instructing party containing\ninformation about changes on securities reference\ndata.\nScope and usage:\nIt aims at informing about the changes occurred during\na business date for securities reference data."
+        ],
+        [
+          "reda.010.001.01\nSecurityQueryV01",
+          "An instructing party sends a SecurityQuery message to\nan executing/servicing party to request a report of\nfinancial instrument details in their system.\nThe instructing party - executing/servicing party\nrelationship may be:\n- Central Securities Depositories (CSD) who would like\nto publish security static data, or\n- a Corporate, or\n- a Bank, or\n- a Market Infrastructure, or\n- a Market Data Provider."
+        ],
+        [
+          "reda.012.001.01\nSecurityReportV01",
+          "An executing/servicing party sends a SecurityReport\nmessage to an instructing party to advise the last\nknown image of securities data's.\nThe report may be sent upon request (for example a\nquery) of the instructing party or push by the executing/\nservicing party.\nThe instructing party - executing/servicing party\nrelationship may be:\n- Central Securities Depositories (CSD) who would like\nto publish security static data, or"
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

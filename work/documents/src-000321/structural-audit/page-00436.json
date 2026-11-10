@@ -1,0 +1,73 @@
+{
+  "source_id": "src-000321",
+  "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+  "file_page": 436,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 70,
+    "1": 68
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 62,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "b2538891582f86a74216b94a423ac200208724b0234068657e7d796850dbcbcd",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0819",
+      "file_page": 436,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.23623,
+        111.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0819.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "f3804cbf2c2f02ebefe84d6f0d873c29c2915f0fad25cd29a68ba9ab439a86f3",
+      "cell_geometry_sha256": "96de62c8652a63e5506dc6bc2401097690036adba6a542f42b58cfec2d76c21b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0820",
+      "file_page": 436,
+      "bbox": [
+        85.03936999999996,
+        181.6929100000001,
+        510.23623,
+        312.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0820.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "4ef2542db5fe254499efa04c365b11d8494b0b9c9e26d76ab912ec1245f4423f",
+      "cell_geometry_sha256": "83b5c97741f244af43e21887618ca2d4a3910a03b220a845bfd25b0b12ec2c9f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

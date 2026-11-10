@@ -1,0 +1,116 @@
+{
+  "source_id": "src-000372",
+  "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+  "file_page": 5,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.23623249999997,
+        491.8929100000001
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          56.6929100000001,
+          283.46457,
+          74.89291000000014
+        ],
+        [
+          85.03936999999999,
+          74.89291000000014,
+          283.46457,
+          149.0929100000002
+        ],
+        [
+          85.03936999999999,
+          149.0929100000002,
+          283.46457,
+          297.2929100000001
+        ],
+        [
+          85.03936999999999,
+          297.2929100000001,
+          283.46457,
+          395.4929000000001
+        ],
+        [
+          85.03936999999999,
+          395.4929000000001,
+          283.46457,
+          443.69290000000007
+        ],
+        [
+          85.03936999999999,
+          443.69290000000007,
+          283.46457,
+          491.8929100000001
+        ],
+        [
+          283.46457,
+          56.6929100000001,
+          510.23623249999997,
+          74.89291000000014
+        ],
+        [
+          283.46457,
+          74.89291000000014,
+          510.23623249999997,
+          149.0929100000002
+        ],
+        [
+          283.46457,
+          149.0929100000002,
+          510.23623249999997,
+          297.2929100000001
+        ],
+        [
+          283.46457,
+          297.2929100000001,
+          510.23623249999997,
+          395.4929000000001
+        ],
+        [
+          283.46457,
+          395.4929000000001,
+          510.23623249999997,
+          443.69290000000007
+        ],
+        [
+          283.46457,
+          443.69290000000007,
+          510.23623249999997,
+          491.8929100000001
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "",
+          "Usage:\nProcessing and confirmation of the securities account\ncreation request message are provided via a\nSecuritiesAccountStatusAdvice message."
+        ],
+        [
+          "reda.032.001.01\nSecuritiesAccountDeletionRequestV01",
+          "The SecuritiesAccountDeletionRequest message is\nsent by an instructing party to the executing party to\nrequest for the deletion of a securities account from the\nsecurities account reference data defined in the system\nof the executing party.\nUsage:\nIt aims at instructing the deletion of an existing\nsecurities account providing securities account\nidentification.\nThe result of the deletion is provided through a\nSecuritiesAccountStatusAdvice message."
+        ],
+        [
+          "reda.035.001.01\nSecuritiesAccountActivityAdviceV01",
+          "The SecuritieAccountActivityReport message is sent\nby the executing party to an instructing party containing\ninformation about changes on securities account\nreference data.\nScope and usage:\nIt aims at informing about the changes occurred during\na business date for securities account reference data."
+        ],
+        [
+          "reda.036.001.01\nSecuritiesAccountAuditTrailQueryV01",
+          "The SecuritiesAccountAuditTrailQuery message is sent\nby an instructing party to the executing party to query\nfor the securities account audit trail recorded in the\nsystem."
+        ],
+        [
+          "reda.037.001.01\nSecuritiesAccountAuditTrailReportV01",
+          "The SecuritiesAccountAuditTrailReport message is\nsent by the executing party to an instructing party to\nprovide detailed information on the requested\nsecurities account audit trail recorded in the system."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

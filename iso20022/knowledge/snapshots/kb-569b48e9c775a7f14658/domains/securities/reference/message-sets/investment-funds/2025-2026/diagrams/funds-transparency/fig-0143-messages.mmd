@@ -1,0 +1,11 @@
+%%{init: {"sequence":{"mirrorActors":false}}}%%
+sequenceDiagram
+  participant CUSA as CUSA
+  participant CUSB as CUSB
+  participant ICSD as ICSD
+  participant TRAG as TRAG
+  CUSA-)ICSD: [1] Securities Balance Transparency Report semt.041
+  ICSD-)CUSA: [2] Securities Balance Transparency Report semt.041
+  CUSB-)ICSD: [3] Securities Balance Transparency Report semt.041
+  ICSD-)CUSB: [4] Securities Balance Transparency Report semt.041
+  ICSD-)TRAG: [5] Securities Balance Transparency Report semt.041

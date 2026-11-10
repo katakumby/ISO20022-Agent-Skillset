@@ -1,0 +1,3151 @@
+{
+  "source_id": "src-000173",
+  "source_sha256": "f5710813d17d86d78b782b763e0bfafeee0da6e1fba859f2d49819692825c120",
+  "models": [
+    {
+      "figure_id": "fig-0001",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0001.md",
+      "original": "domains/payments/assets/src-000173/originals/image1.emf",
+      "original_sha256": "32fcd12c70a3196293c826092332a0705f389abfa4247b0dbd28bca11f94d0d6",
+      "mermaid": "work/payments-initiation/mmd/fig-0001.mmd",
+      "mermaid_sha256": "4b7afe79eb77dccd0878fbc183e460b1eca5681266dde046ce92189da2807b07",
+      "source_locator": "direct-body paragraph P109",
+      "word_file_page": 11,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p107-customer-to-bank-payment-order.md",
+      "flow_start": 107,
+      "actors": {
+        "A4_0": [
+          "Ultimate Debtor",
+          [
+            "ultimate-debtor"
+          ]
+        ],
+        "A4_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A4_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A4_3": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "A5_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A5_1": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A5_2": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "A6_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A6_1": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A6_2": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "A7_0": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "A7_1": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A7_2": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A7_3": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "A14_0": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A14_1": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Process end-to-end payment",
+          "Process customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Process end-to-end payment",
+          "Process interbank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Process end-to-end payment",
+          "Report",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank payment",
+          "Order customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank payment",
+          "Accept customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank payment",
+          "Clear customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank payment",
+          "Settle customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Order customer-to-bank payment",
+          "Authorise customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Accept customer-to-bank payment",
+          "Check customer-to-bank Payment authorisation",
+          "plain filled source arrow"
+        ],
+        [
+          "Accept customer-to-bank payment",
+          "Validate customer-to-bank payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Accept customer-to-bank payment",
+          "Assess customer-to-bank Payment risk",
+          "plain filled source arrow"
+        ],
+        [
+          "Assess customer-to-bank Payment risk",
+          "Generate regulatory reporting information",
+          "plain filled source arrow"
+        ],
+        [
+          "Clear customer-to-bank payment",
+          "Sort payment",
+          "plain filled source arrow"
+        ],
+        [
+          "Clear customer-to-bank payment",
+          "Prepare onward interbank payment",
+          "plain filled source arrow"
+        ]
+      ],
+      "limitations": [
+        "Source arrows are ordinary filled arrows; no include/extend/generalization semantics are asserted. Source has no system boundary.",
+        "Participant pictograms sit below process groups without drawn connectors. Native actors remain unconnected; the explicit placement table preserves group membership without inventing association lines.",
+        "Source colours distinguish process levels; original artwork preserves those colours and exact placement.",
+        "T15 names only Debtor agent for regulatory reporting; figure also shows Creditor Agent. Source discrepancy remains issue-000044.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [
+        "issue-000044"
+      ],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image1.emf",
+        "word_file_page": 11,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-11.png"
+      },
+      "review_status": "needs-review"
+    },
+    {
+      "figure_id": "fig-0002",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0002.md",
+      "original": "domains/payments/assets/src-000173/originals/image2.emf",
+      "original_sha256": "23b7f201d812ee0dd5c0ddbd552ea552a614b2da970518c79503ee7804aeb8ed",
+      "mermaid": "work/payments-initiation/mmd/fig-0002.mmd",
+      "mermaid_sha256": "0c8cd530ca6ae4f4d606cc0c7a2148bc43eab1fde49611f076dc2d9804570a7e",
+      "source_locator": "direct-body paragraph P127",
+      "word_file_page": 15,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p125-customer-to-bank-direct-debit.md",
+      "flow_start": 125,
+      "actors": {
+        "A5_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A5_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A5_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A5_3": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A6_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A6_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A6_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A6_3": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A7_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A7_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A7_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A7_3": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A8_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A8_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A8_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A8_3": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A9_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A9_1": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A9_2": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "A10_0": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "A10_1": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "A10_2": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "A10_3": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Process Direct Debit end-to-end",
+          "Process customer-to-bank Direct Debit",
+          "plain filled source arrow"
+        ],
+        [
+          "Process Direct Debit end-to-end",
+          "Process interbank Direct Debit",
+          "plain filled source arrow"
+        ],
+        [
+          "Process Direct Debit end-to-end",
+          "Report",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Initiate collection of 1st/1-off Direct Debit",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Initiate collection of recurrent Direct Debit",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Process reject",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Process return/request for refund",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Process reversal",
+          "plain filled source arrow"
+        ],
+        [
+          "Process customer-to-bank Direct Debit",
+          "Process request for cancellation/Revocation",
+          "plain filled source arrow"
+        ]
+      ],
+      "limitations": [
+        "Source arrows are ordinary filled arrows; no include/extend/generalization semantics are asserted. Source has no system boundary.",
+        "Participant pictograms sit below process groups without drawn connectors. Native actors remain unconnected; the explicit placement table preserves group membership without inventing association lines.",
+        "Source colours distinguish process levels; original artwork preserves those colours and exact placement.",
+        "Manage Direct Debit Mandate is an unconnected source use case, retained without adding a parent edge.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image2.emf",
+        "word_file_page": 15,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-15.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0003",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0003.md",
+      "original": "domains/payments/assets/src-000173/originals/image3.png",
+      "original_sha256": "753435056ccd00377fa789c039d67bee715f5f6a8d9343d74aee1fc5782ecdb8",
+      "mermaid": "work/payments-initiation/mmd/fig-0003.mmd",
+      "mermaid_sha256": "273397a0e583af0149b2f33c5d8d8e63c8e476e0a7663f6fdbee5c78deb7a6b8",
+      "source_locator": "direct-body table T22 row 2 cell 1",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p135-legend.md",
+      "flow_start": 135,
+      "actors": {},
+      "events": [],
+      "limitations": [
+        "T22 row2: start of a process.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image3.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0004",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0004.md",
+      "original": "domains/payments/assets/src-000173/originals/image4.png",
+      "original_sha256": "416ec2d0da67da840d63718473bef11935369ba398b78246c53eb332027eb13d",
+      "mermaid": "work/payments-initiation/mmd/fig-0004.mmd",
+      "mermaid_sha256": "88e37574a035f1756a66a8a9ce18c2dbf850b7234cb3fc2e23b8736bde9f2a1d",
+      "source_locator": "direct-body table T22 row 3 cell 1",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p135-legend.md",
+      "flow_start": 135,
+      "actors": {},
+      "events": [],
+      "limitations": [
+        "T22 row3: end of a process. Mermaid final-node geometry has concentric open outlines; source contains a filled central disk.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image4.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0005",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0005.md",
+      "original": "domains/payments/assets/src-000173/originals/image5.png",
+      "original_sha256": "2c9a29da41a10dede04f82356c9d59e2406ce3a30f1143fa91edf06fde3a6040",
+      "mermaid": "work/payments-initiation/mmd/fig-0005.mmd",
+      "mermaid_sha256": "cb786830596b5ec1b705afd415d61de61c5a37f052aecd6034fa9f87e16a29d6",
+      "source_locator": "direct-body table T22 row 4 cell 1",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p135-legend.md",
+      "flow_start": 135,
+      "actors": {},
+      "events": [],
+      "limitations": [
+        "T22 row4: decision point with alternative paths.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image5.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0006",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0006.md",
+      "original": "domains/payments/assets/src-000173/originals/image6.png",
+      "original_sha256": "8d85be86c730d3c41866718d41e9bbcc504a417500e49a1749aeb69d07de1f88",
+      "mermaid": "work/payments-initiation/mmd/fig-0006.mmd",
+      "mermaid_sha256": "c841d81b636031cccf5a429f1ca38fa63b0868cd567792887ae9940e0f86b270",
+      "source_locator": "direct-body table T22 row 5 cell 1",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p135-legend.md",
+      "flow_start": 135,
+      "actors": {},
+      "events": [],
+      "limitations": [
+        "T22 row5: more than one path may proceed in parallel. Native fork bar is shown without invented incoming/outgoing activities.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image6.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0007",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0007.md",
+      "original": "domains/payments/assets/src-000173/originals/image7.png",
+      "original_sha256": "9a7d4826b285ae33dec24660c1b1df14db7059467adaa785ee9559f1b7169206",
+      "mermaid": "work/payments-initiation/mmd/fig-0007.mmd",
+      "mermaid_sha256": "dfd9b7a6828cd2e34a6805f74205cc81007b944f975bd0c1aa1b8844d583fdd1",
+      "source_locator": "direct-body paragraph P139",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p138-simple-scenario.md",
+      "flow_start": 138,
+      "actors": {
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Debtor",
+          "Debtor Agent",
+          "directed"
+        ],
+        [
+          "Debtor Agent",
+          "Creditor Agent",
+          "directed"
+        ],
+        [
+          "Creditor Agent",
+          "Creditor",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "Source has no lane boundaries. One rendering container groups the chain for layout only. Solid and dashed arrows retain their source appearance; no undocumented condition is assigned to dashed arrows.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image7.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0008",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0008.md",
+      "original": "domains/payments/assets/src-000173/originals/image8.png",
+      "original_sha256": "ad2de6d97ead85546105d4d0d7260996e50081951c40b1fd59523be39502a433",
+      "mermaid": "work/payments-initiation/mmd/fig-0008.mmd",
+      "mermaid_sha256": "d4219e5ab444b9099599eef2c9963038026d944b20df8ef65d51de3cf612db49",
+      "source_locator": "direct-body paragraph P141",
+      "word_file_page": 17,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p140-complex-scenario.md",
+      "flow_start": 140,
+      "actors": {
+        "U": [
+          "Ultimate Debtor",
+          [
+            "ultimate-debtor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "I": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "F": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "UC": [
+          "Ultimate Creditor",
+          [
+            "ultimate-creditor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Ultimate Debtor",
+          "Debtor",
+          "dashed directed"
+        ],
+        [
+          "Debtor",
+          "Initiating Party",
+          "dashed directed"
+        ],
+        [
+          "Initiating Party",
+          "Debtor Agent",
+          "directed"
+        ],
+        [
+          "Initiating Party",
+          "Forwarding Agent",
+          "dashed directed"
+        ],
+        [
+          "Forwarding Agent",
+          "Debtor Agent",
+          "dashed directed"
+        ],
+        [
+          "Debtor Agent",
+          "Creditor Agent",
+          "directed"
+        ],
+        [
+          "Creditor Agent",
+          "Creditor",
+          "directed"
+        ],
+        [
+          "Creditor",
+          "Ultimate Creditor",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "Source has no lane boundaries. One rendering container groups the chain for layout only. Solid and dashed arrows retain their source appearance; no undocumented condition is assigned to dashed arrows.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image8.png",
+        "word_file_page": 17,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-17.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0009",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0009.md",
+      "original": "domains/payments/assets/src-000173/originals/image9.emf",
+      "original_sha256": "0454dfdc3cf979fb15123aee5e3e7f00febf70f8b28c138141855a7846ce5df6",
+      "mermaid": "work/payments-initiation/mmd/fig-0009.mmd",
+      "mermaid_sha256": "f1c183469322ddfd23bdc85894449cd64a0710bd18f3d8ff016d7463f4f25723",
+      "source_locator": "direct-body paragraph P145",
+      "word_file_page": 18,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p136-customer-to-bank-payment-order.md",
+      "flow_start": 136,
+      "actors": {
+        "I": [
+          "Initiating Party / Debtor",
+          [
+            "initiating-party",
+            "debtor"
+          ]
+        ],
+        "F": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "start",
+          "1 Prepare, authorise and send payment order(s)",
+          "directed"
+        ],
+        [
+          "1 Prepare, authorise and send payment order(s)",
+          "2 Receive and check authentication",
+          "directed Authorisation"
+        ],
+        [
+          "1 Prepare, authorise and send payment order(s)",
+          "2 Receive and check authentication",
+          "directed Payment order"
+        ],
+        [
+          "2 Receive and check authentication",
+          "3.1 Technical validation",
+          "directed"
+        ],
+        [
+          "3.1 Technical validation",
+          "3.3 Apply business rules",
+          "directed"
+        ],
+        [
+          "3.3 Apply business rules",
+          "3.2 Assess static/dynamic risk",
+          "directed"
+        ],
+        [
+          "3.2 Assess static/dynamic risk",
+          "3.4 Rebuild and forward payment order(s)",
+          "directed"
+        ],
+        [
+          "3.4 Rebuild and forward payment order(s)",
+          "Receive and check authentication",
+          "directed Payment order"
+        ],
+        [
+          "4 Receive Status Report",
+          "Is repair possible?",
+          "directed"
+        ],
+        [
+          "Is repair possible?",
+          "Repair Payment Order(s)",
+          "directed Yes"
+        ],
+        [
+          "Is repair possible?",
+          "Recycle Payment Order(s)",
+          "directed No"
+        ],
+        [
+          "Repair Payment Order(s)",
+          "1 Prepare, authorise and send payment order(s)",
+          "directed"
+        ],
+        [
+          "Recycle Payment Order(s)",
+          "1 Prepare, authorise and send payment order(s)",
+          "directed"
+        ],
+        [
+          "4 Receive Status Report",
+          "6 Reconcile and track Payment",
+          "directed"
+        ],
+        [
+          "6 Reconcile and track Payment",
+          "Reconciliation/tracking OK?",
+          "directed"
+        ],
+        [
+          "Reconciliation/tracking OK?",
+          "end",
+          "directed Yes"
+        ],
+        [
+          "Reconciliation/tracking OK?",
+          "Investigation/claim and resolve",
+          "directed No"
+        ],
+        [
+          "Investigation/claim and resolve",
+          "end",
+          "directed"
+        ],
+        [
+          "9.1 Receive cheque",
+          "end",
+          "directed"
+        ],
+        [
+          "Receive and check authentication",
+          "3.1 Technical validation",
+          "directed"
+        ],
+        [
+          "3.1 Technical validation",
+          "3.3 Apply business rules",
+          "directed"
+        ],
+        [
+          "3.3 Apply business rules",
+          "3.2 Assess static/dynamic risk",
+          "directed"
+        ],
+        [
+          "3.2 Assess static/dynamic risk",
+          "5.1 Confirm acceptance",
+          "directed"
+        ],
+        [
+          "5.1 Confirm acceptance",
+          "5.2 Send acceptance acknowledgement",
+          "directed"
+        ],
+        [
+          "5.2 Send acceptance acknowledgement",
+          "5.3 Receive and forward acceptance acknowledgement",
+          "directed"
+        ],
+        [
+          "5.3 Receive and forward acceptance acknowledgement",
+          "6 Reconcile and track Payment",
+          "directed"
+        ],
+        [
+          "5.1 Confirm acceptance",
+          "7 Debit Customer Account and credit internal account",
+          "directed"
+        ],
+        [
+          "7 Debit Customer Account and credit internal account",
+          "7.1 Prepare and send Debit Advice(s)",
+          "directed"
+        ],
+        [
+          "7.1 Prepare and send Debit Advice(s)",
+          "7.1 Receive and forward Debit advices",
+          "directed"
+        ],
+        [
+          "7.1 Receive and forward Debit advices",
+          "6 Reconcile and track Payment",
+          "directed"
+        ],
+        [
+          "7.1 Prepare and send Debit Advice(s)",
+          "Payment Routing",
+          "directed"
+        ],
+        [
+          "Payment Routing",
+          "8 Internal book keeping",
+          "directed On us"
+        ],
+        [
+          "Payment Routing",
+          "9 Print Cheques",
+          "directed Cheque"
+        ],
+        [
+          "Payment Routing",
+          "10 Rebuild Payments Order(s)",
+          "directed Not on us"
+        ],
+        [
+          "8 Internal book keeping",
+          "11 Execution Status",
+          "directed"
+        ],
+        [
+          "9 Print Cheques",
+          "11 Execution Status",
+          "directed"
+        ],
+        [
+          "10 Rebuild Payments Order(s)",
+          "11 Execution Status",
+          "directed"
+        ],
+        [
+          "11 Execution Status",
+          "11.1 Receive and forward Execution status",
+          "directed"
+        ],
+        [
+          "11.1 Receive and forward Execution status",
+          "6 Reconcile and track Payment",
+          "directed"
+        ],
+        [
+          "9 Print Cheques",
+          "9.1 Receive cheque",
+          "directed Cheques"
+        ],
+        [
+          "9 Print Cheques",
+          "9.1 Receive cheques",
+          "directed Cheques"
+        ],
+        [
+          "10 Rebuild Payments Order(s)",
+          "Sort cheque(s) and credit transfers",
+          "directed Payment order"
+        ],
+        [
+          "Sort cheque(s) and credit transfers",
+          "8 Internal book keeping",
+          "directed"
+        ],
+        [
+          "Sort cheque(s) and credit transfers",
+          "9 Print cheques",
+          "directed"
+        ],
+        [
+          "8 Internal book keeping",
+          "Receive account information",
+          "directed Account information"
+        ],
+        [
+          "9 Print cheques",
+          "9.1 Receive cheques",
+          "directed Cheques"
+        ],
+        [
+          "9.1 Receive cheques",
+          "Reconciliation",
+          "directed"
+        ],
+        [
+          "Receive account information",
+          "Reconciliation",
+          "directed"
+        ],
+        [
+          "Reconciliation",
+          "end",
+          "directed"
+        ],
+        [
+          "3.1 Technical validation",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.3 Apply business rules",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.2 Assess static/dynamic risk",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.4 Rebuild and forward payment order(s)",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.1 Technical validation",
+          "4 Receive and forward Status Report",
+          "directed"
+        ],
+        [
+          "4 Receive and forward Status Report",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.3 Apply business rules",
+          "4 Receive and forward Status Report",
+          "directed"
+        ],
+        [
+          "4 Receive and forward Status Report",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "3.2 Assess static/dynamic risk",
+          "4 Receive and forward Status Report",
+          "directed"
+        ],
+        [
+          "4 Receive and forward Status Report",
+          "4 Receive Status Report",
+          "directed"
+        ],
+        [
+          "7 Debit Customer Account and credit internal account",
+          "4 Receive and forward Status Report",
+          "directed"
+        ],
+        [
+          "4 Receive and forward Status Report",
+          "4 Receive Status Report",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "Yellow source note: Either the Payment Autorisations are sent separately or with the payment order(s). Literal spelling retained.",
+        "Four separate forwarding-agent status nodes and the separate payment-order/authorisation arrows are preserved. Source green communications and grey internal control are listed together without equating them to schema message types.",
+        "T23 activity definitions, including repair/rebuild conditions and non-final execution statuses, govern this view. The source Cheques connector from Debtor Agent reaches both initiating-party and creditor receive-cheque nodes.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image9.emf",
+        "word_file_page": 18,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-1.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-18.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0010",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0010.md",
+      "original": "domains/payments/assets/src-000173/originals/image10.png",
+      "original_sha256": "ed620293c52da8a942911ab6177e2b3faa1d714c28711848b5445b6a253395fa",
+      "mermaid": "work/payments-initiation/mmd/fig-0010.mmd",
+      "mermaid_sha256": "0742d97d4990061d3c276eb62518973a028582e0039af580e6c84b2e4b84dc44",
+      "source_locator": "direct-body paragraph P148",
+      "word_file_page": 22,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p147-customer-to-bank-direct-debit.md",
+      "flow_start": 147,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "ACH": [
+          "ACH (System Transaction Administrator)",
+          [
+            "ach-system-transaction-administrator"
+          ]
+        ],
+        "S": [
+          "Settlement Agent",
+          [
+            "settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Signed mandate in place",
+          "Pre-Notification sent?",
+          "directed"
+        ],
+        [
+          "Pre-Notification sent?",
+          "Pre-Notification of the Debtor (from Process 1st/1-off Direct Debit)",
+          "directed no"
+        ],
+        [
+          "Pre-Notification sent?",
+          "Initiate Collection of the Direct Debit",
+          "directed yes"
+        ],
+        [
+          "Pre-Notification of the Debtor (from Process 1st/1-off Direct Debit)",
+          "Initiate Collection of the Direct Debit",
+          "directed"
+        ],
+        [
+          "Pre-Notification of the Debtor (from Process 1st/1-off Direct Debit)",
+          "Reconcile Pre-Notification",
+          "directed"
+        ],
+        [
+          "Reconcile Pre-Notification",
+          "accept?",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Refused Direct Debit",
+          "directed no"
+        ],
+        [
+          "accept?",
+          "Reconciled Pre-Notification",
+          "directed yes"
+        ],
+        [
+          "Initiate Collection of the Direct Debit",
+          "accept request for initiation of a direct debit / creditor registered for the DD scheme?",
+          "directed"
+        ],
+        [
+          "accept request for initiation of a direct debit / creditor registered for the DD scheme?",
+          "Reject Direct Debit Instruction",
+          "directed no"
+        ],
+        [
+          "accept request for initiation of a direct debit / creditor registered for the DD scheme?",
+          "Forward DD Instruction",
+          "directed yes"
+        ],
+        [
+          "Forward DD Instruction",
+          "accept direct debit transaction?",
+          "directed"
+        ],
+        [
+          "accept direct debit transaction?",
+          "Reject Direct Debit Instruction",
+          "directed no"
+        ],
+        [
+          "accept direct debit transaction?",
+          "Clear Direct Debit",
+          "directed yes"
+        ],
+        [
+          "Reject Direct Debit Instruction",
+          "Process B2B Reject",
+          "directed"
+        ],
+        [
+          "Process B2B Reject",
+          "format error?",
+          "directed"
+        ],
+        [
+          "format error?",
+          "Correct and resubmit",
+          "directed yes"
+        ],
+        [
+          "format error?",
+          "Reject Direct Debit Instruction",
+          "directed no"
+        ],
+        [
+          "Correct and resubmit",
+          "Forward DD Instruction",
+          "directed"
+        ],
+        [
+          "Reject Direct Debit Instruction",
+          "Process Reject",
+          "directed"
+        ],
+        [
+          "Process Reject",
+          "correction?",
+          "directed"
+        ],
+        [
+          "correction?",
+          "Rejected DD",
+          "directed no"
+        ],
+        [
+          "correction?",
+          "Initiate Collection of the Direct Debit",
+          "directed yes"
+        ],
+        [
+          "Clear Direct Debit",
+          "Settle Direct Debit Proceeds",
+          "directed"
+        ],
+        [
+          "Clear Direct Debit",
+          "accept?",
+          "directed"
+        ],
+        [
+          "accept?",
+          "before due date?",
+          "directed no"
+        ],
+        [
+          "before due date?",
+          "Reject Direct Debit Instruction",
+          "directed yes"
+        ],
+        [
+          "before due date?",
+          "Return Direct Debit Instruction",
+          "directed no"
+        ],
+        [
+          "Reject Direct Debit Instruction",
+          "Reject Direct Debit Instruction",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Provide Value Added Services",
+          "directed yes"
+        ],
+        [
+          "Provide Value Added Services",
+          "Reconcile Debit Entry",
+          "directed"
+        ],
+        [
+          "Reconcile Debit Entry",
+          "Refund requested?",
+          "directed"
+        ],
+        [
+          "Refund requested?",
+          "Reconciled Direct Debit",
+          "directed no"
+        ],
+        [
+          "Refund requested?",
+          "Request Refund",
+          "directed yes"
+        ],
+        [
+          "Settle Direct Debit Proceeds",
+          "Reconcile Debit",
+          "directed report"
+        ],
+        [
+          "Reconcile Debit",
+          "Reconciled Debit Entry",
+          "directed"
+        ],
+        [
+          "Settle Direct Debit Proceeds",
+          "Reconcile Credit Entry and Inform Creditor",
+          "directed"
+        ],
+        [
+          "Reconcile Credit Entry and Inform Creditor",
+          "Reconcile Collected Direct Debit",
+          "directed"
+        ],
+        [
+          "Reconcile Collected Direct Debit",
+          "Reconciled Direct Debit",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "Purple activity-reference notes link Return Direct Debit Instruction to figure11 and Request Refund to figure12; they are not extra process activities.",
+        "Source initial state includes Signed mandate in place. Separate debtor pre-notification acceptance/refusal does not have a connector back to creditor collection. No such connector is invented.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image10.png",
+        "word_file_page": 22,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-2.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-22.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0011",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0011.md",
+      "original": "domains/payments/assets/src-000173/originals/image11.png",
+      "original_sha256": "9a9848b3db9430cb84e664a5d28246e71433d644a6169a0991cb6c36fb18e8b6",
+      "mermaid": "work/payments-initiation/mmd/fig-0011.mmd",
+      "mermaid_sha256": "83f72579e4bf9970db52596883054c3de343cf90a3701368ce6ec5aeb3fa2e5d",
+      "source_locator": "direct-body paragraph P150",
+      "word_file_page": 22,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p149-return-direct-debit.md",
+      "flow_start": 149,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing Agent",
+          [
+            "clearing-agent"
+          ]
+        ],
+        "S": [
+          "Settlement Agent",
+          [
+            "settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Return Direct Debit",
+          "accept?",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Reject Direct Debit Return Instruction",
+          "directed no"
+        ],
+        [
+          "Reject Direct Debit Return Instruction",
+          "Correct and Resubmit Rejected Return Instruction",
+          "directed"
+        ],
+        [
+          "Correct and Resubmit Rejected Return Instruction",
+          "Return Direct Debit",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Clear Direct Debit Return",
+          "directed yes"
+        ],
+        [
+          "Clear Direct Debit Return",
+          "Process Cleared Return",
+          "directed"
+        ],
+        [
+          "Process Cleared Return",
+          "Reconcile Return Direct Debit",
+          "directed"
+        ],
+        [
+          "Reconcile Return Direct Debit",
+          "Reconciled Returned Direct Debit",
+          "directed"
+        ],
+        [
+          "Clear Direct Debit Return",
+          "Settle Direct Debit Return Proceeds",
+          "directed"
+        ],
+        [
+          "Settle Direct Debit Return Proceeds",
+          "Reconcile Debit Entry",
+          "directed"
+        ],
+        [
+          "Reconcile Debit Entry",
+          "Reconciled Debit Entry",
+          "directed"
+        ],
+        [
+          "Settle Direct Debit Return Proceeds",
+          "Reconcile Credit Entry",
+          "directed"
+        ],
+        [
+          "Start",
+          "Return Direct Debit",
+          "directed"
+        ],
+        [
+          "Reconcile Credit Entry",
+          "Reconciled Credit Entry",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "All source lanes are retained, including the empty Debtor lane in figure11. Source clearing/settlement responsibilities are distinct from the combined participant in later sequence diagrams.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling.",
+        "Mermaid collapses the empty Debtor lane to its label; the participant table and original preserve that empty source responsibility column."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image11.png",
+        "word_file_page": 22,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-2.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-22.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0012",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0012.md",
+      "original": "domains/payments/assets/src-000173/originals/image12.png",
+      "original_sha256": "69d6758e5b7ff90f1db69604a7ae6195c54e2f100e8c05dbe73420877e19fd43",
+      "mermaid": "work/payments-initiation/mmd/fig-0012.mmd",
+      "mermaid_sha256": "473f3c575d501f5937c49afe62167f5c365bd6c140f1de299e4ae63842dd5684",
+      "source_locator": "direct-body paragraph P152",
+      "word_file_page": 23,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p151-request-refund-of-direct-debit.md",
+      "flow_start": 151,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "ACH": [
+          "ACH (System Transaction Administrator)",
+          [
+            "ach-system-transaction-administrator"
+          ]
+        ],
+        "S": [
+          "Settlement Agent",
+          [
+            "settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "Issue Direct Debit Return",
+          "accept?",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Reject Direct Debit Return Instruction",
+          "directed no"
+        ],
+        [
+          "Reject Direct Debit Return Instruction",
+          "Correct and Resubmit Rejected Return Instruction",
+          "directed"
+        ],
+        [
+          "Correct and Resubmit Rejected Return Instruction",
+          "Issue Direct Debit Return",
+          "directed"
+        ],
+        [
+          "accept?",
+          "Clear Direct Debit Return",
+          "directed yes"
+        ],
+        [
+          "Clear Direct Debit Return",
+          "Process Cleared Return",
+          "directed"
+        ],
+        [
+          "Process Cleared Return",
+          "Reconcile Return Direct Debit",
+          "directed"
+        ],
+        [
+          "Reconcile Return Direct Debit",
+          "Reconciled Direct Debit",
+          "directed"
+        ],
+        [
+          "Clear Direct Debit Return",
+          "Settle Direct Debit Return Proceeds",
+          "directed"
+        ],
+        [
+          "Settle Direct Debit Return Proceeds",
+          "Reconcile Debit Entry",
+          "directed"
+        ],
+        [
+          "Reconcile Debit Entry",
+          "end",
+          "directed"
+        ],
+        [
+          "Settle Direct Debit Return Proceeds",
+          "Reconcile Credit Entry",
+          "directed"
+        ],
+        [
+          "Start",
+          "Request Refund (from Process Direct Debit)",
+          "directed"
+        ],
+        [
+          "Request Refund (from Process Direct Debit)",
+          "accept request?",
+          "directed"
+        ],
+        [
+          "accept request?",
+          "Reject Request for Refund",
+          "directed no"
+        ],
+        [
+          "Reject Request for Refund",
+          "Insufficient information?",
+          "directed"
+        ],
+        [
+          "Insufficient information?",
+          "Correct and Resubmit",
+          "directed yes"
+        ],
+        [
+          "Insufficient information?",
+          "Rejected Request",
+          "directed no"
+        ],
+        [
+          "Correct and Resubmit",
+          "Request Refund (from Process Direct Debit)",
+          "directed"
+        ],
+        [
+          "accept request?",
+          "Dematerialise the Request for Refund",
+          "directed yes"
+        ],
+        [
+          "Dematerialise the Request for Refund",
+          "Issue Direct Debit Return",
+          "directed"
+        ],
+        [
+          "Reconcile Credit Entry",
+          "Inform Debtor",
+          "directed"
+        ],
+        [
+          "Inform Debtor",
+          "Reconcile Credit Entry",
+          "directed"
+        ],
+        [
+          "Reconcile Credit Entry",
+          "Reconciled Credit Entry",
+          "directed"
+        ]
+      ],
+      "limitations": [
+        "Lane containers denote source responsibility columns, not new business institutions. Source rounded action boxes are rendered as rectangles; source final bullseye is a concentric Mermaid node with the central fill documented here. Colour and exact line routing remain in original.",
+        "All source lanes are retained, including the empty Debtor lane in figure11. Source clearing/settlement responsibilities are distinct from the combined participant in later sequence diagrams.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image12.png",
+        "word_file_page": 23,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-2.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-23.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0013",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0013.md",
+      "original": "domains/payments/assets/src-000173/originals/image13.png",
+      "original_sha256": "527bd7e8079c3bc12b447a1af9a82b190a8ad565d9ccc3e82d0949878c01e051",
+      "mermaid": "work/payments-initiation/mmd/fig-0013.mmd",
+      "mermaid_sha256": "79ca8f489324ce66c7a26956811f2b8433c685c44cf9de7d6c4ca8a328258a3a",
+      "source_locator": "direct-body paragraph P171",
+      "word_file_page": 25,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p170-one-actor-plays-roles-of-initiating-party-debtor-and-ultimate-debtor-s.md",
+      "flow_start": 170,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "ultimate-creditor"
+          ]
+        ],
+        "D": [
+          "Debtor (initiating party)",
+          [
+            "debtor",
+            "initiating-party",
+            "ultimate-debtor"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "D",
+          "Invoice & Document"
+        ],
+        [
+          "D",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "DA",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "P170 says the creditor and ultimate creditor are the same actor; P172 repeats creditor rather than ultimate creditor, retained under issue-000044.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [
+        "issue-000044"
+      ],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image13.png",
+        "word_file_page": 25,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-2.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-25.png"
+      },
+      "review_status": "needs-review"
+    },
+    {
+      "figure_id": "fig-0014",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0014.md",
+      "original": "domains/payments/assets/src-000173/originals/image14.png",
+      "original_sha256": "e4f8f93ce60ab5fe0d5dca3af1fe92695f837b06631a6a0ce88308b5a6efed44",
+      "mermaid": "work/payments-initiation/mmd/fig-0014.mmd",
+      "mermaid_sha256": "cec0ce5d569c04f4ce969ccbdc430c8da13552e80ff873b0a1d1c50f05320b43",
+      "source_locator": "direct-body paragraph P174",
+      "word_file_page": 26,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p173-one-actor-plays-roles-of-initiating-party-and-debtor-second-actor-play.md",
+      "flow_start": 173,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "U": [
+          "Ultimate Debtor",
+          [
+            "ultimate-debtor"
+          ]
+        ],
+        "D": [
+          "Debtor (initiating party)",
+          [
+            "debtor",
+            "initiating-party"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "U",
+          "D",
+          "Invoice"
+        ],
+        [
+          "D",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "DA",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "The picture starts with Ultimate Debtor to Debtor Invoice; it does not draw a Creditor-to-Ultimate Debtor invoice.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image14.png",
+        "word_file_page": 26,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-2.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-26.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0015",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0015.md",
+      "original": "domains/payments/assets/src-000173/originals/image15.png",
+      "original_sha256": "41fde2e25fb476bfbbd7853b2a4e3956e16afdc1ff7bcc73d9b5b5fd2786013a",
+      "mermaid": "work/payments-initiation/mmd/fig-0015.mmd",
+      "mermaid_sha256": "cd8300494d708491fa81fafd26cf18567f6113135f5af78fb0eefe91002191f3",
+      "source_locator": "direct-body paragraph P177",
+      "word_file_page": 27,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p176-three-different-actors-play-the-roles-of-initiating-party-debtor-and-u.md",
+      "flow_start": 176,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "U": [
+          "Ultimate Debtor",
+          [
+            "ultimate-debtor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "I": [
+          "Initiating Party",
+          [
+            "initiating-party"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "U",
+          "Invoice"
+        ],
+        [
+          "U",
+          "D",
+          "Invoice"
+        ],
+        [
+          "D",
+          "I",
+          "Invoice"
+        ],
+        [
+          "I",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "I",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "DA",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image15.png",
+        "word_file_page": 27,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-3.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-27.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0016",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0016.md",
+      "original": "domains/payments/assets/src-000173/originals/image16.png",
+      "original_sha256": "0debc23f8166f87944547cf0b0a3859a103dbeb8d5d23be54d56802962df2c2e",
+      "mermaid": "work/payments-initiation/mmd/fig-0016.mmd",
+      "mermaid_sha256": "0d303c925b145469c1697291c5f5bededcb255c25b6c1074560751c4a87df20b",
+      "source_locator": "direct-body paragraph P190",
+      "word_file_page": 28,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p189-one-actor-plays-roles-of-initiating-party-debtor-and-ultimate-debtor.md",
+      "flow_start": 189,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor",
+            "initiating-party",
+            "ultimate-debtor"
+          ]
+        ],
+        "F": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "D",
+          "Invoice"
+        ],
+        [
+          "D",
+          "F",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "F",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "F",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "DA",
+          "F",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "F",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "F",
+          "Notification"
+        ],
+        [
+          "F",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "F",
+          "Statement"
+        ],
+        [
+          "F",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "Picture shares vertical levels for relayed status/notification/statement. The sequence view serializes each relay leg for readability without asserting extra timing. P191 source example: company holds overseas accounts and uses a concentrator bank.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image16.png",
+        "word_file_page": 28,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-3.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-28.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0017",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0017.md",
+      "original": "domains/payments/assets/src-000173/originals/image17.png",
+      "original_sha256": "944681ec63799c4b39cea059726c4b28a9ccf186cdfce0e9ad6a0cd86e44df83",
+      "mermaid": "work/payments-initiation/mmd/fig-0017.mmd",
+      "mermaid_sha256": "cefae500b84c7be3f1b2dee8b4e3c7ecba6981c6877f8562135dfb896c742f7f",
+      "source_locator": "direct-body paragraph P193",
+      "word_file_page": 29,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p192-one-actor-plays-roles-of-initiating-party-and-debtor-second-actor-play.md",
+      "flow_start": 192,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "U": [
+          "Ultimate Debtor",
+          [
+            "ultimate-debtor"
+          ]
+        ],
+        "D": [
+          "Debtor (initiating party)",
+          [
+            "debtor",
+            "initiating-party"
+          ]
+        ],
+        "F": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "U",
+          "Invoice"
+        ],
+        [
+          "U",
+          "D",
+          "Invoice"
+        ],
+        [
+          "D",
+          "F",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "F",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "F",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "F",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "F",
+          "D",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "F",
+          "Notification"
+        ],
+        [
+          "F",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "F",
+          "Statement"
+        ],
+        [
+          "F",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "P194 source example: head office as debtor and initiating party pays for subsidiaries acting as ultimate debtors.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image17.png",
+        "word_file_page": 29,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-3.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-29.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0018",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0018.md",
+      "original": "domains/payments/assets/src-000173/originals/image18.png",
+      "original_sha256": "0465293aa55f9512b1eb229a7133e56614529eb4f57181148c2f65438c3a8f56",
+      "mermaid": "work/payments-initiation/mmd/fig-0018.mmd",
+      "mermaid_sha256": "aa75e77ef4e83e8259d7dffb078b63a42de54b3a26aab12ea6dc3fbdc748e1e4",
+      "source_locator": "direct-body paragraph P196",
+      "word_file_page": 30,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p195-one-actor-plays-roles-of-initiating-party-and-ultimate-debtor-second-a.md",
+      "flow_start": 195,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor"
+          ]
+        ],
+        "U": [
+          "Ultimate Debtor (initiating party)",
+          [
+            "ultimate-debtor",
+            "initiating-party"
+          ]
+        ],
+        "F": [
+          "Forwarding Agent",
+          [
+            "forwarding-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "U",
+          "Invoice"
+        ],
+        [
+          "U",
+          "F",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "F",
+          "U",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "F",
+          "DA",
+          "CustomerCreditTransferInitiation"
+        ],
+        [
+          "DA",
+          "F",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "F",
+          "U",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "DA",
+          "CA",
+          "FIToFICustomerCreditTransfer"
+        ],
+        [
+          "DA",
+          "D",
+          "Notification"
+        ],
+        [
+          "DA",
+          "D",
+          "Statement"
+        ],
+        [
+          "CA",
+          "C",
+          "Notification"
+        ],
+        [
+          "CA",
+          "C",
+          "Statement"
+        ]
+      ],
+      "limitations": [
+        "P197 source example: head office initiates a payment using its foreign subsidiary account. Notifications/statements go to the depicted Debtor, distinct from initiating Ultimate Debtor.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image18.png",
+        "word_file_page": 30,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-3.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-30.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0019",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0019.md",
+      "original": "domains/payments/assets/src-000173/originals/image19.png",
+      "original_sha256": "0e3ac4cc3679318f95a165184121e8e9a0a5aa58614e6b03bb1a1cf9a4b5cfca",
+      "mermaid": "work/payments-initiation/mmd/fig-0019.mmd",
+      "mermaid_sha256": "2fd89ba6bdede6e95e467ac4495311755ba5efb834e4555d4408a18591aae882",
+      "source_locator": "direct-body paragraph P205",
+      "word_file_page": 31,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p198-customer-direct-debit-initiation-and-fito-ficustomer-direct-debit.md",
+      "flow_start": 198,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "DA",
+          "D",
+          "FIToFICustomerDirectDebit"
+        ]
+      ],
+      "limitations": [
+        "P206/P224 describe the last leg as an optional simplified instruction/value-added service. P207 excludes the mandate and mandate management from the picture; P208\u2013219 still define that context.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image19.png",
+        "word_file_page": 31,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-4.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-31.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0020",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0020.md",
+      "original": "domains/payments/assets/src-000173/originals/image20.png",
+      "original_sha256": "9c3bbbac6d112348bc7454bfbd76a89fdba42a95add56af26109513a4b933240",
+      "mermaid": "work/payments-initiation/mmd/fig-0020.mmd",
+      "mermaid_sha256": "f5d2f304423169b0bc03f09c3f0dc8872d5e1160a717ef24932109970395eed0",
+      "source_locator": "direct-body paragraph P236",
+      "word_file_page": 33,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p234-negative-customer-payment-status-report-creditor-agent.md",
+      "flow_start": 234,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ]
+      ],
+      "limitations": [
+        "P235/P238: creditor agent rejects initiation for non-processability, for example missing information. Unused lifelines are retained.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image20.png",
+        "word_file_page": 33,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-4.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-33.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0021",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0021.md",
+      "original": "domains/payments/assets/src-000173/originals/image21.png",
+      "original_sha256": "1646b909d53133cdb48265be0540231c6c5d0285fe5f1608e2df56e35958886a",
+      "mermaid": "work/payments-initiation/mmd/fig-0021.mmd",
+      "mermaid_sha256": "7a652b5cd293330eb99abca57b199b81809fc50a5cb3658caff2bef4ec5fa94b",
+      "source_locator": "direct-body paragraph P241",
+      "word_file_page": 33,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p239-negative-customer-payment-status-report-clearing-and-settlement-agent.md",
+      "flow_start": 239,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "C",
+          "Information"
+        ]
+      ],
+      "limitations": [
+        "P240: clearing/settlement negative FIToFIPaymentStatusReport rejects the instruction before settlement. P242/P248 prefer correcting and resubmitting without involving creditor where possible. P243/P247 identify alternatives for the generic Information arrow based on booking/agreement.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image21.png",
+        "word_file_page": 33,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-4.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-33.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0022",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0022.md",
+      "original": "domains/payments/assets/src-000173/originals/image22.png",
+      "original_sha256": "43a6d1edf7307ec606b6be3b23a517c2577df3656abdfcdfa7a47969cf3ab9ea",
+      "mermaid": "work/payments-initiation/mmd/fig-0022.mmd",
+      "mermaid_sha256": "ac2c90fca1368ebda3fc3f05dc41dad3f9678f2971829310cd5a15b4d538c634",
+      "source_locator": "direct-body paragraph P251",
+      "word_file_page": 34,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p249-negative-fito-fipayment-status-report-debtor-agent.md",
+      "flow_start": 249,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "DA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "C",
+          "Information"
+        ]
+      ],
+      "limitations": [
+        "First two status exchanges are positive; debtor-agent status is negative, then relayed. P252\u2013260 supply timing, repair and optional customer-information qualifications.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image22.png",
+        "word_file_page": 34,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-4.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-34.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0023",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0023.md",
+      "original": "domains/payments/assets/src-000173/originals/image23.png",
+      "original_sha256": "90010d4d836fdc94f2ab89baa8526684991123070cb15af7d326b1886f75ed00",
+      "mermaid": "work/payments-initiation/mmd/fig-0023.mmd",
+      "mermaid_sha256": "56e98d1b5588841a03556971443dcd8b5cf66a05675ee9047156f36be7006ff1",
+      "source_locator": "direct-body paragraph P268",
+      "word_file_page": 36,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p266-confirmation-of-processability-of-customer-direct-debit-initiation.md",
+      "flow_start": 266,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "DA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ]
+      ],
+      "limitations": [
+        "P265/P269: point-to-point positive reports are optional under bilateral agreement; P271 allows partially accepted groups. P262 literally says receiver informs receiver, whereas arrows/P273/P275/P277 report to the prior sender (issue-000044).",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [
+        "issue-000044"
+      ],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image23.png",
+        "word_file_page": 36,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-4.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-36.png"
+      },
+      "review_status": "needs-review"
+    },
+    {
+      "figure_id": "fig-0024",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0024.md",
+      "original": "domains/payments/assets/src-000173/originals/image24.png",
+      "original_sha256": "c6424c3ec0d4660465e1bdf416771a92fa1bfb4b648727f871e91641ee0008b7",
+      "mermaid": "work/payments-initiation/mmd/fig-0024.mmd",
+      "mermaid_sha256": "5d403a1f078355195d0abfc42f06459e69d7ec3c216d7b9f7d9406c3913d55ee",
+      "source_locator": "direct-body paragraph P282",
+      "word_file_page": 37,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p280-payment-return-initiated-by-debtor-agent.md",
+      "flow_start": 280,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "DA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "D",
+          "DA",
+          "RefundRequest"
+        ],
+        [
+          "DA",
+          "CS",
+          "PaymentReturn"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "CA",
+          "PaymentReturn"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ]
+      ],
+      "limitations": [
+        "P279/P283/P297: return may be initiated by debtor agent or triggered by debtor refund request; refund request is assumed non-automated and outside message scope. Source picture includes RefundRequest despite heading debtor-agent-initiated return. P294 separate settlement and P295 customer information are narrative-only.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image24.png",
+        "word_file_page": 37,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-5.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-37.png"
+      },
+      "review_status": "reviewed"
+    },
+    {
+      "figure_id": "fig-0025",
+      "path": "domains/payments/reference/message-sets/payments-initiation/2025-2026/diagrams/initiation/fig-0025.md",
+      "original": "domains/payments/assets/src-000173/originals/image25.png",
+      "original_sha256": "bc0d5a5daf5553b4b25d890afa0991e9682c8251b1c019ef0527cfa85ca2a9dd",
+      "mermaid": "work/payments-initiation/mmd/fig-0025.mmd",
+      "mermaid_sha256": "ca42bbc094c777fcfaad29ef6d4b1b99bbec3d263ced26e9e32474af83e6e01b",
+      "source_locator": "direct-body paragraph P303",
+      "word_file_page": 39,
+      "flow": "domains/payments/reference/message-sets/payments-initiation/2025-2026/flows/flow-src-000173-p298-customer-payment-reversal-with-direct-debit.md",
+      "flow_start": 298,
+      "actors": {
+        "C": [
+          "Creditor",
+          [
+            "creditor",
+            "initiating-party"
+          ]
+        ],
+        "CA": [
+          "Creditor Agent",
+          [
+            "creditor-agent"
+          ]
+        ],
+        "CS": [
+          "Clearing and Settlement Agent",
+          [
+            "clearing-and-settlement-agent"
+          ]
+        ],
+        "DA": [
+          "Debtor Agent",
+          [
+            "debtor-agent"
+          ]
+        ],
+        "D": [
+          "Debtor",
+          [
+            "debtor"
+          ]
+        ]
+      },
+      "events": [
+        [
+          "C",
+          "CA",
+          "CustomerDirectDebitInitiation"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFICustomerDirectDebit"
+        ],
+        [
+          "DA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "C",
+          "CA",
+          "CustomerPaymentReversal"
+        ],
+        [
+          "CA",
+          "C",
+          "CustomerPaymentStatusReport"
+        ],
+        [
+          "CA",
+          "CS",
+          "FIToFIPaymentReversal"
+        ],
+        [
+          "CS",
+          "CA",
+          "FIToFIPaymentStatusReport"
+        ],
+        [
+          "CS",
+          "DA",
+          "FIToFIPaymentReversal"
+        ],
+        [
+          "DA",
+          "CS",
+          "FIToFIPaymentStatusReport"
+        ]
+      ],
+      "limitations": [
+        "P299: after settlement, a paid direct debit should not have been processed. P301 permits creditor agent originating the reversal. P313\u2013315 separate settlement is outside picture; P317 warns return and reversal may cross.",
+        "Actor pictograms identify roles in this context, not a fixed institutional identity. Source narrative may describe participants/steps omitted from this bounded figure.",
+        "Part1 message labels alone do not establish exact supplied schema versions. Original figures and their complete rendered page remain the evidence for geometry and line styling."
+      ],
+      "issue_ids": [],
+      "visual_review": {
+        "status": "pass",
+        "date": "2026-11-09",
+        "scope": "Compared every source actor label, message/action label, connector endpoint/direction, decision branch, initial/final state and source annotation against original image/EMF preview, then checked rendered Mermaid and full Word source page context. Native use-case models1\u20132 retain ordinary arrows and unconnected participant icons with explicit placement tables; model2 unconnected mandate use case retained. Final-state geometry, lane layout and source colours are documented limitations.",
+        "original": "domains/payments/assets/src-000173/originals/image25.png",
+        "word_file_page": 39,
+        "comparison_artifacts": [
+          "work/payments-initiation/word-contact-5.png"
+        ],
+        "rendered_source": "domains/payments/assets/src-000173/word-render/page-39.png"
+      },
+      "review_status": "reviewed"
+    }
+  ]
+}

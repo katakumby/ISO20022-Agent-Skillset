@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000346",
+  "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+  "file_page": 3,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 52,
+    "2": 23
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 17,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "ad5881a202e80c9607d012e0f1f0944b325920a0abb78d15122d37c3cbbcabc8",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0001",
+      "file_page": 3,
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.2362279999999,
+        698.6929200000002
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-billing/december-2025/documents/src-000346/tables/tbl-0001.md",
+      "rows": 3,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c0da92b7c897a410fcb78a21c75aada49d582d005e6d6809f45060b873a27742",
+      "cell_geometry_sha256": "e724c53517cff937aea9888dd3f04c8d237d8de7754440fcaeedf15add429236",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

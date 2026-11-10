@@ -1,0 +1,26 @@
+[
+  {
+    "diagram": "domains/securities/reference/message-sets/corporate-actions/2025-2026/diagrams/detailed-activities/fig-0010.md",
+    "source_figure": "fig-0010",
+    "flow": "domains/securities/reference/message-sets/corporate-actions/2025-2026/flows/flow-src-000079-p170-mandatory-reorganisation-without-options.md",
+    "limitation": "The source dashed connector between the pre-confirmation region and final post-reversal merge has no clearly readable arrowhead in the supplied PNG. It is reconstructed as an undirected dashed connection; no reverse loop or extra execution order is inferred."
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/corporate-actions/2025-2026/diagrams/detailed-activities/fig-0011.md",
+    "source_figure": "fig-0011",
+    "flow": "domains/securities/reference/message-sets/corporate-actions/2025-2026/flows/flow-src-000079-p173-mandatory-reorganisation-with-options.md",
+    "limitation": "The source dashed connector between the pre-confirmation region and final post-reversal merge has no clearly readable arrowhead in the supplied PNG. It is reconstructed as an undirected dashed connection; no reverse loop or extra execution order is inferred."
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/corporate-actions/2025-2026/diagrams/detailed-activities/fig-0012.md",
+    "source_figure": "fig-0012",
+    "flow": "domains/securities/reference/message-sets/corporate-actions/2025-2026/flows/flow-src-000079-p177-generic-corporate-action-process-non-elective-event.md",
+    "limitation": "Source T20 defines bars as parallel actions, yet this artwork combines bars with Yes/No conditional labels. Every source branch is retained; exclusive-choice and synchronization semantics remain unresolved under issue-000020."
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/corporate-actions/2025-2026/diagrams/detailed-activities/fig-0013.md",
+    "source_figure": "fig-0013",
+    "flow": "domains/securities/reference/message-sets/corporate-actions/2025-2026/flows/flow-src-000079-p180-instruction-process-elective-event.md",
+    "limitation": "Source T20 defines bars as parallel actions, yet this artwork combines bars with Yes/No conditional labels. Every source branch is retained; exclusive-choice and synchronization semantics remain unresolved under issue-000020."
+  }
+]

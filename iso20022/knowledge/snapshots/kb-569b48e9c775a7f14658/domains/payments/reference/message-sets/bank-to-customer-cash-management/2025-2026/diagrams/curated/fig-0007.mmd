@@ -1,0 +1,28 @@
+flowchart TB
+ subgraph T["TreasurySystem"]
+ Forecast("Forecast transactions")
+ end
+ subgraph L["LiquiditySystem"]
+ Collect("Collect available funds for funding") --> Funding("Provide funding final amount")
+ end
+ subgraph R["ReconciliationSystem"]
+ Reconciled("Provide today's reconciled balance")
+ end
+ subgraph P["PositionSystem"]
+ Prior("Provide prior position")
+ end
+ subgraph E["CashPositionEvaluationSystem"]
+ Start((" ")) --> Consolidate("Consolidate data") --> Adjust("Adjust prior position to actual") --> New("Set new positions") --> Updated("Provide updated balance info")
+ Close("Close balance positions") --> End(((" ")))
+ end
+ subgraph A["AccountServicer"]
+ Balance("Provide balance info")
+ Tx("Provide transaction info")
+ end
+ Forecast --> Consolidate
+ Reconciled --> Consolidate
+ Prior --> Consolidate
+ Balance --> Consolidate
+ Tx --> Consolidate
+ Updated --> Collect
+ Funding --> Close

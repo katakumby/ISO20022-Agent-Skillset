@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 99,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 100,
+    "2": 180
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 168,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "1f1e1cb70aac12c743ded9d60f53084aa36d54d30db72617a0d7e51de1161985",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        84.5394,
+        78.3237,
+        215.5052,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        237.2513,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        214.5052,
+        78.3237,
+        237.7513,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        237.2513,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 138,
+      "bbox": [
+        84.5394,
+        307.9237,
+        215.5052,
+        308.9237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        299.2929,
+        237.2513,
+        309.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 140,
+      "bbox": [
+        214.5052,
+        307.9237,
+        237.7513,
+        308.9237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        299.2929,
+        237.2513,
+        309.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0128",
+      "file_page": 99,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905725,
+        215.89291000000014
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-0128.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0cb031e16b9b0512090ecfc4e840f1b5ff91876f09a62b84604184f33809f6d4",
+      "cell_geometry_sha256": "c00798608eb2378561ae4f69e187a89f34ffb875c596ebfa3cd6346ade90abeb",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0129",
+      "file_page": 99,
+      "bbox": [
+        85.03936999999996,
+        316.2928900000001,
+        555.5905725,
+        445.49289000000016
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-0129.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0cb031e16b9b0512090ecfc4e840f1b5ff91876f09a62b84604184f33809f6d4",
+      "cell_geometry_sha256": "6e8ab486c237eb81915767afa5924f7b0ac5f1e50d9794b662d640b0af6f9d2a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

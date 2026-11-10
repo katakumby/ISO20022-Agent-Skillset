@@ -1,0 +1,68 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Payments Clearing and Settlement"
+source_ids: ["src-000163"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["5 pacs.007.001.14 FIToFIPaymentReversalV14", "5.4 Message Building Blocks", "5.4.3 TransactionInformation <TxInf>", "5.4.3.21 OriginalTransactionReference <OrgnlTxRef>", "5.4.3.21.11 RemittanceInformation <RmtInf>", "5.4.3.21.11.2 Structured <Strd>", "5.4.3.21.11.2.1 ReferredDocumentInformation <RfrdDocInf>", "5.4.3.21.11.2.1.4 LineDetails <LineDtls>", "5.4.3.21.11.2.1.4.1 Identification <Id>", "5.4.3.21.11.2.1.4.1.1 Type <Tp>"]
+file_pages: [658]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["pacs.007.001.14"]
+---
+
+# 5.4.3.21.11.2.1.4.1.1 Type <Tp>
+
+Source: [src-000163](../../../../../../../../../evidence/omitted/0b754f3040fa67a0a084bf38.md). Locator: one-based file pages 658 to 658.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 658
+
+```text
+Identification <Id> contains the following DocumentLineIdentification1 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Type <Tp> [0..1]  658
+     CodeOrProprietary <CdOrPrtry> [1..1]  658
+{Or       Code <Cd> [1..1] CodeSet 658
+Or}       Proprietary <Prtry> [1..1] Text 658
+     Issuer <Issr> [0..1] Text 659
+   Number <Nb> [0..1] Text 659
+   RelatedDate <RltdDt> [0..1] Date 659
+5.4.3.21.11.2.1.4.1.1  Type <Tp>
+Presence: [0..1]
+Definition: Specifies the type of referred document line identification.
+Type <Tp> contains the following DocumentLineType1 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   CodeOrProprietary <CdOrPrtry> [1..1]  658
+{Or     Code <Cd> [1..1] CodeSet 658
+Or}     Proprietary <Prtry> [1..1] Text 658
+   Issuer <Issr> [0..1] Text 659
+5.4.3.21.11.2.1.4.1.1.1  CodeOrProprietary <CdOrPrtry>
+Presence: [1..1]
+Definition: Provides the type details of the referred document line identification.
+CodeOrProprietary <CdOrPrtry> contains one of the following DocumentLineType1Choice
+elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Code <Cd> [1..1] CodeSet 658
+Or}   Proprietary <Prtry> [1..1] Text 658
+5.4.3.21.11.2.1.4.1.1.1.1  Code <Cd>
+Presence: [1..1]
+Definition: Line identification type in a coded form.
+Datatype: "ExternalDocumentLineType1Code" on page 1229
+5.4.3.21.11.2.1.4.1.1.1.2  Proprietary <Prtry>
+Presence: [1..1]
+Approved by the Payments SEG on 12 January 2026 pacs.007.001.14 FIToFIPaymentReversalV14
+Payments Clearing and Settlement - Maintenance 2025 -
+2026
+658 March 2026
+```
+

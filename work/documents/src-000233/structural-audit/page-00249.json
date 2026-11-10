@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 249,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 104,
+    "2": 121
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 3,
+    "table-associated-axis-line": 110,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "d9d1b4c46589b5a9c2a22808ced97a0f57a4d36e9cb20d5aaed355bed03e45ea",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 198,
+      "bbox": [
+        130.1204,
+        586.1238,
+        229.387,
+        587.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        577.493,
+        251.1331,
+        587.493
+      ]
+    },
+    {
+      "path_object_ordinal": 200,
+      "bbox": [
+        228.387,
+        586.1238,
+        251.6331,
+        587.1238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        577.493,
+        251.1331,
+        587.493
+      ]
+    },
+    {
+      "path_object_ordinal": 208,
+      "bbox": [
+        130.1204,
+        668.5239,
+        240.4954,
+        669.5239
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        659.893,
+        262.2415,
+        669.893
+      ]
+    },
+    {
+      "path_object_ordinal": 210,
+      "bbox": [
+        239.4954,
+        668.5239,
+        262.7415,
+        669.5239
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        659.893,
+        262.2415,
+        669.893
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0392",
+      "file_page": 249,
+      "bbox": [
+        85.03936999999996,
+        312.4929300000001,
+        555.5905740000001,
+        482.0929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0392.md",
+      "rows": 8,
+      "matrix_cells": 48,
+      "physical_cells": 48,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "1b9a7ae755ab3b1e2719c1fa5d871e27e061b85ad75590c07419f1e74727742c",
+      "cell_geometry_sha256": "caa479dceee4fe9370d900e59ea9914aeabb4f5426609d9c8b309ec624b7f78e",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 48,
+      "independent_cells_match": 48,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

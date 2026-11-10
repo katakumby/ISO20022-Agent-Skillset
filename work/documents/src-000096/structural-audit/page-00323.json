@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 323,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 186,
+    "2": 391
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 383,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "1075b3a062f6f8fd86a171f43e30f41071e49ff36680589efb3209103734af21",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        360.1985,
+        66.3237,
+        508.386,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        360.6985,
+        57.6929,
+        530.1321,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        507.386,
+        66.3237,
+        530.6321,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        360.6985,
+        57.6929,
+        530.1321,
+        67.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0392",
+      "file_page": 323,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905780645162,
+        688.4930700000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-0392.md",
+      "rows": 29,
+      "matrix_cells": 174,
+      "physical_cells": 174,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a32224f0889972466e4e8c1de17732654f657eb229837bcc4d332bd773ba37cd",
+      "cell_geometry_sha256": "0c638db29466c3aebc2a5e71b8334173587fc3a12689a382e642dbd99fd1bcd8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 174,
+      "independent_cells_match": 174,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

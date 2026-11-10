@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000321",
+  "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+  "file_page": 439,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 131,
+    "1": 89
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 121,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "9409d12557f5f8b0f7bcf62bd757a6bcc0265c50bae50da679a64bf5a65047f3",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0825",
+      "file_page": 439,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362318181818,
+        405.8929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0825.md",
+      "rows": 6,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "582f55d45599bdef981564506a84192bd1b32dbe92285ed7c8b2a815d9a9ad38",
+      "cell_geometry_sha256": "9fe0780808390843dec9f3205fa7736acc0bb7a840555664121e4766fe34fc9b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 17,
+      "exceptions": [
+        {
+          "row": 2,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            74.89291000000014,
+            510.2362318181818,
+            153.0929100000002
+          ],
+          "stored_value": "Provider which will consolidate post-\ntrade information into a continuous\nelectronic data stream and make it\npublicly available as close to real time as\ntechnologically possible on a reasonable\ncommercial basis and free of charge\nafter 15 minutes.",
+          "pdfium_value": "Provider which will consolidate post\u0002trade information into a continuous\r\nelectronic data stream and make it\r\npublicly available as close to real time as\r\ntechnologically possible on a reasonable\r\ncommercial basis and free of charge\r\nafter 15 minutes."
+        }
+      ],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0826",
+      "file_page": 439,
+      "bbox": [
+        85.03936999999996,
+        476.29295000000013,
+        510.2362318181818,
+        567.29295
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0826.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "8e7da0cb7b531dc1e6fcbfd85fc6baa377d094bb68cefff3ea98dec024416f64",
+      "cell_geometry_sha256": "6ff2125b057d5b63f51221c8664c593e143241f4c812019e376a4de6bd137b00",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0827",
+      "file_page": 439,
+      "bbox": [
+        85.03936999999996,
+        637.6929700000001,
+        510.2362318181818,
+        728.6929700000001
+      ],
+      "output": "domains/securities/reference/message-sets/fitrr/2025/documents/src-000321/tables/tbl-0827.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0a9f3780a7d1f5ce734a179ab98d1cbebe521b692d71c74bde3fb4edc113590b",
+      "cell_geometry_sha256": "4199c96274599d7b969b498b2d06b87377075f834638b5ddf10bc4cb08867b6a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

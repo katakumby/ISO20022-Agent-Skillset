@@ -1,0 +1,338 @@
+[
+  {
+    "source_id": "src-000364",
+    "figure_id": "fig-0002",
+    "canonical_output": "domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/diagrams/fig-0004.md",
+    "sha256": "1b213ca779b38923a81e7d57e632bab3d13eac8c6e988637be0d2d76351da1df",
+    "date": "2026-11-09",
+    "components": [
+      {
+        "component": "Account",
+        "canonical_declaration_row": 24,
+        "occurrence_declaration_row": 24,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Balance",
+        "canonical_declaration_row": 344,
+        "occurrence_declaration_row": 344,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashAccount",
+        "canonical_declaration_row": 548,
+        "occurrence_declaration_row": 548,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashBalance",
+        "canonical_declaration_row": 602,
+        "occurrence_declaration_row": 602,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashClearingSystem",
+        "canonical_declaration_row": 613,
+        "occurrence_declaration_row": 613,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashManagementService",
+        "canonical_declaration_row": 681,
+        "occurrence_declaration_row": 681,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashStandingOrder",
+        "canonical_declaration_row": 719,
+        "occurrence_declaration_row": 718,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "ClearingSystem",
+        "canonical_declaration_row": 812,
+        "occurrence_declaration_row": 811,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CurrencyExchange",
+        "canonical_declaration_row": 1293,
+        "occurrence_declaration_row": 1284,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "DateTimePeriod",
+        "canonical_declaration_row": 1346,
+        "occurrence_declaration_row": 1335,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "InformationQualifier",
+        "canonical_declaration_row": 2053,
+        "occurrence_declaration_row": 2041,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Limit",
+        "canonical_declaration_row": 2524,
+        "occurrence_declaration_row": 2512,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "LiquidityManagementLimit",
+        "canonical_declaration_row": 2572,
+        "occurrence_declaration_row": 2560,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "PartyIdentificationInformation",
+        "canonical_declaration_row": 2996,
+        "occurrence_declaration_row": 2983,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "PaymentInstruction",
+        "canonical_declaration_row": 3092,
+        "occurrence_declaration_row": 3078,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "StandingOrder",
+        "canonical_declaration_row": 4728,
+        "occurrence_declaration_row": 4702,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "System",
+        "canonical_declaration_row": 4832,
+        "occurrence_declaration_row": 4806,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemAvailability",
+        "canonical_declaration_row": 4850,
+        "occurrence_declaration_row": 4824,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemBusinessInformation",
+        "canonical_declaration_row": 4856,
+        "occurrence_declaration_row": 4830,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemEventInformation",
+        "canonical_declaration_row": 4867,
+        "occurrence_declaration_row": 4841,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemIdentification",
+        "canonical_declaration_row": 4871,
+        "occurrence_declaration_row": 4845,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemMemberRole",
+        "canonical_declaration_row": 4879,
+        "occurrence_declaration_row": 4853,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemPartyRole",
+        "canonical_declaration_row": 4888,
+        "occurrence_declaration_row": 4862,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemStatus",
+        "canonical_declaration_row": 4891,
+        "occurrence_declaration_row": 4865,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "TransactionAdministrator",
+        "canonical_declaration_row": 5111,
+        "occurrence_declaration_row": 5085,
+        "parent_and_definition_exact_match": true
+      }
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "source_id": "src-000364",
+    "figure_id": "fig-0003",
+    "canonical_output": "domains/payments/reference/message-sets/cash-management/2024-2025/workbooks/src-000016/diagrams/fig-0002.md",
+    "sha256": "710177933794856013ede2a5093526038c4e457f7e3dfbf7719e7d8bea4ea424",
+    "date": "2026-11-09",
+    "components": [
+      {
+        "component": "CashClearingSystem",
+        "canonical_declaration_row": 613,
+        "occurrence_declaration_row": 613,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CashClearingSystemMember",
+        "canonical_declaration_row": 619,
+        "occurrence_declaration_row": 619,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "ClearingMemberRole",
+        "canonical_declaration_row": 802,
+        "occurrence_declaration_row": 801,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "ClearingSystem",
+        "canonical_declaration_row": 812,
+        "occurrence_declaration_row": 811,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "FinancialInstitution",
+        "canonical_declaration_row": 1861,
+        "occurrence_declaration_row": 1850,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "IdentificationIssuerRole",
+        "canonical_declaration_row": 2004,
+        "occurrence_declaration_row": 1992,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "InformationPartyRole",
+        "canonical_declaration_row": 2046,
+        "occurrence_declaration_row": 2034,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "InstructingAgentRole",
+        "canonical_declaration_row": 2070,
+        "occurrence_declaration_row": 2058,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Organisation",
+        "canonical_declaration_row": 2920,
+        "occurrence_declaration_row": 2907,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Party",
+        "canonical_declaration_row": 2983,
+        "occurrence_declaration_row": 2970,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "PaymentPartyRole",
+        "canonical_declaration_row": 3157,
+        "occurrence_declaration_row": 3143,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Person",
+        "canonical_declaration_row": 3230,
+        "occurrence_declaration_row": 3216,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Role",
+        "canonical_declaration_row": 3769,
+        "occurrence_declaration_row": 3748,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "RolePlayer",
+        "canonical_declaration_row": 3775,
+        "occurrence_declaration_row": 3754,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "System",
+        "canonical_declaration_row": 4832,
+        "occurrence_declaration_row": 4806,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SystemPartyRole",
+        "canonical_declaration_row": 4888,
+        "occurrence_declaration_row": 4862,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "TransactionAdministrator",
+        "canonical_declaration_row": 5111,
+        "occurrence_declaration_row": 5085,
+        "parent_and_definition_exact_match": true
+      }
+    ],
+    "review_status": "reviewed"
+  },
+  {
+    "source_id": "src-000382",
+    "figure_id": "fig-0002",
+    "canonical_output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/workbooks/src-000198/diagrams/fig-0005.md",
+    "sha256": "8add181633cf9fa5414127214e11e109db7701f1699695b5450a31de5c92aac8",
+    "date": "2026-11-09",
+    "components": [
+      {
+        "component": "SecuritiesTransfer",
+        "canonical_declaration_row": 4642,
+        "occurrence_declaration_row": 4611,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "Security",
+        "canonical_declaration_row": 4659,
+        "occurrence_declaration_row": 4628,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "CorporateActionEvent",
+        "canonical_declaration_row": 1083,
+        "occurrence_declaration_row": 1080,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SecuritiesQuantity",
+        "canonical_declaration_row": 4350,
+        "occurrence_declaration_row": 4319,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SecuritiesSettlement",
+        "canonical_declaration_row": 4474,
+        "occurrence_declaration_row": 4443,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "IntraPositionTransfer",
+        "canonical_declaration_row": 2187,
+        "occurrence_declaration_row": 2165,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SecuritiesBalance",
+        "canonical_declaration_row": 3921,
+        "occurrence_declaration_row": 3890,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "SecuritiesAccount",
+        "canonical_declaration_row": 3889,
+        "occurrence_declaration_row": 3858,
+        "parent_and_definition_exact_match": true
+      },
+      {
+        "component": "DigitalWallet",
+        "canonical_declaration_row": 1575,
+        "occurrence_declaration_row": 1563,
+        "parent_and_definition_exact_match": true
+      }
+    ],
+    "review_status": "reviewed"
+  }
+]

@@ -1,0 +1,26 @@
+flowchart LR
+  N1["Bank Transaction Code"]
+  N2["Securities"]
+  N3["Trade, Clearing & Settlement"]
+  N4["Non Settled"]
+  N5["Blocked Transactions"]
+  N6["CSD Blocked Transactions"]
+  N7["Collateral Management"]
+  N8["Corporate Action"]
+  N9["Custody"]
+  N10["Custody Collection<br/> C"]
+  N11["Miscellaneous Securities Operations"]
+  N12["Generic Family Codes"]
+  N1 --- N2
+  N2 --- N3
+  N2 --- N4
+  N2 --- N5
+  N2 --- N6
+  N2 --- N7
+  N2 --- N8
+  N2 --- N9
+  N2 --- N10
+  N2 --- N11
+  N2 --- N12
+  classDef generic fill:#dce8ee,stroke:#1b637f,color:#444,font-style:italic;
+  class N12 generic;

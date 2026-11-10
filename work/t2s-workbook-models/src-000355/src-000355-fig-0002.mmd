@@ -1,0 +1,25 @@
+classDiagram
+direction TB
+class Collateral {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class CollateralStatus {
+<<BusinessComponent>>
+}
+class SystemPartyRole {
+<<BusinessComponent>>
+}
+class SecuritiesIdentification {
+<<BusinessComponent>>
+}
+class PartyIdentificationInformation {
+<<BusinessComponent>>
+}
+Collateral *-- Security
+Collateral *-- CollateralStatus
+Collateral -- SystemPartyRole
+SystemPartyRole *-- PartyIdentificationInformation
+Security *-- SecuritiesIdentification

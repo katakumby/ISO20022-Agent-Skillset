@@ -1,0 +1,19 @@
+flowchart TB
+subgraph laneP["Payment-chain participants"]
+U["Ultimate Debtor"]
+D["Debtor"]
+I["Initiating Party"]
+F["Forwarding Agent"]
+DA["Debtor Agent"]
+CA["Creditor Agent"]
+C["Creditor"]
+UC["Ultimate Creditor"]
+end
+U -.-> D
+D -.-> I
+I --> DA
+I -.-> F
+F -.-> DA
+DA --> CA
+CA --> C
+C --> UC

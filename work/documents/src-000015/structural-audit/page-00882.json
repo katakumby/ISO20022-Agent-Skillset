@@ -1,0 +1,64 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 882,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 184,
+    "1": 99
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 178,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f4ea0c912e3e625c6573e0eb306c74281376a2ca40f89faf0baf8168e8cbccfd",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1237",
+      "file_page": 882,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362377777777,
+        701.6930200000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-1237.md",
+      "rows": 25,
+      "matrix_cells": 75,
+      "physical_cells": 75,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "52947653cf083d6f2c9be9874451f09d73918b771faa414d0b5541323e514655",
+      "cell_geometry_sha256": "6d0eb67057eeae0dba67f5556f1e2c4ad46997cafe1bade035502c7dfaccb924",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 75,
+      "independent_cells_match": 74,
+      "exceptions": [
+        {
+          "row": 22,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15746999999993,
+            578.893,
+            510.2362377777777,
+            617.0929800000001
+          ],
+          "stored_value": "Counterparty indicates a settlement via\nRTGS system and you indicate non-\nRTGS settlement, or vice versa.",
+          "pdfium_value": "Counterparty indicates a settlement via\r\nRTGS system and you indicate non\u0002RTGS settlement, or vice versa."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

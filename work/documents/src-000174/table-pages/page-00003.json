@@ -1,0 +1,100 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        212.09292000000016,
+        510.23623142857144,
+        453.09292000000016
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          212.09292000000016,
+          283.46457,
+          230.2929200000002
+        ],
+        [
+          85.03936999999999,
+          230.2929200000002,
+          283.46457,
+          278.49292000000025
+        ],
+        [
+          85.03936999999999,
+          278.49292000000025,
+          283.46457,
+          346.69292000000013
+        ],
+        [
+          85.03936999999999,
+          346.69292000000013,
+          283.46457,
+          394.89293000000015
+        ],
+        [
+          85.03936999999999,
+          394.89293000000015,
+          283.46457,
+          453.09292000000016
+        ],
+        [
+          283.46457,
+          212.09292000000016,
+          510.23623142857144,
+          230.2929200000002
+        ],
+        [
+          283.46457,
+          230.2929200000002,
+          510.23623142857144,
+          278.49292000000025
+        ],
+        [
+          283.46457,
+          278.49292000000025,
+          510.23623142857144,
+          346.69292000000013
+        ],
+        [
+          283.46457,
+          346.69292000000013,
+          510.23623142857144,
+          394.89293000000015
+        ],
+        [
+          283.46457,
+          394.89293000000015,
+          510.23623142857144,
+          453.09292000000016
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "pain.001.001.13\nCustomerCreditTransferInitiationV13",
+          "The CustomerCreditTransferInitiation message is sent\nby the initiating party to the forwarding agent or debtor\nagent. It is used to request movement of funds from\nthe debtor account to a creditor."
+        ],
+        [
+          "pain.002.001.15\nCustomerPaymentStatusReportV15",
+          "The CustomerPaymentStatusReport message is sent\nby an instructed agent to the previous party in the\npayment chain. It is used to inform this party about the\npositive or negative status of an instruction (either\nsingle or file). It is also used to report on a pending\ninstruction."
+        ],
+        [
+          "pain.007.001.13\nCustomerPaymentReversalV13",
+          "The CustomerPaymentReversal message is sent by\nthe initiating party to the next party in the payment\nchain. It is used to reverse a payment previously\nexecuted."
+        ],
+        [
+          "pain.008.001.12\nCustomerDirectDebitInitiationV12",
+          "The CustomerDirectDebitInitiation message is sent by\nthe initiating party to the forwarding agent or creditor\nagent. It is used to request single or bulk collection(s)\nof funds from one or various debtor's account(s) for a\ncreditor."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

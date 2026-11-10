@@ -1,0 +1,46 @@
+flowchart TB
+subgraph laneP["Reporting Party/Report Provider"]
+start((" "))
+generateP["Generate Transparency Statement"]
+reconcileP["Reconcile Aggregate Holdings"]
+finalNode(((" ")))
+end
+subgraph laneA["Receiving Party A/Report User"]
+aggregateA["Aggregate Holdings"]
+forkA[" "]
+generateA["Generate Transparency Statement"]
+mergeA[" "]
+reconcileA["Reconcile Aggregate Holdings"]
+end
+subgraph laneB["Receiving Party B/Report User"]
+aggregateB["Aggregate Holdings"]
+forkB[" "]
+generateB["Generate Transparency Statement"]
+mergeB[" "]
+reconcileB["Reconcile Aggregate Holdings"]
+end
+subgraph laneX["Continuation beyond the drawn frame"]
+out(["Outgoing continuation (unlabelled in source)"])
+in(["Incoming continuation (unlabelled in source)"])
+end
+start --> generateP
+generateP --> aggregateA
+aggregateA --> forkA
+forkA --> generateA
+generateA --> aggregateB
+aggregateB --> forkB
+forkB --> generateB
+generateB --> out
+forkB --> mergeB
+in --> mergeB
+mergeB --> reconcileB
+reconcileB --> mergeA
+forkA --> mergeA
+mergeA --> reconcileA
+reconcileA --> reconcileP
+reconcileP --> finalNode
+style start fill:#222,stroke:#222,color:#222
+style forkA fill:#222,stroke:#222,color:#222
+style forkB fill:#222,stroke:#222,color:#222
+style mergeB fill:#222,stroke:#222,color:#222
+style mergeA fill:#222,stroke:#222,color:#222

@@ -1,0 +1,73 @@
+{
+  "source_id": "src-000346",
+  "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+  "file_page": 37,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 297,
+    "1": 176
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 8,
+    "table-associated-axis-line": 285,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "8907343204cd2ab7ac36292c527b97c1027fe032303941f026ad6fc11e5e7231",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0040",
+      "file_page": 37,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        555.5905752,
+        347.49289000000016
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-billing/december-2025/documents/src-000346/tables/tbl-0040.md",
+      "rows": 14,
+      "matrix_cells": 84,
+      "physical_cells": 84,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "1e7a12c51af297d7d7ad2a23c7baaeed14ed97d33b581404a0e5de63946e243e",
+      "cell_geometry_sha256": "49b32ece737f32c2014717dac9927045d00f0c7ea1a136a5a54a66fd0f941a37",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 84,
+      "independent_cells_match": 84,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0041",
+      "file_page": 37,
+      "bbox": [
+        85.03936999999996,
+        433.6929100000001,
+        555.5905752,
+        583.0929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-billing/december-2025/documents/src-000346/tables/tbl-0041.md",
+      "rows": 7,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "a3fa99e65dfdc14a8b8145ff881081023d078195318aceaad4fd80b4feede753",
+      "cell_geometry_sha256": "fd36d3d5048afa8ee590aac3756ec23459de1bc5159a43c0a6586deb8f1e1381",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

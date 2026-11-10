@@ -1,0 +1,17 @@
+from pathlib import Path
+from PIL import Image
+import sys,json,hashlib
+sys.path.insert(0,'tools');import kb
+root=Path('.').resolve();sid='src-000374';s=next(x for x in kb.sources(root) if x['source_id']==sid);base=root/s['set_path'];assets=root/'domains/securities/assets'/sid
+crops=[]
+for i in [1,2]:
+ src=assets/'source-page-renders'/f'native-canvas-{i}-1.png';im=Image.open(src);crop=im.crop((100,100,800,375));out=assets/'source-page-renders'/f'native-canvas-{i}-complete-crop.png';crop.save(out);crops.append({'canvas':i,'path':out.relative_to(root).as_posix(),'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'crop_box_pixels':[100,100,800,375],'parent':src.relative_to(root).as_posix()})
+kb.dump(root/'work/documents'/sid/'native-canvases/crops.json',crops)
+p=base/'diagrams/curated/fig-0014.md';code='''sequenceDiagram
+ participant I as Instructing Party
+ participant U as Unlabelled right actor
+ I->>U: Securities Account Position Query
+ U->>I: Securities Balance Custody Report
+''';m={'template':False,'document_kind':'diagram','manual_curated':True,'review_status':'needs-review','diagram_id':'fig-0014','title':'Off-page legacy position-query canvas','domain':'securities','content_origin':'source-reconstruction','diagram_kind':'sequence','source_ids':[sid],'source_locations':[{'source_id':sid,'locator':'P55 two mc:AlternateContent Word canvases, each positioned5480050EMU below anchor line; isolated complete render canvas1/canvas2'}],'message_sets':[s['set_slug']],'participants':['participant-src-000374-instructing-party'],'message_ids':[],'render_status':'not-run','visual_review':'not-run','limitations':['Two original native canvases are outside the complete Word6 visible page; repositioned only in derived working documents for inspection.','Right actor has no source label. Returning Securities Balance Custody Report differs from current visible figure1 semt.040 Securities Account Position Response. Exact messages are not assigned to this legacy canvas.']};b='# Off-page legacy position-query canvas\n\n'+kb.source_link(root,p,s)+'; P55 contains two matching Word canvases in addition to current visible figure1. Each has DrawingML and fallback branches; those branches are alternate representations, not four separate figures. Both outer anchors lie5480050EMU below the line and are absent from complete Word6.\n\nOriginal canvas contents were isolated in working DOCX copies and only outer page offsets moved to the margin. Shape contents, connectors, text, colors and original media stayed unchanged. '+kb.link(p,root/'work/documents'/sid/'native-canvases/derivation.json','Exact derivation')+'; '+kb.link(p,root/'work/documents'/sid/'p55-drawings.xml','Original paragraph XML extraction')+'.\n\n![Complete recovered source canvas]('+kb.rel(p,assets/'source-page-renders/native-canvas-1-complete-crop.png')+')\n\n'+kb.link(p,assets/'source-page-renders/native-canvas-2-complete-crop.png','Second equivalent occurrence')+'. The left actor is Instructing Party; the right actor is unlabelled. Green query points right; black custody report points left. No extra message identifier or right-party role is inferred.\n\n```mermaid\n'+code+'```\n\nThe current in-page figure is '+kb.link(p,base/'diagrams/curated/fig-0001.md','position query/response')+'. The legacy label remains separate evidence and is not silently substituted for semt.040.\n';kb.put(p,kb.front(m)+b);kb.put(p.with_suffix('.mmd'),code)
+# Preserve recovered XML and derived full canvases without altering source originals.
+print(json.dumps(crops))

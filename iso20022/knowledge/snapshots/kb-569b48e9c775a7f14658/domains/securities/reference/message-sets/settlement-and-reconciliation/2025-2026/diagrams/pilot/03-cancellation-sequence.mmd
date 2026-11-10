@@ -1,0 +1,9 @@
+sequenceDiagram
+  participant I as Instructing Party
+  participant E as Executing Servicing Party
+  I->>E: Any instruction
+  I->>E: SecuritiesTransactionCancellationRequest
+  opt Optional
+    E->>I: SecuritiesTransactionCancellationRequestStatusAdvice
+  end
+  E->>I: SecuritiesTransactionCancellationRequestStatusAdvice

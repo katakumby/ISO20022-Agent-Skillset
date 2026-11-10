@@ -1,0 +1,130 @@
+{
+  "message_id": "auth.035.001.01",
+  "publications": [
+    {
+      "source_id": "src-000321",
+      "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+      "heading": "7 auth.035.001.01 FinancialInstrumentReportingTradingVolumeCapDataReportV01",
+      "definition_pages": [
+        85,
+        90
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The FinancialInstrumentReportingTradingVolumeCapDataReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the national competent authority",
+            "labels": [
+              {
+                "label": "the national competent authority",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000320-nca",
+                  "path": "shared/reference/participants/participant-src-000320-nca.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the trading venue",
+            "labels": [
+              {
+                "label": "the trading venue",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000321-trading-venue",
+                  "path": "shared/reference/participants/participant-functionality-src-000321-trading-venue.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000321-auth.035.001.01-p85-c001-d1",
+          "source_id": "src-000321",
+          "source_sha256": "778d141eff3ea6427b042e427c9368b6f40e8e6c1b9f3fb63de09383c25bc85b",
+          "heading": "7 auth.035.001.01 FinancialInstrumentReportingTradingVolumeCapDataReportV01",
+          "file_pages": [
+            85
+          ],
+          "section": "scope",
+          "quote": "The FinancialInstrumentReportingTradingVolumeCapDataReport message is sent by the trading venue to the national competent authority to report the total volume of trading and volumes of trading under reference price waiver and negotiated transactions waiver.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The FinancialInstrumentReportingTradingVolumeCapDataReport message is sent by the trading venue to the national competent authority to report the total volume of trading and volumes of trading under reference price waiver and negotiated transactions waiver.",
+          "raw_quote": "The FinancialInstrumentReportingTradingVolumeCapDataReport message is sent by the trading venue\nto the national competent authority to report the total volume of trading and volumes of trading under\nreference price waiver and negotiated transactions waiver.",
+          "file_pages": [
+            85
+          ],
+          "section": "scope",
+          "evidence_id": "src-000321-auth.035.001.01-p85-c001",
+          "mentions": [
+            {
+              "label": "trading venue",
+              "start": 82,
+              "end": 95,
+              "resolution": {
+                "label": "trading venue",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000321-trading-venue",
+                  "path": "shared/reference/participants/participant-functionality-src-000321-trading-venue.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "national competent authority",
+              "start": 103,
+              "end": 131,
+              "resolution": {
+                "label": "national competent authority",
+                "scope_source_id": "src-000321",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000320-nca",
+                  "path": "shared/reference/participants/participant-src-000320-nca.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000321-auth.035.001.01-p85-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        85
+      ],
+      "file_pages": [
+        85
+      ]
+    }
+  ]
+}

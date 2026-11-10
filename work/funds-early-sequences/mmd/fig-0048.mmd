@@ -1,0 +1,8 @@
+sequenceDiagram
+participant I as Instructing Party
+participant M as Intermediary
+participant E as Executing Party
+I->>M: SubscriptionOrder
+M->>E: SubscriptionOrder
+E->>M: SubscriptionOrderConfirmation
+M->>I: SubscriptionOrderConfirmation

@@ -1,0 +1,67 @@
+{
+  "source_id": "src-000163",
+  "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+  "file_page": 717,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 198,
+    "2": 327
+  },
+  "path_classes": {
+    "link-annotation-underline": 1,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 318,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "53d7e51bd18916b3e0306d5057c032cbdf842cba39cb727db8b622b3edf22473",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 2,
+      "bbox": [
+        144.5687,
+        66.3237,
+        379.4651,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        57.6929,
+        378.9651,
+        67.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0824",
+      "file_page": 717,
+      "bbox": [
+        85.03936999999996,
+        92.6929100000001,
+        555.5905776923078,
+        693.4930700000001
+      ],
+      "output": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/documents/src-000163/tables/tbl-0824.md",
+      "rows": 24,
+      "matrix_cells": 144,
+      "physical_cells": 144,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "8625ac0a2fecd8d077b074e276aff30d9841834fba8f04ed96d08fd4abe50d26",
+      "cell_geometry_sha256": "a3ec60d2b3d211e7ce400e533b1e9702720aaf7d7376470ad951440477591ce8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 144,
+      "independent_cells_match": 144,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

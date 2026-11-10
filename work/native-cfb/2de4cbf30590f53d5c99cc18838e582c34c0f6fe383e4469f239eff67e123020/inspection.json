@@ -1,0 +1,235 @@
+{
+  "native_sha256": "2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020",
+  "format": "CFB",
+  "occurrences": [
+    {
+      "source_id": "src-000359",
+      "parent_sha256": "3d4f67569cce0364186093303825fd1f55515bb124b43bce6376fe060410234d",
+      "archive_member": "word/embeddings/oleObject11.bin",
+      "sha256": "2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020",
+      "size_bytes": 230912,
+      "format": "bin",
+      "asset": "domains/securities/assets/src-000359/native-embeddings/oleObject11.bin",
+      "occurrences": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId46",
+          "member": "word/embeddings/oleObject11.bin",
+          "target": "embeddings/oleObject11.bin",
+          "target_mode": null,
+          "object_attributes": {
+            "Type": "Embed",
+            "ProgID": "Visio.Drawing.11",
+            "ShapeID": "_x0000_i1035",
+            "DrawAspect": "Content",
+            "ObjectID": "_1772129700",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId46"
+          },
+          "program_id": "Visio.Drawing.11",
+          "object_type": "Embed",
+          "source_locator": "direct-body paragraph P209",
+          "xml_path": "/w:document/w:body/w:p[209]/w:r/w:object/o:OLEObject",
+          "heading_path": [
+            "Description of BusinessActivities",
+            "Intra-Balance Movement Pending/Posting Report Process"
+          ],
+          "figure_id": "fig-0015",
+          "previews": [
+            {
+              "relationship_id": "rId45",
+              "member": "word/media/image15.emf",
+              "sha256": "a3d0940049241d5c880f913f83503c9459c788814b9a89373d383b17fcaf167e",
+              "asset": "domains/securities/assets/src-000359/originals/image15.emf"
+            }
+          ],
+          "activation": "not-activated"
+        }
+      ],
+      "relationships": [
+        {
+          "part": "word/document.xml",
+          "relationship_id": "rId46",
+          "target": "embeddings/oleObject11.bin",
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+          "mode": null,
+          "member": "word/embeddings/oleObject11.bin"
+        }
+      ],
+      "disposition": "native-original-retained",
+      "activation": "not-activated",
+      "review_status": "needs-review",
+      "limitations": [
+        "Native application rendering not performed. Existing picture preview is linked where supplied; equivalence to all native pages/layers is not yet established."
+      ]
+    }
+  ],
+  "major_version": 3,
+  "sector_size": 512,
+  "directory_entries": [
+    {
+      "id": 0,
+      "name": "Root Entry",
+      "kind": 5,
+      "left": 4294967295,
+      "right": 4294967295,
+      "child": 4,
+      "start": 3,
+      "size": 1280
+    },
+    {
+      "id": 1,
+      "name": "\u0001Ole",
+      "kind": 2,
+      "left": 4294967295,
+      "right": 4294967295,
+      "child": 4294967295,
+      "start": 0,
+      "size": 20
+    },
+    {
+      "id": 2,
+      "name": "\u0003EPRINT",
+      "kind": 2,
+      "left": 1,
+      "right": 3,
+      "child": 4294967295,
+      "start": 5,
+      "size": 123956
+    },
+    {
+      "id": 3,
+      "name": "\u0001CompObj",
+      "kind": 2,
+      "left": 4294967295,
+      "right": 4294967295,
+      "child": 4294967295,
+      "start": 1,
+      "size": 114
+    },
+    {
+      "id": 4,
+      "name": "\u0003ObjInfo",
+      "kind": 2,
+      "left": 2,
+      "right": 6,
+      "child": 4294967295,
+      "start": 3,
+      "size": 6
+    },
+    {
+      "id": 5,
+      "name": "VisioDocument",
+      "kind": 2,
+      "left": 4294967295,
+      "right": 4294967295,
+      "child": 4294967295,
+      "start": 251,
+      "size": 100083
+    },
+    {
+      "id": 6,
+      "name": "VisioInformation",
+      "kind": 2,
+      "left": 5,
+      "right": 7,
+      "child": 4294967295,
+      "start": 4,
+      "size": 28
+    },
+    {
+      "id": 7,
+      "name": "\u0005SummaryInformation",
+      "kind": 2,
+      "left": 4294967295,
+      "right": 8,
+      "child": 4294967295,
+      "start": 5,
+      "size": 276
+    },
+    {
+      "id": 8,
+      "name": "\u0005DocumentSummaryInformation",
+      "kind": 2,
+      "left": 4294967295,
+      "right": 4294967295,
+      "child": 4294967295,
+      "start": 10,
+      "size": 640
+    }
+  ],
+  "unreachable_directory_ids": [],
+  "streams": [
+    {
+      "directory_id": 1,
+      "stream_path": "\u0001Ole",
+      "size_bytes": 20,
+      "sha256": "b2162bc27b0f5b3a55a79fb5e0763e0321dc8de86ad59054d6aafc4b01eaad47",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0001.bin",
+      "storage": "mini"
+    },
+    {
+      "directory_id": 2,
+      "stream_path": "\u0003EPRINT",
+      "size_bytes": 123956,
+      "sha256": "e94637dd62607ccdffcd44508c027b00a07a80a2719319a6e9d4782ff1673827",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0002.bin",
+      "storage": "regular"
+    },
+    {
+      "directory_id": 3,
+      "stream_path": "\u0001CompObj",
+      "size_bytes": 114,
+      "sha256": "500e6d814c07ec50410003c7c647e86f884928d61cce1845b712ce531dd9791c",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0003.bin",
+      "storage": "mini"
+    },
+    {
+      "directory_id": 4,
+      "stream_path": "\u0003ObjInfo",
+      "size_bytes": 6,
+      "sha256": "c76d13c663d06a97039cc7f187cdd40ef626e4dd7c9e2b10f0ee104e9473c515",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0004.bin",
+      "storage": "mini"
+    },
+    {
+      "directory_id": 5,
+      "stream_path": "VisioDocument",
+      "size_bytes": 100083,
+      "sha256": "dc21b1af9daad4a1e49844b4b11d753590f7633a6b46b3df36d4abe65d6f39ce",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0005.bin",
+      "storage": "regular"
+    },
+    {
+      "directory_id": 6,
+      "stream_path": "VisioInformation",
+      "size_bytes": 28,
+      "sha256": "ed409928a5cfaa60324d89e1df045dfe5ab6773a9576743d27ddafff1284a201",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0006.bin",
+      "storage": "mini"
+    },
+    {
+      "directory_id": 7,
+      "stream_path": "\u0005SummaryInformation",
+      "size_bytes": 276,
+      "sha256": "9317814a59b06223b6960bad277db27b70affef764119cf8acb814d8e057bf57",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0007.bin",
+      "storage": "mini"
+    },
+    {
+      "directory_id": 8,
+      "stream_path": "\u0005DocumentSummaryInformation",
+      "size_bytes": 640,
+      "sha256": "a6a8d0af3f2c81f2900418beeaab782a535c68233f076f49d1157ddc4cb95f50",
+      "path": "work/native-cfb/2de4cbf30590f53d5c99cc18838e582c34c0f6fe383e4469f239eff67e123020/stream-0008.bin",
+      "storage": "mini"
+    }
+  ],
+  "bitmaps": [],
+  "inspection_date": "2026-11-09",
+  "activation": "not-activated",
+  "static_stream_inventory": "pass",
+  "semantic_review": "pending",
+  "limitations": [
+    "Stream inventory preserves bytes; VisioDocument internal pages and layers are not decoded. Bitmap equality is reported only for exact size/RGBA matches."
+  ]
+}

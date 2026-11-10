@@ -1,0 +1,523 @@
+{
+  "message_id": "camt.013.001.04",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "12 camt.013.001.04 GetMemberV04",
+      "definition_pages": [
+        464,
+        475
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The GetMember message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.013.001.04-p464-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "12 camt.013.001.04 GetMemberV04",
+          "file_pages": [
+            464
+          ],
+          "section": "scope",
+          "quote": "The GetMember message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The GetMember message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe GetMember message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            464
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 35,
+              "end": 41,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 49,
+              "end": 74,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.013.001.04-p464-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request information on static data maintained by the transaction administrator and related to the participants in the system and their membership status vis-a-vis this system.",
+          "raw_quote": "It is used to request information on static data maintained by the transaction administrator and related\nto the participants in the system and their membership status vis-a-vis this system.",
+          "file_pages": [
+            464
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c002",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 67,
+              "end": 92,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "maintained",
+              "voice": "passive",
+              "limitation": "The source explicitly identifies the actor of this passive clause. The object, scope and conditions remain in the source sentence."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The transaction administrator is in charge of providing the members with business information.",
+          "raw_quote": "Usage\nThe transaction administrator is in charge of providing the members with business information.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c003",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 4,
+              "end": 29,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 60,
+              "end": 67,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Among other things, it can refer to information about the membership of the system.",
+          "raw_quote": "Among other things, it can refer to information about the membership of the\nsystem.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about the static data related to the members of the system.",
+          "raw_quote": "At any time during the operating hours of the system, the member can query the transaction\nadministrator to get information about the static data related to the members of the system.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c005",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 58,
+              "end": 64,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 79,
+              "end": 104,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 161,
+              "end": 168,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The member can request information based on the following elements:",
+          "raw_quote": "The member can request information based on the following elements:",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c006",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "identification of the member within the system",
+          "raw_quote": "identification of the member within the system",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c007",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 22,
+              "end": 28,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "membership status",
+          "raw_quote": "membership status",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c008",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "type of member",
+          "raw_quote": "type of member",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c009",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 8,
+              "end": 14,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "contact details for the member: name, address",
+          "raw_quote": "contact details for the member: name, address",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c010",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 24,
+              "end": 30,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "account number of the member",
+          "raw_quote": "account number of the member",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c011",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 22,
+              "end": 28,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "identification of contact persons for the member This message will be replied to by a ReturnMember message.",
+          "raw_quote": "identification of contact persons for the member\nThis message will be replied to by a ReturnMember message.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.013.001.04-p464-c012",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 42,
+              "end": 48,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The term business information covers all information related to the management of the system, that is, not related to the transactions entered into the system.",
+          "raw_quote": "The\nterm business information covers all information related to the management of the system, that is, not\nrelated to the transactions entered into the system.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The type of business information available can vary depending on the system.",
+          "raw_quote": "The type of business information available can vary\ndepending on the system.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Additional information on the generic design of the Get/Return messages can be found in the MDR Part 1 section How to Use the Cash Management Messages.",
+          "raw_quote": "Additional information on the generic design of the Get/Return messages can be found in the MDR Part\n1 section How to Use the Cash Management Messages.",
+          "file_pages": [
+            464
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        464
+      ],
+      "file_pages": [
+        464,
+        465
+      ]
+    }
+  ]
+}

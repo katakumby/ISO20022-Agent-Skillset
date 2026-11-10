@@ -1,0 +1,112 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class PartyIdentificationInformation["PartyIdentificationInformation"] {
+<<BusinessComponent>>
+}
+class PaymentInstruction["PaymentInstruction"] {
+<<BusinessComponent>>
+}
+class StandingOrder["StandingOrder"] {
+<<BusinessComponent>>
+}
+class CashAccount["CashAccount"] {
+<<BusinessComponent>>
+}
+class CashStandingOrder["CashStandingOrder"] {
+<<BusinessComponent>>
+}
+class CashManagementService["CashManagementService"] {
+<<BusinessComponent>>
+}
+class Limit["Limit"] {
+<<BusinessComponent>>
+}
+class LiquidityManagementLimit["LiquidityManagementLimit"] {
+<<BusinessComponent>>
+}
+class CurrencyExchange["CurrencyExchange"] {
+<<BusinessComponent>>
+}
+class Account["Account"] {
+<<BusinessComponent>>
+}
+class System["System"] {
+<<BusinessComponent>>
+}
+class SystemBusinessInformation["SystemBusinessInformation"] {
+<<BusinessComponent>>
+}
+class SystemIdentification["SystemIdentification"] {
+<<BusinessComponent>>
+}
+class SystemStatus["SystemStatus"] {
+<<BusinessComponent>>
+}
+class ClearingSystem["ClearingSystem"] {
+<<BusinessComponent>>
+}
+class CashClearingSystem["CashClearingSystem"] {
+<<BusinessComponent>>
+}
+class TransactionAdministrator["TransactionAdministrator"] {
+<<BusinessComponent>>
+}
+class SystemPartyRole["SystemPartyRole"] {
+<<BusinessComponent>>
+}
+class SystemMemberRole["SystemMemberRole"] {
+<<BusinessComponent>>
+}
+class Balance["Balance"] {
+<<BusinessComponent>>
+}
+class CashBalance["CashBalance"] {
+<<BusinessComponent>>
+}
+}
+namespace DICO_BusinessComponentsDataTypes {
+class DateTimePeriod["DateTimePeriod"] {
+<<BusinessComponent>>
+}
+class InformationQualifier["InformationQualifier"] {
+<<BusinessComponent>>
+}
+class SystemEventInformation["SystemEventInformation"] {
+<<BusinessComponent>>
+}
+class SystemAvailability["SystemAvailability"] {
+<<BusinessComponent>>
+}
+}
+PartyIdentificationInformation -- DateTimePeriod : - RelatedIdentification / + ValidityPeriod
+DateTimePeriod -- PaymentInstruction : - ProcessingValidityTime
+PaymentInstruction -- StandingOrder : + PaymentInstructionTrigger
+StandingOrder -- CashAccount : + RelatedCreditStandingOrder / + CreditAccount
+StandingOrder -- CashAccount : + RelatedDebitStandingOrder / + DebitAccount
+CashStandingOrder --|> StandingOrder
+CashAccount -- CashStandingOrder
+CashStandingOrder -- CashManagementService : + StandingOrder / + RelatedCashServices
+CashManagementService -- LiquidityManagementLimit
+LiquidityManagementLimit --|> Limit
+CurrencyExchange -- LiquidityManagementLimit : - RelatedLimitManagement
+CurrencyExchange -- Account : - ReportedAccount
+CurrencyExchange -- TransactionAdministrator : + CurrencyExchangeForTransactionAdministrator
+Account -- System
+Account -- Balance : + Account / + Balance
+CashAccount -- CashBalance
+CashBalance --|> Balance
+SystemMemberRole -- CashBalance : + Counterparty
+SystemMemberRole -- Account : - SystemMember
+SystemMemberRole -- SystemStatus : + MemberStatus
+SystemMemberRole --|> SystemPartyRole
+TransactionAdministrator --|> SystemPartyRole
+TransactionAdministrator -- CashClearingSystem
+CashClearingSystem --|> ClearingSystem
+ClearingSystem --|> System
+System -- SystemBusinessInformation : + SystemGeneratedInformation
+SystemBusinessInformation -- InformationQualifier
+System -- SystemIdentification : + IdentificationForSystem
+System -- SystemEventInformation : + Event
+System -- SystemAvailability : + Availability
+System -- SystemStatus : + Status

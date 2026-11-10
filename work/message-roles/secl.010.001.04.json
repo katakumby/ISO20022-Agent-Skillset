@@ -1,0 +1,325 @@
+{
+  "message_id": "secl.010.001.04",
+  "publications": [
+    {
+      "source_id": "src-000053",
+      "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+      "heading": "11 MX secl.010.001.04 SettlementObligationReportV04",
+      "definition_pages": [
+        316,
+        372
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SettlementObligationReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a clearing member",
+            "labels": [
+              {
+                "label": "a clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the central counterparty (CCP)",
+            "labels": [
+              {
+                "label": "the central counterparty",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the central counterparty (CCP)"
+          },
+          "claim_id": "src-000053-secl.010.001.04-p316-c001-d1",
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "heading": "11 MX secl.010.001.04 SettlementObligationReportV04",
+          "file_pages": [
+            316
+          ],
+          "section": "scope",
+          "quote": "The SettlementObligationReport message is sent by the central counterparty (CCP) to a clearing member to report on the settlement obligation that will be submitted for settlement.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "Conditional receiver processes settlement obligations on behalf of more than one clearing member; clearing members are not added as receivers by this sentence.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "103fd79542092df457577503a93e01f0076a68f0cbd0784820e8da464bdc1aa9",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000053-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000053-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000053-secl.010.001.04-p316-c002-d1",
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "heading": "11 MX secl.010.001.04 SettlementObligationReportV04",
+          "file_pages": [
+            316
+          ],
+          "section": "usage",
+          "quote": "The SettlementObligationReport message may also be sent to a third party processing the settlement obligation(s) on behalf of more than one clearing member.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "may",
+            "on behalf of"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SettlementObligationReport message is sent by the central counterparty (CCP) to a clearing member to report on the settlement obligation that will be submitted for settlement.",
+          "raw_quote": "Scope\nThe SettlementObligationReport message is sent by the central counterparty (CCP) to a clearing\nmember to report on the settlement obligation that will be submitted for settlement.",
+          "file_pages": [
+            316
+          ],
+          "section": "scope",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c001",
+          "mentions": [
+            {
+              "label": "central counterparty (CCP)",
+              "start": 54,
+              "end": 80,
+              "resolution": {
+                "label": "central counterparty (CCP)",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "Exact message, source, label and Functionality-quote match; The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                  "contextual_override": {
+                    "source_id": "src-000053",
+                    "message_id": "secl.010.001.04",
+                    "label": "central counterparty (CCP)",
+                    "participant_id": "participant-src-000052-central-counterparty",
+                    "quote_sha256": "e661bb8443cb139d4c1ffa8d4b46bfca8a5b923da6fd137ab2885fdf01a607ff",
+                    "basis": "The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                    "source_locations": [
+                      {
+                        "source_id": "src-000053",
+                        "heading": "11 MX secl.010.001.04 SettlementObligationReportV04",
+                        "file_pages": [
+                          316
+                        ],
+                        "evidence_id": "src-000053-secl.010.001.04-p316-c001"
+                      }
+                    ]
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "clearing member",
+              "start": 86,
+              "end": 101,
+              "resolution": {
+                "label": "clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000053-secl.010.001.04-p316-c001-d1"
+          ]
+        },
+        {
+          "quote": "The SettlementObligationReport message may also be sent to a third party processing the settlement obligation(s) on behalf of more than one clearing member.",
+          "raw_quote": "Usage\nThe SettlementObligationReport message may also be sent to a third party processing the settlement\nobligation(s) on behalf of more than one clearing member.",
+          "file_pages": [
+            316
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c002",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 61,
+              "end": 72,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000053-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000053-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "clearing member",
+              "start": 140,
+              "end": 155,
+              "resolution": {
+                "label": "clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000053-secl.010.001.04-p316-c002-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The report can be provided for one specific delivering party or one specific receiving party.",
+          "raw_quote": "The\nreport can be provided for one specific delivering party or one specific receiving party.",
+          "file_pages": [
+            316
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c003",
+          "mentions": [
+            {
+              "label": "receiving party",
+              "start": 77,
+              "end": 92,
+              "resolution": {
+                "label": "receiving party",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000053-recipient",
+                  "path": "shared/reference/participants/participant-functionality-src-000053-recipient.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "report-coverage-not-receiver",
+            "rationale": "“Provided for” specifies the delivering/receiving-party coverage of the report. It does not assert that the covered party is the receiver.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "It can also be generated per non clearing member.",
+          "raw_quote": "It can also be\ngenerated per non clearing member.",
+          "file_pages": [
+            316
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c004",
+          "mentions": [
+            {
+              "label": "clearing member",
+              "start": 33,
+              "end": 48,
+              "resolution": {
+                "label": "clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message definition is intended for use with the ISO20022 Business Application Header.",
+          "raw_quote": "The message definition is intended for use with the ISO20022 Business Application Header.",
+          "file_pages": [
+            316
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The Settlement Obligation Report message is provided per delivery account and per instrument.",
+          "raw_quote": "The Settlement Obligation Report message is provided per delivery account and per instrument.",
+          "file_pages": [
+            316
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        316
+      ],
+      "file_pages": [
+        316,
+        317
+      ]
+    }
+  ]
+}

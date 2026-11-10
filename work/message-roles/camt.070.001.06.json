@@ -1,0 +1,187 @@
+{
+  "message_id": "camt.070.001.06",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "31 camt.070.001.06 ReturnStandingOrderV06",
+      "definition_pages": [
+        707,
+        737
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The ReturnStandingOrder message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a transaction administrator",
+            "labels": [
+              {
+                "label": "a transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.070.001.06-p707-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "31 camt.070.001.06 ReturnStandingOrderV06",
+          "file_pages": [
+            707
+          ],
+          "section": "scope",
+          "quote": "The ReturnStandingOrder message is sent by a transaction administrator to a member.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReturnStandingOrder message is sent by a transaction administrator to a member.",
+          "raw_quote": "Scope\nThe ReturnStandingOrder message is sent by a transaction administrator to a member.",
+          "file_pages": [
+            707
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.070.001.06-p707-c001",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 45,
+              "end": 70,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 76,
+              "end": 82,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.070.001.06-p707-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "It is used to provide information on the details of one or more standing orders, based on specific request and return criteria. in response to a request a on information on standing and predefined orders.",
+          "raw_quote": "It is used to provide information on the details of one or more standing orders, based on specific\nrequest and return criteria.\nin response to a request a on information on standing and predefined orders.",
+          "file_pages": [
+            707
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The ReturnStandingOrder message lists the standing order based on the following possible return criteria:",
+          "raw_quote": "Usage\nThe ReturnStandingOrder message lists the standing order based on the following possible return\ncriteria:",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Generic standing order details,",
+          "raw_quote": "Generic standing order details,",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Details of a specific predefined or standing liquidity transfer orders,",
+          "raw_quote": "Details of a specific predefined or standing liquidity transfer orders,",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Details on the set to which the standing order belongs to,",
+          "raw_quote": "Details on the set to which the standing order belongs to,",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "List of all predefined and standing liquidity transfer standing orders and/or per set,",
+          "raw_quote": "List of all predefined and standing liquidity transfer standing orders and/or per set,",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Total amount of predefined and standing liquidity transfer orders defined in the system.",
+          "raw_quote": "Total amount of predefined and standing liquidity transfer orders defined in the system.",
+          "file_pages": [
+            707
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        707
+      ],
+      "file_pages": [
+        707
+      ]
+    }
+  ]
+}

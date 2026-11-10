@@ -1,0 +1,52 @@
+classDiagram
+direction TB
+class SecuritiesPricing {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class Tax {
+<<BusinessComponent>>
+}
+class InvestmentFundClassProcessingCharacteristics {
+<<BusinessComponent>>
+}
+class InvestmentFundClass {
+<<BusinessComponent>>
+}
+class NetAssetValueCalculation {
+<<BusinessComponent>>
+}
+class ValuationStatistics {
+<<BusinessComponent>>
+}
+class FundsCashFlow {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity {
+<<BusinessComponent>>
+}
+class Interest {
+<<BusinessComponent>>
+}
+class PerformanceFactors {
+<<BusinessComponent>>
+}
+class DateTimePeriod {
+<<BusinessComponent>>
+}
+SecuritiesPricing -- Security : + Pricing
+SecuritiesPricing -- NetAssetValueCalculation : + Price
+SecuritiesPricing -- ValuationStatistics : - PriceChange / - HighestPriceValue / - LowestPriceValue / + LowestPriceValueRelatedStatistics / + HighestPriceValueRelatedStatistics / + PriceChangeRelatedStatistics
+InvestmentFundClass --|> Security
+InvestmentFundClassProcessingCharacteristics -- InvestmentFundClass : + ProcessingCharacteristics / + FundClass
+InvestmentFundClass -- NetAssetValueCalculation : - RelatedFund
+NetAssetValueCalculation -- Tax : + TaxRefundValueCalculation / + TaxRefund
+NetAssetValueCalculation -- Tax : + TaxLiabilityValueCalculation / + TaxLiability
+NetAssetValueCalculation -- FundsCashFlow : + FundsCashFlow
+NetAssetValueCalculation -- SecuritiesQuantity
+NetAssetValueCalculation -- Interest
+NetAssetValueCalculation -- ValuationStatistics
+NetAssetValueCalculation -- PerformanceFactors : + InvestmentFundPerformanceFactors
+PerformanceFactors -- DateTimePeriod : - AccumulationPeriod

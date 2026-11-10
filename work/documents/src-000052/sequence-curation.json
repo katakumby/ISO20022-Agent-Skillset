@@ -1,0 +1,65 @@
+[
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0012.md",
+    "source_figure": "fig-0012",
+    "source_image": 11,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p217-trade-leg-notification-business-transaction.md",
+    "messages": 2,
+    "optional": 0,
+    "reverse": 0
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0013.md",
+    "source_figure": "fig-0013",
+    "source_image": 12,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p221-trade-leg-notification-cancellation-business-transaction.md",
+    "messages": 2,
+    "optional": 0,
+    "reverse": 0
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0014.md",
+    "source_figure": "fig-0014",
+    "source_image": 13,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p225-position-netting-business-transaction.md",
+    "messages": 1,
+    "optional": 0,
+    "reverse": 0
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0015.md",
+    "source_figure": "fig-0015",
+    "source_image": 14,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p229-margining-business-transaction.md",
+    "messages": 4,
+    "optional": 3,
+    "reverse": 1
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0016.md",
+    "source_figure": "fig-0016",
+    "source_image": 15,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p240-default-fund-contribution-business-transaction.md",
+    "messages": 2,
+    "optional": 1,
+    "reverse": 0
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0017.md",
+    "source_figure": "fig-0017",
+    "source_image": 16,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p247-settlement-netting-business-transaction.md",
+    "messages": 1,
+    "optional": 0,
+    "reverse": 0
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/diagrams/business-transactions/fig-0018.md",
+    "source_figure": "fig-0018",
+    "source_image": 17,
+    "flow": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/flows/flow-src-000052-p250-buy-in-business-transaction.md",
+    "messages": 3,
+    "optional": 1,
+    "reverse": 1
+  }
+]

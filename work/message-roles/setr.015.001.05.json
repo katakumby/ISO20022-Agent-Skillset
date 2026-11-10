@@ -1,0 +1,234 @@
+{
+  "message_id": "setr.015.001.05",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "55 setr.015.001.05 SwitchOrderConfirmationV05",
+      "definition_pages": [
+        3802,
+        4108
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SwitchOrderConfirmation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the instructing party, for example, an investment manager or its authorised representative"
+          },
+          "sender": {
+            "expression": "an executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an executing party, for example, a transfer agent"
+          },
+          "claim_id": "src-000096-setr.015.001.05-p3802-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "55 setr.015.001.05 SwitchOrderConfirmationV05",
+          "file_pages": [
+            3802
+          ],
+          "section": "scope",
+          "quote": "The SwitchOrderConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to confirm the details of the execution of a previously received SwitchOrder instruction.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SwitchOrderConfirmation message is sent by an executing party, for example, a transfer agent, to the instructing party, for example, an investment manager or its authorised representative, to confirm the details of the execution of a previously received SwitchOrder instruction.",
+          "raw_quote": "Scope\nThe SwitchOrderConfirmation message is sent by an executing party, for example, a transfer agent, to\nthe instructing party, for example, an investment manager or its authorised representative, to confirm\nthe details of the execution of a previously received SwitchOrder instruction.",
+          "file_pages": [
+            3802
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-setr.015.001.05-p3802-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 50,
+              "end": 65,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 82,
+              "end": 96,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 105,
+              "end": 122,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 140,
+              "end": 158,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 166,
+              "end": 191,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-setr.015.001.05-p3802-c001-d1"
+          ]
+        },
+        {
+          "quote": "The SwitchOrderConfirmation message is used to confirm that all the legs of the previously instructed switch order have been executed.",
+          "raw_quote": "Usage\nThe SwitchOrderConfirmation message is used to confirm that all the legs of the previously instructed\nswitch order have been executed.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.015.001.05-p3802-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The reference of the switch order confirmation is identified in DealReference.",
+          "raw_quote": "The reference of the switch order confirmation is identified in\nDealReference.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The reference of the original switch order is specified in OrderReference.",
+          "raw_quote": "The reference of the original switch order is specified in OrderReference.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The message identification of the SwitchOrder message in which the switch order was conveyed may also be quoted in RelatedReference but this is not recommended.",
+          "raw_quote": "The message identification of\nthe SwitchOrder message in which the switch order was conveyed may also be quoted in\nRelatedReference but this is not recommended.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "When the message is used to convey a confirmation amendment/s, the AmendmentIndicator must be present with the value 'true' or '1'.",
+          "raw_quote": "When the message is used to convey a confirmation amendment/s, the AmendmentIndicator must be\npresent with the value 'true' or '1'.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "When this is the case, the message must only contain a confirmation amendment/s and not contain both a confirmation amendment/s and a 'new' confirmation/s.",
+          "raw_quote": "When this is the case, the message must only contain a confirmation\namendment/s and not contain both a confirmation amendment/s and a 'new' confirmation/s.",
+          "file_pages": [
+            3802
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        3802
+      ],
+      "file_pages": [
+        3802
+      ]
+    }
+  ]
+}

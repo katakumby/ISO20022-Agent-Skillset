@@ -1,0 +1,336 @@
+{
+  "message_id": "reda.005.001.03",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "16 reda.005.001.03 InvestmentFundReportRequestV03",
+      "definition_pages": [
+        365,
+        370
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The InvestmentFundReportRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the report provider, for example, a fund promoter, fund management company, transfer agent, or market data provider",
+            "labels": [
+              {
+                "label": "the report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the report provider, for example, a fund promoter, fund management company, transfer agent, or market data provider"
+          },
+          "sender": {
+            "expression": "a report user, for example, a professional investor, investment fund distributor, market data provider, regulator or other interested party",
+            "labels": [
+              {
+                "label": "a report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a report user, for example, a professional investor, investment fund distributor, market data provider, regulator or other interested party"
+          },
+          "claim_id": "src-000096-reda.005.001.03-p365-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "16 reda.005.001.03 InvestmentFundReportRequestV03",
+          "file_pages": [
+            365
+          ],
+          "section": "scope",
+          "quote": "The InvestmentFundReportRequest message is sent by a report user, for example, a professional investor, investment fund distributor, market data provider, regulator or other interested party to the report provider, for example, a fund promoter, fund management company, transfer agent, or market data provider to request a report.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The InvestmentFundReportRequest message is sent by a report user, for example, a professional investor, investment fund distributor, market data provider, regulator or other interested party to the report provider, for example, a fund promoter, fund management company, transfer agent, or market data provider to request a report.",
+          "raw_quote": "Scope\nThe InvestmentFundReportRequest message is sent by a report user, for example, a professional\ninvestor, investment fund distributor, market data provider, regulator or other interested party to the\nreport provider, for example, a fund promoter, fund management company, transfer agent, or market\ndata provider to request a report.",
+          "file_pages": [
+            365
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-reda.005.001.03-p365-c001",
+          "mentions": [
+            {
+              "label": "report user",
+              "start": 53,
+              "end": 64,
+              "resolution": {
+                "label": "report user",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-requesting-party",
+                  "path": "shared/reference/participants/participant-src-000095-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "professional investor",
+              "start": 81,
+              "end": 102,
+              "resolution": {
+                "label": "professional investor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-professional-investor",
+                  "path": "shared/reference/participants/participant-src-000095-professional-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "distributor",
+              "start": 120,
+              "end": 131,
+              "resolution": {
+                "label": "distributor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-distributor",
+                  "path": "shared/reference/participants/participant-src-000095-distributor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "market data provider",
+              "start": 133,
+              "end": 153,
+              "resolution": {
+                "label": "market data provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-market-data-provider",
+                  "path": "shared/reference/participants/participant-src-000095-market-data-provider.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "regulator",
+              "start": 155,
+              "end": 164,
+              "resolution": {
+                "label": "regulator",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-regulator",
+                  "path": "shared/reference/participants/participant-src-000095-regulator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "other interested party",
+              "start": 168,
+              "end": 190,
+              "resolution": {
+                "label": "other interested party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-other-interested-party",
+                  "path": "shared/reference/participants/participant-src-000095-other-interested-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "report provider",
+              "start": 198,
+              "end": 213,
+              "resolution": {
+                "label": "report provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-reporting-party",
+                  "path": "shared/reference/participants/participant-src-000095-reporting-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "fund promoter",
+              "start": 230,
+              "end": 243,
+              "resolution": {
+                "label": "fund promoter",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-fund-promoter",
+                  "path": "shared/reference/participants/participant-src-000095-fund-promoter.md",
+                  "basis": "Exact message, source, label and Functionality-quote match; Part1 explicitly names Fund Promoter as the business participant used in these report-provider examples. The workbook FundManagerRole alias is a distinct conceptual-model definition; it is not substituted for the named business participant.",
+                  "contextual_override": {
+                    "source_id": "src-000096",
+                    "message_id": "reda.005.001.03",
+                    "label": "fund promoter",
+                    "participant_id": "participant-src-000095-fund-promoter",
+                    "quote_sha256": "0cd036acf79ac133b7a570de0af939a387c1406f5b667bce7cf580d965a6f55c",
+                    "basis": "Part1 explicitly names Fund Promoter as the business participant used in these report-provider examples. The workbook FundManagerRole alias is a distinct conceptual-model definition; it is not substituted for the named business participant.",
+                    "source_locations": [
+                      {
+                        "source_id": "src-000096",
+                        "heading": "16 reda.005.001.03 InvestmentFundReportRequestV03",
+                        "file_pages": [
+                          365
+                        ],
+                        "evidence_id": "src-000096-reda.005.001.03-p365-c001"
+                      }
+                    ]
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "fund management company",
+              "start": 245,
+              "end": 268,
+              "resolution": {
+                "label": "fund management company",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-fund-management-company",
+                  "path": "shared/reference/participants/participant-src-000095-fund-management-company.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 270,
+              "end": 284,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "market data provider",
+              "start": 289,
+              "end": 309,
+              "resolution": {
+                "label": "market data provider",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-market-data-provider",
+                  "path": "shared/reference/participants/participant-src-000095-market-data-provider.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-reda.005.001.03-p365-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Investment Fund Report Request message can be used to request one or many fund reference data report messages.",
+          "raw_quote": "The Investment Fund Report Request message can be used to request one or many fund reference\ndata report messages.",
+          "file_pages": [
+            365
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "If the InvestmentFundReportRequest message is used to request a fund reference data report then the request can specify the financial instrument for which the report is requested.",
+          "raw_quote": "Usage\nIf the InvestmentFundReportRequest message is used to request a fund reference data report then the\nrequest can specify the financial instrument for which the report is requested.",
+          "file_pages": [
+            365
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Other appropriate parameters can also be included.",
+          "raw_quote": "Other appropriate\nparameters can also be included.",
+          "file_pages": [
+            365
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "It is also possible to indicate that the request is an open request, that is, there is no specific criteria for the report requested.",
+          "raw_quote": "It is also possible to indicate that the request is an open request, that\nis, there is no specific criteria for the report requested.",
+          "file_pages": [
+            365
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "For example, a request for a fund reference data report that is specified as \"no criteria\" means that the request is a request for a reference data report messages for all funds.",
+          "raw_quote": "For example, a request for a fund reference data\nreport that is specified as \"no criteria\" means that the request is a request for a reference data report\nmessages for all funds.",
+          "file_pages": [
+            365
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        365
+      ],
+      "file_pages": [
+        365
+      ]
+    }
+  ]
+}

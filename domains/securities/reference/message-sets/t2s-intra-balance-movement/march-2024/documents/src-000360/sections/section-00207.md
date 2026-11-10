@@ -1,0 +1,71 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "T2S IntraBalanceMovement"
+source_ids: ["src-000360"]
+source_editions: ["march-2024"]
+message_ids: []
+heading_path: ["12 camt.081.001.02 IntraBalanceMovementModificationReportV02", "12.4 Message Building Blocks"]
+file_pages: [251]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.081.001.02"]
+---
+
+# 12.4 Message Building Blocks
+
+Source: [src-000360](../../../../../../../../../raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_IntraBalanceMovement_MessageSet/ISO20022_MDRPart2_Target2Securities_IntraBalanceMovement_2023_2024_v1.pdf`. Locator: one-based file pages 251 to 251.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 251
+
+```text
+C23 ReportNumberRule
+If Long number (Exact5NumericTest) is used, then the report must be a delta reports
+(UpdateType: DELT).
+If the report has multiple pages, then the ReportNumber must remain the same through all the
+pages. It is a unique number to the report.
+Two reports of the same type sent one after the other to the same receiver in relation to the
+same safekeeping account must have different ReportNumbers. For example, a daily report
+sent on day 1 would have ReportNumber 001, on day 2, 002, etc.
+C24 ShortLongNumberRule
+ShortNumber must contain the FIN message type number of the linked message. LongNumber
+must contain the XML message identifier of the linked message.
+C25 SupplementaryDataRule
+This component may not be used without the explicit approval of a SEG and submission to the
+RA of ISO 20022 compliant structure(s) to be used in the Envelope element.
+C26 WithLinkageRule
+If Code WITH is used, then the one or more instruction which are linked become bound and
+which must be executed together. Even if one single transactions/instructions/notifications can
+not be executed, then all the other transactions/instructions/notifications must also be kept
+pending. Therefore the use of code WITH must be limited to combine up to 2 or 3 transactions/
+instructions/notifications.
+12.4 Message Building Blocks
+This chapter describes the MessageBuildingBlocks of this MessageDefinition.
+12.4.1 Identification <Id>
+Presence: [0..1]
+Definition: Unambiguous identification of the message as known by the account servicer or settlement
+infrastructure.
+Identification <Id> contains the following DocumentIdentification51 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 251
+   CreationDateTime <CreDtTm> [0..1] ± 252
+   CopyDuplicate <CpyDplct> [0..1] CodeSet 252
+   MessageOriginator <MsgOrgtr> [0..1] ± 252
+   MessageRecipient <MsgRcpt> [0..1] ± 252
+12.4.1.1  Identification <Id>
+Presence: [1..1]
+Definition: Unique identifier of the document (message) assigned by the sender of the document.
+Approved by the Securities and the Payments SEGs under the leadership of
+the Securities SEG on 15 February 2024
+camt.081.001.02
+IntraBalanceMovementModificationReportV02
+Target2-Securities - Intra-balance Movement - Maintenance
+2023 - 2024
+251 March 2024
+```
+

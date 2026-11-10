@@ -1,0 +1,586 @@
+{
+  "message_id": "sese.039.001.08",
+  "publications": [
+    {
+      "source_id": "src-000197",
+      "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+      "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08",
+      "definition_pages": [
+        1300,
+        1321
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a SecuritiesSettlementTransactionModificationRequestStatusAdvice",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account owner",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "An account servicer",
+            "labels": [
+              {
+                "label": "An account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-sese.039.001.08-p1300-c001-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08",
+          "file_pages": [
+            1300
+          ],
+          "section": "scope",
+          "quote": "An account servicer sends a SecuritiesSettlementTransactionModificationRequestStatusAdvice to an account owner to advise the status of a SecuritiesSettlementModificationRequest message previously sent by the account owner.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "original-message-in-duplicate-option",
+          "message_subject": "This message",
+          "limitation": "The clause explicitly identifies the original message direction within the Duplicate/resend option; it does not establish a different sender for a forwarded copy.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "65a8164bb11d0447484b03c7a4dd683030e5f0c228c6a244d348425e628937fa",
+          "sender": {
+            "expression": "account owner",
+            "labels": [
+              {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "account servicer",
+            "labels": [
+              {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-sese.039.001.08-p1300-c005-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "quote": "re-send a message sent by the account owner to the account servicer,",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "72a2cc9587ba06980ebc49298827fd1c49d270af8ed3e39bb9660235ddec8d17",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-sese.039.001.08-p1300-c006-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "quote": "provide a third party with a copy of a message being sent by the account owner for information,",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "f515e0595d85b0f3b8efcf9870bea5253ff01fc0d9c275e76d9ed7c1ff28cbef",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-sese.039.001.08-p1300-c007-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "quote": "re-send to a third party a copy of a message being sent by the account owner for information using the relevant elements in the Business Application Header.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "An account servicer sends a SecuritiesSettlementTransactionModificationRequestStatusAdvice to an account owner to advise the status of a SecuritiesSettlementModificationRequest message previously sent by the account owner.",
+          "raw_quote": "Scope\nAn account servicer sends a SecuritiesSettlementTransactionModificationRequestStatusAdvice to an\naccount owner to advise the status of a SecuritiesSettlementModificationRequest message previously\nsent by the account owner.",
+          "file_pages": [
+            1300
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c001",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 3,
+              "end": 19,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 97,
+              "end": 110,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 208,
+              "end": 221,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000197-sese.039.001.08-p1300-c001-d1"
+          ]
+        },
+        {
+          "quote": "The account servicer may be:",
+          "raw_quote": "The account servicer may be:",
+          "file_pages": [
+            1300
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c002",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 4,
+              "end": 20,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a central securities depository or another settlement market infrastructure managing securities settlement transactions on behalf of their participants",
+          "raw_quote": "a central securities depository or another settlement market infrastructure managing securities\nsettlement transactions on behalf of their participants",
+          "file_pages": [
+            1300
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c003",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 2,
+              "end": 31,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "settlement market infrastructure",
+              "start": 43,
+              "end": 75,
+              "resolution": {
+                "label": "settlement market infrastructure",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-settlement-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-settlement-market-infrastructure.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "an custodian acting as an accounting and/or settlement agent.",
+          "raw_quote": "an custodian acting as an accounting and/or settlement agent.",
+          "file_pages": [
+            1300
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c004",
+          "mentions": [
+            {
+              "label": "custodian",
+              "start": 3,
+              "end": 12,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-custodian",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-custodian.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "agent",
+              "start": 55,
+              "end": 60,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send a message sent by the account owner to the account servicer,",
+          "raw_quote": "re-send a message sent by the account owner to the account servicer,",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c005",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 30,
+              "end": 43,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 51,
+              "end": 67,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000197-sese.039.001.08-p1300-c005-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message being sent by the account owner for information,",
+          "raw_quote": "provide a third party with a copy of a message being sent by the account owner for information,",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c006",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 65,
+              "end": 78,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000197-sese.039.001.08-p1300-c006-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "re-send to a third party a copy of a message being sent by the account owner for information using the relevant elements in the Business Application Header.",
+          "raw_quote": "re-send to a third party a copy of a message being sent by the account owner for information\nusing the relevant elements in the Business Application Header.",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c007",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 63,
+              "end": 76,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000197-sese.039.001.08-p1300-c007-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "Usage\nThe message may also be used to:",
+          "file_pages": [
+            1300
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1300
+      ],
+      "file_pages": [
+        1300,
+        1301
+      ]
+    }
+  ]
+}

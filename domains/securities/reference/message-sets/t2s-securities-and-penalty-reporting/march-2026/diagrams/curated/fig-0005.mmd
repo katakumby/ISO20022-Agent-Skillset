@@ -1,0 +1,17 @@
+flowchart TB
+ B["Settlement & Reconciliation"] --> I(["Instruction"])
+ B --> R(["Reconciliation"])
+ B --> S(["Status reporting"])
+ B --> C(["Confirmation"])
+ I --> M(["Modification"])
+ I --> X(["Cancellation request"])
+ M --> S
+ X --> S
+ C --> S
+ C --> V(["Reversal"])
+ R --> Rep(["Reporting"])
+ R --> Q(["Query / Response"])
+ classDef context fill:#b7cbe3,stroke:black
+ classDef scope fill:#8df4cd,stroke:black
+ class B,I,S,C,M,X,V context
+ class R,Rep,Q scope

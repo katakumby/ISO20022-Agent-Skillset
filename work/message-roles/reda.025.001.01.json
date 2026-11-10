@@ -1,0 +1,353 @@
+{
+  "message_id": "reda.025.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "45 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+      "definition_pages": [
+        2173,
+        2178
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The EligibleSecuritiesCreationRequest message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "an instructing party and the executing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000353-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000353-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2173
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000354",
+                        "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000354-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000354-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2173
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000354",
+                        "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000233-reda.025.001.01-p2173-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "45 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+          "file_pages": [
+            2173
+          ],
+          "section": "scope",
+          "quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the executing party to request for the creation of an eligible securities in the executing system collateral management reference data.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the executing party to request for the creation of an eligible securities in the executing system collateral management reference data.",
+          "raw_quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the\nexecuting party to request for the creation of an eligible securities in the executing system collateral\nmanagement reference data.",
+          "file_pages": [
+            2173
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.025.001.01-p2173-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 70,
+              "end": 87,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000353-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000353-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2173
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000354",
+                        "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 96,
+              "end": 111,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000354-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000354-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2173
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000354",
+                        "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+                        "file_pages": [
+                          16
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.025.001.01-p2173-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the creation of a new eligible securities with corresponding details.",
+          "raw_quote": "Usage:\nIt aims at instructing the creation of a new eligible securities with corresponding details.",
+          "file_pages": [
+            2173
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.025.001.01-p2173-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Processing and confirmation of the eligible securities creation request message are provided via a collateral management status advice.",
+          "raw_quote": "Processing and confirmation of the eligible securities creation request message are provided via a\ncollateral management status advice.",
+          "file_pages": [
+            2173
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2173
+      ],
+      "file_pages": [
+        2173
+      ]
+    },
+    {
+      "source_id": "src-000354",
+      "source_sha256": "4cc1fdc26cca6cdab7548753e9778176847481840fc159386dc8990baa32514e",
+      "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+      "definition_pages": [
+        16,
+        21
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The EligibleSecuritiesCreationRequest message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "an instructing party and the executing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000354",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000353-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000353-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000354",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000354-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000354-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000354-reda.025.001.01-p16-c001-d1",
+          "source_id": "src-000354",
+          "source_sha256": "4cc1fdc26cca6cdab7548753e9778176847481840fc159386dc8990baa32514e",
+          "heading": "3 reda.025.001.01 EligibleSecuritiesCreationRequestV01",
+          "file_pages": [
+            16
+          ],
+          "section": "scope",
+          "quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the executing party to request for the creation of an eligible securities in the executing system collateral management reference data.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the executing party to request for the creation of an eligible securities in the executing system collateral management reference data.",
+          "raw_quote": "The EligibleSecuritiesCreationRequest message is exchanged between an instructing party and the\nexecuting party to request for the creation of an eligible securities in the executing system collateral\nmanagement reference data.",
+          "file_pages": [
+            16
+          ],
+          "section": "scope",
+          "evidence_id": "src-000354-reda.025.001.01-p16-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 70,
+              "end": 87,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000354",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000353-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000353-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 96,
+              "end": 111,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000354",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000354-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000354-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000354-reda.025.001.01-p16-c001-d1"
+          ]
+        },
+        {
+          "quote": "It aims at instructing the creation of a new eligible securities with corresponding details.",
+          "raw_quote": "Usage:\nIt aims at instructing the creation of a new eligible securities with corresponding details.",
+          "file_pages": [
+            16
+          ],
+          "section": "usage",
+          "evidence_id": "src-000354-reda.025.001.01-p16-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Processing and confirmation of the eligible securities creation request message are provided via a collateral management status advice.",
+          "raw_quote": "Processing and confirmation of the eligible securities creation request message are provided via a\ncollateral management status advice.",
+          "file_pages": [
+            16
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        16
+      ],
+      "file_pages": [
+        16
+      ]
+    }
+  ]
+}

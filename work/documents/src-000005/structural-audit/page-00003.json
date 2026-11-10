@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000005",
+  "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+  "file_page": 3,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 51,
+    "2": 33
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 27,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "123bc388e25f9d17d5c859ad4d5d4e52a544a850e7976e4d8339082ada0ef1cf",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0001",
+      "file_page": 3,
+      "bbox": [
+        85.03936999999999,
+        212.09292000000016,
+        510.23623142857144,
+        543.0929100000001
+      ],
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/documents/src-000005/tables/tbl-0001.md",
+      "rows": 5,
+      "matrix_cells": 10,
+      "physical_cells": 10,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "aa3f108b789a672e53574bed7799d6ff853b84acaffe97c49ae6309253c74a6c",
+      "cell_geometry_sha256": "1fc4eb288e7808248e61bd16acb94d7024f955724b38b3ab5dc28f1da6bbb28b",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 10,
+      "independent_cells_match": 10,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

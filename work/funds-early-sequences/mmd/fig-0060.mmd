@@ -1,0 +1,13 @@
+sequenceDiagram
+participant I1 as Instructing Party 1
+participant I2 as Instructing Party 2
+participant M as Intermediary
+participant E as Executing Party
+I1->>M: SubscriptionOrder
+I2->>M: SubscriptionOrder
+M->>E: SubscriptionBulkOrder
+M->>I1: OrderInstructionStatusReport (STNP or RECE)
+M->>I2: OrderInstructionStatusReport (RECE or STNP
+E->>M: OrderInstructionStatusReport (PACK)
+M->>I1: OrderInstructionStatusReport (PACK)
+M->>I2: OrderInstructionStatusReport (PACK)

@@ -1,0 +1,26 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  subgraph C["CCP"]
+    S(("Start"))
+    Assess("Assess participant risk level")
+    Calc("Calculate the default fund contribution")
+    D{"Sufficient?"}
+    Pay["Payment Process<br/>(OUT of SCOPE)"]:::outside
+  end
+  subgraph M["Clearing Member"]
+    Process("Process Information")
+  end
+  E((("End")))
+  S --> Assess --> Calc
+  Calc --> Process --> E
+  Calc --> D
+  D -->|Yes| E
+  D -->|No| Pay
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

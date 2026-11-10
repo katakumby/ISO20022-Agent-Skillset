@@ -1,0 +1,143 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 584,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 135,
+    "2": 201
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 187,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "eb4bb558ee97d8188ebadeb81dc56b5d45497b009224d5394a7dddba0f954ce6",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 148,
+      "bbox": [
+        84.5394,
+        365.1237,
+        260.5198,
+        366.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        356.4929,
+        276.7044,
+        366.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 150,
+      "bbox": [
+        259.5198,
+        365.1237,
+        277.2044,
+        366.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        356.4929,
+        276.7044,
+        366.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 326,
+      "bbox": [
+        144.5686,
+        721.1237,
+        193.7864,
+        722.1237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        712.4929,
+        193.2864,
+        722.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0772",
+      "file_page": 584,
+      "bbox": [
+        85.03936999999996,
+        135.89291000000014,
+        555.5905705263158,
+        273.0929100000002
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0772.md",
+      "rows": 6,
+      "matrix_cells": 36,
+      "physical_cells": 36,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "dacc5766b9da5527cb8ddc0817795392787cc7e23b30ddefe4cba8e0d0d35c71",
+      "cell_geometry_sha256": "82b06e3dcb91e4f7602fb407a8adf02923cfabb7edd0d4a8e7fcc7bfd0a1ef09",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 36,
+      "independent_cells_match": 36,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0773",
+      "file_page": 584,
+      "bbox": [
+        85.03936999999996,
+        373.4929000000001,
+        555.5905705263158,
+        442.09290000000004
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0773.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7658c8f31bad48d5a56c7bdbcb16fc8940e07808503ccde3174566e87bd3a3d0",
+      "cell_geometry_sha256": "bdce093efc7f5e5d5a2e642fc7575238d539f3ca038fdcb4853f4451ce1959be",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0774",
+      "file_page": 584,
+      "bbox": [
+        85.03936999999996,
+        554.4929300000001,
+        555.5905705263158,
+        643.29294
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0774.md",
+      "rows": 4,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "472dfc2e5389852f450c53864f6dfaa44004316714d5a86ca824a82018864c9f",
+      "cell_geometry_sha256": "6d086da17eef3062ef46d7f9b1dddf1533df2c05555f8f1c10d4a993820e90a3",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

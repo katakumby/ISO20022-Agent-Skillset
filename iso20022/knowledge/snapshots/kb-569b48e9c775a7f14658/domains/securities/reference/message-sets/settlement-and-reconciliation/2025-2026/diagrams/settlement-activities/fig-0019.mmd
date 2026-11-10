@@ -1,0 +1,91 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph Common["COMMON"]
+    S@{shape: f-circ,label: " "}
+    T["Technical and business validation Process?"]
+    A{"Accepted for further processing?"}
+    RR{"Rejection or Repair"}
+    Repair@{shape: doc,label: "Repair Status"}
+    Reject@{shape: doc,label: "Rejection Status"}
+    Accepted@{shape: doc,label: "Accepted status"}
+    S ==> T
+    T -->|Y| A
+    A -->|Y| Accepted
+    A -->|N| RR
+    RR -->|Repair| Repair
+    Repair --> A
+    RR -->|Rejection| Reject
+  end
+  subgraph Intermediary["INTERMEDIARY"]
+    R1@{shape: f-circ,label: " "}
+    IP["Internal Further Processing?"]
+    Pending{"Pending?"}
+    PP@{shape: doc,label: "Pending Processing Status"}
+    Next@{shape: doc,label: "Next Status"}
+    R2@{shape: f-circ,label: " "}
+    IM["Inferred Matching Process?"]
+    ID{"Matched?"}
+    IU@{shape: doc,label: "Inferred Unmatched Status"}
+    IMatched@{shape: doc,label: "Inferred Matched"}
+    R1 ==> IP
+    IP -->|Y| Pending
+    IP -->|N| R2
+    Pending -->|Y| PP
+    PP --> Pending
+    Pending -->|N| Next
+    Pending -->|N| ID
+    Next --> R2
+    R1 ==> R2
+    R2 ==> IM
+    IM -->|Y| ID
+    ID -->|N| IU
+    IU --> Next
+    ID -->|Y| IMatched
+  end
+  subgraph Market["MARKET STATUS"]
+    R3@{shape: f-circ,label: " "}
+    MP["Matching Process?"]
+    MD{"Matched?"}
+    Unmatched@{shape: doc,label: "Unmatched Status"}
+    Matched@{shape: doc,label: "Matched"}
+    R4@{shape: f-circ,label: " "}
+    SP["Settlement Process?"]
+    Date{"Before or After instructed settlement date?<br/>(See chapter 7)"}
+    PD{"Pending?"}
+    Ready@{shape: doc,label: "Ready for settlement"}
+    PR@{shape: doc,label: "Pending reason"}
+    FD{"Failing?"}
+    Recycled@{shape: doc,label: "Recycled"}
+    FR@{shape: doc,label: "Failing reason"}
+    Done[["Settlement Confirmation"]]
+    R3 ==> MP
+    MP -->|Y| MD
+    MP -->|N| R4
+    MD -->|Y| Matched
+    MD -->|N| Unmatched
+    Matched --> R4
+    R3 ==> R4
+    R4 ==> SP
+    SP -->|Y| Date
+    SP -->|N| Done
+    Date -->|Before| PD
+    PD -->|N| Ready
+    PD -->|Y| PR
+    PR --> PD
+    Date -->|After| FD
+    FD -->|N| Recycled
+    FD -->|Y| FR
+    FR --> FD
+    Ready ==> Done
+    Recycled ==> Done
+  end
+  S ==> R1
+  T -->|N| R1
+  Accepted --> R1
+  IMatched --> R3
+  IM -->|N| R3
+  ID -->|Y| MD
+  R2 ==> R3
+  Unmatched --> IMatched
+  classDef process fill:#ddd,stroke:#111,color:#111
+  class T,A,RR,IP,Pending,IM,ID,MP,MD,SP,Date,PD,FD process

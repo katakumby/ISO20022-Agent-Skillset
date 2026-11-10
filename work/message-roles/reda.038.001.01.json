@@ -1,0 +1,139 @@
+{
+  "message_id": "reda.038.001.01",
+  "publications": [
+    {
+      "source_id": "src-000351",
+      "source_sha256": "e9d8e518dafbe038ad773d4753ce4e7b9eddf0228060442513989c9b0b2fd61c",
+      "heading": "4 reda.038.001.01 CashAccountActivityAdviceV01",
+      "definition_pages": [
+        108,
+        112
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CashAccountActivityReport message",
+          "message_target": "current-message-scope-name-variant",
+          "receiver": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000351",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000350-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000350-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000351",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000351-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000351-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000351-reda.038.001.01-p108-c001-d1",
+          "source_id": "src-000351",
+          "source_sha256": "e9d8e518dafbe038ad773d4753ce4e7b9eddf0228060442513989c9b0b2fd61c",
+          "heading": "4 reda.038.001.01 CashAccountActivityAdviceV01",
+          "file_pages": [
+            108
+          ],
+          "section": "scope",
+          "quote": "The CashAccountActivityReport message is sent by the executing party to an instructing party containing information about changes on cash account reference data.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CashAccountActivityReport message is sent by the executing party to an instructing party containing information about changes on cash account reference data.",
+          "raw_quote": "The CashAccountActivityReport message is sent by the executing party to an instructing party\ncontaining information about changes on cash account reference data.",
+          "file_pages": [
+            108
+          ],
+          "section": "scope",
+          "evidence_id": "src-000351-reda.038.001.01-p108-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 53,
+              "end": 68,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000351",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000351-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000351-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 75,
+              "end": 92,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000351",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000350-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000350-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000351-reda.038.001.01-p108-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "and usage: It aims at informing about the changes occurred during a business date for cash account reference data.",
+          "raw_quote": "Scope and usage:\nIt aims at informing about the changes occurred during a business date for cash account reference\ndata.",
+          "file_pages": [
+            108
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        108
+      ],
+      "file_pages": [
+        108
+      ]
+    }
+  ]
+}

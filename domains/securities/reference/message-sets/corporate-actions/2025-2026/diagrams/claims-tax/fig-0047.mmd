@@ -1,0 +1,22 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;} .edgeLabel rect {fill:#ffffff !important;opacity:1!important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  subgraph S["Account Servicer"]
+    A["CAPA / Market Claim & Compensation"]
+    B["CAPC / Cancellation of CAPA / Market Claim & Compensation"]
+  end
+  subgraph O["Account Owner"]
+    G["Message Gateway"]
+    P["Payment Management Process"]
+  end
+  A -->|"A) Movement Preliminary<br/>Advice sent"| G
+  G -->|"A)"| P
+  B -->|"B) Movement Preliminary Advice<br/>cancellation sent"| G
+  G -->|"B)"| P
+  style A color:#ff6a00,stroke:#ff6a00
+  style B color:#ff6a00,stroke:#ff6a00
+  linkStyle 0,1,2,3 stroke:#ff6a00,color:#ff6a00

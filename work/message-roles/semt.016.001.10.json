@@ -1,0 +1,510 @@
+{
+  "message_id": "semt.016.001.10",
+  "publications": [
+    {
+      "source_id": "src-000197",
+      "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+      "heading": "7 semt.016.001.10 IntraPositionMovementPostingReportV10",
+      "definition_pages": [
+        178,
+        197
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The IntraPositionMovementPostingReport",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account owner",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an account servicer",
+            "labels": [
+              {
+                "label": "an account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-semt.016.001.10-p178-c001-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "7 semt.016.001.10 IntraPositionMovementPostingReportV10",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "quote": "The IntraPositionMovementPostingReport is sent by an account servicer to an account owner to provide the details of increases and decreases in securities with a given status within a holding, that is, intra-position transfers, which occurred during a specified period, for all or selected securities in a specified safekeeping account which the account servicer holds for the account owner.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "b1c6025339312d372c3b4c82de53bfca83d273ef851742427c1b707afbd07b11",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000197-semt.016.001.10-p178-c008-d1",
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "heading": "7 semt.016.001.10 IntraPositionMovementPostingReportV10",
+          "file_pages": [
+            178
+          ],
+          "section": "usage",
+          "quote": "re-send to a third party a copy of a message for information using the relevant elements in the Business Application Header.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The IntraPositionMovementPostingReport is sent by an account servicer to an account owner to provide the details of increases and decreases in securities with a given status within a holding, that is, intra-position transfers, which occurred during a specified period, for all or selected securities in a specified safekeeping account which the account servicer holds for the account owner.",
+          "raw_quote": "Scope\nThe IntraPositionMovementPostingReport is sent by an account servicer to an account owner to\nprovide the details of increases and decreases in securities with a given status within a holding, that is,\nintra-position transfers, which occurred during a specified period, for all or selected securities in a\nspecified safekeeping account which the account servicer holds for the account owner.",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c001",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 53,
+              "end": 69,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 76,
+              "end": 89,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 345,
+              "end": 361,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 376,
+              "end": 389,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-owner",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-owner.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              },
+              "action_verb": "holds",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000197-semt.016.001.10-p178-c001-d1"
+          ]
+        },
+        {
+          "quote": "The account servicer/owner relationship may be:",
+          "raw_quote": "The account servicer/owner relationship may be:",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c002",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 4,
+              "end": 20,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-settlement-reconciliation-account-servicer",
+                  "path": "shared/reference/participants/settlement-reconciliation-account-servicer.md",
+                  "basis": "src-000197, file p491, §17.1 Scope; same-source curated participant definition"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a central securities depository or another settlement market infrastructure acting on behalf of its participant",
+          "raw_quote": "a central securities depository or another settlement market infrastructure acting on behalf of its\nparticipant",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c003",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 2,
+              "end": 31,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "settlement market infrastructure",
+              "start": 43,
+              "end": 75,
+              "resolution": {
+                "label": "settlement market infrastructure",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-settlement-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-settlement-market-infrastructure.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "an agent (sub-custodian) acting on behalf of its global custodian customer, or",
+          "raw_quote": "an agent (sub-custodian) acting on behalf of its global custodian customer, or",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c004",
+          "mentions": [
+            {
+              "label": "agent",
+              "start": 3,
+              "end": 8,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "sub-custodian",
+              "start": 10,
+              "end": 23,
+              "resolution": {
+                "label": "sub-custodian",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-sub-custodian",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-sub-custodian.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "global custodian customer",
+              "start": 49,
+              "end": 74,
+              "resolution": {
+                "label": "global custodian customer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-global-custodian-customer",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-global-custodian-customer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a custodian acting on behalf of an investment management institution or a broker/dealer.",
+          "raw_quote": "a custodian acting on behalf of an investment management institution or a broker/dealer.",
+          "file_pages": [
+            178
+          ],
+          "section": "scope",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c005",
+          "mentions": [
+            {
+              "label": "custodian",
+              "start": 2,
+              "end": 11,
+              "resolution": {
+                "label": "custodian",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-custodian",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-custodian.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment management institution",
+              "start": 35,
+              "end": 68,
+              "resolution": {
+                "label": "investment management institution",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-investment-management-institution",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-investment-management-institution.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "broker/dealer",
+              "start": 74,
+              "end": 87,
+              "resolution": {
+                "label": "broker/dealer",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000197-broker-dealer",
+                  "path": "shared/reference/participants/participant-narrative-src-000197-broker-dealer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send a message previously sent,",
+          "raw_quote": "re-send a message previously sent,",
+          "file_pages": [
+            178
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c006",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information,",
+          "raw_quote": "provide a third party with a copy of a message for information,",
+          "file_pages": [
+            178
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c007",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information using the relevant elements in the Business Application Header.",
+          "raw_quote": "re-send to a third party a copy of a message for information\nusing the relevant elements in the Business Application Header.",
+          "file_pages": [
+            178
+          ],
+          "section": "usage",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c008",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000197",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000197-message-copy-third-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000197-message-copy-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000197-semt.016.001.10-p178-c008-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "Usage\n:\nThe message may also be used to:",
+          "file_pages": [
+            178
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        178
+      ],
+      "file_pages": [
+        178,
+        179
+      ]
+    }
+  ]
+}

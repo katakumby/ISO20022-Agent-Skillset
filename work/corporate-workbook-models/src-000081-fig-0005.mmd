@@ -1,0 +1,64 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class CorporateActionProtectProcess["CorporateActionProtectProcess"] {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity["SecuritiesQuantity"] {
+<<BusinessComponent>>
+}
+class CorporateActionSecuritiesEntitlement["CorporateActionSecuritiesEntitlement"] {
+<<BusinessComponent>>
+}
+class CorporateActionElection["CorporateActionElection"] {
+<<BusinessComponent>>
+}
+class CorporateActionServicing["CorporateActionServicing"] {
+<<BusinessComponent>>
+}
+class CorporateActionOptionServicing["CorporateActionOptionServicing"] {
+<<BusinessComponent>>
+}
+class CorporateActionOption["CorporateActionOption"] {
+<<BusinessComponent>>
+}
+class CorporateActionDistribution["CorporateActionDistribution"] {
+<<BusinessComponent>>
+}
+class ChoiceCorporateAction["ChoiceCorporateAction"] {
+<<BusinessComponent>>
+}
+class MandatoryCorporateAction["MandatoryCorporateAction"] {
+<<BusinessComponent>>
+}
+class VoluntaryCorporateAction["VoluntaryCorporateAction"] {
+<<BusinessComponent>>
+}
+class CorporateActionEvent["CorporateActionEvent"] {
+<<BusinessComponent>>
+}
+class ProceedsDefinition["ProceedsDefinition"] {
+<<BusinessComponent>>
+}
+}
+namespace DICO_BusinessComponentsDataTypes {
+class DateTimePeriod["DateTimePeriod"] {
+<<BusinessComponent>>
+}
+}
+CorporateActionProtectProcess -- CorporateActionElection : - RelatedCorporateActionElection / - ProtectProcess
+CorporateActionProtectProcess -- SecuritiesQuantity : - RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity
+SecuritiesQuantity -- CorporateActionSecuritiesEntitlement : - EntitledSecuritiesQuantity / + SecuritiesEntitlement
+CorporateActionElection -- CorporateActionOption : + Option
+CorporateActionElection -- CorporateActionServicing : + RelatedServicing
+CorporateActionServicing -- CorporateActionOptionServicing : + CorporateActionOptionServicing / + RelatedServicing
+CorporateActionOptionServicing -- CorporateActionOption
+CorporateActionOption -- DateTimePeriod : - ActionPeriod
+CorporateActionOption -- ProceedsDefinition : + Option
+ProceedsDefinition -- CorporateActionEvent
+CorporateActionOption -- ChoiceCorporateAction : + CorporateActionOptionDefinition
+CorporateActionOption -- CorporateActionDistribution : + Distribution
+ChoiceCorporateAction --|> MandatoryCorporateAction
+MandatoryCorporateAction --|> CorporateActionEvent
+VoluntaryCorporateAction --|> CorporateActionEvent
+CorporateActionServicing -- CorporateActionEvent : + Services / + Event

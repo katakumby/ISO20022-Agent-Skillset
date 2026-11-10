@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000005",
+  "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+  "file_page": 561,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 353,
+    "1": 202
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 3,
+    "table-associated-axis-line": 344,
+    "link-annotation-underline": 2,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "5031ac5752cfe802369358e998ec1ff5136a77ec38bb68ac96934d7e27667824",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 541,
+      "bbox": [
+        130.1204,
+        697.9238,
+        229.387,
+        698.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        689.2931,
+        245.5716,
+        699.2931
+      ]
+    },
+    {
+      "path_object_ordinal": 543,
+      "bbox": [
+        228.387,
+        697.9238,
+        246.0716,
+        698.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        689.2931,
+        245.5716,
+        699.2931
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0726",
+      "file_page": 561,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        555.5905778571429,
+        605.8930300000002
+      ],
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/documents/src-000005/tables/tbl-0726.md",
+      "rows": 26,
+      "matrix_cells": 156,
+      "physical_cells": 156,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "56445e6c1e516d8c571274646c3cc4f9c60fde67ee840ebc18301bf0234ed1be",
+      "cell_geometry_sha256": "31dd13131833a8778aaae189573aca7d925b9424cd87f8f5b4d288d221eafcb5",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 156,
+      "independent_cells_match": 156,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,51 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Cash Management"
+source_ids: ["src-000015"]
+source_editions: ["February 2025"]
+message_ids: []
+heading_path: ["28 camt.050.001.07 LiquidityCreditTransferV07", "28.4 Message Building Blocks", "28.4.2 LiquidityCreditTransfer <LqdtyCdtTrf>", "28.4.2.4 TransferredAmount <TrfdAmt>"]
+file_pages: [674]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.050.001.07"]
+---
+
+# 28.4.2.4 TransferredAmount <TrfdAmt>
+
+Source: [src-000015](../../../../../../../../../raw-input/cash_management/ISO20022_MDRPart2_CashManagement_2024_2025_v1.pdf). Locator: one-based file pages 674 to 674.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 674
+
+```text
+Constraints
+• IdentificationAndProxyGuideline
+If the account identification is not defined through a conventional identification such as an email
+address or a mobile number, then the proxy element should be used for the identification of the
+account.
+• IdentificationOrProxyPresenceRule
+Identification must be present or Proxy must be present. Both may be present.
+Following Must be True
+    /Identification Must be present
+ Or    /Proxy Must be present
+28.4.2.4  TransferredAmount <TrfdAmt>
+Presence: [1..1]
+Definition: Amount of money that the transaction administrator transfers from one account to another.
+TransferredAmount <TrfdAmt> contains one of the following elements (see "Amount2Choice" on
+page 788 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   AmountWithoutCurrency <AmtWthtCcy> [1..1] Amount 788
+Or}   AmountWithCurrency <AmtWthCcy> [1..1] Amount C1, C4 788
+28.4.2.5  Debtor <Dbtr>
+Presence: [0..1]
+Definition: Owner of the account to be debited.
+Approved by the Payments SEG on 04 February 2025 camt.050.001.07 LiquidityCreditTransferV07
+Cash Management - Maintenance 2024 - 2025 674 February 2025
+```
+

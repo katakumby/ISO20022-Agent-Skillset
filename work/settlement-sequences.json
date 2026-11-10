@@ -1,0 +1,513 @@
+{
+  "date": "2026-11-09",
+  "source_id": "src-000196",
+  "source_sha256": "fb30f981d9487adfc17d50adbc53dc8b8a4fcd63125d3c5272e8cbd0ce2d6109",
+  "outputs": [
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0038",
+      "original": "domains/securities/assets/src-000196/originals/image38.png",
+      "original_sha256": "09b6b623ab808828b757a9ce5bb4f563766ac1b8b4565254616ed8a9095b9fc0",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0038.md",
+      "mermaid_sha256": "acef32c942a035639b26273e12b998e716107bb80f349c2895b78429da22f2a8",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/intra-position-instruction.md",
+      "message_arrows": 3,
+      "optional_groups": 1,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0040",
+      "original": "domains/securities/assets/src-000196/originals/image40.png",
+      "original_sha256": "83b557ec9471369a359b33508f44971834f3355e9288c54ed2b495310b18252e",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0040.md",
+      "mermaid_sha256": "10a1baf059616fdd7e6272b71ad82fcaba95d9d741e9b24c3cf85f2b5922f441",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-instruction-three-parties.md",
+      "message_arrows": 12,
+      "optional_groups": 5,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The final two source-picture labels are SecuritiesSettlementTransactionConfirmation (open/close), whereas P358–P359 describes SecuritiesFinancingConfirmation. Both claims are preserved; this reconstruction follows the picture."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0041",
+      "original": "domains/securities/assets/src-000196/originals/image41.png",
+      "original_sha256": "6d90059bfa2d97ae5638a20f685773c6be182f59316b11ff7b8e0a44043a2719",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0041.md",
+      "mermaid_sha256": "14f43efaded26bf8b1262393d5a1ad297a41f103339c8a755c6f1c2035e20d2c",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-instruction-two-parties.md",
+      "message_arrows": 6,
+      "optional_groups": 3,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0042",
+      "original": "domains/securities/assets/src-000196/originals/image42.png",
+      "original_sha256": "c69bd70ebb6dae3b5fe2b6bae8028a328fc54eb02abaf83c9f64eca023e27834",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0042.md",
+      "mermaid_sha256": "85e5f1cfb2439d9f0164de7b34882b6332a8078f7de7140fb822ec8937fe0ffb",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-modification-three-parties.md",
+      "message_arrows": 6,
+      "optional_groups": 3,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0043",
+      "original": "domains/securities/assets/src-000196/originals/image43.png",
+      "original_sha256": "13f40a44bec0fe0ccd24a269365bc7167dc25534f3b1ef08e2cc97473ffa5433",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0043.md",
+      "mermaid_sha256": "904ebcd474ebe70f7b9f469c10f14a7c824bd3aaafcf7d02ba158cbaca3043ec",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-modification-two-parties.md",
+      "message_arrows": 3,
+      "optional_groups": 2,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0044",
+      "original": "domains/securities/assets/src-000196/originals/image44.png",
+      "original_sha256": "eed3638bda868beed701c3ebf582d378c5b118696be0219e4e91b489982412b0",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0044.md",
+      "mermaid_sha256": "089e3b98b8941a90125c1dda65e4bbe5eb33d22c639ce0774427bc93d2512926",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-substitution-three-parties.md",
+      "message_arrows": 13,
+      "optional_groups": 4,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0045",
+      "original": "domains/securities/assets/src-000196/originals/image45.png",
+      "original_sha256": "b3a4c630d7b77e2f5626636cdd06ebf361a11390243655908fb052865bc0caed",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0045.md",
+      "mermaid_sha256": "66f33a28ebe0d190a39227ab9e21d77b8030ef6cbda4752b4024963d3eec3276",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-top-up-three-parties.md",
+      "message_arrows": 7,
+      "optional_groups": 2,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0046",
+      "original": "domains/securities/assets/src-000196/originals/image46.png",
+      "original_sha256": "0fa32a84cb251d8faa8b0d7cf1b1f4f946c650108a59751270d9b0fe5047909c",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0046.md",
+      "mermaid_sha256": "24161f6adbe3eca84a3a7e0c4b4cbce45392dc5bf0bd6d34770a8fb7cb70490e",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-withdrawal-three-parties.md",
+      "message_arrows": 7,
+      "optional_groups": 2,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0047",
+      "original": "domains/securities/assets/src-000196/originals/image47.png",
+      "original_sha256": "268f58b94d08a704e52dff2e772777ef9f317f3131ac097b771449e1d0c90c7c",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0047.md",
+      "mermaid_sha256": "33fe53ca9d0ed96015fcb18065698a3ced968b634d68b59a9d045bc59b765704",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-substitution-two-parties.md",
+      "message_arrows": 7,
+      "optional_groups": 2,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0048",
+      "original": "domains/securities/assets/src-000196/originals/image48.png",
+      "original_sha256": "b0ec2ba38c56d5c25f80376d508a98eca7bba4f68d05599932cdb9cc98023089",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0048.md",
+      "mermaid_sha256": "65a90ef4dd27270fd884faaa80342d1c695d20074d778ea2cf12f40caf863868",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-top-up-two-parties.md",
+      "message_arrows": 4,
+      "optional_groups": 1,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0049",
+      "original": "domains/securities/assets/src-000196/originals/image49.png",
+      "original_sha256": "a03a9d85dc5d7e7f3773956172b1227a5bf3c0c0a655cd744ef59897cdca01d4",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0049.md",
+      "mermaid_sha256": "d83f3fa84b1f8e989d3ad03c58366d9bf975095214ec8ccf69b84a5624d71f44",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-withdrawal-two-parties.md",
+      "message_arrows": 4,
+      "optional_groups": 1,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0050",
+      "original": "domains/securities/assets/src-000196/originals/image50.png",
+      "original_sha256": "54295410b3625929c928b3fac513974f43119ff4774af2eef58d8d3790cba4b1",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0050.md",
+      "mermaid_sha256": "fb3697f47022ee083bf994538ab3c34653507e341c000ae398cb2cfdde4752b3",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/pair-off.md",
+      "message_arrows": 7,
+      "optional_groups": 4,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "“See payment messages” is a source cross-reference, not an exact supplied payment-message identifier. The narrative conditions the cash-difference step on successful cancellation and describes both payment directions; the picture shows only one generic arrow."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0051",
+      "original": "domains/securities/assets/src-000196/originals/image51.png",
+      "original_sha256": "ba3c90e9375f28c05d68ca9167bf295673640e7eb576ffd67a9c8d65eb38c2b5",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0051.md",
+      "mermaid_sha256": "1ca82a35475c587dd1338ac428687525859a66db6e5951b1f8ab2ef33a1e6ea6",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cash-securities-split.md",
+      "message_arrows": 9,
+      "optional_groups": 2,
+      "participant_lifelines": 4,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "CashTransfer/CashAdvice, ConfirmCashTransfer and ConfirmCash are retained as source labels. No particular payment schema is inferred from them."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0052",
+      "original": "domains/securities/assets/src-000196/originals/image52.png",
+      "original_sha256": "05e8cb1710351d63a591954692602ca00d455690fa1a0af8870171f72f09609a",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0052.md",
+      "mermaid_sha256": "c2d354b2c37312809630dc637b2d9f966dfe249620ab5766e2bd8b6b23353e88",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/hold-release.md",
+      "message_arrows": 6,
+      "optional_groups": 3,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0053",
+      "original": "domains/securities/assets/src-000196/originals/image53.png",
+      "original_sha256": "26351c2b641c397b37f2681dcf266dd7db6bb9ace6d95f705a53cb40bb4422be",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0053.md",
+      "mermaid_sha256": "da678226eeda37be317d35ee27c2621af1257e1db7113c389b38e96377f10f97",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/released-held-released.md",
+      "message_arrows": 9,
+      "optional_groups": 5,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": []
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0054",
+      "original": "domains/securities/assets/src-000196/originals/image54.png",
+      "original_sha256": "4a45c6ac67c1e5a6f4e50774ae848073ebe77e0967446c42fa11fc166f1730ef",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0054.md",
+      "mermaid_sha256": "72c9197d7c9a5044a2c04f289ab945b4c980a42a1a761d75a83cb0606754109d",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-one-transaction.md",
+      "message_arrows": 2,
+      "optional_groups": 1,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The picture uses plural “Conditions” in the status-advice name; the supplied exact definition is SecuritiesSettlementConditionModificationStatusAdvice. The diagram label is not silently corrected."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0055",
+      "original": "domains/securities/assets/src-000196/originals/image55.png",
+      "original_sha256": "12f924cb6b77d066bde8efdc8d2170d7f1db418374d742d90e1c802d839498b9",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0055.md",
+      "mermaid_sha256": "a8008ca00c04acb09fe59be250e516323c6f06863e45263c4cd35f2cf4a078f3",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-multiple-transactions.md",
+      "message_arrows": 5,
+      "optional_groups": 4,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The picture uses plural “Conditions” in the status-advice name; the supplied exact definition uses singular “Condition”."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0056",
+      "original": "domains/securities/assets/src-000196/originals/image56.png",
+      "original_sha256": "e2a7683c819a69643c5f9f4fb105aaa6b3acaec1afadfdd8eba8eb83bf0a9d0e",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0056.md",
+      "mermaid_sha256": "0fd8e3813987b99da085b5a78cd97b688eaf6729793c93b2cc9b77b30899b255",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-before-settlement.md",
+      "message_arrows": 11,
+      "optional_groups": 6,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The two Instructing Party lifelines are distinct counterparties in this flow, as stated at P507–P514. The status/request-status arrows are optional in the picture; P515 describes returning request status without explicitly stating optionality."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0057",
+      "original": "domains/securities/assets/src-000196/originals/image57.png",
+      "original_sha256": "f96c81c09788b8342602c3ac3a0fb2ec51e6428b61c80038cbe138bd726829ea",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0057.md",
+      "mermaid_sha256": "c29aef9c9b230994bd507a19fec7fa10e1050d0be18e228d769a3fc9673cb4f6",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-after-settlement.md",
+      "message_arrows": 6,
+      "optional_groups": 2,
+      "participant_lifelines": 2,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The picture marks modification-request status optional, while P525 says the servicing party sends it back. Preserve both presentations."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0058",
+      "original": "domains/securities/assets/src-000196/originals/image58.png",
+      "original_sha256": "b6a810296aef989d3eb8ea645a266a0b69627db8c1e4c008db8ac9b71d175f4f",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0058.md",
+      "mermaid_sha256": "eb9ae74b5cff30471c4096eb70381be5e078478549632765f3f39066aa54a616",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/bilateral-splitting.md",
+      "message_arrows": 10,
+      "optional_groups": 4,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 1 of the four source pictures for bilateral splitting; the original “Flow continues on next page” note is retained. Abbreviated message labels are preserved."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0059",
+      "original": "domains/securities/assets/src-000196/originals/image59.png",
+      "original_sha256": "100a710b1ab60b57265c55f7772a1528d1478caa3b085b34e0d66d59870fdd93",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0059.md",
+      "mermaid_sha256": "79f95e5849be3d6ce3d8750ae7b4a118de1f4318e9aaeceb8e9808de44db8e48",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/bilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 4,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 2 of the bilateral-splitting source sequence. Instruction1 and Instruction2 are distinct replacements, not versions of a message definition."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0060",
+      "original": "domains/securities/assets/src-000196/originals/image60.png",
+      "original_sha256": "cb4d3bd71d74c71e5ca49c13db1efb6f606d62668073ae85776c8642bce2b744",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0060.md",
+      "mermaid_sha256": "c2b225c560c5f4799f7e0f2a7700725ebc9c5653f7169878432517cb5ceea44f",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/bilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 8,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 3 of the bilateral-splitting source sequence. Eight separate optional status arrows are retained; similar labels are not deduplicated."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0061",
+      "original": "domains/securities/assets/src-000196/originals/image61.png",
+      "original_sha256": "8fcabf9b3d8578fd6c003adaf92900802a1abb0a9dadba03b862d04a4f1f6c14",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0061.md",
+      "mermaid_sha256": "30e2aad4dde9111bb4fcde43c58d56ffab5e9ddeb4e2ffe09287a30fcacfb0fe",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/bilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 0,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 4 of the bilateral-splitting source sequence. Both replacement transactions produce confirmations on both counterparties’ client chains."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0062",
+      "original": "domains/securities/assets/src-000196/originals/image62.png",
+      "original_sha256": "f52d9fe2389a58ee03bf6fa848e962c93066999fdcc57170d64eba7581b9be83",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0062.md",
+      "mermaid_sha256": "723e6eb4c7985eabb2fca6f675f7303a7841fdb4f8ea3914c169846c1119f496",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/unilateral-splitting.md",
+      "message_arrows": 13,
+      "optional_groups": 8,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 1 of the four source pictures for unilateral splitting. The condition-modification request and ensuing cancellation-request-status labels are retained as drawn; no replacement request is invented."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0063",
+      "original": "domains/securities/assets/src-000196/originals/image63.png",
+      "original_sha256": "732ee11d432afc0e621458104592783ca03d61c803aa49462e93acec9578410d",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0063.md",
+      "mermaid_sha256": "63f25b53a662d51110dbd137c77753aebfac3fc64b3fa382ad2980b0255ec558",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/unilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 8,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 2 of the unilateral-splitting source sequence. The eight arrows and optional frames are preserved in their picture order."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0064",
+      "original": "domains/securities/assets/src-000196/originals/image64.png",
+      "original_sha256": "c907ada0ba8d9b89c702b2f5bde0915e9620bba827fe74b4bcbb9e5c9cc37a88",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0064.md",
+      "mermaid_sha256": "92ce2e8a5e3505467f1f7b3a077b3f38ac3d65ca3f100c77e349ea83fd44d7e4",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/unilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 8,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 3 of the unilateral-splitting source sequence. The similar preceding picture is not byte-identical; this picture has different vertical ordering of the last status arrows and remains separate."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0065",
+      "original": "domains/securities/assets/src-000196/originals/image65.png",
+      "original_sha256": "c46ee3255b9fd194157bb8e18032b8c3079df6d37cbcd6a0deacde79d2a20078",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0065.md",
+      "mermaid_sha256": "29d7ae1839cb6161dbafb24965b6fc8a88912f0eae7aa8eea7eca39c1087c270",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/unilateral-splitting.md",
+      "message_arrows": 8,
+      "optional_groups": 0,
+      "participant_lifelines": 5,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "This is part 4 of the unilateral-splitting source sequence. Confirmation order follows this picture, independently of the bilateral scenario."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0066",
+      "original": "domains/securities/assets/src-000196/originals/image66.png",
+      "original_sha256": "706e3cd774a0538ccbc77883754b90e00e5c2f4218efee3a6b6d0f1f4b4c21ee",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0066.md",
+      "mermaid_sha256": "aa6e054e06f3a93a8edc3aa9ddb25670a0cfc49b18b422ecb9c57f5271add6b1",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/allegement.md",
+      "message_arrows": 6,
+      "optional_groups": 3,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The left and right Instructing Party lifelines are the alleged and alleging parties respectively (P565–P570). The picture removal-advice label includes “Transaction”; the exact supplied definition and P570 omit that word."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0067",
+      "original": "domains/securities/assets/src-000196/originals/image67.png",
+      "original_sha256": "25efa2e4b9b5b52af363b348027134b62d94d29b38084ba6ad92522d0a015125",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0067.md",
+      "mermaid_sha256": "31091f5e053d1edc50c40a19334bf6da10920702a5e728d63d62fc34abbfc52f",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-push.md",
+      "message_arrows": 7,
+      "optional_groups": 0,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The picture lists available reports. Narrative P582 and account setup determine which reports are supplied; the list is not a requirement to send every report every time."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0068",
+      "original": "domains/securities/assets/src-000196/originals/image68.png",
+      "original_sha256": "30c43b84f767382467ede3477b99741db441bbb08c5150b02d9f5a1a7fe28535",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0068.md",
+      "mermaid_sha256": "06e6f0266203f79c0f3aa69a1a5f960c504fa0acbe6b8da46c68f0db4029314f",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-pull.md",
+      "message_arrows": 12,
+      "optional_groups": 2,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The source narrative describes alternative requested statements and optional query-status responses. The list of report arrows is not a requirement to return every report for a query."
+      ]
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0072",
+      "original": "domains/securities/assets/src-000196/originals/image72.png",
+      "original_sha256": "d315950d0414d01e84656c13f34c3dc5317af8c1b18f31ebdffed66c1ffd4b98",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-sequences/fig-0072.md",
+      "mermaid_sha256": "95704cde60ce8e8418b0d5022c5e9e4315fcba503fb9b13850eb0e661de3121a",
+      "flow_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/portfolio-transfer.md",
+      "message_arrows": 4,
+      "optional_groups": 0,
+      "participant_lifelines": 3,
+      "source_inspection": "Original image directly inspected at full available resolution; every label, direction, order and optional boundary transcribed.",
+      "reconstruction_visual_review": "pending-render-comparison",
+      "limitations": [
+        "The source uses generic PortfolioTransfer and SecuritiesSettlementInstruction labels. It does not label the middle Third Party as the client; the client is separately required by the activity narrative. The delivering/receiving detail labels and settlement directions are retained exactly rather than inferred from the left/right lifeline position."
+      ]
+    }
+  ],
+  "classified_media": 72,
+  "substantive_diagrams": 68,
+  "retained_notation_legend_assets": 4
+}

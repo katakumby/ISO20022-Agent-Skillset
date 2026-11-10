@@ -1,0 +1,50 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 375,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 228,
+    "2": 424
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 11,
+    "table-associated-axis-line": 409,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "fda18b442d54d36f85a23ad822c9eeb5481427987318824e7fdbd436d5ec6051",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0459",
+      "file_page": 375,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.5905781818183,
+        716.8930900000001
+      ],
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/tables/tbl-0459.md",
+      "rows": 31,
+      "matrix_cells": 186,
+      "physical_cells": 186,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7dd6a90499a03236e051737faec73e5cf8bfd6b5ef86232080f0afbf7e5864b5",
+      "cell_geometry_sha256": "6557646ab9bcf7cd2f403f0eac2105368a914c3a055a9b875fb1399844f5c144",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 186,
+      "independent_cells_match": 186,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

@@ -1,0 +1,65 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["35 sese.012.001.12 PortfolioTransferInstructionV12", "35.4 Message Building Blocks", "35.4.12 NomineeAccount <NmneeAcct>", "35.4.14.9 PaymentDetails <PmtDtls>", "35.4.14.9.2 CreditTransferDetails <CdtTrfDtls>", "35.4.14.9.2.4 DebtorAgentAccount <DbtrAgtAcct>", "35.4.14.9.2.4.3 BlockChainCashWallet <BlckChainCshWllt>"]
+file_pages: [996]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["sese.012.001.12"]
+---
+
+# 35.4.14.9.2.4.3 BlockChainCashWallet <BlckChainCshWllt>
+
+Source: [src-000096](../../../../../../../../../evidence/omitted/fffd4ab68b421d059524ec38.md). Locator: one-based file pages 996 to 996.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 996
+
+```text
+content of the IBAN can be found in the standard ISO 13616 "Banking and related financial services -
+International Bank Account Number (IBAN)" version 1997-10-01, or later revisions.
+Impacted by: C26 "IBAN"
+Datatype: "IBAN2007Identifier" on page 5394
+Constraints
+• IBAN
+A valid IBAN consists of all three of the following components: Country Code, check digits and
+BBAN.
+35.4.14.9.2.4.3  BlockChainCashWallet <BlckChainCshWllt>
+Presence: [0..1]
+Definition: Block Chain Wallet where digital currencies are maintained. This is the equivalent of cash
+account for digital currencies.
+BlockChainCashWallet <BlckChainCshWllt> contains the following elements (see
+"BlockChainAddressWallet3" on page 4846 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 4846
+   Type <Tp> [0..1] ± 4846
+   Name <Nm> [0..1] Text 4846
+35.4.14.9.2.4.4  Other <Othr>
+Presence: [0..1]
+Definition: Unique identification of the account, as assigned by the account servicer, using an
+identification scheme.
+Other <Othr> contains the following elements (see "GenericAccountIdentification1" on page 4326 for
+details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 4326
+   SchemeName <SchmeNm> [0..1]  4326
+{Or     Code <Cd> [1..1] CodeSet 4326
+Or}     Proprietary <Prtry> [1..1] Text 4326
+   Issuer <Issr> [0..1] Text 4326
+35.4.14.9.2.5  IntermediaryAgent1 <IntrmyAgt1>
+Presence: [0..1]
+Definition: Agent between the debtor's agent and the creditor's agent.
+Approved by the Securities SEG on 27 January 2026 sese.012.001.12 PortfolioTransferInstructionV12
+Investment Funds - Maintenance 2025 - 2026 996 May 2026
+```
+

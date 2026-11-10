@@ -1,0 +1,100 @@
+{
+  "source_id": "src-000369",
+  "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+  "file_page": 4,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.23623142857144,
+        721.0929100000002
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          390.49293000000023
+        ],
+        [
+          85.03936999999999,
+          390.49293000000023,
+          283.46457,
+          478.69291000000015
+        ],
+        [
+          85.03936999999999,
+          478.69291000000015,
+          283.46457,
+          656.8929200000001
+        ],
+        [
+          85.03936999999999,
+          656.8929200000001,
+          283.46457,
+          721.0929100000002
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.23623142857144,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.23623142857144,
+          390.49293000000023
+        ],
+        [
+          283.46457,
+          390.49293000000023,
+          510.23623142857144,
+          478.69291000000015
+        ],
+        [
+          283.46457,
+          478.69291000000015,
+          510.23623142857144,
+          656.8929200000001
+        ],
+        [
+          283.46457,
+          656.8929200000001,
+          510.23623142857144,
+          721.0929100000002
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "reda.014.001.02\nPartyCreationRequestV02",
+          "Scope:\nThe PartyCreationRequest message is sent by an\ninstructing party to the executing party to request for\nthe creation of party reference data for a new party in\nthe executing system.\nUsage:\nIt aims at instructing the creation of a new party with\ncorresponding details.\nProcessing and confirmation of the party creation\nrequest are provided via a party status advice."
+        ],
+        [
+          "reda.015.001.01\nPartyQueryV01",
+          "Scope:\nThe PartyQuery message is sent by a central\nsecurities depository, a national central bank, a central\nsecurities depository participant, a central counter\nparty, a payment bank, a trading party or a stock\nexchange to the executing party to query for the party\nreference data of a party defined in the system."
+        ],
+        [
+          "reda.016.001.01\nPartyStatusAdviceV01",
+          "Scope:\nThe PartyStatusAdvice message is sent by the\nexecuting party to the instructing party to provide\ndetails about the processing of a request on party\nreference data (create or update).\nUsage:\nWhen processing information is negative - a failure\noccurred in applying the changes the message\naccordingly also delivers information about the reason\nwhy the creation or update could not be processed.\nWhen processing is successfully performed, the\nmessage includes the related party identification."
+        ],
+        [
+          "reda.017.001.02\nPartyReportV02",
+          "Scope:\nThe PartyReport message is sent by the executing\nparty to a central securities depository, a national\ncentral bank, a central securities depository participant,\na central counter party, a payment bank, a trading"
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000053",
+  "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+  "file_page": 385,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 71,
+    "2": 46
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 38,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "11844e20460854a7b3fe1cf1b0f3982213c3e5aae459ef335a55ca57a5978e0b",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 36,
+      "bbox": [
+        130.1204,
+        401.5237,
+        266.765,
+        402.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        392.8929,
+        282.9495,
+        402.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 38,
+      "bbox": [
+        265.765,
+        401.5237,
+        283.4495,
+        402.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        392.8929,
+        282.9495,
+        402.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0590",
+      "file_page": 385,
+      "bbox": [
+        85.03936999999996,
+        409.8929200000001,
+        510.23623142857144,
+        590.8929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0590.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "02fee0b4ffb08c26728febd23cdc4e3bdcfd694bfeeb0c5e07c647002be26f9e",
+      "cell_geometry_sha256": "ec0950edf7fa768191fa4087b21573d2d93af44faf53de0afa4a5327ce612e64",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 15,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

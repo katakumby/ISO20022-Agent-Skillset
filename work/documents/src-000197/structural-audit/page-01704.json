@@ -1,0 +1,135 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 1704,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 111,
+    "2": 180
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 168,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f7166eee30206aed5ee66cd6f825eab87bdd5e77141bcbc12e0f29c11a0db591",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 83,
+      "bbox": [
+        130.1204,
+        350.5237,
+        234.9485,
+        351.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        341.8928,
+        256.6946,
+        351.8928
+      ]
+    },
+    {
+      "path_object_ordinal": 85,
+      "bbox": [
+        233.9485,
+        350.5237,
+        257.1946,
+        351.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        341.8928,
+        256.6946,
+        351.8928
+      ]
+    },
+    {
+      "path_object_ordinal": 94,
+      "bbox": [
+        322.9915,
+        430.7237,
+        442.8343,
+        431.7237
+      ],
+      "link_annotation_bbox": [
+        323.4915,
+        422.0928,
+        464.5804,
+        432.0928
+      ]
+    },
+    {
+      "path_object_ordinal": 96,
+      "bbox": [
+        441.8343,
+        430.7237,
+        465.0804,
+        431.7237
+      ],
+      "link_annotation_bbox": [
+        323.4915,
+        422.0928,
+        464.5804,
+        432.0928
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-2659",
+      "file_page": 1704,
+      "bbox": [
+        85.03936999999996,
+        204.0929000000001,
+        555.5905725,
+        272.6929000000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-2659.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "cfa8e1ef2e802f8ea2f0ff45e308de02c0c11c55e0242aaa51690d43271b4612",
+      "cell_geometry_sha256": "4800aaa3b7a94fa4c1c39afb4c94bda011949bb5f53dfa44ce4c08e29d1c4d20",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-2660",
+      "file_page": 1704,
+      "bbox": [
+        85.03936999999996,
+        439.0929300000001,
+        555.5905725,
+        628.89292
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-2660.md",
+      "rows": 9,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "6e8f10656a7b2efd4497115600dd82ff6a37c9ebd8d787fb572de1e2c34df9f2",
+      "cell_geometry_sha256": "769a9eebdbe2264d9b52a8e60a71eca675db26eaa1342ea6ccfcb33e121eaa6d",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

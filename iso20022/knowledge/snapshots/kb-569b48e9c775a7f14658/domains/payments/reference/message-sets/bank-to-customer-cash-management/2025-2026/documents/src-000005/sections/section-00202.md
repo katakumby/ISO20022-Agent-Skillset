@@ -1,0 +1,63 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Bank-to-Customer Cash Management"
+source_ids: ["src-000005"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["3 camt.053.001.14 BankToCustomerStatementV14", "3.4 Message Building Blocks", "3.4.2 Statement <Stmt>", "3.4.2.12 Interest <Intrst>"]
+file_pages: [309]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.053.001.14"]
+---
+
+# 3.4.2.12 Interest <Intrst>
+
+Source: [src-000005](../../../../../../../../../evidence/omitted/4704d0f065c82a397d84d52d.md). Locator: one-based file pages 309 to 309.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 309
+
+```text
+Constraints
+• IdentificationAndProxyGuideline
+If the account identification is not defined through a conventional identification such as an email
+address or a mobile number, then the proxy element should be used for the identification of the
+account.
+• IdentificationOrProxyPresenceRule
+Identification must be present or Proxy must be present. Both may be present.
+Following Must be True
+    /Identification Must be present
+ Or    /Proxy Must be present
+3.4.2.12  Interest <Intrst>
+Presence: [0..*]
+Definition: Provides general interest information that applies to the account at a particular moment in
+time.
+Interest <Intrst> contains the following AccountInterest4 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Type <Tp> [0..1]  309
+{Or     Code <Cd> [1..1] CodeSet 310
+Or}     Proprietary <Prtry> [1..1] Text 310
+   Rate <Rate> [0..*]  310
+     Type <Tp> [1..1] ± 310
+     ValidityRange <VldtyRg> [0..1] ± 310
+   FromToDate <FrToDt> [0..1] ± 311
+   Reason <Rsn> [0..1] Text 311
+   Tax <Tax> [0..1]  311
+     Identification <Id> [0..1] Text 311
+     Rate <Rate> [0..1] Rate 312
+     Amount <Amt> [0..1] Amount C2, C6 312
+3.4.2.12.1  Type <Tp>
+Presence: [0..1]
+Definition: Specifies the type of interest.
+Approved by the Payments SEG on 12 January 2026 camt.053.001.14 BankToCustomerStatementV14
+Bank-to-Customer Cash Management - Maintenance 2025 -
+2026
+309 March 2026
+```
+

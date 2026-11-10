@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 671,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 69,
+    "2": 120
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 110,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "b46e10960f108d6885323149f031102481469ef9a5db881619bc6bdaff6ed7c5",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        317.4544,
+        66.3237,
+        517.3558,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        317.9544,
+        57.6929,
+        539.1019,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        516.3558,
+        66.3237,
+        539.6019,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        317.9544,
+        57.6929,
+        539.1019,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 177,
+      "bbox": [
+        144.5686,
+        341.1237,
+        304.9534,
+        342.1237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        332.4929,
+        304.4534,
+        342.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 179,
+      "bbox": [
+        309.5101,
+        341.1237,
+        469.8948,
+        342.1237
+      ],
+      "link_annotation_bbox": [
+        310.0101,
+        332.4929,
+        469.3948,
+        342.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0902",
+      "file_page": 671,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905740000001,
+        256.29290000000015
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-0902.md",
+      "rows": 8,
+      "matrix_cells": 48,
+      "physical_cells": 48,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "84da14c3a37fa5d276838bae1848bd84d54edb528af3fc26b9f1d1aaa015717f",
+      "cell_geometry_sha256": "88495ca490b9e4ee9bd6ff4e22bd736d588945ae70337f014f2addc1e4036f79",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 48,
+      "independent_cells_match": 48,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

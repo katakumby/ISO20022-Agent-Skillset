@@ -1,0 +1,97 @@
+{
+  "source_id": "src-000372",
+  "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+  "file_page": 94,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 65,
+    "2": 61
+  },
+  "path_classes": {
+    "link-annotation-underline": 3,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 52,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "81f6d288f047e10c48e002c4392b215c7c96e0f60921c4355176feb5a216affc",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 2,
+      "bbox": [
+        144.5687,
+        66.3237,
+        203.2444,
+        67.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        57.6929,
+        202.7444,
+        67.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        130.1204,
+        84.3237,
+        238.845,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        249.4681,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        237.845,
+        84.3237,
+        249.9681,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        75.6929,
+        249.4681,
+        85.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0140",
+      "file_page": 94,
+      "bbox": [
+        85.03936999999996,
+        306.6929300000001,
+        510.2362333333333,
+        454.0929300000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/documents/src-000372/tables/tbl-0140.md",
+      "rows": 7,
+      "matrix_cells": 21,
+      "physical_cells": 21,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "7f46409f243cfddab32719b07fdabb6acaa920b9f00502324b11bad6785dd161",
+      "cell_geometry_sha256": "5873a05f0dfc3ebbb0dd8b37084ea50a85aac007694681f95bc1009b5ef8f704",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 21,
+      "independent_cells_match": 21,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

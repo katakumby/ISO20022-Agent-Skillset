@@ -1,0 +1,58 @@
+classDiagram
+direction TB
+class SecuritiesOrder {
+<<BusinessComponent>>
+}
+class SecuritiesFinancing {
+<<BusinessComponent>>
+}
+class SecuritiesSettlement {
+<<BusinessComponent>>
+}
+class SecuritiesTrade {
+<<BusinessComponent>>
+}
+class SecuritiesAccount {
+<<BusinessComponent>>
+}
+class SecuritiesTradeExecution {
+<<BusinessComponent>>
+}
+class SecuritiesTradeIdentification {
+<<BusinessComponent>>
+}
+class SecuritiesTradeStatus {
+<<BusinessComponent>>
+}
+class SecuritiesPricing {
+<<BusinessComponent>>
+}
+class SecuritiesTradeStatusReason {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class SecuritiesTax {
+<<BusinessComponent>>
+}
+SecuritiesOrder -- SecuritiesAccount
+SecuritiesOrder -- Security
+SecuritiesOrder -- SecuritiesPricing
+SecuritiesOrder -- SecuritiesPricing
+SecuritiesOrder -- SecuritiesTrade
+SecuritiesFinancing -- SecuritiesTrade
+SecuritiesFinancing --|> SecuritiesTrade
+SecuritiesFinancing "*" -- SecuritiesPricing
+SecuritiesSettlement -- SecuritiesTradeExecution
+SecuritiesSettlement -- Security
+SecuritiesTrade "1" -- SecuritiesTradeExecution : + RelatedTrade
+SecuritiesTrade -- SecuritiesPricing
+SecuritiesTrade -- SecuritiesTradeIdentification
+SecuritiesTrade -- SecuritiesTradeStatus
+SecuritiesTrade -- Security
+SecuritiesTradeExecution -- SecuritiesPricing
+SecuritiesAccount -- Security
+SecuritiesPricing -- Security
+SecuritiesTradeStatus -- SecuritiesTradeStatusReason
+Security "0..1" -- "*" SecuritiesTax : + Security / + TaxDetails

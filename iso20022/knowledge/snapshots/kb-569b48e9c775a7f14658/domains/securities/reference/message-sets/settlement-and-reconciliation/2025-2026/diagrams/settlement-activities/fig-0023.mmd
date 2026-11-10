@@ -1,0 +1,7 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  S@{shape: f-circ,label: " "} ==> T["Technical and business validation Process?"]
+  T -->|Y| A{"Accepted for further processing?"}
+  T -->|N| Done[["Requested statement or status"]]
+  A -->|N| Reject@{shape: doc,label: "Rejection Status"}
+  A -->|Y| Done

@@ -1,0 +1,540 @@
+{
+  "message_id": "seev.031.001.16",
+  "publications": [
+    {
+      "source_id": "src-000080",
+      "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+      "heading": "3 seev.031.001.16 CorporateActionNotificationV16",
+      "definition_pages": [
+        23,
+        265
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CorporateActionNotification message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account owner or its designated agent",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an account servicer",
+            "labels": [
+              {
+                "label": "an account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.031.001.16-p23-c001-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "quote": "The CorporateActionNotification message is sent by an account servicer to an account owner or its designated agent to notify details of a corporate action event and optionally account information and preliminary information about eligible balance and entitlements.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "message_target": "current-message",
+          "message_subject": "CorporateActionNotification",
+          "limitation": "Source explicitly names the sender. Scheduling, warning/preliminary usage and information content remain in the quote; no receiver is supplied by this clause.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "4aeb597f9244ce5eacc8dbae222d8223e757f7af9625540e6627a7a73a703457",
+          "sender": {
+            "expression": "account servicer",
+            "labels": [
+              {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.031.001.16-p23-c003-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "quote": "The account servicer can initially send the CorporateActionNotification message as a preliminary advice, subsequently replaced by another CorporateActionNotification message with complete or confirmed information.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "can",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-local-anaphoric-option",
+          "message_subject": "This message",
+          "limitation": "In the CorporateActionNotification Functionality, “It” continues the immediately preceding notification statement. This is the reminder option for event details or missing/incomplete instructions.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "caec482323689c22f107e39c2fe33b13163e2c4dd0c2e0ddbf50b3d6623c868e",
+          "receiver": {
+            "expression": "account owner or its designated agent",
+            "labels": [
+              {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.031.001.16-p23-c004-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "quote": "It may also be sent to an account owner or its designated agent, to remind of event details and/or of missing or incomplete instructions for a corporate action event.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "and/or",
+            "may",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "4b513527273fc41a2bd7a7734d92a67daf68358e96997eb5d8033ad4d44398b3",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000080-seev.031.001.16-p23-c007-d1",
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16",
+          "file_pages": [
+            23
+          ],
+          "section": "usage",
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CorporateActionNotification message is sent by an account servicer to an account owner or its designated agent to notify details of a corporate action event and optionally account information and preliminary information about eligible balance and entitlements.",
+          "raw_quote": "Scope\nThe CorporateActionNotification message is sent by an account servicer to an account owner or its\ndesignated agent to notify details of a corporate action event and optionally account information and\npreliminary information about eligible balance and entitlements.",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c001",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 54,
+              "end": 70,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account owner",
+              "start": 77,
+              "end": 90,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "its designated agent",
+              "start": 94,
+              "end": 114,
+              "resolution": {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 138,
+              "end": 147,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.031.001.16-p23-c001-d1"
+          ]
+        },
+        {
+          "quote": "It may also include possible elections or choices available to the account owner.",
+          "raw_quote": "It may also include possible elections or choices available to the account owner.",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c002",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 67,
+              "end": 80,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The account servicer can initially send the CorporateActionNotification message as a preliminary advice, subsequently replaced by another CorporateActionNotification message with complete or confirmed information.",
+          "raw_quote": "The account servicer\ncan initially send the CorporateActionNotification message as a preliminary advice, subsequently\nreplaced by another CorporateActionNotification message with complete or confirmed information.",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c003",
+          "mentions": [
+            {
+              "label": "account servicer",
+              "start": 4,
+              "end": 20,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-servicer",
+                  "path": "shared/reference/participants/participant-src-000079-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.031.001.16-p23-c003-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "It may also be sent to an account owner or its designated agent, to remind of event details and/or of missing or incomplete instructions for a corporate action event.",
+          "raw_quote": "It may also be sent to an account owner or its designated agent, to remind of event details and/or of\nmissing or incomplete instructions for a corporate action event.",
+          "file_pages": [
+            23
+          ],
+          "section": "scope",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c004",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 26,
+              "end": 39,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000079-account-owner",
+                  "path": "shared/reference/participants/participant-src-000079-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "its designated agent",
+              "start": 43,
+              "end": 63,
+              "resolution": {
+                "label": "its designated agent",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-corporate-actions-designated-agent",
+                  "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 143,
+              "end": 152,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.031.001.16-p23-c004-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "raw_quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "file_pages": [
+            23
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c005",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy),",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\nCopy),",
+          "file_pages": [
+            23
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c006",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+          "raw_quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy\nDuplicate), using the relevant elements in the business application header (BAH).",
+          "file_pages": [
+            23
+          ],
+          "section": "usage",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c007",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 13,
+              "end": 24,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000080",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000080-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000080-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000080-seev.031.001.16-p23-c007-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message may also be used to:",
+          "raw_quote": "Usage\nThe message may also be used to:",
+          "file_pages": [
+            23
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        23
+      ],
+      "file_pages": [
+        23,
+        24,
+        25
+      ]
+    }
+  ]
+}

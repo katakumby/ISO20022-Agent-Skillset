@@ -1,0 +1,251 @@
+{
+  "message_id": "sese.013.001.12",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "36 sese.013.001.12 PortfolioTransferConfirmationV12",
+      "definition_pages": [
+        1106,
+        1301
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PortfolioTransferConfirmation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party for example, a (new) plan manager (transferee)",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the instructing party for example, a (new) plan manager (transferee)"
+          },
+          "sender": {
+            "expression": "an executing party, for example, a (old) plan manager (transferor)",
+            "labels": [
+              {
+                "label": "an executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an executing party, for example, a (old) plan manager (transferor)"
+          },
+          "claim_id": "src-000096-sese.013.001.12-p1106-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "36 sese.013.001.12 PortfolioTransferConfirmationV12",
+          "file_pages": [
+            1106
+          ],
+          "section": "scope",
+          "quote": "The PortfolioTransferConfirmation message is sent by an executing party, for example, a (old) plan manager (transferor), to the instructing party for example, a (new) plan manager (transferee), to confirm the transfer of financial instruments from the client's account at the old plan manager (transferor) to the clients account at the new plan manager (transferee).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PortfolioTransferConfirmation message is sent by an executing party, for example, a (old) plan manager (transferor), to the instructing party for example, a (new) plan manager (transferee), to confirm the transfer of financial instruments from the client's account at the old plan manager (transferor) to the clients account at the new plan manager (transferee).",
+          "raw_quote": "Scope\nThe PortfolioTransferConfirmation message is sent by an executing party, for example, a (old) plan\nmanager (transferor), to the instructing party for example, a (new) plan manager (transferee), to confirm\nthe transfer of financial instruments from the client's account at the old plan manager (transferor) to the\nclients account at the new plan manager (transferee).",
+          "file_pages": [
+            1106
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.013.001.12-p1106-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 56,
+              "end": 71,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferor",
+              "start": 108,
+              "end": 118,
+              "resolution": {
+                "label": "transferor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferor",
+                  "path": "shared/reference/participants/participant-src-000095-transferor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 128,
+              "end": 145,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferee",
+              "start": 181,
+              "end": 191,
+              "resolution": {
+                "label": "transferee",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferee",
+                  "path": "shared/reference/participants/participant-src-000095-transferee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferor",
+              "start": 294,
+              "end": 304,
+              "resolution": {
+                "label": "transferor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferor",
+                  "path": "shared/reference/participants/participant-src-000095-transferor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferee",
+              "start": 354,
+              "end": 364,
+              "resolution": {
+                "label": "transferee",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferee",
+                  "path": "shared/reference/participants/participant-src-000095-transferee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.013.001.12-p1106-c001-d1"
+          ]
+        },
+        {
+          "quote": "The reference of the original portfolio transfer as assigned by the instructing party is specified in TransferInstructionReference.",
+          "raw_quote": "The reference of the original portfolio transfer as assigned by the instructing party is specified in\nTransferInstructionReference.",
+          "file_pages": [
+            1106
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.013.001.12-p1106-c002",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 68,
+              "end": 85,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The PortfolioTransferConfirmation message is used to confirm one or more portfolio transfers for one client.",
+          "raw_quote": "Usage\nThe PortfolioTransferConfirmation message is used to confirm one or more portfolio transfers for one\nclient.",
+          "file_pages": [
+            1106
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The reference of each portfolio transfer confirmation is identified in TransferConfirmationIdentification.",
+          "raw_quote": "The reference of each portfolio transfer confirmation is identified in TransferConfirmationIdentification.",
+          "file_pages": [
+            1106
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The message identification of the PortfolioTransferInstruction message in which the portfolio transfers were conveyed may also be quoted in RelatedReference but this is not recommended.",
+          "raw_quote": "The message identification of the PortfolioTransferInstruction message in\nwhich the portfolio transfers were conveyed may also be quoted in RelatedReference but this is not\nrecommended.",
+          "file_pages": [
+            1106
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1106
+      ],
+      "file_pages": [
+        1106,
+        1107
+      ]
+    }
+  ]
+}

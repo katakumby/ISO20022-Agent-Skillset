@@ -1,0 +1,332 @@
+{
+  "message_id": "pacs.028.001.07",
+  "publications": [
+    {
+      "source_id": "src-000163",
+      "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+      "heading": "9 pacs.028.001.07 FIToFIPaymentStatusRequestV07",
+      "definition_pages": [
+        1049,
+        1160
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The FinancialInstitutionToFinancialInstitutionPaymentStatusRequest message",
+          "message_target": "current-message-scope-name-variant",
+          "receiver": {
+            "expression": "the creditor agent, directly or through other agents and/or a payment clearing and settlement system",
+            "labels": [
+              {
+                "label": "the creditor agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the creditor agent, directly or through other agents and/or a payment clearing and settlement system"
+          },
+          "sender": {
+            "expression": "the debtor agent",
+            "labels": [
+              {
+                "label": "the debtor agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-debtor-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000163-pacs.028.001.07-p1049-c001-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "9 pacs.028.001.07 FIToFIPaymentStatusRequestV07",
+          "file_pages": [
+            1049
+          ],
+          "section": "scope",
+          "quote": "The FinancialInstitutionToFinancialInstitutionPaymentStatusRequest message is sent by the debtor agent to the creditor agent, directly or through other agents and/or a payment clearing and settlement system.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "and/or",
+            "directly",
+            "or",
+            "through"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The FIToFIPaymentStatusRequest message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "agents",
+            "labels": [
+              {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000163-pacs.028.001.07-p1049-c003-d1",
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "heading": "9 pacs.028.001.07 FIToFIPaymentStatusRequestV07",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage",
+          "quote": "The FIToFIPaymentStatusRequest message is exchanged between agents to request status information about instructions previously sent.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The FinancialInstitutionToFinancialInstitutionPaymentStatusRequest message is sent by the debtor agent to the creditor agent, directly or through other agents and/or a payment clearing and settlement system.",
+          "raw_quote": "Scope\nThe FinancialInstitutionToFinancialInstitutionPaymentStatusRequest message is sent by the debtor\nagent to the creditor agent, directly or through other agents and/or a payment clearing and settlement\nsystem.",
+          "file_pages": [
+            1049
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c001",
+          "mentions": [
+            {
+              "label": "debtor agent",
+              "start": 90,
+              "end": 102,
+              "resolution": {
+                "label": "debtor agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-debtor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-debtor-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "creditor agent",
+              "start": 110,
+              "end": 124,
+              "resolution": {
+                "label": "creditor agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000162-creditor-agent",
+                  "path": "shared/reference/participants/participant-src-000162-creditor-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "agents",
+              "start": 152,
+              "end": 158,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "payment clearing and settlement system",
+              "start": 168,
+              "end": 206,
+              "resolution": {
+                "label": "payment clearing and settlement system",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000163-payment-clearing-and-settlement-system",
+                  "path": "shared/reference/participants/participant-narrative-src-000163-payment-clearing-and-settlement-system.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.028.001.07-p1049-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request a FIToFIPaymentStatusReport message containing information on the status of a previously sent instruction.",
+          "raw_quote": "It is used to request a FIToFIPaymentStatusReport message containing information on the\nstatus of a previously sent instruction.",
+          "file_pages": [
+            1049
+          ],
+          "section": "scope",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The FIToFIPaymentStatusRequest message is exchanged between agents to request status information about instructions previously sent.",
+          "raw_quote": "Usage\nThe FIToFIPaymentStatusRequest message is exchanged between agents to request status\ninformation about instructions previously sent.",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c003",
+          "mentions": [
+            {
+              "label": "agents",
+              "start": 60,
+              "end": 66,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000163-pacs.028.001.07-p1049-c003-d1"
+          ]
+        },
+        {
+          "quote": "Its usage will always be governed by a bilateral agreement between the agents.",
+          "raw_quote": "Its usage will always be governed by a bilateral\nagreement between the agents.",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c004",
+          "mentions": [
+            {
+              "label": "agents",
+              "start": 71,
+              "end": 77,
+              "resolution": {
+                "label": "agents",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusRequest message can be used to request information about the status (such as rejection, acceptance) of a credit transfer instruction, a direct debit instruction, as well as other intra- agent instructions (for example FIToFIPaymentCancellationRequest).",
+          "raw_quote": "The FIToFIPaymentStatusRequest message can be used to request information about the status (such\nas rejection, acceptance) of a credit transfer instruction, a direct debit instruction, as well as other intra-\nagent instructions (for example FIToFIPaymentCancellationRequest).",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c005",
+          "mentions": [
+            {
+              "label": "agent",
+              "start": 209,
+              "end": 214,
+              "resolution": {
+                "label": "agent",
+                "scope_source_id": "src-000163",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000163-agent",
+                  "path": "shared/reference/participants/participant-functionality-src-000163-agent.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The FIToFIPaymentStatusRequest message refers to the original instruction(s) by means of references only or by means of references and a set of elements from the original instruction.",
+          "raw_quote": "The FIToFIPaymentStatusRequest message refers to the original instruction(s) by means of references\nonly or by means of references and a set of elements from the original instruction.",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c006",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The FIToFIPaymentStatusRequest message can be used in domestic and cross-border scenarios.",
+          "raw_quote": "The FIToFIPaymentStatusRequest message can be used in domestic and cross-border scenarios.",
+          "file_pages": [
+            1049
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        1049
+      ],
+      "file_pages": [
+        1049
+      ]
+    }
+  ]
+}

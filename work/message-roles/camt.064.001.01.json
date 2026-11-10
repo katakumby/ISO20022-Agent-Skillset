@@ -1,0 +1,627 @@
+{
+  "message_id": "camt.064.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "5 camt.064.001.01 LimitUtilisationJournalQueryV01",
+      "definition_pages": [
+        68,
+        72
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The LimitUtilisationJournalQuery message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system",
+            "labels": [
+              {
+                "label": "a central securities depository",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a directly connected system participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-directly-connected-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "the central system",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000363-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000363-central-system.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": "a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system"
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000233-camt.064.001.01-p68-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "5 camt.064.001.01 LimitUtilisationJournalQueryV01",
+          "file_pages": [
+            68
+          ],
+          "section": "scope",
+          "quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system.",
+          "raw_quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a\ndirectly connected system participant (the central securities depository participant granted direct\naccess, like a bank or a central counter party) and the central system.",
+          "file_pages": [
+            68
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.064.001.01-p68-c001",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 64,
+              "end": 93,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "directly connected system participant",
+              "start": 99,
+              "end": 136,
+              "resolution": {
+                "label": "directly connected system participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-directly-connected-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central securities depository participant",
+              "start": 142,
+              "end": 183,
+              "resolution": {
+                "label": "central securities depository participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "bank",
+              "start": 214,
+              "end": 218,
+              "resolution": {
+                "label": "bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-bank.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central counter party",
+              "start": 224,
+              "end": 245,
+              "resolution": {
+                "label": "central counter party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-counter-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central system",
+              "start": 255,
+              "end": 269,
+              "resolution": {
+                "label": "central system",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000363-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000363-central-system.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-camt.064.001.01-p68-c001-d1"
+          ]
+        },
+        {
+          "quote": "Its purpose is to query information regarding the journal of transaction impacting the utilisation of limits that have been defined by the system participant.",
+          "raw_quote": "Its purpose is to query\ninformation regarding the journal of transaction impacting the utilisation of limits that have been defined\nby the system participant.",
+          "file_pages": [
+            68
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-camt.064.001.01-p68-c002",
+          "mentions": [
+            {
+              "label": "system participant",
+              "start": 139,
+              "end": 157,
+              "resolution": {
+                "label": "system participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-system-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "camt.064.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      68
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000363",
+                        "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        68
+      ],
+      "file_pages": [
+        68
+      ]
+    },
+    {
+      "source_id": "src-000363",
+      "source_sha256": "9a2fa1a65d0aa94673163f85948f60752c8e5e03dbef930046337c8b381b9c49",
+      "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+      "definition_pages": [
+        4,
+        8
+      ],
+      "directions": [
+        {
+          "kind": "exchange-participants",
+          "pattern": "exchanged-between",
+          "message_subject": "The LimitUtilisationJournalQuery message",
+          "message_target": "current-message",
+          "exchange_participants": {
+            "expression": "a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system",
+            "labels": [
+              {
+                "label": "a central securities depository",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a directly connected system participant",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-directly-connected-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "the central system",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000363-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000363-central-system.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": "a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system"
+          },
+          "limitation": "An exchange-between statement establishes participation, not sender/receiver direction.",
+          "claim_id": "src-000363-camt.064.001.01-p4-c001-d1",
+          "source_id": "src-000363",
+          "source_sha256": "9a2fa1a65d0aa94673163f85948f60752c8e5e03dbef930046337c8b381b9c49",
+          "heading": "2 camt.064.001.01 LimitUtilisationJournalQueryV01",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "directly",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a directly connected system participant (the central securities depository participant granted direct access, like a bank or a central counter party) and the central system.",
+          "raw_quote": "The LimitUtilisationJournalQuery message is exchanged between a central securities depository or a\ndirectly connected system participant (the central securities depository participant granted direct\naccess, like a bank or a central counter party) and the central system.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000363-camt.064.001.01-p4-c001",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 64,
+              "end": 93,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "directly connected system participant",
+              "start": 99,
+              "end": 136,
+              "resolution": {
+                "label": "directly connected system participant",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-directly-connected-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-directly-connected-system-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central securities depository participant",
+              "start": 142,
+              "end": 183,
+              "resolution": {
+                "label": "central securities depository participant",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-securities-depository-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "bank",
+              "start": 214,
+              "end": 218,
+              "resolution": {
+                "label": "bank",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central counter party",
+              "start": 224,
+              "end": 245,
+              "resolution": {
+                "label": "central counter party",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-central-counter-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central system",
+              "start": 255,
+              "end": 269,
+              "resolution": {
+                "label": "central system",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000363-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000363-central-system.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000363-camt.064.001.01-p4-c001-d1"
+          ]
+        },
+        {
+          "quote": "Its purpose is to query information regarding the journal of transaction impacting the utilisation of limits that have been defined by the system participant.",
+          "raw_quote": "Its purpose is to query\ninformation regarding the journal of transaction impacting the utilisation of limits that have been defined\nby the system participant.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000363-camt.064.001.01-p4-c002",
+          "mentions": [
+            {
+              "label": "system participant",
+              "start": 139,
+              "end": 157,
+              "resolution": {
+                "label": "system participant",
+                "scope_source_id": "src-000363",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000363-system-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000363-system-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4
+      ],
+      "file_pages": [
+        4
+      ]
+    }
+  ]
+}

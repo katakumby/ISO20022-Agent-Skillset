@@ -1,0 +1,18 @@
+flowchart LR
+  N1["Bank Transaction Code"]
+  N2["Foreign Exchange"]
+  N3["Spots"]
+  N4["Forwards"]
+  N5["Swaps"]
+  N6["Futures"]
+  N7["Non deliverable FOREX"]
+  N8["Generic Family codes"]
+  N1 --- N2
+  N2 --- N3
+  N2 --- N4
+  N2 --- N5
+  N2 --- N6
+  N2 --- N7
+  N2 --- N8
+  classDef generic fill:#dce8ee,stroke:#1b637f,color:#444,font-style:italic;
+  class N8 generic;

@@ -1,0 +1,201 @@
+{
+  "message_id": "secl.006.001.02",
+  "publications": [
+    {
+      "source_id": "src-000053",
+      "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+      "heading": "7 MX secl.006.001.02 DefaultFundContributionReportV02",
+      "definition_pages": [
+        246,
+        253
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The DefaultFundContributionReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a Clearing member",
+            "labels": [
+              {
+                "label": "a Clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the central counterparty (CCP)",
+            "labels": [
+              {
+                "label": "the central counterparty",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the central counterparty (CCP)"
+          },
+          "claim_id": "src-000053-secl.006.001.02-p246-c001-d1",
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "heading": "7 MX secl.006.001.02 DefaultFundContributionReportV02",
+          "file_pages": [
+            246
+          ],
+          "section": "scope",
+          "quote": "The DefaultFundContributionReport message is sent by the central counterparty (CCP) to a Clearing member to report on the calculation of the default fund contribution and the potential net excess or deficit.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The DefaultFundContributionReport message is sent by the central counterparty (CCP) to a Clearing member to report on the calculation of the default fund contribution and the potential net excess or deficit.",
+          "raw_quote": "Scope\nThe DefaultFundContributionReport message is sent by the central counterparty (CCP) to a Clearing\nmember to report on the calculation of the default fund contribution and the potential net excess or\ndeficit.",
+          "file_pages": [
+            246
+          ],
+          "section": "scope",
+          "evidence_id": "src-000053-secl.006.001.02-p246-c001",
+          "mentions": [
+            {
+              "label": "central counterparty (CCP)",
+              "start": 57,
+              "end": 83,
+              "resolution": {
+                "label": "central counterparty (CCP)",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "Exact message, source, label and Functionality-quote match; The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                  "contextual_override": {
+                    "source_id": "src-000053",
+                    "message_id": "secl.006.001.02",
+                    "label": "central counterparty (CCP)",
+                    "participant_id": "participant-src-000052-central-counterparty",
+                    "quote_sha256": "c685e62204f7d6bd9e8fdc92c1203af448c88cf96011eea1a3889210911b1920",
+                    "basis": "The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                    "source_locations": [
+                      {
+                        "source_id": "src-000053",
+                        "heading": "7 MX secl.006.001.02 DefaultFundContributionReportV02",
+                        "file_pages": [
+                          246
+                        ],
+                        "evidence_id": "src-000053-secl.006.001.02-p246-c001"
+                      }
+                    ]
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Clearing member",
+              "start": 89,
+              "end": 104,
+              "resolution": {
+                "label": "Clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000053-secl.006.001.02-p246-c001-d1"
+          ]
+        },
+        {
+          "quote": "CCPs require participants to post assets in a clearing fund that can be used in the event of a default by a participant, to compensate non-defaulting participants for losses they suffer due to this default.",
+          "raw_quote": "Usage\nCCPs require participants to post assets in a clearing fund that can be used in the event of a default by\na participant, to compensate non-defaulting participants for losses they suffer due to this default.",
+          "file_pages": [
+            246
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.006.001.02-p246-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The CCP evaluates each participant risk level based on their positions (monthly or daily) and calculate the excess of deficit of the default fund contribution.",
+          "raw_quote": "The\nCCP evaluates each participant risk level based on their positions (monthly or daily) and calculate the\nexcess of deficit of the default fund contribution.",
+          "file_pages": [
+            246
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.006.001.02-p246-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The DefaultFundContributionReport is usually sent on a monthly basis.",
+          "raw_quote": "The DefaultFundContributionReport is usually sent on\na monthly basis.",
+          "file_pages": [
+            246
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.006.001.02-p246-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message definition is intended for use with the ISO20022 Business Application Header.",
+          "raw_quote": "The message definition is intended for use with the ISO20022 Business Application Header.",
+          "file_pages": [
+            246
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        246
+      ],
+      "file_pages": [
+        246
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+sequenceDiagram
+  participant A as Instructing Party
+  participant B as Executing Servicing Party
+  A->>B: SecuritiesSettlementConditionsModificationRequest
+  opt Optional
+    B->>A: SecuritiesSettlementConditionsModificationStatusAdvice
+  end

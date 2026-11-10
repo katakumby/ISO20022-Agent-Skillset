@@ -1,0 +1,116 @@
+{
+  "source_id": "src-000372",
+  "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+  "file_page": 4,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        236.09292000000016,
+        510.23623249999997,
+        721.2929200000002
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          236.09292000000016,
+          283.46457,
+          254.2929200000002
+        ],
+        [
+          85.03936999999999,
+          254.2929200000002,
+          283.46457,
+          402.49293000000023
+        ],
+        [
+          85.03936999999999,
+          402.49293000000023,
+          283.46457,
+          440.69291000000015
+        ],
+        [
+          85.03936999999999,
+          440.69291000000015,
+          283.46457,
+          618.8929200000001
+        ],
+        [
+          85.03936999999999,
+          618.8929200000001,
+          283.46457,
+          667.0929100000002
+        ],
+        [
+          85.03936999999999,
+          667.0929100000002,
+          283.46457,
+          721.2929200000002
+        ],
+        [
+          283.46457,
+          236.09292000000016,
+          510.23623249999997,
+          254.2929200000002
+        ],
+        [
+          283.46457,
+          254.2929200000002,
+          510.23623249999997,
+          402.49293000000023
+        ],
+        [
+          283.46457,
+          402.49293000000023,
+          510.23623249999997,
+          440.69291000000015
+        ],
+        [
+          283.46457,
+          440.69291000000015,
+          510.23623249999997,
+          618.8929200000001
+        ],
+        [
+          283.46457,
+          618.8929200000001,
+          510.23623249999997,
+          667.0929100000002
+        ],
+        [
+          283.46457,
+          667.0929100000002,
+          510.23623249999997,
+          721.2929200000002
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "reda.018.001.01\nSecuritiesAccountCreationRequestV01",
+          "The SecuritiesAccountCreationRequest message\nmessage is sent by an instructing party to the\nexecuting party to instruct the creation of a new\nsecurities account with the required account attributes\ndetails.\nUsage:\nProcessing and confirmation of the securities account\ncreation request message are provided via a\nSecuritiesAccountStatusAdvice message."
+        ],
+        [
+          "reda.019.001.01\nSecuritiesAccountQueryV01",
+          "The SecuritiesAccountQuery message sent by an\ninstructing party to the executing party to request the\ndetails related to the securities account."
+        ],
+        [
+          "reda.020.001.01\nSecuritiesAccountStatusAdviceV01",
+          "The SecuritiesAccountStatusAdvice message is send\nby the the executing party to an instructing party to\nprovide the status of the execution of an creation,\nmodification or deletion of securities account reference\ndata.\nUsage:\nWhen processing information is negative - a failure\noccurred in applying the changes the message\naccordingly also delivers information about the reason\nwhy the creation or update could not be processed.\nWhen the processing is succesfully performed, the\nmessage includes the related securities account\nidentification."
+        ],
+        [
+          "reda.021.001.01\nSecuritiesAccountReportV01",
+          "The SecuritiesAccountReport message sent by the\nexecuting party to an instructing party to provide the\ndetails of the securities account details as requested in\nthe query."
+        ],
+        [
+          "reda.023.001.01\nSecuritiesAccountModificationRequestV01",
+          "The SecuritiesAccountModificationRequest message is\nsent by an instructing party to the executing party to\ninstruct the update of an existing securities account by\namending its existing attributes or by providing\nadditional attibutes details."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

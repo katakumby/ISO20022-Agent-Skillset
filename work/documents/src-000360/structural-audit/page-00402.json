@@ -1,0 +1,142 @@
+{
+  "source_id": "src-000360",
+  "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+  "file_page": 402,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 62,
+    "2": 57
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 45,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "41ac92c7e9f15e3142343ccf568f8745765f2460d260d6dfb1d78a272006ec85",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 13,
+      "bbox": [
+        84.5394,
+        206.1237,
+        303.3079,
+        207.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        197.4929,
+        319.4925,
+        207.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 15,
+      "bbox": [
+        302.3079,
+        206.1237,
+        319.9925,
+        207.1237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        197.4929,
+        319.4925,
+        207.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 90,
+      "bbox": [
+        130.1204,
+        358.7238,
+        233.2884,
+        359.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        350.0929,
+        249.473,
+        360.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 92,
+      "bbox": [
+        232.2884,
+        358.7238,
+        249.973,
+        359.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        350.0929,
+        249.473,
+        360.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 100,
+      "bbox": [
+        130.1204,
+        436.7238,
+        234.9485,
+        437.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        428.0929,
+        251.1331,
+        438.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 102,
+      "bbox": [
+        233.9485,
+        436.7238,
+        251.6331,
+        437.7238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        428.0929,
+        251.1331,
+        438.0929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0712",
+      "file_page": 402,
+      "bbox": [
+        85.03936999999998,
+        214.49291000000005,
+        555.590568,
+        283.09291
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/documents/src-000360/tables/tbl-0712.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3c29502c95781dc349f06bcfcccace391d37e5f875ca3cbed750bcdbb0a80889",
+      "cell_geometry_sha256": "482c7d0a5d3f1db4adc787f2d561a3c5d5aeb641ba821f8fc0c64afec54a6d09",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

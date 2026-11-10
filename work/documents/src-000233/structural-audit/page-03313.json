@@ -1,0 +1,87 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 3313,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 85,
+    "2": 112
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 104,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "063f489d34e225aca9e72223b754cea91ee87bd751689b928ce8297c3d67b14a",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-5527",
+      "file_page": 3313,
+      "bbox": [
+        85.03936999999996,
+        125.09291,
+        510.2362333333333,
+        310.69289999999995
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-5527.md",
+      "rows": 8,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "32d3834b51b3b9821b49f0c77a3d61649b5ecffb2c6facdccb8b74c16ace6af2",
+      "cell_geometry_sha256": "cf8f10b503e1d2600c092047caa3712b3246291b95db2d819a5042a9564d4dfe",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-5528",
+      "file_page": 3313,
+      "bbox": [
+        85.03936999999996,
+        381.09292999999997,
+        510.2362333333333,
+        700.2929300000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-5528.md",
+      "rows": 6,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "89eacf8f9ec56349751c4475617dc4b4371b2454a2e2edaa0b3a1db171a63e21",
+      "cell_geometry_sha256": "c0c1b766d28280d83cd92c805f92d37d2cc80799311382dba6d65dfde98f047a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 17,
+      "exceptions": [
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            553.89294,
+            510.2362333333333,
+            632.09293
+          ],
+          "stored_value": "Price is the calculated creation price of a\ndual-priced investment fund (creation-\ncancellation prices) and the highest\npossible buying price of the units before\nthe initial charge. The actual buying or\noffer price, which includes charges, will\nbe higher.",
+          "pdfium_value": "Price is the calculated creation price of a\r\ndual-priced investment fund (creation\u0002cancellation prices) and the highest\r\npossible buying price of the units before\r\nthe initial charge. The actual buying or\r\noffer price, which includes charges, will\r\nbe higher."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

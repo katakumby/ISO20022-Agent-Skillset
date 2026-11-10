@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 2047,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 56,
+    "2": 82
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 3,
+    "table-associated-axis-line": 71,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "e08f071627e01577bafc47e6546787700ce99fe9ff66080d0176187d90796862",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 4,
+      "bbox": [
+        144.5687,
+        84.3237,
+        262.1556,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        75.6929,
+        261.6556,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        418.0257,
+        102.3237,
+        502.263,
+        103.3237
+      ],
+      "link_annotation_bbox": [
+        418.5257,
+        93.6929,
+        501.763,
+        103.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 10,
+      "bbox": [
+        84.5394,
+        114.3237,
+        110.5638,
+        115.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        105.6929,
+        132.3099,
+        115.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 12,
+      "bbox": [
+        109.5638,
+        114.3237,
+        132.8099,
+        115.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        105.6929,
+        132.3099,
+        115.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-2901",
+      "file_page": 2047,
+      "bbox": [
+        85.03936999999996,
+        122.6929100000001,
+        555.5905714285715,
+        231.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-2901.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3d688fb0154b8022d3fa61cfcad67e5a87ff5d86d5b98a1dc10469f444b4aa48",
+      "cell_geometry_sha256": "d62dae8468d8eda8c95f968168ae201926e065a6a9dfa4c08a443c900459dcc6",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

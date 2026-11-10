@@ -1,0 +1,570 @@
+{
+  "message_id": "camt.008.001.11",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "7 camt.008.001.11 CancelTransactionV11",
+      "definition_pages": [
+        347,
+        363
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The CancelTransaction message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.008.001.11-p347-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "7 camt.008.001.11 CancelTransactionV11",
+          "file_pages": [
+            347
+          ],
+          "section": "scope",
+          "quote": "The CancelTransaction message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "pattern": "active",
+          "message_subject": "a Receipt message as a reply",
+          "message_target": "related-or-unspecified-message",
+          "sender": {
+            "expression": "The transaction administrator",
+            "labels": [
+              {
+                "label": "The transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "reply_target_expression": "the CancelTransaction request.",
+          "limitation": "The phrase following “to” is the request being answered, not an identified receiving participant.",
+          "claim_id": "src-000015-camt.008.001.11-p347-c009-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "7 camt.008.001.11 CancelTransactionV11",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "quote": "The transaction administrator may send a Receipt message as a reply to the CancelTransaction request.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "may"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The CancelTransaction message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe CancelTransaction message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            347
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 43,
+              "end": 49,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 57,
+              "end": 82,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.008.001.11-p347-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to request the cancellation of one payment instruction held at the transaction administrator and sent by the member.",
+          "raw_quote": "It is used to request the cancellation of one payment instruction held at the transaction administrator\nand sent by the member.",
+          "file_pages": [
+            347
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c002",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 78,
+              "end": 103,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 120,
+              "end": 126,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "Following normal business flows, transactions registered by the transaction administrator may be queued for later settlement (because of insufficient funds available, because of risk or liquidity limits, etc.).",
+          "raw_quote": "Usage\nFollowing normal business flows, transactions registered by the transaction administrator may be\nqueued for later settlement (because of insufficient funds available, because of risk or liquidity limits,\netc.).",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c003",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 64,
+              "end": 89,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Members of a system need to have information about the payments queue(s), and must have the ability to take action (that is, to cancel or modify the transaction(s) to be settled).",
+          "raw_quote": "Members of a system need to have information about the payments queue(s), and must have the ability\nto take action (that is, to cancel or modify the transaction(s) to be settled).",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c004",
+          "mentions": [
+            {
+              "label": "Members of a system",
+              "start": 0,
+              "end": 19,
+              "resolution": {
+                "label": "Members of a system",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Note, however, that actions by a member will always concern transactions in a transient status.",
+          "raw_quote": "Note, however, that actions\nby a member will always concern transactions in a transient status.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c005",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 33,
+              "end": 39,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "For this reason, at any time during the operating hours of the system, the member can request the cancellation of a transaction that has not received a final status.",
+          "raw_quote": "For this reason, at any time during the operating hours of the system, the member can request the\ncancellation of a transaction that has not received a final status.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c006",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 75,
+              "end": 81,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The member will submit a CancelTransaction message containing the identification of the transaction to be cancelled.",
+          "raw_quote": "The member will submit a CancelTransaction message containing the identification of the transaction to\nbe cancelled.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c007",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "submit",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Based on the criteria received within the CancelTransaction message, the transaction administrator will execute or reject the requested cancellation.",
+          "raw_quote": "Based on the criteria received within the CancelTransaction message, the transaction administrator will\nexecute or reject the requested cancellation.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c008",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 73,
+              "end": 98,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "execute",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "actor-or-condition-context",
+            "rationale": "The sentence describes actors, responsibilities, source/target data, prohibitions or conditions. Existing literal actions and the complete quote remain available; sending/receiving a different object or a negative assertion is not converted into an unconditional current-message direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The transaction administrator may send a Receipt message as a reply to the CancelTransaction request.",
+          "raw_quote": "The transaction administrator may send a Receipt message as a reply to the CancelTransaction\nrequest.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c009",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 4,
+              "end": 29,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000015-camt.008.001.11-p347-c009-d1"
+          ]
+        },
+        {
+          "quote": "To verify the outcome of the request, the member may submit a GetTransaction message with the appropriate search criteria.",
+          "raw_quote": "To verify the outcome of the request, the member may submit a GetTransaction message with the\nappropriate search criteria.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c010",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 42,
+              "end": 48,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "submit",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "A transaction may have a series of statuses.",
+          "raw_quote": "A transaction may have a series of statuses.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "These can be transient (such as pending or related types), final (such as rejected, revoked and/or settled) or the status may even be defined as a proprietary status.",
+          "raw_quote": "These can be transient (such as pending or related\ntypes), final (such as rejected, revoked and/or settled) or the status may even be defined as a\nproprietary status.",
+          "file_pages": [
+            347
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        347
+      ],
+      "file_pages": [
+        347,
+        348
+      ]
+    }
+  ]
+}

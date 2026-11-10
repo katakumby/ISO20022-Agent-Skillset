@@ -1,0 +1,27 @@
+flowchart TB
+subgraph group0["Instructing Party"]
+start(("#160;"))
+instruction(["Instruction"])
+merge{"#160;"}
+monitor(["Monitor"])
+acceptedIP{"Accepted"}
+finish((("#160;")))
+end
+subgraph group1["Executing Party"]
+validate(["Validate"])
+acceptedEP{"Accepted"}
+process(["Process"])
+report(["Report"])
+end
+start --> instruction
+instruction --> validate
+validate --> acceptedEP
+acceptedEP -->|"Yes"| process
+acceptedEP -->|"No"| report
+process -->|"Status &lt;&lt;Accepted&gt;&gt;"| merge
+report -->|"Status &lt;&lt;Rejected&gt;&gt;"| merge
+merge --> monitor
+monitor --> acceptedIP
+acceptedIP -.->|"No"| instruction
+acceptedIP -->|"Yes"| finish
+style start fill:#333,stroke:#333

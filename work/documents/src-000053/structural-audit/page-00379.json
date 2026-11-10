@@ -1,0 +1,105 @@
+{
+  "source_id": "src-000053",
+  "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+  "file_page": 379,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 106,
+    "2": 105
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 95,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "5e8ab2f8c85d7d38f7a9139cef19b9eca1c7855b833a7f32f23addfa57dcb5dd",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 38,
+      "bbox": [
+        130.1204,
+        425.5237,
+        246.7503,
+        426.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        416.8929,
+        262.9349,
+        426.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 40,
+      "bbox": [
+        245.7503,
+        425.5237,
+        263.4349,
+        426.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        416.8929,
+        262.9349,
+        426.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0583",
+      "file_page": 379,
+      "bbox": [
+        85.03936999999996,
+        433.8929200000001,
+        510.2362279999999,
+        488.4929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0583.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "11aa1cb67e953e7b47c8c786ff1f72cfb993180612a4d370f3e42414b20502c5",
+      "cell_geometry_sha256": "430aa0f608b22dcd018098a6e8d81bd4945931450eae71a520a5f5a5d8f16140",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0584",
+      "file_page": 379,
+      "bbox": [
+        85.03936999999996,
+        540.8929500000002,
+        555.5905714285715,
+        665.8929500000002
+      ],
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/documents/src-000053/tables/tbl-0584.md",
+      "rows": 5,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "8c8083a4049f66d347c703753b8551c521f7085247d11c69557c32995d097d25",
+      "cell_geometry_sha256": "f568c0268eb7ce4e66ba950080e3ec41ae8ef556116f4478c2882088e01e5d88",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

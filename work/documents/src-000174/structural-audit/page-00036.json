@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 36,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 126,
+    "2": 211
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 194,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "433d3f705c8a45fd9776e658cdc7c7f63968af077fc607a21b5ba70b56879a59",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        84.5394,
+        134.7238,
+        257.1849,
+        135.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        126.0929,
+        273.3694,
+        136.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 10,
+      "bbox": [
+        256.1849,
+        134.7238,
+        273.8694,
+        135.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        126.0929,
+        273.3694,
+        136.0929
+      ]
+    },
+    {
+      "path_object_ordinal": 243,
+      "bbox": [
+        84.5394,
+        501.3237,
+        253.2933,
+        502.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        492.6929,
+        269.4778,
+        502.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 245,
+      "bbox": [
+        252.2933,
+        501.3237,
+        269.9778,
+        502.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        492.6929,
+        269.4778,
+        502.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 321,
+      "bbox": [
+        130.1204,
+        670.3237,
+        218.2737,
+        671.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        661.6929,
+        234.4583,
+        671.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 323,
+      "bbox": [
+        217.2737,
+        670.3237,
+        234.9583,
+        671.3237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        661.6929,
+        234.4583,
+        671.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0030",
+      "file_page": 36,
+      "bbox": [
+        85.03936999999996,
+        143.09291,
+        555.5905733333334,
+        373.29288999999994
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0030.md",
+      "rows": 11,
+      "matrix_cells": 66,
+      "physical_cells": 66,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c09a72a515ba46c9fb8158d330bac7708937eaf75e5e74e9bb6d6483ff5b8816",
+      "cell_geometry_sha256": "25889e3e4cd20a462aac8cf7529807d5b14cc794213fea427b03f8649c860b5c",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 66,
+      "independent_cells_match": 66,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0031",
+      "file_page": 36,
+      "bbox": [
+        85.03936999999996,
+        509.69291,
+        555.5905733333334,
+        578.29291
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0031.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3caacd4fc4882d02f03271ed3be72fcb27814a53d7b2fa97d96873fbf5fb6589",
+      "cell_geometry_sha256": "1c85c0667c37824d2fd66b3a7dd42224ace1670f928063adfecc5df572aa5a68",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

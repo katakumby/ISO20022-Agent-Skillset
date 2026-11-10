@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 547,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 131,
+    "1": 86
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 121,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "47543a2d2613eb414276ada9b66f9a53d65f773ab25bfb3cee0dc0bf8267c1d3",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1060",
+      "file_page": 547,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362318181818,
+        151.29291000000012
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-1060.md",
+      "rows": 3,
+      "matrix_cells": 9,
+      "physical_cells": 9,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "726aad3f38f8a111e44ec8df97e562dd76aaaab497dd2c4c354da885cf073134",
+      "cell_geometry_sha256": "501f5f15240e8a94bbdb229f5cb351896f11c5ba53a849565276cd9758103936",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 9,
+      "independent_cells_match": 9,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1061",
+      "file_page": 547,
+      "bbox": [
+        85.03936999999996,
+        233.69291000000013,
+        510.2362318181818,
+        419.2929000000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-1061.md",
+      "rows": 8,
+      "matrix_cells": 24,
+      "physical_cells": 24,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "32d3834b51b3b9821b49f0c77a3d61649b5ecffb2c6facdccb8b74c16ace6af2",
+      "cell_geometry_sha256": "f49e98e44b89c5f7201e54caeb0da207ae43245345d4766e16235cbb6e48fd45",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 24,
+      "independent_cells_match": 24,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1062",
+      "file_page": 547,
+      "bbox": [
+        85.03936999999996,
+        489.6929100000001,
+        510.2362318181818,
+        716.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-1062.md",
+      "rows": 5,
+      "matrix_cells": 15,
+      "physical_cells": 15,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "37ed66357763f3496705d4a9a8a1c1d1e62c4dfc35c214a612b49e92d6fd5550",
+      "cell_geometry_sha256": "a6f5de7335261e956e65a0d4b594055c3e8a236e7652e99729f5480524822c33",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 15,
+      "independent_cells_match": 14,
+      "exceptions": [
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            662.4929200000001,
+            510.2362318181818,
+            716.6929100000001
+          ],
+          "stored_value": "Price is the calculated creation price of a\ndual-priced investment fund (creation-\ncancellation prices) and the highest\npossible buying price of the units before\nthe initial charge. The actual buying or",
+          "pdfium_value": "Price is the calculated creation price of a\r\ndual-priced investment fund (creation\u0002cancellation prices) and the highest\r\npossible buying price of the units before\r\nthe initial charge. The actual buying or"
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

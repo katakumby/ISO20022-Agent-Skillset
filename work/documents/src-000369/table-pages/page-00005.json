@@ -1,0 +1,132 @@
+{
+  "source_id": "src-000369",
+  "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+  "file_page": 5,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.2362333333333,
+        600.09292
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          56.6929100000001,
+          283.46457,
+          74.89291000000014
+        ],
+        [
+          85.03936999999999,
+          74.89291000000014,
+          283.46457,
+          109.09291000000019
+        ],
+        [
+          85.03936999999999,
+          109.09291000000019,
+          283.46457,
+          277.2929200000001
+        ],
+        [
+          85.03936999999999,
+          277.2929200000001,
+          283.46457,
+          425.4929300000001
+        ],
+        [
+          85.03936999999999,
+          425.4929300000001,
+          283.46457,
+          513.6929
+        ],
+        [
+          85.03936999999999,
+          513.6929,
+          283.46457,
+          551.89291
+        ],
+        [
+          85.03936999999999,
+          551.89291,
+          283.46457,
+          600.09292
+        ],
+        [
+          283.46457,
+          56.6929100000001,
+          510.2362333333333,
+          74.89291000000014
+        ],
+        [
+          283.46457,
+          74.89291000000014,
+          510.2362333333333,
+          109.09291000000019
+        ],
+        [
+          283.46457,
+          109.09291000000019,
+          510.2362333333333,
+          277.2929200000001
+        ],
+        [
+          283.46457,
+          277.2929200000001,
+          510.2362333333333,
+          425.4929300000001
+        ],
+        [
+          283.46457,
+          425.4929300000001,
+          510.2362333333333,
+          513.6929
+        ],
+        [
+          283.46457,
+          513.6929,
+          510.2362333333333,
+          551.89291
+        ],
+        [
+          283.46457,
+          551.89291,
+          510.2362333333333,
+          600.09292
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "",
+          "party or a stock exchange to provide detailed\ninformation on the requested party reference data of\nthe party defined in the system."
+        ],
+        [
+          "reda.022.001.02\nPartyModificationRequestV02",
+          "Scope:\nThe PartyModificationRequest message is sent by the\ninstructing party to the executing party to request for an\nupdate of the party reference data of a party defined in\nthe executing system.\nUsage:\nIt aims at instructing the update of an existing party by\namending its existing details or by providing additional\ndetails.\nProcessing and confirmation of the party modification\nrequest message are provided via a party status\nadvice."
+        ],
+        [
+          "reda.031.001.01\nPartyDeletionRequestV01",
+          "Scope:\nThe PartyDeletionRequest message is sent by the\ninstructing party to the executing party to request a\ndeletion of a party defined in the executing system.\nUsage:\nIt aims at instructing the deletion of an existing party by\nproviding its identification.\nProcessing of the party deletion request message is\nprovided via a party status advice."
+        ],
+        [
+          "reda.041.001.02\nPartyActivityAdviceV02",
+          "The PartyActivityReport message is sent by the\nexecuting party to an instructing party containing\ninformation about changes on party reference data.\nScope and usage:\nIt aims at informing about the changes occurred during\na business date for party reference data."
+        ],
+        [
+          "reda.042.001.01\nPartyAuditTrailQueryV01",
+          "The PartyAuditTrailQuery message is sent by an\ninstructing party to the executing party to query for the\nparty audit trail recorded in the system."
+        ],
+        [
+          "reda.043.001.02\nPartyAuditTrailReportV02",
+          "The PartyAuditTrailReport message is sent by the\nexecuting party to an instructing party to provide\ndetailed information on the requested party audit trail\nrecorded in the system."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,547 @@
+{
+  "message_id": "admi.007.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+      "definition_pages": [
+        62,
+        67
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The ReceiptAcknowledgement message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a member of the system and vice versa",
+            "labels": [
+              {
+                "label": "a member of the system",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a member of the system and vice versa"
+          },
+          "sender": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-admi.007.001.01-p62-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+          "file_pages": [
+            62
+          ],
+          "section": "scope",
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive-explicit-reverse",
+          "message_subject": "The ReceiptAcknowledgement message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member of the system and vice versa",
+            "labels": [
+              {
+                "label": "a member of the system",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a member of the system and vice versa"
+          },
+          "limitation": "The source explicitly adds “and vice versa”; the two directed claims retain this reciprocal usage.",
+          "claim_id": "src-000233-admi.007.001.01-p62-c001-d2",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+          "file_pages": [
+            62
+          ],
+          "section": "scope",
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "raw_quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the\nsystem and vice versa.",
+          "file_pages": [
+            62
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.007.001.01-p62-c001",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 50,
+              "end": 75,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member of the system",
+              "start": 81,
+              "end": 101,
+              "resolution": {
+                "label": "member of the system",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.007.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      62
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+                        "file_pages": [
+                          32
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-admi.007.001.01-p62-c001-d1",
+            "src-000233-admi.007.001.01-p62-c001-d2"
+          ]
+        },
+        {
+          "quote": "It is sent to acknowledge the receipt of one or multiple messages sent previously.",
+          "raw_quote": "It is sent to acknowledge the receipt of one or multiple messages sent\npreviously.",
+          "file_pages": [
+            62
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.007.001.01-p62-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "usage-condition-or-related-message-context",
+            "rationale": "The sentence supplies purpose, response linkage, timing, content, status or a condition. It does not independently identify an additional complete current-message sender/receiver direction. Its full literal wording remains available.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "In case of 2) the ReceiptAcknowledgement can be used as a Generic error message, which provides information about the status (e.g. rejection, acceptance) of an instruction.",
+          "raw_quote": "In case of 2) the\nReceiptAcknowledgement can be used as a Generic error message, which provides information about\nthe status (e.g. rejection, acceptance) of an instruction.",
+          "file_pages": [
+            62
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.007.001.01-p62-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Acknowledgement message is 1) an application receipt acknowledgement and 2) conveys information about the processing of the original message(s).",
+          "raw_quote": "The Acknowledgement message is 1) an application receipt acknowledgement and 2)\nconveys information about the processing of the original message(s).",
+          "file_pages": [
+            62
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        62
+      ],
+      "file_pages": [
+        62
+      ]
+    },
+    {
+      "source_id": "src-000344",
+      "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+      "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+      "definition_pages": [
+        32,
+        37
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The ReceiptAcknowledgement message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a member of the system and vice versa",
+            "labels": [
+              {
+                "label": "a member of the system",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a member of the system and vice versa"
+          },
+          "sender": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000344-admi.007.001.01-p32-c001-d1",
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+          "file_pages": [
+            32
+          ],
+          "section": "scope",
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive-explicit-reverse",
+          "message_subject": "The ReceiptAcknowledgement message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member of the system and vice versa",
+            "labels": [
+              {
+                "label": "a member of the system",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "a member of the system and vice versa"
+          },
+          "limitation": "The source explicitly adds “and vice versa”; the two directed claims retain this reciprocal usage.",
+          "claim_id": "src-000344-admi.007.001.01-p32-c001-d2",
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01",
+          "file_pages": [
+            32
+          ],
+          "section": "scope",
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the system and vice versa.",
+          "raw_quote": "The ReceiptAcknowledgement message is sent by the transaction administrator to a member of the\nsystem and vice versa.",
+          "file_pages": [
+            32
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.007.001.01-p32-c001",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 50,
+              "end": 75,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member of the system",
+              "start": 81,
+              "end": 101,
+              "resolution": {
+                "label": "member of the system",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000344-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000344-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000344-admi.007.001.01-p32-c001-d1",
+            "src-000344-admi.007.001.01-p32-c001-d2"
+          ]
+        },
+        {
+          "quote": "It is sent to acknowledge the receipt of one or multiple messages sent previously.",
+          "raw_quote": "It is sent to acknowledge the receipt of one or multiple messages sent\npreviously.",
+          "file_pages": [
+            32
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.007.001.01-p32-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "usage-condition-or-related-message-context",
+            "rationale": "The sentence supplies purpose, response linkage, timing, content, status or a condition. It does not independently identify an additional complete current-message sender/receiver direction. Its full literal wording remains available.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "In case of 2) the ReceiptAcknowledgement can be used as a Generic error message, which provides information about the status (e.g. rejection, acceptance) of an instruction.",
+          "raw_quote": "In case of 2) the\nReceiptAcknowledgement can be used as a Generic error message, which provides information about\nthe status (e.g. rejection, acceptance) of an instruction.",
+          "file_pages": [
+            32
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.007.001.01-p32-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Acknowledgement message is 1) an application receipt acknowledgement and 2) conveys information about the processing of the original message(s).",
+          "raw_quote": "The Acknowledgement message is 1) an application receipt acknowledgement and 2)\nconveys information about the processing of the original message(s).",
+          "file_pages": [
+            32
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        32
+      ],
+      "file_pages": [
+        32
+      ]
+    }
+  ]
+}

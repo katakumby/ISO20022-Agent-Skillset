@@ -1,0 +1,53 @@
+classDiagram
+direction LR
+namespace DICO_BusinessComponents {
+class ObligationFulfilment["ObligationFulfilment"] {
+<<BusinessComponent>>
+}
+class Clearing["Clearing"] {
+<<BusinessComponent>>
+}
+class ClearingSystem["ClearingSystem"]
+class SecuritiesClearing["SecuritiesClearing"] {
+<<BusinessComponent>>
+}
+class BuyIn["BuyIn"]
+class Payment["Payment"]
+class PaymentObligation["PaymentObligation"]
+class PaymentExecution["PaymentExecution"]
+class SecuritiesPartyRole["SecuritiesPartyRole"]
+class CashAccount["CashAccount"]
+class PaymentPartyRole["PaymentPartyRole"]
+class SecuritiesSettlement["SecuritiesSettlement"]
+class SecuritiesTradeExecution["SecuritiesTradeExecution"] {
+<<BusinessComponent>>
+}
+class SecuritiesPricing["SecuritiesPricing"]
+class SecuritiesQuantity["SecuritiesQuantity"]
+class SecuritiesTrade["SecuritiesTrade"]
+}
+Clearing --|> ObligationFulfilment
+Payment --|> ObligationFulfilment
+BuyIn --|> ObligationFulfilment
+SecuritiesClearing --|> Clearing
+ClearingSystem -- Clearing : + ClearingSystem / + Clearing
+SecuritiesClearing -- BuyIn : + RelatedSecuritiesClearingProcess / + BuyIn
+SecuritiesClearing -- SecuritiesSettlement : + SecuritiesClearing / + SecuritiesSettlement
+PaymentExecution -- Payment : + PaymentExecution / + Payment
+Payment -- CashAccount : - Payment / - Account
+Payment -- PaymentPartyRole : + Payment / + PartyRole
+CashAccount -- SecuritiesPartyRole : + CashAccount / + SecuritiesPartyRole
+CashAccount -- PaymentPartyRole : + CashAccount / + PaymentPartyRole
+Payment -- SecuritiesSettlement : + Payment / + RelatedSecuritiesSettlement
+Payment -- PaymentObligation : + PaymentOffset / + PaymentObligation
+PaymentObligation -- BuyIn : + CashCompensation / + PaymentSourceBuyIn
+BuyIn -- SecuritiesQuantity : + RelatedBuyIn / + SecuritiesCompensation
+BuyIn -- SecuritiesPricing : - RelatedBuyIn / + BuyInPrice
+PaymentObligation -- SecuritiesTradeExecution : + PaymentObligation / ExecutedSecuritiesTrade
+SecuritiesTradeExecution -- SecuritiesSettlement : + SecuritiesTradeExecution / + SecuritiesSettlement
+SecuritiesTradeExecution -- SecuritiesQuantity : + SecuritiesTradeExecution / + ExecutedTradeQuantity
+SecuritiesTradeExecution -- SecuritiesTrade : + TradingExecution / + RelatedTrade
+SecuritiesTradeExecution -- SecuritiesPricing : + SecuritiesTradeExecution / - DealPrice
+SecuritiesSettlement -- SecuritiesQuantity : + SecuritiesSettlement / - SettlementQuantity
+SecuritiesQuantity -- SecuritiesTrade : + TradeQuantity / + Trade
+SecuritiesTrade -- SecuritiesPricing : + SecuritiesTrade / + TradePrice

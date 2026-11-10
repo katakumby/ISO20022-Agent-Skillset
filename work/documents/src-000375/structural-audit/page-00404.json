@@ -1,0 +1,82 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 404,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 83,
+    "2": 81
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 73,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "13a8bef6616ef40f06d5f0f5c02ee93c6586ed3086ca93f3c977436edee8a39b",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        130.1204,
+        158.5237,
+        335.0169,
+        159.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        149.8929,
+        351.2015,
+        159.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 11,
+      "bbox": [
+        334.0169,
+        158.5237,
+        351.7015,
+        159.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        149.8929,
+        351.2015,
+        159.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0759",
+      "file_page": 404,
+      "bbox": [
+        85.03936999999996,
+        166.89291000000014,
+        510.236235,
+        724.8929600000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0759.md",
+      "rows": 10,
+      "matrix_cells": 30,
+      "physical_cells": 30,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "0f943b64d4b7d561788274fe228f061801fddfd8e5323aa97e6af9a02f960b1f",
+      "cell_geometry_sha256": "7dc24c2c1c5ffd0764e1ec79d252243361f0c0e9a6ce251ed7025b7563334a10",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 30,
+      "independent_cells_match": 30,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

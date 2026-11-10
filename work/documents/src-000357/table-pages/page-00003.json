@@ -1,0 +1,68 @@
+{
+  "source_id": "src-000357",
+  "source_sha256": "bba13c1299fa1a9db3c2476ee7a5f5b178abbaeb6fb01f85dcafc956dae80b57",
+  "file_page": 3,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        224.09292000000016,
+        510.2362279999999,
+        378.69291000000015
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          224.09292000000016,
+          283.46457,
+          242.2929200000002
+        ],
+        [
+          85.03936999999999,
+          242.2929200000002,
+          283.46457,
+          310.4929200000002
+        ],
+        [
+          85.03936999999999,
+          310.4929200000002,
+          283.46457,
+          378.69291000000015
+        ],
+        [
+          283.46457,
+          224.09292000000016,
+          510.2362279999999,
+          242.2929200000002
+        ],
+        [
+          283.46457,
+          242.2929200000002,
+          510.2362279999999,
+          310.4929200000002
+        ],
+        [
+          283.46457,
+          310.4929200000002,
+          510.2362279999999,
+          378.69291000000015
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "colr.001.001.02\nCollateralValueQueryV02",
+          "The CollateralValueQuery message is sent by a\nsystem member (such as a directly connected party) to\nthe system transaction administrator to query the\ncurrent available value of securities for auto\ncollateralisation for one specific or several cash\naccounts."
+        ],
+        [
+          "colr.002.001.02\nCollateralValueReportV02",
+          "The CollateralValueReport message is sent by the\nsystem transaction administrator to a system member\n(such as a directly connected party) to provide further\ninformation the current available value of securities for\nauto collateralisation for one specific or several cash\naccounts."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

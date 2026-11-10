@@ -1,0 +1,33 @@
+---
+template: false
+document_kind: "source-figure-inventory"
+review_status: "needs-review"
+domain: "securities"
+source_ids: ["src-000353"]
+source_editions: ["may-2025"]
+---
+
+# Original media and visual review inventory
+
+All extracted originals remain unchanged. EMF/WMF previews are separate derived rasterizations. The complete Word figure may also contain text or relationships outside a single asset.
+
+| Original asset | Preview | Source occurrences | Canonical reconstruction | Disposition |
+| --- | --- | --- | --- | --- |
+| [image9.png](../../../../../../../../evidence/omitted/e13930995590b06bda32c5d7.md) | [Preview](../../../../../../../../evidence/omitted/e13930995590b06bda32c5d7.md) | direct-body paragraph P124; BusinessTransactions / Collateral Reference Data creation / Confirmation Scenario; direct-body paragraph P137; BusinessTransactions / Collateral Reference Data creation / Rejection Scenario; direct-body paragraph P152; BusinessTransactions / Collateral Reference Data deletion / Confirmation Scenario; direct-body paragraph P163; BusinessTransactions / Collateral Reference Data deletion / Rejection Scenario | [Canonical](../../diagrams/curated/fig-0009.md); [Canonical](../../diagrams/curated/fig-0010.md); [Canonical](../../diagrams/curated/fig-0011.md); [Canonical](../../diagrams/curated/fig-0012.md) | component-of-composite |
+| [image10.png](../../../../../../../../evidence/omitted/c4261464f308e87c5a1484f5.md) | [Preview](../../../../../../../../evidence/omitted/c4261464f308e87c5a1484f5.md) | direct-body paragraph P124; BusinessTransactions / Collateral Reference Data creation / Confirmation Scenario; direct-body paragraph P137; BusinessTransactions / Collateral Reference Data creation / Rejection Scenario; direct-body paragraph P152; BusinessTransactions / Collateral Reference Data deletion / Confirmation Scenario; direct-body paragraph P163; BusinessTransactions / Collateral Reference Data deletion / Rejection Scenario | [Canonical](../../diagrams/curated/fig-0009.md); [Canonical](../../diagrams/curated/fig-0010.md); [Canonical](../../diagrams/curated/fig-0011.md); [Canonical](../../diagrams/curated/fig-0012.md) | component-of-composite |
+| [image11.png](../../../../../../../../evidence/omitted/228ca9c6ac1457a4a8d3b049.md) | [Preview](../../../../../../../../evidence/omitted/228ca9c6ac1457a4a8d3b049.md) | direct-body paragraph P124; BusinessTransactions / Collateral Reference Data creation / Confirmation Scenario; direct-body paragraph P137; BusinessTransactions / Collateral Reference Data creation / Rejection Scenario; direct-body paragraph P152; BusinessTransactions / Collateral Reference Data deletion / Confirmation Scenario; direct-body paragraph P163; BusinessTransactions / Collateral Reference Data deletion / Rejection Scenario | [Canonical](../../diagrams/curated/fig-0009.md); [Canonical](../../diagrams/curated/fig-0010.md); [Canonical](../../diagrams/curated/fig-0011.md); [Canonical](../../diagrams/curated/fig-0012.md) | component-of-composite |
+| [image1.emf](../../../../../../../../evidence/omitted/a10814acf978358a8742dbf6.md) | [Preview](../../../../../../../../evidence/omitted/31e45301483bf4298011a8a8.md) | direct-body paragraph P93; BusinessRoles and Participants | [Canonical](../../diagrams/curated/fig-0001.md) | substantive-diagram |
+| [image2.png](../../../../../../../../evidence/omitted/74ddc3ea62c7dfa9978a61fb.md) | [Preview](../../../../../../../../evidence/omitted/74ddc3ea62c7dfa9978a61fb.md) | direct-body paragraph P102; BusinessProcess Description | [Canonical](../../diagrams/curated/fig-0002.md) | substantive-diagram |
+| [image3.png](../../../../../../../../evidence/omitted/7ca489e91b50f867b7aa19ad.md) | [Preview](../../../../../../../../evidence/omitted/7ca489e91b50f867b7aa19ad.md) | direct-body table T10 row 2 cell 1; Description of BusinessActivities |  | preserved-legend-symbol |
+| [image4.png](../../../../../../../../evidence/omitted/7f03d71a12bc58dcd9419248.md) | [Preview](../../../../../../../../evidence/omitted/7f03d71a12bc58dcd9419248.md) | direct-body table T10 row 3 cell 1; Description of BusinessActivities |  | preserved-legend-symbol |
+| [image5.png](../../../../../../../../evidence/omitted/eaab22b28767ada4bb7e0a7c.md) | [Preview](../../../../../../../../evidence/omitted/eaab22b28767ada4bb7e0a7c.md) | direct-body table T10 row 4 cell 1; Description of BusinessActivities |  | preserved-legend-symbol |
+| [image6.png](../../../../../../../../evidence/omitted/3448973ba8fad3de57c96c8a.md) | [Preview](../../../../../../../../evidence/omitted/3448973ba8fad3de57c96c8a.md) | direct-body table T10 row 5 cell 1; Description of BusinessActivities |  | preserved-legend-symbol |
+| [image7.emf](../../../../../../../../evidence/omitted/c52211ead23b2b49383f507b.md) | [Preview](../../../../../../../../evidence/omitted/348a56b59bc0c9a19d1d5f11.md) | direct-body paragraph P112; Description of BusinessActivities / Collateral Management Reference Data / Collateral Reference Data creation; direct-body paragraph P116; Description of BusinessActivities / Collateral Management Reference Data / Collateral Reference Data deletion | [Canonical](../../diagrams/curated/fig-0007.md); [Canonical](../../diagrams/curated/fig-0007.md) | substantive-diagram |
+| [image8.png](../../../../../../../../evidence/omitted/f060ec494886b463a3c3ecc1.md) | [Preview](../../../../../../../../evidence/omitted/f060ec494886b463a3c3ecc1.md) | direct-body paragraph P124; BusinessTransactions / Collateral Reference Data creation / Confirmation Scenario; direct-body paragraph P137; BusinessTransactions / Collateral Reference Data creation / Rejection Scenario; direct-body paragraph P152; BusinessTransactions / Collateral Reference Data deletion / Confirmation Scenario; direct-body paragraph P163; BusinessTransactions / Collateral Reference Data deletion / Rejection Scenario | [Canonical](../../diagrams/curated/fig-0009.md); [Canonical](../../diagrams/curated/fig-0010.md); [Canonical](../../diagrams/curated/fig-0011.md); [Canonical](../../diagrams/curated/fig-0012.md) | component-of-composite |
+
+
+## Complete-figure requirements
+
+- Contact sheets are triage aids; readable full-size source/derived previews must be inspected before reconstructing labels or relationships.
+- w:object, w:drawing and grouped content can combine separately stored images and labels. Full-document page rendering remains required when an extracted asset omits relationships or text.
+- Unmapped media may occur in headers, footers, alternate drawings or unused package parts. No decorative exclusion is inferred.

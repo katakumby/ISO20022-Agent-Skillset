@@ -1,0 +1,14 @@
+flowchart LR
+  N1["Bank Transaction Code"]
+  N2["Account Management"]
+  N3["Open & Closing"]
+  N4["Additional Miscellaneous Credit Operations"]
+  N5["Additional Miscellaneous Debit Operations"]
+  N6["Generic Family codes"]
+  N1 --- N2
+  N2 --- N3
+  N2 --- N4
+  N2 --- N5
+  N2 --- N6
+  classDef generic fill:#dce8ee,stroke:#1b637f,color:#444,font-style:italic;
+  class N6 generic;

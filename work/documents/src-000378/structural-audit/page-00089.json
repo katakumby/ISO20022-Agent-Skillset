@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000378",
+  "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+  "file_page": 89,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 167,
+    "2": 250
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 240,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "b242b142b5044e209e5567b3b42edacdf43832d80d5b330858146f81c07d65be",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 381,
+      "bbox": [
+        338.0159,
+        526.3237,
+        474.5433,
+        527.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        517.693,
+        490.7278,
+        527.693
+      ]
+    },
+    {
+      "path_object_ordinal": 383,
+      "bbox": [
+        473.5433,
+        526.3237,
+        491.2278,
+        527.3237
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        517.693,
+        490.7278,
+        527.693
+      ]
+    },
+    {
+      "path_object_ordinal": 398,
+      "bbox": [
+        338.0159,
+        650.7238,
+        474.5433,
+        651.7238
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        642.093,
+        490.7278,
+        652.093
+      ]
+    },
+    {
+      "path_object_ordinal": 400,
+      "bbox": [
+        473.5433,
+        650.7238,
+        491.2278,
+        651.7238
+      ],
+      "link_annotation_bbox": [
+        338.5159,
+        642.093,
+        490.7278,
+        652.093
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0102",
+      "file_page": 89,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.590577,
+        446.29293000000007
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-reference-data/march-2024/documents/src-000378/tables/tbl-0102.md",
+      "rows": 18,
+      "matrix_cells": 108,
+      "physical_cells": 108,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "6084614a665e0ef8c74e131b2b18b8075777ee149f9c689a254143bc6bd321c2",
+      "cell_geometry_sha256": "43915aaf0fe5ba566ae3db0a208c7bbbc0a03b80c42209f97023638cdf7744c0",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 108,
+      "independent_cells_match": 108,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

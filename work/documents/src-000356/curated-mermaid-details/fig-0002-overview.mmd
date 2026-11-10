@@ -1,0 +1,21 @@
+flowchart TB
+ Q["Queries"] --> U["U2A"]
+ Q --> A["A2A"]
+ U --- Modes((" "))
+ A --- Modes
+ Modes --> C["CSDs"]
+ Modes --> S["Settlement Banks"]
+ Modes --> P["Payment Banks"]
+ Modes --> N["NCBs"]
+ C --- Actors((" "))
+ S --- Actors
+ P --- Actors
+ N --- Actors
+ Actors --> Ins["Instructions"]
+ Actors --> Sec["Security account"]
+ Actors --> Cash["Cash account"]
+ Actors --> Day["Settlement day"]
+ Actors --> Dyn["Dynamic data queries"]
+ Actors --> Static["Static data"]
+ style Modes fill:none,stroke:none
+ style Actors fill:none,stroke:none

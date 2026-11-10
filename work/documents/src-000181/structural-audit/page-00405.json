@@ -1,0 +1,97 @@
+{
+  "source_id": "src-000181",
+  "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+  "file_page": 405,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 121,
+    "2": 199
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 188,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "853007c6f297d90654fb5cb532ccf4e55c0651482b61fefeaab9c8fdac40cfee",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 293,
+      "bbox": [
+        144.5686,
+        465.1237,
+        202.1312,
+        466.1237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        456.4929,
+        201.6312,
+        466.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 296,
+      "bbox": [
+        130.1204,
+        483.1237,
+        292.2093,
+        484.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        474.4929,
+        308.3939,
+        484.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 298,
+      "bbox": [
+        291.2093,
+        483.1237,
+        308.8939,
+        484.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        474.4929,
+        308.3939,
+        484.4929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0722",
+      "file_page": 405,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.59057625,
+        365.49289000000016
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0722.md",
+      "rows": 14,
+      "matrix_cells": 84,
+      "physical_cells": 84,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "c0b5c49565558c6802d6bf75e70828256975d8d72cc72456c529518c2774942e",
+      "cell_geometry_sha256": "d2239e45f9747b60374003d1d31e2e0d034c6682fd8d6f728b02d8a0ecab78e8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 84,
+      "independent_cells_match": 84,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

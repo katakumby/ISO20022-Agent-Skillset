@@ -1,0 +1,532 @@
+{
+  "message_id": "camt.047.001.08",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "25 camt.047.001.08 ReturnReservationV08",
+      "definition_pages": [
+        636,
+        653
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The ReturnReservation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.047.001.08-p636-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "25 camt.047.001.08 ReturnReservationV08",
+          "file_pages": [
+            636
+          ],
+          "section": "scope",
+          "quote": "The ReturnReservation message is sent by the transaction administrator to a member.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "initiator",
+          "pattern": "initiated-by",
+          "message_subject": "The ReturnReservation message can be sent as a response to a related Get Reservation message (pull mode) or",
+          "message_target": "current-message",
+          "initiator": {
+            "expression": "the transaction administrator (push mode)",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the transaction administrator (push mode)"
+          },
+          "claim_id": "src-000015-camt.047.001.08-p636-c003-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "25 camt.047.001.08 ReturnReservationV08",
+          "file_pages": [
+            636
+          ],
+          "section": "scope",
+          "quote": "The ReturnReservation message can be sent as a response to a related Get Reservation message (pull mode) or initiated by the transaction administrator (push mode).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "can",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "reservations information",
+          "message_target": "related-or-unspecified-message",
+          "receiver": {
+            "expression": "the member",
+            "labels": [
+              {
+                "label": "the member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "The transaction administrator",
+            "labels": [
+              {
+                "label": "The transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.047.001.08-p636-c005-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "25 camt.047.001.08 ReturnReservationV08",
+          "file_pages": [
+            636
+          ],
+          "section": "usage",
+          "quote": "The transaction administrator will send reservations information to the member based on the following elements:",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The ReturnReservation message is sent by the transaction administrator to a member.",
+          "raw_quote": "Scope\nThe ReturnReservation message is sent by the transaction administrator to a member.",
+          "file_pages": [
+            636
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.047.001.08-p636-c001",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 45,
+              "end": 70,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 76,
+              "end": 82,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.047.001.08-p636-c001-d1"
+          ]
+        },
+        {
+          "quote": "It is used to provide information on the details of one or more reservation facilities set by the member and managed by the transaction administrator.",
+          "raw_quote": "It is used to provide information on the details of one or more reservation facilities set by the member\nand managed by the transaction administrator.",
+          "file_pages": [
+            636
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.047.001.08-p636-c002",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 98,
+              "end": 104,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 124,
+              "end": 149,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "managed",
+              "voice": "passive",
+              "limitation": "The source explicitly identifies the actor of this passive clause. The object, scope and conditions remain in the source sentence."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The ReturnReservation message can be sent as a response to a related Get Reservation message (pull mode) or initiated by the transaction administrator (push mode).",
+          "raw_quote": "The ReturnReservation message can be sent as a response to a related Get Reservation message\n(pull mode) or initiated by the transaction administrator (push mode).",
+          "file_pages": [
+            636
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.047.001.08-p636-c003",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 125,
+              "end": 150,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "initiated",
+              "voice": "passive",
+              "limitation": "The source explicitly identifies the actor of this passive clause. The object, scope and conditions remain in the source sentence."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000015-camt.047.001.08-p636-c003-d1"
+          ]
+        },
+        {
+          "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about the reservations facilities that the transaction administrator manages for the member.",
+          "raw_quote": "Usage\nAt any time during the operating hours of the system, the member can query the transaction\nadministrator to get information about the reservations facilities that the transaction administrator\nmanages for the member.",
+          "file_pages": [
+            636
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.047.001.08-p636-c004",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 58,
+              "end": 64,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 79,
+              "end": 104,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 167,
+              "end": 192,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 209,
+              "end": 215,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "manages",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The transaction administrator will send reservations information to the member based on the following elements:",
+          "raw_quote": "The transaction administrator will send reservations information to the member based on the following\nelements:",
+          "file_pages": [
+            636
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.047.001.08-p636-c005",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 4,
+              "end": 29,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "member",
+              "start": 72,
+              "end": 78,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000015-camt.047.001.08-p636-c005-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The push of information can take place either at prearranged times or as a warning or alarm when a problem has occurred.",
+          "raw_quote": "The push of information can take\nplace either at prearranged times or as a warning or alarm when a problem has occurred.",
+          "file_pages": [
+            636
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "identification of the system",
+          "raw_quote": "identification of the system",
+          "file_pages": [
+            636
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "identification of the account",
+          "raw_quote": "identification of the account",
+          "file_pages": [
+            636
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "status of the reservation (default and/or current )",
+          "raw_quote": "status of the reservation (default and/or current )",
+          "file_pages": [
+            636
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "type of reservation.",
+          "raw_quote": "type of reservation.",
+          "file_pages": [
+            636
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        636
+      ],
+      "file_pages": [
+        636
+      ]
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+{
+  "message_id": "admi.006.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "3 admi.006.001.01 ResendRequestV01",
+      "definition_pages": [
+        57,
+        61
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a ResendRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the Central System (such as the T2S platform)",
+            "labels": [
+              {
+                "label": "the Central System",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-central-system.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the Central System (such as the T2S platform)"
+          },
+          "sender": {
+            "expression": "A system member or any parties authorised by them",
+            "labels": [
+              {
+                "label": "A system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-admi.006.001.01-p57-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "3 admi.006.001.01 ResendRequestV01",
+          "file_pages": [
+            57
+          ],
+          "section": "scope",
+          "quote": "A system member or any parties authorised by them send a ResendRequest message to the Central System (such as the T2S platform).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A system member or any parties authorised by them send a ResendRequest message to the Central System (such as the T2S platform).",
+          "raw_quote": "A system member or any parties authorised by them send a ResendRequest message to the Central\nSystem (such as the T2S platform).",
+          "file_pages": [
+            57
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.006.001.01-p57-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 2,
+              "end": 15,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "any parties authorised by them",
+              "start": 19,
+              "end": 49,
+              "resolution": {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Central System",
+              "start": 86,
+              "end": 100,
+              "resolution": {
+                "label": "Central System",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-central-system.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000233-admi.006.001.01-p57-c001-d1"
+          ]
+        },
+        {
+          "quote": "The purpose of this request is, that the requesting party wants to receive the \"original\" message once again.",
+          "raw_quote": "The purpose of this request is, that the requesting party wants to\nreceive the \"original\" message once again.",
+          "file_pages": [
+            57
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.006.001.01-p57-c002",
+          "mentions": [
+            {
+              "label": "requesting party",
+              "start": 41,
+              "end": 57,
+              "resolution": {
+                "label": "requesting party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-requesting-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-requesting-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "requesting party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-requesting-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-requesting-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "admi.006.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      57
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000344",
+                        "heading": "3 admi.006.001.01 ResendRequestV01",
+                        "file_pages": [
+                          27
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              "action_verb": "wants to receive",
+              "voice": "source-reviewed-literal-clause",
+              "limitation": "The desired object is the original message again; the requesting party is not asserted as receiver of the current ResendRequest.",
+              "clause_review_date": "2026-11-09"
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "source-explicit-role-action",
+            "rationale": "The actor and action are named in this sentence; the action object and conditions are retained and are not automatically the indexed message.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "This might be caused through technical problems on the receiving side (message could not be received or processed or is missing in the message sequencing) or for archiving purposes.",
+          "raw_quote": "This might be caused through technical problems on the\nreceiving side (message could not be received or processed or is missing in the message sequencing)\nor for archiving purposes.",
+          "file_pages": [
+            57
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-admi.006.001.01-p57-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        57
+      ],
+      "file_pages": [
+        57
+      ]
+    },
+    {
+      "source_id": "src-000344",
+      "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+      "heading": "3 admi.006.001.01 ResendRequestV01",
+      "definition_pages": [
+        27,
+        31
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a ResendRequest message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the Central System (such as the T2S platform)",
+            "labels": [
+              {
+                "label": "the Central System",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-central-system.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the Central System (such as the T2S platform)"
+          },
+          "sender": {
+            "expression": "A system member or any parties authorised by them",
+            "labels": [
+              {
+                "label": "A system member",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              },
+              {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000344-admi.006.001.01-p27-c001-d1",
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "heading": "3 admi.006.001.01 ResendRequestV01",
+          "file_pages": [
+            27
+          ],
+          "section": "scope",
+          "quote": "A system member or any parties authorised by them send a ResendRequest message to the Central System (such as the T2S platform).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or",
+            "such as"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "A system member or any parties authorised by them send a ResendRequest message to the Central System (such as the T2S platform).",
+          "raw_quote": "A system member or any parties authorised by them send a ResendRequest message to the Central\nSystem (such as the T2S platform).",
+          "file_pages": [
+            27
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.006.001.01-p27-c001",
+          "mentions": [
+            {
+              "label": "system member",
+              "start": 2,
+              "end": 15,
+              "resolution": {
+                "label": "system member",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000343-system-member",
+                  "path": "shared/reference/participants/participant-src-000343-system-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "any parties authorised by them",
+              "start": 19,
+              "end": 49,
+              "resolution": {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "Central System",
+              "start": 86,
+              "end": 100,
+              "resolution": {
+                "label": "Central System",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-central-system",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-central-system.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "any parties authorised by them",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-party-authorised-by-system-member",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-party-authorised-by-system-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "send",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000344-admi.006.001.01-p27-c001-d1"
+          ]
+        },
+        {
+          "quote": "The purpose of this request is, that the requesting party wants to receive the \"original\" message once again.",
+          "raw_quote": "The purpose of this request is, that the requesting party wants to\nreceive the \"original\" message once again.",
+          "file_pages": [
+            27
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.006.001.01-p27-c002",
+          "mentions": [
+            {
+              "label": "requesting party",
+              "start": 41,
+              "end": 57,
+              "resolution": {
+                "label": "requesting party",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-requesting-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "requesting party",
+                "scope_source_id": "src-000344",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000344-requesting-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000344-requesting-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "wants to receive",
+              "voice": "source-reviewed-literal-clause",
+              "limitation": "The desired object is the original message again; the requesting party is not asserted as receiver of the current ResendRequest.",
+              "clause_review_date": "2026-11-09"
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "source-explicit-role-action",
+            "rationale": "The actor and action are named in this sentence; the action object and conditions are retained and are not automatically the indexed message.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "This might be caused through technical problems on the receiving side (message could not be received or processed or is missing in the message sequencing) or for archiving purposes.",
+          "raw_quote": "This might be caused through technical problems on the\nreceiving side (message could not be received or processed or is missing in the message sequencing)\nor for archiving purposes.",
+          "file_pages": [
+            27
+          ],
+          "section": "scope",
+          "evidence_id": "src-000344-admi.006.001.01-p27-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        27
+      ],
+      "file_pages": [
+        27
+      ]
+    }
+  ]
+}

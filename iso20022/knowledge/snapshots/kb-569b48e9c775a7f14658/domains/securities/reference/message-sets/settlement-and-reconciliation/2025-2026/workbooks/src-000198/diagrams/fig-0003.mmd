@@ -1,0 +1,48 @@
+classDiagram
+  direction LR
+  class SecuritiesPricing
+  class Issuance
+  class AssetClassification
+  class Asset
+  class Market
+  class TradingMarket
+  class Derivative
+  class Security
+  class CouponAttached
+  class SecuritiesStatus
+  class Future
+  class Swaps
+  class Debt
+  class Warrant
+  class SecuritiesIdentification
+  class DateTimePeriod
+  class InterestCalculation
+  class Price
+  class Option
+  class SecuritiesConversion
+  SecuritiesPricing -- Issuance : - OriginalIssueDiscount
+  SecuritiesPricing -- Price
+  SecuritiesPricing -- Derivative : + Tick / + RelatedFuture
+  SecuritiesPricing -- Warrant : - SubscriptionPrice / + RelatedWarrant
+  AssetClassification -- Asset
+  Asset -- Issuance : + IssuedAsset
+  Derivative --|> Asset
+  Security --|> Asset
+  TradingMarket --|> Market
+  TradingMarket -- Issuance : - IssuePlace
+  Security -- TradingMarket : + TradedSecurity
+  Security -- TradingMarket : + ListedSecurity / + PlaceOfListing
+  Security -- CouponAttached
+  Security -- SecuritiesStatus
+  Future --|> Derivative
+  Swaps --|> Derivative
+  Option --|> Derivative
+  Debt --|> Security
+  Warrant --|> Security
+  Security -- SecuritiesIdentification : + IdentifiedSecurity / + Identification
+  Issuance -- DateTimePeriod : + SubscriptionPeriod
+  Debt -- InterestCalculation : + DebtInstrument / + NextInterest
+  InterestCalculation -- DateTimePeriod : + InterestPeriod / + RelatedInterestCalculation
+  DateTimePeriod -- SecuritiesConversion : - ConversionPeriod
+  SecuritiesConversion -- Option : + RelatedOption / + OptionConversionInformation
+  Option -- Price : + StrikePrice

@@ -1,0 +1,174 @@
+classDiagram
+direction TB
+class SecuritiesIdentification {
+<<BusinessComponent>>
+}
+class DateTimePeriod {
+<<BusinessComponent>>
+}
+class Status {
+<<BusinessComponent>>
+}
+class TradingMarket {
+<<BusinessComponent>>
+}
+class Issuance {
+<<BusinessComponent>>
+}
+class PlaceOfSettlement {
+<<BusinessComponent>>
+}
+class Market {
+<<BusinessComponent>>
+}
+class PartyIdentificationInformation {
+<<BusinessComponent>>
+}
+class Party {
+<<BusinessComponent>>
+}
+class OrganisationIdentification {
+<<BusinessComponent>>
+}
+class Organisation {
+<<BusinessComponent>>
+}
+class Person {
+<<BusinessComponent>>
+}
+class FinancialInstitution {
+<<BusinessComponent>>
+}
+class NonFinancialInstitution {
+<<BusinessComponent>>
+}
+class PersonIdentification {
+<<BusinessComponent>>
+}
+class Security {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity {
+<<BusinessComponent>>
+}
+class Debt {
+<<BusinessComponent>>
+}
+class MasterAgreement {
+<<BusinessComponent>>
+}
+class Obligation {
+<<BusinessComponent>>
+}
+class TradeIdentification {
+<<BusinessComponent>>
+}
+class Trade {
+<<BusinessComponent>>
+}
+class System {
+<<BusinessComponent>>
+}
+class ClearingSystem {
+<<BusinessComponent>>
+}
+class TradePartyRole {
+<<BusinessComponent>>
+}
+class SecuritiesTradePartyRole {
+<<BusinessComponent>>
+}
+class SecuritiesTrade {
+<<BusinessComponent>>
+}
+class Asset {
+<<BusinessComponent>>
+}
+class AssetClassification {
+<<BusinessComponent>>
+}
+class Scheme {
+<<BusinessComponent>>
+}
+class Derivative {
+<<BusinessComponent>>
+}
+class Option {
+<<BusinessComponent>>
+}
+class Swaps {
+<<BusinessComponent>>
+}
+class SecuritiesPricing {
+<<BusinessComponent>>
+}
+class Index {
+<<BusinessComponent>>
+}
+class AssetHolding {
+<<BusinessComponent>>
+}
+class Interest {
+<<BusinessComponent>>
+}
+class InterestCalculation {
+<<BusinessComponent>>
+}
+class Spread {
+<<BusinessComponent>>
+}
+class Curve {
+<<BusinessComponent>>
+}
+SecuritiesIdentification -- SecuritiesIdentification : + PrimeIdentification / + RelatedOtherIdentification
+SecuritiesIdentification -- TradingMarket : + ListedSecurityTradingIdentification / + ApplicableTradingMarket
+SecuritiesIdentification -- Security : + Identification / + IdentifiedSecurity
+TradingMarket -- Issuance : - IssuePlace
+TradingMarket -- PlaceOfSettlement : - SettlementMarket / - RelatedPlaceOfSettlement
+DateTimePeriod -- Status : + ValidityTime
+DateTimePeriod -- Issuance : + SubscriptionPeriod
+DateTimePeriod -- System : - VersionValidityPeriod
+Market -- Trade
+Market -- PartyIdentificationInformation : - IdentifiedMarket / - Identification
+PartyIdentificationInformation -- Party : + Identification / + IdentifiedParty
+OrganisationIdentification --|> PartyIdentificationInformation
+OrganisationIdentification -- Organisation
+Organisation --|> Party
+Person --|> Party
+FinancialInstitution --|> Organisation
+NonFinancialInstitution --|> Organisation
+Person -- PersonIdentification
+Party -- Security : - CloseLink / - CloseLinkSecurity
+Issuance -- SecuritiesQuantity : + RelatedIssuance / + Minimum
+Issuance -- SecuritiesQuantity : - IssueNominalAmount
+MasterAgreement -- Trade : + GoverningDocument / + GovernedTrades
+Obligation -- Trade
+TradeIdentification -- Trade
+System -- Trade
+ClearingSystem --|> System
+Trade -- Asset
+Trade -- TradePartyRole
+SecuritiesTrade --|> Trade
+SecuritiesTradePartyRole --|> TradePartyRole
+SecuritiesTradePartyRole -- SecuritiesTrade : + PartyRole
+SecuritiesQuantity -- SecuritiesTrade : + TradeQuantity / + Trade
+SecuritiesQuantity -- Security : + SecurityIdentification
+Debt --|> Security
+Debt -- SecuritiesQuantity : + MinimumDenominationDebt / - MinimumDenomination
+Debt -- SecuritiesQuantity : + MinimumIncrementDebt / - MinimumIncrement
+Debt -- InterestCalculation : + DebtInstrument / + NextInterest
+InterestCalculation -- Interest
+Interest -- AssetHolding : + RelatedAssetHolding
+AssetHolding -- Asset : + AssetValue
+Asset -- AssetClassification
+AssetClassification -- Scheme : - AssetClassScheme
+Derivative --|> Asset
+Derivative -- Asset : + UnderlyingAsset
+Option --|> Derivative
+Swaps --|> Derivative
+Derivative -- SecuritiesPricing : + RelatedFuture / + Tick
+SecuritiesPricing -- Index
+Index -- Spread
+Spread -- Security : + BenchmarkSecurity
+Spread -- InterestCalculation : - RelatedInterest
+Spread -- Curve : + BenchmarkCurve

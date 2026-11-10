@@ -1,0 +1,64 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 8,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 33,
+    "1": 56
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 27,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "570a51e7f13e9b0beb65407b071386bbfb9cc112b205b45b7ee7b244ed8475f5",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0002",
+      "file_page": 8,
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.23623142857144,
+        729.6929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-0002.md",
+      "rows": 5,
+      "matrix_cells": 10,
+      "physical_cells": 10,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "19875c07b3f65b1bcf40aade36abccbe3d0bd3e3eb6abfa0d9b859a9929a97b1",
+      "cell_geometry_sha256": "3f9ff542111f32b5b066e65be0c3e64112077be3eff511196077ec766d88f924",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 10,
+      "independent_cells_match": 9,
+      "exceptions": [
+        {
+          "row": 4,
+          "column": 2,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            283.46457,
+            397.2929100000001,
+            510.23623142857144,
+            565.4929000000001
+          ],
+          "stored_value": "The IntraPositionMovementConfirmation is sent by an\naccount servicer to an account owner to confirm the\nmovement of securities within its holding from one sub-\nbalance to another, for example, blocking of securities.\nThe account servicer/owner relationship may be:\n- a central securities depository or another settlement\nmarket infrastructure acting on behalf of its participant\n- an agent (sub-custodian) acting on behalf of its global\ncustodian customer, or\n- a custodian acting on behalf of an investment\nmanagement institution or a broker/dealer.",
+          "pdfium_value": "The IntraPositionMovementConfirmation is sent by an\r\naccount servicer to an account owner to confirm the\r\nmovement of securities within its holding from one sub\u0002balance to another, for example, blocking of securities.\r\nThe account servicer/owner relationship may be:\r\n- a central securities depository or another settlement\r\nmarket infrastructure acting on behalf of its participant\r\n- an agent (sub-custodian) acting on behalf of its global\r\ncustodian customer, or\r\n- a custodian acting on behalf of an investment\r\nmanagement institution or a broker/dealer."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

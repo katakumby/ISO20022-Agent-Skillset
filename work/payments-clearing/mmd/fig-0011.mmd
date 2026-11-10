@@ -1,0 +1,66 @@
+flowchart TB
+subgraph laneC["Creditor"]
+startC(("Settled Direct Debit"))
+requestC["Request Reversal of the Direct Debit Payment Order"]
+rejectC["Process Rejected Request for Reversal"]
+correctQ{"correction possible?"}
+endRejectC((("Rejected request")))
+reconcileC["Reconcile Debit Entry"]
+endC((("Reversed Direct Debit")))
+end
+subgraph laneD["Debtor"]
+reconcileD["Reconcile Reversal"]
+endD((("Reversed Direct Debit")))
+end
+subgraph laneCA["Creditor Agent"]
+acceptCA{"accept request for reversal?"}
+rejectCA["Reject Request for Reversal"]
+processCA["Process Request for Reversal and submit Reversal to the Clearing"]
+rejectB2B["Process B2B Rejected Reversal"]
+formatQ{"formatting error?"}
+reconcileCA["Reconcile Debit Entry and Inform Creditor"]
+end
+subgraph laneCL["Clearing Agent"]
+acceptCL{"accept?"}
+rejectCL["Reject Reversal"]
+clear["Clear Direct Debit Reversal"]
+end
+subgraph laneS["Settlement Agent"]
+settle["Settle DD Reversal Proceeds"]
+end
+subgraph laneDA["Debtor Agent"]
+acceptDA{"accept?"}
+returnDA["Return DD Reversal"]
+endReturn((("Returned Credit")))
+processDA["Process DD Reversal and Inform Debtor"]
+reconcileDA["Reconcile DD Reversal Entry"]
+endDA((("Reconciled Credit")))
+end
+startC --> requestC
+requestC --> acceptCA
+acceptCA --> |"No"| rejectCA
+rejectCA --> rejectC
+rejectC --> correctQ
+correctQ --> |"Yes"| requestC
+correctQ --> |"No"| endRejectC
+acceptCA --> |"Yes"| processCA
+processCA --> acceptCL
+acceptCL --> |"No"| rejectCL
+rejectCL --> rejectB2B
+rejectB2B --> formatQ
+formatQ --> |"Yes"| processCA
+formatQ --> |"No"| rejectCA
+acceptCL --> |"Yes"| clear
+clear --> settle
+settle --> reconcileCA
+reconcileCA --> reconcileC
+reconcileC --> endC
+clear --> acceptDA
+acceptDA --> |"No"| returnDA
+returnDA --> endReturn
+acceptDA --> |"Yes"| processDA
+processDA --> reconcileD
+reconcileD --> endD
+settle --> reconcileDA
+reconcileDA --> endDA
+style startC fill:#222,stroke:#222,color:#fff

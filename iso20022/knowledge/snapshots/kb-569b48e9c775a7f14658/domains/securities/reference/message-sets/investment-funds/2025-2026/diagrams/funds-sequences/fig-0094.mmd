@@ -1,0 +1,11 @@
+%%{init: {"sequence": {"mirrorActors": false}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000", "actorLineColor": "#000000", "signalColor": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+  participant A as Instructing Party
+  participant M as Intermediary
+  participant B as Executing Party
+  A-)M: SwitchOrder
+  M-)B: SwitchOrder
+  B-)M: SwitchOrderConfirmation
+  M-)A: SwitchOrderConfirmation
+  B-)M: SwitchOrderConfirmation #60;AmdmntInd#62; true
+  M-)A: SwitchOrderConfirmation #60;AmdmntInd#62; true

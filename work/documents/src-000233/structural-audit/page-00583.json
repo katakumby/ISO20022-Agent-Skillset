@@ -1,0 +1,97 @@
+{
+  "source_id": "src-000233",
+  "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+  "file_page": 583,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 158,
+    "2": 251
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 240,
+    "link-annotation-underline": 3,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "991b43af7ba13585602f3ce9895d7f316e91caf74d19886d9fc85fee35c5edaa",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 387,
+      "bbox": [
+        130.1204,
+        558.1237,
+        229.387,
+        559.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        549.493,
+        251.1331,
+        559.493
+      ]
+    },
+    {
+      "path_object_ordinal": 389,
+      "bbox": [
+        228.387,
+        558.1237,
+        251.6331,
+        559.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        549.493,
+        251.1331,
+        559.493
+      ]
+    },
+    {
+      "path_object_ordinal": 397,
+      "bbox": [
+        144.5686,
+        638.3237,
+        326.1058,
+        639.3237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        629.6929,
+        325.6058,
+        639.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0921",
+      "file_page": 583,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.590577,
+        480.29296000000005
+      ],
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/documents/src-000233/tables/tbl-0921.md",
+      "rows": 18,
+      "matrix_cells": 108,
+      "physical_cells": 108,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "22be0799e3481c1a2f6aa44ce8d9df97df800e9fa6be5ee6df120cff5305c993",
+      "cell_geometry_sha256": "c7c97f51db92d9f32b6ca1838c1deaaa55dfd91f47639ea0f28dfc301676b458",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 108,
+      "independent_cells_match": 108,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

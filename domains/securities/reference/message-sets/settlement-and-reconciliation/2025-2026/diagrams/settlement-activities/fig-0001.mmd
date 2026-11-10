@@ -1,0 +1,37 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart LR
+  Customer["Customer"]
+  Custodian["Custodian"]
+  Sub["Sub-Custodian<br/>Account Owner 3"]
+  Broker["Broker"]
+  Agent["Broker's Local Agent<br/>Account Owner 2"]
+  CSD["Central Securities Depository<br/>Account Servicer 3 / Account Servicer 2"]
+  Customer -->|Receipt or Delivery instruction| Custodian
+  Custodian -->|Settlement Status and Processing Advice| Customer
+  Custodian -->|Settlement Confirmation| Customer
+  Custodian -->|Centrally Generated Transaction Advice| Customer
+  Custodian -->|Allegement| Customer
+  Custodian -->|Receipt or Delivery instruction| Sub
+  Sub -->|Settlement Status and Processing Advice| Custodian
+  Sub -->|Settlement Confirmation| Custodian
+  Sub -->|Centrally Generated Transaction Advice| Custodian
+  Sub -->|Allegement| Custodian
+  Broker -->|Receipt or Delivery instruction| Agent
+  Agent -->|Settlement Status and Processing Advice| Broker
+  Agent -->|Settlement Confirmation| Broker
+  Agent -->|Centrally Generated Transaction Advice| Broker
+  Agent -->|Allegement| Broker
+  Sub -->|Receipt or Delivery instruction| CSD
+  Sub -->|Transaction Processing Command| CSD
+  CSD -->|Settlement Status and Processing Advice| Sub
+  CSD -->|Settlement Confirmation| Sub
+  CSD -->|Centrally Generated Transaction Advice| Sub
+  CSD -->|Allegement| Sub
+  Agent -->|Receipt or Delivery instruction| CSD
+  Agent -->|Transaction Processing Command| CSD
+  CSD -->|Settlement Status and Processing Advice| Agent
+  CSD -->|Settlement Confirmation| Agent
+  CSD -->|Centrally Generated Transaction Advice| Agent
+  CSD -->|Allegement| Agent
+  Sub -.-|Account Owner 3 / Account Servicer 3| CSD
+  Agent -.-|Account Owner 2 / Account Servicer 2| CSD

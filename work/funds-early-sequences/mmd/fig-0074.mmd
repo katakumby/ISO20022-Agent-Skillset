@@ -1,0 +1,15 @@
+sequenceDiagram
+participant I1 as Instructing Party 1
+participant I2 as Instructing Party 2
+participant M as Intermediary
+participant E as Executing Party
+I1->>M: SubscriptionOrder
+I2->>M: SubscriptionOrder
+M->>E: SubscriptionBulkOrder
+I1->>M: SubscriptionOrderCancellationRequest
+M->>E: SubscriptionBulkOrderCancellationRequest
+E->>M: OrderCancellationStatusReport (CAND)
+M->>I1: OrderCancellationStatusReport (CAND)
+M->>E: SubscriptionBulkOrder
+E->>M: SubscriptionBulkOrderConfirmation
+M->>I2: SubscriptionOrderConfirmation

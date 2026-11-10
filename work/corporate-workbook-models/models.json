@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "fig-0002",
+    "title": "CorporateActionEvent conceptual context",
+    "sheet": "CorporateActionEvent",
+    "nodes": [
+      {
+        "id": "CorporateActionEventRegistration",
+        "name": "CorporateActionEventRegistration",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SuspensionPeriod",
+        "name": "SuspensionPeriod",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "BiddingConditions",
+        "name": "BiddingConditions",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Lottery",
+        "name": "Lottery",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionFeesAndCharges",
+        "name": "CorporateActionFeesAndCharges",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ClassAction",
+        "name": "ClassAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionEvent",
+        "name": "CorporateActionEvent",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionStatus",
+        "name": "CorporateActionStatus",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesModification",
+        "name": "SecuritiesModification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "MarketClaim",
+        "name": "MarketClaim",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CurrencyExchange",
+        "name": "CurrencyExchange",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionPrice",
+        "name": "CorporateActionPrice",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Tax",
+        "name": "Tax",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Meeting",
+        "name": "Meeting",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ContactPoint",
+        "name": "ContactPoint",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionElection",
+        "name": "CorporateActionElection",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionProtectProcess",
+        "name": "CorporateActionProtectProcess",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Security",
+        "name": "Security",
+        "package": "Securities",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "Issuance",
+        "name": "Issuance",
+        "package": "Securities",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "CorporateActionEvent",
+        "b": "CorporateActionEventRegistration",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SuspensionPeriod",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "BiddingConditions",
+        "label": "+ Event",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "Lottery",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "CorporateActionFeesAndCharges",
+        "label": "+ CorporateActionCharge",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "Issuance",
+        "label": "- EventInformation",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "CorporateActionStatus",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "ContactPoint",
+        "label": "+ DocumentationLocation",
+        "kind": "--"
+      },
+      {
+        "a": "ContactPoint",
+        "b": "Meeting",
+        "label": "+ MeetingLocation / + ContactPointForMeeting",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "Meeting",
+        "label": "+ RelatedMeeting",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "Tax",
+        "label": "- TransactionTax",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SecuritiesQuantity",
+        "label": "- SecuritiesQuantitySought",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SecuritiesQuantity",
+        "label": "- FractionalQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SecuritiesQuantity",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "CorporateActionPrice",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "CurrencyExchange",
+        "label": "+ ExchangeRate",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "MarketClaim",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "Security",
+        "label": "+ UnderlyingSecurity",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SecuritiesModification",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "ClassAction",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesModification",
+        "b": "Security",
+        "label": "+ Modification / + NewSecurityReferenceData",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesQuantity",
+        "b": "CorporateActionElection",
+        "label": "+ Quantity",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionElection",
+        "b": "CorporateActionProtectProcess",
+        "label": "- RelatedCorporateActionElection / - ProtectProcess",
+        "kind": "--"
+      }
+    ],
+    "meaning": "CorporateActionEvent is associated with event registration, suspension/bidding/lottery conditions, fees, issuance, status, documentation, meetings, tax, securities quantities, prices, exchange rate, claims, underlying security, modifications and class actions. Three distinct association lines connect the event and SecuritiesQuantity: SecuritiesQuantitySought, FractionalQuantity and an unlabelled line. Quantity also connects to election, which connects to protect processing. The figure shows no participant swimlane or business-message exchange direction.",
+    "limitations": [],
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass CorporateActionEventRegistration[\"CorporateActionEventRegistration\"] {\n<<BusinessComponent>>\n}\nclass SuspensionPeriod[\"SuspensionPeriod\"] {\n<<BusinessComponent>>\n}\nclass BiddingConditions[\"BiddingConditions\"] {\n<<BusinessComponent>>\n}\nclass Lottery[\"Lottery\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionFeesAndCharges[\"CorporateActionFeesAndCharges\"] {\n<<BusinessComponent>>\n}\nclass ClassAction[\"ClassAction\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionEvent[\"CorporateActionEvent\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionStatus[\"CorporateActionStatus\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesModification[\"SecuritiesModification\"] {\n<<BusinessComponent>>\n}\nclass MarketClaim[\"MarketClaim\"] {\n<<BusinessComponent>>\n}\nclass CurrencyExchange[\"CurrencyExchange\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionPrice[\"CorporateActionPrice\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesQuantity[\"SecuritiesQuantity\"] {\n<<BusinessComponent>>\n}\nclass Tax[\"Tax\"] {\n<<BusinessComponent>>\n}\nclass Meeting[\"Meeting\"] {\n<<BusinessComponent>>\n}\nclass ContactPoint[\"ContactPoint\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionElection[\"CorporateActionElection\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionProtectProcess[\"CorporateActionProtectProcess\"] {\n<<BusinessComponent>>\n}\n}\nnamespace Securities {\nclass Security[\"Security\"] {\n<<BusinessComponent>>\n}\nclass Issuance[\"Issuance\"] {\n<<BusinessComponent>>\n}\n}\nCorporateActionEvent -- CorporateActionEventRegistration\nCorporateActionEvent -- SuspensionPeriod\nCorporateActionEvent -- BiddingConditions : + Event\nCorporateActionEvent -- Lottery\nCorporateActionEvent -- CorporateActionFeesAndCharges : + CorporateActionCharge\nCorporateActionEvent -- Issuance : - EventInformation\nCorporateActionEvent -- CorporateActionStatus\nCorporateActionEvent -- ContactPoint : + DocumentationLocation\nContactPoint -- Meeting : + MeetingLocation / + ContactPointForMeeting\nCorporateActionEvent -- Meeting : + RelatedMeeting\nCorporateActionEvent -- Tax : - TransactionTax\nCorporateActionEvent -- SecuritiesQuantity : - SecuritiesQuantitySought\nCorporateActionEvent -- SecuritiesQuantity : - FractionalQuantity\nCorporateActionEvent -- SecuritiesQuantity\nCorporateActionEvent -- CorporateActionPrice\nCorporateActionEvent -- CurrencyExchange : + ExchangeRate\nCorporateActionEvent -- MarketClaim\nCorporateActionEvent -- Security : + UnderlyingSecurity\nCorporateActionEvent -- SecuritiesModification\nCorporateActionEvent -- ClassAction\nSecuritiesModification -- Security : + Modification / + NewSecurityReferenceData\nSecuritiesQuantity -- CorporateActionElection : + Quantity\nCorporateActionElection -- CorporateActionProtectProcess : - RelatedCorporateActionElection / - ProtectProcess\n",
+    "source": {
+      "drawing_part": "xl/drawings/drawing2.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>47625</ns0:colOff><ns0:row>3</ns0:row><ns0:rowOff>171450</ns0:rowOff></ns0:from><ns0:to><ns0:col>19</ns0:col><ns0:colOff>476250</ns0:colOff><ns0:row>55</ns0:row><ns0:rowOff>9525</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{D6746213-9DC4-4BD5-AE7C-FDB524803002}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"47625\" y=\"774700\" /><ns1:ext cx=\"12614275\" cy=\"9413875\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 47625,
+        "row": 3,
+        "rowOff": 171450
+      },
+      "from_cell": "A4",
+      "to": {
+        "col": 19,
+        "colOff": 476250,
+        "row": 55,
+        "rowOff": 9525
+      },
+      "to_cell": "T56",
+      "figure_id": "fig-0002",
+      "sheet": "CorporateActionEvent",
+      "media_part": "xl/media/image2.png",
+      "asset": "domains/securities/assets/src-000081/media/image2.png",
+      "sha256": "8039d5ad0d76b4846231a7f0a460e754ba7528fd123f344ac002461e5aceeea7",
+      "page": "domains/securities/reference/message-sets/corporate-actions/2025-2026/workbooks/src-000081/diagrams/fig-0002.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000081-fig-0002",
+    "source_id": "src-000081",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Visually compared original complete source figure with final rendered PNG, checking every entity occurrence, package/stereotype, association endpoint, arrow type, inheritance direction and literal label. All23/26/14/16 lines respectively reconciled in explicit relationship registers."
+    }
+  },
+  {
+    "id": "fig-0003",
+    "title": "Corporate-action services and entitlements",
+    "sheet": "CorporateActionServices",
+    "nodes": [
+      {
+        "id": "SecuritiesModification",
+        "name": "SecuritiesModification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionEvent",
+        "name": "CorporateActionEvent",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "MandatoryCorporateAction",
+        "name": "MandatoryCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "VoluntaryCorporateAction",
+        "name": "VoluntaryCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ChoiceCorporateAction",
+        "name": "ChoiceCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ProceedsDefinition",
+        "name": "ProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashProceedsDefinition",
+        "name": "CashProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesProceedsDefinition",
+        "name": "SecuritiesProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionOption",
+        "name": "CorporateActionOption",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionOptionServicing",
+        "name": "CorporateActionOptionServicing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionServicing",
+        "name": "CorporateActionServicing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionProceedsDeliveryInstruction",
+        "name": "CorporateActionProceedsDeliveryInstruction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionDistribution",
+        "name": "CorporateActionDistribution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesAccount",
+        "name": "SecuritiesAccount",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionNotification",
+        "name": "CorporateActionNotification",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesDeliveryObligation",
+        "name": "SecuritiesDeliveryObligation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "PaymentObligation",
+        "name": "PaymentObligation",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionElection",
+        "name": "CorporateActionElection",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionEntitlement",
+        "name": "CorporateActionEntitlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionCashEntitlement",
+        "name": "CorporateActionCashEntitlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionSecuritiesEntitlement",
+        "name": "CorporateActionSecuritiesEntitlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionProtectProcess",
+        "name": "CorporateActionProtectProcess",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "SecuritiesModification",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "MandatoryCorporateAction",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "VoluntaryCorporateAction",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "ChoiceCorporateAction",
+        "b": "MandatoryCorporateAction",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "CashProceedsDefinition",
+        "b": "ProceedsDefinition",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesProceedsDefinition",
+        "b": "ProceedsDefinition",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "CorporateActionCashEntitlement",
+        "b": "CorporateActionEntitlement",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "CorporateActionSecuritiesEntitlement",
+        "b": "CorporateActionEntitlement",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ChoiceCorporateAction",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "ProceedsDefinition",
+        "b": "CorporateActionOption",
+        "label": "+ Option",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "CorporateActionOptionServicing",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "CorporateActionDistribution",
+        "label": "+ Option / + Distribution",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOptionServicing",
+        "b": "CorporateActionServicing",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "CorporateActionServicing",
+        "label": "+ Event / + Services",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "SecuritiesAccount",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionNotification",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionElection",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionEntitlement",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionDistribution",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionDistribution",
+        "b": "CorporateActionProceedsDeliveryInstruction",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionProceedsDeliveryInstruction",
+        "b": "SecuritiesDeliveryObligation",
+        "label": "+ SecuritiesProceedsMovement",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionProceedsDeliveryInstruction",
+        "b": "PaymentObligation",
+        "label": "+ CashProceedsMovement",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionElection",
+        "b": "CorporateActionProtectProcess",
+        "label": "- RelatedCorporateActionElection / - ProtectProcess",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionProtectProcess",
+        "b": "SecuritiesQuantity",
+        "label": "- RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionSecuritiesEntitlement",
+        "b": "SecuritiesQuantity",
+        "label": "+ SecuritiesEntitlement / - EntitledSecuritiesQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionEvent",
+        "b": "SecuritiesQuantity",
+        "label": "",
+        "kind": "--"
+      }
+    ],
+    "meaning": "Mandatory and voluntary corporate actions specialize CorporateActionEvent; ChoiceCorporateAction specializes MandatoryCorporateAction. Cash and securities proceeds specialize ProceedsDefinition. Cash and securities entitlements specialize CorporateActionEntitlement. CorporateActionServicing links event, option servicing, account, notification, election, entitlement and distribution. Distribution links proceeds delivery; the delivery instruction connects securities-delivery and payment obligations. The outer unlabelled Event–SecuritiesQuantity association is retained, alongside the separate protect-process and securities-entitlement quantity associations.",
+    "limitations": [],
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass SecuritiesModification[\"SecuritiesModification\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionEvent[\"CorporateActionEvent\"] {\n<<BusinessComponent>>\n}\nclass MandatoryCorporateAction[\"MandatoryCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass VoluntaryCorporateAction[\"VoluntaryCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass ChoiceCorporateAction[\"ChoiceCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass ProceedsDefinition[\"ProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass CashProceedsDefinition[\"CashProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesProceedsDefinition[\"SecuritiesProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionOption[\"CorporateActionOption\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionOptionServicing[\"CorporateActionOptionServicing\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionServicing[\"CorporateActionServicing\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionProceedsDeliveryInstruction[\"CorporateActionProceedsDeliveryInstruction\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionDistribution[\"CorporateActionDistribution\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesAccount[\"SecuritiesAccount\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionNotification[\"CorporateActionNotification\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesDeliveryObligation[\"SecuritiesDeliveryObligation\"] {\n<<BusinessComponent>>\n}\nclass PaymentObligation[\"PaymentObligation\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionElection[\"CorporateActionElection\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionEntitlement[\"CorporateActionEntitlement\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionCashEntitlement[\"CorporateActionCashEntitlement\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionSecuritiesEntitlement[\"CorporateActionSecuritiesEntitlement\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionProtectProcess[\"CorporateActionProtectProcess\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesQuantity[\"SecuritiesQuantity\"] {\n<<BusinessComponent>>\n}\n}\nSecuritiesModification -- CorporateActionEvent\nMandatoryCorporateAction --|> CorporateActionEvent\nVoluntaryCorporateAction --|> CorporateActionEvent\nChoiceCorporateAction --|> MandatoryCorporateAction\nCashProceedsDefinition --|> ProceedsDefinition\nSecuritiesProceedsDefinition --|> ProceedsDefinition\nCorporateActionCashEntitlement --|> CorporateActionEntitlement\nCorporateActionSecuritiesEntitlement --|> CorporateActionEntitlement\nCorporateActionOption -- ChoiceCorporateAction\nProceedsDefinition -- CorporateActionOption : + Option\nCorporateActionOption -- CorporateActionOptionServicing\nCorporateActionOption -- CorporateActionDistribution : + Option / + Distribution\nCorporateActionOptionServicing -- CorporateActionServicing\nCorporateActionEvent -- CorporateActionServicing : + Event / + Services\nCorporateActionServicing -- SecuritiesAccount\nCorporateActionServicing -- CorporateActionNotification\nCorporateActionServicing -- CorporateActionElection\nCorporateActionServicing -- CorporateActionEntitlement\nCorporateActionServicing -- CorporateActionDistribution\nCorporateActionDistribution -- CorporateActionProceedsDeliveryInstruction\nCorporateActionProceedsDeliveryInstruction -- SecuritiesDeliveryObligation : + SecuritiesProceedsMovement\nCorporateActionProceedsDeliveryInstruction -- PaymentObligation : + CashProceedsMovement\nCorporateActionElection -- CorporateActionProtectProcess : - RelatedCorporateActionElection / - ProtectProcess\nCorporateActionProtectProcess -- SecuritiesQuantity : - RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity\nCorporateActionSecuritiesEntitlement -- SecuritiesQuantity : + SecuritiesEntitlement / - EntitledSecuritiesQuantity\nCorporateActionEvent -- SecuritiesQuantity\n",
+    "source": {
+      "drawing_part": "xl/drawings/drawing3.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>149225</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>57150</ns0:rowOff></ns0:from><ns0:to><ns0:col>26</ns0:col><ns0:colOff>396875</ns0:colOff><ns0:row>58</ns0:row><ns0:rowOff>57150</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{EF8D59B9-CD41-4BB1-B8C1-67535FCB8BC2}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"149225\" y=\"57150\" /><ns1:ext cx=\"16922750\" cy=\"10680700\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 149225,
+        "row": 0,
+        "rowOff": 57150
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 26,
+        "colOff": 396875,
+        "row": 58,
+        "rowOff": 57150
+      },
+      "to_cell": "AA59",
+      "figure_id": "fig-0003",
+      "sheet": "CorporateActionServices",
+      "media_part": "xl/media/image3.png",
+      "asset": "domains/securities/assets/src-000081/media/image3.png",
+      "sha256": "87ab96538eda06654cb65747efbb8ad180164ebcbb45040000b86e85575b1071",
+      "page": "domains/securities/reference/message-sets/corporate-actions/2025-2026/workbooks/src-000081/diagrams/fig-0003.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000081-fig-0003",
+    "source_id": "src-000081",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Visually compared original complete source figure with final rendered PNG, checking every entity occurrence, package/stereotype, association endpoint, arrow type, inheritance direction and literal label. All23/26/14/16 lines respectively reconciled in explicit relationship registers."
+    }
+  },
+  {
+    "id": "fig-0004",
+    "title": "CorporateActionOption attributes and proceeds",
+    "sheet": "CorporateActionOption",
+    "nodes": [
+      {
+        "id": "CorporateActionOption",
+        "name": "CorporateActionOption",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ChoiceCorporateAction",
+        "name": "ChoiceCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ProceedsDefinition",
+        "name": "ProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CashProceedsDefinition",
+        "name": "CashProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesProceedsDefinition",
+        "name": "SecuritiesProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ChargesIndicator",
+        "name": "YesNoIndicator",
+        "package": "DICO_SimpleTypes",
+        "stereotype": "Indicator"
+      },
+      {
+        "id": "ChangeIndicator",
+        "name": "YesNoIndicator",
+        "package": "DICO_SimpleTypes",
+        "stereotype": "Indicator"
+      },
+      {
+        "id": "WithdrawalIndicator",
+        "name": "YesNoIndicator",
+        "package": "DICO_SimpleTypes",
+        "stereotype": "Indicator"
+      },
+      {
+        "id": "Exact3NumericText",
+        "name": "Exact3NumericText",
+        "package": "DICO_SimpleTypes",
+        "stereotype": "Text"
+      },
+      {
+        "id": "OptionFeaturesCode",
+        "name": "OptionFeaturesCode",
+        "package": "Codes",
+        "stereotype": "CodeSet"
+      },
+      {
+        "id": "CurrencyCode",
+        "name": "CurrencyCode",
+        "package": "Codes",
+        "stereotype": "CodeSet"
+      },
+      {
+        "id": "CorporateActionOptionCode",
+        "name": "CorporateActionOptionCode",
+        "package": "Codes",
+        "stereotype": "CodeSet"
+      },
+      {
+        "id": "OfferTypeV2Code",
+        "name": "OfferTypeV2Code",
+        "package": "Codes",
+        "stereotype": "CodeSet"
+      },
+      {
+        "id": "FractionDispositionTypeCode",
+        "name": "FractionDispositionTypeCode",
+        "package": "Codes",
+        "stereotype": "CodeSet"
+      }
+    ],
+    "edges": [
+      {
+        "a": "CorporateActionOption",
+        "b": "ChargesIndicator",
+        "label": "- ChargesAppliedIndicator",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ChangeIndicator",
+        "label": "- ChangeAllowedIndicator",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "WithdrawalIndicator",
+        "label": "- WithdrawalAllowedIndicator",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "CurrencyCode",
+        "label": "- CurrencyOption",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "CorporateActionOptionCode",
+        "label": "- OptionType",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "OfferTypeV2Code",
+        "label": "",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "OptionFeaturesCode",
+        "label": "- OptionFeatures",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "Exact3NumericText",
+        "label": "- OptionNumber",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "FractionDispositionTypeCode",
+        "label": "- FractionDisposition",
+        "kind": "-->"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ChoiceCorporateAction",
+        "label": "+ CorporateActionOptionDefinition",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ProceedsDefinition",
+        "label": "+ Option / + ProceedsDefinition",
+        "kind": "--"
+      },
+      {
+        "a": "CashProceedsDefinition",
+        "b": "ProceedsDefinition",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesProceedsDefinition",
+        "b": "ProceedsDefinition",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "SecuritiesProceedsDefinition",
+        "b": "SecuritiesQuantity",
+        "label": "",
+        "kind": "--"
+      }
+    ],
+    "meaning": "CorporateActionOption has directed attribute/type associations to charges/change/withdrawal indicators, currency and option code lists, feature and fraction-disposition code lists, offer type and option number. The source draws YesNoIndicator three times; the reconstruction retains three visible occurrences with one identical source label and package. Plain association links connect choice and proceeds. Cash and securities proceeds specialize ProceedsDefinition; securities proceeds link SecuritiesQuantity. The OfferTypeV2Code arrow is unlabelled in the artwork and remains so in the Mermaid graph.",
+    "limitations": [],
+    "mermaid": "classDiagram\ndirection LR\nnamespace Codes {\nclass OptionFeaturesCode[\"OptionFeaturesCode\"] {\n<<CodeSet>>\n}\nclass CurrencyCode[\"CurrencyCode\"] {\n<<CodeSet>>\n}\nclass CorporateActionOptionCode[\"CorporateActionOptionCode\"] {\n<<CodeSet>>\n}\nclass OfferTypeV2Code[\"OfferTypeV2Code\"] {\n<<CodeSet>>\n}\nclass FractionDispositionTypeCode[\"FractionDispositionTypeCode\"] {\n<<CodeSet>>\n}\n}\nnamespace DICO_BusinessComponents {\nclass CorporateActionOption[\"CorporateActionOption\"] {\n<<BusinessComponent>>\n}\nclass ChoiceCorporateAction[\"ChoiceCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass ProceedsDefinition[\"ProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass CashProceedsDefinition[\"CashProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesProceedsDefinition[\"SecuritiesProceedsDefinition\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesQuantity[\"SecuritiesQuantity\"] {\n<<BusinessComponent>>\n}\n}\nnamespace DICO_SimpleTypes {\nclass ChargesIndicator[\"YesNoIndicator\"] {\n<<Indicator>>\n}\nclass ChangeIndicator[\"YesNoIndicator\"] {\n<<Indicator>>\n}\nclass WithdrawalIndicator[\"YesNoIndicator\"] {\n<<Indicator>>\n}\nclass Exact3NumericText[\"Exact3NumericText\"] {\n<<Text>>\n}\n}\nCorporateActionOption --> ChargesIndicator : - ChargesAppliedIndicator\nCorporateActionOption --> ChangeIndicator : - ChangeAllowedIndicator\nCorporateActionOption --> WithdrawalIndicator : - WithdrawalAllowedIndicator\nCorporateActionOption --> CurrencyCode : - CurrencyOption\nCorporateActionOption --> CorporateActionOptionCode : - OptionType\nCorporateActionOption --> OfferTypeV2Code\nCorporateActionOption --> OptionFeaturesCode : - OptionFeatures\nCorporateActionOption --> Exact3NumericText : - OptionNumber\nCorporateActionOption --> FractionDispositionTypeCode : - FractionDisposition\nCorporateActionOption -- ChoiceCorporateAction : + CorporateActionOptionDefinition\nCorporateActionOption -- ProceedsDefinition : + Option / + ProceedsDefinition\nCashProceedsDefinition --|> ProceedsDefinition\nSecuritiesProceedsDefinition --|> ProceedsDefinition\nSecuritiesProceedsDefinition -- SecuritiesQuantity\n",
+    "source": {
+      "drawing_part": "xl/drawings/drawing4.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>0</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>0</ns0:rowOff></ns0:from><ns0:to><ns0:col>18</ns0:col><ns0:colOff>409575</ns0:colOff><ns0:row>27</ns0:row><ns0:rowOff>160338</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{2F401811-706E-421A-953C-ADE0B45CFCC7}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"0\" y=\"0\" /><ns1:ext cx=\"11382375\" cy=\"5132388\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 0,
+        "row": 0,
+        "rowOff": 0
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 18,
+        "colOff": 409575,
+        "row": 27,
+        "rowOff": 160338
+      },
+      "to_cell": "S28",
+      "figure_id": "fig-0004",
+      "sheet": "CorporateActionOption",
+      "media_part": "xl/media/image4.png",
+      "asset": "domains/securities/assets/src-000081/media/image4.png",
+      "sha256": "37f5bf526a53f210226780d747f4e3a739a32aef6342407cb9c14ecd1f3bc7e6",
+      "page": "domains/securities/reference/message-sets/corporate-actions/2025-2026/workbooks/src-000081/diagrams/fig-0004.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000081-fig-0004",
+    "source_id": "src-000081",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Visually compared original complete source figure with final rendered PNG, checking every entity occurrence, package/stereotype, association endpoint, arrow type, inheritance direction and literal label. All23/26/14/16 lines respectively reconciled in explicit relationship registers."
+    }
+  },
+  {
+    "id": "fig-0005",
+    "title": "Option-related corporate-action event, election and servicing",
+    "sheet": "OptionRelatedEvent",
+    "nodes": [
+      {
+        "id": "CorporateActionProtectProcess",
+        "name": "CorporateActionProtectProcess",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "SecuritiesQuantity",
+        "name": "SecuritiesQuantity",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionSecuritiesEntitlement",
+        "name": "CorporateActionSecuritiesEntitlement",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionElection",
+        "name": "CorporateActionElection",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionServicing",
+        "name": "CorporateActionServicing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionOptionServicing",
+        "name": "CorporateActionOptionServicing",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionOption",
+        "name": "CorporateActionOption",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionDistribution",
+        "name": "CorporateActionDistribution",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ChoiceCorporateAction",
+        "name": "ChoiceCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "MandatoryCorporateAction",
+        "name": "MandatoryCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "VoluntaryCorporateAction",
+        "name": "VoluntaryCorporateAction",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "CorporateActionEvent",
+        "name": "CorporateActionEvent",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "ProceedsDefinition",
+        "name": "ProceedsDefinition",
+        "package": "DICO_BusinessComponents",
+        "stereotype": "BusinessComponent"
+      },
+      {
+        "id": "DateTimePeriod",
+        "name": "DateTimePeriod",
+        "package": "DICO_BusinessComponentsDataTypes",
+        "stereotype": "BusinessComponent"
+      }
+    ],
+    "edges": [
+      {
+        "a": "CorporateActionProtectProcess",
+        "b": "CorporateActionElection",
+        "label": "- RelatedCorporateActionElection / - ProtectProcess",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionProtectProcess",
+        "b": "SecuritiesQuantity",
+        "label": "- RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity",
+        "kind": "--"
+      },
+      {
+        "a": "SecuritiesQuantity",
+        "b": "CorporateActionSecuritiesEntitlement",
+        "label": "- EntitledSecuritiesQuantity / + SecuritiesEntitlement",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionElection",
+        "b": "CorporateActionOption",
+        "label": "+ Option",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionElection",
+        "b": "CorporateActionServicing",
+        "label": "+ RelatedServicing",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionOptionServicing",
+        "label": "+ CorporateActionOptionServicing / + RelatedServicing",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOptionServicing",
+        "b": "CorporateActionOption",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "DateTimePeriod",
+        "label": "- ActionPeriod",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ProceedsDefinition",
+        "label": "+ Option",
+        "kind": "--"
+      },
+      {
+        "a": "ProceedsDefinition",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "ChoiceCorporateAction",
+        "label": "+ CorporateActionOptionDefinition",
+        "kind": "--"
+      },
+      {
+        "a": "CorporateActionOption",
+        "b": "CorporateActionDistribution",
+        "label": "+ Distribution",
+        "kind": "--"
+      },
+      {
+        "a": "ChoiceCorporateAction",
+        "b": "MandatoryCorporateAction",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "MandatoryCorporateAction",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "VoluntaryCorporateAction",
+        "b": "CorporateActionEvent",
+        "label": "",
+        "kind": "--|>"
+      },
+      {
+        "a": "CorporateActionServicing",
+        "b": "CorporateActionEvent",
+        "label": "+ Services / + Event",
+        "kind": "--"
+      }
+    ],
+    "meaning": "The option connects election, the valid action period, proceeds definition, servicing and distribution. Election connects protect processing and servicing. Protect processing and securities entitlement each have a separately named association with SecuritiesQuantity. The right-hand long association links CorporateActionEvent and CorporateActionServicing; its Event/Services endpoint labels are preserved. Mandatory/voluntary actions specialize Event; choice actions specialize MandatoryCorporateAction.",
+    "limitations": [],
+    "mermaid": "classDiagram\ndirection LR\nnamespace DICO_BusinessComponents {\nclass CorporateActionProtectProcess[\"CorporateActionProtectProcess\"] {\n<<BusinessComponent>>\n}\nclass SecuritiesQuantity[\"SecuritiesQuantity\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionSecuritiesEntitlement[\"CorporateActionSecuritiesEntitlement\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionElection[\"CorporateActionElection\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionServicing[\"CorporateActionServicing\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionOptionServicing[\"CorporateActionOptionServicing\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionOption[\"CorporateActionOption\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionDistribution[\"CorporateActionDistribution\"] {\n<<BusinessComponent>>\n}\nclass ChoiceCorporateAction[\"ChoiceCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass MandatoryCorporateAction[\"MandatoryCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass VoluntaryCorporateAction[\"VoluntaryCorporateAction\"] {\n<<BusinessComponent>>\n}\nclass CorporateActionEvent[\"CorporateActionEvent\"] {\n<<BusinessComponent>>\n}\nclass ProceedsDefinition[\"ProceedsDefinition\"] {\n<<BusinessComponent>>\n}\n}\nnamespace DICO_BusinessComponentsDataTypes {\nclass DateTimePeriod[\"DateTimePeriod\"] {\n<<BusinessComponent>>\n}\n}\nCorporateActionProtectProcess -- CorporateActionElection : - RelatedCorporateActionElection / - ProtectProcess\nCorporateActionProtectProcess -- SecuritiesQuantity : - RelatedCorporateActionProtectProcess / - UncoveredProtectQuantity\nSecuritiesQuantity -- CorporateActionSecuritiesEntitlement : - EntitledSecuritiesQuantity / + SecuritiesEntitlement\nCorporateActionElection -- CorporateActionOption : + Option\nCorporateActionElection -- CorporateActionServicing : + RelatedServicing\nCorporateActionServicing -- CorporateActionOptionServicing : + CorporateActionOptionServicing / + RelatedServicing\nCorporateActionOptionServicing -- CorporateActionOption\nCorporateActionOption -- DateTimePeriod : - ActionPeriod\nCorporateActionOption -- ProceedsDefinition : + Option\nProceedsDefinition -- CorporateActionEvent\nCorporateActionOption -- ChoiceCorporateAction : + CorporateActionOptionDefinition\nCorporateActionOption -- CorporateActionDistribution : + Distribution\nChoiceCorporateAction --|> MandatoryCorporateAction\nMandatoryCorporateAction --|> CorporateActionEvent\nVoluntaryCorporateAction --|> CorporateActionEvent\nCorporateActionServicing -- CorporateActionEvent : + Services / + Event\n",
+    "source": {
+      "drawing_part": "xl/drawings/drawing5.xml",
+      "anchor_id": 1,
+      "anchor_type": "twoCellAnchor",
+      "attributes": {
+        "editAs": "oneCell"
+      },
+      "xml": "<ns0:twoCellAnchor xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing\" xmlns:ns1=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:ns2=\"http://schemas.microsoft.com/office/drawing/2014/main\" xmlns:ns3=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" editAs=\"oneCell\"><ns0:from><ns0:col>0</ns0:col><ns0:colOff>47625</ns0:colOff><ns0:row>0</ns0:row><ns0:rowOff>15874</ns0:rowOff></ns0:from><ns0:to><ns0:col>40</ns0:col><ns0:colOff>4343</ns0:colOff><ns0:row>45</ns0:row><ns0:rowOff>158749</ns0:rowOff></ns0:to><ns0:pic><ns0:nvPicPr><ns0:cNvPr id=\"2\" name=\"Picture 1\"><ns1:extLst><ns1:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\"><ns2:creationId id=\"{DC699F77-F3AE-48A0-87F5-5A60A17BE934}\" /></ns1:ext></ns1:extLst></ns0:cNvPr><ns0:cNvPicPr><ns1:picLocks noChangeAspect=\"1\" /></ns0:cNvPicPr></ns0:nvPicPr><ns0:blipFill><ns1:blip ns3:embed=\"rId1\" /><ns1:stretch><ns1:fillRect /></ns1:stretch></ns0:blipFill><ns0:spPr><ns1:xfrm><ns1:off x=\"47625\" y=\"15874\" /><ns1:ext cx=\"24340718\" cy=\"8429625\" /></ns1:xfrm><ns1:prstGeom prst=\"rect\"><ns1:avLst /></ns1:prstGeom></ns0:spPr></ns0:pic><ns0:clientData /></ns0:twoCellAnchor>",
+      "from": {
+        "col": 0,
+        "colOff": 47625,
+        "row": 0,
+        "rowOff": 15874
+      },
+      "from_cell": "A1",
+      "to": {
+        "col": 40,
+        "colOff": 4343,
+        "row": 45,
+        "rowOff": 158749
+      },
+      "to_cell": "AO46",
+      "figure_id": "fig-0005",
+      "sheet": "OptionRelatedEvent",
+      "media_part": "xl/media/image5.png",
+      "asset": "domains/securities/assets/src-000081/media/image5.png",
+      "sha256": "5550469d8a8d36ff791558f9813e56d0ff28db86cfca8c46b09f8ed2fe0da557",
+      "page": "domains/securities/reference/message-sets/corporate-actions/2025-2026/workbooks/src-000081/diagrams/fig-0005.md",
+      "disposition": "unresolved",
+      "review_status": "needs-review"
+    },
+    "render_prefix": "src-000081-fig-0005",
+    "source_id": "src-000081",
+    "review_status": "reviewed",
+    "visual_review": {
+      "date": "2026-11-09",
+      "result": "pass",
+      "method": "Visually compared original complete source figure with final rendered PNG, checking every entity occurrence, package/stereotype, association endpoint, arrow type, inheritance direction and literal label. All23/26/14/16 lines respectively reconciled in explicit relationship registers."
+    }
+  }
+]

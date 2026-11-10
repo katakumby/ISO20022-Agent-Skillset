@@ -1,0 +1,347 @@
+{
+  "message_id": "camt.018.001.05",
+  "publications": [
+    {
+      "source_id": "src-000015",
+      "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+      "heading": "17 camt.018.001.05 GetBusinessDayInformationV05",
+      "definition_pages": [
+        522,
+        534
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The GetBusinessDayInformation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the transaction administrator",
+            "labels": [
+              {
+                "label": "the transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a member",
+            "labels": [
+              {
+                "label": "a member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000015-camt.018.001.05-p522-c001-d1",
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "heading": "17 camt.018.001.05 GetBusinessDayInformationV05",
+          "file_pages": [
+            522
+          ],
+          "section": "scope",
+          "quote": "The GetBusinessDayInformation message is sent by a member to the transaction administrator.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The GetBusinessDayInformation message is sent by a member to the transaction administrator.",
+          "raw_quote": "Scope\nThe GetBusinessDayInformation message is sent by a member to the transaction administrator.",
+          "file_pages": [
+            522
+          ],
+          "section": "scope",
+          "evidence_id": "src-000015-camt.018.001.05-p522-c001",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 51,
+              "end": 57,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 65,
+              "end": 90,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000015-camt.018.001.05-p522-c001-d1"
+          ]
+        },
+        {
+          "quote": "The transaction administrator is in charge of providing the members with business information.",
+          "raw_quote": "Usage\nThe transaction administrator is in charge of providing the members with business information.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.018.001.05-p522-c002",
+          "mentions": [
+            {
+              "label": "transaction administrator",
+              "start": 4,
+              "end": 29,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "members",
+              "start": 60,
+              "end": 67,
+              "resolution": {
+                "label": "members",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about the static data of the system.",
+          "raw_quote": "At any time during the operating hours of the system, the member can query the transaction\nadministrator to get information about the static data of the system.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.018.001.05-p522-c003",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 58,
+              "end": 64,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transaction administrator",
+              "start": 79,
+              "end": 104,
+              "resolution": {
+                "label": "transaction administrator",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-transaction-administrator",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-transaction-administrator.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The member can request information based on the following elements:",
+          "raw_quote": "The member can request information based on the following elements:",
+          "file_pages": [
+            522
+          ],
+          "section": "usage",
+          "evidence_id": "src-000015-camt.018.001.05-p522-c004",
+          "mentions": [
+            {
+              "label": "member",
+              "start": 4,
+              "end": 10,
+              "resolution": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "member",
+                "scope_source_id": "src-000015",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000015-member",
+                  "path": "shared/reference/participants/participant-narrative-src-000015-member.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "request",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "It is used to request information on different types of administrative data linked to the system.",
+          "raw_quote": "It is used to request information on different types of administrative data linked to the system.",
+          "file_pages": [
+            522
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The term business day information covers all information related to the management of the system, not related to the transactions created in the system.",
+          "raw_quote": "The\nterm business day information covers all information related to the management of the system, not\nrelated to the transactions created in the system.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The type of business day information available can vary depending on the system.",
+          "raw_quote": "The type of business day information available can\nvary depending on the system.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "identification of the system",
+          "raw_quote": "identification of the system",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "currency within the system concerned",
+          "raw_quote": "currency within the system concerned",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "status of the system",
+          "raw_quote": "status of the system",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "period of availability of a given currency linked to the system concerned (in case the system handles more than one currency)",
+          "raw_quote": "period of availability of a given currency linked to the system concerned (in case the system handles\nmore than one currency)",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "closure information (dates when the system will be inactive and reasons for this inactivity)",
+          "raw_quote": "closure information (dates when the system will be inactive and reasons for this inactivity)",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "event indicator (types of event and precise timing of their occurrence within the system concerned) This message will be replied to by a ReturnBusinessDayInformation message.",
+          "raw_quote": "event indicator (types of event and precise timing of their occurrence within the system concerned)\nThis message will be replied to by a ReturnBusinessDayInformation message.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "Additional information on the generic design of the Get/Return messages can be found in the section How to Use the Cash Management Messages.",
+          "raw_quote": "Additional information on\nthe generic design of the Get/Return messages can be found in the section How to Use the Cash\nManagement Messages.",
+          "file_pages": [
+            522
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        522
+      ],
+      "file_pages": [
+        522
+      ]
+    }
+  ]
+}

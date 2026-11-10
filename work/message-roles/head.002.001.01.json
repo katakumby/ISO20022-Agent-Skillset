@@ -1,0 +1,426 @@
+{
+  "message_id": "head.002.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "26 head.002.001.01 BusinessFileHeaderV01",
+      "definition_pages": [
+        614,
+        618
+      ],
+      "directions": [],
+      "narrative": [
+        {
+          "quote": "The Business File Header contains information about the parties involved in the file exchange, as well as information about the content and its structure.",
+          "raw_quote": "The Business File Header contains information about the parties involved in the file exchange, as well\nas information about the content and its structure.",
+          "file_pages": [
+            614
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-head.002.001.01-p614-c001",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Provides information about the sender of the file.",
+          "raw_quote": "Provides information about the sender of the file.",
+          "file_pages": [
+            614
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-head.002.001.01-p614-c002",
+          "mentions": [
+            {
+              "label": "sender of the file",
+              "start": 31,
+              "end": 49,
+              "resolution": {
+                "label": "sender of the file",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-sender",
+                  "path": "shared/reference/participants/bfh-file-sender.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "head.002.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      614
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000349",
+                        "heading": "2 head.002.001.01 BusinessFileHeaderV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Provides processing information to the receiving party: that would be, for instance, the total number of messages included in the file.",
+          "raw_quote": "Provides processing information to the receiving party: that would be, for instance, the total number of\nmessages included in the file.",
+          "file_pages": [
+            614
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-head.002.001.01-p614-c003",
+          "mentions": [
+            {
+              "label": "receiving party",
+              "start": 39,
+              "end": 54,
+              "resolution": {
+                "label": "receiving party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-receiver",
+                  "path": "shared/reference/participants/bfh-file-receiver.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "head.002.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      614
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000349",
+                        "heading": "2 head.002.001.01 BusinessFileHeaderV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "receiving party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-receiver",
+                  "path": "shared/reference/participants/bfh-file-receiver.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "head.002.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      614
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000349",
+                        "heading": "2 head.002.001.01 BusinessFileHeaderV01",
+                        "file_pages": [
+                          4
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              "action_verb": "receives processing information",
+              "voice": "source-reviewed-literal-clause",
+              "limitation": "The Business File Header provides processing information to the receiving party; this identifies an information recipient rather than an independent wire-message sender.",
+              "clause_review_date": "2026-11-09"
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "source-explicit-role-action",
+            "rationale": "The actor and action are named in this sentence; the action object and conditions are retained and are not automatically the indexed message.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Business File headers has four major functions:",
+          "raw_quote": "The Business File headers has four major functions:",
+          "file_pages": [
+            614
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Identifies the file exchanged: each file must have a unique File Identifier.",
+          "raw_quote": "Identifies the file exchanged: each file must have a unique File Identifier.",
+          "file_pages": [
+            614
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Describes the type of message(s) exchanged: by default, the type of messages contained in a file will be ISO 20022 message definitions.",
+          "raw_quote": "Describes the type of message(s) exchanged: by default, the type of messages contained in a file will\nbe ISO 20022 message definitions.",
+          "file_pages": [
+            614
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The Business File Header (head.002) is to be used exclusively in existing implementations, such as the Eurosystem, and will be replaced for general use by the upcoming next version defined as the Business File Envelope (nvlp.002).",
+          "raw_quote": "Usage: The Business File Header (head.002) is to be used exclusively in existing implementations,\nsuch as the Eurosystem, and will be replaced for general use by the upcoming next version defined as\nthe Business File Envelope (nvlp.002).",
+          "file_pages": [
+            614
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The Business File Header (head.002) will therefore not be maintained in the future and any new implementation must use the Business File Envelope (nvlp.002).",
+          "raw_quote": "The Business File Header (head.002) will therefore not be\nmaintained in the future and any new implementation must use the Business File Envelope (nvlp.002).",
+          "file_pages": [
+            614
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [
+        {
+          "kind": "source-does-not-state-complete-direction",
+          "detail": "Functionality was directly reviewed; it supplies content, actions, participant or header context without a complete named sender/receiver direction. Broader curated business/flow evidence remains available."
+        }
+      ],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        614
+      ],
+      "file_pages": [
+        614
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000233",
+        "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+        "message_id": "head.002.001.01",
+        "heading": "26 head.002.001.01 BusinessFileHeaderV01",
+        "file_pages": [
+          614
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "1c0ec27808af3ba5cac9fce623fad914ebb88341d88310e05767240597f85d4a",
+          "446ce13a9e353c2d6fe3c146c9d8a2496a8e1109dbf519f24a82a69f8657f772",
+          "f4ea6492c11453f5d5a1e940c8d1d82f1940a54c108d0d74b3c316e71d2df3eb",
+          "40bbcf619d98281e9eaa5afdb90defda60829db3eb9bd7d40a4f25104672535d",
+          "6667aeac2057bd5e41c4fd4d1153deff8527b67511543a136d0ec05c15bb0527",
+          "e9bef8799d22c8613db2f10baca6208feb6f4fd2d498da9eec34e18cdb28698a",
+          "215c8ec17ad91c328237763af3ff447933789043da2fb61ba40e1bc9690cd34d",
+          "a56124e2eaaf67922120c83eee7b6e5f3507a3bb925dfe706087d83ee0c2d693"
+        ]
+      }
+    },
+    {
+      "source_id": "src-000349",
+      "source_sha256": "914aa2235d5fde9dd8eb7f234e00a2d33f5a3ba7bc9d1d5e4acfd8db90807627",
+      "heading": "2 head.002.001.01 BusinessFileHeaderV01",
+      "definition_pages": [
+        4,
+        8
+      ],
+      "directions": [],
+      "narrative": [
+        {
+          "quote": "The Business File Header contains information about the parties involved in the file exchange, as well as information about the content and its structure.",
+          "raw_quote": "The Business File Header contains information about the parties involved in the file exchange, as well\nas information about the content and its structure.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000349-head.002.001.01-p4-c001",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Provides information about the sender of the file.",
+          "raw_quote": "Provides information about the sender of the file.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000349-head.002.001.01-p4-c002",
+          "mentions": [
+            {
+              "label": "sender of the file",
+              "start": 31,
+              "end": 49,
+              "resolution": {
+                "label": "sender of the file",
+                "scope_source_id": "src-000349",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-sender",
+                  "path": "shared/reference/participants/bfh-file-sender.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Provides processing information to the receiving party: that would be, for instance, the total number of messages included in the file.",
+          "raw_quote": "Provides processing information to the receiving party: that would be, for instance, the total number of\nmessages included in the file.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope",
+          "evidence_id": "src-000349-head.002.001.01-p4-c003",
+          "mentions": [
+            {
+              "label": "receiving party",
+              "start": 39,
+              "end": 54,
+              "resolution": {
+                "label": "receiving party",
+                "scope_source_id": "src-000349",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-receiver",
+                  "path": "shared/reference/participants/bfh-file-receiver.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "receiving party",
+                "scope_source_id": "src-000349",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "bfh-file-receiver",
+                  "path": "shared/reference/participants/bfh-file-receiver.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "receives processing information",
+              "voice": "source-reviewed-literal-clause",
+              "limitation": "The Business File Header provides processing information to the receiving party; this identifies an information recipient rather than an independent wire-message sender.",
+              "clause_review_date": "2026-11-09"
+            }
+          ],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "source-explicit-role-action",
+            "rationale": "The actor and action are named in this sentence; the action object and conditions are retained and are not automatically the indexed message.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The Business File headers has four major functions:",
+          "raw_quote": "The Business File headers has four major functions:",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Identifies the file exchanged: each file must have a unique File Identifier.",
+          "raw_quote": "Identifies the file exchanged: each file must have a unique File Identifier.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "Describes the type of message(s) exchanged: by default, the type of messages contained in a file will be ISO 20022 message definitions.",
+          "raw_quote": "Describes the type of message(s) exchanged: by default, the type of messages contained in a file will\nbe ISO 20022 message definitions.",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The Business File Header (head.002) is to be used exclusively in existing implementations, such as the Eurosystem, and will be replaced for general use by the upcoming next version defined as the Business File Envelope (nvlp.002).",
+          "raw_quote": "Usage: The Business File Header (head.002) is to be used exclusively in existing implementations,\nsuch as the Eurosystem, and will be replaced for general use by the upcoming next version defined as\nthe Business File Envelope (nvlp.002).",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        },
+        {
+          "quote": "The Business File Header (head.002) will therefore not be maintained in the future and any new implementation must use the Business File Envelope (nvlp.002).",
+          "raw_quote": "The Business File Header (head.002) will therefore not be\nmaintained in the future and any new implementation must use the Business File Envelope (nvlp.002).",
+          "file_pages": [
+            4
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [
+        {
+          "kind": "source-does-not-state-complete-direction",
+          "detail": "Functionality was directly reviewed; it supplies content, actions, participant or header context without a complete named sender/receiver direction. Broader curated business/flow evidence remains available."
+        }
+      ],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4
+      ],
+      "file_pages": [
+        4
+      ],
+      "direction_availability_review": {
+        "source_id": "src-000349",
+        "source_sha256": "914aa2235d5fde9dd8eb7f234e00a2d33f5a3ba7bc9d1d5e4acfd8db90807627",
+        "message_id": "head.002.001.01",
+        "heading": "2 head.002.001.01 BusinessFileHeaderV01",
+        "file_pages": [
+          4
+        ],
+        "date": "2026-11-09",
+        "result": "source-functionality-role-scope-reviewed",
+        "limitation": "No unstated sender/receiver is manufactured. Header composition, creation/distribution, source wording defects and action-only evidence remain distinct; curated Part1 flow evidence may supply broader context.",
+        "unit_quote_sha256": [
+          "1c0ec27808af3ba5cac9fce623fad914ebb88341d88310e05767240597f85d4a",
+          "446ce13a9e353c2d6fe3c146c9d8a2496a8e1109dbf519f24a82a69f8657f772",
+          "f4ea6492c11453f5d5a1e940c8d1d82f1940a54c108d0d74b3c316e71d2df3eb",
+          "40bbcf619d98281e9eaa5afdb90defda60829db3eb9bd7d40a4f25104672535d",
+          "6667aeac2057bd5e41c4fd4d1153deff8527b67511543a136d0ec05c15bb0527",
+          "e9bef8799d22c8613db2f10baca6208feb6f4fd2d498da9eec34e18cdb28698a",
+          "215c8ec17ad91c328237763af3ff447933789043da2fb61ba40e1bc9690cd34d",
+          "a56124e2eaaf67922120c83eee7b6e5f3507a3bb925dfe706087d83ee0c2d693"
+        ]
+      }
+    }
+  ]
+}

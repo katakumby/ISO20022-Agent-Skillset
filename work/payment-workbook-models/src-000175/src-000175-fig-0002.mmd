@@ -1,0 +1,95 @@
+classDiagram
+direction LR
+class ContactPoint["ContactPoint"] {
+<<BusinessComponent>>
+}
+class Mandate["Mandate"] {
+<<BusinessComponent>>
+}
+class CreditTransferMandate["CreditTransferMandate"] {
+<<BusinessComponent>>
+}
+class DirectDebitMandate["DirectDebitMandate"] {
+<<BusinessComponent>>
+}
+class Document["Document"] {
+<<BusinessComponent>>
+}
+class CurrencyExchange["CurrencyExchange"] {
+<<BusinessComponent>>
+}
+class Tax["Tax"] {
+<<BusinessComponent>>
+}
+class Garnishment["Garnishment"] {
+<<BusinessComponent>>
+}
+class PaymentTracker["PaymentTracker"] {
+<<BusinessComponent>>
+}
+namespace DICO_BusinessComponents {
+class PaymentProcessing["PaymentProcessing"] {
+<<BusinessComponent>>
+}
+class PaymentIdentification["PaymentIdentification"] {
+<<BusinessComponent>>
+}
+class PaymentStatus["PaymentStatus"] {
+<<BusinessComponent>>
+}
+class PaymentObligation["PaymentObligation"] {
+<<BusinessComponent>>
+}
+class Payment["Payment"] {
+<<BusinessComponent>>
+}
+class PaymentExecution["PaymentExecution"] {
+<<BusinessComponent>>
+}
+class PaymentInstruction["PaymentInstruction"] {
+<<BusinessComponent>>
+}
+class CashSettlement["CashSettlement"] {
+<<BusinessComponent>>
+}
+class PaymentTerms["PaymentTerms"] {
+<<BusinessComponent>>
+}
+class BankingTransaction["BankingTransaction"] {
+<<BusinessComponent>>
+}
+class PaymentInitiation["PaymentInitiation"] {
+<<BusinessComponent>>
+}
+class CashAccount["CashAccount"] {
+<<BusinessComponent>>
+}
+class Cheque["Cheque"] {
+<<BusinessComponent>>
+}
+}
+ContactPoint -- PaymentProcessing : - RelatedPayment
+ContactPoint -- Document : + PlaceOfStorage / + StoredDocument
+Document -- PaymentObligation : + AssociatedDocument
+PaymentObligation -- Payment : + PaymentOffset
+PaymentObligation -- PaymentTerms
+BankingTransaction -- PaymentObligation
+Garnishment --|> PaymentObligation
+Payment -- PaymentIdentification : + PaymentRelatedIdentifications
+Payment -- PaymentStatus : + PaymentStatus
+Payment -- PaymentExecution
+Payment -- PaymentProcessing : + ProcessingInstructions
+PaymentProcessing -- Mandate : + MandatePaymentType / + RelatedMandate
+CreditTransferMandate --|> Mandate
+DirectDebitMandate --|> Mandate
+PaymentInitiation --|> PaymentExecution
+PaymentExecution -- PaymentInstruction : + Previous / + Next
+PaymentInstruction -- CashSettlement : + SettlementInstruction
+CashSettlement -- CashAccount : + SettlementAccount
+CashAccount -- Cheque
+Tax -- CashAccount : + TaxAccount
+Payment -- Tax : + TaxOnPayment
+Payment -- CurrencyExchange : - RelatedPayment / - ExchangeRateData
+CurrencyExchange -- Tax
+CurrencyExchange -- PaymentTracker : - RelatedPaymentTracker
+Payment -- CashAccount : + RelatedPaymentSettlement

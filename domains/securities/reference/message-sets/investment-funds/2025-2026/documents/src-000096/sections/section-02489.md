@@ -1,0 +1,62 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["51 setr.011.001.05 SubscriptionOrderCancellationRequestV05", "52.4 Message Building Blocks", "52.4.2 PoolReference <PoolRef>", "52.4.5.12 BulkCashSettlementDetails <BlkCshSttlmDtls>", "52.4.5.12.1 PaymentInstrument <PmtInstrm>", "52.4.5.12.1.4 ChequeDetails <ChqDtls>", "52.4.5.12.1.4.1 Number <Nb>"]
+file_pages: [3476]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["setr.012.001.06"]
+---
+
+# 52.4.5.12.1.4.1 Number <Nb>
+
+Source: [src-000096](../../../../../../../../../raw-input/investment_funds/ISO20022_MDRPart2_Investment-Funds_2025_2026_v2.pdf). Locator: one-based file pages 3476 to 3476.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 3476
+
+```text
+ChequeDetails <ChqDtls> contains the following Cheque10 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Number <Nb> [0..1] Text 3476
+   PayeeIdentification <PyeeId> [1..1] ± 3476
+   DraweeIdentification <DrweeId> [0..1]  3476
+     Party <Pty> [1..1]  3477
+{Or       NameAndAddress <NmAndAdr> [1..1] ± 3477
+Or       BICFI <BICFI> [1..1] IdentifierSet C7 3477
+Or       ClearingSystemMemberIdentification
+<ClrSysMmbId>
+[1..1] ± 3478
+Or}       ProprietaryIdentification <PrtryId> [1..1] Text 3479
+     LEI <LEI> [0..1] IdentifierSet 3479
+   DrawerIdentification <DrwrId> [0..1] ± 3480
+52.4.5.12.1.4.1  Number <Nb>
+Presence: [0..1]
+Definition: Unique and unambiguous identifier for the cheque as assigned by the financial institution.
+Datatype: "Max35Text" on page 5403
+52.4.5.12.1.4.2  PayeeIdentification <PyeeId>
+Presence: [1..1]
+Definition: Party to which the cheque is made payable.
+PayeeIdentification <PyeeId> contains the following elements (see "PartyIdentification139" on
+page 5043 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Party <Pty> [1..1] ± 5043
+   LEI <LEI> [0..1] IdentifierSet 5043
+52.4.5.12.1.4.3  DraweeIdentification <DrweeId>
+Presence: [0..1]
+Definition: Financial institution on which the cheque is drawn, that is, the financial institution that
+services the account of the entity that issued the cheque.
+Approved by the Securities SEG on 27 January 2026 setr.012.001.06 SubscriptionOrderConfirmationV06
+Investment Funds - Maintenance 2025 - 2026 3476 May 2026
+```
+

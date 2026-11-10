@@ -1,0 +1,855 @@
+{
+  "message_id": "reda.015.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "35 reda.015.001.01 PartyQueryV01",
+      "definition_pages": [
+        2055,
+        2071
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyQuery message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange",
+            "labels": [
+              {
+                "label": "a central securities depository",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a national central bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-national-central-bank-ncb",
+                  "path": "shared/reference/participants/participant-src-000368-national-central-bank-ncb.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a central securities depository participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a central counter party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-counter-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a payment bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-payment-bank",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-payment-bank.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a trading party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-trading-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-trading-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "a stock exchange",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-stock-exchange",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-stock-exchange.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.015.001.01-p2055-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "35 reda.015.001.01 PartyQueryV01",
+          "file_pages": [
+            2055
+          ],
+          "section": "scope",
+          "quote": "The PartyQuery message is sent by a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange to the executing party to query for the party reference data of a party defined in the system.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyQuery message is sent by a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange to the executing party to query for the party reference data of a party defined in the system.",
+          "raw_quote": "Scope:\nThe PartyQuery message is sent by a central securities depository, a national central bank, a central\nsecurities depository participant, a central counter party, a payment bank, a trading party or a stock\nexchange to the executing party to query for the party reference data of a party defined in the system.",
+          "file_pages": [
+            2055
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.015.001.01-p2055-c001",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 36,
+              "end": 65,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "national central bank",
+              "start": 69,
+              "end": 90,
+              "resolution": {
+                "label": "national central bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-national-central-bank-ncb",
+                  "path": "shared/reference/participants/participant-src-000368-national-central-bank-ncb.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central securities depository participant",
+              "start": 94,
+              "end": 135,
+              "resolution": {
+                "label": "central securities depository participant",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository-participant.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central counter party",
+              "start": 139,
+              "end": 160,
+              "resolution": {
+                "label": "central counter party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-counter-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "payment bank",
+              "start": 164,
+              "end": 176,
+              "resolution": {
+                "label": "payment bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-payment-bank",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-payment-bank.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "trading party",
+              "start": 180,
+              "end": 193,
+              "resolution": {
+                "label": "trading party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-trading-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-trading-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "stock exchange",
+              "start": 199,
+              "end": 213,
+              "resolution": {
+                "label": "stock exchange",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-stock-exchange",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-stock-exchange.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 221,
+              "end": 236,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.015.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2055
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "3 reda.015.001.01 PartyQueryV01",
+                        "file_pages": [
+                          18
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.015.001.01-p2055-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2055
+      ],
+      "file_pages": [
+        2055
+      ]
+    },
+    {
+      "source_id": "src-000369",
+      "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+      "heading": "3 reda.015.001.01 PartyQueryV01",
+      "definition_pages": [
+        18,
+        34
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyQuery message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange",
+            "labels": [
+              {
+                "label": "a central securities depository",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a national central bank",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-national-central-bank-ncb",
+                  "path": "shared/reference/participants/participant-src-000368-national-central-bank-ncb.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a central securities depository participant",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a central counter party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-counter-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a payment bank",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-payment-bank",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-payment-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a trading party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-trading-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-trading-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "a stock exchange",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-stock-exchange",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-stock-exchange.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000369-reda.015.001.01-p18-c001-d1",
+          "source_id": "src-000369",
+          "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+          "heading": "3 reda.015.001.01 PartyQueryV01",
+          "file_pages": [
+            18
+          ],
+          "section": "scope",
+          "quote": "The PartyQuery message is sent by a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange to the executing party to query for the party reference data of a party defined in the system.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyQuery message is sent by a central securities depository, a national central bank, a central securities depository participant, a central counter party, a payment bank, a trading party or a stock exchange to the executing party to query for the party reference data of a party defined in the system.",
+          "raw_quote": "Scope:\nThe PartyQuery message is sent by a central securities depository, a national central bank, a central\nsecurities depository participant, a central counter party, a payment bank, a trading party or a stock\nexchange to the executing party to query for the party reference data of a party defined in the system.",
+          "file_pages": [
+            18
+          ],
+          "section": "scope",
+          "evidence_id": "src-000369-reda.015.001.01-p18-c001",
+          "mentions": [
+            {
+              "label": "central securities depository",
+              "start": 36,
+              "end": 65,
+              "resolution": {
+                "label": "central securities depository",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "national central bank",
+              "start": 69,
+              "end": 90,
+              "resolution": {
+                "label": "national central bank",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-national-central-bank-ncb",
+                  "path": "shared/reference/participants/participant-src-000368-national-central-bank-ncb.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central securities depository participant",
+              "start": 94,
+              "end": 135,
+              "resolution": {
+                "label": "central securities depository participant",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-securities-depository-participant",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-securities-depository-participant.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "central counter party",
+              "start": 139,
+              "end": 160,
+              "resolution": {
+                "label": "central counter party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-central-counter-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-central-counter-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "payment bank",
+              "start": 164,
+              "end": 176,
+              "resolution": {
+                "label": "payment bank",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-payment-bank",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-payment-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "trading party",
+              "start": 180,
+              "end": 193,
+              "resolution": {
+                "label": "trading party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000369-trading-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000369-trading-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "stock exchange",
+              "start": 199,
+              "end": 213,
+              "resolution": {
+                "label": "stock exchange",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-stock-exchange",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-stock-exchange.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 221,
+              "end": 236,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000369-reda.015.001.01-p18-c001-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        18
+      ],
+      "file_pages": [
+        18
+      ]
+    }
+  ]
+}

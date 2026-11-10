@@ -1,0 +1,61 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    subgraph IC["Settlement context"]
+      S@{shape: f-circ, label: " "} --> Instruct("Instruct settlement")
+      IM("Monitor Matching and Settlement Process") --> ID{"Settled?"}
+      ID -->|No| IU("Update Status")
+      IU --> IM
+      ID -->|Yes| IX(["Settle instruction"])
+    end
+    subgraph IR["Reconciliation"]
+      ReconcileP("Reconcile Pending Transaction Statuses") --> Investigate("Investigate and solve breaks")
+      ReconcileH("Reconcile Holdings") --> Investigate
+    end
+  end
+  subgraph E["Executing/Servicing Party"]
+    subgraph EC["Settlement context"]
+      Process("Process instruction") --> PD{"Processed?"}
+      PD -->|No| PU("Update Status")
+      PD -->|Yes| EM("Matching and Settlement Process")
+      EM --> ED{"Settled?"}
+      ED -->|No| EU("Update Status")
+      EU --> EM
+      ED -->|Yes| EX(["Settle instruction"])
+      EX --- End@{shape: framed-circle, label: " "}
+      EX --> Join@{shape: fork, label: " "}
+      EU --> Join
+      EX --> Fan@{shape: fork, label: " "}
+    end
+    subgraph ER["Reporting"]
+      RT("Report Transactions") --> Holds@{shape: fork, label: " "}
+      RI("Report Intra-position movements") --> Holds
+      RC("Report holding (custody)") --> Holds
+      RA("Report holdings (accounting)") --> Holds
+      RP("Report Pending Transaction") --> Pending@{shape: fork, label: " "}
+      RL("Report Allegements") --> Pending
+    end
+  end
+  Instruct --> Process
+  PU --> Instruct
+  Join --> IM
+  IU -.-> ReconcileP
+  IX -.-> ReconcileH
+  Fan -.-> RT
+  Fan -.-> RI
+  Fan -.-> RC
+  Fan -.-> RA
+  EU -.-> RP
+  EU -.-> RL
+  Holds --> ReconcileH
+  Pending --> ReconcileP
+  classDef focus fill:#d1d8b8,stroke:#111,color:#111
+  classDef context fill:#c0d1e5,stroke:#111,color:#111
+  class ReconcileP,ReconcileH,Investigate,RT,RI,RC,RA,RP,RL focus
+  class Instruct,IM,ID,IU,IX,Process,PD,PU,EM,ED,EU,EX context
+  classDef fork fill:#111,stroke:#111
+  class Join,Fan,Holds,Pending fork
+  classDef framedcircle fill:#fff,stroke:#111,stroke-width:3px
+  class End framedcircle
+  classDef fcirc fill:#4472c4,stroke:#4472c4
+  class S fcirc

@@ -1,0 +1,180 @@
+{
+  "source_id": "src-000015",
+  "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+  "file_page": 11,
+  "tables": [
+    {
+      "bbox": [
+        85.03936999999999,
+        56.6929100000001,
+        510.236235,
+        698.6929600000002
+      ],
+      "cells": [
+        [
+          85.03936999999999,
+          56.6929100000001,
+          283.46457,
+          74.89291000000014
+        ],
+        [
+          85.03936999999999,
+          74.89291000000014,
+          283.46457,
+          113.09291000000019
+        ],
+        [
+          85.03936999999999,
+          113.09291000000019,
+          283.46457,
+          191.29291000000012
+        ],
+        [
+          85.03936999999999,
+          191.29291000000012,
+          283.46457,
+          269.49292000000014
+        ],
+        [
+          85.03936999999999,
+          269.49292000000014,
+          283.46457,
+          357.69291000000004
+        ],
+        [
+          85.03936999999999,
+          357.69291000000004,
+          283.46457,
+          455.8929100000001
+        ],
+        [
+          85.03936999999999,
+          455.8929100000001,
+          283.46457,
+          504.0929200000001
+        ],
+        [
+          85.03936999999999,
+          504.0929200000001,
+          283.46457,
+          572.2929300000001
+        ],
+        [
+          85.03936999999999,
+          572.2929300000001,
+          283.46457,
+          650.4929500000001
+        ],
+        [
+          85.03936999999999,
+          650.4929500000001,
+          283.46457,
+          698.6929600000002
+        ],
+        [
+          283.46457,
+          56.6929100000001,
+          510.236235,
+          74.89291000000014
+        ],
+        [
+          283.46457,
+          74.89291000000014,
+          510.236235,
+          113.09291000000019
+        ],
+        [
+          283.46457,
+          113.09291000000019,
+          510.236235,
+          191.29291000000012
+        ],
+        [
+          283.46457,
+          191.29291000000012,
+          510.236235,
+          269.49292000000014
+        ],
+        [
+          283.46457,
+          269.49292000000014,
+          510.236235,
+          357.69291000000004
+        ],
+        [
+          283.46457,
+          357.69291000000004,
+          510.236235,
+          455.8929100000001
+        ],
+        [
+          283.46457,
+          455.8929100000001,
+          510.236235,
+          504.0929200000001
+        ],
+        [
+          283.46457,
+          504.0929200000001,
+          510.236235,
+          572.2929300000001
+        ],
+        [
+          283.46457,
+          572.2929300000001,
+          510.236235,
+          650.4929500000001
+        ],
+        [
+          283.46457,
+          650.4929500000001,
+          510.236235,
+          698.6929600000002
+        ]
+      ],
+      "rows": [
+        [
+          "MessageDefinition",
+          "Definition"
+        ],
+        [
+          "camt.049.001.07\nDeleteReservationV07",
+          "The DeleteReservation message is used to request the\ndeletion of one particular reservation by the member\nand managed by the transaction administrator."
+        ],
+        [
+          "camt.050.001.07\nLiquidityCreditTransferV07",
+          "The LiquidityCreditTransfer message is sent by a\nmember to the transaction administrator.\nIt is used to request a transfer of funds between two\naccounts belonging to the same member or the same\ngroup of accounts, and being held at the transaction\nadministrator."
+        ],
+        [
+          "camt.051.001.07\nLiquidityDebitTransferV07",
+          "The LiquidityDebitTransfer message is sent by a\nmember to the transaction administrator.\nIt is used to request a transfer of funds between two\naccounts belonging to the same member or the same\ngroup of accounts, and being held at the transaction\nadministrator."
+        ],
+        [
+          "camt.069.001.05\nGetStandingOrderV05",
+          "The GetStandingOrder message is sent by a member\nto the transaction administrator.\nIt is used to request information on the details of one or\nmore standing orders, based on specific request\ncriteria, especially to query the amount of the overall\nliquidity available. It will allow to query both reserved\nliquidity and liquidity available for normal operations."
+        ],
+        [
+          "camt.070.001.06\nReturnStandingOrderV06",
+          "The ReturnStandingOrder message is sent by a\ntransaction administrator to a member.\nIt is used to provide information on the details of one or\nmore standing orders, based on specific request and\nreturn criteria.\nin response to a request a on information on standing\nand predefined orders."
+        ],
+        [
+          "camt.071.001.05\nDeleteStandingOrderV05",
+          "The DeleteStandingOrder message is sent by the\nsystem member to delete one or more standing orders\nwithin the static data held by the system transaction\nadministrator."
+        ],
+        [
+          "camt.101.001.02\nCreateLimitV02",
+          "The CreateLimit message is sent by a member to the\ntransaction administrator.\nIt is used to create one or several limits set by the\nmember and managed by the transaction\nadministrator."
+        ],
+        [
+          "camt.102.001.03\nCreateStandingOrderV03",
+          "The CreateStandingOrder message is sent by a\nmember to the transaction administrator.\nIt is used to create a permanent order for the transfer\nof funds between two accounts belonging to the same\nmember and being held at the transaction\nadministrator."
+        ],
+        [
+          "camt.103.001.03\nCreateReservationV03",
+          "The CreateReservation message is used to request for\nthe creation of one particular reservation by the\nmember and managed by the transaction\nadministrator."
+        ]
+      ]
+    }
+  ],
+  "error": null
+}

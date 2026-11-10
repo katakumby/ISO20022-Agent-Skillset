@@ -1,0 +1,686 @@
+{
+  "message_id": "semt.025.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "70 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+      "definition_pages": [
+        2401,
+        2408
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesAccountPositionQuery message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account servicer or servicing party",
+            "labels": [
+              {
+                "label": "an account servicer",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-servicer.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              {
+                "label": "servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an account owner",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-owner.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-semt.025.001.01-p2401-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "70 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+          "file_pages": [
+            2401
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or servicing party to request an account view on the position at a particular point in time period, or during a particular time period, where all positions are summarised in the account structure that is compatible with the query.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "110d5cf99948d6eefc48f717fe4d46fc16afbe3c12f601e830109bf4c9b9d861",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-semt.025.001.01-p2401-c003-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "70 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+          "file_pages": [
+            2401
+          ],
+          "section": "usage",
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy), -re-send to a third party a copy of a message for information (the sub-function of the message is CopyDuplicate).",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or servicing party to request an account view on the position at a particular point in time period, or during a particular time period, where all positions are summarised in the account structure that is compatible with the query.",
+          "raw_quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or\nservicing party to request an account view on the position at a particular point in time period, or during a\nparticular time period, where all positions are summarised in the account structure that is compatible\nwith the query.",
+          "file_pages": [
+            2401
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-semt.025.001.01-p2401-c001",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 57,
+              "end": 70,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-owner.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 77,
+              "end": 93,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-servicer.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 97,
+              "end": 112,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-semt.025.001.01-p2401-c001-d1"
+          ]
+        },
+        {
+          "quote": "The message may also be used to: -re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "raw_quote": "Usage:\nThe message may also be used to:\n-re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "file_pages": [
+            2401
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-semt.025.001.01-p2401-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy), -re-send to a third party a copy of a message for information (the sub-function of the message is CopyDuplicate).",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\nCopy),\n-re-send to a third party a copy of a message for information (the sub-function of the message is\nCopyDuplicate).",
+          "file_pages": [
+            2401
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-semt.025.001.01-p2401-c003",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "third party",
+              "start": 120,
+              "end": 131,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "semt.025.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2401
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000375",
+                        "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+                        "file_pages": [
+                          5
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-semt.025.001.01-p2401-c003-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2401
+      ],
+      "file_pages": [
+        2401
+      ]
+    },
+    {
+      "source_id": "src-000375",
+      "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+      "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+      "definition_pages": [
+        5,
+        12
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The SecuritiesAccountPositionQuery message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an account servicer or servicing party",
+            "labels": [
+              {
+                "label": "an account servicer",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              {
+                "label": "servicing party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-servicing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": true,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "an account owner",
+            "labels": [
+              {
+                "label": "an account owner",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000375-semt.025.001.01-p5-c001-d1",
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+          "file_pages": [
+            5
+          ],
+          "section": "scope",
+          "quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or servicing party to request an account view on the position at a particular point in time period, or during a particular time period, where all positions are summarised in the account structure that is compatible with the query.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "message_target": "current-message-copy-or-copyduplicate-option",
+          "message_subject": "This message",
+          "limitation": "The third party receives an informational copy/resend under this usage option. The sender of the copy is not independently identified here. Any account-owner/market-infrastructure wording describes the original message and is retained without treating it as a new copy sender.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "110d5cf99948d6eefc48f717fe4d46fc16afbe3c12f601e830109bf4c9b9d861",
+          "receiver": {
+            "expression": "third party",
+            "labels": [
+              {
+                "label": "third party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000375-semt.025.001.01-p5-c003-d1",
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01",
+          "file_pages": [
+            5
+          ],
+          "section": "usage",
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy), -re-send to a third party a copy of a message for information (the sub-function of the message is CopyDuplicate).",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or servicing party to request an account view on the position at a particular point in time period, or during a particular time period, where all positions are summarised in the account structure that is compatible with the query.",
+          "raw_quote": "The SecuritiesAccountPositionQuery message is sent by an account owner to an account servicer or\nservicing party to request an account view on the position at a particular point in time period, or during a\nparticular time period, where all positions are summarised in the account structure that is compatible\nwith the query.",
+          "file_pages": [
+            5
+          ],
+          "section": "scope",
+          "evidence_id": "src-000375-semt.025.001.01-p5-c001",
+          "mentions": [
+            {
+              "label": "account owner",
+              "start": 57,
+              "end": 70,
+              "resolution": {
+                "label": "account owner",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-owner",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-owner.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "account servicer",
+              "start": 77,
+              "end": 93,
+              "resolution": {
+                "label": "account servicer",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-account-servicer",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-account-servicer.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "servicing party",
+              "start": 97,
+              "end": 112,
+              "resolution": {
+                "label": "servicing party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000374-servicing-party",
+                  "path": "shared/reference/participants/participant-src-000374-servicing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000375-semt.025.001.01-p5-c001-d1"
+          ]
+        },
+        {
+          "quote": "The message may also be used to: -re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "raw_quote": "Usage:\nThe message may also be used to:\n-re-send a message previously sent (the sub-function of the message is Duplicate),",
+          "file_pages": [
+            5
+          ],
+          "section": "usage",
+          "evidence_id": "src-000375-semt.025.001.01-p5-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "resend-option-no-new-named-direction",
+            "rationale": "The source allows resending a previously sent message. This clause names no new sender or receiver; it is a usage option, not absent extraction of a direction.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy), -re-send to a third party a copy of a message for information (the sub-function of the message is CopyDuplicate).",
+          "raw_quote": "provide a third party with a copy of a message for information (the sub-function of the message is\nCopy),\n-re-send to a third party a copy of a message for information (the sub-function of the message is\nCopyDuplicate).",
+          "file_pages": [
+            5
+          ],
+          "section": "usage",
+          "evidence_id": "src-000375-semt.025.001.01-p5-c003",
+          "mentions": [
+            {
+              "label": "third party",
+              "start": 10,
+              "end": 21,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "third party",
+              "start": 120,
+              "end": 131,
+              "resolution": {
+                "label": "third party",
+                "scope_source_id": "src-000375",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000375-third-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000375-third-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000375-semt.025.001.01-p5-c003-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        5
+      ],
+      "file_pages": [
+        5
+      ]
+    }
+  ]
+}

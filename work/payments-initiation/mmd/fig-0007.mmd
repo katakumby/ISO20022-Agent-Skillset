@@ -1,0 +1,10 @@
+flowchart TB
+subgraph laneP["Payment-chain participants"]
+D["Debtor"]
+DA["Debtor Agent"]
+CA["Creditor Agent"]
+C["Creditor"]
+end
+D --> DA
+DA --> CA
+CA --> C

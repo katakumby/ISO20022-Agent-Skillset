@@ -1,0 +1,73 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 524,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 140,
+    "1": 88
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 132,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "14b4a13dfc2a18c4281a149edc61af88a0930b0e1f427184772c885be943a0b7",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-1009",
+      "file_page": 524,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362345454545,
+        481.49295000000006
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-1009.md",
+      "rows": 14,
+      "matrix_cells": 42,
+      "physical_cells": 42,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "bcebd9f16dd127e801ca25c50edac1db193ec04ca37cbd76f6de4b6fb5460fad",
+      "cell_geometry_sha256": "41accde0cf2a84aa79616633f60c630be5e6aa1dd90ccacae70df1379825759f",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 42,
+      "independent_cells_match": 42,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-1010",
+      "file_page": 524,
+      "bbox": [
+        85.03936999999996,
+        551.8929800000001,
+        510.2362345454545,
+        694.6929900000001
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-1010.md",
+      "rows": 4,
+      "matrix_cells": 12,
+      "physical_cells": 12,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "afde6a2ad6f4213cbf701a9904eb639692e91d8d9e633bc452f84b69b6bead6e",
+      "cell_geometry_sha256": "0ff2f2ddb6961bbe4677c42f9fe6cf5ef1c0b2ea66a31de7fe5f80b553d22fbf",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 12,
+      "independent_cells_match": 12,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

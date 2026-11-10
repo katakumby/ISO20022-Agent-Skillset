@@ -1,0 +1,96 @@
+{
+  "source_id": "src-000375",
+  "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+  "file_page": 450,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 85,
+    "2": 102
+  },
+  "path_classes": {
+    "link-annotation-underline": 2,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 94,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "9f34e21ee45b737e79fe49905b74598043f444042a325c4836e80bd88f05b5c1",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        130.1204,
+        121.5237,
+        270.5247,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        286.7093,
+        122.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        269.5247,
+        121.5237,
+        287.2093,
+        122.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        112.8929,
+        286.7093,
+        122.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0844",
+      "file_page": 450,
+      "bbox": [
+        85.03936999999996,
+        129.89291000000014,
+        510.23623599999996,
+        696.493
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/documents/src-000375/tables/tbl-0844.md",
+      "rows": 13,
+      "matrix_cells": 39,
+      "physical_cells": 39,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "447dbd6f724e70b8db18a477f745fecdf18158fb577aad61ead92075cc7260f3",
+      "cell_geometry_sha256": "2c40137fc46bb10c5e09d30266f9257f31e7b109e9d9f0d54cf0e5d659eb6e56",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 39,
+      "independent_cells_match": 38,
+      "exceptions": [
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            302.69292000000013,
+            510.23623599999996,
+            380.8929100000002
+          ],
+          "stored_value": "Price is the calculated creation price of a\ndual-priced investment fund (creation-\ncancellation prices) and the highest\npossible buying price of the units before\nthe initial charge. The actual buying or\noffer price, which includes charges, will\nbe higher.",
+          "pdfium_value": "Price is the calculated creation price of a\r\ndual-priced investment fund (creation\u0002cancellation prices) and the highest\r\npossible buying price of the units before\r\nthe initial charge. The actual buying or\r\noffer price, which includes charges, will\r\nbe higher."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

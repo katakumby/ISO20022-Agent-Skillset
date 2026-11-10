@@ -1,0 +1,88 @@
+flowchart TB
+subgraph laneC["Creditor"]
+start(("Signed mandate in place"))
+notified{"Pre-Notification sent?"}
+notify["Pre-Notification of the Debtor (from Process 1st/1-off Direct Debit)"]
+collect["Initiate Collection of the Direct Debit"]
+rejectC["Process Reject"]
+correctC{"correction?"}
+rejected((("Rejected DD")))
+collected["Reconcile Collected Direct Debit"]
+endC((("Reconciled Direct Debit")))
+end
+subgraph laneD["Debtor"]
+reconcileNotification["Reconcile Pre-Notification"]
+acceptD{"accept?"}
+refused((("Refused Direct Debit")))
+prenotified((("Reconciled Pre-Notification")))
+reconcileD["Reconcile Debit Entry"]
+refund{"Refund requested?"}
+endD((("Reconciled Direct Debit")))
+request["Request Refund"]
+end
+subgraph laneCA["Creditor Agent"]
+acceptCA{"accept request for initiation of a direct debit / creditor registered for the DD scheme?"}
+rejectCA["Reject Direct Debit Instruction"]
+forward["Forward DD Instruction"]
+processReject["Process B2B Reject"]
+format{"format error?"}
+correctCA["Correct and resubmit"]
+creditCA["Reconcile Credit Entry and Inform Creditor"]
+end
+subgraph laneACH["ACH (System Transaction Administrator)"]
+acceptACH{"accept direct debit transaction?"}
+rejectACH["Reject Direct Debit Instruction"]
+clear["Clear Direct Debit"]
+end
+subgraph laneS["Settlement Agent"]
+settle["Settle Direct Debit Proceeds"]
+end
+subgraph laneDA["Debtor Agent"]
+acceptDA{"accept?"}
+beforeDue{"before due date?"}
+rejectDA["Reject Direct Debit Instruction"]
+returnDA["Return Direct Debit Instruction"]
+reconcileDA["Reconcile Debit"]
+endDA((("Reconciled Debit Entry")))
+value["Provide Value Added Services"]
+end
+start --> notified
+notified --> |"no"| notify
+notified --> |"yes"| collect
+notify --> collect
+notify --> reconcileNotification
+reconcileNotification --> acceptD
+acceptD --> |"no"| refused
+acceptD --> |"yes"| prenotified
+collect --> acceptCA
+acceptCA --> |"no"| rejectCA
+acceptCA --> |"yes"| forward
+forward --> acceptACH
+acceptACH --> |"no"| rejectACH
+acceptACH --> |"yes"| clear
+rejectACH --> processReject
+processReject --> format
+format --> |"yes"| correctCA
+format --> |"no"| rejectCA
+correctCA --> forward
+rejectCA --> rejectC
+rejectC --> correctC
+correctC --> |"no"| rejected
+correctC --> |"yes"| collect
+clear --> settle
+clear --> acceptDA
+acceptDA --> |"no"| beforeDue
+beforeDue --> |"yes"| rejectDA
+beforeDue --> |"no"| returnDA
+rejectDA --> rejectACH
+acceptDA --> |"yes"| value
+value --> reconcileD
+reconcileD --> refund
+refund --> |"no"| endD
+refund --> |"yes"| request
+settle --> |"report"| reconcileDA
+reconcileDA --> endDA
+settle --> creditCA
+creditCA --> collected
+collected --> endC
+style start fill:#222,stroke:#222,color:#fff

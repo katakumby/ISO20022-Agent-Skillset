@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000381",
+  "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+  "file_page": 56,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 43,
+    "2": 55
+  },
+  "path_classes": {
+    "link-annotation-underline": 4,
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 45,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "636e5df139731370f2d89205b8df20b63df7f152acfa86ffdd0d5e96c0bc1f8c",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 8,
+      "bbox": [
+        144.5687,
+        139.5237,
+        282.7415,
+        140.5237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        130.8929,
+        282.2415,
+        140.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 12,
+      "bbox": [
+        418.5775,
+        157.5237,
+        534.5237,
+        158.5237
+      ],
+      "link_annotation_bbox": [
+        419.0775,
+        148.8929,
+        534.0237,
+        158.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 14,
+      "bbox": [
+        84.5394,
+        169.5237,
+        110.5638,
+        170.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        160.8929,
+        126.7484,
+        170.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 16,
+      "bbox": [
+        109.5638,
+        169.5237,
+        127.2484,
+        170.5237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        160.8929,
+        126.7484,
+        170.8929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0080",
+      "file_page": 56,
+      "bbox": [
+        85.03936999999998,
+        177.89291000000014,
+        555.590568,
+        246.49291000000017
+      ],
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/documents/src-000381/tables/tbl-0080.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "d067f68fd9d26bf91b4df51c95f663f1a3d7b032469f9367a158af74fe910de2",
+      "cell_geometry_sha256": "9575e5526c988ccc6c1c5dd6a473d928f9ed263161f52621c2529584deb9d204",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

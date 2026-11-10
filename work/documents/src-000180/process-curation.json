@@ -1,0 +1,151 @@
+[
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0001.md",
+    "source_figure": "fig-0001",
+    "original": "domains/securities/assets/src-000180/originals/image1.emf",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image1.emf.png",
+    "flow": null,
+    "participants": [
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-broker",
+      "participant-src-000180-settlement-agent",
+      "participant-src-000180-icsd-scope-actor"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0002.md",
+    "source_figure": "fig-0002",
+    "original": "work/docx-render/src-000180/document.pdf",
+    "preview": "domains/securities/assets/src-000180/source-page-renders/fig-0002-complete-crop.png",
+    "flow": null,
+    "participants": [
+      "participant-src-000180-party",
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-exchange",
+      "participant-src-000180-broker-executing-broker",
+      "participant-src-000180-central-securities-depositories",
+      "participant-src-000180-prime-broker",
+      "participant-src-000180-custodian",
+      "participant-src-000180-affirmation-party",
+      "participant-src-000180-confirmation-party",
+      "participant-src-000180-central-counterparty",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-financial-intermediary"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0003.md",
+    "source_figure": "fig-0003",
+    "original": "work/docx-render/src-000180/document.pdf",
+    "preview": "domains/securities/assets/src-000180/source-page-renders/fig-0003-complete-crop.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p120-business-process-diagram.md",
+    "participants": [
+      "participant-src-000180-instructing-party",
+      "participant-src-000180-executing-servicing-party",
+      "participant-src-000180-trade-counterparty",
+      "participant-src-000180-central-matching-utility-cmu"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0007.md",
+    "source_figure": "fig-0007",
+    "original": "domains/securities/assets/src-000180/originals/image4.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image4.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p146-through-type.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-trustee",
+      "participant-src-000180-trust-bank"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0008.md",
+    "source_figure": "fig-0008",
+    "original": "domains/securities/assets/src-000180/originals/image5.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image5.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p153-own-account-trade-type.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-underwriter",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-institutional-investor",
+      "participant-src-000180-issuer-agent"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0009.md",
+    "source_figure": "fig-0009",
+    "original": "domains/securities/assets/src-000180/originals/image6.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image6.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p159-duplex-type.md",
+    "participants": [
+      "participant-src-000180-underwriter",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-transfer-agent",
+      "participant-src-000180-cash-settlement-agent"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0011.md",
+    "source_figure": "fig-0011",
+    "original": "domains/securities/assets/src-000180/originals/image8.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image8.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p173-tripartite-central-matching-without-confirmation-distribution-service.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-trustee",
+      "participant-src-000180-trust-bank"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0012.md",
+    "source_figure": "fig-0012",
+    "original": "domains/securities/assets/src-000180/originals/image9.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image9.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p180-tripartite-central-matching-with-confirmation-distribution-service.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-trustee",
+      "participant-src-000180-trust-bank"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0013.md",
+    "source_figure": "fig-0013",
+    "original": "domains/securities/assets/src-000180/originals/image10.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image10.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p185-bilateral-central-matching.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-prime-broker",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/processes/fig-0010.md",
+    "source_figure": "fig-0010",
+    "original": "domains/securities/assets/src-000180/originals/image7.tmp",
+    "preview": "domains/securities/assets/src-000180/derived-previews/image7.tmp.png",
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p165-end-of-process-report-for-listed-derivatives.md",
+    "participants": [
+      "participant-src-000180-broker",
+      "participant-src-000180-investment-manager",
+      "participant-src-000180-central-matching-utility-cmu",
+      "participant-src-000180-central-matching-utility-jasdec",
+      "participant-src-000180-trustee",
+      "participant-src-000180-trust-bank"
+    ]
+  }
+]

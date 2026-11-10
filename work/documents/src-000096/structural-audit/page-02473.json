@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 2473,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 165,
+    "2": 264
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 3,
+    "table-associated-axis-line": 253,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "5ff54627de5bdc4adabc8af01a8657c831321081eada7a7666335249b57cfa26",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 405,
+      "bbox": [
+        130.1204,
+        602.1237,
+        275.5296,
+        603.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        593.493,
+        297.2757,
+        603.493
+      ]
+    },
+    {
+      "path_object_ordinal": 407,
+      "bbox": [
+        274.5296,
+        602.1237,
+        297.7757,
+        603.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        593.493,
+        297.2757,
+        603.493
+      ]
+    },
+    {
+      "path_object_ordinal": 417,
+      "bbox": [
+        130.1204,
+        704.1237,
+        252.18,
+        705.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        695.493,
+        273.9261,
+        705.493
+      ]
+    },
+    {
+      "path_object_ordinal": 419,
+      "bbox": [
+        251.18,
+        704.1237,
+        274.4261,
+        705.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        695.493,
+        273.9261,
+        705.493
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-3526",
+      "file_page": 2473,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905771428572,
+        478.49295000000006
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-3526.md",
+      "rows": 19,
+      "matrix_cells": 114,
+      "physical_cells": 114,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "24eafc11caad4c2ae53dfce99d429b529a4faa2a04b347e50c652f9a2d44316d",
+      "cell_geometry_sha256": "9e436c30eb593f21ca8cb2570d9d9b8cfac81044f00f18a4eaec5d7a2c2f3f61",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 114,
+      "independent_cells_match": 114,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

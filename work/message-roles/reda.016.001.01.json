@@ -1,0 +1,369 @@
+{
+  "message_id": "reda.016.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "36 reda.016.001.01 PartyStatusAdviceV01",
+      "definition_pages": [
+        2072,
+        2077
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyStatusAdvice message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.016.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2072
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+                        "file_pages": [
+                          35
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.016.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2072
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+                        "file_pages": [
+                          35
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.016.001.01-p2072-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "36 reda.016.001.01 PartyStatusAdviceV01",
+          "file_pages": [
+            2072
+          ],
+          "section": "scope",
+          "quote": "The PartyStatusAdvice message is sent by the executing party to the instructing party to provide details about the processing of a request on party reference data (create or update).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyStatusAdvice message is sent by the executing party to the instructing party to provide details about the processing of a request on party reference data (create or update).",
+          "raw_quote": "Scope:\nThe PartyStatusAdvice message is sent by the executing party to the instructing party to provide details\nabout the processing of a request on party reference data (create or update).",
+          "file_pages": [
+            2072
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.016.001.01-p2072-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 45,
+              "end": 60,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.016.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2072
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+                        "file_pages": [
+                          35
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 68,
+              "end": 85,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.016.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2072
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000369",
+                        "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+                        "file_pages": [
+                          35
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000233-reda.016.001.01-p2072-c001-d1"
+          ]
+        },
+        {
+          "quote": "When processing is successfully performed, the message includes the related party identification.",
+          "raw_quote": "When processing is successfully performed, the message includes the related party identification.",
+          "file_pages": [
+            2072
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.016.001.01-p2072-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "When processing information is negative - a failure occurred in applying the changes the message accordingly also delivers information about the reason why the creation or update could not be processed.",
+          "raw_quote": "Usage:\nWhen processing information is negative - a failure occurred in applying the changes the message\naccordingly also delivers information about the reason why the creation or update could not be\nprocessed.",
+          "file_pages": [
+            2072
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2072
+      ],
+      "file_pages": [
+        2072
+      ]
+    },
+    {
+      "source_id": "src-000369",
+      "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+      "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+      "definition_pages": [
+        35,
+        40
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PartyStatusAdvice message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the instructing party",
+            "labels": [
+              {
+                "label": "the instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000369-reda.016.001.01-p35-c001-d1",
+          "source_id": "src-000369",
+          "source_sha256": "d01c87b84a83ca9031badfc0aadec0d076faf360a82ce9339833cd1ac24f3798",
+          "heading": "4 reda.016.001.01 PartyStatusAdviceV01",
+          "file_pages": [
+            35
+          ],
+          "section": "scope",
+          "quote": "The PartyStatusAdvice message is sent by the executing party to the instructing party to provide details about the processing of a request on party reference data (create or update).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PartyStatusAdvice message is sent by the executing party to the instructing party to provide details about the processing of a request on party reference data (create or update).",
+          "raw_quote": "Scope:\nThe PartyStatusAdvice message is sent by the executing party to the instructing party to provide details\nabout the processing of a request on party reference data (create or update).",
+          "file_pages": [
+            35
+          ],
+          "section": "scope",
+          "evidence_id": "src-000369-reda.016.001.01-p35-c001",
+          "mentions": [
+            {
+              "label": "executing party",
+              "start": 45,
+              "end": 60,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000369-executing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000369-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 68,
+              "end": 85,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000369",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000368-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000368-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000369-reda.016.001.01-p35-c001-d1"
+          ]
+        },
+        {
+          "quote": "When processing is successfully performed, the message includes the related party identification.",
+          "raw_quote": "When processing is successfully performed, the message includes the related party identification.",
+          "file_pages": [
+            35
+          ],
+          "section": "usage",
+          "evidence_id": "src-000369-reda.016.001.01-p35-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "When processing information is negative - a failure occurred in applying the changes the message accordingly also delivers information about the reason why the creation or update could not be processed.",
+          "raw_quote": "Usage:\nWhen processing information is negative - a failure occurred in applying the changes the message\naccordingly also delivers information about the reason why the creation or update could not be\nprocessed.",
+          "file_pages": [
+            35
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        35
+      ],
+      "file_pages": [
+        35
+      ]
+    }
+  ]
+}

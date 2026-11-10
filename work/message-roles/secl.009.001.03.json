@@ -1,0 +1,243 @@
+{
+  "message_id": "secl.009.001.03",
+  "publications": [
+    {
+      "source_id": "src-000053",
+      "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+      "heading": "10 MX secl.009.001.03 BuyInConfirmationV03",
+      "definition_pages": [
+        294,
+        315
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The Buy In Confirmation message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the clearing member",
+            "labels": [
+              {
+                "label": "the clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "the central counterparty (CCP)",
+            "labels": [
+              {
+                "label": "the central counterparty",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the central counterparty (CCP)"
+          },
+          "claim_id": "src-000053-secl.009.001.03-p294-c001-d1",
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "heading": "10 MX secl.009.001.03 BuyInConfirmationV03",
+          "file_pages": [
+            294
+          ],
+          "section": "scope",
+          "quote": "The Buy In Confirmation message is sent by the central counterparty (CCP) to the clearing member to confirm the details of the transaction resulting from the buy in.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "pattern": "passive",
+          "message_subject": "The Buy In Confirmation message",
+          "message_target": "current-message",
+          "sender": {
+            "expression": "the central counterparty (CCP)",
+            "labels": [
+              {
+                "label": "the central counterparty",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the central counterparty (CCP)"
+          },
+          "limitation": "The clause supplies the sender and a purpose introduced by “to”; it does not explicitly name a receiver.",
+          "claim_id": "src-000053-secl.009.001.03-p294-c002-d1",
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "heading": "10 MX secl.009.001.03 BuyInConfirmationV03",
+          "file_pages": [
+            294
+          ],
+          "section": "usage",
+          "quote": "The Buy In Confirmation message is sent by the central counterparty (CCP) to confirm the details of the buy in transaction.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The Buy In Confirmation message is sent by the central counterparty (CCP) to the clearing member to confirm the details of the transaction resulting from the buy in.",
+          "raw_quote": "Scope\nThe Buy In Confirmation message is sent by the central counterparty (CCP) to the clearing member to\nconfirm the details of the transaction resulting from the buy in.",
+          "file_pages": [
+            294
+          ],
+          "section": "scope",
+          "evidence_id": "src-000053-secl.009.001.03-p294-c001",
+          "mentions": [
+            {
+              "label": "central counterparty (CCP)",
+              "start": 47,
+              "end": 73,
+              "resolution": {
+                "label": "central counterparty (CCP)",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "Exact message, source, label and Functionality-quote match; The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                  "contextual_override": {
+                    "source_id": "src-000053",
+                    "message_id": "secl.009.001.03",
+                    "label": "central counterparty (CCP)",
+                    "participant_id": "participant-src-000052-central-counterparty",
+                    "quote_sha256": "25e07a73dfd298ef40c0c840c722c65a8209c21feb9336a69905da4b7298c402",
+                    "basis": "The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                    "source_locations": [
+                      {
+                        "source_id": "src-000053",
+                        "heading": "10 MX secl.009.001.03 BuyInConfirmationV03",
+                        "file_pages": [
+                          294
+                        ],
+                        "evidence_id": "src-000053-secl.009.001.03-p294-c001"
+                      }
+                    ]
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "clearing member",
+              "start": 81,
+              "end": 96,
+              "resolution": {
+                "label": "clearing member",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-individual-or-general-clearing-member",
+                  "path": "shared/reference/participants/participant-src-000052-individual-or-general-clearing-member.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000053-secl.009.001.03-p294-c001-d1"
+          ]
+        },
+        {
+          "quote": "The Buy In Confirmation message is sent by the central counterparty (CCP) to confirm the details of the buy in transaction.",
+          "raw_quote": "Usage\nThe Buy In Confirmation message is sent by the central counterparty (CCP) to confirm the details of the\nbuy in transaction.",
+          "file_pages": [
+            294
+          ],
+          "section": "usage",
+          "evidence_id": "src-000053-secl.009.001.03-p294-c002",
+          "mentions": [
+            {
+              "label": "central counterparty (CCP)",
+              "start": 47,
+              "end": 73,
+              "resolution": {
+                "label": "central counterparty (CCP)",
+                "scope_source_id": "src-000053",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000052-central-counterparty",
+                  "path": "shared/reference/participants/participant-src-000052-central-counterparty.md",
+                  "basis": "Exact message, source, label and Functionality-quote match; The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                  "contextual_override": {
+                    "source_id": "src-000053",
+                    "message_id": "secl.009.001.03",
+                    "label": "central counterparty (CCP)",
+                    "participant_id": "participant-src-000052-central-counterparty",
+                    "quote_sha256": "47e32cb1654e673851f57b8dc442b44f075a27604f111936bf600dc11936bac4",
+                    "basis": "The paired Part1 functional definition T10 row5 and explicit T12–T17 responsibility columns establish the Central Counterparty role. The duplicate activity-label page has no separate definition; the canonical defined functional role is selected without equating it to the infrastructure business-role record CCP.",
+                    "source_locations": [
+                      {
+                        "source_id": "src-000053",
+                        "heading": "10 MX secl.009.001.03 BuyInConfirmationV03",
+                        "file_pages": [
+                          294
+                        ],
+                        "evidence_id": "src-000053-secl.009.001.03-p294-c002"
+                      }
+                    ]
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000053-secl.009.001.03-p294-c002-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The message definition is intended for use with the ISO 20022 Business Application Header.",
+          "raw_quote": "The message definition is intended for use with the ISO 20022 Business Application Header.",
+          "file_pages": [
+            294
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        294
+      ],
+      "file_pages": [
+        294
+      ]
+    }
+  ]
+}

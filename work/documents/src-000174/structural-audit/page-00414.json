@@ -1,0 +1,112 @@
+{
+  "source_id": "src-000174",
+  "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+  "file_page": 414,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 99,
+    "2": 120
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 110,
+    "link-annotation-underline": 4,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "0cef4b99d453916344c0ce01f634b416219c21250d8efb7e62fd4a34286e3457",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 188,
+      "bbox": [
+        130.1204,
+        433.5237,
+        229.387,
+        434.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        424.8929,
+        245.5716,
+        434.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 190,
+      "bbox": [
+        228.387,
+        433.5237,
+        246.0716,
+        434.5237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        424.8929,
+        245.5716,
+        434.8929
+      ]
+    },
+    {
+      "path_object_ordinal": 198,
+      "bbox": [
+        130.1204,
+        515.9238,
+        240.4954,
+        516.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        507.2929,
+        256.68,
+        517.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 200,
+      "bbox": [
+        239.4954,
+        515.9238,
+        257.18,
+        516.9238
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        507.2929,
+        256.68,
+        517.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0477",
+      "file_page": 414,
+      "bbox": [
+        85.03936999999996,
+        135.89291000000014,
+        555.5905740000001,
+        305.49290000000013
+      ],
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/documents/src-000174/tables/tbl-0477.md",
+      "rows": 8,
+      "matrix_cells": 48,
+      "physical_cells": 48,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "fea9ebf423e60c3fb4083dda2f2282bd7655dafacf1d5b46a41bfa63db528699",
+      "cell_geometry_sha256": "f6e67e9dffa2911c3488719dd7bc93961887dd983d5b86d865b37919d77e991a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 48,
+      "independent_cells_match": 48,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

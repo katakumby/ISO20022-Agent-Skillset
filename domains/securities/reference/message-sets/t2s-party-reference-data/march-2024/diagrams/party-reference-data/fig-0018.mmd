@@ -1,0 +1,7 @@
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+Note over A,B: Party Query/Report Process
+A->>B: Party Query (reda.015)
+B-->>A: Party Report (reda.017): ERROR
+B->>A: Party Report (reda.017)

@@ -1,0 +1,74 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "TARGET2-Securities"
+source_ids: ["src-000233"]
+source_editions: ["August 2026"]
+message_ids: []
+heading_path: ["28 reda.007.001.01 SecurityMaintenanceRequestV01", "28.4 Message Building Blocks", "28.4.2 UpdateType <UpdTp>", "28.4.2.1 UpdateType <UpdTp>", "28.4.2.1.3 Modify <Modfy>", "28.4.2.1.3.2 FinancialInstrumentAttributes <FinInstrmAttrbts>", "28.4.2.1.3.2.22 SpreadAndBenchmarkCurve <SprdAndBchmkCrv>", "28.4.2.1.3.2.22.4 BenchmarkCurveCurrency <BchmkCrvCcy>"]
+file_pages: [1516]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["reda.007.001.01"]
+---
+
+# 28.4.2.1.3.2.22.4 BenchmarkCurveCurrency <BchmkCrvCcy>
+
+Source: [src-000233](../../../../../../../../../raw-input/target2securities_t2s/ISO20022_MDRPart2_Target2Securities_August_2026_v1.pdf). Locator: one-based file pages 1516 to 1516.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 1516
+
+```text
+CodeName Name Definition
+RDAV RoundedAverage Price is a rounded average price.
+STOP Stop Price is a stop price used in an order to
+buy. The order becomes a market order
+when the financial instrument trades at
+or above the stop price after the order is
+submitted. In an order to sell the order
+becomes a market order when the
+financial instrument trades at or below
+the stop price.
+28.4.2.1.3.2.22.4  BenchmarkCurveCurrency <BchmkCrvCcy>
+Presence: [0..1]
+Definition: Identifies the currency used for the benchmark curve.
+Impacted by: C2 "ActiveOrHistoricCurrency"
+Datatype: "ActiveOrHistoricCurrencyCode" on page 3212
+Constraints
+• ActiveOrHistoricCurrency
+The Currency Code must be registered, or have already been registered. Valid active or historic
+currency codes are registered with the ISO 4217 Maintenance Agency, consist of three (3)
+contiguous letters, and may be or not be withdrawn on the day the message containing the Currency
+is exchanged.
+28.4.2.1.3.2.22.5  BenchmarkCurveName <BchmkCrvNm>
+Presence: [0..1]
+Definition: Identifies the name of the benchmark curve.
+BenchmarkCurveName <BchmkCrvNm> contains one of the following
+BenchmarkCurveName7Choice elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Code <Cd> [1..1] CodeSet 1516
+Or}   Proprietary <Prtry> [1..1] ± 1517
+28.4.2.1.3.2.22.5.1  Code <Cd>
+Presence: [1..1]
+Definition: Benchmark curve name expressed as an ISO 20022 code.
+Datatype: "BenchmarkCurveName1Code" on page 3215
+CodeName Name Definition
+MAAA MuniAAA Benchmark curve used for municipals
+based on the best credit rating for
+municipal market debt.
+FUSW FutureSWAP Portion of a synthetic curve that is
+composed of Eurodollar or Treasury or
+similar Futures and Swap rates. The
+term usually begins at 3 months to 2
+Approved by the Securities and Payments SEGs under the leadership of the
+Securities SEG and by the Cross-SEG Harmonisation for the Business File
+Header (last message set approved on 18 June 2026).
+reda.007.001.01 SecurityMaintenanceRequestV01
+Target2-Securities 1516 August 2026
+```
+

@@ -1,0 +1,67 @@
+classDiagram
+direction LR
+namespace Codes {
+class OptionFeaturesCode["OptionFeaturesCode"] {
+<<CodeSet>>
+}
+class CurrencyCode["CurrencyCode"] {
+<<CodeSet>>
+}
+class CorporateActionOptionCode["CorporateActionOptionCode"] {
+<<CodeSet>>
+}
+class OfferTypeV2Code["OfferTypeV2Code"] {
+<<CodeSet>>
+}
+class FractionDispositionTypeCode["FractionDispositionTypeCode"] {
+<<CodeSet>>
+}
+}
+namespace DICO_BusinessComponents {
+class CorporateActionOption["CorporateActionOption"] {
+<<BusinessComponent>>
+}
+class ChoiceCorporateAction["ChoiceCorporateAction"] {
+<<BusinessComponent>>
+}
+class ProceedsDefinition["ProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class CashProceedsDefinition["CashProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class SecuritiesProceedsDefinition["SecuritiesProceedsDefinition"] {
+<<BusinessComponent>>
+}
+class SecuritiesQuantity["SecuritiesQuantity"] {
+<<BusinessComponent>>
+}
+}
+namespace DICO_SimpleTypes {
+class ChargesIndicator["YesNoIndicator"] {
+<<Indicator>>
+}
+class ChangeIndicator["YesNoIndicator"] {
+<<Indicator>>
+}
+class WithdrawalIndicator["YesNoIndicator"] {
+<<Indicator>>
+}
+class Exact3NumericText["Exact3NumericText"] {
+<<Text>>
+}
+}
+CorporateActionOption --> ChargesIndicator : - ChargesAppliedIndicator
+CorporateActionOption --> ChangeIndicator : - ChangeAllowedIndicator
+CorporateActionOption --> WithdrawalIndicator : - WithdrawalAllowedIndicator
+CorporateActionOption --> CurrencyCode : - CurrencyOption
+CorporateActionOption --> CorporateActionOptionCode : - OptionType
+CorporateActionOption --> OfferTypeV2Code
+CorporateActionOption --> OptionFeaturesCode : - OptionFeatures
+CorporateActionOption --> Exact3NumericText : - OptionNumber
+CorporateActionOption --> FractionDispositionTypeCode : - FractionDisposition
+CorporateActionOption -- ChoiceCorporateAction : + CorporateActionOptionDefinition
+CorporateActionOption -- ProceedsDefinition : + Option / + ProceedsDefinition
+CashProceedsDefinition --|> ProceedsDefinition
+SecuritiesProceedsDefinition --|> ProceedsDefinition
+SecuritiesProceedsDefinition -- SecuritiesQuantity

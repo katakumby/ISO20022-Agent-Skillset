@@ -1,0 +1,636 @@
+{
+  "message_id": "setr.057.001.03",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03",
+      "definition_pages": [
+        4283,
+        4302
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The OrderConfirmationStatusReport message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the executing party, for example, a transfer agent"
+          },
+          "sender": {
+            "expression": "an instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an instructing party, for example, an investment manager or its authorised representative"
+          },
+          "claim_id": "src-000096-setr.057.001.03-p4283-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03",
+          "file_pages": [
+            4283
+          ],
+          "section": "scope",
+          "quote": "The OrderConfirmationStatusReport message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to report the status of an order confirmation or an order confirmation amendment.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "Source says “It is likely” and qualifies rejection use and intermediary statuses. This is not upgraded to a mandatory exclusive rule.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "558cc9ba8bbb2f8a8576e0dfd5c48c480b36715e35196cd9920ae77cf9c2efdb",
+          "sender": {
+            "expression": "order instructing party",
+            "labels": [
+              {
+                "label": "order instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-instructing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "order executing party",
+            "labels": [
+              {
+                "label": "order executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-executing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000096-setr.057.001.03-p4283-c005-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "quote": "It is likely that the OrderConfirmationStatusReport is only sent by the order instructing party to the order executing party to reject an order confirmation or to reject an order confirmation amendment, although if an intermediary party is used, the statuses sent to next party and communication problem with next party are also likely be used.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "if",
+            "only",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-only",
+          "message_target": "related-request-message",
+          "message_subject": "RequestForOrderConfirmationStatusReport",
+          "limitation": "This request is a condition for using confirmation accepted/received statuses; another status must not apply.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "51d34ea39d3d0280b72445bab859a27a7df762a9eee1a3f00d227d64510391d8",
+          "sender": {
+            "expression": "order executing party",
+            "labels": [
+              {
+                "label": "order executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-executing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000096-setr.057.001.03-p4283-c006-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "quote": "The statuses confirmation accepted and confirmation received would only be used in the event the order executing party sends a RequestForOrderConfirmationStatusReport message and one of the other statuses does not apply.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "only"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The OrderConfirmationStatusReport message is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to report the status of an order confirmation or an order confirmation amendment.",
+          "raw_quote": "Scope\nThe OrderConfirmationStatusReport message is sent by an instructing party, for example, an\ninvestment manager or its authorised representative, to the executing party, for example, a transfer\nagent, to report the status of an order confirmation or an order confirmation amendment.",
+          "file_pages": [
+            4283
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 56,
+              "end": 73,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 91,
+              "end": 109,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 117,
+              "end": 142,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 151,
+              "end": 166,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 183,
+              "end": 197,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-setr.057.001.03-p4283-c001-d1"
+          ]
+        },
+        {
+          "quote": "sent to next party, or,",
+          "raw_quote": "sent to next party, or,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c002",
+          "mentions": [
+            {
+              "label": "next party",
+              "start": 8,
+              "end": 18,
+              "resolution": {
+                "label": "next party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-next-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-next-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "communication problem with next party, or,",
+          "raw_quote": "communication problem with next party, or,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c003",
+          "mentions": [
+            {
+              "label": "next party",
+              "start": 27,
+              "end": 37,
+              "resolution": {
+                "label": "next party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-next-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-next-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "confirmation received.",
+          "raw_quote": "confirmation received.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "It is likely that the OrderConfirmationStatusReport is only sent by the order instructing party to the order executing party to reject an order confirmation or to reject an order confirmation amendment, although if an intermediary party is used, the statuses sent to next party and communication problem with next party are also likely be used.",
+          "raw_quote": "It is likely that the OrderConfirmationStatusReport is only sent by the order instructing party to the order\nexecuting party to reject an order confirmation or to reject an order confirmation amendment, although if\nan intermediary party is used, the statuses sent to next party and communication problem with next\nparty are also likely be used.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c005",
+          "mentions": [
+            {
+              "label": "order instructing party",
+              "start": 72,
+              "end": 95,
+              "resolution": {
+                "label": "order instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-instructing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "order executing party",
+              "start": 103,
+              "end": 124,
+              "resolution": {
+                "label": "order executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-executing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "intermediary",
+              "start": 218,
+              "end": 230,
+              "resolution": {
+                "label": "intermediary",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-intermediary",
+                  "path": "shared/reference/participants/participant-src-000095-intermediary.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "next party",
+              "start": 267,
+              "end": 277,
+              "resolution": {
+                "label": "next party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-next-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-next-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "next party",
+              "start": 309,
+              "end": 319,
+              "resolution": {
+                "label": "next party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-next-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-next-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-setr.057.001.03-p4283-c005-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The statuses confirmation accepted and confirmation received would only be used in the event the order executing party sends a RequestForOrderConfirmationStatusReport message and one of the other statuses does not apply.",
+          "raw_quote": "The statuses confirmation accepted and confirmation received would only\nbe used in the event the order executing party sends a RequestForOrderConfirmationStatusReport\nmessage and one of the other statuses does not apply.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c006",
+          "mentions": [
+            {
+              "label": "order executing party",
+              "start": 97,
+              "end": 118,
+              "resolution": {
+                "label": "order executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-executing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "order executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-order-executing-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000096-setr.057.001.03-p4283-c006-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The OrderConfirmationStatusReport message is used to report on the status of one or more individual:",
+          "raw_quote": "Usage\nThe OrderConfirmationStatusReport message is used to report on the status of one or more individual:",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "subscription confirmations,",
+          "raw_quote": "subscription confirmations,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "subscription confirmation amendments,",
+          "raw_quote": "subscription confirmation amendments,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "redemption confirmations,",
+          "raw_quote": "redemption confirmations,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "redemption confirmation amendments,",
+          "raw_quote": "redemption confirmation amendments,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "switch order confirmations,",
+          "raw_quote": "switch order confirmations,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "switch order confirmation amendments.",
+          "raw_quote": "switch order confirmation amendments.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "One of the following statuses can be reported:",
+          "raw_quote": "One of the following statuses can be reported:",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "confirmation rejected, or,",
+          "raw_quote": "confirmation rejected, or,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "amendment rejected, or,",
+          "raw_quote": "amendment rejected, or,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "confirmation accepted, or,",
+          "raw_quote": "confirmation accepted, or,",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "If the status being reported is either confirmation rejected or amendment rejected, then a reason for the rejection must be given.",
+          "raw_quote": "If the status being reported is either confirmation rejected or amendment rejected, then a reason for the\nrejection must be given.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The individual order confirmation or confirmation amendment for which the status is given is identified with its order reference.",
+          "raw_quote": "The individual order confirmation or confirmation amendment for which the status is given is identified\nwith its order reference.",
+          "file_pages": [
+            4283
+          ],
+          "section": "usage"
+        },
+        {
+          "quote": "The message identification of the message in which the individual order Approved by the Securities SEG on 27 January 2026 setr.057.001.03 OrderConfirmationStatusReportV03 Investment Funds - Maintenance 2025 - 2026 4283 May 2026 confirmation or confirmation amendment was conveyed may also be quoted in RelatedReference, but this is not recommended.",
+          "raw_quote": "The message identification of the message in which the individual order\nApproved by the Securities SEG on 27 January 2026 setr.057.001.03 OrderConfirmationStatusReportV03\nInvestment Funds - Maintenance 2025 - 2026 4283 May 2026\nconfirmation or confirmation amendment was conveyed may also be quoted in RelatedReference, but\nthis is not recommended.",
+          "file_pages": [
+            4283,
+            4284
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        4283,
+        4284
+      ],
+      "file_pages": [
+        4283,
+        4284
+      ]
+    }
+  ]
+}

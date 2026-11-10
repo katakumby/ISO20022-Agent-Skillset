@@ -1,0 +1,68 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Transactions and Financial Instruments Data Reporting"
+source_ids: ["src-000321"]
+source_editions: ["July 2025"]
+message_ids: []
+heading_path: ["8 auth.036.001.03 FinancialInstrumentReportingReferenceDataDeltaReportV03", "8.4 Message Building Blocks", "8.4.2 FinancialInstrument <FinInstrm>", "8.4.2.3 TerminatedRecord <TermntdRcrd>", "8.4.2.3.1 TechnicalRecordIdentification <TechRcrdId>"]
+file_pages: [145]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["auth.036.001.03"]
+---
+
+# 8.4.2.3.1 TechnicalRecordIdentification <TechRcrdId>
+
+Source: [src-000321](../../../../../../../../../raw-input/transactions_and_financial_instruments_data_reporting_fitrr/ISO20022_MDRPart2_FITRR_TransactionAndFinancialInstrumentsDataReporting_FastTrackMaintenance2025_v1.pdf). Locator: one-based file pages 145 to 145.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 145
+
+```text
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+         Product <Pdct> [1..1] ± 156
+         TransactionType <TxTp> [0..1] CodeSet 156
+         FinalPriceType <FnlPricTp> [0..1] CodeSet 157
+       Interest <Intrst> [0..1]  157
+         InterestRate <IntrstRate> [1..1] ± 157
+         FirstLegInterestRate <FrstLegIntrstRate> [0..1] ± 158
+         OtherNotionalCurrency <OthrNtnlCcy> [0..1] CodeSet C2 158
+         OtherLegInterestRate <OthrLegIntrstRate> [0..1] ± 158
+       ForeignExchange <FX> [0..1]  159
+         FXType <FxTp> [0..1] CodeSet 159
+         OtherNotionalCurrency <OthrNtnlCcy> [0..1] CodeSet C2 159
+   TechnicalAttributes <TechAttrbts> [0..1]  C12 160
+     InconsistencyIndicator <IncnsstncyInd> [0..1] Indicator 160
+     LastUpdate <LastUpd> [0..1] DateTime 160
+     SubmissionDateTime <SubmissnDtTm> [0..1] DateTime 160
+     RelevantCompetentAuthority <RlvntCmptntAuthrty> [0..1] CodeSet C4 161
+     PublicationPeriod <PblctnPrd> [0..1] ± 161
+     NeverPublished <NvrPblshd> [0..1] Indicator 161
+     RelevantTradingVenue <RlvntTradgVn> [0..1] IdentifierSet 161
+Constraints
+• ValidDebtMaturityDateRule
+DebtInstrumentAttributes/MaturityDate cannot be a date earlier than TradingVenueRelatedAttributes/
+FirstTradeDate, TradingVenueRelatedAttributes/RequestForAdmissionDate or
+TradingVenueRelatedAttributes/AdmissionApprovalDate.
+• ValidDerivativeExpiryDateRule
+DerivativesInstrumentAttributes/ExpiryDate cannot be a date earlier than
+TradingVenueRelatedAttributes/FirstTradeDate, TradingVenueRelatedAttributes/
+RequestForAdmissionDate or TradingVenueRelatedAttributes/AdmissionApprovalDate.
+8.4.2.3.1  TechnicalRecordIdentification <TechRcrdId>
+Presence: [0..1]
+Definition: Unique identifier of a record in a message used as part of error management and status
+advice message.
+Approved by the Securities SEG on 17 July 2025 auth.036.001.03
+FinancialInstrumentReportingReferenceDataDeltaR
+eportV03
+Financial Instruments and Transactions Regulatory Reporting
+(Transactions and Financial Instruments Data Reporting) -
+Fast Track Minatnenance 2025
+145 July 2025
+```
+

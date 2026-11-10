@@ -1,0 +1,63 @@
+classDiagram
+direction TB
+class System {
+<<BusinessComponent>>
+}
+class CashAccountService {
+<<BusinessComponent>>
+}
+class Account {
+<<BusinessComponent>>
+}
+class Invoice {
+<<BusinessComponent>>
+}
+class AccountIdentification {
+<<BusinessComponent>>
+}
+class LineItem {
+<<BusinessComponent>>
+}
+class Adjustment {
+<<BusinessComponent>>
+}
+class Product {
+<<BusinessComponent>>
+}
+class Price {
+<<BusinessComponent>>
+}
+class ProductCategory {
+<<BusinessComponent>>
+}
+class ProductQuantity {
+<<BusinessComponent>>
+}
+class Tax {
+<<BusinessComponent>>
+}
+class Country {
+<<BusinessComponent>>
+}
+class Party {
+<<BusinessComponent>>
+}
+class TaxRecord {
+<<BusinessComponent>>
+}
+System --> CashAccountService
+System --> Account
+CashAccountService --> Account
+CashAccountService --> Invoice
+Account --> Invoice
+Account --> AccountIdentification
+Invoice --> LineItem
+LineItem --> Adjustment
+LineItem --> Product
+Product --> Price
+Product --> ProductCategory
+Product --> ProductQuantity
+Product --> Tax
+Tax --> Country
+Tax --> Party
+Tax --> TaxRecord

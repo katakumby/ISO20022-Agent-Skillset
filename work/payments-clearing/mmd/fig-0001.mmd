@@ -1,0 +1,31 @@
+usecase-beta
+direction TB
+N0("Process end-to-end payment")
+N1("Process customer-to-bank payment")
+N2("Process interbank payment")
+N3("Report")
+N4("Accept interbank payment")
+N5("Clear interbank payment")
+N6("Settle interbank payment")
+N7("Assess interbank Payment risk")
+N8("Validate interbank payment")
+N9("Authorise interbank payment")
+N10("Sort interbank payment")
+N11("Calculate the settlement positions")
+N12("Prepare onward interbank payment")
+N13("Generate regulatory reporting information")
+N0 E0@--> N1
+N0 E1@--> N2
+N0 E2@--> N3
+N2 E3@--> N4
+N2 E4@--> N5
+N2 E5@--> N6
+N4 E6@--> N7
+N4 E7@--> N8
+N4 E8@--> N9
+style E8 stroke-dasharray:6 4
+N5 E9@--> N10
+N5 E10@--> N11
+N5 E11@--> N12
+N12 E12@--> N13
+style E12 stroke-dasharray:6 4

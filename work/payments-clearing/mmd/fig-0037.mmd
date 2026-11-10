@@ -1,0 +1,11 @@
+sequenceDiagram
+participant C as Creditor
+participant CA as Creditor Agent
+participant CS as Clearing and Settlement Agent
+participant DA as Debtor Agent
+participant D as Debtor
+C->>CA: CustomerDirectDebitInitiation
+CA->>CS: FIToFICustomerDirectDebit
+CS->>DA: FIToFICustomerDirectDebit
+DA->>D: FIToFICustomerDirectDebit
+Note over DA,D: See note: optional simplified<br/>instruction (P475/P493)

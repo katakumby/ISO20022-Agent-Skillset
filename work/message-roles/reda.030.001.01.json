@@ -1,0 +1,1027 @@
+{
+  "message_id": "reda.030.001.01",
+  "publications": [
+    {
+      "source_id": "src-000233",
+      "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+      "heading": "50 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+      "definition_pages": [
+        2208,
+        2212
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a SecurityDeletionStatusAdvice message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "An executing/servicing party",
+            "labels": [
+              {
+                "label": "An executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000233-reda.030.001.01-p2208-c001-d1",
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "heading": "50 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "quote": "An executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to report the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "An executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to report the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "raw_quote": "SCOPE\nAn executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to\nreport the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c001",
+          "mentions": [
+            {
+              "label": "executing/servicing party",
+              "start": 3,
+              "end": 28,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 80,
+              "end": 97,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 179,
+              "end": 196,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000233-reda.030.001.01-p2208-c001-d1"
+          ]
+        },
+        {
+          "quote": "The SecurityDeletionStatusAdvice message is sent as a response to the request of the instructing party.",
+          "raw_quote": "The SecurityDeletionStatusAdvice message is sent as a response to the request of the instructing\nparty.",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c002",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 85,
+              "end": 102,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The instructing party - executing/servicing party relationship may be:",
+          "raw_quote": "The instructing party - executing/servicing party relationship may be:",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c003",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 24,
+              "end": 49,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Corporate, or",
+          "raw_quote": "a Corporate, or",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c004",
+          "mentions": [
+            {
+              "label": "Corporate",
+              "start": 2,
+              "end": 11,
+              "resolution": {
+                "label": "Corporate",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-corporate.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Bank, or",
+          "raw_quote": "a Bank, or",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c005",
+          "mentions": [
+            {
+              "label": "Bank",
+              "start": 2,
+              "end": 6,
+              "resolution": {
+                "label": "Bank",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-bank.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Infrastructure, or",
+          "raw_quote": "a Market Infrastructure, or",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c006",
+          "mentions": [
+            {
+              "label": "Market Infrastructure",
+              "start": 2,
+              "end": 23,
+              "resolution": {
+                "label": "Market Infrastructure",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-infrastructure.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Data Provider.",
+          "raw_quote": "a Market Data Provider.",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c007",
+          "mentions": [
+            {
+              "label": "Market Data Provider",
+              "start": 2,
+              "end": 22,
+              "resolution": {
+                "label": "Market Data Provider",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-data-provider",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-data-provider.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Initiator: executing/servicing party.",
+          "raw_quote": "USAGE\nInitiator: executing/servicing party.",
+          "file_pages": [
+            2208
+          ],
+          "section": "usage",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c008",
+          "mentions": [
+            {
+              "label": "executing/servicing party",
+              "start": 11,
+              "end": 36,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000233",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact label in independently matched T2S child-publication sentence",
+                  "scope_alignment": {
+                    "message_id": "reda.030.001.01",
+                    "parent_source_id": "src-000233",
+                    "parent_file_pages": [
+                      2208
+                    ],
+                    "child_evidence": [
+                      {
+                        "source_id": "src-000378",
+                        "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+                        "file_pages": [
+                          124
+                        ]
+                      }
+                    ],
+                    "basis": "Exact whitespace-normalized Functionality sentence under the same full message identifier; source occurrences remain separate."
+                  }
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "raw_quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "file_pages": [
+            2208
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        2208
+      ],
+      "file_pages": [
+        2208
+      ]
+    },
+    {
+      "source_id": "src-000378",
+      "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+      "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+      "definition_pages": [
+        124,
+        128
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "active",
+          "message_subject": "a SecurityDeletionStatusAdvice message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "an instructing party",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "sender": {
+            "expression": "An executing/servicing party",
+            "labels": [
+              {
+                "label": "An executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000378-reda.030.001.01-p124-c001-d1",
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "quote": "An executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to report the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "review_status": "needs-review",
+          "condition_cues": [],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "An executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to report the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "raw_quote": "SCOPE\nAn executing/servicing party sends a SecurityDeletionStatusAdvice message to an instructing party to\nreport the status of a SecurityDeletionRequest message previously sent by the instructing party.",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c001",
+          "mentions": [
+            {
+              "label": "executing/servicing party",
+              "start": 3,
+              "end": 28,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 80,
+              "end": 97,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "instructing party",
+              "start": 179,
+              "end": 196,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "role": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              },
+              "action_verb": "sends",
+              "voice": "active",
+              "limitation": "This is a literal role/action clause. Its object and conditions remain in the quoted sentence; it is not automatically an action on the indexed message."
+            }
+          ],
+          "direction_claim_ids": [
+            "src-000378-reda.030.001.01-p124-c001-d1"
+          ]
+        },
+        {
+          "quote": "The SecurityDeletionStatusAdvice message is sent as a response to the request of the instructing party.",
+          "raw_quote": "The SecurityDeletionStatusAdvice message is sent as a response to the request of the instructing\nparty.",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c002",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 85,
+              "end": 102,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [],
+          "clause_review": {
+            "disposition": "message-purpose-status-or-condition",
+            "rationale": "Literal purpose, timing, message status, option-list introduction or related-message condition; no additional named current-message sender/receiver pair is asserted. All source wording is retained.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "The instructing party - executing/servicing party relationship may be:",
+          "raw_quote": "The instructing party - executing/servicing party relationship may be:",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c003",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 4,
+              "end": 21,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-instructing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-instructing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing/servicing party",
+              "start": 24,
+              "end": 49,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Corporate, or",
+          "raw_quote": "a Corporate, or",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c004",
+          "mentions": [
+            {
+              "label": "Corporate",
+              "start": 2,
+              "end": 11,
+              "resolution": {
+                "label": "Corporate",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Bank, or",
+          "raw_quote": "a Bank, or",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c005",
+          "mentions": [
+            {
+              "label": "Bank",
+              "start": 2,
+              "end": 6,
+              "resolution": {
+                "label": "Bank",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-bank",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-bank.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Infrastructure, or",
+          "raw_quote": "a Market Infrastructure, or",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c006",
+          "mentions": [
+            {
+              "label": "Market Infrastructure",
+              "start": 2,
+              "end": 23,
+              "resolution": {
+                "label": "Market Infrastructure",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-infrastructure",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-infrastructure.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "a Market Data Provider.",
+          "raw_quote": "a Market Data Provider.",
+          "file_pages": [
+            124
+          ],
+          "section": "scope",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c007",
+          "mentions": [
+            {
+              "label": "Market Data Provider",
+              "start": 2,
+              "end": 22,
+              "resolution": {
+                "label": "Market Data Provider",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-market-data-provider",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-market-data-provider.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "Initiator: executing/servicing party.",
+          "raw_quote": "USAGE\nInitiator: executing/servicing party.",
+          "file_pages": [
+            124
+          ],
+          "section": "usage",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c008",
+          "mentions": [
+            {
+              "label": "executing/servicing party",
+              "start": 11,
+              "end": 36,
+              "resolution": {
+                "label": "executing/servicing party",
+                "scope_source_id": "src-000378",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000378-executing-servicing-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000378-executing-servicing-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "raw_quote": "Central Securities Depositories (CSD) who would like to publish security static data, or",
+          "file_pages": [
+            124
+          ],
+          "section": "scope"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        124
+      ],
+      "file_pages": [
+        124
+      ]
+    }
+  ]
+}

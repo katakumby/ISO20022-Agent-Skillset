@@ -1,0 +1,64 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 3576,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 114,
+    "1": 88
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 2,
+    "table-associated-axis-line": 108,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "321d8756c0e2db61a5bc9750dba26f1a68e020c39a276b198fcfbf573e372e6e",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-5136",
+      "file_page": 3576,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362364705882,
+        709.6929600000002
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-5136.md",
+      "rows": 15,
+      "matrix_cells": 45,
+      "physical_cells": 45,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "333d7a5973f61cb3451cc4a391aba53adbd591774b140cb202539e295172ee6a",
+      "cell_geometry_sha256": "d9bfbfdb475a41f672bc84a8c8cb9e5e7a9535b34328fe8bd0fdfcbbdd791844",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 45,
+      "independent_cells_match": 44,
+      "exceptions": [
+        {
+          "row": 15,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            611.4929500000001,
+            510.2362364705882,
+            709.6929600000002
+          ],
+          "stored_value": "Share-related profit. This is a tax specific\nto the German market. The share-\nrelated-profit gives the fund the\nopportunity to pass on to the institutional\ninvestor redeeming fund units certain\ntax-free income from equity. The\ncalculation method is based on the old\nInvestment Tax Act\n(Investmentsteuergesetz).",
+          "pdfium_value": "Share-related profit. This is a tax specific\r\nto the German market. The share\u0002related-profit gives the fund the\r\nopportunity to pass on to the institutional\r\ninvestor redeeming fund units certain\r\ntax-free income from equity. The\r\ncalculation method is based on the old\r\nInvestment Tax Act\r\n(Investmentsteuergesetz)."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

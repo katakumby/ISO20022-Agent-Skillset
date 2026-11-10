@@ -1,0 +1,45 @@
+from pathlib import Path
+import sys,json,re,textwrap
+sys.path.insert(0,str(Path('tools').resolve()));import kb
+root=Path('.').resolve();s=next(x for x in kb.sources(root) if x['source_id']=='src-000079');base=root/s['set_path'];out=base/'diagrams/routing-scenarios';out.mkdir(parents=True,exist_ok=True);specs=json.loads((root/'work/documents/src-000079/routing-specs.json').read_text(encoding='utf-8'));rec=json.loads((root/'work/documents/src-000079/records.json').read_text(encoding='utf-8'));summary=[]
+def q(x):return json.dumps(x,ensure_ascii=False)
+def wrap(x,width=42):return '<br/>'.join(textwrap.wrap(x,width=width,break_long_words=False,break_on_hyphens=False))
+prefix='---\nconfig:\n  themeCSS: ".edgeLabel p {background-color:#ffffff !important;} .edgeLabel rect {fill:#ffffff !important;opacity:1!important;}"\n  flowchart:\n    htmlLabels: true\n---\n'
+for spec in specs:
+ n=spec['number'];did=f'fig-{n:04d}';p=out/(did+'.md');fig=next(x for x in rec['figures'] if x['figure_id']==did);flow=next((base/'flows').glob(f"flow-src-000079-p{spec['heading']}-*.md"));fm,fb=kb.metadata(flow);legacy=spec.get('legacy',False);title=fig['heading_path'][-1].strip();ext='png' if legacy else 'emf';rows=spec['rows'];targets=sorted(set(r['target'] for r in rows if r['target']));names={'Event':'Event Management Process','Response':'Response Management System' if n==34 else 'Response Management Process','Payment':'Payment Management Process'}
+ code=prefix+'flowchart LR\n';code+=('  subgraph S["Account Servicer"]\n' if not legacy else '')
+ for row in rows:
+  l=row['letter']
+  if row['outgoing']:code+='    X_'+l+'['+q('Receives '+l+') - source-side arrow endpoint')+']\n'
+  else:code+='    M_'+l+'['+q(row['block'].replace(' / ','<br/>'))+']\n'
+ if not legacy:code+='  end\n  subgraph O["Account Owner"]\n'
+ code+='    G["Message Gateway"]\n'
+ for target in targets:code+='    '+target+'['+q(names[target])+']\n'
+ for row in rows:
+  if row['outgoing']:code+='    M_'+row['letter']+'['+q(row['block'].replace(' / ','<br/>'))+']\n'
+ if not legacy:code+='  end\n'
+ edge_idx=0;styles=[]
+ for row in rows:
+  l=row['letter'];color={'black':'#111111','orange':'#ff6a00','blue':'#0000ff'}[row['color']]
+  if row['outgoing']:
+   code+='  G -->|'+q(wrap(l+') '+row['text']))+'| X_'+l+'\n';styles.append(f'  linkStyle {edge_idx} stroke:{color},color:{color}\n');edge_idx+=1
+  else:
+   code+='  M_'+l+' -->|'+q(wrap(l+') '+row['text']))+'| G\n';styles.append(f'  linkStyle {edge_idx} stroke:{color},color:{color}\n');edge_idx+=1
+   code+='  G -->|'+q(row['right_label'])+'| '+row['target']+'\n';rc={'black':'#111111','orange':'#ff6a00','blue':'#0000ff'}[row['right_color']];styles.append(f'  linkStyle {edge_idx} stroke:{rc},color:{color}\n');edge_idx+=1
+  blockcolor='#111111' if (n==41 and l=='I') or (n==43 and l=='J') else color
+  styles.append('  style M_'+l+' stroke:'+blockcolor+',color:'+blockcolor+'\n')
+ if spec.get('deadline_after'):
+  after=spec['deadline_after'];following=next((r['letter'] for i,r in enumerate(rows) if i and rows[i-1]['letter']==after),'');code+='  DEADLINE['+q('Deadline - after '+after+') and before '+following+')')+']\n'
+ if spec.get('note'):code+='  NOTE['+q(wrap(spec['note'],60))+']\n'
+ code+=''.join(styles);(out/(did+'.mmd')).write_text(code,encoding='utf-8')
+ limits=['Source blocks and route letters are retained without assuming exact message versions from abbreviations. Source conditions, not color alone, establish optionality and responsibility.']
+ if n==34:limits.append('Exact punctuation of the small MT567 field-tag label remains uncertain in the supplied low-resolution source image; visual review requires original reconciliation.')
+ if n==42:limits.append('Scenario10 narrative P362 conflicts with its title and figure; see issue-000026.')
+ meta=dict(template=False,document_kind='diagram',review_status='needs-review',manual_curated=True,domain='securities',diagram_id=did,title=title,diagram_kind='message-routing',content_origin='source-reconstruction',source_ids=['src-000079'],source_editions=[s['source_edition']],source_locations=[{'source_id':'src-000079','locator':' / '.join(fig['heading_path'])+'; '+fig['locator']+f'; word/media/image{n}.{ext}; source color legend P322-P326'}],participants=['participant-src-000079-account-servicer','participant-src-000079-account-owner'],flow_ids=[fm['flow_id']],render_status='not-run',visual_review='not-run',limitations=limits,issue_ids=[spec['issue']] if spec.get('issue') else [])
+ original=root/'domains/securities/assets/src-000079/originals'/f'image{n}.{ext}';preview=original if legacy else root/'domains/securities/assets/src-000079/derived-previews'/f'image{n}.emf.png';description=spec['description'].replace('ISO 15022 illustration','legacy MT illustration')
+ text=kb.front(meta)+'# '+title+'\n\n## Source evidence\n\n'+kb.source_link(root,p,s)+'; '+' / '.join(fig['heading_path'])+'; '+fig['locator']+f'; word/media/image{n}.{ext}. '+kb.link(p,original,'Unchanged original asset')+'.\n\n![Source routing diagram]('+kb.rel(p,preview)+')\n\n## Mermaid reconstruction\n\n```mermaid\n'+code+'```\n\n## Purpose, conditions and routing\n\n'+description+'\n\nThe Message Gateway routes received messages to the Event, Response or Payment Management component indicated by each source route letter. These are internal processing entities, not additional institutions. The exact source message-block labels are retained; line breaks are represented by slashes in the table. Message blocks next to outward instruction arrows remain unconnected labels, as in the source; small recipient boxes labeled source-side arrow endpoint are derived layout aids marking the otherwise unlabeled arrow endpoint. They do not add business actors or messages. '+('The legacy source artwork does not label functional participant lanes; P203-P204 gives the generic Account Servicer/Account Owner context.' if legacy else 'Account Servicer and Account Owner boundaries follow the source headings.')+'\n\n'+kb.table(['Source path','Direction','Source message block','Source arrow label','Receiving internal process','Incoming/outgoing source colors'],[[r['letter']+')','Account Owner to Account Servicer' if r['outgoing'] else 'Account Servicer to Account Owner',r['block'],r['text'],'Not shown for outgoing instruction' if r['outgoing'] else names[r['target']],r['color']+('/'+r['right_color'] if not r['outgoing'] else '')] for r in rows])
+ if spec.get('deadline_after'):text+='\nThe source Deadline boundary is after '+spec['deadline_after']+') and before '+next(r['letter'] for i,r in enumerate(rows) if i and rows[i-1]['letter']==spec['deadline_after'])+'). It is an event-time boundary, not a message arrow.\n'
+ if spec.get('note'):text+='\nSource note: '+spec['note']+'\n'
+ text+='\n## Color and scope qualifications\n\nP324-P326 defines black as mandatory message flow, blue as optional message flow, and orange as preliminary-advice/cancellation flow. The source also colors several status/reminder paths orange. The reconstruction preserves the observed colors without deriving occurrence constraints or a new semantic rule from color alone. In scenarios with joint A) & B) captions, the two original arrows are labeled A) and B) separately for readability; their shared destination is preserved. P320-P321 explicitly says these are plain-vanilla examples, not exhaustive market/SLA-specific flows. P300 makes movement preliminary advice optional in the overall corporate-action flow.\n\n'+kb.link(p,flow,'Reusable flow and full narrative')+'.\n\n## Review evidence\n\nFull-size source inspected. Parsing, rendering and rendered-output comparison pending.\n';kb.put(p,text)
+ fm.update(document_kind='business-flow',manual_curated=True,participants=meta['participants']);fm['limitations']=list(dict.fromkeys(fm.get('limitations',[])+limits));fm['issue_ids']=meta['issue_ids'];fb+='\n## Curated source routing scenario\n\n'+description+'\n\n'+kb.table(['Ordered source step','Sender / initiating functional role','Receiver / responsible recipient','Message-block label and action'],[[r['letter']+')','Account Owner' if r['outgoing'] else 'Account Servicer','Account Servicer' if r['outgoing'] else 'Account Owner: '+names[r['target']],r['block']+' — '+r['text']] for r in rows])+'\n'+('Deadline boundary follows '+spec['deadline_after']+').\n\n' if spec.get('deadline_after') else '')+(('Source note: '+spec['note']+'\n\n') if spec.get('note') else '')+'These examples are limited by P300 and P320-P326: preliminary advice is optional at overall-flow level; SLA-specific variations are omitted; preserve actual source colors and conditions. Formal preconditions/postconditions beyond the scenario narrative are not supplied. '+kb.link(flow,p,'Complete source reconstruction')+'.\n';kb.put(flow,kb.front(fm)+fb);summary.append({'diagram':p.relative_to(root).as_posix(),'source_figure':did,'flow':flow.relative_to(root).as_posix(),'paths':len(rows),'outgoing':sum(r['outgoing'] for r in rows),'edges':edge_idx,'legacy':legacy,'issue':spec.get('issue')})
+kb.dump(root/'work/documents/src-000079/routing-curation.json',summary)

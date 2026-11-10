@@ -1,0 +1,110 @@
+{
+  "source_id": "src-000197",
+  "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+  "file_page": 2175,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "2": 124,
+    "1": 83
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 6,
+    "table-associated-axis-line": 114,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "523ba93994a9656488d0dc689e7ecdc9fb52850f76192aa969ee715969ee9084",
+  "underline_geometry_evidence": [],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-3822",
+      "file_page": 2175,
+      "bbox": [
+        85.03936999999996,
+        56.6929100000001,
+        510.2362314285714,
+        220.0929100000002
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3822.md",
+      "rows": 7,
+      "matrix_cells": 21,
+      "physical_cells": 21,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "73d8787268d312c4fae9be574372c498859747d766e8802688713f2f5b268288",
+      "cell_geometry_sha256": "491fb7ecc67a0886a5aea49e7b521272149e43276b91d6f6820ddc8d44a3c907",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 21,
+      "independent_cells_match": 21,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3823",
+      "file_page": 2175,
+      "bbox": [
+        85.03936999999996,
+        290.4929000000001,
+        510.2362314285714,
+        326.89290000000005
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3823.md",
+      "rows": 2,
+      "matrix_cells": 6,
+      "physical_cells": 6,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "3b06c3f8803d81bb2c58d3b27ad1231a1680b1ae5ee8b17e2d4a6cfd33c75ff2",
+      "cell_geometry_sha256": "175d503689e159fbb15294cc751e95b89a1e085c087e660e8e83c5746f80e56a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 6,
+      "independent_cells_match": 6,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-3824",
+      "file_page": 2175,
+      "bbox": [
+        85.03936999999996,
+        397.2929200000001,
+        510.2362314285714,
+        716.4929200000001
+      ],
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/documents/src-000197/tables/tbl-3824.md",
+      "rows": 6,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "89eacf8f9ec56349751c4475617dc4b4371b2454a2e2edaa0b3a1db171a63e21",
+      "cell_geometry_sha256": "cc2cfa20f0e32ca6c3ced19611e4257db41c84690e620aa23c072e74ea5c934a",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 17,
+      "exceptions": [
+        {
+          "row": 5,
+          "column": 3,
+          "kind": "pdfium-soft-hyphen-control-difference",
+          "bbox": [
+            340.15747,
+            570.09293,
+            510.2362314285714,
+            648.2929200000001
+          ],
+          "stored_value": "Price is the calculated creation price of a\ndual-priced investment fund (creation-\ncancellation prices) and the highest\npossible buying price of the units before\nthe initial charge. The actual buying or\noffer price, which includes charges, will\nbe higher.",
+          "pdfium_value": "Price is the calculated creation price of a\r\ndual-priced investment fund (creation\u0002cancellation prices) and the highest\r\npossible buying price of the units before\r\nthe initial charge. The actual buying or\r\noffer price, which includes charges, will\r\nbe higher."
+        }
+      ],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

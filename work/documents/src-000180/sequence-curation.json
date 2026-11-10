@@ -1,0 +1,1289 @@
+[
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0014.md",
+    "source_figure": "fig-0014",
+    "source_image": 11,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p194-through-type.md",
+    "messages": 6,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0015.md",
+    "source_figure": "fig-0015",
+    "source_image": 12,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p198-through-type-cancellation.md",
+    "messages": 12,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0016.md",
+    "source_figure": "fig-0016",
+    "source_image": 13,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p203-own-account-trade-type.md",
+    "messages": 4,
+    "actors": [
+      "B",
+      "C",
+      "F"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "F",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "F",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": "alternative-actors",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0017.md",
+    "source_figure": "fig-0017",
+    "source_image": 14,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p208-own-account-trade-type-cancellation.md",
+    "messages": 7,
+    "actors": [
+      "B",
+      "C",
+      "F"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "F",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "F",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "F",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": "alternative-actors",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0018.md",
+    "source_figure": "fig-0018",
+    "source_image": 15,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p214-duplex-type.md",
+    "messages": 6,
+    "actors": [
+      "U",
+      "C",
+      "A",
+      "K"
+    ],
+    "steps": [
+      {
+        "sender": "U",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "A",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "A",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "K",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "K",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "U",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0019.md",
+    "source_figure": "fig-0019",
+    "source_image": 16,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p218-duplex-type-rejection-by-transfer-agent.md",
+    "messages": 7,
+    "actors": [
+      "U",
+      "C",
+      "A",
+      "K"
+    ],
+    "steps": [
+      {
+        "sender": "U",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "A",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "A",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "U",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "U",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "A",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "U",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0020.md",
+    "source_figure": "fig-0020",
+    "source_image": 17,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p222-duplex-type-rejection-by-cash-correspondent.md",
+    "messages": 10,
+    "actors": [
+      "U",
+      "C",
+      "A",
+      "K"
+    ],
+    "steps": [
+      {
+        "sender": "U",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "A",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "A",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "K",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "K",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "U",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "U",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "A",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "K",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "U",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0021.md",
+    "source_figure": "fig-0021",
+    "source_image": 18,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p227-end-of-process-report-for-listed-derivatives.md",
+    "messages": 12,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "DeliveryAmountReport"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "DeliveryAmountReport"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesEndOfProcessReport"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesEndOfProcessReport"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesEndOfProcessReport"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesEndOfProcessReport"
+      }
+    ],
+    "note": "proprietary-report",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0022.md",
+    "source_figure": "fig-0022",
+    "source_image": 19,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p232-tripartite-central-matching-without-confirmation-distribution-service.md",
+    "messages": 10,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0023.md",
+    "source_figure": "fig-0023",
+    "source_image": 20,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p237-tripartite-central-matching-without-confirmation-distribution-service-.md",
+    "messages": 10,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": "alternative-cancellations",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0024.md",
+    "source_figure": "fig-0024",
+    "source_image": 21,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p241-tripartite-central-matching-without-confirmation-distribution-service-.md",
+    "messages": 11,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0025.md",
+    "source_figure": "fig-0025",
+    "source_image": 22,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p245-tripartite-central-matching-without-confirmation-distribution-service-.md",
+    "messages": 11,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0026.md",
+    "source_figure": "fig-0026",
+    "source_image": 23,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p249-tripartite-central-matching-without-confirmation-distribution-service-.md",
+    "messages": 15,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": "source-conflict",
+    "issue_ids": [
+      "issue-000031"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0027.md",
+    "source_figure": "fig-0027",
+    "source_image": 24,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p255-tripartite-central-matching-with-confirmation-distribution-service.md",
+    "messages": 9,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0028.md",
+    "source_figure": "fig-0028",
+    "source_image": 25,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p260-tripartite-central-matching-with-confirmation-distribution-service-can.md",
+    "messages": 10,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": "source-conflict",
+    "issue_ids": [
+      "issue-000031"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0029.md",
+    "source_figure": "fig-0029",
+    "source_image": 26,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p265-tripartite-central-matching-with-confirmation-distribution-service-can.md",
+    "messages": 10,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": null,
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0030.md",
+    "source_figure": "fig-0030",
+    "source_image": 27,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p269-tripartite-central-matching-with-confirmation-distribution-service-rej.md",
+    "messages": 14,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "T",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationResponse"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      }
+    ],
+    "note": "source-conflict",
+    "issue_ids": [
+      "issue-000031"
+    ]
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0031.md",
+    "source_figure": "fig-0031",
+    "source_image": 28,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p274-bilateral-central-matching.md",
+    "messages": 6,
+    "actors": [
+      "B",
+      "C",
+      "P"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "P",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "P",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "P",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": "securities-financing",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0032.md",
+    "source_figure": "fig-0032",
+    "source_image": 29,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p278-bilateral-central-matching-cancellation.md",
+    "messages": 10,
+    "actors": [
+      "B",
+      "C",
+      "P"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "P",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "P",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "P",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "P",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmationCancellation"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "P",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      }
+    ],
+    "note": "securities-financing-cancel",
+    "issue_ids": []
+  },
+  {
+    "diagram": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/diagrams/business-transactions/fig-0033.md",
+    "source_figure": "fig-0033",
+    "source_image": 30,
+    "flow": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/flows/flow-src-000180-p283-tripartite-central-matching-with-end-of-process-report.md",
+    "messages": 9,
+    "actors": [
+      "B",
+      "C",
+      "I",
+      "T"
+    ],
+    "steps": [
+      {
+        "sender": "B",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "I",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "C",
+        "receiver": "B",
+        "message": "SecuritiesTradeConfirmationStatusAdvice"
+      },
+      {
+        "sender": "I",
+        "receiver": "C",
+        "message": "SecuritiesEndOfProcessReport"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesTradeConfirmation"
+      },
+      {
+        "sender": "C",
+        "receiver": "T",
+        "message": "SecuritiesEndOfProcessReport"
+      }
+    ],
+    "note": "pre-advice",
+    "issue_ids": []
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "source_id": "src-000181",
+  "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+  "file_page": 160,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 174,
+    "2": 341
+  },
+  "path_classes": {
+    "link-annotation-underline": 6,
+    "table-associated-filled-rectangle": 7,
+    "table-associated-axis-line": 324,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "3ca294edc8c3b780b5e3b2550971a7a6d1e7963283d6377fa2492dac7aecdf8d",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 3,
+      "bbox": [
+        84.5394,
+        78.3237,
+        256.0618,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        272.2464,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        255.0618,
+        78.3237,
+        272.7464,
+        79.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        69.6929,
+        272.2464,
+        79.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 429,
+      "bbox": [
+        144.5686,
+        615.7238,
+        277.18,
+        616.7238
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        607.093,
+        276.68,
+        617.093
+      ]
+    },
+    {
+      "path_object_ordinal": 433,
+      "bbox": [
+        418.5775,
+        633.7238,
+        534.5237,
+        634.7238
+      ],
+      "link_annotation_bbox": [
+        419.0775,
+        625.093,
+        534.0237,
+        635.093
+      ]
+    },
+    {
+      "path_object_ordinal": 435,
+      "bbox": [
+        84.5394,
+        645.7238,
+        110.5638,
+        646.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        637.093,
+        126.7484,
+        647.093
+      ]
+    },
+    {
+      "path_object_ordinal": 437,
+      "bbox": [
+        109.5638,
+        645.7238,
+        127.2484,
+        646.7238
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        637.093,
+        126.7484,
+        647.093
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0219",
+      "file_page": 160,
+      "bbox": [
+        85.03936999999996,
+        86.6929100000001,
+        555.5905757142857,
+        518.8929700000001
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0219.md",
+      "rows": 21,
+      "matrix_cells": 126,
+      "physical_cells": 126,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "5dcf74885e2dc3ad20abe4d6afe0776d9ef5ed8572b506f569de074a9f0373f6",
+      "cell_geometry_sha256": "c6b51cbbd60443d3096b5b610091710f45ff1b5696abca0a9d2d20ccd8243ff7",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 126,
+      "independent_cells_match": 126,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-0220",
+      "file_page": 160,
+      "bbox": [
+        85.03936999999996,
+        654.0930000000001,
+        555.5905757142857,
+        722.6930000000001
+      ],
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/documents/src-000181/tables/tbl-0220.md",
+      "rows": 3,
+      "matrix_cells": 18,
+      "physical_cells": 18,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "5757e666a867250ea65d44e007f19d13c365f103d39644ff28096071c05ad339",
+      "cell_geometry_sha256": "95fd6aaf66852d7046d47192874665066559be91f8f9be7fb7871497feffe4f6",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 18,
+      "independent_cells_match": 18,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

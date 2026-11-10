@@ -1,0 +1,120 @@
+{
+  "source_id": "src-000096",
+  "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+  "file_page": 4906,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 149,
+    "2": 284
+  },
+  "path_classes": {
+    "link-annotation-underline": 3,
+    "table-associated-filled-rectangle": 5,
+    "table-associated-axis-line": 272,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f4dc9404ddd2ac9ec94710ff5d85b41824ece23644191b2e17c17f197de05b13",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 5,
+      "bbox": [
+        460.2376,
+        84.3237,
+        538.3763,
+        85.3237
+      ],
+      "link_annotation_bbox": [
+        460.7376,
+        75.6929,
+        537.8763,
+        85.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 7,
+      "bbox": [
+        84.5394,
+        96.3237,
+        124.4651,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        146.2112,
+        97.6929
+      ]
+    },
+    {
+      "path_object_ordinal": 9,
+      "bbox": [
+        123.4651,
+        96.3237,
+        146.7112,
+        97.3237
+      ],
+      "link_annotation_bbox": [
+        85.0394,
+        87.6929,
+        146.2112,
+        97.6929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-7348",
+      "file_page": 4906,
+      "bbox": [
+        85.03936999999996,
+        104.6929100000001,
+        555.5905750000001,
+        294.4929
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-7348.md",
+      "rows": 9,
+      "matrix_cells": 54,
+      "physical_cells": 54,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "26b4938af4148f9039837e8d4afefb89e2e5780d47ea3cc4710fa4c8c8f78669",
+      "cell_geometry_sha256": "21cf4cb9e41f4850504fa82b4f665f30423c25021f5fe339f4cfee4cb7c34fc5",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 54,
+      "independent_cells_match": 54,
+      "exceptions": [],
+      "review_status": "needs-review"
+    },
+    {
+      "table_id": "tbl-7349",
+      "file_page": 4906,
+      "bbox": [
+        85.03936999999996,
+        380.0929300000001,
+        555.5905750000001,
+        610.2929100000001
+      ],
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/documents/src-000096/tables/tbl-7349.md",
+      "rows": 11,
+      "matrix_cells": 66,
+      "physical_cells": 66,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "51c89efc69887e6fc83e482e0aef783e4ebd704722bcd26ed5bacdfbe528d4a8",
+      "cell_geometry_sha256": "38ab34b13d79b23ae762bba14c4030810f836f6e16c069d67f13ec618a3389f0",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 66,
+      "independent_cells_match": 66,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}

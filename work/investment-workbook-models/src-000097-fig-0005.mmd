@@ -1,0 +1,66 @@
+classDiagram
+direction TB
+class AccountContract {
+<<BusinessComponent>>
+}
+class AccountService {
+<<BusinessComponent>>
+}
+class Account {
+<<BusinessComponent>>
+}
+class CashAccount {
+<<BusinessComponent>>
+}
+class InvestmentAccount {
+<<BusinessComponent>>
+}
+class SecuritiesAccount {
+<<BusinessComponent>>
+}
+class SidePocket {
+<<BusinessComponent>>
+}
+class InvestmentFundTax {
+<<BusinessComponent>>
+}
+class InvestmentAccountPartyRole {
+<<BusinessComponent>>
+}
+class InvestmentAccountService {
+<<BusinessComponent>>
+}
+class Reinvestment {
+<<BusinessComponent>>
+}
+class InvestmentPlan {
+<<BusinessComponent>>
+}
+class InvestmentAccountContract {
+<<BusinessComponent>>
+}
+class CRSStatus {
+<<BusinessComponent>>
+}
+class FATCAStatus {
+<<BusinessComponent>>
+}
+CashAccount --|> Account
+InvestmentAccount --|> Account
+SecuritiesAccount --|> Account
+InvestmentAccountService --|> AccountService
+InvestmentAccountContract --|> AccountContract
+AccountContract -- Account
+AccountContract -- AccountService
+AccountService -- Account
+CashAccount -- InvestmentAccount
+InvestmentAccount -- SecuritiesAccount
+InvestmentAccount -- SidePocket
+InvestmentAccount -- InvestmentFundTax
+InvestmentAccount -- InvestmentAccountPartyRole
+InvestmentAccount -- InvestmentAccountContract
+InvestmentAccountService -- InvestmentAccountContract
+InvestmentAccountService -- Reinvestment
+InvestmentAccountService -- InvestmentPlan : + SystematicInvestmentPlan
+InvestmentAccountPartyRole -- CRSStatus : + InvestmentAccountParty
+InvestmentAccountPartyRole -- FATCAStatus

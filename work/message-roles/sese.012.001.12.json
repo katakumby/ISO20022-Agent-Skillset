@@ -1,0 +1,400 @@
+{
+  "message_id": "sese.012.001.12",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "35 sese.012.001.12 PortfolioTransferInstructionV12",
+      "definition_pages": [
+        943,
+        1105
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The PortfolioTransferInstruction message",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party, for example, a (old) plan manager (transferor), on behalf of the initiating party, for example, an investor (client)",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the executing party, for example, a (old) plan manager (transferor), on behalf of the initiating party, for example, an investor (client)"
+          },
+          "sender": {
+            "expression": "an instructing party, for example, a (new) plan manager (transferee)",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an instructing party, for example, a (new) plan manager (transferee)"
+          },
+          "claim_id": "src-000096-sese.012.001.12-p943-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "35 sese.012.001.12 PortfolioTransferInstructionV12",
+          "file_pages": [
+            943
+          ],
+          "section": "scope",
+          "quote": "The PortfolioTransferInstruction message is sent by an instructing party, for example, a (new) plan manager (transferee), to the executing party, for example, a (old) plan manager (transferor), on behalf of the initiating party, for example, an investor (client), to instruct the transfer of financial instruments from the client's account at the old plan manager (transferor) to the clients account at the new plan manager (transferee).",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "on behalf of"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "receiver-only",
+          "pattern": "active",
+          "message_subject": "an AccountHoldingInformationRequest message",
+          "message_target": "related-or-unspecified-message",
+          "receiver": {
+            "expression": "the executing party",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "unresolved_sender_reference": "If the instructing party does not have enough information to instruct the portfolio transfer, then it must first",
+          "limitation": "Sender is a pronoun/reference in this clause; it is retained in the quote and is not resolved automatically.",
+          "claim_id": "src-000096-sese.012.001.12-p943-c004-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "35 sese.012.001.12 PortfolioTransferInstructionV12",
+          "file_pages": [
+            943
+          ],
+          "section": "usage",
+          "quote": "If the instructing party does not have enough information to instruct the portfolio transfer, then it must first send an AccountHoldingInformationRequest message to the executing party in order to receive an AccountHoldingInformation message.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "if",
+            "must"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The PortfolioTransferInstruction message is sent by an instructing party, for example, a (new) plan manager (transferee), to the executing party, for example, a (old) plan manager (transferor), on behalf of the initiating party, for example, an investor (client), to instruct the transfer of financial instruments from the client's account at the old plan manager (transferor) to the clients account at the new plan manager (transferee).",
+          "raw_quote": "Scope\nThe PortfolioTransferInstruction message is sent by an instructing party, for example, a (new) plan\nmanager (transferee), to the executing party, for example, a (old) plan manager (transferor), on behalf\nof the initiating party, for example, an investor (client), to instruct the transfer of financial instruments\nfrom the client's account at the old plan manager (transferor) to the clients account at the new plan\nmanager (transferee).",
+          "file_pages": [
+            943
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.012.001.12-p943-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 55,
+              "end": 72,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferee",
+              "start": 109,
+              "end": 119,
+              "resolution": {
+                "label": "transferee",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferee",
+                  "path": "shared/reference/participants/participant-src-000095-transferee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 129,
+              "end": 144,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferor",
+              "start": 181,
+              "end": 191,
+              "resolution": {
+                "label": "transferor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferor",
+                  "path": "shared/reference/participants/participant-src-000095-transferor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "initiating party",
+              "start": 211,
+              "end": 227,
+              "resolution": {
+                "label": "initiating party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-initiating-party",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-initiating-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investor",
+              "start": 245,
+              "end": 253,
+              "resolution": {
+                "label": "investor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investor",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferor",
+              "start": 365,
+              "end": 375,
+              "resolution": {
+                "label": "transferor",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferor",
+                  "path": "shared/reference/participants/participant-src-000095-transferor.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transferee",
+              "start": 425,
+              "end": 435,
+              "resolution": {
+                "label": "transferee",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transferee",
+                  "path": "shared/reference/participants/participant-src-000095-transferee.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.012.001.12-p943-c001-d1"
+          ]
+        },
+        {
+          "quote": "The PortfolioTransferInstruction message is used to instruct one or more portfolio transfers for one client.",
+          "raw_quote": "Usage\nThe PortfolioTransferInstruction message is used to instruct one or more portfolio transfers for one\nclient.",
+          "file_pages": [
+            943
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.012.001.12-p943-c002",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "The account may be owned by one or more individual investors or one or more corporate investors.",
+          "raw_quote": "The account may be owned by one or\nmore individual investors or one or more corporate investors.",
+          "file_pages": [
+            943
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.012.001.12-p943-c003",
+          "mentions": [
+            {
+              "label": "investors",
+              "start": 51,
+              "end": 60,
+              "resolution": {
+                "label": "investors",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investor",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "corporate",
+              "start": 76,
+              "end": 85,
+              "resolution": {
+                "label": "corporate",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-corporate",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-corporate.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investors",
+              "start": 86,
+              "end": 95,
+              "resolution": {
+                "label": "investors",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investor",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investor.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "If the instructing party does not have enough information to instruct the portfolio transfer, then it must first send an AccountHoldingInformationRequest message to the executing party in order to receive an AccountHoldingInformation message.",
+          "raw_quote": "If the instructing party does not have enough information to instruct the portfolio transfer, then it must\nfirst send an AccountHoldingInformationRequest message to the executing party in order to receive an\nAccountHoldingInformation message.",
+          "file_pages": [
+            943
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.012.001.12-p943-c004",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 7,
+              "end": 24,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 169,
+              "end": 184,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.012.001.12-p943-c004-d1"
+          ]
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "Each portfolio transfer is for delivery to the same account.",
+          "raw_quote": "Each portfolio transfer is for delivery to the same account.",
+          "file_pages": [
+            943
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        943
+      ],
+      "file_pages": [
+        943,
+        944
+      ]
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "message_id": "sese.009.001.09",
+  "publications": [
+    {
+      "source_id": "src-000096",
+      "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+      "heading": "32 sese.009.001.09 RequestForTransferStatusReportV09",
+      "definition_pages": [
+        784,
+        808
+      ],
+      "directions": [
+        {
+          "kind": "sender-to-receiver",
+          "pattern": "passive",
+          "message_subject": "The RequestForTransferStatusReport",
+          "message_target": "current-message",
+          "receiver": {
+            "expression": "the executing party, for example, a transfer agent",
+            "labels": [
+              {
+                "label": "the executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "the executing party, for example, a transfer agent"
+          },
+          "sender": {
+            "expression": "an instructing party, for example, an investment manager or its authorised representative",
+            "labels": [
+              {
+                "label": "an instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": "an instructing party, for example, an investment manager or its authorised representative"
+          },
+          "claim_id": "src-000096-sese.009.001.09-p784-c001-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "32 sese.009.001.09 RequestForTransferStatusReportV09",
+          "file_pages": [
+            784
+          ],
+          "section": "scope",
+          "quote": "The RequestForTransferStatusReport is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent to request the status of a previously instructed transfer.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "for example",
+            "or"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        },
+        {
+          "kind": "sender-to-receiver",
+          "message_target": "current-message",
+          "message_subject": "This message",
+          "limitation": "The source deliberately uses generic contextual roles. No particular institution or named functional role is substituted.",
+          "pattern": "source-scoped-reviewed-clause",
+          "clause_review_date": "2026-11-09",
+          "clause_review_quote_sha256": "9ea9e8cd129c6fb80dba4e3f1fa7a01d45c2c42066fb263d0fe97b90cb9f7f1a",
+          "sender": {
+            "expression": "any party in the transfer transaction",
+            "labels": [
+              {
+                "label": "any party in the transfer transaction",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-transfer-transaction-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-transfer-transaction-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "receiver": {
+            "expression": "another party in the transfer transaction chain",
+            "labels": [
+              {
+                "label": "another party in the transfer transaction chain",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-transfer-transaction-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-transfer-transaction-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            ],
+            "alternatives_or_conjunction": false,
+            "qualifiers_preserved": null
+          },
+          "claim_id": "src-000096-sese.009.001.09-p784-c002-d1",
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "heading": "32 sese.009.001.09 RequestForTransferStatusReportV09",
+          "file_pages": [
+            784
+          ],
+          "section": "scope",
+          "quote": "The RequestForTransferStatusReport may also be sent by any party in the transfer transaction to another party in the transfer transaction chain to request information relevant for the settlement of a transfer transaction.",
+          "review_status": "needs-review",
+          "condition_cues": [
+            "may"
+          ],
+          "condition_interpretation": "Full conditions, alternatives, examples and routing remain in the source quote; no conditional branch is inferred."
+        }
+      ],
+      "narrative": [
+        {
+          "quote": "The RequestForTransferStatusReport is sent by an instructing party, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent to request the status of a previously instructed transfer.",
+          "raw_quote": "Scope\nThe RequestForTransferStatusReport is sent by an instructing party, for example, an investment\nmanager or its authorised representative, to the executing party, for example, a transfer agent to\nrequest the status of a previously instructed transfer.",
+          "file_pages": [
+            784
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c001",
+          "mentions": [
+            {
+              "label": "instructing party",
+              "start": 49,
+              "end": 66,
+              "resolution": {
+                "label": "instructing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-instructing-party",
+                  "path": "shared/reference/participants/participant-src-000095-instructing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "investment manager",
+              "start": 84,
+              "end": 102,
+              "resolution": {
+                "label": "investment manager",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-narrative-src-000096-investment-manager",
+                  "path": "shared/reference/participants/participant-narrative-src-000096-investment-manager.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "authorised representative",
+              "start": 110,
+              "end": 135,
+              "resolution": {
+                "label": "authorised representative",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-authorised-representative",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "executing party",
+              "start": 144,
+              "end": 159,
+              "resolution": {
+                "label": "executing party",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-executing-party",
+                  "path": "shared/reference/participants/participant-src-000095-executing-party.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "transfer agent",
+              "start": 176,
+              "end": 190,
+              "resolution": {
+                "label": "transfer agent",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-src-000095-transfer-agent",
+                  "path": "shared/reference/participants/participant-src-000095-transfer-agent.md",
+                  "basis": "exact label/alias in same message-set publication context"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.009.001.09-p784-c001-d1"
+          ]
+        },
+        {
+          "quote": "The RequestForTransferStatusReport may also be sent by any party in the transfer transaction to another party in the transfer transaction chain to request information relevant for the settlement of a transfer transaction.",
+          "raw_quote": "The RequestForTransferStatusReport may also be sent by any party in the transfer transaction to\nanother party in the transfer transaction chain to request information relevant for the settlement of a\ntransfer transaction.",
+          "file_pages": [
+            784
+          ],
+          "section": "scope",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c002",
+          "mentions": [
+            {
+              "label": "any party in the transfer transaction",
+              "start": 55,
+              "end": 92,
+              "resolution": {
+                "label": "any party in the transfer transaction",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-transfer-transaction-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-transfer-transaction-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            },
+            {
+              "label": "another party in the transfer transaction chain",
+              "start": 96,
+              "end": 143,
+              "resolution": {
+                "label": "another party in the transfer transaction chain",
+                "scope_source_id": "src-000096",
+                "resolution": "resolved",
+                "participant": {
+                  "participant_id": "participant-functionality-src-000096-transfer-transaction-party",
+                  "path": "shared/reference/participants/participant-functionality-src-000096-transfer-transaction-party.md",
+                  "basis": "exact source-scoped label/alias"
+                },
+                "candidates": []
+              }
+            }
+          ],
+          "actions": [],
+          "direction_claim_ids": [
+            "src-000096-sese.009.001.09-p784-c002-d1"
+          ],
+          "clause_review": {
+            "disposition": "source-explicit-role-assertion",
+            "rationale": "The named role assertion is transcribed with its message/context scope and full source conditions; no unstated counterpart is supplied.",
+            "review_date": "2026-11-09",
+            "review_scope": "Exact Functionality sentence and message/publication context directly read; participant identity resolution remains separate."
+          }
+        },
+        {
+          "quote": "the status of one or several information requests or transfer instructions or,",
+          "raw_quote": "the status of one or several information requests or transfer instructions or,",
+          "file_pages": [
+            784
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c003",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "the status of one or several transfer cancellation instructions, or",
+          "raw_quote": "the status of one or several transfer cancellation instructions, or",
+          "file_pages": [
+            784
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c004",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        },
+        {
+          "quote": "information relevant to one or more transfer instructions.",
+          "raw_quote": "information relevant to one or more transfer instructions.",
+          "file_pages": [
+            784
+          ],
+          "section": "usage",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c005",
+          "mentions": [],
+          "actions": [],
+          "direction_claim_ids": []
+        }
+      ],
+      "unclassified_narrative": [
+        {
+          "quote": "The RequestForTransferStatusReport is used to request either:",
+          "raw_quote": "Usage\nThe RequestForTransferStatusReport is used to request either:",
+          "file_pages": [
+            784
+          ],
+          "section": "usage"
+        }
+      ],
+      "review_items": [],
+      "functionality_found": true,
+      "functionality_end_found": true,
+      "outline_found": true,
+      "narrative_file_pages": [
+        784
+      ],
+      "file_pages": [
+        784
+      ]
+    }
+  ]
+}

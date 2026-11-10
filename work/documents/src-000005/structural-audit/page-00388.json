@@ -1,0 +1,142 @@
+{
+  "source_id": "src-000005",
+  "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+  "file_page": 388,
+  "method_version": 3,
+  "date": "2026-11-09",
+  "page_size": [
+    595.275634765625,
+    793.4172973632812
+  ],
+  "painted_object_counts": {
+    "1": 142,
+    "2": 202
+  },
+  "path_classes": {
+    "table-associated-filled-rectangle": 4,
+    "table-associated-axis-line": 188,
+    "link-annotation-underline": 6,
+    "margin-rule-template-candidate": 4
+  },
+  "painted_geometry_sha256": "f652d6dd7248e4b5359b711b62e7698eb4f8b4e3432668f14a521bbf91f400e8",
+  "underline_geometry_evidence": [
+    {
+      "path_object_ordinal": 304,
+      "bbox": [
+        144.5686,
+        441.1237,
+        280.471,
+        442.1237
+      ],
+      "link_annotation_bbox": [
+        145.0687,
+        432.4929,
+        279.971,
+        442.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 306,
+      "bbox": [
+        285.0276,
+        441.1237,
+        383.7181,
+        442.1237
+      ],
+      "link_annotation_bbox": [
+        285.5276,
+        432.4929,
+        383.2181,
+        442.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 309,
+      "bbox": [
+        130.1204,
+        459.1237,
+        344.4212,
+        460.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        450.4929,
+        360.6058,
+        460.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 311,
+      "bbox": [
+        343.4212,
+        459.1237,
+        361.1058,
+        460.1237
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        450.4929,
+        360.6058,
+        460.4929
+      ]
+    },
+    {
+      "path_object_ordinal": 331,
+      "bbox": [
+        130.1204,
+        724.9236,
+        253.8499,
+        725.9236
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        716.2929,
+        270.0345,
+        726.2929
+      ]
+    },
+    {
+      "path_object_ordinal": 333,
+      "bbox": [
+        252.8499,
+        724.9236,
+        270.5345,
+        725.9236
+      ],
+      "link_annotation_bbox": [
+        130.6204,
+        716.2929,
+        270.0345,
+        726.2929
+      ]
+    }
+  ],
+  "unclassified_objects": [],
+  "tables": [
+    {
+      "table_id": "tbl-0496",
+      "file_page": 388,
+      "bbox": [
+        85.03936999999996,
+        74.6929100000001,
+        555.59057625,
+        365.49289000000016
+      ],
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/documents/src-000005/tables/tbl-0496.md",
+      "rows": 14,
+      "matrix_cells": 84,
+      "physical_cells": 84,
+      "span_null_positions": 0,
+      "cell_matrix_sha256": "83b9ad10c35677329be03c8d9c421f4cfddba99cbf7d18758650fca1a15ba481",
+      "cell_geometry_sha256": "d2239e45f9747b60374003d1d31e2e0d034c6682fd8d6f728b02d8a0ecab78e8",
+      "markdown_cell_preservation": "pass",
+      "output_has_manual_visual_review": null,
+      "independent_cells_checked": 84,
+      "independent_cells_match": 84,
+      "exceptions": [],
+      "review_status": "needs-review"
+    }
+  ],
+  "visual_review": "not-run",
+  "markdown_check_date": "2026-11-09"
+}
