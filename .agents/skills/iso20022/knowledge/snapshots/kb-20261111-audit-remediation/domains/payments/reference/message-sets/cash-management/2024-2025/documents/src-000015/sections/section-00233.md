@@ -1,0 +1,56 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Cash Management"
+source_ids: ["src-000015"]
+source_editions: ["February 2025"]
+message_ids: []
+heading_path: ["7 camt.008.001.11 CancelTransactionV11", "7.4 Message Building Blocks"]
+file_pages: [351]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.008.001.11"]
+preceding_topic_continuations: [{"constraint_ids": ["C10"], "until_heading": "7.4 Message Building Blocks", "scope": "Text before the named heading on this one-based file page.", "file_page": 351, "topic": "7.3 Constraints", "reference_path": "domains/payments/reference/message-sets/cash-management/2024-2025/documents/src-000015/sections/section-00232.md"}]
+---
+
+# 7.4 Message Building Blocks
+
+Source: [src-000015](../../../../../../../../../evidence/omitted/e79d1231c5475dd8ba11a782.md). Locator: one-based file pages 351 to 351.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+<!-- PDF-TOPIC-NAV-START -->
+## Topic continuation
+
+On file page 351, C10 before **7.4 Message Building Blocks** continue [7.3 Constraints](section-00232.md). They belong to the preceding Constraints topic; the full source page is retained below without rearranging its text.
+<!-- PDF-TOPIC-NAV-END -->
+
+## File page 351
+
+```text
+C10 TransactionIdentificationPresenceRule
+TransactionIdentification or UETR must be present. Both may be present
+7.4 Message Building Blocks
+This chapter describes the MessageBuildingBlocks of this MessageDefinition.
+7.4.1 MessageHeader <MsgHdr>
+Presence: [1..1]
+Definition: Common business identification for the message.
+MessageHeader <MsgHdr> contains the following elements (see "MessageHeader9" on page 810 for
+details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   MessageIdentification <MsgId> [1..1] Text 810
+   CreationDateTime <CreDtTm> [0..1] DateTime 810
+   RequestType <ReqTp> [0..1]  810
+{Or     PaymentControl <PmtCtrl> [1..1] CodeSet 810
+Or     Enquiry <Enqry> [1..1] CodeSet 811
+Or}     Proprietary <Prtry> [1..1] ± 811
+7.4.2 PaymentIdentification <PmtId>
+Presence: [1..1]
+Definition: Reference to the instruction related to the payment for which information is requested.
+Approved by the Payments SEG on 04 February 2025 camt.008.001.11 CancelTransactionV11
+Cash Management - Maintenance 2024 - 2025 351 February 2025
+```
+

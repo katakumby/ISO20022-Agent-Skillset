@@ -27,9 +27,9 @@ SQLite with FTS5, opened mode=ro and query_only:
 - files(path,sha256,size): packaged text-file membership.
 - documents(id,path,title,kind,domain,message_id,family,metadata): metadata is JSON.
 - tags(doc_id,key,value): kind/domain/message/family/namespace/collection/edition/source/status.
-- search: contentless FTS5 columns title and body, rowid matching documents.id.
+- search: contentless FTS5 columns title and body, rowid matching documents.id. The body column indexes the complete packaged text, including front matter: source qualifications and review limitations can appear only in metadata. Typed tags supplement this full-text coverage.
 
-The index must be rebuilt as part of preparing a new snapshot, not on a research request. Validate source and file identity, links, and representative retrieval before activating it. Replace the small active.json pointer atomically only after staging and validation succeed; retain snapshots used by active readers. Retrieval commands pin snapshots with --snapshot ID.
+The index must be rebuilt as part of preparing a new snapshot, not on a research request. Validate source and file identity, links, and representative retrieval before activating it. Replace the small active.json pointer atomically only after staging and validation succeed; retain snapshots used by active readers. Retrieval commands pin snapshots with --snapshot ID. Unpinned calls validate the active pointer object, format_version and snapshot_id. Explicitly pinned calls validate the requested snapshot directly and do not consult the current active pointer.
 
 ## Configuration
 
@@ -37,7 +37,11 @@ config.json fields: retrieval_budget_chars (3000..60000, default 12000), default
 
 ## Optional evidence
 
-evidence-packs/PACK_ID/evidence-manifest.json contains corpus_sources_sha256 and files, each with path, sha256, size, source_ids. Attach only evidence matching the source register. source returns local paths but does not open originals. Inspection still requires an explicit user request.
+evidence-packs/PACK_ID/evidence-manifest.json contains corpus_sources_sha256 and files, each with path, sha256, size, source_ids. Each selected entry must have verified byte size and SHA-256 and must match every listed registered source identity. The packaged catalog/sources.json must match corpus_sources_sha256.
+
+An entry can contain the original source bytes (including an extracted archive member), or the registered ZIP container of an archive-member source. For a container, source verifies its registered archive fingerprint and the exact, uniquely named member's fingerprint without extraction. Returned local_original_evidence records preserve original occurrences, archive source identity and member name; local_originals remains a list of local paths. Wrong, missing, ambiguous or unsupported evidence is reported rather than treated as an original.
+
+Hashing and archive-member verification authenticate bytes only. The helper does not render, execute or semantically interpret originals. Content inspection still requires an explicit user request.
 
 ## Compatibility
 

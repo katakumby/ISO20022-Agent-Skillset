@@ -1,0 +1,4653 @@
+{
+  "date": "2026-11-09",
+  "groups": [
+    {
+      "number": 1,
+      "quote": "The AccountDetailsConfirmation message is used to confirm the opening of an account, modification of an account or the provision of information requested in a previously sent GetAccountDetails message.",
+      "quote_sha256": "ba4c27bd4592065ece5ef0a7634c8301f3a62449cd865368696da648c77b6036",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "acmt.002.001.08",
+          "evidence_id": "src-000096-acmt.002.001.08-p38-c002",
+          "file_pages": [
+            38
+          ],
+          "heading": "3 acmt.002.001.08 AccountDetailsConfirmationV08"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "quote": "The RequestForAccountManagementStatusReport message is used to request the processing status of a previously sent AccountOpeningInstruction, GetAccountDetails or an AccountModificationInstruction message for which an AccountDetailsConfirmation message has not yet been received.",
+      "quote_sha256": "303bde1d3e66bf1e9d54baf36955b53deca200edb0c09f9037358ff04220508b",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "acmt.005.001.06",
+          "evidence_id": "src-000096-acmt.005.001.06-p77-c002",
+          "file_pages": [
+            77
+          ],
+          "heading": "5 acmt.005.001.06 RequestForAccountManagementStatusReportV06"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "quote": "The AccountManagementStatusReport message is used to provide the status of a previously received AccountOpeningInstruction, an AccountModificationInstruction or a GetAccountDetails message.",
+      "quote_sha256": "2db7dbe521b32aab80d7ac9d65f328887569dae13b6ae6a2da5cdf171d7020bb",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "acmt.006.001.07",
+          "evidence_id": "src-000096-acmt.006.001.07-p86-c002",
+          "file_pages": [
+            86
+          ],
+          "heading": "6 acmt.006.001.07 AccountManagementStatusReportV07"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "quote": "This message is sent in response to a query message, and contains the list of requested accounts, with requested characteristics.",
+      "quote_sha256": "a4da27dca78c278ad5e08c13d43c73fe9dc0bfc3dd3f169660ba43d12881454e",
+      "occurrences": [
+        {
+          "source_id": "src-000351",
+          "source_sha256": "e9d8e518dafbe038ad773d4753ce4e7b9eddf0228060442513989c9b0b2fd61c",
+          "message_id": "acmt.026.001.02",
+          "evidence_id": "src-000351-acmt.026.001.02-p48-c001",
+          "file_pages": [
+            48
+          ],
+          "heading": "3 acmt.026.001.02 AccountListReportV02"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "quote": "The purpose of this request is, that the requesting party wants to receive the \"original\" message once again.",
+      "quote_sha256": "907b20f47278b4ee6b741ede3f0d7f9e688a6a753c2192c378ea2a40e18f1a4b",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "admi.006.001.01",
+          "evidence_id": "src-000233-admi.006.001.01-p57-c002",
+          "file_pages": [
+            57
+          ],
+          "heading": "3 admi.006.001.01 ResendRequestV01"
+        },
+        {
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "message_id": "admi.006.001.01",
+          "evidence_id": "src-000344-admi.006.001.01-p27-c002",
+          "file_pages": [
+            27
+          ],
+          "heading": "3 admi.006.001.01 ResendRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "quote": "This might be caused through technical problems on the receiving side (message could not be received or processed or is missing in the message sequencing) or for archiving purposes.",
+      "quote_sha256": "d9577c81c1e5a315e6bfe153f12c29a79c9a25028e884a29358ba02875f73539",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "admi.006.001.01",
+          "evidence_id": "src-000233-admi.006.001.01-p57-c003",
+          "file_pages": [
+            57
+          ],
+          "heading": "3 admi.006.001.01 ResendRequestV01"
+        },
+        {
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "message_id": "admi.006.001.01",
+          "evidence_id": "src-000344-admi.006.001.01-p27-c003",
+          "file_pages": [
+            27
+          ],
+          "heading": "3 admi.006.001.01 ResendRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "quote": "It is sent to acknowledge the receipt of one or multiple messages sent previously.",
+      "quote_sha256": "b9179e3d038bd6bbe77e32f2bf57d0f9ab855758ff4d872e13840c2cddf92566",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "admi.007.001.01",
+          "evidence_id": "src-000233-admi.007.001.01-p62-c002",
+          "file_pages": [
+            62
+          ],
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01"
+        },
+        {
+          "source_id": "src-000344",
+          "source_sha256": "1cb720f39dc25c40677e9c6561dbe3ce0d511e331da7f991867ee43fadddfbb2",
+          "message_id": "admi.007.001.01",
+          "evidence_id": "src-000344-admi.007.001.01-p32-c002",
+          "file_pages": [
+            32
+          ],
+          "heading": "4 admi.007.001.01 ReceiptAcknowledgementV01"
+        },
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.025.001.09",
+          "evidence_id": "src-000015-camt.025.001.09-p604-c002",
+          "file_pages": [
+            604
+          ],
+          "heading": "23 camt.025.001.09 ReceiptV09"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "quote": "The transaction administrator may also send a ReturnAccount message with pre-defined information, at times previously agreed with the member, or to warn the member about a particular problem that may have arisen and which needs attention.",
+      "quote_sha256": "b2e2dba747def94293894d35e1a3c2c97413f81377eefe596fa9873149025b2b",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.004.001.10",
+          "evidence_id": "src-000015-camt.004.001.10-p48-c006",
+          "file_pages": [
+            48
+          ],
+          "heading": "3 camt.004.001.10 ReturnAccountV10"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "quote": "Payment instructions are either sent by the member, debiting or crediting its account at the transaction administrator or received by the transaction administrator, crediting or debiting the member's account.",
+      "quote_sha256": "ae18b57f3a42826e478e9d6d188e2c7ef8c16f8062a963eacda83b0d74b90068",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.005.001.11",
+          "evidence_id": "src-000015-camt.005.001.11-p98-c003",
+          "file_pages": [
+            98
+          ],
+          "heading": "4 camt.005.001.11 GetTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "quote": "Members of a system need to receive information about the payments queue(s) and must have the ability to take action (that is, cancel or modify the transaction(s) to be settled).",
+      "quote_sha256": "f19698c7ed4d65f72fbb1f7e78547e452afd4f8b08345e632f48cdc1058fe367",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.006.001.11",
+          "evidence_id": "src-000015-camt.006.001.11-p206-c005",
+          "file_pages": [
+            206
+          ],
+          "heading": "5 camt.006.001.11 ReturnTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "quote": "Based on the criteria received within the request, the transaction administrator will select items that match the request and report them to the requester.",
+      "quote_sha256": "e261e712e8323328c18891a17010bb7fcb70e2ee00e451a2d9f57ab9c648f01e",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.006.001.11",
+          "evidence_id": "src-000015-camt.006.001.11-p206-c009",
+          "file_pages": [
+            206
+          ],
+          "heading": "5 camt.006.001.11 ReturnTransactionV11"
+        },
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.019.001.07",
+          "evidence_id": "src-000015-camt.019.001.07-p535-c005",
+          "file_pages": [
+            535
+          ],
+          "heading": "18 camt.019.001.07 ReturnBusinessDayInformationV07"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "quote": "The transaction administrator may also send a ReturnTransaction message with pre-defined information at times previously agreed with the member or to warn the member about a particular problem that may have arisen and which needs attention.",
+      "quote_sha256": "1be86b301297bea5920aca80a0f8d6637114669b301fc4acec4bb70b31ed5814",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.006.001.11",
+          "evidence_id": "src-000015-camt.006.001.11-p206-c010",
+          "file_pages": [
+            206
+          ],
+          "heading": "5 camt.006.001.11 ReturnTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "quote": "When a GetTransaction message is sent requesting a statement report, the related ReturnTransaction message will provide a pre-defined set of return criteria per transaction.",
+      "quote_sha256": "b2ba7d542ecb267dc96cb3e3066033d44c297937032ad4d9e4883c52d88fef62",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.006.001.11",
+          "evidence_id": "src-000015-camt.006.001.11-p206-c021",
+          "file_pages": [
+            207
+          ],
+          "heading": "5 camt.006.001.11 ReturnTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "quote": "It is used to request one modification in one payment instruction held at the transaction administrator and sent by the member, debiting or crediting its account at the transaction administrator.",
+      "quote_sha256": "bac6f6a129512df3d6790b5aeb4059808299ae71ea6b1a4f93117e50dec6edc0",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.007.001.10",
+          "evidence_id": "src-000015-camt.007.001.10-p326-c002",
+          "file_pages": [
+            326
+          ],
+          "heading": "6 camt.007.001.10 ModifyTransactionV10"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "quote": "Based on the criteria received within the ModifyTransaction message, the transaction administrator will execute or reject the requested modifications.",
+      "quote_sha256": "dd4b60befba0cdc2c5e950f9d2a75a3b7ff2cc81847d57f5044c0178d0f6c95a",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.007.001.10",
+          "evidence_id": "src-000015-camt.007.001.10-p326-c011",
+          "file_pages": [
+            326
+          ],
+          "heading": "6 camt.007.001.10 ModifyTransactionV10"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "quote": "It is used to request the cancellation of one payment instruction held at the transaction administrator and sent by the member.",
+      "quote_sha256": "3d8851eb1d603c269a6ce4e2f106c420a4758b6df4542000f1cafd4d80cc0406",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.008.001.11",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c002",
+          "file_pages": [
+            347
+          ],
+          "heading": "7 camt.008.001.11 CancelTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "quote": "For this reason, at any time during the operating hours of the system, the member can request the cancellation of a transaction that has not received a final status.",
+      "quote_sha256": "66ce4118f2cf3315cc3b97996a2016f5f1cd3240d53a0ad17dd7673bbd33474e",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.008.001.11",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c006",
+          "file_pages": [
+            347
+          ],
+          "heading": "7 camt.008.001.11 CancelTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "quote": "Based on the criteria received within the CancelTransaction message, the transaction administrator will execute or reject the requested cancellation.",
+      "quote_sha256": "240e823b9ba5b0598e3cc929613f1ced5b7f218962e68ccd71baf0b2e3b884c8",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.008.001.11",
+          "evidence_id": "src-000015-camt.008.001.11-p347-c008",
+          "file_pages": [
+            347
+          ],
+          "heading": "7 camt.008.001.11 CancelTransactionV11"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "quote": "The transaction administrator may also send a ReturnLimit message with pre-defined information at times previously agreed with the member or to warn the member about a particular problem that may have arisen and which needs attention.",
+      "quote_sha256": "7eb1605afcea235b6ee7a52c9efd59ad90b2eb95252bea0106d8ac6149f9ac5c",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.010.001.09",
+          "evidence_id": "src-000015-camt.010.001.09-p391-c005",
+          "file_pages": [
+            391
+          ],
+          "heading": "9 camt.010.001.09 ReturnLimitV09"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "quote": "point in time when the limit becomes effective Based on the criteria received within the ModifyLimit message, the transaction administrator will execute or reject the requested modification.",
+      "quote_sha256": "f8d7297f1e9d0df29f88367b99f22b55e2be6adbdcaa063ea593c9448a1835c8",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.011.001.08",
+          "evidence_id": "src-000015-camt.011.001.08-p422-c006",
+          "file_pages": [
+            422
+          ],
+          "heading": "10 camt.011.001.08 ModifyLimitV08"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "quote": "identification of the counterparty (bilateral limit) Based on the criteria received within the DeleteLimit message, the transaction administrator will execute or reject the requested modifications.",
+      "quote_sha256": "f01f2836388fae3b8c5e52335887002bafc58a36487357d4967c492dfd8a7aff",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.012.001.08",
+          "evidence_id": "src-000015-camt.012.001.08-p450-c004",
+          "file_pages": [
+            450
+          ],
+          "heading": "11 camt.012.001.08 DeleteLimitV08"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "quote": "Based on the criteria received within the request, the transaction administrator will select items that will match with the request and report them to the requestor.",
+      "quote_sha256": "7aaaaa388f2d0581a688a90e98151adda40ddf18b8eacbd6ad97c9293cddee47",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.014.001.05",
+          "evidence_id": "src-000015-camt.014.001.05-p476-c007",
+          "file_pages": [
+            476
+          ],
+          "heading": "13 camt.014.001.05 ReturnMemberV05"
+        },
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.017.001.05",
+          "evidence_id": "src-000015-camt.017.001.05-p511-c008",
+          "file_pages": [
+            511
+          ],
+          "heading": "16 camt.017.001.05 ReturnCurrencyExchangeRateV05"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "quote": "The transaction administrator may also send a Return Member message with pre-defined information at times previously agreed with the member or to warn the member about a particular problem that may have arisen and which needs the member(s) attention.",
+      "quote_sha256": "daf471ca7b7d2ec48e371849ff5e988909f2099ab2c55e98a98ec9948a72be8a",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.014.001.05",
+          "evidence_id": "src-000015-camt.014.001.05-p476-c008",
+          "file_pages": [
+            476
+          ],
+          "heading": "13 camt.014.001.05 ReturnMemberV05"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "quote": "identification of contact persons for the member, their role and/or details (postal address, e-mail address, telephone or fax number) Based on the criteria received within the Modify Member message, the transaction administrator will execute or reject the requested modifications.",
+      "quote_sha256": "2f26dab77c073e5de4e00777ec746147042c154dcbb333c1677f0779debda366",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.015.001.04",
+          "evidence_id": "src-000015-camt.015.001.04-p495-c009",
+          "file_pages": [
+            495
+          ],
+          "heading": "14 camt.015.001.04 ModifyMemberV04"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "quote": "The transaction administrator may also send a Return Currency Exchange Rate message with pre- defined information at times previously agreed with the member or to warn the member about a particular problem that may have arisen and which needs the member(s) attention.",
+      "quote_sha256": "4d88c4dd8e9cd2516032ea682ecd143ee992e9684762def29d0d29f8774cdc03",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.017.001.05",
+          "evidence_id": "src-000015-camt.017.001.05-p511-c009",
+          "file_pages": [
+            511
+          ],
+          "heading": "16 camt.017.001.05 ReturnCurrencyExchangeRateV05"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "quote": "The transaction administrator may also send a ReturnBusinessDayInformation message with pre- defined information at times previously agreed with the member or to warn the member about a particular problem that may have arisen and which needs attention.",
+      "quote_sha256": "907156387df4d322a7ed8a04f3f678d57c83d68d404b8323267f9d9b0e04af6f",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.019.001.07",
+          "evidence_id": "src-000015-camt.019.001.07-p535-c006",
+          "file_pages": [
+            535
+          ],
+          "heading": "18 camt.019.001.07 ReturnBusinessDayInformationV07"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "quote": "It is used to request information on a broadcast-type message previously sent by the transaction administrator to all or some of the members, giving information related to the processing business.",
+      "quote_sha256": "f9af0be1b8784b4dcb990f5f73f5a3413f8d43a0a4ac2ec0268e7df4328abb92",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.020.001.04",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c002",
+          "file_pages": [
+            558
+          ],
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "quote": "At any time during the operating hours of the system, the member can query the transaction administrator to get information about a report of general business information previously sent.",
+      "quote_sha256": "bd38327fdf7fdf2b826e9c2a1075d012cda22a08ef093ef32b5600c04f3afff4",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.020.001.04",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c006",
+          "file_pages": [
+            558
+          ],
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "quote": "priority of the report previously sent, and indication of its format.",
+      "quote_sha256": "3d2929b46d550c05e1f3343a694008edbcffa4d01aaa6bc78c01001b602364d8",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.020.001.04",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c008",
+          "file_pages": [
+            558
+          ],
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "quote": "details of the previously sent message This message will be replied to by a ReturnGeneralBusinessInformation message.",
+      "quote_sha256": "c2049370c290922f540303351ea596fec7cc609e1edc275776009a68d453fff9",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.020.001.04",
+          "evidence_id": "src-000015-camt.020.001.04-p558-c010",
+          "file_pages": [
+            558
+          ],
+          "heading": "19 camt.020.001.04 GetGeneralBusinessInformationV04"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "quote": "party (account owner) that will receive the funds",
+      "quote_sha256": "2f9bc98070e1b02873678f7b2bdf097b0e3f10f9c8ba02f67be1e2d5d236ac96",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.023.001.07",
+          "evidence_id": "src-000015-camt.023.001.07-p577-c009",
+          "file_pages": [
+            577
+          ],
+          "heading": "21 camt.023.001.07 BackupPaymentV07"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "quote": "the financial institution that will receive the funds on behalf of the account owner Based on the criteria received within the BackupPayment message, the transaction administrator will execute or reject the requested funds transfer.",
+      "quote_sha256": "ae6abdf4ddf41ac693b16488c22b1e2c2e4365643f4ed21216819c8233ff0ba1",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.023.001.07",
+          "evidence_id": "src-000015-camt.023.001.07-p577-c010",
+          "file_pages": [
+            577
+          ],
+          "heading": "21 camt.023.001.07 BackupPaymentV07"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "quote": "dates when the standing order begins and ceases to be effective Based on the criteria received within the ModifyStandingOrder message, the transaction administrator will execute or reject the requested modifications.",
+      "quote_sha256": "a5d826796d77aa76a14e53cd3ce768d76cbdc8d9e7e9ba060eb42c8f7dc9db48",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.024.001.08",
+          "evidence_id": "src-000015-camt.024.001.08-p591-c005",
+          "file_pages": [
+            591
+          ],
+          "heading": "22 camt.024.001.08 ModifyStandingOrderV08"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "quote": "The FundEstimatedCashForecastReport is used to report estimated cash movements, that is, it is sent prior to the cut-off time and/or the price valuation of the fund.",
+      "quote_sha256": "fcf135a87a7031711fb8fef0fbd6369b3d81e24aa2ad5502c6e59cf52dfd6d13",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.040.001.04",
+          "evidence_id": "src-000096-camt.040.001.04-p94-c002",
+          "file_pages": [
+            94
+          ],
+          "heading": "7 camt.040.001.04 FundEstimatedCashForecastReportV04"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "quote": "The FundConfirmedCashForecastReport is used to report definitive cash movements, that is it is sent after the cut-off time and/or the price valuation of the fund.",
+      "quote_sha256": "c0c3057eb2f52e9b44dbf6f25697744b70d6bcb45a64b4da18259e9ee086151f",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.041.001.04",
+          "evidence_id": "src-000096-camt.041.001.04-p105-c002",
+          "file_pages": [
+            105
+          ],
+          "heading": "8 camt.041.001.04 FundConfirmedCashForecastReportV04"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "quote": "The FundDetailedEstimatedCashForecastReport is used to provide estimated cash movements, that is, it is sent prior to the cut-off time and/or the price valuation of the fund.",
+      "quote_sha256": "812066408581ce02eff28bebf71387bd5d76467ef5f419a344a8c7980e3929ef",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.042.001.04",
+          "evidence_id": "src-000096-camt.042.001.04-p116-c002",
+          "file_pages": [
+            116
+          ],
+          "heading": "9 camt.042.001.04 FundDetailedEstimatedCashForecastReportV04"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "quote": "The FundDetailedConfirmedCashForecastReport is used to provide definitive cash movements, that is, it is sent after the cut-off time and/or the price valuation of the fund.",
+      "quote_sha256": "178c79311f5b7e60aeae9a01c80ccb3c98e133509e781034bc95a8628f3e2ac1",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.043.001.04",
+          "evidence_id": "src-000096-camt.043.001.04-p126-c002",
+          "file_pages": [
+            126
+          ],
+          "heading": "10 camt.043.001.04 FundDetailedConfirmedCashForecastReportV04"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "quote": "The FundConfirmedCashForecastReportCancellation message is used to cancel an entire FundConfirmedCashForecastReport message that was previously sent by the report provider.",
+      "quote_sha256": "1a77f1543357500042b29fceb6fecf2cdfe309913d02d1f31e0d5154f9d7c8fa",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.044.001.03",
+          "evidence_id": "src-000096-camt.044.001.03-p146-c002",
+          "file_pages": [
+            146
+          ],
+          "heading": "11 camt.044.001.03 FundConfirmedCashForecastReportCancellationV03"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "quote": "The FundDetailedConfirmedCashForecastReportCancellation message is used to cancel an entire FundDetailedConfirmedCashForecastReport message that was previously sent.",
+      "quote_sha256": "eead97c2609031c4feac229d7e449d722917b658ab972f2baee6eeaba15c4591",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "camt.045.001.03",
+          "evidence_id": "src-000096-camt.045.001.03-p153-c002",
+          "file_pages": [
+            153
+          ],
+          "heading": "12 camt.045.001.03 FundDetailedConfirmedCashForecastReportCancellationV03"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "quote": "Based on the criteria received within the LiquidityCreditTransfer message, the transaction administrator will execute or reject the requested transfer.",
+      "quote_sha256": "3eca1020d848948068e035e8dce8097e6d3b7feccd4f51cd5b933d6cfec5d7f0",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.050.001.07",
+          "evidence_id": "src-000015-camt.050.001.07-p668-c008",
+          "file_pages": [
+            668
+          ],
+          "heading": "28 camt.050.001.07 LiquidityCreditTransferV07"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "quote": "Based on the criteria received within the LiquidityDebitTransfer message, the transaction administrator will execute or reject the requested transfer.",
+      "quote_sha256": "ca3bda18e93c0651508370b4ec3ed86459d4fe9c3e61229421e1b4e42313a79d",
+      "occurrences": [
+        {
+          "source_id": "src-000015",
+          "source_sha256": "25b2234dbdf94f3bd78cbd8fee382958160564b9043f0bc3b842d65f3eb74c71",
+          "message_id": "camt.051.001.07",
+          "evidence_id": "src-000015-camt.051.001.07-p677-c008",
+          "file_pages": [
+            677
+          ],
+          "heading": "29 camt.051.001.07 LiquidityDebitTransferV07"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "quote": "It is possible that the receiver of the message is not the account owner, but a party entitled by the account owner to receive the account information (also known as recipient).",
+      "quote_sha256": "555c9257ab4fe3f8e3315c31c1400e6580528eb9f0681430df9a02b23276e5fb",
+      "occurrences": [
+        {
+          "source_id": "src-000005",
+          "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+          "message_id": "camt.052.001.14",
+          "evidence_id": "src-000005-camt.052.001.14-p4-c003",
+          "file_pages": [
+            4
+          ],
+          "heading": "2 camt.052.001.14 BankToCustomerAccountReportV14"
+        },
+        {
+          "source_id": "src-000005",
+          "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+          "message_id": "camt.054.001.14",
+          "evidence_id": "src-000005-camt.054.001.14-p523-c003",
+          "file_pages": [
+            523
+          ],
+          "heading": "4 camt.054.001.14 BankToCustomerDebitCreditNotificationV14"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "quote": "It is possible that the receiver of the message is not the account owner, but a party entitled through arrangement with the account owner to receive the account information (also known as recipient).",
+      "quote_sha256": "c60a18236efd701e8f7c90a90a8ca04196b6be394887e162dbd2757134afc370",
+      "occurrences": [
+        {
+          "source_id": "src-000005",
+          "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+          "message_id": "camt.053.001.14",
+          "evidence_id": "src-000005-camt.053.001.14-p263-c005",
+          "file_pages": [
+            263
+          ],
+          "heading": "3 camt.053.001.14 BankToCustomerStatementV14"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "quote": "It is used to ask the account servicing institution to send a report on the account owner's account in a BankToCustomerAccountReport (camt.052), a BankToCustomerStatement (camt.053) or a BankToCustomerDebitCreditNotification (camt.054).",
+      "quote_sha256": "89a085e11bfb2fe5e2ba1b4ce40bfad2b9ea3d4bef2b1ae425bbeff759de8abf",
+      "occurrences": [
+        {
+          "source_id": "src-000005",
+          "source_sha256": "f6ea23ab7f761fc38ede7f596293d22a59e458aee42f2b0fbb9200ef1ef1ac9c",
+          "message_id": "camt.060.001.07",
+          "evidence_id": "src-000005-camt.060.001.07-p781-c002",
+          "file_pages": [
+            781
+          ],
+          "heading": "5 camt.060.001.07 AccountReportingRequestV07"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "quote": "re-send a message previously sent (the sub-function of the message is \"Duplicate\")",
+      "quote_sha256": "e035d5f694a69db7787d8e51f48d3185e95198b116a6322a5c333e18f28cbd95",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.066.001.02",
+          "evidence_id": "src-000233-camt.066.001.02-p93-c002",
+          "file_pages": [
+            93
+          ],
+          "heading": "7 camt.066.001.02 IntraBalanceMovementInstructionV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.066.001.02",
+          "evidence_id": "src-000360-camt.066.001.02-p10-c002",
+          "file_pages": [
+            10
+          ],
+          "heading": "2 camt.066.001.02 IntraBalanceMovementInstructionV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.067.001.02",
+          "evidence_id": "src-000233-camt.067.001.02-p114-c002",
+          "file_pages": [
+            114
+          ],
+          "heading": "8 camt.067.001.02 IntraBalanceMovementStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.067.001.02",
+          "evidence_id": "src-000360-camt.067.001.02-p31-c002",
+          "file_pages": [
+            31
+          ],
+          "heading": "3 camt.067.001.02 IntraBalanceMovementStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.068.001.02",
+          "evidence_id": "src-000233-camt.068.001.02-p133-c002",
+          "file_pages": [
+            133
+          ],
+          "heading": "9 camt.068.001.02 IntraBalanceMovementConfirmationV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.068.001.02",
+          "evidence_id": "src-000360-camt.068.001.02-p50-c002",
+          "file_pages": [
+            50
+          ],
+          "heading": "4 camt.068.001.02 IntraBalanceMovementConfirmationV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.072.001.02",
+          "evidence_id": "src-000233-camt.072.001.02-p149-c002",
+          "file_pages": [
+            149
+          ],
+          "heading": "10 camt.072.001.02 IntraBalanceMovementModificationRequestV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.072.001.02",
+          "evidence_id": "src-000360-camt.072.001.02-p66-c002",
+          "file_pages": [
+            66
+          ],
+          "heading": "5 camt.072.001.02 IntraBalanceMovementModificationRequestV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.073.001.02",
+          "evidence_id": "src-000233-camt.073.001.02-p173-c002",
+          "file_pages": [
+            173
+          ],
+          "heading": "11 camt.073.001.02 IntraBalanceMovementModificationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.073.001.02",
+          "evidence_id": "src-000360-camt.073.001.02-p90-c002",
+          "file_pages": [
+            90
+          ],
+          "heading": "6 camt.073.001.02 IntraBalanceMovementModificationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.074.001.02",
+          "evidence_id": "src-000233-camt.074.001.02-p198-c002",
+          "file_pages": [
+            198
+          ],
+          "heading": "12 camt.074.001.02 IntraBalanceMovementCancellationRequestV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.074.001.02",
+          "evidence_id": "src-000360-camt.074.001.02-p115-c002",
+          "file_pages": [
+            115
+          ],
+          "heading": "7 camt.074.001.02 IntraBalanceMovementCancellationRequestV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.075.001.02",
+          "evidence_id": "src-000233-camt.075.001.02-p215-c002",
+          "file_pages": [
+            215
+          ],
+          "heading": "13 camt.075.001.02 IntraBalanceMovementCancellationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.075.001.02",
+          "evidence_id": "src-000360-camt.075.001.02-p132-c002",
+          "file_pages": [
+            132
+          ],
+          "heading": "8 camt.075.001.02 IntraBalanceMovementCancellationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.081.001.02",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c002",
+          "file_pages": [
+            436
+          ],
+          "heading": "19 camt.081.001.02 IntraBalanceMovementModificationReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.081.001.02",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c002",
+          "file_pages": [
+            245
+          ],
+          "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.083.001.02",
+          "evidence_id": "src-000233-camt.083.001.02-p491-c002",
+          "file_pages": [
+            491
+          ],
+          "heading": "21 camt.083.001.02 IntraBalanceMovementCancellationReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.083.001.02",
+          "evidence_id": "src-000360-camt.083.001.02-p300-c002",
+          "file_pages": [
+            300
+          ],
+          "heading": "14 camt.083.001.02 IntraBalanceMovementCancellationReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.031.001.01",
+          "evidence_id": "src-000233-semt.031.001.01-p2652-c002",
+          "file_pages": [
+            2652
+          ],
+          "heading": "76 semt.031.001.01 SecuritiesSettlementConditionsModificationRequestReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.031.001.01",
+          "evidence_id": "src-000381-semt.031.001.01-p97-c002",
+          "file_pages": [
+            97
+          ],
+          "heading": "5 semt.031.001.01 SecuritiesSettlementConditionsModificationRequestReportV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.033.001.01",
+          "evidence_id": "src-000233-semt.033.001.01-p2700-c002",
+          "file_pages": [
+            2700
+          ],
+          "heading": "78 semt.033.001.01 SecuritiesTransactionCancellationRequestReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.033.001.01",
+          "evidence_id": "src-000381-semt.033.001.01-p145-c002",
+          "file_pages": [
+            145
+          ],
+          "heading": "7 semt.033.001.01 SecuritiesTransactionCancellationRequestReportV01"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"CopyDuplicate\").",
+      "quote_sha256": "a57587d73ed842407ad94472d9313dbea6332cbbf4a1a936d7efeeda582a9ca6",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.066.001.02",
+          "evidence_id": "src-000233-camt.066.001.02-p93-c004",
+          "file_pages": [
+            93
+          ],
+          "heading": "7 camt.066.001.02 IntraBalanceMovementInstructionV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.066.001.02",
+          "evidence_id": "src-000360-camt.066.001.02-p10-c004",
+          "file_pages": [
+            10
+          ],
+          "heading": "2 camt.066.001.02 IntraBalanceMovementInstructionV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.067.001.02",
+          "evidence_id": "src-000233-camt.067.001.02-p114-c004",
+          "file_pages": [
+            114
+          ],
+          "heading": "8 camt.067.001.02 IntraBalanceMovementStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.067.001.02",
+          "evidence_id": "src-000360-camt.067.001.02-p31-c004",
+          "file_pages": [
+            31
+          ],
+          "heading": "3 camt.067.001.02 IntraBalanceMovementStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.068.001.02",
+          "evidence_id": "src-000233-camt.068.001.02-p133-c004",
+          "file_pages": [
+            133
+          ],
+          "heading": "9 camt.068.001.02 IntraBalanceMovementConfirmationV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.068.001.02",
+          "evidence_id": "src-000360-camt.068.001.02-p50-c004",
+          "file_pages": [
+            50
+          ],
+          "heading": "4 camt.068.001.02 IntraBalanceMovementConfirmationV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.072.001.02",
+          "evidence_id": "src-000233-camt.072.001.02-p149-c004",
+          "file_pages": [
+            149
+          ],
+          "heading": "10 camt.072.001.02 IntraBalanceMovementModificationRequestV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.072.001.02",
+          "evidence_id": "src-000360-camt.072.001.02-p66-c004",
+          "file_pages": [
+            66
+          ],
+          "heading": "5 camt.072.001.02 IntraBalanceMovementModificationRequestV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.073.001.02",
+          "evidence_id": "src-000233-camt.073.001.02-p173-c004",
+          "file_pages": [
+            173
+          ],
+          "heading": "11 camt.073.001.02 IntraBalanceMovementModificationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.073.001.02",
+          "evidence_id": "src-000360-camt.073.001.02-p90-c004",
+          "file_pages": [
+            90
+          ],
+          "heading": "6 camt.073.001.02 IntraBalanceMovementModificationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.074.001.02",
+          "evidence_id": "src-000233-camt.074.001.02-p198-c004",
+          "file_pages": [
+            198
+          ],
+          "heading": "12 camt.074.001.02 IntraBalanceMovementCancellationRequestV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.074.001.02",
+          "evidence_id": "src-000360-camt.074.001.02-p115-c004",
+          "file_pages": [
+            115
+          ],
+          "heading": "7 camt.074.001.02 IntraBalanceMovementCancellationRequestV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.075.001.02",
+          "evidence_id": "src-000233-camt.075.001.02-p215-c004",
+          "file_pages": [
+            215
+          ],
+          "heading": "13 camt.075.001.02 IntraBalanceMovementCancellationRequestStatusAdviceV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.075.001.02",
+          "evidence_id": "src-000360-camt.075.001.02-p132-c004",
+          "file_pages": [
+            132
+          ],
+          "heading": "8 camt.075.001.02 IntraBalanceMovementCancellationRequestStatusAdviceV02"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "quote": "This can be sent via cumulative billing data or itemised billing data as response to an invoice query message.",
+      "quote_sha256": "3e23d49f4146cece9ecb31e7e7cbd7210c6ad9cc66773bfddbb61383c00f4e91",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.077.001.01",
+          "evidence_id": "src-000233-camt.077.001.01-p240-c003",
+          "file_pages": [
+            240
+          ],
+          "heading": "15 camt.077.001.01 BillingReportV01"
+        },
+        {
+          "source_id": "src-000346",
+          "source_sha256": "5f6a9c6bf933c664eb77f5bc1f4707f737afeb1a3c5ec961762aee3eba948e48",
+          "message_id": "camt.077.001.01",
+          "evidence_id": "src-000346-camt.077.001.01-p11-c003",
+          "file_pages": [
+            11
+          ],
+          "heading": "3 camt.077.001.01 BillingReportV01"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "quote": "re-send a message sent by the account owner to the account servicer (the sub-function of the message is \"Duplicate\")",
+      "quote_sha256": "43226a8805604068fc2f286158f66388e2eeacd65406ac088d7679ec6e45a36d",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000233-camt.078.001.02-p341-c002",
+          "file_pages": [
+            341
+          ],
+          "heading": "16 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000360-camt.078.001.02-p150-c002",
+          "file_pages": [
+            150
+          ],
+          "heading": "9 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000233-camt.079.001.02-p381-c002",
+          "file_pages": [
+            381
+          ],
+          "heading": "17 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000360-camt.079.001.02-p190-c002",
+          "file_pages": [
+            190
+          ],
+          "heading": "10 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000233-camt.080.001.02-p423-c002",
+          "file_pages": [
+            423
+          ],
+          "heading": "18 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000360-camt.080.001.02-p232-c002",
+          "file_pages": [
+            232
+          ],
+          "heading": "11 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000233-camt.082.001.02-p477-c002",
+          "file_pages": [
+            477
+          ],
+          "heading": "20 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000360-camt.082.001.02-p286-c002",
+          "file_pages": [
+            286
+          ],
+          "heading": "13 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000233-camt.085.001.02-p549-c002",
+          "file_pages": [
+            549
+          ],
+          "heading": "23 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000360-camt.085.001.02-p358-c002",
+          "file_pages": [
+            358
+          ],
+          "heading": "16 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000233-semt.028.001.01-p2562-c002",
+          "file_pages": [
+            2562
+          ],
+          "heading": "73 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000381-semt.028.001.01-p7-c002",
+          "file_pages": [
+            7
+          ],
+          "heading": "2 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000233-semt.029.001.01-p2612-c002",
+          "file_pages": [
+            2612
+          ],
+          "heading": "74 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000381-semt.029.001.01-p57-c002",
+          "file_pages": [
+            57
+          ],
+          "heading": "3 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000233-semt.030.001.01-p2642-c002",
+          "file_pages": [
+            2642
+          ],
+          "heading": "75 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000381-semt.030.001.01-p87-c002",
+          "file_pages": [
+            87
+          ],
+          "heading": "4 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000233-semt.032.001.01-p2689-c002",
+          "file_pages": [
+            2689
+          ],
+          "heading": "77 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000381-semt.032.001.01-p134-c002",
+          "file_pages": [
+            134
+          ],
+          "heading": "6 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000233-semt.034.001.01-p2724-c002",
+          "file_pages": [
+            2724
+          ],
+          "heading": "79 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000381-semt.034.001.01-p169-c002",
+          "file_pages": [
+            169
+          ],
+          "heading": "8 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "quote": "provide a third party with a copy of a message being sent by the account owner for information (the sub-function of the message is \"Copy\")",
+      "quote_sha256": "ae313661fb4bfbed068dc144ae74f84801759517dc60a59928587d9a05cfb074",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000233-camt.078.001.02-p341-c003",
+          "file_pages": [
+            341
+          ],
+          "heading": "16 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000360-camt.078.001.02-p150-c003",
+          "file_pages": [
+            150
+          ],
+          "heading": "9 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000233-camt.079.001.02-p381-c003",
+          "file_pages": [
+            381
+          ],
+          "heading": "17 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000360-camt.079.001.02-p190-c003",
+          "file_pages": [
+            190
+          ],
+          "heading": "10 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000233-camt.080.001.02-p423-c003",
+          "file_pages": [
+            423
+          ],
+          "heading": "18 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000360-camt.080.001.02-p232-c003",
+          "file_pages": [
+            232
+          ],
+          "heading": "11 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000233-camt.082.001.02-p477-c003",
+          "file_pages": [
+            477
+          ],
+          "heading": "20 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000360-camt.082.001.02-p286-c003",
+          "file_pages": [
+            286
+          ],
+          "heading": "13 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000233-camt.085.001.02-p549-c003",
+          "file_pages": [
+            549
+          ],
+          "heading": "23 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000360-camt.085.001.02-p358-c003",
+          "file_pages": [
+            358
+          ],
+          "heading": "16 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000233-semt.028.001.01-p2562-c003",
+          "file_pages": [
+            2562
+          ],
+          "heading": "73 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000381-semt.028.001.01-p7-c003",
+          "file_pages": [
+            7
+          ],
+          "heading": "2 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000233-semt.029.001.01-p2612-c003",
+          "file_pages": [
+            2612
+          ],
+          "heading": "74 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000381-semt.029.001.01-p57-c003",
+          "file_pages": [
+            57
+          ],
+          "heading": "3 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000233-semt.030.001.01-p2642-c003",
+          "file_pages": [
+            2642
+          ],
+          "heading": "75 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000381-semt.030.001.01-p87-c003",
+          "file_pages": [
+            87
+          ],
+          "heading": "4 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000233-semt.032.001.01-p2689-c003",
+          "file_pages": [
+            2689
+          ],
+          "heading": "77 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000381-semt.032.001.01-p134-c003",
+          "file_pages": [
+            134
+          ],
+          "heading": "6 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000233-semt.034.001.01-p2724-c003",
+          "file_pages": [
+            2724
+          ],
+          "heading": "79 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000381-semt.034.001.01-p169-c003",
+          "file_pages": [
+            169
+          ],
+          "heading": "8 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "quote": "re-send to a third party a copy of a message being sent by the account owner for information (the sub- function of the message is \"Copy Duplicate\").",
+      "quote_sha256": "ad25fd69f33548f734fd308f806d5ce83a6dcffdca2f3beb40dbd068bfa862b5",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000233-camt.078.001.02-p341-c004",
+          "file_pages": [
+            341
+          ],
+          "heading": "16 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.078.001.02",
+          "evidence_id": "src-000360-camt.078.001.02-p150-c004",
+          "file_pages": [
+            150
+          ],
+          "heading": "9 camt.078.001.02 IntraBalanceMovementQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000233-camt.079.001.02-p381-c004",
+          "file_pages": [
+            381
+          ],
+          "heading": "17 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.079.001.02",
+          "evidence_id": "src-000360-camt.079.001.02-p190-c004",
+          "file_pages": [
+            190
+          ],
+          "heading": "10 camt.079.001.02 IntraBalanceMovementQueryResponseV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000233-camt.080.001.02-p423-c004",
+          "file_pages": [
+            423
+          ],
+          "heading": "18 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.080.001.02",
+          "evidence_id": "src-000360-camt.080.001.02-p232-c004",
+          "file_pages": [
+            232
+          ],
+          "heading": "11 camt.080.001.02 IntraBalanceMovementModificationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000233-camt.082.001.02-p477-c004",
+          "file_pages": [
+            477
+          ],
+          "heading": "20 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.082.001.02",
+          "evidence_id": "src-000360-camt.082.001.02-p286-c004",
+          "file_pages": [
+            286
+          ],
+          "heading": "13 camt.082.001.02 IntraBalanceMovementCancellationQueryV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000233-semt.028.001.01-p2562-c004",
+          "file_pages": [
+            2562
+          ],
+          "heading": "73 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.028.001.01",
+          "evidence_id": "src-000381-semt.028.001.01-p7-c004",
+          "file_pages": [
+            7
+          ],
+          "heading": "2 semt.028.001.01 IntraPositionMovementQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000233-semt.029.001.01-p2612-c004",
+          "file_pages": [
+            2612
+          ],
+          "heading": "74 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.029.001.01",
+          "evidence_id": "src-000381-semt.029.001.01-p57-c004",
+          "file_pages": [
+            57
+          ],
+          "heading": "3 semt.029.001.01 IntraPositionMovementQueryResponseV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000233-semt.030.001.01-p2642-c004",
+          "file_pages": [
+            2642
+          ],
+          "heading": "75 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.030.001.01",
+          "evidence_id": "src-000381-semt.030.001.01-p87-c004",
+          "file_pages": [
+            87
+          ],
+          "heading": "4 semt.030.001.01 SecuritiesSettlementConditionsModificationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000233-semt.032.001.01-p2689-c004",
+          "file_pages": [
+            2689
+          ],
+          "heading": "77 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.032.001.01",
+          "evidence_id": "src-000381-semt.032.001.01-p134-c004",
+          "file_pages": [
+            134
+          ],
+          "heading": "6 semt.032.001.01 SecuritiesTransactionCancellationRequestQueryV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000233-semt.034.001.01-p2724-c004",
+          "file_pages": [
+            2724
+          ],
+          "heading": "79 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.034.001.01",
+          "evidence_id": "src-000381-semt.034.001.01-p169-c004",
+          "file_pages": [
+            169
+          ],
+          "heading": "8 semt.034.001.01 IntraPositionMovementPendingReportV01"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is \"Copy Duplicate\").",
+      "quote_sha256": "a4713caf5fd2fc8349f02f4f61d14adae4d6ba9f0fbeec554cf5c2fb2edcb767",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.081.001.02",
+          "evidence_id": "src-000233-camt.081.001.02-p436-c004",
+          "file_pages": [
+            436
+          ],
+          "heading": "19 camt.081.001.02 IntraBalanceMovementModificationReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.081.001.02",
+          "evidence_id": "src-000360-camt.081.001.02-p245-c004",
+          "file_pages": [
+            245
+          ],
+          "heading": "12 camt.081.001.02 IntraBalanceMovementModificationReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.083.001.02",
+          "evidence_id": "src-000233-camt.083.001.02-p491-c004",
+          "file_pages": [
+            491
+          ],
+          "heading": "21 camt.083.001.02 IntraBalanceMovementCancellationReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.083.001.02",
+          "evidence_id": "src-000360-camt.083.001.02-p300-c004",
+          "file_pages": [
+            300
+          ],
+          "heading": "14 camt.083.001.02 IntraBalanceMovementCancellationReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.031.001.01",
+          "evidence_id": "src-000233-semt.031.001.01-p2652-c004",
+          "file_pages": [
+            2652
+          ],
+          "heading": "76 semt.031.001.01 SecuritiesSettlementConditionsModificationRequestReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.031.001.01",
+          "evidence_id": "src-000381-semt.031.001.01-p97-c004",
+          "file_pages": [
+            97
+          ],
+          "heading": "5 semt.031.001.01 SecuritiesSettlementConditionsModificationRequestReportV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.033.001.01",
+          "evidence_id": "src-000233-semt.033.001.01-p2700-c004",
+          "file_pages": [
+            2700
+          ],
+          "heading": "78 semt.033.001.01 SecuritiesTransactionCancellationRequestReportV01"
+        },
+        {
+          "source_id": "src-000381",
+          "source_sha256": "dd69367feb8b06a9091c7cd325d630f4b66101f46e074c822dcba18f0806e084",
+          "message_id": "semt.033.001.01",
+          "evidence_id": "src-000381-semt.033.001.01-p145-c004",
+          "file_pages": [
+            145
+          ],
+          "heading": "7 semt.033.001.01 SecuritiesTransactionCancellationRequestReportV01"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "quote": "- re-send a message sent by the account owner to the account servicer (the sub-function of the message is \"Duplicate\")",
+      "quote_sha256": "921c8145ddf978ba8ebf309323b012ad669f5b780baac3f3f81a95c1832522f1",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000233-camt.084.001.02-p522-c002",
+          "file_pages": [
+            522
+          ],
+          "heading": "22 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000360-camt.084.001.02-p331-c002",
+          "file_pages": [
+            331
+          ],
+          "heading": "15 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "quote": "- provide a third party with a copy of a message being sent by the account owner for information (the sub-function of the message is \"Copy\")",
+      "quote_sha256": "ae95a129959f29ed5fe16bb784eea7ca5e4ddecf9b3ce3ed9c7e7f9d80f47a81",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000233-camt.084.001.02-p522-c003",
+          "file_pages": [
+            522
+          ],
+          "heading": "22 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000360-camt.084.001.02-p331-c003",
+          "file_pages": [
+            331
+          ],
+          "heading": "15 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "quote": "- re-send to a third party a copy of a message being sent by the account owner for information (the sub-function of the message is \"Copy Duplicate\").",
+      "quote_sha256": "46d2a7f30d184e602adc43873007a464f29dee23f50a93ff41cce7c01532f285",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000233-camt.084.001.02-p522-c004",
+          "file_pages": [
+            522
+          ],
+          "heading": "22 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.084.001.02",
+          "evidence_id": "src-000360-camt.084.001.02-p331-c004",
+          "file_pages": [
+            331
+          ],
+          "heading": "15 camt.084.001.02 IntraBalanceMovementPostingReportV02"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000233-camt.085.001.02-p549-c004",
+          "file_pages": [
+            549
+          ],
+          "heading": "23 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        },
+        {
+          "source_id": "src-000360",
+          "source_sha256": "6c3338253590a457010376eef138925409247befa3d1695d64a586f90ba46e95",
+          "message_id": "camt.085.001.02",
+          "evidence_id": "src-000360-camt.085.001.02-p358-c004",
+          "file_pages": [
+            358
+          ],
+          "heading": "16 camt.085.001.02 IntraBalanceMovementPendingReportV02"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "quote": "Provides processing information to the receiving party: that would be, for instance, the total number of messages included in the file.",
+      "quote_sha256": "f4ea6492c11453f5d5a1e940c8d1d82f1940a54c108d0d74b3c316e71d2df3eb",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "head.002.001.01",
+          "evidence_id": "src-000233-head.002.001.01-p614-c003",
+          "file_pages": [
+            614
+          ],
+          "heading": "26 head.002.001.01 BusinessFileHeaderV01"
+        },
+        {
+          "source_id": "src-000349",
+          "source_sha256": "914aa2235d5fde9dd8eb7f234e00a2d33f5a3ba7bc9d1d5e4acfd8db90807627",
+          "message_id": "head.002.001.01",
+          "evidence_id": "src-000349-head.002.001.01-p4-c003",
+          "file_pages": [
+            4
+          ],
+          "heading": "2 head.002.001.01 BusinessFileHeaderV01"
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "quote": "The FIToFIPaymentStatusReport may also be sent to the receiver of the payment in a real time payment scenario, as both sides of the transactions must be informed of the status of the transaction (for example either the beneficiary is credited, or the transaction is rejected).",
+      "quote_sha256": "7f8c95c44220fb4c5dbf2cfa61d5a0cac118e475e54a5fb4a3684a7644b061be",
+      "occurrences": [
+        {
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "message_id": "pacs.002.001.16",
+          "evidence_id": "src-000163-pacs.002.001.16-p6-c008",
+          "file_pages": [
+            6
+          ],
+          "heading": "2 pacs.002.001.16 FIToFIPaymentStatusReportV16"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "quote": "It is used to request a FIToFIPaymentStatusReport message containing information on the status of a previously sent instruction.",
+      "quote_sha256": "64df8732948e11f19539ba1a78669b2be5d8a4b7cf7491d690e54a9b509e3ed1",
+      "occurrences": [
+        {
+          "source_id": "src-000163",
+          "source_sha256": "9f7fbf684d514a1a2ae9836c09c0953259fd8b254b042c555f93cd2d786c457c",
+          "message_id": "pacs.028.001.07",
+          "evidence_id": "src-000163-pacs.028.001.07-p1049-c002",
+          "file_pages": [
+            1049
+          ],
+          "heading": "9 pacs.028.001.07 FIToFIPaymentStatusRequestV07"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "quote": "The message can also be used by an initiating party that has authority to send the message on behalf of the debtor.",
+      "quote_sha256": "1540a09926f67c2257e48580cdc7177bfff83044ebeb10ae93294cb5e7707b91",
+      "occurrences": [
+        {
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "message_id": "pain.001.001.13",
+          "evidence_id": "src-000174-pain.001.001.13-p4-c011",
+          "file_pages": [
+            4
+          ],
+          "heading": "2 pain.001.001.13 CustomerCreditTransferInitiationV13"
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "quote": "The CustomerPaymentStatusReport may also be sent to the receiver of the payment in a real time payment scenario, as both sides of the transactions must be informed of the status of the transaction (that is either the beneficiary is credited, or the transaction is rejected).",
+      "quote_sha256": "d74fb8adfc29eaab3c9c3bfe44e80d9355018b6d686ac53f5c01f35b8528b4ec",
+      "occurrences": [
+        {
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "message_id": "pain.002.001.15",
+          "evidence_id": "src-000174-pain.002.001.15-p130-c008",
+          "file_pages": [
+            130
+          ],
+          "heading": "3 pain.002.001.15 CustomerPaymentStatusReportV15"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "quote": "The message can also be used by an initiating party that has authority to send the message on behalf of the creditor.",
+      "quote_sha256": "929c1df9a7316686d8f09fbdd48f6ec71a4073dae3b6b7d7d1959a236a9307b4",
+      "occurrences": [
+        {
+          "source_id": "src-000174",
+          "source_sha256": "23612169e9080d5df0a285791392f628952d2ced1ee8252c963e3acd06d8b722",
+          "message_id": "pain.008.001.12",
+          "evidence_id": "src-000174-pain.008.001.12-p403-c009",
+          "file_pages": [
+            403
+          ],
+          "heading": "5 pain.008.001.12 CustomerDirectDebitInitiationV12"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "quote": "cancel an entire PriceReport that was previously sent (by quoting the business reference of the original price report in the PriceReportIdentification element), or,",
+      "quote_sha256": "8aa594c23909c741fa0144e9ac90a4e90627e2b45aa226ee985f6acc1c6edd8f",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "reda.002.001.05",
+          "evidence_id": "src-000096-reda.002.001.05-p222-c002",
+          "file_pages": [
+            222
+          ],
+          "heading": "14 reda.002.001.05 PriceReportCancellationV05"
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "quote": "cancel one or more individual prices from a previously sent price report (by using the PriceDetailsToBeCancelled sequence).",
+      "quote_sha256": "4ea23b09851108f593d9e366d2af166a03b5c28d36f92dc01b2ee0cf28a4f24f",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "reda.002.001.05",
+          "evidence_id": "src-000096-reda.002.001.05-p222-c003",
+          "file_pages": [
+            222
+          ],
+          "heading": "14 reda.002.001.05 PriceReportCancellationV05"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "quote": "When the FundReferenceDataReport message is sent to provide updated reference data, the message overwrites the previously sent data.",
+      "quote_sha256": "c07d1cfc42f82f3cd11003a0a500e8a133a34cc5b5eba3367039a58990138756",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "reda.004.001.07",
+          "evidence_id": "src-000096-reda.004.001.07-p291-c003",
+          "file_pages": [
+            291
+          ],
+          "heading": "15 reda.004.001.07 FundReferenceDataReportV07"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "quote": "The request is sent when the instructing party identified a gap in the securities coverage of the executing/servicing party.",
+      "quote_sha256": "6fa9282dba7745de80fcb5a5a42f9df577aa78e7797bb3b4f5ec0c43546e729a",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.006.001.01",
+          "evidence_id": "src-000233-reda.006.001.01-p619-c007",
+          "file_pages": [
+            619
+          ],
+          "heading": "27 reda.006.001.01 SecurityCreationRequestV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.006.001.01",
+          "evidence_id": "src-000378-reda.006.001.01-p8-c007",
+          "file_pages": [
+            8
+          ],
+          "heading": "2 reda.006.001.01 SecurityCreationRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "quote": "The request is sent when the instructing party identified a gap in the security data within the executing/ servicing party system.",
+      "quote_sha256": "8097dc11f951bbc7b3845c84a7cb141f0623102d90ee74ee9ff0e27645c038d8",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.007.001.01",
+          "evidence_id": "src-000233-reda.007.001.01-p825-c007",
+          "file_pages": [
+            825
+          ],
+          "heading": "28 reda.007.001.01 SecurityMaintenanceRequestV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.007.001.01",
+          "evidence_id": "src-000378-reda.007.001.01-p21-c007",
+          "file_pages": [
+            21
+          ],
+          "heading": "3 reda.007.001.01 SecurityMaintenanceRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "quote": "The SecurityCreationStatusAdvice message may be sent as a response to the request of the instructing party or not.",
+      "quote_sha256": "7a11ae4d8f602372e076633a6b7ec3bf7007416fbbb467a0a2353baadb3892b2",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.008.001.01",
+          "evidence_id": "src-000233-reda.008.001.01-p1753-c002",
+          "file_pages": [
+            1753
+          ],
+          "heading": "29 reda.008.001.01 SecurityCreationStatusAdviceV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.008.001.01",
+          "evidence_id": "src-000378-reda.008.001.01-p66-c002",
+          "file_pages": [
+            66
+          ],
+          "heading": "4 reda.008.001.01 SecurityCreationStatusAdviceV01"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "quote": "The request is sent when the instructing party needs to see data of a security data within the executing/ servicing party system.",
+      "quote_sha256": "a3ec911c469ac05efab8248c8a574a93ff025fef7ebdd3f7b752a3af7535f13e",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.010.001.01",
+          "evidence_id": "src-000233-reda.010.001.01-p1764-c007",
+          "file_pages": [
+            1764
+          ],
+          "heading": "31 reda.010.001.01 SecurityQueryV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.010.001.01",
+          "evidence_id": "src-000378-reda.010.001.01-p77-c007",
+          "file_pages": [
+            77
+          ],
+          "heading": "6 reda.010.001.01 SecurityQueryV01"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "quote": "The report may be sent upon request (for example a query) of the instructing party or push by the executing/servicing party.",
+      "quote_sha256": "a15e37c40878384fee8d224096e89867a7a1dbe5169b8b286d733f8108dda490",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.012.001.01",
+          "evidence_id": "src-000233-reda.012.001.01-p1784-c002",
+          "file_pages": [
+            1784
+          ],
+          "heading": "32 reda.012.001.01 SecurityReportV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.012.001.01",
+          "evidence_id": "src-000378-reda.012.001.01-p94-c002",
+          "file_pages": [
+            94
+          ],
+          "heading": "7 reda.012.001.01 SecurityReportV01"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "quote": "The request is sent when the instructing party identified that a security is wrongly created in the securities coverage of the executing/servicing party.",
+      "quote_sha256": "06314c63126a3e0962c70ccf28a1ca03de442bf195c62f5249e3e4d70c80ba30",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.013.001.01",
+          "evidence_id": "src-000233-reda.013.001.01-p2039-c007",
+          "file_pages": [
+            2039
+          ],
+          "heading": "33 reda.013.001.01 SecurityDeletionRequestV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.013.001.01",
+          "evidence_id": "src-000378-reda.013.001.01-p115-c007",
+          "file_pages": [
+            115
+          ],
+          "heading": "8 reda.013.001.01 SecurityDeletionRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "quote": "The SecuritiesAccountQuery message sent by an instructing party to the executing party to request the details related to the securities account.",
+      "quote_sha256": "96affbf3fcb8e9ae15d9937fc929f076a24a41aa0d53bddbdf8e3a65ec02d3ab",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.019.001.01",
+          "evidence_id": "src-000233-reda.019.001.01-p2106-c001",
+          "file_pages": [
+            2106
+          ],
+          "heading": "39 reda.019.001.01 SecuritiesAccountQueryV01"
+        },
+        {
+          "source_id": "src-000372",
+          "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+          "message_id": "reda.019.001.01",
+          "evidence_id": "src-000372-reda.019.001.01-p14-c001",
+          "file_pages": [
+            14
+          ],
+          "heading": "3 reda.019.001.01 SecuritiesAccountQueryV01"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "quote": "The SecuritiesAccountReport message sent by the executing party to an instructing party to provide the details of the securities account details as requested in the query.",
+      "quote_sha256": "c1f7c6273e8a30e85baa5560714ce180d29ab9f58323e4d7fbdba12fc8be7a8b",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.021.001.01",
+          "evidence_id": "src-000233-reda.021.001.01-p2124-c001",
+          "file_pages": [
+            2124
+          ],
+          "heading": "41 reda.021.001.01 SecuritiesAccountReportV01"
+        },
+        {
+          "source_id": "src-000372",
+          "source_sha256": "4291e7cc6d5bb3f15101cc3d92526b0f85316de189c35a1b750de72b45b8931a",
+          "message_id": "reda.021.001.01",
+          "evidence_id": "src-000372-reda.021.001.01-p32-c001",
+          "file_pages": [
+            32
+          ],
+          "heading": "5 reda.021.001.01 SecuritiesAccountReportV01"
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "quote": "The SecurityMaintenanceStatusAdvice message may be sent as a response to the request of the instructing party or not.",
+      "quote_sha256": "c31c09b22e85d07f83230a0965a7100ef6c8f355aa2909beb7953b8247c41f53",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.029.001.01",
+          "evidence_id": "src-000233-reda.029.001.01-p2203-c002",
+          "file_pages": [
+            2203
+          ],
+          "heading": "49 reda.029.001.01 SecurityMaintenanceStatusAdviceV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.029.001.01",
+          "evidence_id": "src-000378-reda.029.001.01-p119-c002",
+          "file_pages": [
+            119
+          ],
+          "heading": "9 reda.029.001.01 SecurityMaintenanceStatusAdviceV01"
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "quote": "The SecurityDeletionStatusAdvice message is sent as a response to the request of the instructing party.",
+      "quote_sha256": "d1b8fd1d17af19a4816ec04384b2f69b3d5d35192889b62d5badafb0d7bbf19d",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.030.001.01",
+          "evidence_id": "src-000233-reda.030.001.01-p2208-c002",
+          "file_pages": [
+            2208
+          ],
+          "heading": "50 reda.030.001.01 SecurityDeletionStatusAdviceV01"
+        },
+        {
+          "source_id": "src-000378",
+          "source_sha256": "e52a13eeac6df5e78846cde29284904de4f52f34956857f6b1ad3f8f4193dc38",
+          "message_id": "reda.030.001.01",
+          "evidence_id": "src-000378-reda.030.001.01-p124-c002",
+          "file_pages": [
+            124
+          ],
+          "heading": "10 reda.030.001.01 SecurityDeletionStatusAdviceV01"
+        }
+      ]
+    },
+    {
+      "number": 74,
+      "quote": "The request is sent when the instructing party identified a gap in the security CSD Link coverage of the executing/servicing party.",
+      "quote_sha256": "97abebf7aea2de1b60943a8c448d0b7937d0bcf520c90325c12b142baca267fc",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.045.001.01",
+          "evidence_id": "src-000233-reda.045.001.01-p2340-c008",
+          "file_pages": [
+            2340
+          ],
+          "heading": "62 reda.045.001.01 SecurityCSDLinkCreationRequestV01"
+        },
+        {
+          "source_id": "src-000366",
+          "source_sha256": "c5f45276b8600d9d0f6a998fea6bc74d220f50e3300aa57bae4e7e1e33e8a4d0",
+          "message_id": "reda.045.001.01",
+          "evidence_id": "src-000366-reda.045.001.01-p6-c008",
+          "file_pages": [
+            6
+          ],
+          "heading": "2 reda.045.001.01 SecurityCSDLinkCreationRequestV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.046.001.01",
+          "evidence_id": "src-000233-reda.046.001.01-p2351-c008",
+          "file_pages": [
+            2351
+          ],
+          "heading": "63 reda.046.001.01 SecurityCSDLinkMaintenanceRequestV01"
+        },
+        {
+          "source_id": "src-000366",
+          "source_sha256": "c5f45276b8600d9d0f6a998fea6bc74d220f50e3300aa57bae4e7e1e33e8a4d0",
+          "message_id": "reda.046.001.01",
+          "evidence_id": "src-000366-reda.046.001.01-p17-c008",
+          "file_pages": [
+            17
+          ],
+          "heading": "3 reda.046.001.01 SecurityCSDLinkMaintenanceRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "quote": "The SecurityCSDLinkStatusAdvice message may be sent as a response to the request of the instructing party or not.",
+      "quote_sha256": "3adee3c10af7be85154b58311903edd9a9b92f1008cebca38f12c3c74c3efdf2",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.047.001.01",
+          "evidence_id": "src-000233-reda.047.001.01-p2359-c002",
+          "file_pages": [
+            2359
+          ],
+          "heading": "64 reda.047.001.01 SecurityCSDLinkStatusAdviceV01"
+        },
+        {
+          "source_id": "src-000366",
+          "source_sha256": "c5f45276b8600d9d0f6a998fea6bc74d220f50e3300aa57bae4e7e1e33e8a4d0",
+          "message_id": "reda.047.001.01",
+          "evidence_id": "src-000366-reda.047.001.01-p25-c002",
+          "file_pages": [
+            25
+          ],
+          "heading": "4 reda.047.001.01 SecurityCSDLinkStatusAdviceV01"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "quote": "The request is sent when the instructing party identified a gap in the account link coverage of the executing/servicing party.",
+      "quote_sha256": "76f706a8ec5420c2ac00b07b706fbe34de39d4d455eae23b218ab3f793225932",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.049.001.01",
+          "evidence_id": "src-000233-reda.049.001.01-p2369-c008",
+          "file_pages": [
+            2369
+          ],
+          "heading": "65 reda.049.001.01 AccountLinkCreationRequestV01"
+        },
+        {
+          "source_id": "src-000366",
+          "source_sha256": "c5f45276b8600d9d0f6a998fea6bc74d220f50e3300aa57bae4e7e1e33e8a4d0",
+          "message_id": "reda.049.001.01",
+          "evidence_id": "src-000366-reda.049.001.01-p35-c008",
+          "file_pages": [
+            35
+          ],
+          "heading": "5 reda.049.001.01 AccountLinkCreationRequestV01"
+        },
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "reda.050.001.01",
+          "evidence_id": "src-000233-reda.050.001.01-p2375-c008",
+          "file_pages": [
+            2375
+          ],
+          "heading": "66 reda.050.001.01 AccountLinkMaintenanceRequestV01"
+        },
+        {
+          "source_id": "src-000366",
+          "source_sha256": "c5f45276b8600d9d0f6a998fea6bc74d220f50e3300aa57bae4e7e1e33e8a4d0",
+          "message_id": "reda.050.001.01",
+          "evidence_id": "src-000366-reda.050.001.01-p41-c008",
+          "file_pages": [
+            41
+          ],
+          "heading": "6 reda.050.001.01 AccountLinkMaintenanceRequestV01"
+        }
+      ]
+    },
+    {
+      "number": 77,
+      "quote": "The previously sent message must be the Trade Leg Notification message.",
+      "quote_sha256": "9b860f1a47ed9b210621f7aff7c56885da35a825144b7fdbcbe53fd353939932",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.002.001.05",
+          "evidence_id": "src-000053-secl.002.001.05-p64-c002",
+          "file_pages": [
+            64
+          ],
+          "heading": "3 MX secl.002.001.05 TradeLegNotificationCancellationV05"
+        }
+      ]
+    },
+    {
+      "number": 78,
+      "quote": "The TradeLegStatement message may be either sent:",
+      "quote_sha256": "8919508e355928ab508ba4ffaad64120c2cd5ad1bcede8a1d7e1670ce7a11c5e",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.003.001.05",
+          "evidence_id": "src-000053-secl.003.001.05-p124-c002",
+          "file_pages": [
+            124
+          ],
+          "heading": "4 MX secl.003.001.05 TradeLegStatementV05"
+        }
+      ]
+    },
+    {
+      "number": 79,
+      "quote": "The DefaultFundContributionReport is usually sent on a monthly basis.",
+      "quote_sha256": "ce383da3109feb44d3501310c1a7e16cc44366730eb09647aaebeae6bc66ab54",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.006.001.02",
+          "evidence_id": "src-000053-secl.006.001.02-p246-c004",
+          "file_pages": [
+            246
+          ],
+          "heading": "7 MX secl.006.001.02 DefaultFundContributionReportV02"
+        }
+      ]
+    },
+    {
+      "number": 80,
+      "quote": "Depending on each CCP internal rules, this message can also be sent, as a warning, by the central counterparty to the clearing member some days before the buy in process starts.",
+      "quote_sha256": "4c6ff525b12801343e4a9b23551c674d3095a48ce54c8d97f45bbc0c0602b7a3",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.007.001.03",
+          "evidence_id": "src-000053-secl.007.001.03-p254-c003",
+          "file_pages": [
+            254
+          ],
+          "heading": "8 MX secl.007.001.03 BuyInNotificationV03"
+        }
+      ]
+    },
+    {
+      "number": 81,
+      "quote": "The BuyInResponse may be sent in response to the BuyInNotification message.",
+      "quote_sha256": "f0d66c18b13efca035c43b6923bd8892ed3e1aa3262533725e3565b1441dcba8",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.008.001.03",
+          "evidence_id": "src-000053-secl.008.001.03-p274-c002",
+          "file_pages": [
+            274
+          ],
+          "heading": "9 MX secl.008.001.03 BuyInResponseV03"
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "quote": "The SettlementObligationReport message may also be sent to a third party processing the settlement obligation(s) on behalf of more than one clearing member.",
+      "quote_sha256": "103fd79542092df457577503a93e01f0076a68f0cbd0784820e8da464bdc1aa9",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.010.001.04",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c002",
+          "file_pages": [
+            316
+          ],
+          "heading": "11 MX secl.010.001.04 SettlementObligationReportV04"
+        }
+      ]
+    },
+    {
+      "number": 83,
+      "quote": "The report can be provided for one specific delivering party or one specific receiving party.",
+      "quote_sha256": "8746800b56514a1a1b7bb729525cfcfad8e96230959f34acfb0aaa72417e15ba",
+      "occurrences": [
+        {
+          "source_id": "src-000053",
+          "source_sha256": "4968640f36b819ec8f9877c33cd5efd348524508cd75bb2995adc6bd770ccc59",
+          "message_id": "secl.010.001.04",
+          "evidence_id": "src-000053-secl.010.001.04-p316-c003",
+          "file_pages": [
+            316
+          ],
+          "heading": "11 MX secl.010.001.04 SettlementObligationReportV04"
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "quote": "The account servicer can initially send the CorporateActionNotification message as a preliminary advice, subsequently replaced by another CorporateActionNotification message with complete or confirmed information.",
+      "quote_sha256": "4aeb597f9244ce5eacc8dbae222d8223e757f7af9625540e6627a7a73a703457",
+      "occurrences": [
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.031.001.16",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c003",
+          "file_pages": [
+            23
+          ],
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16"
+        }
+      ]
+    },
+    {
+      "number": 85,
+      "quote": "It may also be sent to an account owner or its designated agent, to remind of event details and/or of missing or incomplete instructions for a corporate action event.",
+      "quote_sha256": "caec482323689c22f107e39c2fe33b13163e2c4dd0c2e0ddbf50b3d6623c868e",
+      "occurrences": [
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.031.001.16",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c004",
+          "file_pages": [
+            23
+          ],
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16"
+        }
+      ]
+    },
+    {
+      "number": 86,
+      "quote": "re-send a message previously sent (the sub-function of the message is Duplicate),",
+      "quote_sha256": "7a49b6ec9d14dc0b7490d29f9ec971f1cc7e6b18b275e7b94dd935352c44030c",
+      "occurrences": [
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.031.001.16",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c005",
+          "file_pages": [
+            23
+          ],
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.032.001.09",
+          "evidence_id": "src-000080-seev.032.001.09-p266-c003",
+          "file_pages": [
+            266
+          ],
+          "heading": "4 seev.032.001.09 CorporateActionEventProcessingStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.033.001.14",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c004",
+          "file_pages": [
+            274
+          ],
+          "heading": "5 seev.033.001.14 CorporateActionInstructionV14"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.034.001.16",
+          "evidence_id": "src-000080-seev.034.001.16-p320-c004",
+          "file_pages": [
+            320
+          ],
+          "heading": "6 seev.034.001.16 CorporateActionInstructionStatusAdviceV16"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.035.001.17",
+          "evidence_id": "src-000080-seev.035.001.17-p360-c002",
+          "file_pages": [
+            360
+          ],
+          "heading": "7 seev.035.001.17 CorporateActionMovementPreliminaryAdviceV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.036.001.17",
+          "evidence_id": "src-000080-seev.036.001.17-p540-c002",
+          "file_pages": [
+            540
+          ],
+          "heading": "8 seev.036.001.17 CorporateActionMovementConfirmationV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.037.001.17",
+          "evidence_id": "src-000080-seev.037.001.17-p665-c002",
+          "file_pages": [
+            665
+          ],
+          "heading": "9 seev.037.001.17 CorporateActionMovementReversalAdviceV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.038.001.09",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c002",
+          "file_pages": [
+            692
+          ],
+          "heading": "10 seev.038.001.09 CorporateActionNarrativeV09"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.039.001.13",
+          "evidence_id": "src-000080-seev.039.001.13-p701-c002",
+          "file_pages": [
+            701
+          ],
+          "heading": "11 seev.039.001.13 CorporateActionCancellationAdviceV13"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.040.001.13",
+          "evidence_id": "src-000080-seev.040.001.13-p719-c002",
+          "file_pages": [
+            719
+          ],
+          "heading": "12 seev.040.001.13 CorporateActionInstructionCancellationRequestV13"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.041.001.15",
+          "evidence_id": "src-000080-seev.041.001.15-p733-c003",
+          "file_pages": [
+            733
+          ],
+          "heading": "13 seev.041.001.15 CorporateActionInstructionCancellationRequestStatusAdviceV15"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.042.001.14",
+          "evidence_id": "src-000080-seev.042.001.14-p757-c002",
+          "file_pages": [
+            757
+          ],
+          "heading": "14 seev.042.001.14 CorporateActionInstructionStatementReportV14"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.044.001.13",
+          "evidence_id": "src-000080-seev.044.001.13-p813-c002",
+          "file_pages": [
+            813
+          ],
+          "heading": "15 seev.044.001.13 CorporateActionMovementPreliminaryAdviceCancellationAdviceV13"
+        }
+      ]
+    },
+    {
+      "number": 87,
+      "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate), using the relevant elements in the business application header (BAH).",
+      "quote_sha256": "4b513527273fc41a2bd7a7734d92a67daf68358e96997eb5d8033ad4d44398b3",
+      "occurrences": [
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.031.001.16",
+          "evidence_id": "src-000080-seev.031.001.16-p23-c007",
+          "file_pages": [
+            23
+          ],
+          "heading": "3 seev.031.001.16 CorporateActionNotificationV16"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.032.001.09",
+          "evidence_id": "src-000080-seev.032.001.09-p266-c005",
+          "file_pages": [
+            266
+          ],
+          "heading": "4 seev.032.001.09 CorporateActionEventProcessingStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.033.001.14",
+          "evidence_id": "src-000080-seev.033.001.14-p274-c006",
+          "file_pages": [
+            274
+          ],
+          "heading": "5 seev.033.001.14 CorporateActionInstructionV14"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.034.001.16",
+          "evidence_id": "src-000080-seev.034.001.16-p320-c006",
+          "file_pages": [
+            320
+          ],
+          "heading": "6 seev.034.001.16 CorporateActionInstructionStatusAdviceV16"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.035.001.17",
+          "evidence_id": "src-000080-seev.035.001.17-p360-c004",
+          "file_pages": [
+            360
+          ],
+          "heading": "7 seev.035.001.17 CorporateActionMovementPreliminaryAdviceV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.036.001.17",
+          "evidence_id": "src-000080-seev.036.001.17-p540-c004",
+          "file_pages": [
+            540
+          ],
+          "heading": "8 seev.036.001.17 CorporateActionMovementConfirmationV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.037.001.17",
+          "evidence_id": "src-000080-seev.037.001.17-p665-c004",
+          "file_pages": [
+            665
+          ],
+          "heading": "9 seev.037.001.17 CorporateActionMovementReversalAdviceV17"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.038.001.09",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c004",
+          "file_pages": [
+            692
+          ],
+          "heading": "10 seev.038.001.09 CorporateActionNarrativeV09"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.039.001.13",
+          "evidence_id": "src-000080-seev.039.001.13-p701-c004",
+          "file_pages": [
+            701
+          ],
+          "heading": "11 seev.039.001.13 CorporateActionCancellationAdviceV13"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.040.001.13",
+          "evidence_id": "src-000080-seev.040.001.13-p719-c004",
+          "file_pages": [
+            719
+          ],
+          "heading": "12 seev.040.001.13 CorporateActionInstructionCancellationRequestV13"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.041.001.15",
+          "evidence_id": "src-000080-seev.041.001.15-p733-c005",
+          "file_pages": [
+            733
+          ],
+          "heading": "13 seev.041.001.15 CorporateActionInstructionCancellationRequestStatusAdviceV15"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.042.001.14",
+          "evidence_id": "src-000080-seev.042.001.14-p757-c004",
+          "file_pages": [
+            757
+          ],
+          "heading": "14 seev.042.001.14 CorporateActionInstructionStatementReportV14"
+        },
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.044.001.13",
+          "evidence_id": "src-000080-seev.044.001.13-p813-c004",
+          "file_pages": [
+            813
+          ],
+          "heading": "15 seev.044.001.13 CorporateActionMovementPreliminaryAdviceCancellationAdviceV13"
+        }
+      ]
+    },
+    {
+      "number": 88,
+      "quote": "The CorporateActionNarrative message is sent between an account servicer and an account owner or its designated agent to cater for such processes that cannot be handled using messages such as the CorporateActionNotification.",
+      "quote_sha256": "26832dc35322b2c13f5406d52f6a2ef4320e514cc756081d7585952da77a31b3",
+      "occurrences": [
+        {
+          "source_id": "src-000080",
+          "source_sha256": "51996b26789b9c2c35419402253e7dc87f3b4ef74c0a4c45d408f0cfbf68be47",
+          "message_id": "seev.038.001.09",
+          "evidence_id": "src-000080-seev.038.001.09-p692-c001",
+          "file_pages": [
+            692
+          ],
+          "heading": "10 seev.038.001.09 CorporateActionNarrativeV09"
+        }
+      ]
+    },
+    {
+      "number": 89,
+      "quote": "The message may also be sent by an executing party, for example, transfer agent to the instructing party, for example, investment manager or its authorised representative to reject a previously received message on which action cannot be taken.",
+      "quote_sha256": "25289c25f7d2a2a3d44294b26ccaffee559ffd2aad893f4b2b2fa07334325aff",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.001.001.03",
+          "evidence_id": "src-000096-semt.001.001.03-p371-c002",
+          "file_pages": [
+            371
+          ],
+          "heading": "17 semt.001.001.03 SecuritiesMessageRejectionV03"
+        }
+      ]
+    },
+    {
+      "number": 90,
+      "quote": "the instructing party should not have sent the message.",
+      "quote_sha256": "5062d49b321efb8b3dd9ba1c74131f1a388f576e572abd64adc110e6555b5029",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.001.001.03",
+          "evidence_id": "src-000096-semt.001.001.03-p371-c004",
+          "file_pages": [
+            371
+          ],
+          "heading": "17 semt.001.001.03 SecuritiesMessageRejectionV03"
+        }
+      ]
+    },
+    {
+      "number": 91,
+      "quote": "Reasons that a receiver does not expect a message include no SLA in place between the Sender and the Receiver.",
+      "quote_sha256": "7669d7531c603ddfae5401a34804c61ba663726c8380fabc064dd0731ea85611",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.001.001.03",
+          "evidence_id": "src-000096-semt.001.001.03-p371-c005",
+          "file_pages": [
+            371
+          ],
+          "heading": "17 semt.001.001.03 SecuritiesMessageRejectionV03"
+        }
+      ]
+    },
+    {
+      "number": 92,
+      "quote": "The message should be sent at a frequency agreed bi-laterally between the account servicer and the account owner.",
+      "quote_sha256": "45e89f58a774dbb2660e36b56012a05623376c707b453e13a9846fe4e3a1d19a",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.002.001.02",
+          "evidence_id": "src-000096-semt.002.001.02-p375-c003",
+          "file_pages": [
+            375
+          ],
+          "heading": "18 semt.002.001.02 CustodyStatementOfHoldingsV02"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.002.001.12",
+          "evidence_id": "src-000197-semt.002.001.12-p19-c007",
+          "file_pages": [
+            19
+          ],
+          "heading": "2 semt.002.001.12 SecuritiesBalanceCustodyReportV12"
+        },
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.003.001.02",
+          "evidence_id": "src-000096-semt.003.001.02-p387-c003",
+          "file_pages": [
+            387
+          ],
+          "heading": "19 semt.003.001.02 AccountingStatementOfHoldingsV02"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.003.001.12",
+          "evidence_id": "src-000197-semt.003.001.12-p78-c005",
+          "file_pages": [
+            78
+          ],
+          "heading": "3 semt.003.001.12 SecuritiesBalanceAccountingReportV12"
+        }
+      ]
+    },
+    {
+      "number": 93,
+      "quote": "This message can reflect all outstanding holding information or may only contain changes since the previously sent statement.",
+      "quote_sha256": "871f9e2633a032b1243d19e66412db580e77d92b4716b30cac0850b0e48201fe",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.002.001.02",
+          "evidence_id": "src-000096-semt.002.001.02-p375-c004",
+          "file_pages": [
+            375
+          ],
+          "heading": "18 semt.002.001.02 CustodyStatementOfHoldingsV02"
+        }
+      ]
+    },
+    {
+      "number": 94,
+      "quote": "re-send a message previously sent,",
+      "quote_sha256": "e175517060cdb2549fc41d6272f94dc1f7abce2a93c833c049db69fdf7861d1c",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.002.001.12",
+          "evidence_id": "src-000197-semt.002.001.12-p19-c009",
+          "file_pages": [
+            19
+          ],
+          "heading": "2 semt.002.001.12 SecuritiesBalanceCustodyReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.003.001.12",
+          "evidence_id": "src-000197-semt.003.001.12-p78-c008",
+          "file_pages": [
+            78
+          ],
+          "heading": "3 semt.003.001.12 SecuritiesBalanceAccountingReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.013.001.07",
+          "evidence_id": "src-000197-semt.013.001.07-p135-c008",
+          "file_pages": [
+            135
+          ],
+          "heading": "4 semt.013.001.07 IntraPositionMovementInstructionV07"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.014.001.09",
+          "evidence_id": "src-000197-semt.014.001.09-p150-c006",
+          "file_pages": [
+            150
+          ],
+          "heading": "5 semt.014.001.09 IntraPositionMovementStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.015.001.10",
+          "evidence_id": "src-000197-semt.015.001.10-p162-c006",
+          "file_pages": [
+            162
+          ],
+          "heading": "6 semt.015.001.10 IntraPositionMovementConfirmationV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.016.001.10",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c006",
+          "file_pages": [
+            178
+          ],
+          "heading": "7 semt.016.001.10 IntraPositionMovementPostingReportV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.017.001.14",
+          "evidence_id": "src-000197-semt.017.001.14-p198-c006",
+          "file_pages": [
+            198
+          ],
+          "heading": "8 semt.017.001.14 SecuritiesTransactionPostingReportV14"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.018.001.15",
+          "evidence_id": "src-000197-semt.018.001.15-p273-c007",
+          "file_pages": [
+            273
+          ],
+          "heading": "9 semt.018.001.15 SecuritiesTransactionPendingReportV15"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.019.001.12",
+          "evidence_id": "src-000197-semt.019.001.12-p361-c006",
+          "file_pages": [
+            361
+          ],
+          "heading": "10 semt.019.001.12 SecuritiesSettlementTransactionAllegementReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c010",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.021.001.09",
+          "evidence_id": "src-000197-semt.021.001.09-p412-c009",
+          "file_pages": [
+            412
+          ],
+          "heading": "12 semt.021.001.09 SecuritiesStatementQueryV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.020.001.09",
+          "evidence_id": "src-000197-sese.020.001.09-p458-c010",
+          "file_pages": [
+            458
+          ],
+          "heading": "14 sese.020.001.09 SecuritiesTransactionCancellationRequestV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.021.001.08",
+          "evidence_id": "src-000197-sese.021.001.08-p476-c009",
+          "file_pages": [
+            476
+          ],
+          "heading": "15 sese.021.001.08 SecuritiesTransactionStatusQueryV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.022.001.08",
+          "evidence_id": "src-000197-sese.022.001.08-p482-c006",
+          "file_pages": [
+            482
+          ],
+          "heading": "16 sese.022.001.08 SecuritiesStatusOrStatementQueryStatusAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.023.001.13",
+          "evidence_id": "src-000197-sese.023.001.13-p491-c010",
+          "file_pages": [
+            491
+          ],
+          "heading": "17 sese.023.001.13 SecuritiesSettlementTransactionInstructionV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.024.001.14",
+          "evidence_id": "src-000197-sese.024.001.14-p556-c007",
+          "file_pages": [
+            556
+          ],
+          "heading": "18 sese.024.001.14 SecuritiesSettlementTransactionStatusAdviceV14"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.025.001.13",
+          "evidence_id": "src-000197-sese.025.001.13-p599-c006",
+          "file_pages": [
+            599
+          ],
+          "heading": "19 sese.025.001.13 SecuritiesSettlementTransactionConfirmationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.026.001.12",
+          "evidence_id": "src-000197-sese.026.001.12-p654-c006",
+          "file_pages": [
+            654
+          ],
+          "heading": "20 sese.026.001.12 SecuritiesSettlementTransactionReversalAdviceV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.027.001.09",
+          "evidence_id": "src-000197-sese.027.001.09-p708-c006",
+          "file_pages": [
+            708
+          ],
+          "heading": "21 sese.027.001.09 SecuritiesTransactionCancellationRequestStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.028.001.12",
+          "evidence_id": "src-000197-sese.028.001.12-p727-c006",
+          "file_pages": [
+            727
+          ],
+          "heading": "22 sese.028.001.12 SecuritiesSettlementTransactionAllegementNotificationV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.029.001.08",
+          "evidence_id": "src-000197-sese.029.001.08-p767-c006",
+          "file_pages": [
+            767
+          ],
+          "heading": "23 sese.029.001.08 SecuritiesSettlementAllegementRemovalAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.030.001.10",
+          "evidence_id": "src-000197-sese.030.001.10-p783-c008",
+          "file_pages": [
+            783
+          ],
+          "heading": "24 sese.030.001.10 SecuritiesSettlementConditionsModificationRequestV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.031.001.11",
+          "evidence_id": "src-000197-sese.031.001.11-p802-c007",
+          "file_pages": [
+            802
+          ],
+          "heading": "25 sese.031.001.11 SecuritiesSettlementConditionModificationStatusAdviceV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.032.001.13",
+          "evidence_id": "src-000197-sese.032.001.13-p815-c007",
+          "file_pages": [
+            815
+          ],
+          "heading": "26 sese.032.001.13 SecuritiesSettlementTransactionGenerationNotificationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.033.001.13",
+          "evidence_id": "src-000197-sese.033.001.13-p879-c009",
+          "file_pages": [
+            879
+          ],
+          "heading": "27 sese.033.001.13 SecuritiesFinancingInstructionV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.034.001.11",
+          "evidence_id": "src-000197-sese.034.001.11-p951-c007",
+          "file_pages": [
+            951
+          ],
+          "heading": "28 sese.034.001.11 SecuritiesFinancingStatusAdviceV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.035.001.13",
+          "evidence_id": "src-000197-sese.035.001.13-p994-c006",
+          "file_pages": [
+            994
+          ],
+          "heading": "29 sese.035.001.13 SecuritiesFinancingConfirmationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.036.001.10",
+          "evidence_id": "src-000197-sese.036.001.10-p1059-c010",
+          "file_pages": [
+            1059
+          ],
+          "heading": "30 sese.036.001.10 SecuritiesFinancingModificationInstructionV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.037.001.09",
+          "evidence_id": "src-000197-sese.037.001.09-p1094-c006",
+          "file_pages": [
+            1094
+          ],
+          "heading": "31 sese.037.001.09 PortfolioTransferNotificationV09"
+        }
+      ]
+    },
+    {
+      "number": 95,
+      "quote": "re-send to a third party a copy of a message for information using the relevant elements in the Business Application Header.",
+      "quote_sha256": "b1c6025339312d372c3b4c82de53bfca83d273ef851742427c1b707afbd07b11",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.002.001.12",
+          "evidence_id": "src-000197-semt.002.001.12-p19-c011",
+          "file_pages": [
+            19
+          ],
+          "heading": "2 semt.002.001.12 SecuritiesBalanceCustodyReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.003.001.12",
+          "evidence_id": "src-000197-semt.003.001.12-p78-c010",
+          "file_pages": [
+            78
+          ],
+          "heading": "3 semt.003.001.12 SecuritiesBalanceAccountingReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.014.001.09",
+          "evidence_id": "src-000197-semt.014.001.09-p150-c008",
+          "file_pages": [
+            150
+          ],
+          "heading": "5 semt.014.001.09 IntraPositionMovementStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.015.001.10",
+          "evidence_id": "src-000197-semt.015.001.10-p162-c008",
+          "file_pages": [
+            162
+          ],
+          "heading": "6 semt.015.001.10 IntraPositionMovementConfirmationV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.016.001.10",
+          "evidence_id": "src-000197-semt.016.001.10-p178-c008",
+          "file_pages": [
+            178
+          ],
+          "heading": "7 semt.016.001.10 IntraPositionMovementPostingReportV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.017.001.14",
+          "evidence_id": "src-000197-semt.017.001.14-p198-c008",
+          "file_pages": [
+            198
+          ],
+          "heading": "8 semt.017.001.14 SecuritiesTransactionPostingReportV14"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.018.001.15",
+          "evidence_id": "src-000197-semt.018.001.15-p273-c009",
+          "file_pages": [
+            273
+          ],
+          "heading": "9 semt.018.001.15 SecuritiesTransactionPendingReportV15"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.019.001.12",
+          "evidence_id": "src-000197-semt.019.001.12-p361-c008",
+          "file_pages": [
+            361
+          ],
+          "heading": "10 semt.019.001.12 SecuritiesSettlementTransactionAllegementReportV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c012",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.021.001.09",
+          "evidence_id": "src-000197-semt.021.001.09-p412-c011",
+          "file_pages": [
+            412
+          ],
+          "heading": "12 semt.021.001.09 SecuritiesStatementQueryV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.020.001.09",
+          "evidence_id": "src-000197-sese.020.001.09-p458-c012",
+          "file_pages": [
+            458
+          ],
+          "heading": "14 sese.020.001.09 SecuritiesTransactionCancellationRequestV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.021.001.08",
+          "evidence_id": "src-000197-sese.021.001.08-p476-c011",
+          "file_pages": [
+            476
+          ],
+          "heading": "15 sese.021.001.08 SecuritiesTransactionStatusQueryV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.022.001.08",
+          "evidence_id": "src-000197-sese.022.001.08-p482-c008",
+          "file_pages": [
+            482
+          ],
+          "heading": "16 sese.022.001.08 SecuritiesStatusOrStatementQueryStatusAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.023.001.13",
+          "evidence_id": "src-000197-sese.023.001.13-p491-c012",
+          "file_pages": [
+            491
+          ],
+          "heading": "17 sese.023.001.13 SecuritiesSettlementTransactionInstructionV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.024.001.14",
+          "evidence_id": "src-000197-sese.024.001.14-p556-c009",
+          "file_pages": [
+            556
+          ],
+          "heading": "18 sese.024.001.14 SecuritiesSettlementTransactionStatusAdviceV14"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.025.001.13",
+          "evidence_id": "src-000197-sese.025.001.13-p599-c008",
+          "file_pages": [
+            599
+          ],
+          "heading": "19 sese.025.001.13 SecuritiesSettlementTransactionConfirmationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.026.001.12",
+          "evidence_id": "src-000197-sese.026.001.12-p654-c008",
+          "file_pages": [
+            654
+          ],
+          "heading": "20 sese.026.001.12 SecuritiesSettlementTransactionReversalAdviceV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.027.001.09",
+          "evidence_id": "src-000197-sese.027.001.09-p708-c008",
+          "file_pages": [
+            708
+          ],
+          "heading": "21 sese.027.001.09 SecuritiesTransactionCancellationRequestStatusAdviceV09"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.028.001.12",
+          "evidence_id": "src-000197-sese.028.001.12-p727-c008",
+          "file_pages": [
+            727
+          ],
+          "heading": "22 sese.028.001.12 SecuritiesSettlementTransactionAllegementNotificationV12"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.029.001.08",
+          "evidence_id": "src-000197-sese.029.001.08-p767-c008",
+          "file_pages": [
+            767
+          ],
+          "heading": "23 sese.029.001.08 SecuritiesSettlementAllegementRemovalAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.030.001.10",
+          "evidence_id": "src-000197-sese.030.001.10-p783-c010",
+          "file_pages": [
+            783
+          ],
+          "heading": "24 sese.030.001.10 SecuritiesSettlementConditionsModificationRequestV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.031.001.11",
+          "evidence_id": "src-000197-sese.031.001.11-p802-c009",
+          "file_pages": [
+            802
+          ],
+          "heading": "25 sese.031.001.11 SecuritiesSettlementConditionModificationStatusAdviceV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.032.001.13",
+          "evidence_id": "src-000197-sese.032.001.13-p815-c009",
+          "file_pages": [
+            815
+          ],
+          "heading": "26 sese.032.001.13 SecuritiesSettlementTransactionGenerationNotificationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.033.001.13",
+          "evidence_id": "src-000197-sese.033.001.13-p879-c011",
+          "file_pages": [
+            879
+          ],
+          "heading": "27 sese.033.001.13 SecuritiesFinancingInstructionV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.034.001.11",
+          "evidence_id": "src-000197-sese.034.001.11-p951-c009",
+          "file_pages": [
+            951
+          ],
+          "heading": "28 sese.034.001.11 SecuritiesFinancingStatusAdviceV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.035.001.13",
+          "evidence_id": "src-000197-sese.035.001.13-p994-c008",
+          "file_pages": [
+            994
+          ],
+          "heading": "29 sese.035.001.13 SecuritiesFinancingConfirmationV13"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.036.001.10",
+          "evidence_id": "src-000197-sese.036.001.10-p1059-c012",
+          "file_pages": [
+            1059
+          ],
+          "heading": "30 sese.036.001.10 SecuritiesFinancingModificationInstructionV10"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.037.001.09",
+          "evidence_id": "src-000197-sese.037.001.09-p1094-c008",
+          "file_pages": [
+            1094
+          ],
+          "heading": "31 sese.037.001.09 PortfolioTransferNotificationV09"
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "quote": "The message can be sent either audited or un-audited and may be provided on a trade date or settlement date basis.",
+      "quote_sha256": "6759a3e579dae979e3614479f193816bb7d99796420b9c86950ec6963dd6752e",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.003.001.02",
+          "evidence_id": "src-000096-semt.003.001.02-p387-c002",
+          "file_pages": [
+            387
+          ],
+          "heading": "19 semt.003.001.02 AccountingStatementOfHoldingsV02"
+        }
+      ]
+    },
+    {
+      "number": 97,
+      "quote": "The message can be sent either audited or un-audited and may be provided on a trade date, contractual or settlement date basis.",
+      "quote_sha256": "9946f4594cac379c5f27d55e02ec5da2921409d8c959c528311f8757d8902ff3",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.003.001.12",
+          "evidence_id": "src-000197-semt.003.001.12-p78-c006",
+          "file_pages": [
+            78
+          ],
+          "heading": "3 semt.003.001.12 SecuritiesBalanceAccountingReportV12"
+        }
+      ]
+    },
+    {
+      "number": 98,
+      "quote": "The CustodyStatementOfHoldingsCancellation message is used to cancel a previously sent CustodyStatementOfHoldings message.",
+      "quote_sha256": "825dcdfbd42d336dfa19be1fc0d33b07ab0b91b215bf5c06decb0728ac25913d",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.004.001.02",
+          "evidence_id": "src-000096-semt.004.001.02-p398-c002",
+          "file_pages": [
+            398
+          ],
+          "heading": "20 semt.004.001.02 CustodyStatementOfHoldingsCancellationV02"
+        }
+      ]
+    },
+    {
+      "number": 99,
+      "quote": "The AccountingStatementOfHoldingsCancellation message is used to cancel a previously sent AccountingStatementOfHoldings message.",
+      "quote_sha256": "ff0dbb5fe2628d03a9b83d6f651f3609b5d6c96f91ac25087bb20b252f98e7cd",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.005.001.02",
+          "evidence_id": "src-000096-semt.005.001.02-p403-c002",
+          "file_pages": [
+            403
+          ],
+          "heading": "21 semt.005.001.02 AccountingStatementOfHoldingsCancellationV02"
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "quote": "The StatementOfInvestmentFundTransactionsCancellation message is used to cancel a previously sent StatementOfInvestmentFundTransactions message.",
+      "quote_sha256": "95ea36660a68279583215260be60738cbd3ce0e28b6f2fe5a56b9feb0da957a8",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "semt.007.001.02",
+          "evidence_id": "src-000096-semt.007.001.02-p427-c002",
+          "file_pages": [
+            427
+          ],
+          "heading": "23 semt.007.001.02 StatementOfInvestmentFundTransactionsCancellationV02"
+        }
+      ]
+    },
+    {
+      "number": 101,
+      "quote": "re-send to a third party a copy of a message for information. using the relevant elements in the Business Application Header.",
+      "quote_sha256": "528e028ac574f85acc377019081c5f3ef0f69845695578ac95f7c30d667ebe64",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.013.001.07",
+          "evidence_id": "src-000197-semt.013.001.07-p135-c010",
+          "file_pages": [
+            135
+          ],
+          "heading": "4 semt.013.001.07 IntraPositionMovementInstructionV07"
+        }
+      ]
+    },
+    {
+      "number": 102,
+      "quote": "The statement may also include future settlement or forward transactions which have become binding on the account owner.",
+      "quote_sha256": "e0ec874ad18dcf332e6bfa577d1e266c49cdfadbce1dbc08f52dbbdf25e2cb1b",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.018.001.15",
+          "evidence_id": "src-000197-semt.018.001.15-p273-c006",
+          "file_pages": [
+            273
+          ],
+          "heading": "9 semt.018.001.15 SecuritiesTransactionPendingReportV15"
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "quote": "The previously sent message may be:",
+      "quote_sha256": "0244bf43f25ecf029f5edfa58cc1c1571bdd4cafe8ac9b74e6eb35de08090609",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c006",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "quote": "a allegement notification (when sent by mistake or because the counterparty cancelled its instruction)",
+      "quote_sha256": "20e4963a772400b69c14b9cb173a1f08c1117842e9c588648aaf549483a3c9dd",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c007",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "quote": "a transaction generation notification The previously sent message cannot be a status advice message (any).",
+      "quote_sha256": "6fab895245b4d2d0cb3cc3b04b9cefdfc17a9af45568b4b3e95fe412275528d7",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c008",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        }
+      ]
+    },
+    {
+      "number": 106,
+      "quote": "If a status advice should not have been sent, a new status advice with the correct status should be sent, not a cancellation advice.",
+      "quote_sha256": "833ac0b8ed053f35f5b1e4ea55eed7c1b1096f876d1b9f64001777d294b1f6b5",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.020.001.07",
+          "evidence_id": "src-000197-semt.020.001.07-p406-c009",
+          "file_pages": [
+            406
+          ],
+          "heading": "11 semt.020.001.07 SecuritiesMessageCancellationAdviceV07"
+        }
+      ]
+    },
+    {
+      "number": 107,
+      "quote": "re-send a message sent by the market infrastructure to the direct participant,",
+      "quote_sha256": "3c684aa72bfd313ca50e3d167d97f79ea23fcaeae1b2db47fe120316c6c78b1b",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.022.001.07",
+          "evidence_id": "src-000197-semt.022.001.07-p433-c002",
+          "file_pages": [
+            433
+          ],
+          "heading": "13 semt.022.001.07 SecuritiesSettlementTransactionAuditTrailReportV07"
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "quote": "provide a third party with a copy of a message being sent by the market infrastructure for information,",
+      "quote_sha256": "23adb8d6e1ad2eddf97216c33476d354d6d11593b71080d79513cc49c6962e71",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.022.001.07",
+          "evidence_id": "src-000197-semt.022.001.07-p433-c003",
+          "file_pages": [
+            433
+          ],
+          "heading": "13 semt.022.001.07 SecuritiesSettlementTransactionAuditTrailReportV07"
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "quote": "re-send to a third party a copy of a message being sent by the market infrastructure for information using the relevant elements in the Business Application Header.",
+      "quote_sha256": "2e91cdd16ab44e04e7b56e9291ee832aa304fa9dd72ec578be3f6da271092d96",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "semt.022.001.07",
+          "evidence_id": "src-000197-semt.022.001.07-p433-c004",
+          "file_pages": [
+            433
+          ],
+          "heading": "13 semt.022.001.07 SecuritiesSettlementTransactionAuditTrailReportV07"
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "quote": "It may also be sent through Central Matching Utility (CMU).",
+      "quote_sha256": "2b16fe716ebf070b47314a48f55ced19e7bcf74c015c05e9f7e20bc96ecc6443",
+      "occurrences": [
+        {
+          "source_id": "src-000181",
+          "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+          "message_id": "semt.023.001.02",
+          "evidence_id": "src-000181-semt.023.001.02-p6-c002",
+          "file_pages": [
+            6
+          ],
+          "heading": "2 semt.023.001.02 SecuritiesEndOfProcessReportV02"
+        }
+      ]
+    },
+    {
+      "number": 111,
+      "quote": "The message may also be used to: -re-send a message previously sent (the sub-function of the message is Duplicate),",
+      "quote_sha256": "b5032638df5a211137b55d1f1f7e1cddcb4f0198c30681176918dc46979a8f12",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.025.001.01",
+          "evidence_id": "src-000233-semt.025.001.01-p2401-c002",
+          "file_pages": [
+            2401
+          ],
+          "heading": "70 semt.025.001.01 SecuritiesAccountPositionQueryV01"
+        },
+        {
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "message_id": "semt.025.001.01",
+          "evidence_id": "src-000375-semt.025.001.01-p5-c002",
+          "file_pages": [
+            5
+          ],
+          "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01"
+        }
+      ]
+    },
+    {
+      "number": 112,
+      "quote": "provide a third party with a copy of a message for information (the sub-function of the message is Copy), -re-send to a third party a copy of a message for information (the sub-function of the message is CopyDuplicate).",
+      "quote_sha256": "110d5cf99948d6eefc48f717fe4d46fc16afbe3c12f601e830109bf4c9b9d861",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.025.001.01",
+          "evidence_id": "src-000233-semt.025.001.01-p2401-c003",
+          "file_pages": [
+            2401
+          ],
+          "heading": "70 semt.025.001.01 SecuritiesAccountPositionQueryV01"
+        },
+        {
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "message_id": "semt.025.001.01",
+          "evidence_id": "src-000375-semt.025.001.01-p5-c003",
+          "file_pages": [
+            5
+          ],
+          "heading": "2 semt.025.001.01 SecuritiesAccountPositionQueryV01"
+        }
+      ]
+    },
+    {
+      "number": 113,
+      "quote": "re-send a message previously sent (the sub-function of the message is Duplicate)",
+      "quote_sha256": "9b381f94bb0ba4aa19ffa5584d490b3393eb031a9db1bd05f1da2c08544818fe",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.040.001.01",
+          "evidence_id": "src-000233-semt.040.001.01-p2748-c005",
+          "file_pages": [
+            2748
+          ],
+          "heading": "80 semt.040.001.01 SecuritiesAccountPositionResponseV01"
+        },
+        {
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "message_id": "semt.040.001.01",
+          "evidence_id": "src-000375-semt.040.001.01-p166-c005",
+          "file_pages": [
+            166
+          ],
+          "heading": "5 semt.040.001.01 SecuritiesAccountPositionResponseV01"
+        }
+      ]
+    },
+    {
+      "number": 114,
+      "quote": "re-send to a third party a copy of a message for information (the sub-function of the message is Copy Duplicate).",
+      "quote_sha256": "c2323c31c233d104a0c924305d0e18845afa0a931d6601a04b0d796cca67d66e",
+      "occurrences": [
+        {
+          "source_id": "src-000233",
+          "source_sha256": "2a82edebfc43e723f2494fccdf5353293feb27d06b968ef50b191dbed7ce14ed",
+          "message_id": "semt.040.001.01",
+          "evidence_id": "src-000233-semt.040.001.01-p2748-c007",
+          "file_pages": [
+            2748
+          ],
+          "heading": "80 semt.040.001.01 SecuritiesAccountPositionResponseV01"
+        },
+        {
+          "source_id": "src-000375",
+          "source_sha256": "132e8f71cc7be7c6b1c4c2e67f87dac5fdc1520607965697e77c3469ef1d4faf",
+          "message_id": "semt.040.001.01",
+          "evidence_id": "src-000375-semt.040.001.01-p166-c007",
+          "file_pages": [
+            166
+          ],
+          "heading": "5 semt.040.001.01 SecuritiesAccountPositionResponseV01"
+        }
+      ]
+    },
+    {
+      "number": 115,
+      "quote": "The ReversalOfTransferOutConfirmation message is used to reverse a previously sent transfer out confirmation.",
+      "quote_sha256": "ea1e7cc64b78daca02f7edf5b57d3064120fbf3a6a4c0ff7fa1014d3431fdfc6",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.004.001.09",
+          "evidence_id": "src-000096-sese.004.001.09-p602-c002",
+          "file_pages": [
+            602
+          ],
+          "heading": "27 sese.004.001.09 ReversalOfTransferOutConfirmationV09"
+        }
+      ]
+    },
+    {
+      "number": 116,
+      "quote": "The ReversalOfTransferInConfirmation message is used to reverse a previously sent transfer in confirmation.",
+      "quote_sha256": "c87188485c86a440e609482fdc61030b7ec59b6dce63ec84ad3c70948640fe02",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.008.001.09",
+          "evidence_id": "src-000096-sese.008.001.09-p778-c002",
+          "file_pages": [
+            778
+          ],
+          "heading": "31 sese.008.001.09 ReversalOfTransferInConfirmationV09"
+        }
+      ]
+    },
+    {
+      "number": 117,
+      "quote": "The RequestForTransferStatusReport may also be sent by any party in the transfer transaction to another party in the transfer transaction chain to request information relevant for the settlement of a transfer transaction.",
+      "quote_sha256": "9ea9e8cd129c6fb80dba4e3f1fa7a01d45c2c42066fb263d0fe97b90cb9f7f1a",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.009.001.09",
+          "evidence_id": "src-000096-sese.009.001.09-p784-c002",
+          "file_pages": [
+            784
+          ],
+          "heading": "32 sese.009.001.09 RequestForTransferStatusReportV09"
+        }
+      ]
+    },
+    {
+      "number": 118,
+      "quote": "the transfer cancellation has been sent to the next party, or,",
+      "quote_sha256": "f1f28d884951c91fe89863e7f1bdc206b4b3539f13f20d7ca91c73fb37cbb85e",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.010.001.07",
+          "evidence_id": "src-000096-sese.010.001.07-p809-c005",
+          "file_pages": [
+            809
+          ],
+          "heading": "33 sese.010.001.07 TransferCancellationStatusReportV07"
+        }
+      ]
+    },
+    {
+      "number": 119,
+      "quote": "The TransferInstructionStatusReport message may also be sent by any party in the transfer transaction to another party in the transfer transaction chain to provide information relevant for the settlement of a transfer transaction.",
+      "quote_sha256": "0b65327c68b730129a0f87f9733baa04fee5b743ed629f7f767212e16bdf533f",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.011.001.10",
+          "evidence_id": "src-000096-sese.011.001.10-p816-c002",
+          "file_pages": [
+            816
+          ],
+          "heading": "34 sese.011.001.10 TransferInstructionStatusReportV10"
+        }
+      ]
+    },
+    {
+      "number": 120,
+      "quote": "The TransferInstructionStatusReport message is used to provide the status of a previously received request for holdings information, portfolio transfer or transfer instruction, or in response to a RequestForTransferStatus message.",
+      "quote_sha256": "8e3e6730f3081a52d9675aa502fca16033d773f09da085caa1f6614ad096e5c9",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.011.001.10",
+          "evidence_id": "src-000096-sese.011.001.10-p816-c003",
+          "file_pages": [
+            816
+          ],
+          "heading": "34 sese.011.001.10 TransferInstructionStatusReportV10"
+        }
+      ]
+    },
+    {
+      "number": 121,
+      "quote": "The PortfolioTransferCancellationRequest message is sent by, for example, an investment manager or its authorised representative, to the executing party, for example, a transfer agent, to request the cancellation of a previously sent PortfolioTransferInstruction message.",
+      "quote_sha256": "af70b2121dc808bd8a858d87c4fb45fde2a70826273c78526fbcbdff9f41009c",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "sese.014.001.09",
+          "evidence_id": "src-000096-sese.014.001.09-p1302-c001",
+          "file_pages": [
+            1302
+          ],
+          "heading": "37 sese.014.001.09 PortfolioTransferCancellationRequestV09"
+        }
+      ]
+    },
+    {
+      "number": 122,
+      "quote": "a securities settlement conditions modification (another transaction processing command should be sent to reverse a processing change previously requested).",
+      "quote_sha256": "6fee6ceebd8c99662817cc41f9cb9502001242758e63cb348dfacac0599e3616",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.020.001.09",
+          "evidence_id": "src-000197-sese.020.001.09-p458-c009",
+          "file_pages": [
+            458
+          ],
+          "heading": "14 sese.020.001.09 SecuritiesTransactionCancellationRequestV09"
+        }
+      ]
+    },
+    {
+      "number": 123,
+      "quote": "The status advice may be sent as a response to the request of the account owner or not.",
+      "quote_sha256": "b62f631b4b9dcb441cda2bf0d6b53746f10ba2919f48ed1b47e6a39fdf11b2d7",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.024.001.14",
+          "evidence_id": "src-000197-sese.024.001.14-p556-c002",
+          "file_pages": [
+            556
+          ],
+          "heading": "18 sese.024.001.14 SecuritiesSettlementTransactionStatusAdviceV14"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.034.001.11",
+          "evidence_id": "src-000197-sese.034.001.11-p951-c002",
+          "file_pages": [
+            951
+          ],
+          "heading": "28 sese.034.001.11 SecuritiesFinancingStatusAdviceV11"
+        }
+      ]
+    },
+    {
+      "number": 124,
+      "quote": "However, one SecuritiesSettlementConditionsModificationStatusAdvice must be sent per transaction modified unless the SecuritiesSettlementConditionsModificationRequest is rejected as a whole.",
+      "quote_sha256": "425144fbdff8427b337fd7020b6d3ddf7887adaf014fd4c435c947f4d1c31f7a",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.031.001.11",
+          "evidence_id": "src-000197-sese.031.001.11-p802-c006",
+          "file_pages": [
+            802
+          ],
+          "heading": "25 sese.031.001.11 SecuritiesSettlementConditionModificationStatusAdviceV11"
+        }
+      ]
+    },
+    {
+      "number": 125,
+      "quote": "The exchange of transfer settlement details is the provision, by the delivering account servicer to the receiving account servicer, of the settlement data (such as trade date, settlement date, delivering settlement chain, quantities) of the individual transfers that will take place during a full or partial portfolio transfer.",
+      "quote_sha256": "f62fc2f41eff48d16aa9290f5cfbace9d4956e4342987f4608b84aa0c6d86b7d",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.037.001.09",
+          "evidence_id": "src-000197-sese.037.001.09-p1094-c003",
+          "file_pages": [
+            1094
+          ],
+          "heading": "31 sese.037.001.09 PortfolioTransferNotificationV09"
+        }
+      ]
+    },
+    {
+      "number": 126,
+      "quote": "This delivering account servicer message may also include, for validation, the receiving settlement chain as provided by the client.",
+      "quote_sha256": "ae8c5b8a139b866235228d75006317fcf392e838be9e58016a165c9d73a1264a",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.037.001.09",
+          "evidence_id": "src-000197-sese.037.001.09-p1094-c004",
+          "file_pages": [
+            1094
+          ],
+          "heading": "31 sese.037.001.09 PortfolioTransferNotificationV09"
+        }
+      ]
+    },
+    {
+      "number": 127,
+      "quote": "In case the receiving settlement chain is not available to the delivering account servicer, the receiving account servicer may in return provide to the delivering account servicer the receiving settlement chain using the same message.",
+      "quote_sha256": "a89e3894fe27c21cecb2234492ede7f5d30099d7599ca04e7aabbc517dfd439d",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.037.001.09",
+          "evidence_id": "src-000197-sese.037.001.09-p1094-c005",
+          "file_pages": [
+            1094
+          ],
+          "heading": "31 sese.037.001.09 PortfolioTransferNotificationV09"
+        }
+      ]
+    },
+    {
+      "number": 128,
+      "quote": "re-send a message sent by the account owner to the account servicer,",
+      "quote_sha256": "65a8164bb11d0447484b03c7a4dd683030e5f0c228c6a244d348425e628937fa",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.038.001.11",
+          "evidence_id": "src-000197-sese.038.001.11-p1133-c006",
+          "file_pages": [
+            1133
+          ],
+          "heading": "32 sese.038.001.11 SecuritiesSettlementTransactionModificationRequestV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.039.001.08",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c005",
+          "file_pages": [
+            1300
+          ],
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.040.001.06",
+          "evidence_id": "src-000197-sese.040.001.06-p1322-c009",
+          "file_pages": [
+            1322
+          ],
+          "heading": "34 sese.040.001.06 SecuritiesSettlementTransactionCounterpartyResponseV06"
+        }
+      ]
+    },
+    {
+      "number": 129,
+      "quote": "provide a third party with a copy of a message being sent by the account owner for information,",
+      "quote_sha256": "72a2cc9587ba06980ebc49298827fd1c49d270af8ed3e39bb9660235ddec8d17",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.038.001.11",
+          "evidence_id": "src-000197-sese.038.001.11-p1133-c007",
+          "file_pages": [
+            1133
+          ],
+          "heading": "32 sese.038.001.11 SecuritiesSettlementTransactionModificationRequestV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.039.001.08",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c006",
+          "file_pages": [
+            1300
+          ],
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.040.001.06",
+          "evidence_id": "src-000197-sese.040.001.06-p1322-c010",
+          "file_pages": [
+            1322
+          ],
+          "heading": "34 sese.040.001.06 SecuritiesSettlementTransactionCounterpartyResponseV06"
+        }
+      ]
+    },
+    {
+      "number": 130,
+      "quote": "re-send to a third party a copy of a message being sent by the account owner for information using the relevant elements in the Business Application Header.",
+      "quote_sha256": "f515e0595d85b0f3b8efcf9870bea5253ff01fc0d9c275e76d9ed7c1ff28cbef",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.038.001.11",
+          "evidence_id": "src-000197-sese.038.001.11-p1133-c008",
+          "file_pages": [
+            1133
+          ],
+          "heading": "32 sese.038.001.11 SecuritiesSettlementTransactionModificationRequestV11"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.039.001.08",
+          "evidence_id": "src-000197-sese.039.001.08-p1300-c007",
+          "file_pages": [
+            1300
+          ],
+          "heading": "33 sese.039.001.08 SecuritiesSettlementTransactionModificationRequestStatusAdviceV08"
+        },
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.040.001.06",
+          "evidence_id": "src-000197-sese.040.001.06-p1322-c011",
+          "file_pages": [
+            1322
+          ],
+          "heading": "34 sese.040.001.06 SecuritiesSettlementTransactionCounterpartyResponseV06"
+        }
+      ]
+    },
+    {
+      "number": 131,
+      "quote": "the allegement received is either rejected (that is counterparty's transaction is unknown) or accepted (i.e. either the allegement was passed to the client or the transaction is know with or without mismatches)",
+      "quote_sha256": "059d166d3f31c42e9acc0c3b2f63f670edcbc6ddd48848b1fd9905022948027a",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.040.001.06",
+          "evidence_id": "src-000197-sese.040.001.06-p1322-c002",
+          "file_pages": [
+            1322
+          ],
+          "heading": "34 sese.040.001.06 SecuritiesSettlementTransactionCounterpartyResponseV06"
+        }
+      ]
+    },
+    {
+      "number": 132,
+      "quote": "the modification or cancellation request sent by the counterparty for a matched transaction is affirmed or not.",
+      "quote_sha256": "09c96c4c0574b846c1af8048ccff62c7db44e42c6a480dbcd74cb26d674ec00e",
+      "occurrences": [
+        {
+          "source_id": "src-000197",
+          "source_sha256": "b31d09e8d10a45a9d9f319c54c7ba6f6f899ca7cdefb5c4820bd9192a4665ab1",
+          "message_id": "sese.040.001.06",
+          "evidence_id": "src-000197-sese.040.001.06-p1322-c003",
+          "file_pages": [
+            1322
+          ],
+          "heading": "34 sese.040.001.06 SecuritiesSettlementTransactionCounterpartyResponseV06"
+        }
+      ]
+    },
+    {
+      "number": 133,
+      "quote": "The RedemptionBulkOrderConfirmation message is used to confirm the execution of all individual orders included in a previously sent RedemptionBulkOrder message.",
+      "quote_sha256": "d398712047e8306eea286e8ec08df5b76907ad74a9f9df9df0626ccf0cf45edd",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.003.001.05",
+          "evidence_id": "src-000096-setr.003.001.05-p1892-c002",
+          "file_pages": [
+            1892
+          ],
+          "heading": "43 setr.003.001.05 RedemptionBulkOrderConfirmationV05"
+        }
+      ]
+    },
+    {
+      "number": 134,
+      "quote": "The SwitchOrderCancellationRequest is used to cancel the entire previously sent SwitchOrder instruction/s and all the individual legs that it contains.",
+      "quote_sha256": "7fc48e339df9e6093bf42dd8099d6ad376c276b962de3ab19e24d5106297d147",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.014.001.05",
+          "evidence_id": "src-000096-setr.014.001.05-p3797-c002",
+          "file_pages": [
+            3797
+          ],
+          "heading": "54 setr.014.001.05 SwitchOrderCancellationRequestV05"
+        }
+      ]
+    },
+    {
+      "number": 135,
+      "quote": "a sent to next party status, or,",
+      "quote_sha256": "83a8b8a8379b4ab12dedfd02d70389d97abffe36c8b6f61d5b2df44215c3bb65",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.016.001.05",
+          "evidence_id": "src-000096-setr.016.001.05-p4109-c003",
+          "file_pages": [
+            4109
+          ],
+          "heading": "56 setr.016.001.05 OrderInstructionStatusReportV05"
+        }
+      ]
+    },
+    {
+      "number": 136,
+      "quote": "a received status, or,",
+      "quote_sha256": "d582476e70bf8bd20fb3fe705b287a81768668c8e9eb19011e52ca70e9858fd7",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.016.001.05",
+          "evidence_id": "src-000096-setr.016.001.05-p4109-c004",
+          "file_pages": [
+            4109
+          ],
+          "heading": "56 setr.016.001.05 OrderInstructionStatusReportV05"
+        }
+      ]
+    },
+    {
+      "number": 137,
+      "quote": "If the RequestForOrderStatusReport message is used to request the status of several individual order instructions or one or more order instruction messages, then the instructing party may receive several OrderInstructionStatusReport messages from the executing party.",
+      "quote_sha256": "31c97d6ea3ed19cf2114f57eebcc6af898559e464ecd0f62e7bb3974db064bdf",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.018.001.05",
+          "evidence_id": "src-000096-setr.018.001.05-p4232-c003",
+          "file_pages": [
+            4232
+          ],
+          "heading": "58 setr.018.001.05 RequestForOrderStatusReportV05"
+        }
+      ]
+    },
+    {
+      "number": 138,
+      "quote": "If the RequestForOrderStatusReport message is used to request the status of several individual order cancellation requests or one or more order cancellation messages, then the instructing party may receive several OrderCancellationStatusReport messages from the executing party.",
+      "quote_sha256": "81f595dab1e2ad968527dd81d7a8929bf90b45e3c5ef3e639a9b4ef73d8746e7",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.018.001.05",
+          "evidence_id": "src-000096-setr.018.001.05-p4232-c004",
+          "file_pages": [
+            4232
+          ],
+          "heading": "58 setr.018.001.05 RequestForOrderStatusReportV05"
+        }
+      ]
+    },
+    {
+      "number": 139,
+      "quote": "It may also be used to cancel the trade confirmation previously sent from an executing party or an instructing party to a custodian or an affirming party directly or through CMU.",
+      "quote_sha256": "7deb396e9916729dd0619e99351996bd7ac4460250d52c8803daf51ea7e07e3a",
+      "occurrences": [
+        {
+          "source_id": "src-000181",
+          "source_sha256": "9acd70dd84af618b3c7aeb1c9501f4b43168f2200b2b425420b0f015572ebb4d",
+          "message_id": "setr.029.001.02",
+          "evidence_id": "src-000181-setr.029.001.02-p140-c004",
+          "file_pages": [
+            140
+          ],
+          "heading": "4 setr.029.001.02 SecuritiesTradeConfirmationCancellationV02"
+        }
+      ]
+    },
+    {
+      "number": 140,
+      "quote": "sent to next party, or,",
+      "quote_sha256": "96908bb432200ad31d3fdb07c0d2b2b5fc1e0fa76843241ddc876d245fc899b2",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.057.001.03",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c002",
+          "file_pages": [
+            4283
+          ],
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03"
+        }
+      ]
+    },
+    {
+      "number": 141,
+      "quote": "confirmation received.",
+      "quote_sha256": "ba032482b4160c770b5823f2b54e475762a24a35d04eb3f0b5a4e4ec3331ced5",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.057.001.03",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c004",
+          "file_pages": [
+            4283
+          ],
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03"
+        }
+      ]
+    },
+    {
+      "number": 142,
+      "quote": "It is likely that the OrderConfirmationStatusReport is only sent by the order instructing party to the order executing party to reject an order confirmation or to reject an order confirmation amendment, although if an intermediary party is used, the statuses sent to next party and communication problem with next party are also likely be used.",
+      "quote_sha256": "558cc9ba8bbb2f8a8576e0dfd5c48c480b36715e35196cd9920ae77cf9c2efdb",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.057.001.03",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c005",
+          "file_pages": [
+            4283
+          ],
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03"
+        }
+      ]
+    },
+    {
+      "number": 143,
+      "quote": "The statuses confirmation accepted and confirmation received would only be used in the event the order executing party sends a RequestForOrderConfirmationStatusReport message and one of the other statuses does not apply.",
+      "quote_sha256": "51d34ea39d3d0280b72445bab859a27a7df762a9eee1a3f00d227d64510391d8",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.057.001.03",
+          "evidence_id": "src-000096-setr.057.001.03-p4283-c006",
+          "file_pages": [
+            4283
+          ],
+          "heading": "64 setr.057.001.03 OrderConfirmationStatusReportV03"
+        }
+      ]
+    },
+    {
+      "number": 144,
+      "quote": "When the RequestForOrderConfirmationStatusReport message is used to request the status of several individual order confirmations or one or more order confirmation messages, the executing party may receive several OrderConfirmationStatusReport messages from the instructing party.",
+      "quote_sha256": "290c133d7a9fd085cb61599bef176f2e1308a1659761388a9181504ab7cf24c3",
+      "occurrences": [
+        {
+          "source_id": "src-000096",
+          "source_sha256": "d47298362fdffd8f7d9b571da83e5d80723e6b704a434c236f8a2179a6939e66",
+          "message_id": "setr.058.001.03",
+          "evidence_id": "src-000096-setr.058.001.03-p4303-c002",
+          "file_pages": [
+            4303
+          ],
+          "heading": "65 setr.058.001.03 RequestForOrderConfirmationStatusReportV03"
+        }
+      ]
+    }
+  ]
+}

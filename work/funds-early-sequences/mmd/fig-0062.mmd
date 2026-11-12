@@ -1,9 +1,0 @@
-sequenceDiagram
-participant I as Instructing Party
-participant M as Intermediary
-participant E as Executing Party
-I->>M: RedemptionOrder
-M->>E: RedemptionOrder
-M->>I: OrderInstructionStatusReport (STNP or RECE)
-E->>M: OrderInstructionStatusReport (PACK)
-M->>I: OrderInstructionStatusReport (PACK)

@@ -1,0 +1,7 @@
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+Note over A,B: Modification process
+A->>B: Party Deletion Request (reda.031)
+B-->>A: Party Status Advice (reda.016): QUEUED
+B-->>A: Party Status Advice (reda.016): REJECTED

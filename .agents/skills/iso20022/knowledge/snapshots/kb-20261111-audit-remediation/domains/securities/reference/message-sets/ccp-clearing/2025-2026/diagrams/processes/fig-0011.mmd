@@ -1,0 +1,43 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart TB
+  subgraph C["CCP"]
+    Time["X days after the intended settlement date"]:::outside
+    S(("Start"))
+    Warn("Warning: Identify positions subject to buy in")
+    Ack("Acknowledge the request")
+    Eack((("End")))
+    Notify("Notify buy in process has been launched")
+    Fork["━━━"]:::bar
+    CancelC["Cancel settlement instruction sent to CSD<br/>(OUT of SCOPE)"]:::outside
+    Confirm("Confirm the buy in process")
+    Pay["Payment Process<br/>(OUT OF SCOPE)"]:::outside
+    Date["At Buy in Date +1"]:::note
+  end
+  subgraph M["Clearing Member"]
+    Info1("Process Information")
+    Ask{"Ask for a delay?"}
+    Info2("Process Information")
+    Info3("Process Information")
+    CancelM["Cancel the settlement instruction<br/>sent to Settlement Agent<br/>(OUT OF SCOPE)"]:::outside
+  end
+  E1((("End")))
+  E2((("End")))
+  Time --> S --> Warn --> Info1 --> Ask
+  Ask -->|yes| Ack --> Eack
+  Ask -->|no| E1
+  Warn -->|And/or| Notify
+  Notify --> Info2 --> E1
+  Notify --> Fork
+  Fork --> CancelC --> E1
+  Fork --> Confirm
+  Confirm --> Info3 --> CancelM --> E2
+  Confirm --> Pay --> E2
+  Date --- Confirm
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

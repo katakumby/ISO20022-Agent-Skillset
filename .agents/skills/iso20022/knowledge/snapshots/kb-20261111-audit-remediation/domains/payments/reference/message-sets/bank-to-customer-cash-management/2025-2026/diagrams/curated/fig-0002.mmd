@@ -1,0 +1,18 @@
+usecase-beta
+ actor D("Debtor")
+ actor DA("DebtorAgent")
+ actor CA("CreditorAgent")
+ actor C("Creditor")
+ actor I("InitiatingParty")
+ R("Report")
+ REC("Reconcile")
+ TX("Report on payment transaction")
+ ST("Report on payment transaction status")
+ D -- R
+ DA -- R
+ CA -- R
+ C -- R
+ R -- REC
+ R -- TX
+ R -- ST
+ ST -- I

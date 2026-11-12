@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant S as Account Servicer
+    participant O as Account Owner
+    Note left of S: Preliminary announcement
+    S->>O: CorporateActionNotification (NEWM)
+    Note left of S: Confirmed announcement
+    S->>O: CorporateActionNotification (REPL)
+    O->>S: CorporateActionInstruction
+    S->>O: CorporateActionInstructionStatusAdvice
+    Note left of S: Final entitlement
+    S->>O: CorporateActionMovementPreliminaryAdvice (NEWM)
+    O->>S: CorporateActionInstructionCancellationRequest
+    S->>O: CorporateActionInstructionCancellationRequestStatusAdvice
+    S->>O: CorporateActionMovementPreliminaryAdviceCancellationAdvice
+    S->>O: CorporateActionInstructionStatusAdvice (Default action)
+    Note left of S: Final entitlement
+    S->>O: CorporateActionMovementPreliminaryAdvice (NEWM)

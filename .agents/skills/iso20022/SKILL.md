@@ -32,7 +32,7 @@ Exact identifiers and namespaces establish message identity. Family keys only na
 
 Use needs-review material with precise citations and applicable limitations. Withhold conclusions dependent on unresolved evidence. Distinguish source facts, schema constraints, business semantics, and derived explanations. A successful parser or extraction check is not semantic review.
 
-Cite the packaged reference path, source ID, and precise original locator relevant to each substantive claim. Include exact message/version or code-publication identity. Prefer focused Markdown, preserved XML declarations, and Mermaid text. Never open original documents or images without an explicit inspection request. Missing originals require separately supplied local evidence.
+Cite the packaged reference path, source ID, and precise original locator relevant to each substantive claim. Include exact message/version or code-publication identity. Prefer focused Markdown, preserved XML declarations, and Mermaid text. Never inspect original document or image contents without an explicit inspection request. The source command only authenticates attachment bytes and registered archive members; it does not render or interpret them. Missing originals require separately supplied local evidence.
 
 Research commands do not write to the corpus or maintain it. Report unavailable or incompatible snapshots rather than rebuilding them. A missing search hit proves only no match under the reported filters. Configuration defaults are visible and can be bypassed with --all-scopes; explicit IDs take precedence.
 

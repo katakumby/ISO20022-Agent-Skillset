@@ -11,7 +11,7 @@ Preserve:
 
 A choice does not make each member independently required. A leaf's local occurrence does not necessarily establish its effective requirement on the full path. Reuse references for recursive types; do not expand them infinitely.
 
-For an exact type name, start with --limit 1 in the scoped search. Read the section named Complete compositor, member and restriction reference first; use outline if its heading differs. Read Reuse and recursion only when enclosing usage matters. Prefer these focused sections over loading the full type page and its duplicate literal declaration. Inspect their literal XML or the included XSD when needed for an exact structural claim. Never fetch an import or external schema. If a supplied dependency is unavailable, qualify the result.
+For an exact type name, start with --limit 1 in the scoped search and verify the returned QName. Exact titles rank first; if a citing declaration is returned, follow its type link or continue the candidates to reach the requested definition. Read the section named Complete compositor, member and restriction reference first; use outline if its heading differs. Read Reuse and recursion only when enclosing usage matters. Prefer these focused sections over loading the full type page and its duplicate literal declaration. Inspect their literal XML or the included XSD when needed for an exact structural claim. Never fetch an import or external schema. If a supplied dependency is unavailable, qualify the result.
 
 A documentation-only message has no supplied schema; do not synthesize one or assume its namespace. An External...Code type is not a current enumeration. Consult the separate code-publication module for values.
 

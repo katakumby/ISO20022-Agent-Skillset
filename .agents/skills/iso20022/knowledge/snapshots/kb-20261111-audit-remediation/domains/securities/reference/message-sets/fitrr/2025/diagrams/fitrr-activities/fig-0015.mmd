@@ -1,0 +1,66 @@
+flowchart TB
+  subgraph laneRE["Reporting Entity"]
+    start(("Start"))
+    capture(["Capture and Submit Trading Volume Cap Message"])
+    forkRE@{ shape: fork }
+    delegateRE{"Delegation Agreement"}
+    responseRE(["Receive and Process Response"])
+    acceptedRE{"#160;"}
+    correctRE(["Corrective Action"])
+    endRE((("End")))
+  end
+  subgraph laneCA["Competent Authority"]
+    receiveCA(["Receive Message (a)"])
+    delegateCA{"Delegation Agreement"}
+    processCA(["Process Message"])
+    forkCA@{ shape: fork }
+    submitCA(["Submit Message"])
+    waitCA@{ shape: fork }
+    responseCA(["Receive Response"])
+    delegateResponse{"Delegation Agreement"}
+    processResponse(["Process Response"])
+    acceptedCA{"#160;"}
+    routeCA(["Route Response"])
+    mergeCA@{ shape: fork }
+    endCA((("End")))
+  end
+  subgraph laneSA["Supervisory Authority"]
+    mergeSA@{ shape: fork }
+    receiveSA(["Receive Message (b)"])
+    processSA(["Process Message and Generate Status Advice"])
+    delegateSA{"Delegation Agreement"}
+  end
+  start --> capture
+  capture --> forkRE
+  forkRE --> delegateRE
+  forkRE --> responseRE
+  delegateRE -->|"Data Collection Agreement"| mergeSA
+  delegateRE -->|"No Data Collection Agreement"| receiveCA
+  receiveCA --> delegateCA
+  delegateCA -->|"Calculation Agreement"| submitCA
+  delegateCA -->|"No Calculation Agreement"| processCA
+  processCA --> forkCA
+  forkCA --> submitCA
+  forkCA --> mergeCA
+  submitCA --> waitCA
+  waitCA --> mergeSA
+  waitCA --> responseCA
+  mergeSA --> receiveSA
+  receiveSA --> processSA
+  processSA --> delegateSA
+  delegateSA -->|"No Data Collection Agreement"| responseCA
+  delegateSA -->|"Data Collection Agreement"| mergeCA
+  responseCA --> delegateResponse
+  delegateResponse -->|"Calculation Agreement"| routeCA
+  delegateResponse -->|"No Calculation Agreement"| processResponse
+  processResponse --> acceptedCA
+  acceptedCA -->|"Accepted"| endCA
+  acceptedCA -->|"Rejected"| routeCA
+  routeCA --> mergeCA
+  mergeCA --> responseRE
+  responseRE --> acceptedRE
+  acceptedRE -->|"Accepted"| endRE
+  acceptedRE -->|"Rejected"| correctRE
+  correctRE --> capture
+  classDef bar fill:#333,stroke:#333,color:#333;
+  class forkRE,forkCA,waitCA,mergeCA,mergeSA bar;

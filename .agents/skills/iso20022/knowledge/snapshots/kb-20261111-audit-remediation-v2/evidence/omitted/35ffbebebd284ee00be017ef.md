@@ -1,0 +1,18 @@
+---
+template: false
+document_kind: "packaged-evidence-availability"
+review_status: "needs-review"
+source_ids: ["src-000003"]
+original_locator: "shared/assets/src-000003/originals/image6.emf"
+packaged_availability: "not-in-main-text-package"
+---
+
+# Evidence availability
+
+Original corpus locator: shared/assets/src-000003/originals/image6.emf
+
+This artifact is not included in the main text package. This record does not represent an inspection of its contents.
+Original documents and images require separately supplied local evidence and an explicit inspection request.
+Working tools, templates and historical artifacts are outside the retrieval package.
+
+- [Source src-000003](../sources/src-000003.md)

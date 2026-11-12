@@ -1,0 +1,21 @@
+%%{init: {"flowchart":{"htmlLabels":false,"curve":"linear","wrappingWidth":300},"theme":"neutral"}}%%
+flowchart LR
+  subgraph CHAIN["Custody chain: upstream toward clients; downstream toward transfer agent"]
+  ICSD["ICSD<br/>International Central Securities Depository<br/>Account Owner to TRAG<br/>Account Servicer to CUSA, CUSB"]
+  TRAG["TRAG<br/>Transfer Agent<br/>Account Servicer to ICSD"]
+  CUSA["CUSA<br/>Custodian<br/>Account Owner to ICSD<br/>Account Servicer to AAXX, AAYY, AAZZ"]
+  AAXX["AAXX<br/>(client 1)<br/>Account Owner"]
+  AAYY["AAYY<br/>(client 2)<br/>Account Owner"]
+  AAZZ["AAZZ<br/>(client 3)<br/>Account Owner"]
+  CUSB["CUSB<br/>Custodian<br/>Account Owner to ICSD<br/>Account Servicer to BBXX, BBYY"]
+  BBXX["BBXX<br/>(client 1)<br/>Account Owner"]
+  BBYY["BBYY<br/>(client 2)<br/>Account Owner"]
+  CUSA ---|"account-owner / account-servicer relationship"| ICSD
+  AAXX ---|"account-owner / account-servicer relationship"| CUSA
+  AAYY ---|"account-owner / account-servicer relationship"| CUSA
+  AAZZ ---|"account-owner / account-servicer relationship"| CUSA
+  CUSB ---|"account-owner / account-servicer relationship"| ICSD
+  BBXX ---|"account-owner / account-servicer relationship"| CUSB
+  BBYY ---|"account-owner / account-servicer relationship"| CUSB
+  ICSD ---|"account-owner / account-servicer relationship"| TRAG
+  end

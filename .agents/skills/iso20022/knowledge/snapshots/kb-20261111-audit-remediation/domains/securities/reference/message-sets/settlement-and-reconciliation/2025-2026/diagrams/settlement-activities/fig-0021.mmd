@@ -1,0 +1,5 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  S@{shape: f-circ,label: " "} --> C["Cancelled by Executing Party?"]
+  C -->|Y| O@{shape: doc,label: "Cancellation Status and Reason"}
+  C -->|N| C

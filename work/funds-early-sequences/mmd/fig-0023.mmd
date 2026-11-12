@@ -1,8 +1,0 @@
-sequenceDiagram
-participant O as Account Owner
-participant M as Intermediary
-participant S as Account Servicer
-O->>M: AccountOpeningInstruction
-M->>S: AccountOpeningInstruction
-S->>M: SecuritiesMessageRejection
-M->>O: SecuritiesMessageRejection

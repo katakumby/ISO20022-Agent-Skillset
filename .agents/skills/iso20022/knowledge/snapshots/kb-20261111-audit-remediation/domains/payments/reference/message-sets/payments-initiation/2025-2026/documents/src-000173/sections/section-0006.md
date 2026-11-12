@@ -1,0 +1,23 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Payments Initiation"
+source_ids: ["src-000173"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["Introduction", "References"]
+content_origin: "source-transcription"
+---
+
+# References
+
+Source: [src-000173](../../../../../../../../../evidence/omitted/baf7abf3460122a33db6052d.md). Locator: heading path Introduction / References.
+
+Extracted evidence. Pagination, drawing completeness, and source semantics remain subject to visual review.
+
+**P75** References
+
+[T3 - complete table](../tables/tbl-0003.md)
+

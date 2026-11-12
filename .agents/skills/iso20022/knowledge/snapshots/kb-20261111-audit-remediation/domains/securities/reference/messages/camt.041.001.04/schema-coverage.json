@@ -1,0 +1,794 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000104",
+  "sha256": "010c7f953822c8530970fa95a96a33bf4a0043e25e99ca3d3982503583616aef",
+  "message_id": "camt.041.001.04",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.041.001.04",
+  "message_name": "FundConfirmedCashForecastReportV04",
+  "domain": "securities",
+  "set_path": "domains/securities/reference/message-sets/investment-funds/2025-2026",
+  "counts": {
+    "schema": 1,
+    "element": 143,
+    "simpleType": 40,
+    "restriction": 40,
+    "fractionDigits": 5,
+    "totalDigits": 5,
+    "minInclusive": 2,
+    "complexType": 34,
+    "simpleContent": 2,
+    "extension": 2,
+    "attribute": 2,
+    "pattern": 9,
+    "sequence": 32,
+    "enumeration": 26,
+    "choice": 6,
+    "minLength": 10,
+    "maxLength": 10
+  },
+  "top_level_declarations": 75,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "ActiveCurrencyAnd13DecimalAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveCurrencyAnd13DecimalAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyAnd13DecimalAmount_SimpleType']",
+      "line": 5,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0002.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0003",
+      "name": "ActiveCurrencyAnd13DecimalAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveCurrencyAnd13DecimalAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveCurrencyAnd13DecimalAmount']",
+      "line": 12,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0003.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0004",
+      "name": "ActiveCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyCode']",
+      "line": 19,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0004.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0005",
+      "name": "ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyAndAmount_SimpleType']",
+      "line": 24,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0005.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0006",
+      "name": "ActiveOrHistoricCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveOrHistoricCurrencyAndAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveOrHistoricCurrencyAndAmount']",
+      "line": 31,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0006.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0007",
+      "name": "ActiveOrHistoricCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ActiveOrHistoricCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyCode']",
+      "line": 38,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0007.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0008",
+      "name": "AdditionalReference3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}AdditionalReference3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AdditionalReference3']",
+      "line": 43,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0008.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0009",
+      "name": "AddressType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}AddressType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AddressType2Code']",
+      "line": 50,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0009.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0010",
+      "name": "AlternateSecurityIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}AlternateSecurityIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AlternateSecurityIdentification1']",
+      "line": 60,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0010.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0011",
+      "name": "AnyBICIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}AnyBICIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICIdentifier']",
+      "line": 69,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0011.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0012",
+      "name": "BaseOneRate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}BaseOneRate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BaseOneRate']",
+      "line": 74,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0012.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0013",
+      "name": "BelgianIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}BelgianIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BelgianIdentifier']",
+      "line": 80,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0013.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0014",
+      "name": "BloombergIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}BloombergIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BloombergIdentifier']",
+      "line": 83,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0014.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0015",
+      "name": "CUSIPIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CUSIPIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CUSIPIdentifier']",
+      "line": 89,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0015.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0016",
+      "name": "CashInForecast6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CashInForecast6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashInForecast6']",
+      "line": 92,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0016.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0017",
+      "name": "CashInOutForecast7",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CashInOutForecast7",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashInOutForecast7']",
+      "line": 101,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0017.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0018",
+      "name": "CashOutForecast6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CashOutForecast6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashOutForecast6']",
+      "line": 107,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0018.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0019",
+      "name": "ConsolidatedTapeAssociationIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ConsolidatedTapeAssociationIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ConsolidatedTapeAssociationIdentifier']",
+      "line": 116,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0019.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0020",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 122,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0020.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0021",
+      "name": "CurrencyDesignation1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CurrencyDesignation1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CurrencyDesignation1']",
+      "line": 127,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0021.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0022",
+      "name": "CurrencyDesignation1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}CurrencyDesignation1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CurrencyDesignation1Code']",
+      "line": 134,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0022.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0023",
+      "name": "DateAndDateTimeChoice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}DateAndDateTimeChoice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTimeChoice']",
+      "line": 140,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0023.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0024",
+      "name": "DecimalNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}DecimalNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DecimalNumber']",
+      "line": 148,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0024.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0025",
+      "name": "DistributionPolicy1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}DistributionPolicy1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DistributionPolicy1Code']",
+      "line": 154,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0025.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0026",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 160,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0026.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0027",
+      "name": "DutchIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}DutchIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DutchIdentifier']",
+      "line": 165,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0027.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0028",
+      "name": "EuroclearClearstreamIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}EuroclearClearstreamIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='EuroclearClearstreamIdentifier']",
+      "line": 168,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0028.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0029",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 174,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0029.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0030",
+      "name": "Extension1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Extension1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Extension1']",
+      "line": 179,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0030.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0031",
+      "name": "FinancialInstrument9",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FinancialInstrument9",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstrument9']",
+      "line": 185,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0031.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0032",
+      "name": "FinancialInstrumentQuantity1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FinancialInstrumentQuantity1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstrumentQuantity1']",
+      "line": 197,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0032.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0033",
+      "name": "FlowDirectionType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FlowDirectionType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='FlowDirectionType1Code']",
+      "line": 202,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0033.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0034",
+      "name": "ForeignExchangeTerms19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ForeignExchangeTerms19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ForeignExchangeTerms19']",
+      "line": 208,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0034.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0035",
+      "name": "FormOfSecurity1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FormOfSecurity1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='FormOfSecurity1Code']",
+      "line": 215,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0035.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0036",
+      "name": "Fund2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Fund2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Fund2']",
+      "line": 221,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0036.md",
+      "node_count": 16
+    },
+    {
+      "id": "type-0037",
+      "name": "FundBalance1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FundBalance1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FundBalance1']",
+      "line": 239,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0037.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0038",
+      "name": "FundCashForecast7",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FundCashForecast7",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FundCashForecast7']",
+      "line": 247,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0038.md",
+      "node_count": 20
+    },
+    {
+      "id": "type-0039",
+      "name": "FundConfirmedCashForecastReportV04",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}FundConfirmedCashForecastReportV04",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FundConfirmedCashForecastReportV04']",
+      "line": 269,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0039.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0040",
+      "name": "GenericIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}GenericIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification1']",
+      "line": 282,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0040.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0041",
+      "name": "GenericIdentification47",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}GenericIdentification47",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification47']",
+      "line": 289,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0041.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0042",
+      "name": "ISINIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ISINIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISINIdentifier']",
+      "line": 296,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0042.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0043",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 301,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0043.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0044",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 304,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0044.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0045",
+      "name": "IdentificationSource5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}IdentificationSource5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='IdentificationSource5Choice']",
+      "line": 307,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0045.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0046",
+      "name": "LEIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}LEIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LEIIdentifier']",
+      "line": 315,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0046.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0047",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 320,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 326,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0048.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0049",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 332,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0049.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0050",
+      "name": "Max4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max4AlphaNumericText']",
+      "line": 338,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0050.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0051",
+      "name": "Max5NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max5NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max5NumericText']",
+      "line": 345,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0051.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0052",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 350,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0052.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0053",
+      "name": "MessageIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}MessageIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MessageIdentification1']",
+      "line": 356,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0053.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0054",
+      "name": "NameAndAddress5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}NameAndAddress5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NameAndAddress5']",
+      "line": 362,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0054.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0055",
+      "name": "NetCashForecast3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}NetCashForecast3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NetCashForecast3']",
+      "line": 368,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0055.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0056",
+      "name": "NetCashForecast4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}NetCashForecast4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NetCashForecast4']",
+      "line": 375,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0056.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0057",
+      "name": "NetCashForecast5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}NetCashForecast5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NetCashForecast5']",
+      "line": 384,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0057.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0058",
+      "name": "OtherIdentification4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}OtherIdentification4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OtherIdentification4']",
+      "line": 392,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0058.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0059",
+      "name": "Pagination",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}Pagination",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Pagination']",
+      "line": 398,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0059.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0060",
+      "name": "PartyIdentification2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}PartyIdentification2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification2Choice']",
+      "line": 404,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0060.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0061",
+      "name": "PercentageRate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}PercentageRate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PercentageRate']",
+      "line": 413,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0061.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0062",
+      "name": "PostalAddress1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}PostalAddress1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress1']",
+      "line": 419,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0062.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0063",
+      "name": "PriceValue1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}PriceValue1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PriceValue1']",
+      "line": 431,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0063.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0064",
+      "name": "QUICKIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}QUICKIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='QUICKIdentifier']",
+      "line": 436,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0064.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0065",
+      "name": "RICIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}RICIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='RICIdentifier']",
+      "line": 439,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0065.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0066",
+      "name": "SEDOLIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}SEDOLIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SEDOLIdentifier']",
+      "line": 445,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0066.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0067",
+      "name": "SecurityIdentification3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}SecurityIdentification3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecurityIdentification3Choice']",
+      "line": 448,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0067.md",
+      "node_count": 18
+    },
+    {
+      "id": "type-0068",
+      "name": "SicovamIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}SicovamIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SicovamIdentifier']",
+      "line": 469,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0068.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0069",
+      "name": "TickerIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}TickerIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TickerIdentifier']",
+      "line": 472,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0069.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0070",
+      "name": "TypeOfPrice10Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}TypeOfPrice10Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TypeOfPrice10Code']",
+      "line": 478,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0070.md",
+      "node_count": 14
+    },
+    {
+      "id": "type-0071",
+      "name": "UnitPrice19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}UnitPrice19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnitPrice19']",
+      "line": 494,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0071.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0072",
+      "name": "UnitPriceType2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}UnitPriceType2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnitPriceType2Choice']",
+      "line": 500,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0072.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0073",
+      "name": "ValorenIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}ValorenIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ValorenIdentifier']",
+      "line": 508,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0073.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0074",
+      "name": "WertpapierIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}WertpapierIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='WertpapierIdentifier']",
+      "line": 511,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0074.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0075",
+      "name": "YesNoIndicator",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:camt.041.001.04}YesNoIndicator",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='YesNoIndicator']",
+      "line": 514,
+      "path": "domains/securities/reference/messages/camt.041.001.04/types/type-0075.md",
+      "node_count": 2
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

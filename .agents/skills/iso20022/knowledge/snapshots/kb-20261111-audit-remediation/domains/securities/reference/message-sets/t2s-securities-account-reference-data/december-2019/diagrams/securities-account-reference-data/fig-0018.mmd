@@ -1,0 +1,7 @@
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+Note over A,B: Query/Report Process
+A->>B: Securities Account Query (reda.019)
+B-->>A: Securities Account Report (reda.021): ERROR
+B->>A: Securities Account Report (reda.021)

@@ -1,0 +1,12 @@
+usecase-beta
+direction TB
+actor RE("Reporting Entity")
+actor CA1("Competent Authority")
+actor CA2("Competent Authority")
+submit("Transaction Data Submission")
+exchange("Transaction Data Exchange")
+RE -- CA1
+CA1 -- CA2
+RE -- submit
+CA1 -- exchange
+CA2 -- exchange

@@ -1,0 +1,55 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["55 setr.015.001.05 SwitchOrderConfirmationV05", "55.4 Message Building Blocks", "55.4.4 RelatedReference <RltdRef>", "55.4.5.20 SubscriptionLegDetails <SbcptLegDtls>", "55.4.5.20.19 PhysicalDeliveryIndicator <PhysDlvryInd>"]
+file_pages: [3986]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["setr.015.001.05"]
+---
+
+# 55.4.5.20.19 PhysicalDeliveryIndicator <PhysDlvryInd>
+
+Source: [src-000096](../../../../../../../../../evidence/omitted/fffd4ab68b421d059524ec38.md). Locator: one-based file pages 3986 to 3986.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 3986
+
+```text
+BlockChainAddressOrWallet <BlckChainAdrOrWllt> contains the following elements (see
+"BlockChainAddressWallet3" on page 4846 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Identification <Id> [1..1] Text 4846
+   Type <Tp> [0..1] ± 4846
+   Name <Nm> [0..1] Text 4846
+55.4.5.20.19  PhysicalDeliveryIndicator <PhysDlvryInd>
+Presence: [1..1]
+Definition: Indicates whether the financial instrument is to be physically delivered.
+Datatype: One of the following values must be used (see "YesNoIndicator" on page 5400):
+• Meaning When True: Yes
+• Meaning When False: No
+55.4.5.20.20  PhysicalDeliveryDetails <PhysDlvryDtls>
+Presence: [0..1]
+Definition: Information related to the physical delivery of the securities.
+PhysicalDeliveryDetails <PhysDlvryDtls> contains the following elements (see
+"DeliveryParameters3" on page 5096 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Address <Adr> [1..1] ± 5096
+   IssuedCertificateNumber <IssdCertNb> [0..1] Text 5097
+55.4.5.20.21  DigitalAssetSettlement <DgtlAsstSttlm>
+Presence: [0..1]
+Definition: Total quantity of digital asset to be paid or received in exchange for the securities token.
+Approved by the Securities SEG on 27 January 2026 setr.015.001.05 SwitchOrderConfirmationV05
+Investment Funds - Maintenance 2025 - 2026 3986 May 2026
+```
+

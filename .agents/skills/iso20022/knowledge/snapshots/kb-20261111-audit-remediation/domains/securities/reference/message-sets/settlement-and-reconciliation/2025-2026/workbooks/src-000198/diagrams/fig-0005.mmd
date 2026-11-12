@@ -1,0 +1,29 @@
+classDiagram
+  direction LR
+  class SecuritiesTransfer
+  class Security
+  class CorporateActionEvent
+  class SecuritiesQuantity
+  class SecuritiesSettlement
+  class IntraPositionTransfer
+  class SecuritiesBalance
+  class SecuritiesAccount
+  class DigitalWallet
+  SecuritiesTransfer -- Security
+  SecuritiesTransfer -- SecuritiesQuantity : + TransferredQuantity
+  SecuritiesTransfer -- SecuritiesSettlement : + TransferOperation / + RelatedSettlement
+  Security -- CorporateActionEvent : + CorporateEvent / + UnderlyingSecurity
+  SecuritiesQuantity -- Security : + MinimumQuantityDebt / - MinimumQuantity
+  SecuritiesQuantity -- CorporateActionEvent : - RelatedEventForFractionalQuantity / - FractionalQuantity
+  SecuritiesQuantity -- SecuritiesSettlement : - SettlementQuantity
+  SecuritiesQuantity -- SecuritiesSettlement : - TurnedQuantity / - RelatedTurnaroundSettlement
+  SecuritiesQuantity -- SecuritiesBalance : - AggregateQuantity / + AggregateQuantityBalance
+  SecuritiesQuantity -- SecuritiesBalance : - SubBalanceQuantity / + RelatedSubBalance
+  SecuritiesQuantity -- SecuritiesBalance : + AvailableQuantity / + AvailableQuantityBalance
+  SecuritiesQuantity -- SecuritiesBalance : + UnavailableQuantity / + UnavailableQuantityBalance
+  Security -- SecuritiesBalance : - Balance
+  Security -- SecuritiesAccount
+  SecuritiesBalance -- SecuritiesAccount
+  IntraPositionTransfer -- SecuritiesBalance : - RelatedIntraPositionTransfer
+  IntraPositionTransfer --|> SecuritiesTransfer
+  DigitalWallet --|> SecuritiesAccount

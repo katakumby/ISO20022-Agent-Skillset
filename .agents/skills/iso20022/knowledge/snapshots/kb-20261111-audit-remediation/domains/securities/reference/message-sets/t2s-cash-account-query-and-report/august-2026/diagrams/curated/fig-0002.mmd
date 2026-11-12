@@ -1,0 +1,12 @@
+flowchart TB
+ S((" ")) --> Q("Account Query List")
+ Q --> R("Account List Report")
+ R --> End(((" ")))
+ S --> A("Cash Account Activity<br/>Advice")
+ A --> End
+ S --> TQ("Cash Account Audit<br/>Trail Query")
+ TQ --> TR("Cash Account Audit<br/>Trail Report")
+ TR --> End
+ style S fill:#31879b,stroke:black
+ classDef activity fill:#d7e4bd,stroke:black
+ class Q,R,A,TQ,TR activity

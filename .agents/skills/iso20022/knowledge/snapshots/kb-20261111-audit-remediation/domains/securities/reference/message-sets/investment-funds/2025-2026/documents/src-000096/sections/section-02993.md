@@ -1,0 +1,64 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["56 setr.016.001.05 OrderInstructionStatusReportV05", "56.4 Message Building Blocks", "56.4.3.3 SwitchOrderDetailsReport <SwtchOrdrDtlsRpt>", "56.4.3.3.8 LegInformation <LegInf>", "56.4.3.3.8.4 InvestmentAccountDetails <InvstmtAcctDtls>", "56.4.3.3.8.4.1 AccountIdentification <AcctId>"]
+file_pages: [4193]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["setr.016.001.05"]
+---
+
+# 56.4.3.3.8.4.1 AccountIdentification <AcctId>
+
+Source: [src-000096](../../../../../../../../../evidence/omitted/fffd4ab68b421d059524ec38.md). Locator: one-based file pages 4193 to 4193.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 4193
+
+```text
+Constraints
+• OrderOriginatorEligibility2Rule
+OrderOriginatorEligibility may only be present if one or more of the parties identified in
+OwnerIdentification is/are the originator of the order.
+56.4.3.3.8.4.1  AccountIdentification <AcctId>
+Presence: [1..1]
+Definition: Unique and unambiguous identification for the account between the account owner and the
+account servicer.
+Datatype: "Max35Text" on page 5403
+56.4.3.3.8.4.2  AccountName <AcctNm>
+Presence: [0..1]
+Definition: Name of the account. It provides an additional means of identification, and is designated by
+the account servicer in agreement with the account owner.
+Datatype: "Max35Text" on page 5403
+56.4.3.3.8.4.3  AccountDesignation <AcctDsgnt>
+Presence: [0..1]
+Definition: Supplementary registration information applying to a specific block of units for dealing and
+reporting purposes. The supplementary registration information may be used when all the units are
+registered, for example, to a funds supermarket, but holdings for each investor have to reconciled
+individually.
+Datatype: "Max35Text" on page 5403
+56.4.3.3.8.4.4  OwnerIdentification <OwnrId>
+Presence: [0..*]
+Definition: Party that legally owns the account.
+OwnerIdentification <OwnrId> contains the following elements (see "PartyIdentification139" on
+page 5043 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Party <Pty> [1..1] ± 5043
+   LEI <LEI> [0..1] IdentifierSet 5043
+56.4.3.3.8.4.5  AccountServicer <AcctSvcr>
+Presence: [0..1]
+Definition: Party that manages the account on behalf of the account owner, that is manages the
+registration and booking of entries on the account, calculates balances on the account and provides
+information about the account.
+Approved by the Securities SEG on 27 January 2026 setr.016.001.05 OrderInstructionStatusReportV05
+Investment Funds - Maintenance 2025 - 2026 4193 May 2026
+```
+

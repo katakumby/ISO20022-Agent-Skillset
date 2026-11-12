@@ -1,0 +1,669 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000237",
+  "sha256": "d9bcdefd354401fb54ea70dea4af0a72d8373143b3db29f5940bac698b3697a6",
+  "message_id": "admi.005.001.02",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:admi.005.001.02",
+  "message_name": "ReportQueryRequestV02",
+  "domain": "shared",
+  "set_path": "shared/reference/message-sets/t2s-administration/march-2024",
+  "counts": {
+    "schema": 1,
+    "element": 132,
+    "complexType": 38,
+    "choice": 14,
+    "simpleType": 24,
+    "restriction": 24,
+    "enumeration": 8,
+    "pattern": 7,
+    "sequence": 24,
+    "minLength": 14,
+    "maxLength": 14,
+    "any": 1
+  },
+  "top_level_declarations": 63,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "AccountIdentification4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AccountIdentification4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AccountIdentification4Choice']",
+      "line": 5,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0002.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0003",
+      "name": "AccountIdentificationSearchCriteria2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AccountIdentificationSearchCriteria2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AccountIdentificationSearchCriteria2Choice']",
+      "line": 11,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0003.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0004",
+      "name": "AccountSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AccountSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AccountSchemeName1Choice']",
+      "line": 18,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0004.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0005",
+      "name": "AddressType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AddressType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AddressType2Code']",
+      "line": 24,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0005.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0006",
+      "name": "AddressType3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AddressType3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AddressType3Choice']",
+      "line": 34,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0006.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0007",
+      "name": "AnyBICDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}AnyBICDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICDec2014Identifier']",
+      "line": 40,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0007.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0008",
+      "name": "BICFIDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}BICFIDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BICFIDec2014Identifier']",
+      "line": 45,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0008.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0009",
+      "name": "BalanceCounterparty1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}BalanceCounterparty1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BalanceCounterparty1Code']",
+      "line": 50,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0009.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0010",
+      "name": "BalanceType11Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}BalanceType11Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BalanceType11Choice']",
+      "line": 56,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0010.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0011",
+      "name": "BranchAndFinancialInstitutionIdentification8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}BranchAndFinancialInstitutionIdentification8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BranchAndFinancialInstitutionIdentification8']",
+      "line": 62,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0011.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0012",
+      "name": "BranchData5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}BranchData5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BranchData5']",
+      "line": 68,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0012.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0013",
+      "name": "CashBalance14",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}CashBalance14",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashBalance14']",
+      "line": 76,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0013.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0014",
+      "name": "ClearingSystemIdentification2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ClearingSystemIdentification2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClearingSystemIdentification2Choice']",
+      "line": 85,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0014.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0015",
+      "name": "ClearingSystemMemberIdentification2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ClearingSystemMemberIdentification2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClearingSystemMemberIdentification2']",
+      "line": 91,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0015.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0016",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 97,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0016.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0017",
+      "name": "DateAndDateTimeSearch4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DateAndDateTimeSearch4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTimeSearch4Choice']",
+      "line": 102,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0017.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0018",
+      "name": "DatePeriod2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DatePeriod2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DatePeriod2']",
+      "line": 108,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0018.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0019",
+      "name": "DatePeriodSearch1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DatePeriodSearch1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DatePeriodSearch1Choice']",
+      "line": 114,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0019.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0020",
+      "name": "DateTimePeriod1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DateTimePeriod1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateTimePeriod1']",
+      "line": 123,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0020.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0021",
+      "name": "DateTimePeriod1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DateTimePeriod1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateTimePeriod1Choice']",
+      "line": 129,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0021.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0022",
+      "name": "DateTimeSearch2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}DateTimeSearch2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateTimeSearch2Choice']",
+      "line": 136,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0022.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0023",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 145,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0023.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0024",
+      "name": "EventType1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}EventType1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='EventType1Choice']",
+      "line": 150,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0024.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0025",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 156,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0025.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0026",
+      "name": "ExternalAccountIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalAccountIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalAccountIdentification1Code']",
+      "line": 161,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0026.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0027",
+      "name": "ExternalClearingSystemIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalClearingSystemIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalClearingSystemIdentification1Code']",
+      "line": 167,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0027.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0028",
+      "name": "ExternalEnquiryRequestType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalEnquiryRequestType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalEnquiryRequestType1Code']",
+      "line": 173,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0028.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0029",
+      "name": "ExternalFinancialInstitutionIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalFinancialInstitutionIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalFinancialInstitutionIdentification1Code']",
+      "line": 179,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0029.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0030",
+      "name": "ExternalPaymentControlRequestType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalPaymentControlRequestType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalPaymentControlRequestType1Code']",
+      "line": 185,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0030.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0031",
+      "name": "ExternalSystemBalanceType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalSystemBalanceType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalSystemBalanceType1Code']",
+      "line": 191,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0031.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0032",
+      "name": "ExternalSystemEventType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ExternalSystemEventType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalSystemEventType1Code']",
+      "line": 197,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0032.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0033",
+      "name": "FinancialIdentificationSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}FinancialIdentificationSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialIdentificationSchemeName1Choice']",
+      "line": 203,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0033.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0034",
+      "name": "FinancialInstitutionIdentification23",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}FinancialInstitutionIdentification23",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstitutionIdentification23']",
+      "line": 209,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0034.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0035",
+      "name": "GenericAccountIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}GenericAccountIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericAccountIdentification1']",
+      "line": 219,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0035.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0036",
+      "name": "GenericFinancialIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}GenericFinancialIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericFinancialIdentification1']",
+      "line": 226,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0036.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0037",
+      "name": "GenericIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}GenericIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification1']",
+      "line": 233,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0037.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0038",
+      "name": "GenericIdentification30",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}GenericIdentification30",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification30']",
+      "line": 240,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0038.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0039",
+      "name": "GenericIdentification36",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}GenericIdentification36",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification36']",
+      "line": 247,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0039.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0040",
+      "name": "IBAN2007Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}IBAN2007Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='IBAN2007Identifier']",
+      "line": 254,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0040.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0041",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 259,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0041.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0042",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 262,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0042.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0043",
+      "name": "LEIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}LEIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LEIIdentifier']",
+      "line": 265,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0043.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0044",
+      "name": "Max140Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max140Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max140Text']",
+      "line": 270,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0044.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0045",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 276,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0045.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0046",
+      "name": "Max34Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max34Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max34Text']",
+      "line": 282,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0046.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0047",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 288,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 294,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0048.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0049",
+      "name": "Max4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max4AlphaNumericText']",
+      "line": 300,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0049.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0050",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 307,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0050.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0051",
+      "name": "MessageHeader7",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}MessageHeader7",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MessageHeader7']",
+      "line": 313,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0051.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0052",
+      "name": "NameAndAddress5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}NameAndAddress5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NameAndAddress5']",
+      "line": 322,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0052.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0053",
+      "name": "OriginalBusinessQuery1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}OriginalBusinessQuery1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OriginalBusinessQuery1']",
+      "line": 328,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0053.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0054",
+      "name": "PartyIdentification120Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}PartyIdentification120Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification120Choice']",
+      "line": 335,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0054.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0055",
+      "name": "PartyIdentification136",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}PartyIdentification136",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification136']",
+      "line": 342,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0055.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0056",
+      "name": "PostalAddress1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}PostalAddress1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress1']",
+      "line": 348,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0056.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0057",
+      "name": "PostalAddress27",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}PostalAddress27",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress27']",
+      "line": 360,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0057.md",
+      "node_count": 20
+    },
+    {
+      "id": "type-0058",
+      "name": "ReportQueryCriteria3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ReportQueryCriteria3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ReportQueryCriteria3']",
+      "line": 382,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0058.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0059",
+      "name": "ReportQueryRequestV02",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ReportQueryRequestV02",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ReportQueryRequestV02']",
+      "line": 388,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0059.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0060",
+      "name": "ReportQuerySearchCriteria3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}ReportQuerySearchCriteria3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ReportQuerySearchCriteria3']",
+      "line": 395,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0060.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0061",
+      "name": "RequestType4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}RequestType4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RequestType4Choice']",
+      "line": 408,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0061.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0062",
+      "name": "SupplementaryData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}SupplementaryData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryData1']",
+      "line": 415,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0062.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0063",
+      "name": "SupplementaryDataEnvelope1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:admi.005.001.02}SupplementaryDataEnvelope1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryDataEnvelope1']",
+      "line": 421,
+      "path": "shared/reference/messages/admi.005.001.02/types/type-0063.md",
+      "node_count": 3
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

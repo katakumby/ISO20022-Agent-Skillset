@@ -5,13 +5,13 @@
 Use the repository's tools/kb.py with --root before the subcommand. In PowerShell, a typical setup is:
 
     $kbRoot = (Get-Location).Path  # Run from the selected repository checkout.
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" scan --limit 20
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" scan --limit 20
 
 Scan writes nothing and allocates no IDs. It prioritizes changed candidates and returns fingerprints, occurrences, candidate identities, unresolved routing, counts and truncation information. Increase --limit (maximum 1000) or use --path raw-input/collection to inspect a narrower scope. A bounded result is not proof that no other inputs exist.
 
 Once the target is established, build a complete selection:
 
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" impact --message sese.023.001.13
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" impact --message sese.023.001.13
 
 Or use impact --set settlement-and-reconciliation --edition 2025-2026. These are examples of selectors, not permission to process those messages in every run. Save the returned JSON under work/refresh/ for this request using UTF-8. impact rescans internally; --scan FILE is optional and rejects a truncated scan.
 
@@ -38,15 +38,15 @@ An identical file appearing in another publication gains an occurrence/membershi
 
 Allocate the next unused job number after reading tracking/jobs.json and the relevant tracking records. Registration also checks that the ID is unused and greater than prior IDs.
 
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" inventory --selection "$selectionPath" --job "$jobId"
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" inventory --selection "$selectionPath" --job "$jobId"
 
 This registers only selected contents, required schema dependencies and parent archive identities. Unselected archive members remain deferred. The applied manifest is tracking/refresh/<job-id>/selection.json; use that file in subsequent commands. It contains selected_source_ids and recorded conflicts.
 
-The helper verifies raw fingerprints, register baselines and affected-reference fingerprints before mutation. It snapshots changed persistent Markdown and JSON under tracking/history/<job-id>/<run>/, preserves unknown metadata and manual issue/job entries, and writes current dates. Repeating an unchanged registration with the same original selection and job is a no-op.
+The helper verifies raw fingerprints, register baselines and affected-reference fingerprints before mutation. It snapshots changed persistent Markdown and JSON under tracking/history/<job-id>/<run>/, preserves unknown metadata and manual issue/job entries, and writes current dates. Before changing any registers, it persists registration.json beside the applied selection. This journal binds the original request to all proposed output bytes and their before/after hashes. Repeating a completed unchanged registration with the same original selection and job is a no-op.
 
 An occurrence can be current, missing or changed. Historical location evidence is retained. Readers try available occurrences and accept only matching bytes; archive-member provenance also binds the parent archive checksum. Do not copy originals into reference folders or restore missing originals by inventing content.
 
-If a run was interrupted, read the applied selection, per-job reports and tracking/checkpoint.json. Recheck source fingerprints and resume outstanding work. A real source change requires a new scan/selection; retain the prior job's history.
+If registration was interrupted, first inspect tracking/refresh/<job-id>/registration.json. Repeat inventory with the same original selection and job; it rechecks raw inputs and affected references, then skips already committed bytes and completes only journaled outputs still matching their before/after hashes. Registers may be partially updated until this recovery finishes. Do not proceed to extraction while the journal is pending. A changed source, reference, or authored register causes rejection before replay; reconcile that drift explicitly and retain the journal and history instead of editing fingerprints. If a hard process termination left a temporary lock, confirm that its recorded process has ended before removing only that lock. After registration is complete, read the applied selection, per-job reports and checkpoint to resume outstanding extraction/review. A real source change requires a new scan/selection.
 
 ## Bounded extraction and curation
 
@@ -54,19 +54,19 @@ Each command takes the repository through --root and the active --job. Use repea
 
 - extract_schemas.py --source src-NNNNNN --job job-NNNNNN documents the selected root schema and reachable supplied dependencies. Each exact message has one canonical binding; equal local type names in different namespaces remain separate. Missing imports/includes are explicit even when an XML library can compile without using them. No network resolver is used.
 - extract_documents.py --source src-NNNNNN --job job-NNNNNN extracts DOCX/PDF evidence. --pdf-tables requests table detection; detection does not establish complete source coverage.
-- extract_workbooks.py --source src-NNNNNN --job job-NNNNNN --resume preserves cell values, formulas, caches and drawing evidence. Check routing for a new code publication before execution.
+- extract_workbooks.py --source src-NNNNNN --job job-NNNNNN --resume preserves cell values, formulas, caches and drawing evidence. Check routing for a new code publication before execution. JSON code counts, root metadata, explicit edition fields and registered edition evidence come from that source; generic version fields are not publication editions. Conflicting editions stay unresolved. Missing values or publication identity receive a source/checksum-specific issue under the active job; no historical issue ID is assumed.
 - link_business_evidence.py --selection FILE --job JOB and index_message_roles.py --selection FILE --job JOB update selected/affected exact definitions. Reconcile candidate evidence retained for curated pages; these parsers do not resolve semantic ambiguities automatically.
 
 Extraction reuse requires the registered source checksum and the expected output files. Existing manually curated or reviewed pages are preserved; generated candidate evidence is not a second canonical definition. Merge necessary substantive changes with precise provenance and set affected review metadata truthfully. Keep business rules distinct from schema restrictions.
 
 For supplied formats without a suitable bounded helper, inspect them with the appropriate document/PDF/spreadsheet/image tools and follow repository templates. Keep temporary extraction/rendering in work and durable assets in the owning output area's assets/<source-id>. Preserve all substantive table rows/notes and complete source figures, including vector/composite drawings. Each substantive diagram needs its original or crop, Mermaid, source location, semantic explanation and actual render/visual evidence. Use the repository's required Mermaid version/notation.
 
-Shared dependency propagation follows explicit participant/flow/component identities and source evidence. A new code publication does not repoint older messages to newer code meanings. Do not equate functional roles with institutions or merge same-label participants.
+Shared dependency propagation follows explicit participant/flow/component identities and source evidence. A changed publication also seeds references citing its replaced source IDs, even before the new bytes have an allocated source ID; those references and their explicit consumers are fingerprinted in the selection. A new code publication does not repoint older messages to newer code meanings. Do not equate functional roles with institutions or merge same-label participants.
 
 ## Validate, record and report
 
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" rebuild --selection "$appliedSelection" --job "$jobId"
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" validate --selection "$appliedSelection" --job "$jobId" --checksums
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" rebuild --selection "$appliedSelection" --job "$jobId"
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" validate --selection "$appliedSelection" --job "$jobId" --checksums
 
 Validation exits 0 when mechanical checks pass, 1 for findings, and 2 for invalid/stale input. Read its errors, conflicts and limitations; pass alone does not mean all substantive review is complete. Unregistered inputs outside the selection are reported separately. Full validate --checksums still checks whole-repository inventory completeness and is a different claim.
 
@@ -76,7 +76,7 @@ Record actual completed work and evidence in tracking/refresh/<job-id>/report.js
 
 Then update the checkpoint:
 
-    python -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" checkpoint-refresh --selection "$appliedSelection" --job "$jobId" --status needs-review --next 'Exact remaining action and its evidence location'
+    python -B -X utf8 "$kbRoot\tools\kb.py" --root "$kbRoot" checkpoint-refresh --selection "$appliedSelection" --job "$jobId" --status needs-review --next 'Exact remaining action and its evidence location'
 
 This command preserves unrelated tracking. It does not provide an automatic reviewed/completed switch. Finish to the evidence/tooling limits and state them clearly. Where every requested check is actually complete, update the job's review state with the evidence required by AGENTS.md; no extraction script grants that state.
 

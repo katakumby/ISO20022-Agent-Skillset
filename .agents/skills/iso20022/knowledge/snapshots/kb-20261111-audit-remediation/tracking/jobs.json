@@ -1,0 +1,988 @@
+{
+  "jobs": [
+    {
+      "job_id": "job-000001",
+      "scope": "shared/reference/code-sets/external-code-sets/edition-unknown-src-000001",
+      "domain": "shared",
+      "message_set": "External code sets",
+      "source_ids": [
+        "src-000001"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/code-sets/external-code-sets/edition-unknown-src-000001/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000001; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000001"
+      ]
+    },
+    {
+      "job_id": "job-000002",
+      "scope": "shared/reference/code-sets/bank-transaction-code-combinations/edition-unknown-src-000002",
+      "domain": "shared",
+      "message_set": "External code sets",
+      "source_ids": [
+        "src-000002"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/code-sets/bank-transaction-code-combinations/edition-unknown-src-000002/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000002; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000002"
+      ]
+    },
+    {
+      "job_id": "job-000003",
+      "scope": "shared/reference/code-sets/bank-transaction-codes/november-2025-v8.0",
+      "domain": "shared",
+      "message_set": "External code sets",
+      "source_ids": [
+        "src-000003"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/code-sets/bank-transaction-codes/november-2025-v8.0/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000002, issue-000033; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000002",
+        "issue-000033"
+      ]
+    },
+    {
+      "job_id": "job-000004",
+      "scope": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026",
+      "domain": "payments",
+      "message_set": "Bank-to-Customer Cash Management",
+      "source_ids": [
+        "src-000004",
+        "src-000005",
+        "src-000006",
+        "src-000007",
+        "src-000008",
+        "src-000009",
+        "src-000010"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/payments/reference/message-sets/bank-to-customer-cash-management/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000060; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000060"
+      ]
+    },
+    {
+      "job_id": "job-000005",
+      "scope": "shared/reference/message-sets/business-application-header/march-2024",
+      "domain": "shared",
+      "message_set": "Business Application Header",
+      "source_ids": [
+        "src-000011",
+        "src-000013"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/message-sets/business-application-header/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000004; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000004"
+      ]
+    },
+    {
+      "job_id": "job-000006",
+      "scope": "shared/reference/message-sets/business-application-header/2021-11-03-v3.0",
+      "domain": "shared",
+      "message_set": "Business Application Header",
+      "source_ids": [
+        "src-000012"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/message-sets/business-application-header/2021-11-03-v3.0/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000003, issue-000004, issue-000017; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000003",
+        "issue-000004",
+        "issue-000017"
+      ]
+    },
+    {
+      "job_id": "job-000007",
+      "scope": "domains/payments/reference/message-sets/cash-management/2024-2025",
+      "domain": "payments",
+      "message_set": "Cash Management",
+      "source_ids": [
+        "src-000014",
+        "src-000015",
+        "src-000016",
+        "src-000017",
+        "src-000018",
+        "src-000019",
+        "src-000020",
+        "src-000021",
+        "src-000022",
+        "src-000023",
+        "src-000024",
+        "src-000025",
+        "src-000026",
+        "src-000027",
+        "src-000028",
+        "src-000029",
+        "src-000030",
+        "src-000031",
+        "src-000032",
+        "src-000033",
+        "src-000034",
+        "src-000035",
+        "src-000036",
+        "src-000037",
+        "src-000038",
+        "src-000039",
+        "src-000040",
+        "src-000041",
+        "src-000042",
+        "src-000043",
+        "src-000044",
+        "src-000045",
+        "src-000046",
+        "src-000047",
+        "src-000048",
+        "src-000049",
+        "src-000050",
+        "src-000051"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/payments/reference/message-sets/cash-management/2024-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000058; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000058"
+      ]
+    },
+    {
+      "job_id": "job-000008",
+      "scope": "domains/securities/reference/message-sets/ccp-clearing/2025-2026",
+      "domain": "securities",
+      "message_set": "CCP Clearing",
+      "source_ids": [
+        "src-000052",
+        "src-000053",
+        "src-000054",
+        "src-000055",
+        "src-000056",
+        "src-000057",
+        "src-000058",
+        "src-000059",
+        "src-000060",
+        "src-000061",
+        "src-000062",
+        "src-000063",
+        "src-000064"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/ccp-clearing/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000014, issue-000030; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000014",
+        "issue-000030"
+      ]
+    },
+    {
+      "job_id": "job-000009",
+      "scope": "domains/securities/reference/message-sets/collateral-management/edition-unknown-src-000065",
+      "domain": "securities",
+      "message_set": "Collateral Management",
+      "source_ids": [
+        "src-000065",
+        "src-000066",
+        "src-000067",
+        "src-000068",
+        "src-000069",
+        "src-000070",
+        "src-000071",
+        "src-000072",
+        "src-000073",
+        "src-000074",
+        "src-000075",
+        "src-000076",
+        "src-000077",
+        "src-000078"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/collateral-management/edition-unknown-src-000065/index.md",
+      "next_action": "Business documentation is not supplied; retain the complete schema references and obtain matching MDR evidence before adding business facts.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": []
+    },
+    {
+      "job_id": "job-000010",
+      "scope": "domains/securities/reference/message-sets/corporate-actions/2025-2026",
+      "domain": "securities",
+      "message_set": "Corporate Actions",
+      "source_ids": [
+        "src-000079",
+        "src-000080",
+        "src-000081",
+        "src-000082",
+        "src-000083",
+        "src-000084",
+        "src-000085",
+        "src-000086",
+        "src-000087",
+        "src-000088",
+        "src-000089",
+        "src-000090",
+        "src-000091",
+        "src-000092",
+        "src-000093",
+        "src-000094"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/corporate-actions/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000016, issue-000020, issue-000022, issue-000024, issue-000026, issue-000027, issue-000061; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000016",
+        "issue-000020",
+        "issue-000022",
+        "issue-000024",
+        "issue-000026",
+        "issue-000027",
+        "issue-000061"
+      ]
+    },
+    {
+      "job_id": "job-000011",
+      "scope": "domains/securities/reference/message-sets/investment-funds/2025-2026",
+      "domain": "securities",
+      "message_set": "Investment Funds",
+      "source_ids": [
+        "src-000095",
+        "src-000096",
+        "src-000097",
+        "src-000098",
+        "src-000099",
+        "src-000100",
+        "src-000101",
+        "src-000102",
+        "src-000103",
+        "src-000104",
+        "src-000105",
+        "src-000106",
+        "src-000107",
+        "src-000108",
+        "src-000109",
+        "src-000110",
+        "src-000111",
+        "src-000112",
+        "src-000113",
+        "src-000114",
+        "src-000115",
+        "src-000116",
+        "src-000117",
+        "src-000118",
+        "src-000119",
+        "src-000120",
+        "src-000121",
+        "src-000122",
+        "src-000123",
+        "src-000124",
+        "src-000125",
+        "src-000126",
+        "src-000127",
+        "src-000128",
+        "src-000129",
+        "src-000130",
+        "src-000131",
+        "src-000132",
+        "src-000133",
+        "src-000134",
+        "src-000135",
+        "src-000136",
+        "src-000137",
+        "src-000138",
+        "src-000139",
+        "src-000140",
+        "src-000141",
+        "src-000142",
+        "src-000143",
+        "src-000144",
+        "src-000145",
+        "src-000146",
+        "src-000147",
+        "src-000148",
+        "src-000149",
+        "src-000150",
+        "src-000151",
+        "src-000152",
+        "src-000153",
+        "src-000154",
+        "src-000155",
+        "src-000156",
+        "src-000157",
+        "src-000158",
+        "src-000159",
+        "src-000160",
+        "src-000161"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/investment-funds/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000008, issue-000034, issue-000037, issue-000040, issue-000041, issue-000042; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000008",
+        "issue-000034",
+        "issue-000037",
+        "issue-000040",
+        "issue-000041",
+        "issue-000042"
+      ]
+    },
+    {
+      "job_id": "job-000012",
+      "scope": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026",
+      "domain": "payments",
+      "message_set": "Payments Clearing and Settlement",
+      "source_ids": [
+        "src-000162",
+        "src-000163",
+        "src-000164",
+        "src-000165",
+        "src-000166",
+        "src-000167",
+        "src-000168",
+        "src-000169",
+        "src-000170",
+        "src-000171",
+        "src-000172"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000025, issue-000054, issue-000059; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000025",
+        "issue-000054",
+        "issue-000059"
+      ]
+    },
+    {
+      "job_id": "job-000013",
+      "scope": "domains/payments/reference/message-sets/payments-initiation/2025-2026",
+      "domain": "payments",
+      "message_set": "Payments Initiation",
+      "source_ids": [
+        "src-000173",
+        "src-000174",
+        "src-000175",
+        "src-000176",
+        "src-000177",
+        "src-000178",
+        "src-000179"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/payments/reference/message-sets/payments-initiation/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000044, issue-000052; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000044",
+        "issue-000052"
+      ]
+    },
+    {
+      "job_id": "job-000014",
+      "scope": "domains/securities/reference/message-sets/post-trade-matching/2024-2025",
+      "domain": "securities",
+      "message_set": "Post-Trade Matching",
+      "source_ids": [
+        "src-000180",
+        "src-000181",
+        "src-000182",
+        "src-000183",
+        "src-000184",
+        "src-000185",
+        "src-000186",
+        "src-000187"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/post-trade-matching/2024-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000031; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000031"
+      ]
+    },
+    {
+      "job_id": "job-000015",
+      "scope": "domains/securities/reference/message-sets/meetings/edition-unknown-src-000188",
+      "domain": "securities",
+      "message_set": "Meetings",
+      "source_ids": [
+        "src-000188",
+        "src-000189",
+        "src-000190",
+        "src-000191",
+        "src-000192",
+        "src-000193",
+        "src-000194",
+        "src-000195"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/meetings/edition-unknown-src-000188/index.md",
+      "next_action": "Business documentation is not supplied; retain the complete schema references and obtain matching MDR evidence before adding business facts.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": []
+    },
+    {
+      "job_id": "job-000016",
+      "scope": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026",
+      "domain": "securities",
+      "message_set": "Settlement and Reconciliation",
+      "source_ids": [
+        "src-000196",
+        "src-000197",
+        "src-000198",
+        "src-000199",
+        "src-000200",
+        "src-000201",
+        "src-000202",
+        "src-000203",
+        "src-000204",
+        "src-000205",
+        "src-000206",
+        "src-000207",
+        "src-000208",
+        "src-000209",
+        "src-000210",
+        "src-000211",
+        "src-000212",
+        "src-000213",
+        "src-000214",
+        "src-000215",
+        "src-000216",
+        "src-000217",
+        "src-000218",
+        "src-000219",
+        "src-000220",
+        "src-000221",
+        "src-000222",
+        "src-000223",
+        "src-000224",
+        "src-000225",
+        "src-000226",
+        "src-000227",
+        "src-000228",
+        "src-000229",
+        "src-000230",
+        "src-000231"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000005, issue-000006, issue-000007, issue-000013, issue-000015, issue-000018, issue-000019, issue-000023; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000005",
+        "issue-000006",
+        "issue-000007",
+        "issue-000013",
+        "issue-000015",
+        "issue-000018",
+        "issue-000019",
+        "issue-000023"
+      ]
+    },
+    {
+      "job_id": "job-000017",
+      "scope": "domains/securities/reference/message-sets/t2s/august-2026",
+      "domain": "securities",
+      "message_set": "TARGET2-Securities",
+      "source_ids": [
+        "src-000232",
+        "src-000233",
+        "src-000234"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s/august-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000009, issue-000062; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000009",
+        "issue-000062"
+      ]
+    },
+    {
+      "job_id": "job-000018",
+      "scope": "domains/securities/reference/message-sets/t2s-cash-account-query-and-report/august-2026",
+      "domain": "securities",
+      "message_set": "T2S CashAccountQueryAndReport",
+      "source_ids": [
+        "src-000235",
+        "src-000236",
+        "src-000293",
+        "src-000294",
+        "src-000295",
+        "src-000350",
+        "src-000351",
+        "src-000352"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-cash-account-query-and-report/august-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000038; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000038"
+      ]
+    },
+    {
+      "job_id": "job-000019",
+      "scope": "shared/reference/message-sets/t2s-administration/march-2024",
+      "domain": "shared",
+      "message_set": "T2S Administration",
+      "source_ids": [
+        "src-000237",
+        "src-000238",
+        "src-000239",
+        "src-000343",
+        "src-000344",
+        "src-000345"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/message-sets/t2s-administration/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000039; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000039"
+      ]
+    },
+    {
+      "job_id": "job-000020",
+      "scope": "domains/securities/reference/message-sets/t2s-limit-utilisation-journal/february-2025",
+      "domain": "securities",
+      "message_set": "T2S LimitUtilisationJournal",
+      "source_ids": [
+        "src-000240",
+        "src-000241",
+        "src-000362",
+        "src-000363",
+        "src-000364"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-limit-utilisation-journal/february-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000048; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000048"
+      ]
+    },
+    {
+      "job_id": "job-000021",
+      "scope": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024",
+      "domain": "securities",
+      "message_set": "T2S IntraBalanceMovement",
+      "source_ids": [
+        "src-000242",
+        "src-000243",
+        "src-000244",
+        "src-000245",
+        "src-000246",
+        "src-000247",
+        "src-000248",
+        "src-000251",
+        "src-000252",
+        "src-000253",
+        "src-000254",
+        "src-000255",
+        "src-000256",
+        "src-000257",
+        "src-000258",
+        "src-000359",
+        "src-000360",
+        "src-000361"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000047, issue-000062; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000047",
+        "issue-000062"
+      ]
+    },
+    {
+      "job_id": "job-000022",
+      "scope": "domains/securities/reference/message-sets/t2s-billing/december-2025",
+      "domain": "securities",
+      "message_set": "T2S Billing",
+      "source_ids": [
+        "src-000249",
+        "src-000250",
+        "src-000346",
+        "src-000347",
+        "src-000348"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-billing/december-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000038; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000038"
+      ]
+    },
+    {
+      "job_id": "job-000023",
+      "scope": "domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024",
+      "domain": "securities",
+      "message_set": "T2S CollateralReporting",
+      "source_ids": [
+        "src-000259",
+        "src-000260",
+        "src-000356",
+        "src-000357",
+        "src-000358"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000045; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000045"
+      ]
+    },
+    {
+      "job_id": "job-000024",
+      "scope": "shared/reference/message-sets/t2s-business-file-header/june-2024",
+      "domain": "shared",
+      "message_set": "T2S BusinessFileHeader",
+      "source_ids": [
+        "src-000261",
+        "src-000349"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "shared/reference/message-sets/t2s-business-file-header/june-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000009; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000009"
+      ]
+    },
+    {
+      "job_id": "job-000025",
+      "scope": "domains/securities/reference/message-sets/t2s-securities-reference-data/june-2021",
+      "domain": "securities",
+      "message_set": "T2S SecuritiesReferenceData",
+      "source_ids": [
+        "src-000262",
+        "src-000263",
+        "src-000264",
+        "src-000265",
+        "src-000266",
+        "src-000267",
+        "src-000268",
+        "src-000284",
+        "src-000285",
+        "src-000288",
+        "src-000289",
+        "src-000377",
+        "src-000379"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-securities-reference-data/june-2021/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000010, issue-000029, issue-000051; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000010",
+        "issue-000029",
+        "issue-000051"
+      ]
+    },
+    {
+      "job_id": "job-000026",
+      "scope": "domains/securities/reference/message-sets/t2s-party-reference-data/march-2024",
+      "domain": "securities",
+      "message_set": "T2S PartyReferenceData",
+      "source_ids": [
+        "src-000269",
+        "src-000270",
+        "src-000271",
+        "src-000272",
+        "src-000277",
+        "src-000286",
+        "src-000296",
+        "src-000297",
+        "src-000298",
+        "src-000368",
+        "src-000369",
+        "src-000370"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-party-reference-data/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000046; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000046"
+      ]
+    },
+    {
+      "job_id": "job-000027",
+      "scope": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019",
+      "domain": "securities",
+      "message_set": "T2S SecuritiesAccountReferenceData",
+      "source_ids": [
+        "src-000273",
+        "src-000274",
+        "src-000275",
+        "src-000276",
+        "src-000278",
+        "src-000287",
+        "src-000290",
+        "src-000291",
+        "src-000292",
+        "src-000371",
+        "src-000372",
+        "src-000373"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-securities-account-reference-data/december-2019/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000050; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000050"
+      ]
+    },
+    {
+      "job_id": "job-000028",
+      "scope": "domains/securities/reference/message-sets/t2s-collateral-management-reference-data/may-2025",
+      "domain": "securities",
+      "message_set": "T2S CollateralManagementReferenceData",
+      "source_ids": [
+        "src-000279",
+        "src-000280",
+        "src-000281",
+        "src-000282",
+        "src-000283",
+        "src-000299",
+        "src-000306",
+        "src-000307",
+        "src-000353",
+        "src-000354",
+        "src-000355"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-collateral-management-reference-data/may-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000038, issue-000043; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000038",
+        "issue-000043"
+      ]
+    },
+    {
+      "job_id": "job-000029",
+      "scope": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024",
+      "domain": "securities",
+      "message_set": "T2S LinkReferenceData",
+      "source_ids": [
+        "src-000300",
+        "src-000301",
+        "src-000302",
+        "src-000303",
+        "src-000304",
+        "src-000305",
+        "src-000365",
+        "src-000366",
+        "src-000367"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000049, issue-000053; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000049",
+        "issue-000053"
+      ]
+    },
+    {
+      "job_id": "job-000030",
+      "scope": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026",
+      "domain": "securities",
+      "message_set": "T2S SecuritiesAndPenaltyReporting",
+      "source_ids": [
+        "src-000308",
+        "src-000309",
+        "src-000310",
+        "src-000318",
+        "src-000319",
+        "src-000374",
+        "src-000375",
+        "src-000376"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000057; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000057"
+      ]
+    },
+    {
+      "job_id": "job-000031",
+      "scope": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025",
+      "domain": "securities",
+      "message_set": "T2S SettlementRestrictions",
+      "source_ids": [
+        "src-000311",
+        "src-000312",
+        "src-000313",
+        "src-000314",
+        "src-000315",
+        "src-000316",
+        "src-000317",
+        "src-000380",
+        "src-000381",
+        "src-000382"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-settlement-restrictions/september-2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000056, issue-000062; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000056",
+        "issue-000062"
+      ]
+    },
+    {
+      "job_id": "job-000032",
+      "scope": "domains/securities/reference/message-sets/fitrr/2025",
+      "domain": "securities",
+      "message_set": "Transactions and Financial Instruments Data Reporting",
+      "source_ids": [
+        "src-000320",
+        "src-000321",
+        "src-000322",
+        "src-000323",
+        "src-000324",
+        "src-000325",
+        "src-000326",
+        "src-000327",
+        "src-000328",
+        "src-000329",
+        "src-000330",
+        "src-000331",
+        "src-000332",
+        "src-000333",
+        "src-000334",
+        "src-000335",
+        "src-000336",
+        "src-000337",
+        "src-000338",
+        "src-000339",
+        "src-000340",
+        "src-000341",
+        "src-000342"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/fitrr/2025/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000032, issue-000035, issue-000036, issue-000055; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000032",
+        "issue-000035",
+        "issue-000036",
+        "issue-000055"
+      ]
+    },
+    {
+      "job_id": "job-000033",
+      "scope": "domains/securities/reference/message-sets/t2s-securities-reference-data/march-2024",
+      "domain": "securities",
+      "message_set": "T2S SecuritiesReferenceData",
+      "source_ids": [
+        "src-000378"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/message-sets/t2s-securities-reference-data/march-2024/index.md",
+      "next_action": "Reuse completed extraction and recorded fidelity checks. Resolve source-specific issues issue-000010; consult corpus assessment for remaining native/internal or whole-layout review.",
+      "processing_complete_to_recorded_limits": true,
+      "source_issue_ids": [
+        "issue-000010"
+      ]
+    },
+    {
+      "job_id": "job-000034",
+      "scope": "pilot:sese.023.001.13",
+      "domain": "securities",
+      "message_set": "sese.023.001.13 pilot with shared context",
+      "source_ids": [
+        "src-000196",
+        "src-000197",
+        "src-000198",
+        "src-000214"
+      ],
+      "status": "needs-review",
+      "last_updated": "2026-11-09",
+      "output": "domains/securities/reference/messages/sese.023.001.13/business.md",
+      "next_action": "Reuse complete pilot schema, tables, participant/flow and diagram evidence. Resolve historical-example applicability, conflicting cancellation semantics and conceptual-model ambiguities; consult issues5/6/13/15/18 and native limits before promoting the whole pilot to reviewed.",
+      "processing_complete_to_recorded_limits": true
+    },
+    {
+      "job_id": "job-000035",
+      "scope": "audit-remediation:20261110-202636",
+      "domain": "shared, securities, payments",
+      "message_set": "Bounded repair of 13 independent audit findings",
+      "source_ids": [],
+      "status": "in-progress",
+      "last_updated": "2026-11-11",
+      "output": "tracking/reviews/audit-remediation-job-000035.json",
+      "finding_ids": [
+        "RFS-001",
+        "RFS-002",
+        "RFS-003",
+        "RET-001",
+        "RET-002",
+        "RET-003",
+        "RET-004",
+        "IDX-001",
+        "SOURCE-001",
+        "SOURCE-002",
+        "SOURCE-003",
+        "MDA-001",
+        "MDA-002"
+      ],
+      "next_action": "Complete focused code/reference fixes, isolated regression checks and immutable snapshot publication. Preserve original bytes and existing source review limitations."
+    }
+  ]
+}
