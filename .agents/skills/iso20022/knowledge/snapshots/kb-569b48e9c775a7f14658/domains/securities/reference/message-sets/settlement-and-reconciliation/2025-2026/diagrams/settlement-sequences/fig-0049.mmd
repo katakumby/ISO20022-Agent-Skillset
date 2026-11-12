@@ -1,9 +1,0 @@
-sequenceDiagram
-  participant A as Securities Financing Instructing Party
-  participant B as Securities Financing Servicing Party/Settlement Executing Party
-  A->>B: SecuritiesSettlementTransactionInstruction(RF)
-  opt Optional
-    B->>A: SecuritiesSettlementTransactionStatusAdvice
-  end
-  B->>A: SecuritiesSettlementTransactionConfirmation
-  B->>A: SecuritiesFinancingStatusAdvice

@@ -1,8 +1,0 @@
-sequenceDiagram
-  participant A as Executing Servicing Party
-  participant B as Third Party
-  participant C as Executing Servicing Party
-  C->>A: PortfolioTransfer (Delivering settlement details)
-  A->>C: PortfolioTransfer (Receiving settlement details)
-  A->>B: SecuritiesSettlementInstruction (Delivery free)
-  C->>B: SecuritiesSettlementInstruction (Receipt free)

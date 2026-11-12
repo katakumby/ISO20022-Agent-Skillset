@@ -1,9 +1,0 @@
-sequenceDiagram
-participant A as System Direct Member
-participant B as Transaction Administrator
-A->>B: GetTransaction
-B->>A: Receipt
-activate B
-Note right of B: Execution Delay
-B->>A: ReturnTransaction
-deactivate B

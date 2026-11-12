@@ -1,8 +1,0 @@
-sequenceDiagram
-  actor RE as Reporting Entity
-  actor CA as Competent Authority
-  actor RCA as Relevant Competent Authority
-  RE->>CA: TransactionReportingMessage
-  CA->>RE: TransactionReportingMessagesStatusAdvice
-  CA->>RCA: TransactionReportingMessage
-  RCA->>CA: TransactionReportingMessagesStatusAdvice

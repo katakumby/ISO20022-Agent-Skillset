@@ -1,9 +1,0 @@
-%%{init: {"sequence": {"mirrorActors": false,"width": 250}}}%%
-sequenceDiagram
-participant A as Instructing Party
-participant B as Servicing Party
-A->>B: Instruct Settlement Condition Modification Request (sese.030)
-B-->>A: Report processing status (sese.031)
-A->>B: Request Securities Settlement Modification Request Query (semt.030)
-B->>A: Provide Securities Settlement Modification Report (semt.031)
-Note over A,B: PUSH/PULL

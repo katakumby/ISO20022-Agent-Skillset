@@ -1,8 +1,0 @@
-flowchart LR
-  subgraph S["Account Servicer"]
-    START(("Start")) --> A("Report instructed/uninstructed balance (per safekeeping account for 1 or more CA events)")
-  end
-  subgraph O["Account Owner"]
-    B("Process Report")
-  end
-  A --> B
