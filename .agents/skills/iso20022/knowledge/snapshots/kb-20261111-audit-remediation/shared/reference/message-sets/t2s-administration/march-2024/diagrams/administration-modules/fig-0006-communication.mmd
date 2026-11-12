@@ -1,0 +1,79 @@
+flowchart TB
+subgraph group0["T2S System User"]
+uSend(["A2A"])
+uAckReceive(["A2A"])
+uAckSend(["A2A"])
+uReceive(["A2A"])
+end
+subgraph group1["Communication Module - A2A"]
+encIn["Encrypted inbound communication A2A"]
+recv(["1 - Receive/Log Communication A2A"])
+recvFork@{ shape: fork }
+techAckOut["Technical Acknowledgement"]
+auth(["2 - Check Sender Authentication and Decryption A2A"])
+authD{"#160;"}
+store(["3 - Store Communication Content A2A"])
+storeD{"#160;"}
+storedMessage["Stored inbound communication - A2A individual message"]
+storedFile["Stored inbound communication - A2A file"]
+formatted["Formatted outbound communication A2A"]
+queueMerge{"#160;"}
+outCheck(["4 - Check for A2A Outbound Queuing"])
+outQueueD{"#160;"}
+outQueue(["5 - Queue A2A Outbound Communication"])
+restart(["6 - Restart Queued A2A Outbound Communication"])
+extBar@{ shape: fork }
+extMerge{"#160;"}
+sendMerge{"#160;"}
+cert(["7 - Assign Certificate and Encryption A2A"])
+techAckIn["Technical Acknowledgement"]
+transmitMerge{"#160;"}
+transmit(["8 - Transmit Communication A2A"])
+encOut["Encrypted outbound communication A2A"]
+end
+subgraph group2["Inbound Processing Module – A2A"]
+file(["1 - A2A File Validation and Splitting"])
+msgMerge{"#160;"}
+end
+subgraph group3["Outbound Processing Module – A2A"]
+create(["7 - Create A2A Outbound Communication"])
+end
+subgraph group4["Adjacent modules and system events"]
+available["External system available event"]
+unavailable["External system unavailable event"]
+end
+uSend --> encIn
+encIn --> recv
+recv --> recvFork
+recvFork --> auth
+auth --> authD
+recvFork --> techAckOut
+techAckOut --> uAckReceive
+authD -->|"Not authenticated"| sendMerge
+authD -->|"Authenticated"| store
+store --> storeD
+storeD -->|"Message received"| storedMessage
+storeD -->|"File received"| storedFile
+storedFile --> file
+storedMessage --> msgMerge
+create --> formatted
+formatted --> queueMerge
+queueMerge --> outCheck
+outCheck --> outQueueD
+outQueueD -->|"Outbound Queuing"| outQueue
+outQueueD -->|"No Outbound Queuing"| sendMerge
+available --> extBar
+unavailable --> extMerge
+extBar --> extMerge
+extBar --> restart
+extMerge --> queueMerge
+restart --> sendMerge
+sendMerge --> cert
+cert --> transmitMerge
+transmitMerge --> transmit
+transmit --> encOut
+encOut --> uReceive
+uAckSend --> techAckIn
+techAckIn --> transmitMerge
+style extBar fill:#222,stroke:#222
+style recvFork fill:#222,stroke:#222

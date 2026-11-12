@@ -1,0 +1,13 @@
+flowchart TB
+ subgraph O["AccountOwner"]
+ Receive("Receive Notification") --> End(((" ")))
+ end
+ subgraph S["AccountServicer"]
+ Start((" ")) --> Process("Process transaction") --> Book("Book cash movement") --> Settle("Interbank clearing and settlement")
+ Process --> N1("Send notification 1")
+ Book --> N2("Send notification2")
+ Settle --> N3("Send notification3")
+ end
+ N1 --> Receive
+ N2 --> Receive
+ N3 --> Receive

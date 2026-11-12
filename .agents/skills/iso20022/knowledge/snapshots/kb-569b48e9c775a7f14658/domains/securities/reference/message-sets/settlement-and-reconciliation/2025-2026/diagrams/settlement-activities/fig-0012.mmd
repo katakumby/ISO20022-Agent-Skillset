@@ -1,0 +1,66 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    IS@{shape: f-circ, label: " "}
+    IF@{shape: framed-circle, label: " "}
+    IA("Instruct settlement")
+    IM("Monitor Matching and Settlement Process")
+    ID{"Settled?"}
+    IU("Update Status")
+    IX(["Settle instruction"])
+    IS --> IA
+    IM --> ID
+    ID -->|No| IU
+    IU --> IM
+    IP{"Partially Settled?"}
+    IPart(["Partially Settle"])
+    ID -->|Yes| IP
+    IP -->|No| IX
+    IP -->|Yes| IPart
+    IPart --> IM
+    IJ@{shape: fork, label: " "}
+    IJ --> IM
+    IX --> IF
+  end
+  subgraph E["Executing/Servicing Party"]
+    EP("Process instruction")
+    ED{"Processed?"}
+    EU("Update Status")
+    EM("Matching and Settlement Process")
+    ES{"Settled?"}
+    UP("Update Status")
+    EX(["Settle instruction"])
+    EF@{shape: framed-circle, label: " "}
+    EP --> ED
+    ED -->|No| EU
+    ED -->|Yes| EM
+    EM --> ES
+    ES -->|No| UP
+    UP --> EM
+    EPartDecision{"Partially Settled?"}
+    EPart(["Partially Settle"])
+    EJ@{shape: fork, label: " "}
+    ES -->|Yes| EPartDecision
+    EPartDecision -->|No| EX
+    EPartDecision -->|Yes| EPart
+    EPart --> EM
+    EPart --> EJ
+    EX --> EJ
+    EX --> EF
+  end
+  IA --> EP
+  EU --> IA
+  UP --> IJ
+  EJ --> IJ
+  classDef main fill:#d1d8b8,stroke:#111,color:#111
+  classDef status fill:#c0d1e5,stroke:#111,color:#111
+  class IA,IM,ID,IX,EP,ED,EM,ES,EX main
+  class IU,EU,UP status
+  classDef start fill:#4472c4,stroke:#4472c4
+  classDef terminal fill:#fff,stroke:#111,stroke-width:3px
+  classDef synchronization fill:#111,stroke:#111
+  class IS start
+  class IF,EF terminal
+  class IJ synchronization
+  class EJ synchronization
+  class IP,IPart,EPartDecision,EPart main

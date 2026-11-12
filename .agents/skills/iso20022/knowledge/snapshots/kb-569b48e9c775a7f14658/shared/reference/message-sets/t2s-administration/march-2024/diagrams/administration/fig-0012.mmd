@@ -1,0 +1,30 @@
+flowchart TB
+subgraph SM["System Member"]
+start(("Start"))
+instruct(["Instruct Resend Message Request"])
+endfail((("End")))
+endok((("End")))
+end
+subgraph STA["System Transaction Administrator"]
+plaus(["Process CheckPlausibility"])
+permission(["Process CheckPermission"])
+available(["Process Search for requested Data"])
+error(["Process Deliver Error Message"])
+deliver(["Process Deliver duplicate of requested Message"])
+p{"Check successful?"}
+r{"Check successful?"}
+v{"Search successful?"}
+end
+start --> instruct
+instruct --> plaus
+plaus --> p
+p -->|"No"| error
+p -->|"Yes"| permission
+permission --> r
+r -->|"No"| error
+r -->|"Yes"| available
+available --> v
+v -->|"No"| error
+v -->|"Yes"| deliver
+error --> endfail
+deliver --> endok

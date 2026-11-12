@@ -1,0 +1,66 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Settlement and Reconciliation"
+source_ids: ["src-000197"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["35 Message Items Types", "35.1 MessageComponents", "35.1.20 Price", "35.1.20.1 PriceInformation30", "35.1.20.1.1 Type <Tp>"]
+file_pages: [1707]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 35.1.20.1.1 Type <Tp>
+
+Source: [src-000197](../../../../../../../../../evidence/omitted/e96bb98c659322ed5684b325.md). Locator: one-based file pages 1707 to 1707.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 1707
+
+```text
+Constraints
+• ValueRule
+If TypeOfPriceCode is not MRKT, then Value may not be expressed with UnknownIndicator.
+35.1.20.1.1  Type <Tp>
+Presence: [1..1]
+Definition: Specifies the type of price and information about the price.
+Type <Tp> contains one of the following elements (see "TypeOfPrice48Choice" on page 1708 for
+details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Code <Cd> [1..1] CodeSet 1708
+Or}   Proprietary <Prtry> [1..1] ± 1709
+35.1.20.1.2  ValueType <ValTp>
+Presence: [1..1]
+Definition: Type of value in which the price is expressed.
+ValueType <ValTp> contains one of the following elements (see "YieldedOrValueType1Choice" on
+page 1591 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Yielded <Yldd> [1..1] Indicator 1591
+Or}   ValueType <ValTp> [1..1] CodeSet 1591
+35.1.20.1.3  Value <Val>
+Presence: [1..1]
+Definition: Value of the price, for example, as a currency and value.
+Value <Val> contains one of the following elements (see "PriceRateOrAmountOrUnknown2Choice" on
+page 1713 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Rate <Rate> [1..1] Rate 1713
+Or   Amount <Amt> [1..1] Amount C2 1713
+Or}   UnknownIndicator <UknwnInd> [1..1] Indicator 1714
+35.1.20.1.4  SourceOfPrice <SrcOfPric>
+Presence: [0..1]
+Definition: Place from which the price was obtained.
+Impacted by: C35 "SmartContractAutomatedPricingRule"
+Approved by the Securities SEG on 27 January 2026 Message Items Types
+Settlement And Reconciliation - Maintenance 2025 - 2026 1707 March 2026
+```
+

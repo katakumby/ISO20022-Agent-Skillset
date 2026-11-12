@@ -1,0 +1,12 @@
+sequenceDiagram
+  actor RE as Reporting Entity
+  actor CA as Competent Authority
+  actor SA as Supervisory Authority
+  RE-)CA: FinancialInstrumentReportingTradingVolumeCapDataReport
+  alt Competent Authority Validation Checks (Schema#59; Filename#59; Reporting Entity) — Validation Successful
+  CA->>SA: FinancialInstrumentReportingTradingVolumeCapDataReport
+  SA->>CA: FinancialInstrumentReportingStatusAdvice
+  CA->>RE: FinancialInstrumentReportingStatusAdvice
+  else Validation Failure
+  CA->>RE: FinancialInstrumentReportingStatusAdvice
+  end

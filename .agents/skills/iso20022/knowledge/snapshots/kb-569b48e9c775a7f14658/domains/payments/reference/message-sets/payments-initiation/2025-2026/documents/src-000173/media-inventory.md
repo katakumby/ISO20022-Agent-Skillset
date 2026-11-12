@@ -1,0 +1,47 @@
+---
+template: false
+document_kind: "source-figure-inventory"
+review_status: "needs-review"
+domain: "payments"
+source_ids: ["src-000173"]
+source_editions: ["March 2026"]
+---
+
+# Original media and visual review inventory
+
+All extracted originals remain unchanged. EMF/WMF previews are separate derived rasterizations. The complete Word figure may also contain text or relationships outside a single asset.
+
+| Original asset | Preview | Source occurrences | Canonical reconstruction | Disposition |
+| --- | --- | --- | --- | --- |
+| [image20.png](../../../../../../../../evidence/omitted/2839038e260d970ca18d9594.md) | [Preview](../../../../../../../../evidence/omitted/2839038e260d970ca18d9594.md) | direct-body paragraph P236; BusinessTransactions / Negative Customer and FIToFIPaymentStatusReport with Direct Debit / Negative CustomerPaymentStatusReport - Creditor Agent  |  | pending-visual-classification |
+| [image21.png](../../../../../../../../evidence/omitted/7e68ea5116779c12e3883ba1.md) | [Preview](../../../../../../../../evidence/omitted/7e68ea5116779c12e3883ba1.md) | direct-body paragraph P241; BusinessTransactions / Negative Customer and FIToFIPaymentStatusReport with Direct Debit / Negative CustomerPaymentStatusReport - Clearing And Settlement Agent |  | pending-visual-classification |
+| [image22.png](../../../../../../../../evidence/omitted/983b9ad482e398586f4c8010.md) | [Preview](../../../../../../../../evidence/omitted/983b9ad482e398586f4c8010.md) | direct-body paragraph P251; BusinessTransactions / Negative Customer and FIToFIPaymentStatusReport with Direct Debit / Negative FIToFIPaymentStatusReport - Debtor Agent |  | pending-visual-classification |
+| [image23.png](../../../../../../../../evidence/omitted/ab13f18d15ad702cd004ad64.md) | [Preview](../../../../../../../../evidence/omitted/ab13f18d15ad702cd004ad64.md) | direct-body paragraph P268; BusinessTransactions / Positive Customer and FIToFIPaymentStatusReport with Direct Debit / Confirmation of Processability of CustomerDirectDebitInitiation |  | pending-visual-classification |
+| [image24.png](../../../../../../../../evidence/omitted/0e69d486d34129b06bbff544.md) | [Preview](../../../../../../../../evidence/omitted/0e69d486d34129b06bbff544.md) | direct-body paragraph P282; BusinessTransactions / PaymentReturn with Direct Debit / PaymentReturn Initiated by Debtor Agent |  | pending-visual-classification |
+| [image25.png](../../../../../../../../evidence/omitted/408e7c2dadcbfa4cae067003.md) | [Preview](../../../../../../../../evidence/omitted/408e7c2dadcbfa4cae067003.md) | direct-body paragraph P303; BusinessTransactions / Customer Payment Reversal with Direct Debit |  | pending-visual-classification |
+| [image1.emf](../../../../../../../../evidence/omitted/592a72faf48c8ea779277636.md) | [Preview](../../../../../../../../evidence/omitted/ae4c6ea0f6a019fec5e26c8a.md) | direct-body paragraph P109; BusinessProcess Description / Customer-to-Bank Payment Order |  | pending-visual-classification |
+| [image2.emf](../../../../../../../../evidence/omitted/f598b484c5221b35a18edb08.md) | [Preview](../../../../../../../../evidence/omitted/ea87a0078df7886bf69dce97.md) | direct-body paragraph P127; BusinessProcess Description / Customer-to-Bank Direct Debit |  | pending-visual-classification |
+| [image3.png](../../../../../../../../evidence/omitted/919471caa351d54c746087c5.md) | [Preview](../../../../../../../../evidence/omitted/919471caa351d54c746087c5.md) | direct-body table T22 row 2 cell 1; Description of BusinessActivities |  | pending-visual-classification |
+| [image4.png](../../../../../../../../evidence/omitted/59d9cc6ecbfb680fbb93dd43.md) | [Preview](../../../../../../../../evidence/omitted/59d9cc6ecbfb680fbb93dd43.md) | direct-body table T22 row 3 cell 1; Description of BusinessActivities |  | pending-visual-classification |
+| [image5.png](../../../../../../../../evidence/omitted/1b915b6d8745e5b50646adbb.md) | [Preview](../../../../../../../../evidence/omitted/1b915b6d8745e5b50646adbb.md) | direct-body table T22 row 4 cell 1; Description of BusinessActivities |  | pending-visual-classification |
+| [image6.png](../../../../../../../../evidence/omitted/7c532de90298824d69cb65f0.md) | [Preview](../../../../../../../../evidence/omitted/7c532de90298824d69cb65f0.md) | direct-body table T22 row 5 cell 1; Description of BusinessActivities |  | pending-visual-classification |
+| [image7.png](../../../../../../../../evidence/omitted/9e3b298550c343825d1de3f2.md) | [Preview](../../../../../../../../evidence/omitted/9e3b298550c343825d1de3f2.md) | direct-body paragraph P139; Description of BusinessActivities / Customer to Bank Payment Order |  | pending-visual-classification |
+| [image8.png](../../../../../../../../evidence/omitted/7a928d2538d3351fafd14208.md) | [Preview](../../../../../../../../evidence/omitted/7a928d2538d3351fafd14208.md) | direct-body paragraph P141; Description of BusinessActivities / Customer to Bank Payment Order |  | pending-visual-classification |
+| [image9.emf](../../../../../../../../evidence/omitted/723677a9cfca2d6c16d4a45c.md) | [Preview](../../../../../../../../evidence/omitted/60b9b8658ab003ac939d01b3.md) | direct-body paragraph P145; Description of BusinessActivities / Customer to Bank Payment Order |  | pending-visual-classification |
+| [image10.png](../../../../../../../../evidence/omitted/9c6e5cef0f7405916566cd1d.md) | [Preview](../../../../../../../../evidence/omitted/9c6e5cef0f7405916566cd1d.md) | direct-body paragraph P148; Description of BusinessActivities / Customer-to-bank Direct Debit |  | pending-visual-classification |
+| [image11.png](../../../../../../../../evidence/omitted/8026b9e69bdb9ed495931ccc.md) | [Preview](../../../../../../../../evidence/omitted/8026b9e69bdb9ed495931ccc.md) | direct-body paragraph P150; Description of BusinessActivities / Customer-to-bank Direct Debit |  | pending-visual-classification |
+| [image12.png](../../../../../../../../evidence/omitted/b1a36615baf0f80cf09eb53b.md) | [Preview](../../../../../../../../evidence/omitted/b1a36615baf0f80cf09eb53b.md) | direct-body paragraph P152; Description of BusinessActivities / Customer-to-bank Direct Debit |  | pending-visual-classification |
+| [image13.png](../../../../../../../../evidence/omitted/9d36ab2ab83ef10e724f25fd.md) | [Preview](../../../../../../../../evidence/omitted/9d36ab2ab83ef10e724f25fd.md) | direct-body paragraph P171; BusinessTransactions / CustomerCreditTransferInitiation / One Actor plays roles of Initiating Party, Debtor and Ultimate Debtor, Second actor plays roles of Creditor and Ultimate Creditor |  | pending-visual-classification |
+| [image14.png](../../../../../../../../evidence/omitted/98767852e1af4e2d66c6ddf7.md) | [Preview](../../../../../../../../evidence/omitted/98767852e1af4e2d66c6ddf7.md) | direct-body paragraph P174; BusinessTransactions / CustomerCreditTransferInitiation / One actor plays roles of Initiating Party and Debtor, second actor plays role of Ultimate Debtor |  | pending-visual-classification |
+| [image15.png](../../../../../../../../evidence/omitted/b0fbf1a1ff9b556bf60c27d2.md) | [Preview](../../../../../../../../evidence/omitted/b0fbf1a1ff9b556bf60c27d2.md) | direct-body paragraph P177; BusinessTransactions / CustomerCreditTransferInitiation / Three Different actors play the roles of Initiating Party, Debtor and Ultimate Debtor: |  | pending-visual-classification |
+| [image16.png](../../../../../../../../evidence/omitted/260c8b0e5fb25d86a6fffada.md) | [Preview](../../../../../../../../evidence/omitted/260c8b0e5fb25d86a6fffada.md) | direct-body paragraph P190; BusinessTransactions / CustomerCreditTransferInitiation - Relay / One actor plays roles of Initiating Party, Debtor and Ultimate Debtor |  | pending-visual-classification |
+| [image17.png](../../../../../../../../evidence/omitted/c07fd8796dee55e73a50e562.md) | [Preview](../../../../../../../../evidence/omitted/c07fd8796dee55e73a50e562.md) | direct-body paragraph P193; BusinessTransactions / CustomerCreditTransferInitiation - Relay / One actor plays roles of Initiating Party and Debtor, Second Actor plays role of Ultimate Debtor |  | pending-visual-classification |
+| [image18.png](../../../../../../../../evidence/omitted/3759237bac241fddc4e69eed.md) | [Preview](../../../../../../../../evidence/omitted/3759237bac241fddc4e69eed.md) | direct-body paragraph P196; BusinessTransactions / CustomerCreditTransferInitiation - Relay / One actor plays roles of Initiating Party and Ultimate Debtor, Second Actor plays role of Debtor |  | pending-visual-classification |
+| [image19.png](../../../../../../../../evidence/omitted/8f04aa8660cf7c486712cd60.md) | [Preview](../../../../../../../../evidence/omitted/8f04aa8660cf7c486712cd60.md) | direct-body paragraph P205; BusinessTransactions / CustomerDirectDebitInitiation and FIToFICustomerDirectDebit  |  | pending-visual-classification |
+
+
+## Complete-figure requirements
+
+- Contact sheets are triage aids; readable full-size source/derived previews must be inspected before reconstructing labels or relationships.
+- w:object, w:drawing and grouped content can combine separately stored images and labels. Full-document page rendering remains required when an extracted asset omits relationships or text.
+- Unmapped media may occur in headers, footers, alternate drawings or unused package parts. No decorative exclusion is inferred.

@@ -1,0 +1,41 @@
+{
+  "source_id": "src-000232",
+  "source_sha256": "c750f67ab2aa7c8c37cb44a2e1f3edfb79455a2527c86e2fd5fff0dcef391870",
+  "parent_pdf": "work/docx-render/src-000232/document.pdf",
+  "parent_pdf_sha256": "18a393078f597d1e80fa161ae37155c9e0c973720566bdc0f37ad9ef7f80cb0c",
+  "renderer": "pypdfium2 5.14.0",
+  "dpi": 100,
+  "pages": [
+    {
+      "file_page": 1,
+      "path": "domains/securities/assets/src-000232/word-page-context/page-0001.png",
+      "sha256": "99ee3b3b64a50c087b0f1296853fe5bc6762ba1d6abd7b77a174e1823edbfa7a",
+      "width": 827,
+      "height": 1170
+    },
+    {
+      "file_page": 2,
+      "path": "domains/securities/assets/src-000232/word-page-context/page-0002.png",
+      "sha256": "56973baa74f3b7d83449a477aa0265f28e11b7e508cd78e1a8664f3f07f955ff",
+      "width": 827,
+      "height": 1170
+    },
+    {
+      "file_page": 3,
+      "path": "domains/securities/assets/src-000232/word-page-context/page-0003.png",
+      "sha256": "309b57d04bf93d3fd51b23c8314aba344679dc23e088ebba3082788ec4c0583e",
+      "width": 827,
+      "height": 1170
+    }
+  ],
+  "contacts": [
+    "domains/securities/assets/src-000232/word-page-context/contact-0001-0003.png"
+  ],
+  "visual_review": "pass",
+  "limitations": [
+    "Word-derived layout, not a publisher PDF. Local Word STYLEREF header artifacts remain separately recorded.",
+    "Contacts support complete-page visual inventory, not automatic verification of text or every table cell."
+  ],
+  "visual_review_date": "2026-11-09",
+  "review_scope": "All3 pages, all file-list entries and absence of tables/figures checked against source records."
+}

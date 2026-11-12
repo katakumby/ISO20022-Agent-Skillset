@@ -1,0 +1,1805 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000310",
+  "sha256": "81634efe136494962b16111899a0aa331d5c720b62f1eee09e1d088c499cbd26",
+  "message_id": "semt.027.001.01",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.027.001.01",
+  "message_name": "SecuritiesSettlementTransactionQueryResponseV01",
+  "domain": "securities",
+  "set_path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026",
+  "counts": {
+    "schema": 1,
+    "element": 343,
+    "complexType": 110,
+    "choice": 64,
+    "simpleType": 65,
+    "restriction": 65,
+    "enumeration": 512,
+    "sequence": 45,
+    "fractionDigits": 4,
+    "totalDigits": 4,
+    "minInclusive": 2,
+    "simpleContent": 1,
+    "extension": 1,
+    "attribute": 1,
+    "pattern": 12,
+    "minLength": 8,
+    "maxLength": 8,
+    "any": 1
+  },
+  "top_level_declarations": 176,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "AcknowledgedAcceptedStatus21Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AcknowledgedAcceptedStatus21Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AcknowledgedAcceptedStatus21Choice']",
+      "line": 5,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0002.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0003",
+      "name": "AcknowledgementReason12Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AcknowledgementReason12Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AcknowledgementReason12Choice']",
+      "line": 11,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0003.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0004",
+      "name": "AcknowledgementReason5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AcknowledgementReason5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AcknowledgementReason5Code']",
+      "line": 17,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0004.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0005",
+      "name": "AcknowledgementReason9",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AcknowledgementReason9",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AcknowledgementReason9']",
+      "line": 30,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0005.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0006",
+      "name": "ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyAndAmount_SimpleType']",
+      "line": 36,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0006.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0007",
+      "name": "ActiveOrHistoricCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ActiveOrHistoricCurrencyAndAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveOrHistoricCurrencyAndAmount']",
+      "line": 43,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0007.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0008",
+      "name": "ActiveOrHistoricCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ActiveOrHistoricCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyCode']",
+      "line": 50,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0008.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0009",
+      "name": "AddressType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AddressType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AddressType2Code']",
+      "line": 55,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0009.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0010",
+      "name": "AmountAndDirection20",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AmountAndDirection20",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AmountAndDirection20']",
+      "line": 65,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0010.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0011",
+      "name": "AnyBICDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AnyBICDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICDec2014Identifier']",
+      "line": 71,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0011.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0012",
+      "name": "AutoBorrowing1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AutoBorrowing1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AutoBorrowing1Code']",
+      "line": 76,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0012.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0013",
+      "name": "AutomaticBorrowing6Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}AutomaticBorrowing6Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AutomaticBorrowing6Choice']",
+      "line": 83,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0013.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0014",
+      "name": "BeneficialOwnership4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}BeneficialOwnership4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BeneficialOwnership4Choice']",
+      "line": 89,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0014.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0015",
+      "name": "BlockTrade1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}BlockTrade1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BlockTrade1Code']",
+      "line": 95,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0015.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0016",
+      "name": "BlockTrade4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}BlockTrade4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BlockTrade4Choice']",
+      "line": 101,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0016.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0017",
+      "name": "CancellationReason22",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CancellationReason22",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CancellationReason22']",
+      "line": 107,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0017.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0018",
+      "name": "CancellationReason36Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CancellationReason36Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CancellationReason36Choice']",
+      "line": 113,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0018.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0019",
+      "name": "CancellationStatus24Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CancellationStatus24Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CancellationStatus24Choice']",
+      "line": 119,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0019.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0020",
+      "name": "CancelledStatusReason16Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CancelledStatusReason16Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CancelledStatusReason16Code']",
+      "line": 125,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0020.md",
+      "node_count": 15
+    },
+    {
+      "id": "type-0021",
+      "name": "CashSettlementSystem2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CashSettlementSystem2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CashSettlementSystem2Code']",
+      "line": 142,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0021.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0022",
+      "name": "CashSettlementSystem4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CashSettlementSystem4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashSettlementSystem4Choice']",
+      "line": 148,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0022.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0023",
+      "name": "CentralCounterPartyEligibility4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CentralCounterPartyEligibility4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CentralCounterPartyEligibility4Choice']",
+      "line": 154,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0023.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0024",
+      "name": "CorporateActionEventType28Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CorporateActionEventType28Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CorporateActionEventType28Code']",
+      "line": 160,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0024.md",
+      "node_count": 71
+    },
+    {
+      "id": "type-0025",
+      "name": "CorporateActionEventType73Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CorporateActionEventType73Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CorporateActionEventType73Choice']",
+      "line": 233,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0025.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0026",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 239,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0026.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0027",
+      "name": "CreditDebitCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}CreditDebitCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CreditDebitCode']",
+      "line": 244,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0027.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0028",
+      "name": "DateAndDateTime2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DateAndDateTime2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTime2Choice']",
+      "line": 250,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0028.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0029",
+      "name": "DateType3Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DateType3Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DateType3Code']",
+      "line": 256,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0029.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0030",
+      "name": "DateType4Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DateType4Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DateType4Code']",
+      "line": 261,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0030.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0031",
+      "name": "DecimalNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DecimalNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DecimalNumber']",
+      "line": 267,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0031.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0032",
+      "name": "DeliveryReceiptType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DeliveryReceiptType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DeliveryReceiptType2Code']",
+      "line": 273,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0032.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0033",
+      "name": "DeliveryReturn1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DeliveryReturn1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DeliveryReturn1Code']",
+      "line": 279,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0033.md",
+      "node_count": 9
+    },
+    {
+      "id": "type-0034",
+      "name": "DeliveryReturn3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DeliveryReturn3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DeliveryReturn3Choice']",
+      "line": 290,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0034.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0035",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 296,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0035.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0036",
+      "name": "DocumentNumber5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}DocumentNumber5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentNumber5Choice']",
+      "line": 301,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0036.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0037",
+      "name": "Exact3NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Exact3NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact3NumericText']",
+      "line": 308,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0037.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0038",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 313,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0038.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0039",
+      "name": "Exact4NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Exact4NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4NumericText']",
+      "line": 318,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0039.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0040",
+      "name": "ExposureType15Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ExposureType15Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExposureType15Code']",
+      "line": 323,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0040.md",
+      "node_count": 36
+    },
+    {
+      "id": "type-0041",
+      "name": "ExposureType25Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ExposureType25Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ExposureType25Choice']",
+      "line": 361,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0041.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0042",
+      "name": "ExternalFinancialInstrumentIdentificationType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ExternalFinancialInstrumentIdentificationType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalFinancialInstrumentIdentificationType1Code']",
+      "line": 367,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0042.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0043",
+      "name": "FXStandingInstruction4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FXStandingInstruction4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FXStandingInstruction4Choice']",
+      "line": 373,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0043.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0044",
+      "name": "FailingReason13",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FailingReason13",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FailingReason13']",
+      "line": 379,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0044.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0045",
+      "name": "FailingReason18Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FailingReason18Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FailingReason18Choice']",
+      "line": 385,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0045.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0046",
+      "name": "FailingReason5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FailingReason5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='FailingReason5Code']",
+      "line": 391,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0046.md",
+      "node_count": 66
+    },
+    {
+      "id": "type-0047",
+      "name": "FailingStatus15Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FailingStatus15Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FailingStatus15Choice']",
+      "line": 459,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "FinancialInstrumentQuantity1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}FinancialInstrumentQuantity1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstrumentQuantity1Choice']",
+      "line": 465,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0048.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0049",
+      "name": "GeneratedReason3Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GeneratedReason3Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='GeneratedReason3Code']",
+      "line": 472,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0049.md",
+      "node_count": 9
+    },
+    {
+      "id": "type-0050",
+      "name": "GeneratedReason5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GeneratedReason5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GeneratedReason5']",
+      "line": 483,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0050.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0051",
+      "name": "GeneratedReasons5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GeneratedReasons5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GeneratedReasons5Choice']",
+      "line": 489,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0051.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0052",
+      "name": "GeneratedStatus7Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GeneratedStatus7Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GeneratedStatus7Choice']",
+      "line": 495,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0052.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0053",
+      "name": "GenericIdentification30",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GenericIdentification30",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification30']",
+      "line": 501,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0053.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0054",
+      "name": "GenericIdentification36",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GenericIdentification36",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification36']",
+      "line": 508,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0054.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0055",
+      "name": "GenericIdentification78",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}GenericIdentification78",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification78']",
+      "line": 515,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0055.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0056",
+      "name": "HoldIndicator6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}HoldIndicator6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='HoldIndicator6']",
+      "line": 521,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0056.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0057",
+      "name": "ISINOct2015Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ISINOct2015Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISINOct2015Identifier']",
+      "line": 527,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0057.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0058",
+      "name": "ISO20022MessageIdentificationText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ISO20022MessageIdentificationText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISO20022MessageIdentificationText']",
+      "line": 532,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0058.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0059",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 537,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0059.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0060",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 540,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0060.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0061",
+      "name": "IdentificationSource3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}IdentificationSource3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='IdentificationSource3Choice']",
+      "line": 543,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0061.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0062",
+      "name": "ImpliedCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ImpliedCurrencyAndAmount",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ImpliedCurrencyAndAmount']",
+      "line": 549,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0062.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0063",
+      "name": "InstructionProcessingStatus63Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}InstructionProcessingStatus63Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='InstructionProcessingStatus63Choice']",
+      "line": 556,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0063.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0064",
+      "name": "LEIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}LEIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LEIIdentifier']",
+      "line": 568,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0064.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0065",
+      "name": "LetterOfGuarantee4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}LetterOfGuarantee4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='LetterOfGuarantee4Choice']",
+      "line": 573,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0065.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0066",
+      "name": "Linkages57",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Linkages57",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Linkages57']",
+      "line": 579,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0066.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0067",
+      "name": "MICIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MICIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='MICIdentifier']",
+      "line": 587,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0067.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0068",
+      "name": "MarketClientSide1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketClientSide1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='MarketClientSide1Code']",
+      "line": 592,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0068.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0069",
+      "name": "MarketClientSide6Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketClientSide6Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MarketClientSide6Choice']",
+      "line": 598,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0069.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0070",
+      "name": "MarketIdentification1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketIdentification1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MarketIdentification1Choice']",
+      "line": 604,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0070.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0071",
+      "name": "MarketIdentification84",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketIdentification84",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MarketIdentification84']",
+      "line": 610,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0071.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0072",
+      "name": "MarketType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='MarketType2Code']",
+      "line": 616,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0072.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0073",
+      "name": "MarketType8Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MarketType8Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MarketType8Choice']",
+      "line": 625,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0073.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0074",
+      "name": "MatchingStatus24Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}MatchingStatus24Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MatchingStatus24Choice']",
+      "line": 631,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0074.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0075",
+      "name": "Max140Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max140Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max140Text']",
+      "line": 638,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0075.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0076",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 644,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0076.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0077",
+      "name": "Max210Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max210Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max210Text']",
+      "line": 650,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0077.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0078",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 656,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0078.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0079",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 662,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0079.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0080",
+      "name": "Max3Number",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max3Number",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max3Number']",
+      "line": 668,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0080.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0081",
+      "name": "Max5NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max5NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max5NumericText']",
+      "line": 674,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0081.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0082",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 679,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0082.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0083",
+      "name": "ModificationCancellationAllowed4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ModificationCancellationAllowed4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ModificationCancellationAllowed4Choice']",
+      "line": 685,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0083.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0084",
+      "name": "NameAndAddress5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}NameAndAddress5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NameAndAddress5']",
+      "line": 691,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0084.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0085",
+      "name": "NettingEligibility4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}NettingEligibility4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NettingEligibility4Choice']",
+      "line": 697,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0085.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0086",
+      "name": "NoReasonCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}NoReasonCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='NoReasonCode']",
+      "line": 703,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0086.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0087",
+      "name": "OtherIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}OtherIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OtherIdentification1']",
+      "line": 708,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0087.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0088",
+      "name": "OwnershipLegalRestrictions1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}OwnershipLegalRestrictions1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='OwnershipLegalRestrictions1Code']",
+      "line": 715,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0088.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0089",
+      "name": "Pagination1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Pagination1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Pagination1']",
+      "line": 722,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0089.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0090",
+      "name": "PartyIdentification120Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentification120Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification120Choice']",
+      "line": 728,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0090.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0091",
+      "name": "PartyIdentification122Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentification122Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification122Choice']",
+      "line": 735,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0091.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0092",
+      "name": "PartyIdentification127Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentification127Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification127Choice']",
+      "line": 742,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0092.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0093",
+      "name": "PartyIdentification136",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentification136",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification136']",
+      "line": 748,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0093.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0094",
+      "name": "PartyIdentification148",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentification148",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification148']",
+      "line": 754,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0094.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0095",
+      "name": "PartyIdentificationAndAccount170",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PartyIdentificationAndAccount170",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentificationAndAccount170']",
+      "line": 761,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0095.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0096",
+      "name": "PendingProcessingReason17",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingProcessingReason17",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingProcessingReason17']",
+      "line": 769,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0096.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0097",
+      "name": "PendingProcessingReason19Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingProcessingReason19Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingProcessingReason19Choice']",
+      "line": 775,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0097.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0098",
+      "name": "PendingProcessingReason5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingProcessingReason5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PendingProcessingReason5Code']",
+      "line": 781,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0098.md",
+      "node_count": 29
+    },
+    {
+      "id": "type-0099",
+      "name": "PendingProcessingStatus20Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingProcessingStatus20Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingProcessingStatus20Choice']",
+      "line": 812,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0099.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0100",
+      "name": "PendingReason28Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason28Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PendingReason28Code']",
+      "line": 818,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0100.md",
+      "node_count": 64
+    },
+    {
+      "id": "type-0101",
+      "name": "PendingReason32",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason32",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingReason32']",
+      "line": 884,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0101.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0102",
+      "name": "PendingReason32Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason32Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PendingReason32Code']",
+      "line": 890,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0102.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0103",
+      "name": "PendingReason35",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason35",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingReason35']",
+      "line": 900,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0103.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0104",
+      "name": "PendingReason69Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason69Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingReason69Choice']",
+      "line": 906,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0104.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0105",
+      "name": "PendingReason77Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingReason77Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingReason77Choice']",
+      "line": 912,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0105.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0106",
+      "name": "PendingStatus73Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingStatus73Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingStatus73Choice']",
+      "line": 918,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0106.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0107",
+      "name": "PendingStatus81Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PendingStatus81Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PendingStatus81Choice']",
+      "line": 924,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0107.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0108",
+      "name": "PlaceOfClearingIdentification2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PlaceOfClearingIdentification2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PlaceOfClearingIdentification2']",
+      "line": 930,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0108.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0109",
+      "name": "PlaceOfTradeIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PlaceOfTradeIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PlaceOfTradeIdentification1']",
+      "line": 936,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0109.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0110",
+      "name": "PostalAddress1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PostalAddress1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress1']",
+      "line": 942,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0110.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0111",
+      "name": "PriorityNumeric4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}PriorityNumeric4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PriorityNumeric4Choice']",
+      "line": 954,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0111.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0112",
+      "name": "ProcessingPosition3Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ProcessingPosition3Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ProcessingPosition3Code']",
+      "line": 960,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0112.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0113",
+      "name": "ProcessingPosition7Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ProcessingPosition7Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProcessingPosition7Choice']",
+      "line": 968,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0113.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0114",
+      "name": "ProprietaryReason4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ProprietaryReason4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProprietaryReason4']",
+      "line": 974,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0114.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0115",
+      "name": "ProprietaryStatusAndReason6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ProprietaryStatusAndReason6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProprietaryStatusAndReason6']",
+      "line": 980,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0115.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0116",
+      "name": "ReceiveDelivery1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}ReceiveDelivery1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ReceiveDelivery1Code']",
+      "line": 986,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0116.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0117",
+      "name": "References34Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}References34Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='References34Choice']",
+      "line": 992,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0117.md",
+      "node_count": 9
+    },
+    {
+      "id": "type-0118",
+      "name": "Registration10Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Registration10Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Registration10Choice']",
+      "line": 1003,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0118.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0119",
+      "name": "Registration1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Registration1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Registration1Code']",
+      "line": 1009,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0119.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0120",
+      "name": "Registration2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Registration2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Registration2Code']",
+      "line": 1015,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0120.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0121",
+      "name": "Registration9Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Registration9Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Registration9Choice']",
+      "line": 1023,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0121.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0122",
+      "name": "RegistrationReason5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RegistrationReason5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RegistrationReason5']",
+      "line": 1029,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0122.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0123",
+      "name": "RepairReason10Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepairReason10Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RepairReason10Choice']",
+      "line": 1035,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0123.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0124",
+      "name": "RepairReason4Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepairReason4Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='RepairReason4Code']",
+      "line": 1041,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0124.md",
+      "node_count": 31
+    },
+    {
+      "id": "type-0125",
+      "name": "RepairReason8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepairReason8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RepairReason8']",
+      "line": 1074,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0125.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0126",
+      "name": "RepairStatus12Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepairStatus12Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RepairStatus12Choice']",
+      "line": 1080,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0126.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0127",
+      "name": "RepurchaseType10Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepurchaseType10Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='RepurchaseType10Code']",
+      "line": 1086,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0127.md",
+      "node_count": 9
+    },
+    {
+      "id": "type-0128",
+      "name": "RepurchaseType23Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}RepurchaseType23Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RepurchaseType23Choice']",
+      "line": 1097,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0128.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0129",
+      "name": "Restriction5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Restriction5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Restriction5Choice']",
+      "line": 1103,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0129.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0130",
+      "name": "SafeKeepingPlace3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafeKeepingPlace3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SafeKeepingPlace3']",
+      "line": 1109,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0130.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0131",
+      "name": "SafekeepingPlace1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafekeepingPlace1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SafekeepingPlace1Code']",
+      "line": 1115,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0131.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0132",
+      "name": "SafekeepingPlace3Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafekeepingPlace3Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SafekeepingPlace3Code']",
+      "line": 1123,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0132.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0133",
+      "name": "SafekeepingPlaceFormat29Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafekeepingPlaceFormat29Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SafekeepingPlaceFormat29Choice']",
+      "line": 1128,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0133.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0134",
+      "name": "SafekeepingPlaceTypeAndIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafekeepingPlaceTypeAndIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SafekeepingPlaceTypeAndIdentification1']",
+      "line": 1136,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0134.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0135",
+      "name": "SafekeepingPlaceTypeAndText8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SafekeepingPlaceTypeAndText8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SafekeepingPlaceTypeAndText8']",
+      "line": 1142,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0135.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0136",
+      "name": "SecuritiesAccount19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesAccount19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesAccount19']",
+      "line": 1148,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0136.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0137",
+      "name": "SecuritiesRTGS4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesRTGS4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesRTGS4Choice']",
+      "line": 1155,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0137.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0138",
+      "name": "SecuritiesReport2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesReport2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesReport2']",
+      "line": 1161,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0138.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0139",
+      "name": "SecuritiesSettlementTransactionQueryResponseV01",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesSettlementTransactionQueryResponseV01",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesSettlementTransactionQueryResponseV01']",
+      "line": 1169,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0139.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0140",
+      "name": "SecuritiesSettlementTransactions6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesSettlementTransactions6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesSettlementTransactions6']",
+      "line": 1176,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0140.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0141",
+      "name": "SecuritiesTransactionType27Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesTransactionType27Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SecuritiesTransactionType27Code']",
+      "line": 1184,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0141.md",
+      "node_count": 48
+    },
+    {
+      "id": "type-0142",
+      "name": "SecuritiesTransactionType48Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecuritiesTransactionType48Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesTransactionType48Choice']",
+      "line": 1234,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0142.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0143",
+      "name": "SecurityIdentification19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SecurityIdentification19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecurityIdentification19']",
+      "line": 1240,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0143.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0144",
+      "name": "SettlementDate19Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementDate19Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementDate19Choice']",
+      "line": 1247,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0144.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0145",
+      "name": "SettlementDateCode8Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementDateCode8Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementDateCode8Choice']",
+      "line": 1253,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0145.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0146",
+      "name": "SettlementDetails235",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementDetails235",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementDetails235']",
+      "line": 1259,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0146.md",
+      "node_count": 32
+    },
+    {
+      "id": "type-0147",
+      "name": "SettlementOrCorporateActionEvent26Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementOrCorporateActionEvent26Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementOrCorporateActionEvent26Choice']",
+      "line": 1293,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0147.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0148",
+      "name": "SettlementParties78",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementParties78",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementParties78']",
+      "line": 1299,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0148.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0149",
+      "name": "SettlementQueryType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementQueryType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementQueryType1Code']",
+      "line": 1309,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0149.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0150",
+      "name": "SettlementStatus32Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementStatus32Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementStatus32Choice']",
+      "line": 1316,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0150.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0151",
+      "name": "SettlementSystemMethod1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementSystemMethod1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementSystemMethod1Code']",
+      "line": 1323,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0151.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0152",
+      "name": "SettlementSystemMethod4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementSystemMethod4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementSystemMethod4Choice']",
+      "line": 1329,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0152.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0153",
+      "name": "SettlementTransactionCondition12Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementTransactionCondition12Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementTransactionCondition12Code']",
+      "line": 1335,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0153.md",
+      "node_count": 28
+    },
+    {
+      "id": "type-0154",
+      "name": "SettlementTransactionCondition34Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementTransactionCondition34Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementTransactionCondition34Choice']",
+      "line": 1365,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0154.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0155",
+      "name": "SettlementTransactionCondition5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlementTransactionCondition5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementTransactionCondition5Code']",
+      "line": 1371,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0155.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0156",
+      "name": "SettlingCapacity2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlingCapacity2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlingCapacity2Code']",
+      "line": 1379,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0156.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0157",
+      "name": "SettlingCapacity7Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SettlingCapacity7Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlingCapacity7Choice']",
+      "line": 1387,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0157.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0158",
+      "name": "StatusAndReason52",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}StatusAndReason52",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='StatusAndReason52']",
+      "line": 1393,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0158.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0159",
+      "name": "SupplementaryData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SupplementaryData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryData1']",
+      "line": 1403,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0159.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0160",
+      "name": "SupplementaryDataEnvelope1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SupplementaryDataEnvelope1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryDataEnvelope1']",
+      "line": 1409,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0160.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0161",
+      "name": "SystemPartyIdentification8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}SystemPartyIdentification8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SystemPartyIdentification8']",
+      "line": 1414,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0161.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0162",
+      "name": "TaxCapacityParty4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TaxCapacityParty4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxCapacityParty4Choice']",
+      "line": 1420,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0162.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0163",
+      "name": "TaxLiability1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TaxLiability1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TaxLiability1Code']",
+      "line": 1426,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0163.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0164",
+      "name": "Tracking4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Tracking4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Tracking4Choice']",
+      "line": 1432,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0164.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0165",
+      "name": "TradeDate8Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TradeDate8Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TradeDate8Choice']",
+      "line": 1438,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0165.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0166",
+      "name": "TradeDateCode3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TradeDateCode3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TradeDateCode3Choice']",
+      "line": 1444,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0166.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0167",
+      "name": "Transaction169",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}Transaction169",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Transaction169']",
+      "line": 1450,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0167.md",
+      "node_count": 20
+    },
+    {
+      "id": "type-0168",
+      "name": "TransactionActivity1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TransactionActivity1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TransactionActivity1Code']",
+      "line": 1472,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0168.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0169",
+      "name": "TransactionActivity3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TransactionActivity3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TransactionActivity3Choice']",
+      "line": 1481,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0169.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0170",
+      "name": "TransactionDetails187",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}TransactionDetails187",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TransactionDetails187']",
+      "line": 1487,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0170.md",
+      "node_count": 39
+    },
+    {
+      "id": "type-0171",
+      "name": "UTIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}UTIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='UTIIdentifier']",
+      "line": 1528,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0171.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0172",
+      "name": "UnmatchedReason11Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}UnmatchedReason11Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='UnmatchedReason11Code']",
+      "line": 1533,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0172.md",
+      "node_count": 42
+    },
+    {
+      "id": "type-0173",
+      "name": "UnmatchedReason15",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}UnmatchedReason15",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnmatchedReason15']",
+      "line": 1577,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0173.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0174",
+      "name": "UnmatchedReason21Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}UnmatchedReason21Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnmatchedReason21Choice']",
+      "line": 1583,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0174.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0175",
+      "name": "UnmatchedStatus16Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}UnmatchedStatus16Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnmatchedStatus16Choice']",
+      "line": 1589,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0175.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0176",
+      "name": "YesNoIndicator",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:semt.027.001.01}YesNoIndicator",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='YesNoIndicator']",
+      "line": 1595,
+      "path": "domains/securities/reference/messages/semt.027.001.01/types/type-0176.md",
+      "node_count": 2
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

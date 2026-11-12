@@ -1,0 +1,30 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  subgraph C["CCP"]
+    S1(("Start"))
+    Accept("Accept trade")
+    S2(("Start"))
+    D{"Cancellation received<br/>from trading venue?"}
+    Cancel("Cancel Trade Leg")
+    E2((("End")))
+    N1["Trading venue notifies the CCP<br/>that accepts the trade<br/>(OUT of SCOPE)"]:::outside
+    N2["Trading venue may request a cancellation<br/>in case of an error in specific data<br/>(OUT of SCOPE)"]:::outside
+  end
+  subgraph M["Clearing Member"]
+    Process("Process Instruction")
+    ProcessC("Process Cancellation")
+    E1((("End")))
+    E3((("End")))
+  end
+  S1 --> Accept --> Process --> E1
+  S2 --> D
+  D -->|No| E2
+  D -->|Yes| Cancel --> ProcessC --> E3
+  classDef outside fill:#e6b6d6,stroke:#111,color:#111
+  classDef bar fill:#111,stroke:#111,color:#111
+  classDef note fill:#fff,stroke:#777,color:#111

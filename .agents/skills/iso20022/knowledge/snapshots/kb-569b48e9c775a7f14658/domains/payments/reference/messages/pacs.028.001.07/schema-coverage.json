@@ -1,0 +1,1615 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000172",
+  "sha256": "0618a23c104d68dd74d3e54f849c8a4d2bff6985da18c744df1c7ec74c90453f",
+  "message_id": "pacs.028.001.07",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07",
+  "message_name": "FIToFIPaymentStatusRequestV07",
+  "domain": "payments",
+  "set_path": "domains/payments/reference/message-sets/payments-clearing-and-settlement/2025-2026",
+  "counts": {
+    "schema": 1,
+    "element": 341,
+    "complexType": 91,
+    "choice": 28,
+    "simpleType": 65,
+    "restriction": 65,
+    "fractionDigits": 5,
+    "totalDigits": 5,
+    "minInclusive": 2,
+    "simpleContent": 2,
+    "extension": 2,
+    "attribute": 2,
+    "pattern": 13,
+    "enumeration": 68,
+    "sequence": 61,
+    "minLength": 31,
+    "maxLength": 31,
+    "any": 1
+  },
+  "top_level_declarations": 157,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "AccountIdentification4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AccountIdentification4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AccountIdentification4Choice']",
+      "line": 5,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0002.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0003",
+      "name": "AccountSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AccountSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AccountSchemeName1Choice']",
+      "line": 11,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0003.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0004",
+      "name": "ActiveCurrencyAndAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveCurrencyAndAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyAndAmount_SimpleType']",
+      "line": 17,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0004.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0005",
+      "name": "ActiveCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveCurrencyAndAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveCurrencyAndAmount']",
+      "line": 24,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0005.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0006",
+      "name": "ActiveCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyCode']",
+      "line": 31,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0006.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0007",
+      "name": "ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveOrHistoricCurrencyAndAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyAndAmount_SimpleType']",
+      "line": 36,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0007.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0008",
+      "name": "ActiveOrHistoricCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveOrHistoricCurrencyAndAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveOrHistoricCurrencyAndAmount']",
+      "line": 43,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0008.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0009",
+      "name": "ActiveOrHistoricCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ActiveOrHistoricCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveOrHistoricCurrencyCode']",
+      "line": 50,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0009.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0010",
+      "name": "AddressType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AddressType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AddressType2Code']",
+      "line": 55,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0010.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0011",
+      "name": "AddressType3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AddressType3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AddressType3Choice']",
+      "line": 65,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0011.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0012",
+      "name": "AmendmentInformationDetails15",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AmendmentInformationDetails15",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AmendmentInformationDetails15']",
+      "line": 71,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0012.md",
+      "node_count": 14
+    },
+    {
+      "id": "type-0013",
+      "name": "AmountType4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AmountType4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AmountType4Choice']",
+      "line": 87,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0013.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0014",
+      "name": "AnyBICDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}AnyBICDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICDec2014Identifier']",
+      "line": 93,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0014.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0015",
+      "name": "BICFIDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}BICFIDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='BICFIDec2014Identifier']",
+      "line": 98,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0015.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0016",
+      "name": "BranchAndFinancialInstitutionIdentification8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}BranchAndFinancialInstitutionIdentification8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BranchAndFinancialInstitutionIdentification8']",
+      "line": 103,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0016.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0017",
+      "name": "BranchData5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}BranchData5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BranchData5']",
+      "line": 109,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0017.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0018",
+      "name": "CashAccount40",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CashAccount40",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashAccount40']",
+      "line": 117,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0018.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0019",
+      "name": "CashAccountType2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CashAccountType2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CashAccountType2Choice']",
+      "line": 126,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0019.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0020",
+      "name": "CategoryPurpose1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CategoryPurpose1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CategoryPurpose1Choice']",
+      "line": 132,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0020.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0021",
+      "name": "ClearingChannel2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ClearingChannel2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ClearingChannel2Code']",
+      "line": 138,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0021.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0022",
+      "name": "ClearingSystemIdentification2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ClearingSystemIdentification2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClearingSystemIdentification2Choice']",
+      "line": 146,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0022.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0023",
+      "name": "ClearingSystemIdentification3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ClearingSystemIdentification3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClearingSystemIdentification3Choice']",
+      "line": 152,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0023.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0024",
+      "name": "ClearingSystemMemberIdentification2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ClearingSystemMemberIdentification2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClearingSystemMemberIdentification2']",
+      "line": 158,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0024.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0025",
+      "name": "Contact13",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Contact13",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Contact13']",
+      "line": 164,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0025.md",
+      "node_count": 15
+    },
+    {
+      "id": "type-0026",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 181,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0026.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0027",
+      "name": "CreditDebitCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CreditDebitCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CreditDebitCode']",
+      "line": 186,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0027.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0028",
+      "name": "CreditTransferMandateData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CreditTransferMandateData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CreditTransferMandateData1']",
+      "line": 192,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0028.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0029",
+      "name": "CreditorReferenceInformation3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CreditorReferenceInformation3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CreditorReferenceInformation3']",
+      "line": 205,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0029.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0030",
+      "name": "CreditorReferenceType2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CreditorReferenceType2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CreditorReferenceType2Choice']",
+      "line": 211,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0030.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0031",
+      "name": "CreditorReferenceType3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}CreditorReferenceType3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CreditorReferenceType3']",
+      "line": 217,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0031.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0032",
+      "name": "DateAndDateTime2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DateAndDateTime2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTime2Choice']",
+      "line": 223,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0032.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0033",
+      "name": "DateAndPlaceOfBirth1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DateAndPlaceOfBirth1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndPlaceOfBirth1']",
+      "line": 229,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0033.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0034",
+      "name": "DateAndType1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DateAndType1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndType1']",
+      "line": 237,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0034.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0035",
+      "name": "DatePeriod2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DatePeriod2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DatePeriod2']",
+      "line": 243,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0035.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0036",
+      "name": "DateType2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DateType2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateType2Choice']",
+      "line": 249,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0036.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0037",
+      "name": "DecimalNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DecimalNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DecimalNumber']",
+      "line": 255,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0037.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0038",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 261,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0038.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0039",
+      "name": "DocumentAdjustment1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentAdjustment1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentAdjustment1']",
+      "line": 266,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0039.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0040",
+      "name": "DocumentAmount1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentAmount1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentAmount1']",
+      "line": 274,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0040.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0041",
+      "name": "DocumentAmountType1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentAmountType1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentAmountType1Choice']",
+      "line": 280,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0041.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0042",
+      "name": "DocumentLineIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentLineIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentLineIdentification1']",
+      "line": 286,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0042.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0043",
+      "name": "DocumentLineInformation2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentLineInformation2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentLineInformation2']",
+      "line": 293,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0043.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0044",
+      "name": "DocumentLineType1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentLineType1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentLineType1']",
+      "line": 300,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0044.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0045",
+      "name": "DocumentLineType1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentLineType1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentLineType1Choice']",
+      "line": 306,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0045.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0046",
+      "name": "DocumentType1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentType1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentType1']",
+      "line": 312,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0046.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0047",
+      "name": "DocumentType2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}DocumentType2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentType2Choice']",
+      "line": 318,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "EquivalentAmount2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}EquivalentAmount2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='EquivalentAmount2']",
+      "line": 324,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0048.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0049",
+      "name": "Exact2NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Exact2NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact2NumericText']",
+      "line": 330,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0049.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0050",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 335,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0050.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0051",
+      "name": "ExternalAccountIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalAccountIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalAccountIdentification1Code']",
+      "line": 340,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0051.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0052",
+      "name": "ExternalCashAccountType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalCashAccountType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalCashAccountType1Code']",
+      "line": 346,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0052.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0053",
+      "name": "ExternalCashClearingSystem1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalCashClearingSystem1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalCashClearingSystem1Code']",
+      "line": 352,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0053.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0054",
+      "name": "ExternalCategoryPurpose1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalCategoryPurpose1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalCategoryPurpose1Code']",
+      "line": 358,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0054.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0055",
+      "name": "ExternalClearingSystemIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalClearingSystemIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalClearingSystemIdentification1Code']",
+      "line": 364,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0055.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0056",
+      "name": "ExternalCreditorReferenceType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalCreditorReferenceType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalCreditorReferenceType1Code']",
+      "line": 370,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0056.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0057",
+      "name": "ExternalDateType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalDateType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalDateType1Code']",
+      "line": 376,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0057.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0058",
+      "name": "ExternalDocumentAmountType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalDocumentAmountType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalDocumentAmountType1Code']",
+      "line": 382,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0058.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0059",
+      "name": "ExternalDocumentLineType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalDocumentLineType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalDocumentLineType1Code']",
+      "line": 388,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0059.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0060",
+      "name": "ExternalDocumentType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalDocumentType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalDocumentType1Code']",
+      "line": 394,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0060.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0061",
+      "name": "ExternalFinancialInstitutionIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalFinancialInstitutionIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalFinancialInstitutionIdentification1Code']",
+      "line": 400,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0061.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0062",
+      "name": "ExternalGarnishmentType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalGarnishmentType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalGarnishmentType1Code']",
+      "line": 406,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0062.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0063",
+      "name": "ExternalLocalInstrument1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalLocalInstrument1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalLocalInstrument1Code']",
+      "line": 412,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0063.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0064",
+      "name": "ExternalMandateSetupReason1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalMandateSetupReason1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalMandateSetupReason1Code']",
+      "line": 418,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0064.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0065",
+      "name": "ExternalOrganisationIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalOrganisationIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalOrganisationIdentification1Code']",
+      "line": 424,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0065.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0066",
+      "name": "ExternalPersonIdentification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalPersonIdentification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalPersonIdentification1Code']",
+      "line": 430,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0066.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0067",
+      "name": "ExternalProxyAccountType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalProxyAccountType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalProxyAccountType1Code']",
+      "line": 436,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0067.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0068",
+      "name": "ExternalPurpose1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalPurpose1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalPurpose1Code']",
+      "line": 442,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0068.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0069",
+      "name": "ExternalServiceLevel1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ExternalServiceLevel1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalServiceLevel1Code']",
+      "line": 448,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0069.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0070",
+      "name": "FIToFIPaymentStatusRequestV07",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}FIToFIPaymentStatusRequestV07",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FIToFIPaymentStatusRequestV07']",
+      "line": 454,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0070.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0071",
+      "name": "FinancialIdentificationSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}FinancialIdentificationSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialIdentificationSchemeName1Choice']",
+      "line": 462,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0071.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0072",
+      "name": "FinancialInstitutionIdentification23",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}FinancialInstitutionIdentification23",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstitutionIdentification23']",
+      "line": 468,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0072.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0073",
+      "name": "Frequency36Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Frequency36Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Frequency36Choice']",
+      "line": 478,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0073.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0074",
+      "name": "Frequency6Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Frequency6Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Frequency6Code']",
+      "line": 485,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0074.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0075",
+      "name": "FrequencyAndMoment1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}FrequencyAndMoment1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FrequencyAndMoment1']",
+      "line": 498,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0075.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0076",
+      "name": "FrequencyPeriod1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}FrequencyPeriod1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FrequencyPeriod1']",
+      "line": 504,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0076.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0077",
+      "name": "Garnishment4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Garnishment4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Garnishment4']",
+      "line": 510,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0077.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0078",
+      "name": "GarnishmentType1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GarnishmentType1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GarnishmentType1']",
+      "line": 522,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0078.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0079",
+      "name": "GarnishmentType1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GarnishmentType1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GarnishmentType1Choice']",
+      "line": 528,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0079.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0080",
+      "name": "GenericAccountIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GenericAccountIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericAccountIdentification1']",
+      "line": 534,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0080.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0081",
+      "name": "GenericFinancialIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GenericFinancialIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericFinancialIdentification1']",
+      "line": 541,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0081.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0082",
+      "name": "GenericIdentification30",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GenericIdentification30",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification30']",
+      "line": 548,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0082.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0083",
+      "name": "GenericOrganisationIdentification3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GenericOrganisationIdentification3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericOrganisationIdentification3']",
+      "line": 555,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0083.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0084",
+      "name": "GenericPersonIdentification2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GenericPersonIdentification2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericPersonIdentification2']",
+      "line": 562,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0084.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0085",
+      "name": "GroupHeader109",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}GroupHeader109",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GroupHeader109']",
+      "line": 569,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0085.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0086",
+      "name": "IBAN2007Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}IBAN2007Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='IBAN2007Identifier']",
+      "line": 577,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0086.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0087",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 582,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0087.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0088",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 585,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0088.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0089",
+      "name": "ISOYear",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ISOYear",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISOYear']",
+      "line": 588,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0089.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0090",
+      "name": "LEIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}LEIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LEIIdentifier']",
+      "line": 591,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0090.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0091",
+      "name": "LocalInstrument2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}LocalInstrument2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='LocalInstrument2Choice']",
+      "line": 596,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0091.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0092",
+      "name": "MandateClassification1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateClassification1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MandateClassification1Choice']",
+      "line": 602,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0092.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0093",
+      "name": "MandateClassification1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateClassification1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='MandateClassification1Code']",
+      "line": 608,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0093.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0094",
+      "name": "MandateRelatedData5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateRelatedData5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MandateRelatedData5Choice']",
+      "line": 615,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0094.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0095",
+      "name": "MandateRelatedInformation16",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateRelatedInformation16",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MandateRelatedInformation16']",
+      "line": 621,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0095.md",
+      "node_count": 12
+    },
+    {
+      "id": "type-0096",
+      "name": "MandateSetupReason1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateSetupReason1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MandateSetupReason1Choice']",
+      "line": 635,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0096.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0097",
+      "name": "MandateTypeInformation2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}MandateTypeInformation2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MandateTypeInformation2']",
+      "line": 641,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0097.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0098",
+      "name": "Max1025Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max1025Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max1025Text']",
+      "line": 649,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0098.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0099",
+      "name": "Max10KBinary",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max10KBinary",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max10KBinary']",
+      "line": 655,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0099.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0100",
+      "name": "Max128Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max128Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max128Text']",
+      "line": 661,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0100.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0101",
+      "name": "Max140Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max140Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max140Text']",
+      "line": 667,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0101.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0102",
+      "name": "Max15NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max15NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max15NumericText']",
+      "line": 673,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0102.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0103",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 678,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0103.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0104",
+      "name": "Max2048Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max2048Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max2048Text']",
+      "line": 684,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0104.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0105",
+      "name": "Max256Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max256Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max256Text']",
+      "line": 690,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0105.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0106",
+      "name": "Max34Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max34Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max34Text']",
+      "line": 696,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0106.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0107",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 702,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0107.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0108",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 708,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0108.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0109",
+      "name": "Max4Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max4Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max4Text']",
+      "line": 714,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0109.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0110",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 720,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0110.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0111",
+      "name": "NamePrefix2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}NamePrefix2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='NamePrefix2Code']",
+      "line": 726,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0111.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0112",
+      "name": "Number",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Number",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Number']",
+      "line": 735,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0112.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0113",
+      "name": "OrganisationIdentification39",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OrganisationIdentification39",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OrganisationIdentification39']",
+      "line": 741,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0113.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0114",
+      "name": "OrganisationIdentificationSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OrganisationIdentificationSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OrganisationIdentificationSchemeName1Choice']",
+      "line": 748,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0114.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0115",
+      "name": "OriginalGroupInformation27",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OriginalGroupInformation27",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OriginalGroupInformation27']",
+      "line": 754,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0115.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0116",
+      "name": "OriginalGroupInformation33",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OriginalGroupInformation33",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OriginalGroupInformation33']",
+      "line": 763,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0116.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0117",
+      "name": "OriginalTransactionReference47",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OriginalTransactionReference47",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OriginalTransactionReference47']",
+      "line": 770,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0117.md",
+      "node_count": 24
+    },
+    {
+      "id": "type-0118",
+      "name": "OtherContact1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}OtherContact1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OtherContact1']",
+      "line": 796,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0118.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0119",
+      "name": "Party50Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Party50Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Party50Choice']",
+      "line": 802,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0119.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0120",
+      "name": "Party52Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Party52Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Party52Choice']",
+      "line": 808,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0120.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0121",
+      "name": "PartyIdentification272",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PartyIdentification272",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification272']",
+      "line": 814,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0121.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0122",
+      "name": "PaymentMethod4Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PaymentMethod4Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PaymentMethod4Code']",
+      "line": 823,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0122.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0123",
+      "name": "PaymentTransaction171",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PaymentTransaction171",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PaymentTransaction171']",
+      "line": 831,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0123.md",
+      "node_count": 14
+    },
+    {
+      "id": "type-0124",
+      "name": "PaymentTypeInformation27",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PaymentTypeInformation27",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PaymentTypeInformation27']",
+      "line": 847,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0124.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0125",
+      "name": "PercentageRate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PercentageRate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PercentageRate']",
+      "line": 857,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0125.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0126",
+      "name": "PersonIdentification18",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PersonIdentification18",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PersonIdentification18']",
+      "line": 863,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0126.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0127",
+      "name": "PersonIdentificationSchemeName1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PersonIdentificationSchemeName1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PersonIdentificationSchemeName1Choice']",
+      "line": 869,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0127.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0128",
+      "name": "PhoneNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PhoneNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PhoneNumber']",
+      "line": 875,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0128.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0129",
+      "name": "PostalAddress27",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PostalAddress27",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress27']",
+      "line": 880,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0129.md",
+      "node_count": 20
+    },
+    {
+      "id": "type-0130",
+      "name": "PreferredContactMethod2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}PreferredContactMethod2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PreferredContactMethod2Code']",
+      "line": 902,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0130.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0131",
+      "name": "Priority2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Priority2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Priority2Code']",
+      "line": 912,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0131.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0132",
+      "name": "ProxyAccountIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ProxyAccountIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProxyAccountIdentification1']",
+      "line": 918,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0132.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0133",
+      "name": "ProxyAccountType1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ProxyAccountType1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProxyAccountType1Choice']",
+      "line": 924,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0133.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0134",
+      "name": "Purpose2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}Purpose2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Purpose2Choice']",
+      "line": 930,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0134.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0135",
+      "name": "ReferredDocumentInformation8",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ReferredDocumentInformation8",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ReferredDocumentInformation8']",
+      "line": 936,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0135.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0136",
+      "name": "RemittanceAmount4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}RemittanceAmount4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RemittanceAmount4']",
+      "line": 944,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0136.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0137",
+      "name": "RemittanceInformation26",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}RemittanceInformation26",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RemittanceInformation26']",
+      "line": 950,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0137.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0138",
+      "name": "SecuritiesAttributes1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SecuritiesAttributes1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesAttributes1']",
+      "line": 956,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0138.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0139",
+      "name": "SequenceType3Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SequenceType3Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SequenceType3Code']",
+      "line": 962,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0139.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0140",
+      "name": "ServiceLevel8Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}ServiceLevel8Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ServiceLevel8Choice']",
+      "line": 971,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0140.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0141",
+      "name": "SettlementInstruction15",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SettlementInstruction15",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SettlementInstruction15']",
+      "line": 977,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0141.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0142",
+      "name": "SettlementMethod1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SettlementMethod1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementMethod1Code']",
+      "line": 990,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0142.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0143",
+      "name": "StructuredRemittanceInformation22",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}StructuredRemittanceInformation22",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='StructuredRemittanceInformation22']",
+      "line": 998,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0143.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0144",
+      "name": "SupplementaryData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SupplementaryData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryData1']",
+      "line": 1011,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0144.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0145",
+      "name": "SupplementaryDataEnvelope1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}SupplementaryDataEnvelope1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryDataEnvelope1']",
+      "line": 1017,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0145.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0146",
+      "name": "TaxAmount3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxAmount3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxAmount3']",
+      "line": 1022,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0146.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0147",
+      "name": "TaxAuthorisation1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxAuthorisation1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxAuthorisation1']",
+      "line": 1030,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0147.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0148",
+      "name": "TaxData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxData1']",
+      "line": 1036,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0148.md",
+      "node_count": 13
+    },
+    {
+      "id": "type-0149",
+      "name": "TaxParty1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxParty1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxParty1']",
+      "line": 1051,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0149.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0150",
+      "name": "TaxParty2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxParty2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxParty2']",
+      "line": 1058,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0150.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0151",
+      "name": "TaxPeriod3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxPeriod3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxPeriod3']",
+      "line": 1066,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0151.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0152",
+      "name": "TaxRecord3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxRecord3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxRecord3']",
+      "line": 1073,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0152.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0153",
+      "name": "TaxRecordDetails3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxRecordDetails3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='TaxRecordDetails3']",
+      "line": 1086,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0153.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0154",
+      "name": "TaxRecordPeriod1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TaxRecordPeriod1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TaxRecordPeriod1Code']",
+      "line": 1092,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0154.md",
+      "node_count": 20
+    },
+    {
+      "id": "type-0155",
+      "name": "TrueFalseIndicator",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}TrueFalseIndicator",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='TrueFalseIndicator']",
+      "line": 1114,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0155.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0156",
+      "name": "UTIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}UTIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='UTIIdentifier']",
+      "line": 1117,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0156.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0157",
+      "name": "UUIDv4Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:pacs.028.001.07}UUIDv4Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='UUIDv4Identifier']",
+      "line": 1122,
+      "path": "domains/payments/reference/messages/pacs.028.001.07/types/type-0157.md",
+      "node_count": 3
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

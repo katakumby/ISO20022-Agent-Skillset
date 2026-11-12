@@ -1,0 +1,13 @@
+usecase-beta
+ direction TB
+ actor CP("«FinancialInstitution» CSDParticipant")
+ actor CSD("«FinancialInstitution» CentralSecuritiesDepository")
+ actor CCP("«BusinessActor» CentralCounterparty")
+ actor SYS("«System» SystemApplication")
+ BA("«BusinessArea» SettlementAndReconciliation")
+ P("«Processes»")
+ BA --> CP
+ BA --> CSD
+ BA --> CCP
+ BA --> SYS
+ BA -- P

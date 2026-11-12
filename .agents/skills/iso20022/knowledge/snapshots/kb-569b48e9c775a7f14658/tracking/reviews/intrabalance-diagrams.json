@@ -1,0 +1,656 @@
+{
+  "date": "2026-11-09",
+  "source_id": "src-000359",
+  "source_sha256": "3d4f67569cce0364186093303825fd1f55515bb124b43bce6376fe060410234d",
+  "source_figure_occurrences": 24,
+  "source_media": 20,
+  "substantive_diagrams": 20,
+  "legend_glyphs": 4,
+  "mermaid_render_pass": 20,
+  "original_visual_review_pass": 20,
+  "word_composite_review_pass": 20,
+  "canonical_artwork_reuse_context_open": [
+    "fig-0001"
+  ],
+  "native_composites": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "flow_references": 17,
+  "participant_references": 15,
+  "parent_word_pdf_sha256": "79e72f4d669e84f69968fb212c1bc7ecb4982b55cb00fcb1b6e883c875c71288",
+  "source_unchanged": true,
+  "validation_errors": [],
+  "records": [
+    {
+      "source_figure_id": "fig-0001",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0001.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0001.mmd",
+      "mermaid_sha256": "7caa08acf76d062dbc9a6666df82bd28948c5360a8748efbe3303e7f1b666f95",
+      "original": "domains/securities/assets/src-000359/originals/image1.wmf",
+      "original_sha256": "b243cc70a59b19aa312a29990a337c0b8ac6308446fc09b2c6089bc37870c0e1",
+      "word_file_page": 10,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0010.png",
+      "word_page_sha256": "053fefcca0cd5a2ce5226304c11955ce1a30c7560bcc8bc5dfed2e518d836521",
+      "flow_path": null,
+      "notes": [
+        "Source P140 says Collateral Reporting despite this IntraBalanceMovement publication (issue-000047).",
+        "The artwork is byte-identical to source343 figure1; its existing source reconstruction is reused. The source343 canonical context remains needs-review under issue-000039. Disposition is canonical-artwork-reused; contextual-review-open, not deduplicated-to-reviewed.",
+        "P143 defines the grey area as dedicated cash-account static-data setup and explains that an NCB acting as a CSD exists in both roles. Institutions are not collapsed into their contextual role.",
+        "Mermaid flowchart boxes preserve hierarchy and account labels; original grey shading, levels 1–4 and repeated CSD B occurrences remain explicit in the source artwork."
+      ],
+      "render": {
+        "diagram": "fig-0001",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0001.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0001.png"
+      },
+      "svg_sha256": "6a1f7e961426d89abfde11566cedac1c73dba68f0f89473f5ac39458d20e720a",
+      "png_sha256": "8d15689ef2ee0d1247d5a10b9755a5fa953aaa3c458d37758d6d21966820f2c0",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0002",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0002.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0002.mmd",
+      "mermaid_sha256": "d299d7b98e226d8f9b0cebc0e8466d0c44b59294ab6e3b3f7f8a11438b3eb5fb",
+      "original": "domains/securities/assets/src-000359/originals/image2.emf",
+      "original_sha256": "36331e488e39ce6257a396d8f1a2a9337f8caaa479e632babcc5d7669f817b73",
+      "word_file_page": 13,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0013.png",
+      "word_page_sha256": "96a81c1522f5953120622a275bc8d84c4d0d1772f08ca7d49db198460152bab5",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p151-intra-balance-management.md",
+      "notes": [
+        "The source has no enclosing system boundary and no include/extend labels. Plain process associations and directed actor associations are preserved; no generalization is inferred.",
+        "Source IntraBalanceManagement is green; all other process ovals are grey context. The original retains this colour distinction; the native use-case layout retains exact labels, stereotypes and connector semantics."
+      ],
+      "render": {
+        "diagram": "fig-0002",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0002.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0002.png"
+      },
+      "svg_sha256": "fb87bf1e96e3e182b696b55fe5a0c6ddcd5b984e727e8cc311e6cfb308d61830",
+      "png_sha256": "12e44f79cf714b5cf8a2aa490b64162a2e2d7f1c24051449c3084b7a7cdb780e",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0003",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0003.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0003.mmd",
+      "mermaid_sha256": "56cf547b974ccb0c28cbcc1890fbc73d304bf3e96c547ef5415b5ad367e04af8",
+      "original": "domains/securities/assets/src-000359/originals/image3.emf",
+      "original_sha256": "97e57d11a58ae7e951200f28d87df7c94e299ceca86fe60e064e073290acb222",
+      "word_file_page": 17,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0017.png",
+      "word_page_sha256": "efaaa20d703513843273fa3940630a8cd7966c9d0e26cf89777304e21891a75d",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p175-high-level-process-diagrams.md",
+      "notes": [
+        "P176 distinguishes green main processes from blue context. No extra outgoing edge is supplied for Reversal."
+      ],
+      "render": {
+        "diagram": "fig-0003",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0003.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0003.png"
+      },
+      "svg_sha256": "21363779e73babed373ec385d0d421c43597e4939b56fd5c3a6eaa2b89c9504c",
+      "png_sha256": "5bd69e2226518cd5a4bfb420e002bd5802d0a05a23b06fba46ac36635d78f223",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0004",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0004.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0004.mmd",
+      "mermaid_sha256": "5d36cbb5b43c10afd0ffdd065c67fe8d96e76aa2ee801c159ab29b8b8ad548fd",
+      "original": "domains/securities/assets/src-000359/originals/image4.emf",
+      "original_sha256": "2a9a4c600fd1005e0ba3d2a13936e23ef903358067dff91b68ad9d6d2ed2cf17",
+      "word_file_page": 18,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0018.png",
+      "word_page_sha256": "dfc71a714d64d8b9043beea9329a5baaaf75612eab8b7c9a9c23b9885d85ec85",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p175-high-level-process-diagrams.md",
+      "notes": [
+        "Plain unlabelled connector junctions are normalized to common endpoints, not converted to decisions or concurrency bars. Source has no condition making both requests mandatory."
+      ],
+      "render": {
+        "diagram": "fig-0004",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0004.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0004.png"
+      },
+      "svg_sha256": "204f321c62bc30a28a445da85f334c955000100e87f794e806b56e687e8e4f84",
+      "png_sha256": "9dfff8d41f8b47e2879bbd8dc8b1e3efe0a5197d2b26ff7be0ee9a1e6e311a8e",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0005",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0005.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0005.mmd",
+      "mermaid_sha256": "055030cc0175bd757a56ae1aa32ca9b570f0def3c82723e4735a16a3cb51ab07",
+      "original": "domains/securities/assets/src-000359/originals/image5.emf",
+      "original_sha256": "3426b74a892451b69ece17ef39b0952c439dbc3c206718e5cb05e3d284da1e92",
+      "word_file_page": 19,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0019.png",
+      "word_page_sha256": "25661cd2430a1aa07439624d8c26c48699e6df6bef6258b1597a062f2e1a3d77",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p175-high-level-process-diagrams.md",
+      "notes": [
+        "The small bridge where the Confirmation-to-Reversal connector crosses Status reporting-to-Confirmation is not a connection. Both Confirmation-to-Reconciliation and Confirmation-to-Reversal remain distinct outgoing paths.",
+        "Cancellation advice and Reversal are context processes here, not proof that this message set supplies corresponding exact message definitions."
+      ],
+      "render": {
+        "diagram": "fig-0005",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0005.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0005.png"
+      },
+      "svg_sha256": "33bfea69ef5bebc6ab9bb7b8186264f503d6fa1910614eee32fc5c4a84798a99",
+      "png_sha256": "d2b8a719aa861792b9fd0d83d1ac5198d94765c318c264c1f1d0f445772457e1",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0010",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0010.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0010.mmd",
+      "mermaid_sha256": "d7073839889ce672803818c4ab3f51b96b58d99a1b8b5f696c20a3a390bd1196",
+      "original": "domains/securities/assets/src-000359/originals/image10.emf",
+      "original_sha256": "9409adf9719695d42bb0d75cb2fc62b270a9daae77c7f659922cc214e8cde386",
+      "word_file_page": 21,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0021.png",
+      "word_page_sha256": "8c9510f4d13396af25cb8c4b078dad30598b59a39a2df6fb637f1569f14274f8",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p189-external-scenario.md",
+      "notes": [
+        "The literal lane label IntructingParty is misspelled in the artwork. T20 calls the contextual activity Manage Liquidity whereas the picture says ManageCash.",
+        "T20 describes Yes/No settled results; the picture additionally explicitly shows Partial Settlement. Both paths are preserved.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0010",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0010.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0010.png"
+      },
+      "svg_sha256": "620843a0ed80c83913aceeb793ecaba86905b65e8ab9ea2620aa5c0f51126a1d",
+      "png_sha256": "3a5d57c9a1028ae096d7b02f248a416d4b4b89e54ade143b6573af17b4566dde",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0011",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0011.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0011.mmd",
+      "mermaid_sha256": "40dbc5c925ade6f232d6aa0a67cbf87b223ca7b0a0b24ccf2c01a816d9ddf574",
+      "original": "domains/securities/assets/src-000359/originals/image11.emf",
+      "original_sha256": "29b8f0b64a01ea073bc3d791d46e65fb3073b836b2ea5b278d402f028bab9baf",
+      "word_file_page": 22,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0022.png",
+      "word_page_sha256": "7e28f806936c4aebb094f12840e4672f051c089c9f5d13ca650516d0d32e15f9",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p193-internal-scenario.md",
+      "notes": [
+        "T21 repeats Process Instruction as two table rows; the picture has one occurrence. The table is preserved intact, without fabricating a second picture activity.",
+        "The picture and T21 assign Monitor/Reconcile to Third Party. Transaction narrative P235/P237 instead says Instructing Party; no global equivalence is inferred.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0011",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0011.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0011.png"
+      },
+      "svg_sha256": "f5d2815be01e6aa3bc84d3fef567bf2cb6563c361562ef4bcbb5a3b40f776ec9",
+      "png_sha256": "d4c36f5fa35edc5ee0994c3ba5867ce9986cf3b9d0addc52808c2a772cae7193",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0012",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0012.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0012.mmd",
+      "mermaid_sha256": "6a5f5d7a3ea1e06d473f45bc24b5ecd768cb3e05f7648241de3e11c5bfb282ba",
+      "original": "domains/securities/assets/src-000359/originals/image12.emf",
+      "original_sha256": "5f33abd1b24fce7ec6c8ea018c1f0269d8a6c4372b9691c677d76cf56ba3d364",
+      "word_file_page": 23,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0023.png",
+      "word_page_sha256": "113ad85873fd2e644ca7746d8d64df58ab23228403cf44699a92e283a2bc55f0",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p197-intra-balance-movement-modification-cancellation-process.md",
+      "notes": [
+        "Both Executed? branches feed Advise Status. T22 distinguishes a positive advice when execution succeeds; the picture does not supply separate status-message nodes.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0012",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0012.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0012.png"
+      },
+      "svg_sha256": "27defba2d3a0f9255334f6394f1f6f319562544b611fabb9a356eee7f8dda4f0",
+      "png_sha256": "66a406b90e4e4d4b3df747b15e90d7a4830f1767e5126bf7f73951eff7ca8c16",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0013",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0013.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0013.mmd",
+      "mermaid_sha256": "ddb3ba8a74dbc1dd7841cb0ee4ee7dd28299315669b19432dd280c1353f6ea8c",
+      "original": "domains/securities/assets/src-000359/originals/image13.emf",
+      "original_sha256": "54cde5c1b929830606dbfef98c9bd80dec8990b775c4de8073a705652a2b8f71",
+      "word_file_page": 25,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0025.png",
+      "word_page_sha256": "0d25ac39f9580510961647a0bf6161e698719e3e15054b15c65ea0348ef950d8",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p200-push-mode.md",
+      "notes": [
+        "T23 names Servicing/Executing Party Instructing Party jointly for the event initiator; the drawing places the event only in Servicing Party lane.",
+        "T23 Error Processing says operational errors are added to a response before routing to Instructing Party; the source picture instead ends that error branch in the servicing lane. No missing response arrow is invented.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0013",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0013.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0013.png"
+      },
+      "svg_sha256": "4b8647939385cd66ea0ad4c5790ed073ae07c46bf03dffdd50a9f25c289342e2",
+      "png_sha256": "049e186ccdb273ee596bb54c04ec88f627e5b16b1a7e84cf8df67da5654ed996",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0014",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0014.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0014.mmd",
+      "mermaid_sha256": "6ca2beeb6a9231259eeb4ab1c2fd24766e24a5a638a19b31af7231c4034e109a",
+      "original": "domains/securities/assets/src-000359/originals/image14.emf",
+      "original_sha256": "1dba34630b623eff13a691bea04a6625894eca08460b17c9974b43c717ce98ca",
+      "word_file_page": 27,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0027.png",
+      "word_page_sha256": "1b1ac35ead68f0c890df93ce9f7b5055b972f40d0ee42e46263996576c099aa5",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p204-pull-mode.md",
+      "notes": [
+        "No start-point glyph is drawn in the source. T24 separately lists Generate Report; the picture proceeds directly from Validate Request to Successful Process? and therefore has no invented Generate Report box.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0014",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0014.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0014.png"
+      },
+      "svg_sha256": "e0eeea203b3aeb6ae219bd175d85277086cbb7118b7917e03d231773f578a18b",
+      "png_sha256": "e28144c40f81a08249cad70c2d24711d1fe78302fe9e726aef15aa56ac9c5306",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0015",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0015.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0015.mmd",
+      "mermaid_sha256": "be7dc1d263c1f3de33b1ef0f36089050c5441c5d2a97eb3b28389e448fcd5bd6",
+      "original": "domains/securities/assets/src-000359/originals/image15.emf",
+      "original_sha256": "a3d0940049241d5c880f913f83503c9459c788814b9a89373d383b17fcaf167e",
+      "word_file_page": 28,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0028.png",
+      "word_page_sha256": "64ed21489eca404de5e3d77108e72cc6de22eadbaef493c7e2069a6154d120aa",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p208-intra-balance-movement-pending-posting-report-process.md",
+      "notes": [
+        "T25 Successful Process and Monitor rows refer to Cancellation/Modification Report, despite the pending/posting heading and picture. Those copied labels remain visible as issue-000047.",
+        "T25 jointly names Servicing/Executing Party Instructing Party as event initiator and says Error Processing routes a response; the picture shows the event only in the servicing lane and an error end point.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0015",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0015.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0015.png"
+      },
+      "svg_sha256": "a0e1bd7ac55cbcd519d9ae53eba15efb86353f76f62dfcaef8d4e46a69e8dac4",
+      "png_sha256": "fed1777af5688ff0f720a2487e8d4a8e8c18780576f0558322c33e7dee189817",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0016",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0016.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0016.mmd",
+      "mermaid_sha256": "091ae3f67f83041a43d25829696fbd8c1c99864e89d5ad1279be542c586d0dcd",
+      "original": "domains/securities/assets/src-000359/originals/image16.emf",
+      "original_sha256": "f5ef910955dc36ad4ae02cdf8d4a80966def8887cf438273c1ce0739a388d878",
+      "word_file_page": 30,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0030.png",
+      "word_page_sha256": "3e9cda80c3edc1a916e41502d8ddba790de9fad0bfcf74568e161fb17b365ddf",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p211-intra-balance-movement-query-response-process.md",
+      "notes": [
+        "The picture prints Movemenrt in the response activity; it is preserved literally. T26 uses Send Intra Balance Movement Report and the transaction sequence uses IntraBalanceMovementQueryResponse. These source labels remain distinct.",
+        "T15 names a system-event trigger while requiring receipt of an incoming query; this wording is retained, without imposing a timing rule beyond the source.",
+        "Native Mermaid flowchart subgraphs retain source swimlane responsibility. Source start/end glyphs, labelled decisions and bars remain explicit. T19 defines bars as parallel actions; the original uses some bars at converging alternative paths, so no extra execution semantics are inferred."
+      ],
+      "render": {
+        "diagram": "fig-0016",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0016.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0016.png"
+      },
+      "svg_sha256": "b339d389ef8477e206b60244d62b545122ccaf9685fcb8e68a16c045b46c6521",
+      "png_sha256": "0efe1f10f91f788126146d6d9f35eacf74a300c8f985b94099a3322803371cdb",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0017",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0017.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0017.mmd",
+      "mermaid_sha256": "123503e081d73a119087305087c61d3c527375e2efb8f3124460cf261e5536ef",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0031.png",
+      "original_sha256": "abf7a78ba8d4b076d7090d42c3b1acceff4b35d75988e4615940792135aa252a",
+      "word_file_page": 31,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0031.png",
+      "word_page_sha256": "abf7a78ba8d4b076d7090d42c3b1acceff4b35d75988e4615940792135aa252a",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p219-in-external-scenario.md",
+      "notes": [
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0017",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0017.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0017.png"
+      },
+      "svg_sha256": "16833d2fe8290e213fb9ff93ffc8d5e2edba680d9e58fbf82b71f0bc29106bf8",
+      "png_sha256": "153261d85afc53d88a998490afddb9d4226031e73a24cb3ae3f7a099fe25c488",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0018",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0018.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0018.mmd",
+      "mermaid_sha256": "da78dea46e9b170d10833aaa9d14735ee7f471ef644d85bb7cfa5a376329b101",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0032.png",
+      "original_sha256": "82bd84f60cc30bc76e6f04a82257c3827205a5af3750cec3f906b32e58d5adff",
+      "word_file_page": 32,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0032.png",
+      "word_page_sha256": "82bd84f60cc30bc76e6f04a82257c3827205a5af3750cec3f906b32e58d5adff",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p230-in-internal-scenario.md",
+      "notes": [
+        "P231 and the picture say Third Party; P235 and P237 say Instructing Party. Both explicit recipients are retained, without silently equating the roles.",
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0018",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0018.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0018.png"
+      },
+      "svg_sha256": "0a0c52c4ba45848fc8a9e5b671b5bd507a30aab62973caf59983801719637f9b",
+      "png_sha256": "1c76a2e1caefab2194bf5c4c2fe14319e7d4f827409fa90452fa85012edc4542",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0019",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0019.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0019.mmd",
+      "mermaid_sha256": "b1934e03574b7b8287524668f7f487fcc1127ee0b92a804b96e91c269ae7cb7d",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0033.png",
+      "original_sha256": "dd3fb472dac6c75a1f0a40ae8abed02e2d79ba859c96f7f2be3bc63e05433101",
+      "word_file_page": 33,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0033.png",
+      "word_page_sha256": "dd3fb472dac6c75a1f0a40ae8abed02e2d79ba859c96f7f2be3bc63e05433101",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p238-modification-and-cancellation-process.md",
+      "notes": [
+        "Long labels and some code suffixes are clipped in the local Word rendering. Their complete source text is preserved in the drawing text at P240; reconstructed labels recover that text. The picture supplies no alt frame making modification and cancellation alternatives, so none is invented.",
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0019",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0019.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0019.png"
+      },
+      "svg_sha256": "a557cc504651c589490a60c01377e56745b1197df76991526966b7e55b40b7d8",
+      "png_sha256": "dfcb421e3eb5ae73a40e4816cd5b2c51c242e9161e00d6184b08adc90ae0b123",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0020",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0020.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0020.mmd",
+      "mermaid_sha256": "197f5f659a6769400577afee5f6808ec3166c0296c8d24769ad2bb9d6bbe9c87",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0035.png",
+      "original_sha256": "e69534eecd0e1830f4cfd6845aa64d25dac2b6001ca2cba65ec12d3d2f8993f5",
+      "word_file_page": 35,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0035.png",
+      "word_page_sha256": "e69534eecd0e1830f4cfd6845aa64d25dac2b6001ca2cba65ec12d3d2f8993f5",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p256-requesting-an-intra-balance-cancellation-query.md",
+      "notes": [
+        "Clipped source labels and code suffixes are recovered from the original drawing text P258.",
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0020",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0020.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0020.png"
+      },
+      "svg_sha256": "91ac74cdc90acb8f7675a277f9c438390c6f1c492250f41217e8c7100f0e69e2",
+      "png_sha256": "9a87112f17480f73bcd15e099dd72e87b4c06b1640a2d2a96678d7e62afcbebe",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0021",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0021.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0021.mmd",
+      "mermaid_sha256": "a81babb0cd9440bceba4dfd06eb0ca014b1be889667ae62df3904abe2ad60e53",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0036.png",
+      "original_sha256": "1a37685d0f8431afb31fe1f056f6297ab1177b78b33bb2c567ca29719170a9f0",
+      "word_file_page": 36,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0036.png",
+      "word_page_sha256": "1a37685d0f8431afb31fe1f056f6297ab1177b78b33bb2c567ca29719170a9f0",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p269-requesting-an-intra-balance-modification-query.md",
+      "notes": [
+        "The outgoing green query arrow has no visible text in the local Word render. Its exact name/code is retained in native source drawing text P271, and P277–P278 independently describe it. The reconstruction restores that supplied label and does not claim the local render displays it.",
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0021",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0021.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0021.png"
+      },
+      "svg_sha256": "e3321a70edbb4347950b9dd02466380736d2a4e9649957a4453cbf90272c458d",
+      "png_sha256": "2da67d8323be9c15386f0c052e57d164efea2a91c2bd6a5063d658dac01c4bc4",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0022",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0022.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0022.mmd",
+      "mermaid_sha256": "126ea623f657a4c5c243c5bcd57d90bb1142170a30d7f35be1a867aa102265b8",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0037.png",
+      "original_sha256": "13f6f61a345e994ad996f7ea5eebc3a3083b4bfbae6ffd8f6fc6b2382c97e027",
+      "word_file_page": 37,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0037.png",
+      "word_page_sha256": "13f6f61a345e994ad996f7ea5eebc3a3083b4bfbae6ffd8f6fc6b2382c97e027",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p282-producing-an-intra-balance-modification-cancellation-report-at-a-busin.md",
+      "notes": [
+        "The complete rendered picture shows one request arrow and one dashed status arrow; the labels cover cancellation/modification variants. Both native source labels are preserved on those shared arrows, without adding unseen connectors. The modification-status label and code suffixes are clipped/overlapped in the local Word view but present at P284 and P291–P292.",
+        "The two report arrows are separate in the source. No query arrow is supplied in this event-triggered scenario.",
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0022",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0022.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0022.png"
+      },
+      "svg_sha256": "4fdbf75dfae27cec0ac3f89f07f85aa73ccabebea722bae6667717983daa6765",
+      "png_sha256": "c60f3372ddc4a4bb35eddb8a8b9ace82c876d85faa937c22342733e5afad48d0",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0023",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0023.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0023.mmd",
+      "mermaid_sha256": "2709881069be7e0898072e461a7e20a948f9e7c9396570c559a2d0fd47f5c3bd",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0038.png",
+      "original_sha256": "83afcce36eaf0a2fc2e73f5c3d57244cd27d36dae28232eb5c66e2df96a94632",
+      "word_file_page": 38,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0038.png",
+      "word_page_sha256": "83afcce36eaf0a2fc2e73f5c3d57244cd27d36dae28232eb5c66e2df96a94632",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p298-intra-balance-movement-pending-posting-report-process.md",
+      "notes": [
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0023",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0023.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0023.png"
+      },
+      "svg_sha256": "c879c9387074af6f1ceab96ddcc004e2580d516cd4052fbab014e2025102f1e2",
+      "png_sha256": "1c9cf6cc1288a23b88d6335b6fde85dac389511dd80e3d5946d403e045f74882",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    },
+    {
+      "source_figure_id": "fig-0024",
+      "path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0024.md",
+      "mermaid": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/diagrams/intrabalance/fig-0024.mmd",
+      "mermaid_sha256": "3910f0829b9d1f1e8ae580e36a3c5ecc7b7ed310ac478dfd2961ac1074664f76",
+      "original": "domains/securities/assets/src-000359/word-page-context/page-0039.png",
+      "original_sha256": "a526625eb32c9f445b76038eb49c0a2927772a3c1f1a9e0b275966914c725afd",
+      "word_file_page": 39,
+      "word_page": "domains/securities/assets/src-000359/word-page-context/page-0039.png",
+      "word_page_sha256": "a526625eb32c9f445b76038eb49c0a2927772a3c1f1a9e0b275966914c725afd",
+      "flow_path": "domains/securities/reference/message-sets/t2s-intra-balance-movement/march-2024/flows/flow-src-000359-p310-intra-balance-movement-query-response-process.md",
+      "notes": [
+        "Source-native text boxes and connector objects form a complete figure. The retained Word page is the complete composite; the small WMF bank pictograms are not treated as standalone diagrams.",
+        "Solid/dashed connectors and their directions are preserved. Source colours are recorded per message step below; colours distinguish pictured context without asserting extra protocol semantics.",
+        "Native Mermaid boxes replace institutional pictograms; labels define the functional participants and do not bind a role to one institution."
+      ],
+      "render": {
+        "diagram": "fig-0024",
+        "result": "pass",
+        "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+        "version": "12.3.0",
+        "date": "2026-11-09",
+        "svg": "domains/securities/assets/src-000359/intrabalance/fig-0024.svg",
+        "png": "domains/securities/assets/src-000359/intrabalance/fig-0024.png"
+      },
+      "svg_sha256": "aff2067a0f4f1c98f1bd236e9014955a25e817991f9f64356be13e93a99e09c9",
+      "png_sha256": "730626f9bd2568694f34ac8b5a5ac1ae91981bf311737a60f79b1d369688d7d7",
+      "visual_review": "pass",
+      "word_composite_review": "pass",
+      "review_scope": "Original versus Mermaid: literal labels, connector endpoints/direction, decisions, solid/dashed lines, role boundaries and complete Word-page surroundings. Source-text labels clipped by the local Word rendering are explicitly disclosed, not presented as visibly read."
+    }
+  ],
+  "limitations": [
+    "Source359 issue-000047 remains open; hierarchy source343 context issue-000039 also remains visible.",
+    "The four original WMF pictograms are components of eight native composite sequences, not 32 independent business diagrams.",
+    "No decorative exclusion is claimed. Native embedded application content beyond the visible Word figures remains separately inventoried."
+  ]
+}

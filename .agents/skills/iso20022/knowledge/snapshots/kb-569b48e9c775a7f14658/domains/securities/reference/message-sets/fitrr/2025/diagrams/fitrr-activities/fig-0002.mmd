@@ -1,0 +1,33 @@
+usecase-beta
+direction TB
+actor CA("Competent Authority")
+actor SA("Supervisory Authority")
+actor RE("Reporting Entity")
+ref("Reference Data")
+submission("Reference Data Submission")
+dates("Non-Working Day Submission")
+distribution("Reference Data Distribution")
+transparency("Transparency Data")
+volume("Trading Volume Cap")
+transreport("Transparency Data Report Submission")
+activity("Trading Activity Report Submission")
+result("Trading Activity Result Submission")
+equity("Equity")
+nonequity("Non-Equity")
+CA -- SA
+SA -- RE
+SA -- ref
+SA -- transparency
+SA -- volume
+ref -- submission
+ref -- dates
+ref -- distribution
+transparency -- transreport
+transparency -- activity
+transparency -- result
+transreport -- equity
+transreport -- nonequity
+activity -- equity
+activity -- nonequity
+result -- equity
+result -- nonequity

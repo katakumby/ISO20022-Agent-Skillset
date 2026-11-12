@@ -1,0 +1,12 @@
+flowchart TB
+subgraph group0["Instructing Party"]
+instruction(["Instruction"])
+monitor(["Monitor"])
+end
+subgraph group1["Executing Party"]
+process(["Process Query"])
+result(["Response"])
+end
+instruction --> process
+process --> result
+result --> monitor

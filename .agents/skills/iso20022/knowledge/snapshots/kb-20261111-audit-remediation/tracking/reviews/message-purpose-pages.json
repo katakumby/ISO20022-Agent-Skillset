@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-09",
+  "renderer": "pypdfium2 5.14.0",
+  "checks": [
+    {
+      "source_id": "src-000197",
+      "file_page": 406,
+      "result": "Visually confirmed servicer-to-owner cancellation advice and explicit prohibition on cancelling any status-advice message."
+    },
+    {
+      "source_id": "src-000197",
+      "file_page": 491,
+      "result": "Visually confirmed account-owner-to-servicer receipt/delivery instruction, physical/book-entry and with/without payment, linkage and BAH reuse."
+    },
+    {
+      "source_id": "src-000080",
+      "file_page": 665,
+      "result": "Visually confirmed account-servicer-to-owner or designated-agent reversal of previously confirmed securities/cash posting."
+    }
+  ],
+  "scope": "Targeted functionality claims only; no whole-publication review claimed."
+}

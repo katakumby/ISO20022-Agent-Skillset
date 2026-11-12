@@ -1,0 +1,34 @@
+sequenceDiagram
+    participant S as Account Servicer
+    participant O as Account Owner
+    rect rgb(245,248,255)
+    Note over S,O: Announcement
+    S->>O: Announcement of Event
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Eligibility
+    Note over S,O: Ex-Date / Record Date / Effective Date
+    S->>O: Eligible balance
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Instruction
+    O->>S: Instruction
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Status
+    S->>O: Status of Event/Instruction/Reminder of event details and/or instructed/uninstructed balance
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Entitlement
+    Note over S,O: Response deadline
+    S->>O: Notification of Entitled Position
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Pre-advice/Final Entitlement
+    S->>O: Securities / cash Movements Preliminary Advice
+    end
+    rect rgb(245,248,255)
+    Note over S,O: Confirmation
+    Note over S,O: Payment Date
+    S->>O: Confirmation of Account Posting
+    end

@@ -1,0 +1,6 @@
+sequenceDiagram
+participant A as NCB, CSD or directly connected T2S party, T2S-Operator
+participant B as Central System
+A->>B: ResendRequest
+B->>A: ReceiptAcknowledgement (negative with error information)
+B->>A: ORIGINAL MESSAGE (DUPLICATE) PUSH MODE

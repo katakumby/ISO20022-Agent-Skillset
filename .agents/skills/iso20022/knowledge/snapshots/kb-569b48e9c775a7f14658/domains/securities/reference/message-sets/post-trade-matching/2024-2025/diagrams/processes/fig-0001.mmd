@@ -1,0 +1,32 @@
+flowchart TB
+ subgraph Pre["Pre-trade"]
+ IM["Investment Manager"] <-.-> BD["Broker/Dealer"]
+ end
+ subgraph Trade["Trade"]
+ Spacer["No activity box drawn in source trade band"]
+ end
+ subgraph Post["Post-trade"]
+ subgraph TM["Trade Matching"]
+ TN["Trade Notification"]
+ AL["Allocation"]
+ MA["Matching"]
+ CO["Confirmation"]
+ EN["Enrichment"]
+ AF["Affirmation"]
+ SP["Settlement preparation"]
+ RE["Reporting"]
+ end
+ end
+ subgraph CS["Clearing & Settlement"]
+ SA["Settlement Agent"] <--> CSD["(I)CSD"]
+ end
+ IM <--> TM
+ BD <--> TM
+ TM <--> SA
+ classDef inscope fill:green,color:white;
+ classDef other fill:#aaa,color:white;
+ class TN,AL,MA,CO,AF inscope;
+ class EN,SP,RE other;
+ style Spacer fill:none,stroke:none,color:#666
+ linkStyle 0,1,4 stroke:#999
+ linkStyle 2,3 stroke:green

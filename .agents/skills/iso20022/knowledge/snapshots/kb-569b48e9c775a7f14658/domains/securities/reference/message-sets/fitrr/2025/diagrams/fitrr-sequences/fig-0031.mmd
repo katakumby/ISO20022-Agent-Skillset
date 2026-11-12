@@ -1,0 +1,22 @@
+sequenceDiagram
+  actor RE as Reporting Entity
+  actor CA as Competent Authority
+  actor SA as Supervisory Authority
+  loop Capture all Relevant Messages
+  RE->>CA: FinancialInstrumentReportingEquityTradingActivityReport<br/>OR<br/>FinancialInstrumentReportingNonEquityTradingActivityReport
+  alt Message Received Correctly — All data is correct
+  CA->>RE: FinancialInstrumentReportingStatusAdvice
+  CA->>SA: FinancialInstrumentReportingEquityTradingActivityReport<br/>OR<br/>FinancialInstrumentReportingNonEquityTradingActivityReport
+  else Some data errors
+  CA->>RE: FinancialInstrumentReportingStatusAdvice
+  alt Instruments with no Errors
+  CA->>SA: FinancialInstrumentReportingEquityTradingActivityReport<br/>OR<br/>FinancialInstrumentReportingNonEquityTradingActivityReport
+  end
+  end
+  end
+  alt Message Received Correctly — All data is correct
+  SA->>CA: FinancialInstrumentReportingStatusAdvice
+  else Some data errors
+  SA->>CA: FinancialInstrumentReportingStatusAdvice
+  CA->>RE: FinancialInstrumentReportingStatusAdvice
+  end

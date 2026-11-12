@@ -1,0 +1,11 @@
+%%{init: {"flowchart":{"htmlLabels":false,"curve":"linear","wrappingWidth":300},"theme":"neutral"}}%%
+flowchart TB
+  M["Sender CUSALULL<br/>Receiver ICSDLULL<br/>Statement General Details [1.1]<br/>Sender Business Role [1.1] AOWN"]
+  S["Safekeeping Account And Holdings [0.n]<br/>Identification [1.1] CUSA1111<br/>Owner [1.1] CUSALULL<br/>Servicer [1.1] ICSDLULL"]
+  L1["Account Sub Level 1 [0.n] (Repetition 1)<br/>Identification [1.1] AAXX-c1<br/>Owner [1.1] AAXXLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [1.n]<br/>Financial Instrument ISIN [1.1] ISIN LU1234567890<br/>Balance For Financial Instrument [1..n]<br/>Date [1.1] 2017-02-27<br/>Holdings [1.1]<br/>Holding Balance [1.1]<br/>Settled Balance [0.1] UNITS 90<br/>Traded Balance [0.1] UNITS 100"]
+  L2["Account Sub Level 1 [0.n] (Repetition 2)<br/>Identification [1.1] AAYY-c2<br/>Owner [1.1] AAXXLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [1.n]<br/>Financial Instrument ISIN [1.1] ISIN LU1234567890<br/>Balance For Financial Instrument [1..n]<br/>Date [1.1] 2017-02-27<br/>Holdings [1.1]<br/>Holding Balance [1.1]<br/>Settled Balance [0.1] UNITS 110<br/>Traded Balance [0.1] UNITS 120"]
+  L3["Account Sub Level 1 [0.n] (Repetition 3)<br/>Identification [1.1] AAZZ-c3<br/>Owner [1.1] AAZZLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [1.n]<br/>Financial Instrument ISIN [1.1] ISIN LU1234567890<br/>Balance For Financial Instrument [1..n]<br/>Date [1.1] 2017-02-27<br/>Holdings [1.1]<br/>Holding Balance [1.1]<br/>Settled Balance [0.1] UNITS 400<br/>Traded Balance [0.1] UNITS 420"]
+  M ---|"contains"| S
+  S ---|"contains"| L1
+  S ---|"contains"| L2
+  S ---|"contains"| L3

@@ -1,0 +1,86 @@
+flowchart TB
+ subgraph Prior["Earlier lifecycle bands (gray in source)"]
+ EP["Execution process"]
+ AP["Allocation/Confirmation/Affirmation process"]
+ end
+ subgraph Trade["Trade Matching Process"]
+ subgraph BLane["Broker"]
+ direction TB
+ BSend["Send Confirmation"]
+ BCancel["Cancel Confirmation"]
+ BCancelReceipt((" "))
+ BMatchChoice{" "}
+ BIn["Incoming continuation<br/>(unlabelled source line)"]
+ BRework{" "}
+ BEndCircle((" "))
+ BEndChoice{" "}
+ BEnd(("To settlement<br/>process"))
+ end
+ subgraph CLane["Central Matching Utility"]
+ direction TB
+ Match(["Matching Process"])
+ CFI["Send Confirmation<br/>(IM)"]
+ CFB["Send Confirmation<br/>(Broker)"]
+ CDis["Send Disaffirmation<br/>Status message"]
+ CAff["Send Affirmation<br/>Status message"]
+ CEndCircle((" "))
+ CEndChoice{" "}
+ CEnd(("To settlement<br/>process"))
+ end
+ subgraph ILane["IM"]
+ direction TB
+ ISend["Send Confirmation"]
+ ICancel["Cancel Confirmation"]
+ ICancelReceipt((" "))
+ IMatchChoice{" "}
+ IIn["Incoming continuation<br/>(unlabelled source line)"]
+ end
+ subgraph TLane["Trustee"]
+ direction TB
+ Assess{" "}
+ Dis["Send Disaffirmation"]
+ Aff["Send Affirmation"]
+ TEndCircle((" "))
+ TEndChoice{" "}
+ TEnd(("To settlement<br/>process"))
+ end
+ BMatchChoice -.-> |"N (Unmatched)"| BSend
+ BMatchChoice -.-> |"N (Unmatched)"| BCancel
+ IMatchChoice -.-> |"N (Unmatched)"| ISend
+ IMatchChoice -.-> |"N (Unmatched)"| ICancel
+ BIn -.-> BSend
+ BSend --> Match
+ IIn -.-> ISend
+ ISend --> Match
+ BCancel --> Match
+ Match --> |"Cancellation Status message(s)"| BCancelReceipt
+ Match --> |"Matching Status message(s)"| BMatchChoice
+ ICancel --> Match
+ Match --> |"Cancellation Status message(s)"| ICancelReceipt
+ Match --> |"Matching Status message(s)"| IMatchChoice
+ Match -.-> |"Y (Matched)"| CFI
+ Match -.-> |"Y (Matched)"| CFB
+ BRework -.-> BSend
+ BRework -.-> BCancel
+ Assess -.-> |"N.G."| Dis
+ Assess -.-> |"O.K."| Aff
+ Dis --> |"Disaffirmation message"| CDis
+ CDis --> |"Disaffirmation Status message"| BRework
+ Aff --> |"Affirmation message"| CAff
+ BEndCircle -.-> BEndChoice
+ BEndChoice -.-> BEnd
+ CAff --> |"Affirmation Status message"| BEndCircle
+ CAff -.-> CEndCircle
+ CEndCircle -.-> CEndChoice
+ CEndChoice -.-> CEnd
+ Aff -.-> TEndCircle
+ TEndCircle -.-> TEndChoice
+ TEndChoice -.-> TEnd
+ CFI --> Assess
+ CFB --> Assess
+ end
+ style Prior fill:#ddd,stroke:#ddd
+ style CLane fill:#b5b5b5,stroke:#777
+ linkStyle default stroke:#777
+ linkStyle 0,1,2,3,4,6,14,15,16,17,18,19,23,24,26,27,28,29,30,31 stroke:#3268d8
+ style Match fill:#ff8500,stroke:black

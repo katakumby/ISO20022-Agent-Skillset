@@ -1,0 +1,555 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000075",
+  "sha256": "36a51e2d7b4ae62c9269f28b4de0797ec83ae077eddd87c817c3a663d80a4210",
+  "message_id": "colr.013.001.05",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:colr.013.001.05",
+  "message_name": "InterestPaymentRequestV05",
+  "domain": "securities",
+  "set_path": "domains/securities/reference/message-sets/collateral-management/edition-unknown-src-000065",
+  "counts": {
+    "schema": 1,
+    "element": 86,
+    "simpleType": 25,
+    "restriction": 25,
+    "fractionDigits": 3,
+    "totalDigits": 3,
+    "minInclusive": 1,
+    "complexType": 25,
+    "simpleContent": 1,
+    "extension": 1,
+    "attribute": 1,
+    "pattern": 4,
+    "sequence": 18,
+    "choice": 6,
+    "enumeration": 77,
+    "minLength": 6,
+    "maxLength": 6,
+    "any": 1
+  },
+  "top_level_declarations": 51,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "ActiveCurrencyAndAmount_SimpleType",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ActiveCurrencyAndAmount_SimpleType",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyAndAmount_SimpleType']",
+      "line": 5,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0002.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0003",
+      "name": "ActiveCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ActiveCurrencyAndAmount",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ActiveCurrencyAndAmount']",
+      "line": 12,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0003.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0004",
+      "name": "ActiveCurrencyCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ActiveCurrencyCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ActiveCurrencyCode']",
+      "line": 19,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0004.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0005",
+      "name": "Agreement4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Agreement4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Agreement4']",
+      "line": 24,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0005.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0006",
+      "name": "AgreementFramework1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}AgreementFramework1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AgreementFramework1Choice']",
+      "line": 33,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0006.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0007",
+      "name": "AgreementFramework1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}AgreementFramework1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AgreementFramework1Code']",
+      "line": 39,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0007.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0008",
+      "name": "AnyBICDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}AnyBICDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICDec2014Identifier']",
+      "line": 48,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0008.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0009",
+      "name": "BlockChainAddressWallet5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}BlockChainAddressWallet5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BlockChainAddressWallet5']",
+      "line": 53,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0009.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0010",
+      "name": "CalculationMethod1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CalculationMethod1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CalculationMethod1Code']",
+      "line": 60,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0010.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0011",
+      "name": "CollateralAccount3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralAccount3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CollateralAccount3']",
+      "line": 66,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0011.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0012",
+      "name": "CollateralAccountIdentificationType3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralAccountIdentificationType3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CollateralAccountIdentificationType3Choice']",
+      "line": 73,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0012.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0013",
+      "name": "CollateralAccountType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralAccountType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CollateralAccountType1Code']",
+      "line": 79,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0013.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0014",
+      "name": "CollateralBalance1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralBalance1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CollateralBalance1']",
+      "line": 88,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0014.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0015",
+      "name": "CollateralPurpose1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralPurpose1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='CollateralPurpose1Choice']",
+      "line": 94,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0015.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0016",
+      "name": "CollateralPurpose1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CollateralPurpose1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CollateralPurpose1Code']",
+      "line": 100,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0016.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0017",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 106,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0017.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0018",
+      "name": "DateAndDateTime2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}DateAndDateTime2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTime2Choice']",
+      "line": 111,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0018.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0019",
+      "name": "DatePeriod2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}DatePeriod2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DatePeriod2']",
+      "line": 117,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0019.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0020",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 123,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0020.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0021",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 128,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0021.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0022",
+      "name": "ExposureType11Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ExposureType11Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExposureType11Code']",
+      "line": 133,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0022.md",
+      "node_count": 38
+    },
+    {
+      "id": "type-0023",
+      "name": "Frequency1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Frequency1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Frequency1Code']",
+      "line": 173,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0023.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0024",
+      "name": "GenericIdentification30",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}GenericIdentification30",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification30']",
+      "line": 185,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0024.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0025",
+      "name": "GenericIdentification36",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}GenericIdentification36",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification36']",
+      "line": 192,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0025.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0026",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 199,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0026.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0027",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 202,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0027.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0028",
+      "name": "InterestAmount4",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestAmount4",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='InterestAmount4']",
+      "line": 205,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0028.md",
+      "node_count": 18
+    },
+    {
+      "id": "type-0029",
+      "name": "InterestComputationMethod2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestComputationMethod2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='InterestComputationMethod2Code']",
+      "line": 225,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0029.md",
+      "node_count": 17
+    },
+    {
+      "id": "type-0030",
+      "name": "InterestMethod1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestMethod1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='InterestMethod1Code']",
+      "line": 244,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0030.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0031",
+      "name": "InterestPaymentRequestV05",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestPaymentRequestV05",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='InterestPaymentRequestV05']",
+      "line": 250,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0031.md",
+      "node_count": 9
+    },
+    {
+      "id": "type-0032",
+      "name": "InterestRate1Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestRate1Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='InterestRate1Choice']",
+      "line": 261,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0032.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0033",
+      "name": "InterestRequestSequence1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestRequestSequence1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='InterestRequestSequence1Code']",
+      "line": 267,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0033.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0034",
+      "name": "InterestResult1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}InterestResult1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='InterestResult1']",
+      "line": 273,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0034.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0035",
+      "name": "Max140Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max140Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max140Text']",
+      "line": 283,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0035.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0036",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 289,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0036.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0037",
+      "name": "Max210Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max210Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max210Text']",
+      "line": 295,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0037.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0038",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 301,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0038.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0039",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 307,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0039.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0040",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 313,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0040.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0041",
+      "name": "NameAndAddress6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}NameAndAddress6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NameAndAddress6']",
+      "line": 319,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0041.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0042",
+      "name": "Number",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Number",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Number']",
+      "line": 325,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0042.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0043",
+      "name": "Obligation9",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Obligation9",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Obligation9']",
+      "line": 331,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0043.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0044",
+      "name": "PartyIdentification178Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}PartyIdentification178Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification178Choice']",
+      "line": 343,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0044.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0045",
+      "name": "PercentageRate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}PercentageRate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='PercentageRate']",
+      "line": 350,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0045.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0046",
+      "name": "PostalAddress2",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}PostalAddress2",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress2']",
+      "line": 356,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0046.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0047",
+      "name": "Reference20",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}Reference20",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Reference20']",
+      "line": 365,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "SupplementaryData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}SupplementaryData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryData1']",
+      "line": 371,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0048.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0049",
+      "name": "SupplementaryDataEnvelope1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}SupplementaryDataEnvelope1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryDataEnvelope1']",
+      "line": 377,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0049.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0050",
+      "name": "VariableInterest1Rate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}VariableInterest1Rate",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='VariableInterest1Rate']",
+      "line": 382,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0050.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0051",
+      "name": "YesNoIndicator",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:colr.013.001.05}YesNoIndicator",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='YesNoIndicator']",
+      "line": 388,
+      "path": "domains/securities/reference/messages/colr.013.001.05/types/type-0051.md",
+      "node_count": 2
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

@@ -1,0 +1,70 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "CCP Clearing"
+source_ids: ["src-000053"]
+source_editions: ["March 2026; Standards MX November 2026 release"]
+message_ids: []
+heading_path: ["12 Message Items Types", "12.1 MessageComponents", "12.1.7 Financial Instrument Identification", "12.1.7.2 SecurityIdentification14", "12.1.7.2.1 ISIN <ISIN>"]
+file_pages: [394]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 12.1.7.2.1 ISIN <ISIN>
+
+Source: [src-000053](../../../../../../../../../evidence/omitted/4e6ea171978d4b0a5cc40b11.md). Locator: one-based file pages 394 to 394.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 394
+
+```text
+    /ISIN Must be present
+ Or    /OtherIdentification[*] Must be present
+Error handling:
+– Error severity: Fatal
+– Error Code: X00192
+– Error Text: At least one identification must be present.
+• DescriptionUsageRule
+(Rule)
+Description must be used alone as the last resort.
+• ISINGuideline
+(Rule)
+When a ISIN code exist. It is strongly recommended that the ISIN be used.
+• ISINPresenceRule
+(Rule)
+If ISIN is not present then either Description or at least one occurrence of OtherIdentification must be
+present.
+On Condition
+    /ISIN is absent
+Following Must be True
+    /OtherIdentification[*] Must be present
+ Or    /Description Must be present
+Error handling:
+– Error severity: Fatal
+– Error Code: X00194
+– Error Text: At least one identification must be present.
+• OtherIdentificationPresenceRule
+(Rule)
+If OtherIdentification is not present then either ISIN or Description must be present.
+On Condition
+    /OtherIdentification[*] is absent
+Following Must be True
+    /ISIN Must be present
+ Or    /Description Must be present
+Error handling:
+– Error severity: Fatal
+– Error Code: X00193
+– Error Text: At least one identification must be present.
+12.1.7.2.1  ISIN <ISIN>
+Presence: [0..1]
+Message Definition Report - Part 2
+Central CounterParty (CCP) Securities Clearing - November 2026 for
+Standards MX
+Message Items Types
+March 2026 394
+```
+

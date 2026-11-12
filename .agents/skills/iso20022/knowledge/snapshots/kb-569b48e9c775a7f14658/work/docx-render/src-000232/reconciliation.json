@@ -1,0 +1,24 @@
+{
+  "source_id": "src-000232",
+  "source_sha256": "c750f67ab2aa7c8c37cb44a2e1f3edfb79455a2527c86e2fd5fff0dcef391870",
+  "pdf": "work/docx-render/src-000232/document.pdf",
+  "pdf_sha256": "18a393078f597d1e80fa161ae37155c9e0c973720566bdc0f37ad9ef7f80cb0c",
+  "word_version": "16.0",
+  "word_build": "16.0.20527",
+  "pages": 3,
+  "original_unchanged_at_render": true,
+  "table_alignment_basis": "Equal top-level source/Word table counts, no nested source tables; ordinal alignment with independent PDF cell-text check",
+  "tables": [],
+  "figures": [],
+  "matched_nonempty_cells": 0,
+  "nonempty_cells_checked": 0,
+  "derived_header_error_pages": [],
+  "limitations": [
+    "Word pagination is additional to stable original paragraph/XML/table locators.",
+    "Normalized cell text is independently searched in its Word-PDF span; this does not prove grid/merge/footnote or semantic fidelity.",
+    "Repeated identical source assets can produce multiple candidate pages; no occurrence page is selected without further evidence.",
+    "Floating/composite objects without unique binary asset hashes require direct page inspection.",
+    "Word locale can produce a STYLEREF header error. This is a derived-render artifact, not a statement in the immutable original.",
+    "No visual-review or reviewed status is conferred by this helper."
+  ]
+}

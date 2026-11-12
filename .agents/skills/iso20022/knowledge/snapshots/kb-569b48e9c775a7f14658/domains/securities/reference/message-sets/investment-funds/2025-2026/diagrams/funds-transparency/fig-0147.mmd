@@ -1,0 +1,7 @@
+%%{init: {"flowchart":{"htmlLabels":false,"curve":"linear","wrappingWidth":300},"theme":"neutral"}}%%
+flowchart TB
+  L1["Account Sub Level 1 [0.n] (Repetition 2)<br/>Identification [1.1] Account CUSB2222<br/>Owner [1.1] CUSBLULL<br/>Servicer [1.1] ICSDLULL<br/>Balance Details<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  C1["Account Sub Level 2 [0.n] (Repetition 1)<br/>Identification [1.1] Account BBXX-c1<br/>Owner [1.1] BBXXLULL<br/>Servicer [1.1] CUSBLULL<br/>Balance Details<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  C2["Account Sub Level 2 [0.n] (Repetition 2)<br/>Identification [1.1] Account BBYY-c2<br/>Owner [1.1] BBYYLULL<br/>Servicer [1.1] CUSBLULL<br/>Balance Details<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  L1 ---|"contains"| C1
+  L1 ---|"contains"| C2

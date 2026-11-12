@@ -1,0 +1,61 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Corporate Actions"
+source_ids: ["src-000080"]
+source_editions: ["February 2026"]
+message_ids: []
+heading_path: ["7 seev.035.001.17 CorporateActionMovementPreliminaryAdviceV17", "7.4 Message Building Blocks", "7.4.12 CorporateActionDetails <CorpActnDtls>", "7.4.12.2 SecuritiesQuantity <SctiesQty>"]
+file_pages: [417]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["seev.035.001.17"]
+---
+
+# 7.4.12.2 SecuritiesQuantity <SctiesQty>
+
+Source: [src-000080](../../../../../../../../../evidence/omitted/dfb597659e5318b4c0abe01e.md). Locator: one-based file pages 417 to 417.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 417
+
+```text
+7.4.12.2  SecuritiesQuantity <SctiesQty>
+Presence: [0..1]
+Definition: Provides information about securities quantity linked to a corporate action.
+SecuritiesQuantity <SctiesQty> contains the following CorporateActionQuantity12 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   BaseDenomination <BaseDnmtn> [0..1] ± C20 417
+   IncrementalDenomination <IncrmtlDnmtn> [0..1] ± C20 417
+7.4.12.2.1  BaseDenomination <BaseDnmtn>
+Presence: [0..1]
+Definition: Minimum integral amount of securities that each account owner must have remaining after
+the called amounts are applied.
+Impacted by: C20 "DigitalTokenUnitUsageRule"
+BaseDenomination <BaseDnmtn> contains one of the following elements (see
+"FinancialInstrumentQuantity35Choice" on page 1092 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Unit <Unit> [1..1] Quantity 1093
+Or   FaceAmount <FaceAmt> [1..1] Amount 1093
+Or   AmortisedValue <AmtsdVal> [1..1] Amount 1093
+Or   Code <Cd> [1..1] CodeSet 1093
+Or}   DigitalTokenUnit <DgtlTknUnit> [1..1] Quantity 1093
+Constraints
+• DigitalTokenUnitUsageRule
+DigitalTokenUnit format may only be used for instruments identified with a digital token identifier.
+7.4.12.2.2  IncrementalDenomination <IncrmtlDnmtn>
+Presence: [0..1]
+Definition: Amount used when the called amount is not met by running the lottery with the base
+denomination.
+Impacted by: C20 "DigitalTokenUnitUsageRule"
+Approved by the Securities SEG on 27 January 2026 seev.035.001.17
+CorporateActionMovementPreliminaryAdviceV17
+Corporate Actions - Maintenance 2025 - 2026 417 February 2026
+```
+

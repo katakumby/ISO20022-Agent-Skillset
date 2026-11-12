@@ -1,0 +1,5 @@
+# Preserve recorded source and snapshot bytes exactly.
+* -text
+# Large immutable payloads are stored through Git LFS.
+**/index.sqlite filter=lfs diff=lfs merge=lfs -text
+**/workbooks/src-000097/workbook.json filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,63 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "CCP Clearing"
+source_ids: ["src-000053"]
+source_editions: ["March 2026; Standards MX November 2026 release"]
+message_ids: []
+heading_path: ["10 MX secl.009.001.03 BuyInConfirmationV03", "10.4 Message Building Blocks", "10.4.4 OriginalSettlementObligation <OrgnlSttlmOblgtn>", "10.4.4.11 TradeDate <TradDt>"]
+file_pages: [312]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["secl.009.001.03"]
+---
+
+# 10.4.4.11 TradeDate <TradDt>
+
+Source: [src-000053](../../../../../../../../../evidence/omitted/4e6ea171978d4b0a5cc40b11.md). Locator: one-based file pages 312 to 312.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 312
+
+```text
+Error handling:
+– Error severity: Fatal
+– Error Code: X00194
+– Error Text: At least one identification must be present.
+• OtherIdentificationPresenceRule
+(Rule)
+If OtherIdentification is not present then either ISIN or Description must be present.
+On Condition
+    /OtherIdentification[*] is absent
+Following Must be True
+    /ISIN Must be present
+ Or    /Description Must be present
+Error handling:
+– Error severity: Fatal
+– Error Code: X00193
+– Error Text: At least one identification must be present.
+10.4.4.11  TradeDate <TradDt>
+Presence: [0..1]
+Definition: Provides the trade date.
+Datatype: ISODate on page 487
+10.4.4.12  DealPrice <DealPric>
+Presence: [0..1]
+Definition: Provides the price of the trade.
+DealPrice <DealPric> contains the following elements (see Price4 on page 465 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   Value <Val> [1..1] ± 465
+   Type <Tp> [0..1] CodeSet 466
+10.4.4.13  Quantity <Qty>
+Presence: [1..1]
+Definition: Provides the quantity of the trade.
+Message Definition Report - Part 2
+Central CounterParty (CCP) Securities Clearing - November 2026 for
+Standards MX
+MX secl.009.001.03 BuyInConfirmationV03
+March 2026 312
+```
+

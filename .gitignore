@@ -1,0 +1,26 @@
+# Publish the complete skill collection and supplied raw data.
+# Git metadata below is required for ignore rules and LFS downloads.
+/*
+!/.agents/
+!/raw-input/
+!/.gitignore
+!/.gitattributes
+/.agents/*
+!/.agents/skills/
+
+# Local runtime caches, credentials, and transient database files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal

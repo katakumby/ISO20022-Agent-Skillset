@@ -1,0 +1,48 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph C["Client"]
+    S@{shape: f-circ, label: " "} --> CP("Instruction processing")
+    CM("Monitor Settlement Process") --> CD{"Settled?"}
+    CD -->|No| CU("Update Status")
+    CU --> CM
+    CD -->|Yes| CX(["Settle trade"])
+    CX --> CE@{shape: framed-circle, label: " "}
+  end
+  subgraph I["Instructing Party"]
+    IP("Instruction processing") --> Needed{"Split Needed?"}
+    Needed -->|Yes| Split("Instruct Split")
+    Needed -->|No| IM("Monitor Settlement Process")
+    IM --> ID{"Settled?"}
+    ID -->|No| IU("Update Status")
+    IU --> IM
+    ID -->|Yes| IX(["Settle trade"])
+    IX --> IE@{shape: framed-circle, label: " "}
+  end
+  subgraph E["Executing Party"]
+    EP("Instruction processing") --> EM("Matching and Settlement Process")
+    ESplit("Execute Split") --> EM
+    EM --> ED{"Settled?"}
+    ED -->|No| EU("Update Status")
+    EU --> EM
+    ED -->|Yes| EX(["Settle trade"])
+    EX --> EE@{shape: framed-circle, label: " "}
+    EU --> Join@{shape: fork, label: " "}
+    EX --> Join
+  end
+  CP --> IP
+  IP --> EP
+  CP -.- Split
+  Split --> ESplit
+  Join --> IM
+  IU --> CM
+  IX --> CM
+  classDef focus fill:#d1d8b8,stroke:#111,color:#111
+  classDef context fill:#c0d1e5,stroke:#111,color:#111
+  class Needed,Split,ESplit focus
+  class CP,CM,CD,CU,CX,IP,IM,ID,IU,IX,EP,EM,ED,EU,EX context
+  classDef fork fill:#111,stroke:#111
+  class Join fork
+  classDef framedcircle fill:#fff,stroke:#111,stroke-width:3px
+  class CE,IE,EE framedcircle
+  classDef fcirc fill:#4472c4,stroke:#4472c4
+  class S fcirc

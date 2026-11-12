@@ -1,0 +1,13 @@
+usecase-beta
+direction LR
+user("T2S System user")
+comm("T2S Interface Communication A2A")
+inbound("T2S Inbound Processing A2A")
+outbound("T2S Outbound Processing A2A")
+back("Backend Modules of Central System here T2S")
+user -- comm
+user -- inbound
+user -- outbound
+comm -- inbound
+inbound -- outbound
+inbound -- back

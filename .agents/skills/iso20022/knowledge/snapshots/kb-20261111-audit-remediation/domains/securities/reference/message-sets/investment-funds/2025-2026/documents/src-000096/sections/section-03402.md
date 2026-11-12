@@ -1,0 +1,65 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Investment Funds"
+source_ids: ["src-000096"]
+source_editions: ["May 2026"]
+message_ids: []
+heading_path: ["66 Message Items Types", "66.1 MessageComponents", "66.1.24 Investment Account", "66.1.24.14 InvestmentAccount75", "66.1.24.14.2 Name <Nm>"]
+file_pages: [4648]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 66.1.24.14.2 Name <Nm>
+
+Source: [src-000096](../../../../../../../../../evidence/omitted/fffd4ab68b421d059524ec38.md). Locator: one-based file pages 4648 to 4648.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 4648
+
+```text
+AccountStatusUpdateInstruction <AcctStsUpdInstr> contains the following elements (see
+"AccountStatusUpdateInstruction1" on page 5206 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   UpdateInstruction <UpdInstr> [1..1]  5206
+{Or     Code <Cd> [1..1] CodeSet 5206
+Or}     Proprietary <Prtry> [1..1] ± 5207
+   UpdateInstructionReason <UpdInstrRsn> [0..1]  5207
+{Or     NoSpecifiedReason <NoSpcfdRsn> [1..1] CodeSet 5207
+Or}     Reason <Rsn> [1..*]  C27 5207
+       Code <Cd> [0..1]  5208
+{Or         Code <Cd> [1..1] CodeSet 5208
+Or}         Proprietary <Prtry> [1..1] ± 5208
+       AdditionalInformation <AddtlInf> [0..1] Text 5209
+66.1.24.14.2  Name <Nm>
+Presence: [0..1]
+Definition: Name of the account. It provides an additional means of identification, and is designated by
+the account servicer in agreement with the account owner.
+Datatype: "Max35Text" on page 5403
+66.1.24.14.3  Designation <Dsgnt>
+Presence: [0..1]
+Definition: Supplementary registration information applying to a specific block of units for dealing and
+reporting purposes. The supplementary registration information may be used when all the units are
+registered, for example, to a funds supermarket, but holdings for each investor have to be reconciled
+individually.
+Datatype: "Max35Text" on page 5403
+66.1.24.14.4  Type <Tp>
+Presence: [0..1]
+Definition: Type of account.
+Type <Tp> contains one of the following elements (see "AccountType2Choice" on page 4327 for
+details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   Code <Cd> [1..1] CodeSet 4327
+Or}   Proprietary <Prtry> [1..1] ± 4327
+Approved by the Securities SEG on 27 January 2026 Message Items Types
+Investment Funds - Maintenance 2025 - 2026 4648 May 2026
+```
+

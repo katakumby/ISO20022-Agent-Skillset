@@ -1,0 +1,27 @@
+flowchart TD
+  SR["Settlement & Reconciliation"]
+  IN([Instruction])
+  REC([Reconciliation])
+  MOD([Modification])
+  CAN([Cancellation request])
+  STA([Status reporting])
+  ALG([Allegement])
+  REM([Removal])
+  CONF([Confirmation])
+  REV([Reversal])
+  ADV([Cancellation advice])
+  SR --> IN
+  SR --> REC
+  SR --> STA
+  SR --> ALG
+  SR --> CONF
+  IN --> MOD
+  IN --> CAN
+  MOD --> STA
+  CAN --> STA
+  ALG --> REM
+  CONF --> REV
+  CONF --> ADV
+  ALG --> ADV
+  REC --> ADV
+  STA --> ADV

@@ -1,0 +1,38 @@
+flowchart TB
+subgraph group0["Communication Module - A2A"]
+formatted["Formatted outbound communication A2A"]
+end
+subgraph group1["Inbound Processing Module – A2A"]
+rejectMerge7{"#160;"}
+end
+subgraph group2["Outbound Processing Module – A2A"]
+businessOut["Outbound business data"]
+resendOther["Resend communication"]
+originMerge{"#160;"}
+statusMerge{"#160;"}
+log(["1 - Logging Outbound Business Data"])
+recipient(["2 - Define Possible Recipient List A2A"])
+subscription(["3 - Check A2A Message Subscription"])
+payload(["4 - Create Business Payload A2A"])
+routing(["5 - Prepare Routing A2A"])
+sequence(["6 - A2A Message Sequencing"])
+create(["7 - Create A2A Outbound Communication"])
+end
+subgraph group3["Adjacent modules and system events"]
+backOut(["Backend Modules"])
+u2a(["INTF: Inbound Processing Module - U2A"])
+end
+rejectMerge7 --> statusMerge
+backOut --> businessOut
+businessOut --> originMerge
+u2a --> resendOther
+resendOther --> originMerge
+originMerge --> statusMerge
+statusMerge --> log
+log --> recipient
+recipient --> subscription
+subscription --> payload
+payload --> routing
+routing --> sequence
+sequence --> create
+create --> formatted

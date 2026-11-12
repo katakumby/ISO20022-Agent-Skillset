@@ -1,0 +1,356 @@
+[
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/position-query.md",
+    "title": "Securities account position query",
+    "message_id": "semt.025.001.01",
+    "narrative_paragraphs": [
+      287,
+      289
+    ],
+    "payload_paragraphs": [
+      292,
+      316
+    ],
+    "root": "SctiesAcctPosQry",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      27
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 25,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000308",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.025.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/instruction-query.md",
+    "title": "Settlement instruction query",
+    "message_id": "semt.026.001.01",
+    "narrative_paragraphs": [
+      323,
+      324
+    ],
+    "payload_paragraphs": [
+      328,
+      353
+    ],
+    "root": "SctiesSttlmTxQry",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      28
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 26,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000309",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.026.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/current-status-query.md",
+    "title": "Current status query",
+    "message_id": "semt.026.001.01",
+    "narrative_paragraphs": [
+      357,
+      358
+    ],
+    "payload_paragraphs": [
+      362,
+      381
+    ],
+    "root": "SctiesSttlmTxQry",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      29
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 20,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000309",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.026.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/status-audit-query.md",
+    "title": "Status audit trail query",
+    "message_id": "semt.026.001.01",
+    "narrative_paragraphs": [
+      385,
+      386
+    ],
+    "payload_paragraphs": [
+      390,
+      411
+    ],
+    "root": "SctiesSttlmTxQry",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      30
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 22,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000309",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.026.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/instruction-response.md",
+    "title": "Instruction query response",
+    "message_id": "semt.027.001.01",
+    "narrative_paragraphs": [
+      419,
+      420
+    ],
+    "payload_paragraphs": [
+      424,
+      541
+    ],
+    "root": "SctiesSttlmTxQryRspn",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 118,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000310",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.027.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000057"
+    ]
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/current-status-response.md",
+    "title": "Current status query response",
+    "message_id": "semt.027.001.01",
+    "narrative_paragraphs": [
+      544,
+      545
+    ],
+    "payload_paragraphs": [
+      549,
+      684
+    ],
+    "root": "SctiesSttlmTxQryRspn",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 136,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000310",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.027.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/status-audit-response.md",
+    "title": "Status audit trail response",
+    "message_id": "semt.027.001.01",
+    "narrative_paragraphs": [
+      687,
+      688
+    ],
+    "payload_paragraphs": [
+      692,
+      920
+    ],
+    "root": "SctiesSttlmTxQryRspn",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 229,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000310",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.027.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/position-response.md",
+    "title": "Securities account position response",
+    "message_id": "semt.040.001.01",
+    "narrative_paragraphs": [
+      923,
+      928
+    ],
+    "payload_paragraphs": [
+      931,
+      1045
+    ],
+    "root": "SctiesAcctPosRspn",
+    "wellformedness": "pass",
+    "error": null,
+    "visual_review": "pass",
+    "word_pages": [
+      45,
+      46,
+      47
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 115,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "pass",
+      "source_schema_id": "src-000318",
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:semt.040.001.01",
+      "transform": "Assigned the supplied exact namespace to all payload tags and enclosed it in Document; interior values and structure unchanged. Original fragment retained.",
+      "errors": []
+    },
+    "date": "2026-11-09",
+    "review_status": "reviewed",
+    "issue_ids": []
+  },
+  {
+    "source_id": "src-000374",
+    "path": "domains/securities/reference/message-sets/t2s-securities-and-penalty-reporting/march-2026/examples/daily-penalty-report.md",
+    "title": "Daily cash penalties report",
+    "message_id": "semt.044.001.01",
+    "narrative_paragraphs": [
+      1049,
+      1050
+    ],
+    "payload_paragraphs": [
+      1052,
+      1858
+    ],
+    "root": null,
+    "wellformedness": "fail",
+    "error": "Premature end of data in tag SctiesTxPnltiesRpt line 1, line 807, column 23 (<string>, line 807)",
+    "visual_review": "pass",
+    "word_pages": [
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "independent_word_text_comparison": {
+      "paragraphs_checked": 807,
+      "unmatched": []
+    },
+    "derived_envelope_xsd_check": {
+      "result": "not-run",
+      "reason": "Original XML malformed"
+    },
+    "date": "2026-11-09",
+    "review_status": "needs-review",
+    "issue_ids": [
+      "issue-000057"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Transactions and Financial Instruments Data Reporting"
+source_ids: ["src-000321"]
+source_editions: ["July 2025"]
+message_ids: []
+heading_path: ["22 Message Items Types", "22.2 Message Datatypes", "22.2.2 CodeSet", "22.2.2.106 ReportingWaiverType1Code"]
+file_pages: [445]
+content_origin: "source-text-extraction"
+mentioned_message_ids: []
+---
+
+# 22.2.2.106 ReportingWaiverType1Code
+
+Source: [src-000321](../../../../../../../../../evidence/omitted/8d2c320c3a6fbfe4d503c6ab.md). Locator: one-based file pages 445 to 445.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 445
+
+```text
+CodeName Name Definition
+WARN Warning Record has been accepted with
+warnings.
+22.2.2.106  ReportingWaiverType1Code
+Definition: Specifies the type of regulatory reporting pre-trade waiver.
+Type: CodeSet
+CodeName Name Definition
+OILQ NegotiatedTransactionInIlliquidFinancialInstrum
+ent
+Pre-trade waiver was for a negotiated
+transaction in illiquid financial
+instruments. Applicable to equity
+instruments.
+NLIQ NegotiatedTransactionInLiquidFinancialInstrum
+ent
+Pre-trade waiver was for a negotiated
+transaction in liquid financial
+instruments. Applicable to equity
+instruments.
+PRIC NegotiatedTransactionWithConditions Pre-trade waiver was for a negotiated
+transaction subject to conditions other
+than the current market price of that
+financial instruments. Applicable to
+equity instruments.
+ILQD IlliquidInstrumentTransaction Pre-trade waiver was for an illiquid
+instrument transaction. Applicable to
+non-equity instruments.
+RFPT ReferencePriceTransaction Pre-trade waiver was for a reference
+price transaction. Applicable to equity
+instruments.
+SIZE AboveSpecificSizeTransaction Pre-trade waiver was for an above
+specific size transaction. Applicable to
+non-equity instruments.
+22.2.2.107  ReportingWaiverType3Code
+Definition: Specifies the type of regulatory reporting pre-trade waiver.
+Type: CodeSet
+CodeName Name Definition
+BENC BenchmarkTransaction Benchmark transaction.
+ACTX AgencyCrossTransaction Agency cross transaction.
+ILQD IlliquidInstrumentTransaction Pre-trade waiver was for an illiquid
+instrument transaction. Applicable to
+non-equity instruments.
+SIZE AboveSpecificSizeTransaction Pre-trade waiver was for an above
+specific size transaction. Applicable to
+non-equity instruments.
+CANC Cancellations Cancellations.
+AMND Amendments Amendments.
+SDIV SpecialDividendTransaction Special dividend transactions.
+Approved by the Securities SEG on 17 July 2025 Message Items Types
+Financial Instruments and Transactions Regulatory Reporting
+(Transactions and Financial Instruments Data Reporting) -
+Fast Track Minatnenance 2025
+445 July 2025
+```
+

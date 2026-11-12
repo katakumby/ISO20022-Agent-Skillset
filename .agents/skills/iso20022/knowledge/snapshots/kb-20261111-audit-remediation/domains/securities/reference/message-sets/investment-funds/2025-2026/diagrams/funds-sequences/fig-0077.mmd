@@ -1,0 +1,16 @@
+%%{init: {"sequence": {"mirrorActors": false}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000", "actorLineColor": "#000000", "signalColor": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+  participant A as Instructing Party 1
+  participant C as Instructing Party 2
+  participant M as Intermediary
+  participant B as Executing Party
+  A-)M: RedemptionOrder
+  C-)M: RedemptionOrder
+  M-)B: RedemptionBulkOrder
+  A-)M: RedemptionOrderCancellationRequest
+  M-)B: RedemptionBulkOrderCancellationRequest
+  B-)M: OrderCancellationStatusReport (CAND)
+  M-)A: OrderCancellationStatusReport (CAND)
+  M-)B: RedemptionBulkOrder
+  B-)M: RedemptionBulkOrderConfirmation
+  M-)C: RedemptionOrderConfirmation

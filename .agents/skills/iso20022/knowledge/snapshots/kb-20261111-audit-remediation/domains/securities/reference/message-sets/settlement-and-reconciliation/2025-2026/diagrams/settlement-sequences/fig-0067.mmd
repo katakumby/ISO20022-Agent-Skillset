@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant A as Instructing Party
+  participant B as Executing Servicing Party
+  participant C as Third Party
+  B->>A: SecuritiesBalanceCustodyReport
+  B->>A: SecuritiesBalanceAccountingReport
+  B->>A: SecuritiesTransactionPostingReport
+  B->>A: SecuritiesTransactionPendingReport
+  B->>A: SecuritiesSettlementTransactionAllegementReport
+  B->>A: IntraPositionMovementPostingReport
+  B->>C: SecuritiesSettlementTransactionAuditTrailReport

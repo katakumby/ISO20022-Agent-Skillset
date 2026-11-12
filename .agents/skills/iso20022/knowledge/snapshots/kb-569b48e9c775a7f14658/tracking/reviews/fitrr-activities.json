@@ -1,0 +1,483 @@
+{
+  "source_id": "src-000320",
+  "source_sha256": "86cd98d09d9c5a7a7d1e79aa58e4c8eae8eee86f0e00cd90815dcf7d35a00ff7",
+  "date": "2026-11-09",
+  "records": [
+    {
+      "figure_id": "fig-0001",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0001.md",
+      "original": "domains/securities/assets/src-000320/originals/image1.emf",
+      "original_sha256": "62fc4d2a8515feefa12d902ac6a9b392c2603741e01696a16bfd12d6a0e769e9",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image1.emf.png",
+      "mermaid_sha256": "9ae0a67bdfb6c2f756baaabb567fc043507526069289d66ae0ed891b58a15ded",
+      "flow_path": null,
+      "limitations": [
+        "This is a literal reconstruction of the source hollow-triangle actor connectors. Native use-case syntax renders them as generalization glyphs. The diagram is not treated as proof that a trading venue or firm is a subtype of a regulatory authority: T10–T12 distinguish functional participants and business roles. The source notation versus role semantics remains unresolved (issue-000035). No institutional equivalence is asserted."
+      ],
+      "rendered_png_sha256": "f8670fb07366697d10ceb5b76c66d545253549ba6c56915d5daae8da99ce6ce1",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0001.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0001.png",
+      "visual_review": "pass",
+      "review_status": "needs-review",
+      "issue_ids": [
+        "issue-000035"
+      ],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0002",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0002.md",
+      "original": "domains/securities/assets/src-000320/originals/image2.emf",
+      "original_sha256": "a858b96aaacef08f491f994f733ee6cea7c2fe877c8e0b60a1b1944af59de9e1",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image2.emf.png",
+      "mermaid_sha256": "aa06efcd2771a77262d568a14ab50c80e04278fe69ff73c3e2a96124afb24045",
+      "flow_path": null,
+      "limitations": [
+        "All visible connectors in this picture are plain undirected associations. Crossings with bridge humps are not junctions. Equity and Non-Equity connect separately to each of the three transparency-related submissions; no include, extend or generalization is added."
+      ],
+      "rendered_png_sha256": "c1855e5edc5654ca7b3166037a305f94b9ae4359b6ff6db7c1618dac02866e3f",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0002.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0002.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0003",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0003.md",
+      "original": "domains/securities/assets/src-000320/originals/image3.emf",
+      "original_sha256": "064b2e1ee79ed912078ed34d6c2dd647d5f90818ce08bfdc444dcbddde2aee78",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image3.emf.png",
+      "mermaid_sha256": "5b76825ce93fd496cc256fa0e7cccca29dc58a5720306fce6c19c3a82260a051",
+      "flow_path": null,
+      "limitations": [
+        "Two distinct Competent Authority actor occurrences are preserved. They represent the two parties to exchange in this picture; a repeated functional role is not deduplicated into one actor. All connectors are undirected as drawn."
+      ],
+      "rendered_png_sha256": "d3073b9e9a66ffc0c12956c8a7e4061e228c685d7f4cafda95c0d1d9017d1443",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0003.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0003.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0008",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0008.md",
+      "original": "domains/securities/assets/src-000320/originals/image8.emf",
+      "original_sha256": "536a6745a9907c83d03b8930e0ffbd0bb7e0e83c152e51e40628268bf4bdc936",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image8.emf.png",
+      "mermaid_sha256": "daf8aede440731eeb4aebdd83b427ebc33d1afe03d006bfc70aa7eb808e7743e",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p144-reference-data-submission.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred."
+      ],
+      "rendered_png_sha256": "13518b70d81d208cda86ce7c88846c39bb870fe9eb4ec2a5d66c2f8dd65964ec",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0008.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0008.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0009",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0009.md",
+      "original": "domains/securities/assets/src-000320/originals/image9.emf",
+      "original_sha256": "065989dc1ac147abffd30cd6e679792a380663e818833112d6ecf4d20657ac42",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image9.emf.png",
+      "mermaid_sha256": "302109a3935653954595574f21f41893e6c053f9b2d1d07c6345af8b55548179",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p146-reference-data-distribution.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred.",
+        "The Reporting Entity lane is empty in this activity picture. Narrative P199 and sequence figure23 additionally include Public, Reporting Entity and 3rd Party Systems; this activity diagram intentionally presents only the CA distribution-processing path."
+      ],
+      "rendered_png_sha256": "a78d6f1ff9e3a1a4361f9a34f68790fbe837f5c8241edd5330dde6945587deb8",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0009.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0009.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0010",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0010.md",
+      "original": "domains/securities/assets/src-000320/originals/image10.emf",
+      "original_sha256": "c28e4a339933b0a37c7d911a2737bed43ebae6e6fa47806622782ac1449cc504",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image10.emf.png",
+      "mermaid_sha256": "c96e4317b25762674afd5ab5e2ec3a41066efa8397ce4d2f08a5cc7c25c2222b",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p148-non-working-days.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred."
+      ],
+      "rendered_png_sha256": "8b232ef2c038cea8d9689d5eaf0bf02e7f9bda7f2bd05b27e4405bbeadb664d5",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0010.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0010.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0011",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0011.md",
+      "original": "domains/securities/assets/src-000320/originals/image11.emf",
+      "original_sha256": "91576792afd7d4c2401aa8f31fcc4f4be32766e94f0f5353fc7f72ca25ed4213",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image11.emf.png",
+      "mermaid_sha256": "1377fc12e3427459285a75150b5c5a64be11b18d592b32ed7be67e2bcffd3948",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p150-missing-incomplete-data-submission.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred.",
+        "T26 Receive Message row prints initiator SA, but its description says CA and this activity is in the Competent Authority lane. Both claims are retained (issue-000036)."
+      ],
+      "rendered_png_sha256": "43f97c63e407aedc757c63996fbef027ac111cbf8644597b4b6d493c12ff9cc5",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0011.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0011.png",
+      "visual_review": "pass",
+      "review_status": "needs-review",
+      "issue_ids": [
+        "issue-000036"
+      ],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0012",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0012.md",
+      "original": "domains/securities/assets/src-000320/originals/image12.emf",
+      "original_sha256": "1cfcb0535a88a401ebdb6d01bed9d50d0b952495d23dfdfa181805eeefb928ab",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image12.emf.png",
+      "mermaid_sha256": "9426a35567a4ad4fb1251f0e12fd5ecf8484b3bb938d32357ba583e24c244b2f",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p153-mi-fir-specific-additional-reference-data.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred."
+      ],
+      "rendered_png_sha256": "10f50729df81db1bc37a78906da5e47071e5e5007cc785cbf35c374b90abdc19",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0012.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0012.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0013",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0013.md",
+      "original": "domains/securities/assets/src-000320/originals/image13.emf",
+      "original_sha256": "dfcbab51737acda8a400b1fa154a99427f584106c42b4b49f600b7bb2451e316",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image13.emf.png",
+      "mermaid_sha256": "5e55c23bf41c65e5cb673b30f2c36d1d74fa8f3eab4acfc2671e123e20c039c9",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p155-transparency-trading-activity.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred."
+      ],
+      "rendered_png_sha256": "35b105fd65a04aa199bf4196ef3ec6d67c85400d29deae869b4356fad2133bf7",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0013.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0013.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0014",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0014.md",
+      "original": "domains/securities/assets/src-000320/originals/image14.emf",
+      "original_sha256": "51f9257d4c9a7a39edfe660b31a78f66dd4e1c092d7d3df7bdc3dd43f744a000",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image14.emf.png",
+      "mermaid_sha256": "1345ce4b8338b3e06b478fabbbfaf3bd0021e0b064c6996964c531941ff1903c",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p157-transparency-result-data.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred.",
+        "The Reporting Entity lane is empty. T18 Role names SA while this picture, T29 and P233–P235 assign calculation/submission to CA; issue-000032."
+      ],
+      "rendered_png_sha256": "f2e8fdb1abbc9d124e29bd349560fe5afd2c45a3d3ab763284c81058d13cc986",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0014.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0014.png",
+      "visual_review": "pass",
+      "review_status": "needs-review",
+      "issue_ids": [
+        "issue-000032"
+      ],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0015",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0015.md",
+      "original": "domains/securities/assets/src-000320/originals/image15.emf",
+      "original_sha256": "bef69f79d7e145f7ca2ba1e6ba7bbf4cbac24ba4c6ff0da3956b9d21a4dd33c1",
+      "source_preview": "domains/securities/assets/src-000320/derived-previews/image15.emf.png",
+      "mermaid_sha256": "c04a94b98896e8b07c8eec40e33988d104e7955a9ea44a3a95f2d8f8b4977a92",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p159-trading-volume-cap.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred."
+      ],
+      "rendered_png_sha256": "84e83100b849c305178d7650926425fbee7c724962baf39c81363ad5459dc66e",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0015.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0015.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    },
+    {
+      "figure_id": "fig-0016",
+      "path": "domains/securities/reference/message-sets/fitrr/2025/diagrams/fitrr-activities/fig-0016.md",
+      "original": "domains/securities/assets/src-000320/originals/image16.png",
+      "original_sha256": "bbb024aa4041e2d27bd400cbc49c65f0c7e22249ccd2739e18d12c7fd1ea98bd",
+      "source_preview": "domains/securities/assets/src-000320/originals/image16.png",
+      "mermaid_sha256": "d97b22db1122ee98274bc11ee7f292ecb24871bc6bf99f28e16c50f19c484a04",
+      "flow_path": "domains/securities/reference/message-sets/fitrr/2025/flows/flow-src-000320-p162-financial-instrument-transaction-report.md",
+      "limitations": [
+        "Mermaid flowchart subgraphs preserve the source swimlanes. Dark bar nodes retain each source control bar and all connected edges; they are not silently flattened into exclusive decisions. Source start/final symbols become labelled circles; blank source decisions remain unlabelled.",
+        "Node IDs in the edge table distinguish otherwise repeated labels. The source original is retained for exact geometry; no additional business path or timing is inferred.",
+        "The activity picture ends after the Relevant Competent Authority generates status; it does not draw a return arrow. Sequence figure36 separately shows that response. The source label Transactions Report Message is preserved, though T31 uses Transaction Report Message."
+      ],
+      "rendered_png_sha256": "6de7562af3da50ffe5786449104d55dfe48a42fcee5cb41c39415833cf8ef9d0",
+      "date": "2026-11-09",
+      "timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "svg": "domains/securities/assets/src-000320/reconstructed-activities/fig-0016.svg",
+      "png": "domains/securities/assets/src-000320/reconstructed-activities/fig-0016.png",
+      "visual_review": "pass",
+      "review_status": "reviewed",
+      "issue_ids": [],
+      "checks": [
+        "Original source preview and final reconstruction directly viewed.",
+        "Actor/use-case labels and each association endpoint checked, including both Equity/Non-Equity branches for each submission.",
+        "Repeated Competent Authority actor instances retained.",
+        "Every activity node, lane assignment, connector direction, guard, corrective loop and final outcome compared.",
+        "All source bars preserved with their incident edges; T22 defines bars as parallel initiation.",
+        "Two starts in non-working-day reporting and the empty Reporting Entity lanes in distribution/results retained in text.",
+        "Source responsibility and role-notation conflicts remain open; no institutional equivalence inferred."
+      ],
+      "scope": "Visible artwork semantics; layout changes are allowed and source artwork remains available. Native hidden pages/layers and full Word-page review are separate.",
+      "complete_word_page_composition_review": "pass"
+    }
+  ],
+  "legend_records": [
+    {
+      "figure_id": "fig-0004",
+      "label": "Start Point",
+      "original": "domains/securities/assets/src-000320/originals/image4.png",
+      "original_sha256": "753435056ccd00377fa789c039d67bee715f5f6a8d9343d74aee1fc5782ecdb8",
+      "date": "2026-11-09",
+      "disposition": "retained-notation-legend",
+      "visual_review": "pass"
+    },
+    {
+      "figure_id": "fig-0005",
+      "label": "End Point",
+      "original": "domains/securities/assets/src-000320/originals/image5.png",
+      "original_sha256": "416ec2d0da67da840d63718473bef11935369ba398b78246c53eb332027eb13d",
+      "date": "2026-11-09",
+      "disposition": "retained-notation-legend",
+      "visual_review": "pass"
+    },
+    {
+      "figure_id": "fig-0006",
+      "label": "Lozenge (or diamond)",
+      "original": "domains/securities/assets/src-000320/originals/image6.png",
+      "original_sha256": "2c9a29da41a10dede04f82356c9d59e2406ce3a30f1143fa91edf06fde3a6040",
+      "date": "2026-11-09",
+      "disposition": "retained-notation-legend",
+      "visual_review": "pass"
+    },
+    {
+      "figure_id": "fig-0007",
+      "label": "Bar",
+      "original": "domains/securities/assets/src-000320/originals/image7.png",
+      "original_sha256": "8d85be86c730d3c41866718d41e9bbcc504a417500e49a1749aeb69d07de1f88",
+      "date": "2026-11-09",
+      "disposition": "retained-notation-legend",
+      "visual_review": "pass"
+    }
+  ],
+  "render_pass": 12,
+  "direct_visual_comparisons": 12,
+  "reviewed": 9,
+  "needs_review": 3,
+  "whole_word_page_context_review": {
+    "result": "pass",
+    "date": "2026-11-09",
+    "pages": 59,
+    "manifest": "domains/securities/assets/src-000320/word-page-context/manifest.json",
+    "scope": "All complete pages inspected; no additional substantive figure components identified outside the retained artwork."
+  }
+}

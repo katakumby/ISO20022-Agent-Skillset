@@ -1,0 +1,15 @@
+sequenceDiagram
+  participant I as Instructing Party
+  participant E as Executing Servicing Party
+  I->>E: SecuritiesSettlementTransactionInstruction
+  opt Optional
+    E->>I: SecuritiesSettlementTransactionStatusAdvice
+    E->>I: SecuritiesSettlementTransactionStatusAdvice
+  end
+  E->>I: SecuritiesSettlementTransactionConfirmation
+  Note right of E: Partial
+  opt Optional
+    E->>I: SecuritiesSettlementTransactionStatusAdvice
+  end
+  E->>I: SecuritiesSettlementTransactionConfirmation
+  Note right of E: Remaining quantity

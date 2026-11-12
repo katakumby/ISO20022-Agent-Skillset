@@ -1,0 +1,13 @@
+flowchart TB
+ P["Party<br/>(Business Actor)"]
+ IM["Investment Manager<br/>(Business Actor)"] --- P
+ EX["Exchange<br/>(Business Actor)"] --- P
+ EB["Executing Broker<br/>(Business Actor)"] --- P
+ CSD["Central Securities Depository<br/>(Business Actor)"] --- P
+ PB["Prime Broker<br/>(Business Actor)"] --- P
+ CU["Custodian<br/>(Business Actor)"] --- P
+ AP["Affirmation Party<br/>(Business Actor)"] --- P
+ CP["Confirmation Party<br/>(Business Actor)"] --- P
+ CCP["Central Counterparty<br/>(Business Actor)"] --- P
+ CMU["Central Matching Utility<br/>(Business Actor)"] --- P
+ FI["Financial Intermediary<br/>(Business Actor)"] --- P

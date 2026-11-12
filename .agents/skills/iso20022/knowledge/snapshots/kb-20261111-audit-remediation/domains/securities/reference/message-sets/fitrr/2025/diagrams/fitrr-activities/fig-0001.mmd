@@ -1,0 +1,27 @@
+usecase-beta
+direction TB
+actor SA("Supervisory Authority")
+actor CA("Competent Authority")
+actor RM("RMs")
+actor SI("SIs")
+actor MTF("MTF")
+actor OTF("OTFs")
+actor APA("APAs")
+actor CTP("CTPs")
+actor IF("IF")
+actor ARM("ARM")
+RM --|> SA
+RM --|> CA
+SI --|> SA
+SI --|> CA
+MTF --|> SA
+MTF --|> CA
+OTF --|> SA
+OTF --|> CA
+APA --|> SA
+APA --|> CA
+CTP --|> SA
+CTP --|> CA
+CA --|> SA
+IF --|> CA
+ARM --|> CA

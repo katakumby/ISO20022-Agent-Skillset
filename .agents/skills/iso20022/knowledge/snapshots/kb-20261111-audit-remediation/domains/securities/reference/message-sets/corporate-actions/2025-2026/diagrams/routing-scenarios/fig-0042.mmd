@@ -1,0 +1,52 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;} .edgeLabel rect {fill:#ffffff !important;opacity:1!important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  subgraph S["Account Servicer"]
+    M_A["CANO<br/>NEWM<br/>Confirmed-Incomplete"]
+    M_B["CANO<br/>REPL<br/>Balance only or Balance & Entl<br/>Confirmed-Complete"]
+    M_C["CANO<br/>RMDR"]
+    M_D["CAIS<br/>Processing status: Default Action"]
+    M_E["CAPA<br/>Cash and/or securities movement block present"]
+    M_F["CACO<br/>NEWM<br/>cash and/or securities movement block present"]
+  end
+  subgraph O["Account Owner"]
+    G["Message Gateway"]
+    Event["Event Management Process"]
+    Payment["Payment Management Process"]
+    Response["Response Management Process"]
+  end
+  M_A -->|"A) Preliminary Announcement confirmed sent<br/>prior to Ex Date"| G
+  G -->|"A)"| Event
+  M_B -->|"B) Confirmed Announcement sent on Ex Date<br/>(for illustrative purposes only)"| G
+  G -->|"B)"| Event
+  M_C -->|"C) Reminder of event details and<br/>uninstructed/instructed balance or<br/>response status sent prior to deadline"| G
+  G -->|"C)"| Response
+  M_D -->|"D) Instruction Status sent upon<br/>application of default instruction"| G
+  G -->|"D)"| Response
+  M_E -->|"E) Final Entitlement Preliminary movement<br/>advice sent upon confirm of instruction"| G
+  G -->|"E)"| Payment
+  M_F -->|"F) Confirm<br/>of Payment"| G
+  G -->|"F)"| Payment
+  DEADLINE["Deadline - after C) and before D)"]
+  linkStyle 0 stroke:#111111,color:#111111
+  linkStyle 1 stroke:#111111,color:#111111
+  style M_A stroke:#111111,color:#111111
+  linkStyle 2 stroke:#111111,color:#111111
+  linkStyle 3 stroke:#111111,color:#111111
+  style M_B stroke:#111111,color:#111111
+  linkStyle 4 stroke:#ff6a00,color:#ff6a00
+  linkStyle 5 stroke:#ff6a00,color:#ff6a00
+  style M_C stroke:#ff6a00,color:#ff6a00
+  linkStyle 6 stroke:#ff6a00,color:#ff6a00
+  linkStyle 7 stroke:#ff6a00,color:#ff6a00
+  style M_D stroke:#ff6a00,color:#ff6a00
+  linkStyle 8 stroke:#ff6a00,color:#ff6a00
+  linkStyle 9 stroke:#ff6a00,color:#ff6a00
+  style M_E stroke:#ff6a00,color:#ff6a00
+  linkStyle 10 stroke:#111111,color:#111111
+  linkStyle 11 stroke:#111111,color:#111111
+  style M_F stroke:#111111,color:#111111

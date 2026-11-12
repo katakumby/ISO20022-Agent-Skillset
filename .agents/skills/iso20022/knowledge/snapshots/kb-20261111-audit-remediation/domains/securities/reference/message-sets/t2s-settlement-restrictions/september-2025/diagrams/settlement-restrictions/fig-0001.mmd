@@ -1,0 +1,7 @@
+%%{init: {"sequence": {"mirrorActors": false,"width": 250}}}%%
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+A->>B: Intra Position Movement Query (semt.028)
+B->>A: Intra Position Movement Query Response (semt.029)
+B-->>A: Intra Position Movement Pending Report (semt.034)

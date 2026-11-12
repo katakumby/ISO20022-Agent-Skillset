@@ -1,0 +1,752 @@
+{
+  "helper_version": 3,
+  "source_id": "src-000221",
+  "sha256": "2cce0c534150a759284512b0d5ff608c595614a8b148241e075a4892bac34207",
+  "message_id": "sese.030.001.10",
+  "namespace": "urn:iso:std:iso:20022:tech:xsd:sese.030.001.10",
+  "message_name": "SecuritiesSettlementConditionsModificationRequestV10",
+  "domain": "securities",
+  "set_path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026",
+  "counts": {
+    "schema": 1,
+    "element": 137,
+    "complexType": 38,
+    "sequence": 22,
+    "simpleType": 32,
+    "restriction": 32,
+    "enumeration": 31,
+    "pattern": 10,
+    "choice": 16,
+    "fractionDigits": 3,
+    "totalDigits": 3,
+    "minLength": 8,
+    "maxLength": 8,
+    "minInclusive": 1,
+    "any": 1
+  },
+  "top_level_declarations": 71,
+  "anonymous_types": 0,
+  "components": [
+    {
+      "id": "type-0001",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Document",
+      "kind": "element",
+      "schema_path": "/xs:schema/xs:element[@name='Document']",
+      "line": 4,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0001.md",
+      "node_count": 1
+    },
+    {
+      "id": "type-0002",
+      "name": "AdditionalInformation26",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}AdditionalInformation26",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AdditionalInformation26']",
+      "line": 5,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0002.md",
+      "node_count": 15
+    },
+    {
+      "id": "type-0003",
+      "name": "AddressType2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}AddressType2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AddressType2Code']",
+      "line": 22,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0003.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0004",
+      "name": "AnyBICDec2014Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}AnyBICDec2014Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AnyBICDec2014Identifier']",
+      "line": 32,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0004.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0005",
+      "name": "AutoBorrowing2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}AutoBorrowing2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='AutoBorrowing2Code']",
+      "line": 37,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0005.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0006",
+      "name": "AutomaticBorrowing7Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}AutomaticBorrowing7Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='AutomaticBorrowing7Choice']",
+      "line": 45,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0006.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0007",
+      "name": "BlockChainAddressWallet3",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}BlockChainAddressWallet3",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='BlockChainAddressWallet3']",
+      "line": 51,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0007.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0008",
+      "name": "CFIOct2015Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}CFIOct2015Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CFIOct2015Identifier']",
+      "line": 58,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0008.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0009",
+      "name": "ClassificationType32Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ClassificationType32Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ClassificationType32Choice']",
+      "line": 63,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0009.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0010",
+      "name": "CountryCode",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}CountryCode",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='CountryCode']",
+      "line": 69,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0010.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0011",
+      "name": "DateAndDateTime2Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}DateAndDateTime2Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DateAndDateTime2Choice']",
+      "line": 74,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0011.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0012",
+      "name": "DecimalNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}DecimalNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='DecimalNumber']",
+      "line": 80,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0012.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0013",
+      "name": "Document",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Document",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Document']",
+      "line": 86,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0013.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0014",
+      "name": "DocumentNumber5Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}DocumentNumber5Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='DocumentNumber5Choice']",
+      "line": 91,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0014.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0015",
+      "name": "Exact3NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Exact3NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact3NumericText']",
+      "line": 98,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0015.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0016",
+      "name": "Exact4AlphaNumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Exact4AlphaNumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4AlphaNumericText']",
+      "line": 103,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0016.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0017",
+      "name": "Exact4NumericText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Exact4NumericText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Exact4NumericText']",
+      "line": 108,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0017.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0018",
+      "name": "ExternalFinancialInstrumentIdentificationType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ExternalFinancialInstrumentIdentificationType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ExternalFinancialInstrumentIdentificationType1Code']",
+      "line": 113,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0018.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0019",
+      "name": "FinancialInstrumentQuantity33Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}FinancialInstrumentQuantity33Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='FinancialInstrumentQuantity33Choice']",
+      "line": 119,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0019.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0020",
+      "name": "GenericIdentification30",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}GenericIdentification30",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification30']",
+      "line": 127,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0020.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0021",
+      "name": "GenericIdentification36",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}GenericIdentification36",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='GenericIdentification36']",
+      "line": 134,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0021.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0022",
+      "name": "HoldIndicator6",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}HoldIndicator6",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='HoldIndicator6']",
+      "line": 141,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0022.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0023",
+      "name": "ISINOct2015Identifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ISINOct2015Identifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISINOct2015Identifier']",
+      "line": 147,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0023.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0024",
+      "name": "ISO20022MessageIdentificationText",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ISO20022MessageIdentificationText",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISO20022MessageIdentificationText']",
+      "line": 152,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0024.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0025",
+      "name": "ISODate",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ISODate",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODate']",
+      "line": 157,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0025.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0026",
+      "name": "ISODateTime",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ISODateTime",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ISODateTime']",
+      "line": 160,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0026.md",
+      "node_count": 2
+    },
+    {
+      "id": "type-0027",
+      "name": "IdentificationSource3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}IdentificationSource3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='IdentificationSource3Choice']",
+      "line": 163,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0027.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0028",
+      "name": "ImpliedCurrencyAndAmount",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ImpliedCurrencyAndAmount",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ImpliedCurrencyAndAmount']",
+      "line": 169,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0028.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0029",
+      "name": "LEIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}LEIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LEIIdentifier']",
+      "line": 176,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0029.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0030",
+      "name": "LinkageType1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}LinkageType1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='LinkageType1Code']",
+      "line": 181,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0030.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0031",
+      "name": "LinkageType3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}LinkageType3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='LinkageType3Choice']",
+      "line": 188,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0031.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0032",
+      "name": "Linkages73",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Linkages73",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Linkages73']",
+      "line": 194,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0032.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0033",
+      "name": "MatchingDenied3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}MatchingDenied3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='MatchingDenied3Choice']",
+      "line": 202,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0033.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0034",
+      "name": "MatchingProcess1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}MatchingProcess1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='MatchingProcess1Code']",
+      "line": 208,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0034.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0035",
+      "name": "Max140Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max140Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max140Text']",
+      "line": 214,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0035.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0036",
+      "name": "Max16Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max16Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max16Text']",
+      "line": 220,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0036.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0037",
+      "name": "Max210Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max210Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max210Text']",
+      "line": 226,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0037.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0038",
+      "name": "Max30DecimalNumber",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max30DecimalNumber",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max30DecimalNumber']",
+      "line": 232,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0038.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0039",
+      "name": "Max350Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max350Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max350Text']",
+      "line": 238,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0039.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0040",
+      "name": "Max35Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max35Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max35Text']",
+      "line": 244,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0040.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0041",
+      "name": "Max70Text",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Max70Text",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Max70Text']",
+      "line": 250,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0041.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0042",
+      "name": "NameAndAddress5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}NameAndAddress5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='NameAndAddress5']",
+      "line": 256,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0042.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0043",
+      "name": "OtherIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}OtherIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='OtherIdentification1']",
+      "line": 262,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0043.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0044",
+      "name": "PartyIdentification120Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PartyIdentification120Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification120Choice']",
+      "line": 269,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0044.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0045",
+      "name": "PartyIdentification127Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PartyIdentification127Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification127Choice']",
+      "line": 276,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0045.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0046",
+      "name": "PartyIdentification136",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PartyIdentification136",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification136']",
+      "line": 282,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0046.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0047",
+      "name": "PartyIdentification144",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PartyIdentification144",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentification144']",
+      "line": 288,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0047.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0048",
+      "name": "PartyIdentificationAndAccount195",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PartyIdentificationAndAccount195",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PartyIdentificationAndAccount195']",
+      "line": 294,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0048.md",
+      "node_count": 7
+    },
+    {
+      "id": "type-0049",
+      "name": "PostalAddress1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PostalAddress1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PostalAddress1']",
+      "line": 303,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0049.md",
+      "node_count": 10
+    },
+    {
+      "id": "type-0050",
+      "name": "PriorityNumeric4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}PriorityNumeric4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='PriorityNumeric4Choice']",
+      "line": 315,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0050.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0051",
+      "name": "ProcessingPosition4Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ProcessingPosition4Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='ProcessingPosition4Code']",
+      "line": 321,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0051.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0052",
+      "name": "ProcessingPosition8Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}ProcessingPosition8Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='ProcessingPosition8Choice']",
+      "line": 328,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0052.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0053",
+      "name": "References29",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}References29",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='References29']",
+      "line": 334,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0053.md",
+      "node_count": 11
+    },
+    {
+      "id": "type-0054",
+      "name": "References80Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}References80Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='References80Choice']",
+      "line": 347,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0054.md",
+      "node_count": 13
+    },
+    {
+      "id": "type-0055",
+      "name": "Registration10Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Registration10Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='Registration10Choice']",
+      "line": 362,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0055.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0056",
+      "name": "Registration2Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}Registration2Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='Registration2Code']",
+      "line": 368,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0056.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0057",
+      "name": "RegistrationReason5",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}RegistrationReason5",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RegistrationReason5']",
+      "line": 376,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0057.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0058",
+      "name": "RequestDetails31",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}RequestDetails31",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RequestDetails31']",
+      "line": 382,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0058.md",
+      "node_count": 15
+    },
+    {
+      "id": "type-0059",
+      "name": "RestrictionIdentification1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}RestrictionIdentification1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='RestrictionIdentification1']",
+      "line": 399,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0059.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0060",
+      "name": "RestrictionReference1Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}RestrictionReference1Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='RestrictionReference1Code']",
+      "line": 405,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0060.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0061",
+      "name": "SecuritiesAccount19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SecuritiesAccount19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesAccount19']",
+      "line": 415,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0061.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0062",
+      "name": "SecuritiesRTGS4Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SecuritiesRTGS4Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesRTGS4Choice']",
+      "line": 422,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0062.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0063",
+      "name": "SecuritiesSettlementConditionsModificationRequestV10",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SecuritiesSettlementConditionsModificationRequestV10",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecuritiesSettlementConditionsModificationRequestV10']",
+      "line": 428,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0063.md",
+      "node_count": 8
+    },
+    {
+      "id": "type-0064",
+      "name": "SecuritiesTransactionType5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SecuritiesTransactionType5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SecuritiesTransactionType5Code']",
+      "line": 438,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0064.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0065",
+      "name": "SecurityIdentification19",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SecurityIdentification19",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SecurityIdentification19']",
+      "line": 443,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0065.md",
+      "node_count": 5
+    },
+    {
+      "id": "type-0066",
+      "name": "SettlementTransactionCondition5Code",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SettlementTransactionCondition5Code",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='SettlementTransactionCondition5Code']",
+      "line": 450,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0066.md",
+      "node_count": 6
+    },
+    {
+      "id": "type-0067",
+      "name": "SupplementaryData1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SupplementaryData1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryData1']",
+      "line": 458,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0067.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0068",
+      "name": "SupplementaryDataEnvelope1",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}SupplementaryDataEnvelope1",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='SupplementaryDataEnvelope1']",
+      "line": 464,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0068.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0069",
+      "name": "UTIIdentifier",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}UTIIdentifier",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='UTIIdentifier']",
+      "line": 469,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0069.md",
+      "node_count": 3
+    },
+    {
+      "id": "type-0070",
+      "name": "UnilateralSplit3Choice",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}UnilateralSplit3Choice",
+      "kind": "complexType",
+      "schema_path": "/xs:schema/xs:complexType[@name='UnilateralSplit3Choice']",
+      "line": 474,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0070.md",
+      "node_count": 4
+    },
+    {
+      "id": "type-0071",
+      "name": "YesNoIndicator",
+      "qname": "{urn:iso:std:iso:20022:tech:xsd:sese.030.001.10}YesNoIndicator",
+      "kind": "simpleType",
+      "schema_path": "/xs:schema/xs:simpleType[@name='YesNoIndicator']",
+      "line": 480,
+      "path": "domains/securities/reference/messages/sese.030.001.10/types/type-0071.md",
+      "node_count": 2
+    }
+  ],
+  "dependencies": [],
+  "compile_result": "pass",
+  "compile_error": null,
+  "review_status": "needs-review",
+  "date": "2026-11-08",
+  "all_nodes_preserved": true,
+  "limitations": [
+    "MDR business content is reviewed independently.",
+    "Source tables and figures are not reconciled by schema extraction."
+  ],
+  "symbol_space_reference_validation": "pass"
+}

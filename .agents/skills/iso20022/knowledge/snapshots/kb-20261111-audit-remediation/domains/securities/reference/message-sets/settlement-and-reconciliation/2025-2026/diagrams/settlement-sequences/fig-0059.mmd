@@ -1,0 +1,23 @@
+sequenceDiagram
+  participant A as Client
+  participant B as Instructing/Splitting Party
+  participant C as Executing Servicing Party
+  participant D as Instructing Party
+  participant E as Client
+  D->>C: SecSetTransInstruction1
+  B->>C: SecSetTransInstruction1
+  opt Optional
+    D->>E: SecSetTranStatusAdvice
+  end
+  opt Optional
+    B->>A: SecSetTranStatusAdvice
+  end
+  D->>C: SecSetTransInstruction2
+  B->>C: SecSetTransInstruction2
+  opt Optional
+    D->>E: SecSetTranStatusAdvice
+  end
+  opt Optional
+    B->>A: SecSetTranStatusAdvice
+  end
+  Note over A,E: Flow continues on next page

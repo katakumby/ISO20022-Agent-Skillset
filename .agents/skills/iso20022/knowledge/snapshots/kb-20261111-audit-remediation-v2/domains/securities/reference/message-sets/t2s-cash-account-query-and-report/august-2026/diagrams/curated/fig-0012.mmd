@@ -1,0 +1,7 @@
+sequenceDiagram
+ participant I as Instructing Party
+ participant E as Executing/Servicing Party
+ Note over I,E: Cash Account Audit Trail Query/Response Process
+ I->>E: CashAccountAuditTrailQuery (reda.039)
+ E-->>I: CashAccountAuditTrailReport (reda.040): ERROR
+ E->>I: CashAccountAuditTrailReport (reda.040)

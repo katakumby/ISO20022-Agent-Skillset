@@ -1,0 +1,73 @@
+---
+template: false
+document_kind: "participant"
+review_status: "needs-review"
+domain: "securities"
+source_ids: ["src-000356"]
+source_editions: ["march-2024"]
+message_sets: ["t2s-collateral-reporting"]
+participant_id: "participant-src-000356-executing-servicing-party"
+title: "Executing/Servicing Party"
+source_labels: ["Executing/Servicing Party", "Executing / Servicing Party"]
+role_type: "business role"
+aliases: []
+source_locations: [{"source_id": "src-000356", "heading_path": ["BusinessRoles and Participants", "Participants and BusinessRoles Definitions"], "locator": "/w:document/w:body/w:tbl[6]/w:tr[3]", "paragraph_id": null, "table_id": "T6"}, {"source_id": "src-000356", "heading_path": ["BusinessRoles and Participants", "Participants and BusinessRoles Definitions"], "locator": "/w:document/w:body/w:tbl[6]/w:tr[7]", "paragraph_id": null, "table_id": "T6"}]
+flows: ["flow-src-000356-p138-query-management-process"]
+process_sections: []
+message_ids: ["colr.001.001.02", "colr.002.001.02"]
+message_families: []
+search_terms: ["Executing/Servicing Party"]
+limitations: ["Definition is scoped to this source and message-set context; same labels in other sources remain distinct.", "Aliases and identifier schemes have not been established beyond explicit source labels.", "Narrative-only participants not captured by definition/initiator tables require additional review."]
+manual_curated: true
+---
+
+
+
+
+
+# Executing/Servicing Party
+
+Business context: T2S CollateralReporting. Source classification: business role.
+
+## Definition
+
+Party that processes, monitors and reports on transactions received from an instructing party.
+
+Evidence: [T6](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000356/tables/tbl-0006.md), source row 3.
+
+Party that processes, monitors and reports on transactions received from the Instructing party.
+
+Evidence: [T6](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000356/tables/tbl-0006.md), source row 7.
+
+A functional participant role describes involvement in a relationship or transaction. It is not an assertion that a particular institution always plays that role.
+
+## Responsibilities and actions
+
+Responsibilities are described in the definition and linked flows; no separate activity-initiator rows were matched.
+
+## Relationships
+
+| Relationship | Related scoped record | Evidence |
+| --- | --- | --- |
+| Can play the functional participant role in this source context | [System Member](participant-src-000356-system-member.md) | [T7](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000356/tables/tbl-0007.md) row 8, column 2 |
+| Can play the functional participant role in this source context | [System Transaction Administrator](participant-src-000356-system-transaction-administrator.md) | [T7](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/documents/src-000356/tables/tbl-0007.md) row 8, column 3 |
+
+## Flows, source process sections and messages
+
+No flow segment has yet been matched to this role label.
+
+Message families found in these flows: not established. Exact-version applicability requires the linked source locator.
+
+## Aliases, identification and limitations
+
+Source labels: `Executing/Servicing Party`, `Executing / Servicing Party`. No external identifier scheme or alias equivalence has been inferred.
+
+- Definition is scoped to this source and message-set context; same labels in other sources remain distinct.
+- Aliases and identifier schemes have not been established beyond explicit source labels.
+- Narrative-only participants not captured by definition/initiator tables require additional review.
+
+Original: [src-000356](../../../evidence/omitted/e6546c5f64c53f963440988a.md) archive member `ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_CollateralReporting_MessageSet/ISO20022_MDRPart1_Target2Securities_CollateralReporting_2023_2024_v2.docx`.
+
+Collateral-reporting source context: [Collateral-query member and administrator activity](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/diagrams/curated/fig-0008.md). [flow Query Management Process](../../../domains/securities/reference/message-sets/t2s-collateral-reporting/march-2024/flows/flow-src-000356-p138-query-management-process.md).
+
+Classification nuance: T5 defines System Member as a participant, while T6 repeats that definition in Business Roles and labels Instructing/Executing parties there. T7 supplies the explicit mappings. These source classifications are preserved as context, not collapsed into an institution identity.

@@ -1,0 +1,68 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "payments"
+message_set: "Bank-to-Customer Cash Management"
+source_ids: ["src-000005"]
+source_editions: ["March 2026"]
+message_ids: []
+heading_path: ["3 camt.053.001.14 BankToCustomerStatementV14", "4.4 Message Building Blocks", "4.4.1 GroupHeader <GrpHdr>", "4.4.2.14 Entry <Ntry>", "4.4.2.14.18 EntryDetails <NtryDtls>", "4.4.2.14.18.2 TransactionDetails <TxDtls>", "4.4.2.14.18.2.1 References <Refs>", "4.4.2.14.18.2.1.9 ChequeNumber <ChqNb>"]
+file_pages: [641]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["camt.054.001.14"]
+---
+
+# 4.4.2.14.18.2.1.9 ChequeNumber <ChqNb>
+
+Source: [src-000005](../../../../../../../../../evidence/omitted/4704d0f065c82a397d84d52d.md). Locator: one-based file pages 641 to 641.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 641
+
+```text
+4.4.2.14.18.2.1.9  ChequeNumber <ChqNb>
+Presence: [0..1]
+Definition: Unique and unambiguous identifier for a cheque as assigned by the agent.
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.10  ClearingSystemReference <ClrSysRef>
+Presence: [0..1]
+Definition: Unique reference, as assigned by a clearing system, to unambiguously identify the
+instruction.
+Usage: In case there are technical limitations to pass on multiple references, the end-to-end
+identification must be passed on throughout the entire end-to-end chain.
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.11  AccountOwnerTransactionIdentification <AcctOwnrTxId>
+Presence: [0..1]
+Definition: Unambiguous identification of the securities transaction as known by the securities account
+owner (or the instructing party managing the account).
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.12  AccountServicerTransactionIdentification <AcctSvcrTxId>
+Presence: [0..1]
+Definition: Unambiguous identification of the securities transaction as known by the securities account
+servicer.
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.13  MarketInfrastructureTransactionIdentification <MktInfrstrctrTxId>
+Presence: [0..1]
+Definition: Identification of a securities transaction assigned by a market infrastructure other than a
+central securities depository, for example, Target2-Securities.
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.14  ProcessingIdentification <PrcgId>
+Presence: [0..1]
+Definition: Identification of the securities transaction assigned by the processor of the instruction other
+than the securities account owner, the securities account servicer and the market infrastructure.
+Datatype: "Max35Text" on page 916
+4.4.2.14.18.2.1.15  ReturnIdentification <RtrId>
+Presence: [0..1]
+Definition: Unique identification, as assigned by an instructing party for an instructed party, to
+unambiguously identify the returned transaction.
+Usage: The instructing party is the party sending the return message and not the party that sent the
+original instruction that is being returned.
+Approved by the Payments SEG on 12 January 2026 camt.054.001.14
+BankToCustomerDebitCreditNotificationV14
+Bank-to-Customer Cash Management - Maintenance 2025 -
+2026
+641 March 2026
+```
+

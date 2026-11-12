@@ -1,0 +1,20 @@
+flowchart TB
+  subgraph S["Account Servicer"]
+    PROCESS("Process Cancellation Request")
+    B1["Request accepted? (source bar)"]
+    REPORT("Report Cancellation Request Status")
+    NOTIFY("Go to Notify balance/entitlement process")
+    PROCESS --> B1
+    B1 -->|Yes| NOTIFY
+    B1 -->|Yes| REPORT
+    B1 -->|No| REPORT
+  end
+  subgraph O["Account Owner"]
+    START(("Start")) --> REQUEST("Request Cancellation of Instruction")
+    STATUS("Process Cancellation status") --> B2["Status OK? (source bar)"]
+    B2 -->|No| ENDN(("End: No"))
+    B2 -->|Yes| ENDY(("End: Yes"))
+    B2 -->|Yes| ELECT("Instruct election")
+  end
+  REQUEST --> PROCESS
+  REPORT --> STATUS

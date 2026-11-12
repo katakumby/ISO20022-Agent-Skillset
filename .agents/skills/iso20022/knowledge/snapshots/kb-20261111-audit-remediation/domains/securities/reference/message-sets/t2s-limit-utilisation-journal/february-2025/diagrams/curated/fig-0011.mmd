@@ -1,0 +1,17 @@
+flowchart TB
+ subgraph I["Instructing Party"]
+ Receive("Receive Report") --> Reconcile("Reconcile Limits")
+ Reconcile --> End(((" ")))
+ end
+ subgraph E["Servicing/Executing Party"]
+ S((" ")) --> EOD("Process EOD Reporting")
+ EOD --> Request("Request Limit Utilisation Journal")
+ Request --> Process("Process Request")
+ Process --> Send("Send Report")
+ end
+ Send --> Receive
+ classDef contextual fill:#a8c5e4,stroke:black
+ classDef covered fill:#a4aa32,stroke:black
+ class EOD,Reconcile contextual
+ class Request,Process,Send,Receive covered
+ style S fill:#4678bb,stroke:#4678bb

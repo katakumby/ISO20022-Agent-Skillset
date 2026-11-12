@@ -1,0 +1,7 @@
+%%{init: {"sequence": {"mirrorActors": false, "width": 230}, "themeVariables": {"actorBkg": "#bfd4ee", "actorBorder": "#222"}}}%%
+sequenceDiagram
+participant A as Instructing Party
+participant B as Executing/Servicing Party
+A->>B: Security Query (reda.010)
+B-->>A: Security Report (reda.012): ERROR
+B->>A: Security Report (reda.012)

@@ -1,0 +1,211 @@
+flowchart TB
+subgraph group0["T2S System User"]
+uSend(["A2A"])
+uAckReceive(["A2A"])
+uAckSend(["A2A"])
+uReceive(["A2A"])
+end
+subgraph group1["Communication Module - A2A"]
+encIn["Encrypted inbound communication A2A"]
+recv(["1 - Receive/Log Communication A2A"])
+recvFork@{ shape: fork }
+techAckOut["Technical Acknowledgement"]
+auth(["2 - Check Sender Authentication and Decryption A2A"])
+authD{"#160;"}
+store(["3 - Store Communication Content A2A"])
+storeD{"#160;"}
+storedMessage["Stored inbound communication - A2A individual message"]
+storedFile["Stored inbound communication - A2A file"]
+formatted["Formatted outbound communication A2A"]
+queueMerge{"#160;"}
+outCheck(["4 - Check for A2A Outbound Queuing"])
+outQueueD{"#160;"}
+outQueue(["5 - Queue A2A Outbound Communication"])
+restart(["6 - Restart Queued A2A Outbound Communication"])
+extBar@{ shape: fork }
+extMerge{"#160;"}
+sendMerge{"#160;"}
+cert(["7 - Assign Certificate and Encryption A2A"])
+techAckIn["Technical Acknowledgement"]
+transmitMerge{"#160;"}
+transmit(["8 - Transmit Communication A2A"])
+encOut["Encrypted outbound communication A2A"]
+end
+subgraph group2["Inbound Processing Module – A2A"]
+file(["1 - A2A File Validation and Splitting"])
+fileD{"#160;"}
+msgMerge{"#160;"}
+schema(["2 - A2A Message Schema Validation"])
+schemaD{"#160;"}
+parse(["3 - A2A Message Parsing"])
+parseD{"#160;"}
+priv(["4 - Check Privilege"])
+privD{"#160;"}
+queueStartMerge{"#160;"}
+queueEventsMerge{"#160;"}
+queueEndBar@{ shape: fork }
+inCheck(["5 - Check for A2A Inbound Queuing"])
+inQueueD{"#160;"}
+queryD{"#160;"}
+queryFork@{ shape: fork }
+queueMergeIn{"#160;"}
+inQueue(["6 - Queue A2A Inbound Message"])
+inRestart(["7 - Restart Queued A2A Inbound Messages"])
+routeMerge{"#160;"}
+router(["8 - Information Router"])
+routeD{"#160;"}
+permission(["9 - Check Permission - Resend"])
+permissionD{"#160;"}
+permissionFork@{ shape: fork }
+fileReject["Inbound processing rejection – A2A File"]
+schemaReject["Inbound processing rejection – A2A Schema"]
+parseReject["Inbound processing rejection – A2A Additional technical validation"]
+privReject["Inbound processing rejection – Privilege"]
+queryReject["Inbound processing rejection – Query Queuing"]
+permissionReject["Inbound processing rejection - Permission"]
+resendResult["Validation result - resend"]
+resend["Resend communication"]
+businessIn["Inbound business data"]
+rejectMerge1{"#160;"}
+rejectMerge2{"#160;"}
+rejectMerge3{"#160;"}
+rejectMerge4{"#160;"}
+rejectMerge5{"#160;"}
+rejectMerge6{"#160;"}
+rejectMerge7{"#160;"}
+end
+subgraph group3["Outbound Processing Module – A2A"]
+businessOut["Outbound business data"]
+resendOther["Resend communication"]
+originMerge{"#160;"}
+statusMerge{"#160;"}
+log(["1 - Logging Outbound Business Data"])
+recipient(["2 - Define Possible Recipient List A2A"])
+subscription(["3 - Check A2A Message Subscription"])
+payload(["4 - Create Business Payload A2A"])
+routing(["5 - Prepare Routing A2A"])
+sequence(["6 - A2A Message Sequencing"])
+create(["7 - Create A2A Outbound Communication"])
+end
+subgraph group4["Adjacent modules and system events"]
+schedOut(["OPSR: Scheduling"])
+schedOutD{"#160;"}
+available["External system available event"]
+unavailable["External system unavailable event"]
+schedIn(["OPSR: Scheduling"])
+schedInD{"#160;"}
+startQueue["Start Queueing System status events"]
+endQueue["End Queueing – System Status events"]
+backIn(["Backend Modules"])
+backOut(["Backend Modules"])
+u2a(["INTF: Inbound Processing Module - U2A"])
+end
+uSend --> encIn
+encIn --> recv
+recv --> recvFork
+recvFork --> auth
+auth --> authD
+recvFork --> techAckOut
+techAckOut --> uAckReceive
+authD -->|"Not authenticated"| sendMerge
+authD -->|"Authenticated"| store
+store --> storeD
+storeD -->|"Message received"| storedMessage
+storeD -->|"File received"| storedFile
+storedFile --> file
+file --> fileD
+fileD -->|"File not ok or file duplicate check not ok"| fileReject
+fileD -->|"File ok"| msgMerge
+storedMessage --> msgMerge
+msgMerge --> schema
+schema --> schemaD
+schemaD -->|"Schema validation not ok"| schemaReject
+schemaD -->|"Schema validation ok"| parse
+parse --> parseD
+parseD -->|"Additional technical Validation or duplicate check not ok"| parseReject
+parseD -->|"Additional technical validation or duplicate check ok"| priv
+priv --> privD
+privD -->|"Privilege not ok"| privReject
+privD -->|"Privilege ok"| queueStartMerge
+queueStartMerge --> inCheck
+inCheck --> inQueueD
+inQueueD -->|"Not queued"| routeMerge
+inQueueD -->|"Queued"| queryD
+queryD -->|"Query"| queryFork
+queryD -->|"No Query"| queueMergeIn
+queryFork --> queryReject
+queryFork --> queueMergeIn
+queueMergeIn --> inQueue
+schedIn --> schedInD
+schedInD --> startQueue
+schedInD --> endQueue
+startQueue --> queueEventsMerge
+endQueue --> queueEndBar
+queueEndBar --> queueEventsMerge
+queueEndBar --> inRestart
+queueEventsMerge --> queueStartMerge
+inRestart --> routeMerge
+routeMerge --> router
+router --> routeD
+routeD -->|"any request except Resend Communication"| businessIn
+businessIn --> backIn
+routeD -->|"Resend Communication"| permission
+permission --> permissionD
+permissionD -->|"Permission not ok"| permissionReject
+permissionD -->|"Permission ok"| permissionFork
+permissionFork --> resendResult
+permissionFork --> resend
+fileReject --> rejectMerge1
+schemaReject --> rejectMerge1
+rejectMerge1 --> rejectMerge2
+parseReject --> rejectMerge2
+rejectMerge2 --> rejectMerge3
+privReject --> rejectMerge3
+rejectMerge3 --> rejectMerge4
+queryReject --> rejectMerge4
+rejectMerge4 --> rejectMerge5
+permissionReject --> rejectMerge5
+rejectMerge5 --> rejectMerge6
+resendResult --> rejectMerge6
+rejectMerge6 --> rejectMerge7
+resend --> rejectMerge7
+rejectMerge7 --> statusMerge
+backOut --> businessOut
+businessOut --> originMerge
+u2a --> resendOther
+resendOther --> originMerge
+originMerge --> statusMerge
+statusMerge --> log
+log --> recipient
+recipient --> subscription
+subscription --> payload
+payload --> routing
+routing --> sequence
+sequence --> create
+create --> formatted
+formatted --> queueMerge
+queueMerge --> outCheck
+outCheck --> outQueueD
+outQueueD -->|"Outbound Queuing"| outQueue
+outQueueD -->|"No Outbound Queuing"| sendMerge
+schedOut --> schedOutD
+schedOutD --> available
+schedOutD --> unavailable
+available --> extBar
+unavailable --> extMerge
+extBar --> extMerge
+extBar --> restart
+extMerge --> queueMerge
+restart --> sendMerge
+sendMerge --> cert
+cert --> transmitMerge
+transmitMerge --> transmit
+transmit --> encOut
+encOut --> uReceive
+uAckSend --> techAckIn
+techAckIn --> transmitMerge
+style extBar fill:#222,stroke:#222
+style permissionFork fill:#222,stroke:#222
+style queryFork fill:#222,stroke:#222
+style queueEndBar fill:#222,stroke:#222
+style recvFork fill:#222,stroke:#222

@@ -1,0 +1,22 @@
+classDiagram
+  class GlobalSettlementAgent
+  class LocalSettlementAgent
+  class SettlementAgent
+  class InstructingParty
+  class SellSideParty
+  class BuySideParty
+  class CentralCounterparty
+  class Infrastructure
+  class StockExchange
+  class ConfirmationParty
+  class CentralSecuritiesDepository
+  GlobalSettlementAgent --|> SettlementAgent
+  LocalSettlementAgent --|> SettlementAgent
+  SettlementAgent --> InstructingParty
+  SellSideParty --> InstructingParty
+  BuySideParty --> InstructingParty
+  Infrastructure --> InstructingParty
+  CentralCounterparty --> Infrastructure
+  StockExchange --> Infrastructure
+  ConfirmationParty --|> Infrastructure
+  CentralSecuritiesDepository --|> Infrastructure

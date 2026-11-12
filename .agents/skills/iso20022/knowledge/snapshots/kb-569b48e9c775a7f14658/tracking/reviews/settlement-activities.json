@@ -1,0 +1,995 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Europe/Warsaw",
+  "source_id": "src-000196",
+  "source_sha256": "fb30f981d9487adfc17d50adbc53dc8b8a4fcd63125d3c5272e8cbd0ce2d6109",
+  "diagram_count": 29,
+  "render_pass": 29,
+  "visual_fidelity_pass": 29,
+  "records": [
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0002",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0002.md",
+      "original": "domains/securities/assets/src-000196/originals/image2.png",
+      "original_sha256": "f2ccefd333d8e0a5ffe666d64b1a166f8451a9073a6bdec50eb9519fa4a6e216",
+      "preview": "domains/securities/assets/src-000196/originals/image2.png",
+      "mermaid_sha256": "9fe7cf0c165d113916ac0d401c2670badb0c09dab2e3a0b1458670cb29db72e8",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-push.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-pull.md"
+      ],
+      "limitations": [
+        "This is a scope/communication overview, not an ordered sequence. Generic labels are retained, including the owner-to-servicer “Request For Statement Status Advice” label; they are not silently replaced with modern exact message names."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0002.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0002.png",
+      "rendered_png_sha256": "88ac89bde6ba2bfcffd18f35b3992ba6eea8a62e469e51957417b971ee0c7482",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0003",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0003.md",
+      "original": "domains/securities/assets/src-000196/originals/image3.png",
+      "original_sha256": "4fe6a8cebd7a390cd2acff17a3316b5c31a4d45fd5a93e582a40cd9bab07d693",
+      "preview": "domains/securities/assets/src-000196/originals/image3.png",
+      "mermaid_sha256": "af0daadb7b7dd47e9b5b65bc34e17dbf1a3c65886259d19e32413fb75f12be31",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/intra-position-instruction.md"
+      ],
+      "limitations": [
+        "The source provides communication categories, not exact definition IDs or a required temporal sequence. All four original labels are preserved."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0003.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0003.png",
+      "rendered_png_sha256": "a601a1a87e0ec5f47a7e22c3b6c564c2e333c2bb942ec09460746afc4b2c85ab",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0011",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0011.md",
+      "original": "domains/securities/assets/src-000196/originals/image11.emf",
+      "original_sha256": "a49d33312372142e03c367400b1cf5ef836619910e9fc5584d93a79901a362c0",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image11.emf.png",
+      "mermaid_sha256": "4cf45998d96733695edf97ff2a33893f0474a6fdd8137f4d06c190be4306d9b1",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/intra-position-instruction.md"
+      ],
+      "limitations": [
+        "The two swimlanes, processing/execution decisions, Yes/No branches, return-to-instruction path, status loops and both endpoints are retained."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0011.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0011.png",
+      "rendered_png_sha256": "95c7d4c974f7045136c2a322c803da0deb34f6daaeeab0b31038b8036968fb32",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0012",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0012.md",
+      "original": "domains/securities/assets/src-000196/originals/image12.emf",
+      "original_sha256": "33cafacaac21fd5c3f33790cf0181eba983fa895b66eeb028643159ce238b4cb",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image12.emf.png",
+      "mermaid_sha256": "d559dc6c174873613d2b35ab88d376a62caa1a72868f25b109b2360ee11744be",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/partial-settlement.md"
+      ],
+      "limitations": [
+        "Both lanes contain a Settled? decision followed by Partially Settled?. Partial settlement loops back; full settlement reaches the end point.",
+        "The source has two synchronization bars joining outcome/status routes. Native fork/join shapes preserve their placement in the relationship graph; no additional requirement to wait for mutually exclusive outcomes is inferred."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0012.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0012.png",
+      "rendered_png_sha256": "922d7f6261deb58eafadb4279cb330bafd37ce160f943afb4e173799c0e737a2",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0033",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0033.md",
+      "original": "domains/securities/assets/src-000196/originals/image33.emf",
+      "original_sha256": "03f08d97f8e5ede91ca98b36b738ad62b4b99530275cc1a27aab8fea84cc9916",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image33.emf.png",
+      "mermaid_sha256": "13d5d93599b300ed2cb271d845d7d966273a79e43d7e55be6016cca6fb897a95",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cancellation-request.md"
+      ],
+      "limitations": [
+        "The source includes a synchronization bar for status/outcome information returning to the instructing participant. A cancellation request does not itself establish completed cancellation."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0033.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0033.png",
+      "rendered_png_sha256": "ea48f86a539cbc026692e73a1d436e962c5add09e94dd332b1e8cda0b9de0439",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0034",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0034.md",
+      "original": "domains/securities/assets/src-000196/originals/image34.png",
+      "original_sha256": "52c2aaef40abf3e415b8de14989d019e66e54208160b07783ca0dce7a41140d3",
+      "preview": "domains/securities/assets/src-000196/originals/image34.png",
+      "mermaid_sha256": "a8e0dc8d2fc00f5f1148efe114fa776d2c32ab2448baef7995d29d7e27c026d2",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cancellation-advice.md"
+      ],
+      "limitations": [
+        "The visible horizontal source connectors have no clear arrowheads; they remain plain connections. The source activity table and narrative establish the participants’ communication responsibilities.",
+        "The source wording “Advice cancellation” is retained. Existing cancellation-advice/instruction-cancellation/status exclusions remain governed by the documented source conflicts, not resolved by this picture."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0034.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0034.png",
+      "rendered_png_sha256": "c18f32cc3545c13a668929a2ee37bddee4a8088ffda90e59da56f60a992379a1",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0035",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0035.md",
+      "original": "domains/securities/assets/src-000196/originals/image35.png",
+      "original_sha256": "5f8248dd3eb4a712edd5779bc0f895189797118f4fbe2ceb98789d3bede632dc",
+      "preview": "domains/securities/assets/src-000196/originals/image35.png",
+      "mermaid_sha256": "e5e6b44b80a99b322cb61033af71ab96320593c7e3e1f7e6d104f690b4945434",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reversal-advice.md"
+      ],
+      "limitations": [
+        "Horizontal source connections have no clearly visible arrowheads and remain plain connections. The vertical confirmation-to-reversal arrow is retained.",
+        "The picture supplies no post-reversal settlement outcome; the linked flow retains the source narrative on the underlying instruction remaining open."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0035.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0035.png",
+      "rendered_png_sha256": "56e0909c0ab4f44cc8e364a62edf3853f136d34680b738a94ef9f15dc9614a4e",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0019",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0019.md",
+      "original": "domains/securities/assets/src-000196/originals/image19.jpeg",
+      "original_sha256": "415a38c99462024eb2480fb347b0ce4d45ce9fa6c9b523babc59ebfcf23acd6d",
+      "preview": "domains/securities/assets/src-000196/originals/image19.jpeg",
+      "mermaid_sha256": "e72d6225a43022b3007dd2f1b294999cdce0ca10e6532ee5ab6c0c92c22572d7",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/instruction-confirmation.md"
+      ],
+      "limitations": [
+        "The message function is INST. Common status is potentially provided by all parties. Intermediary statuses are provided on processes performed at a party other than the CSD; market statuses concern processes at the CSD. For a transaction settled at an intermediary (for example an internal transfer), market statuses are sent, according to the source note.",
+        "Internal Further Processing and Inferred Matching may run in parallel. Inferred matching is not official; the account servicer may deduce it from allegement-report analysis. It is not a market matching status.",
+        "A market matching status is an official matching status from the CSD. Matching and settlement may run in parallel; in that parallel process, an unmatched trade has only pending/failing status or reason pertaining to the account owner, not the counterparty.",
+        "The source states that PENDING changes to FAILING at END of Settlement Date. A matched instruction that is pending/failing may become unmatched again, for example after cancellation from a counterparty.",
+        "The source uses a heavy vertical process spine, document-shaped status outputs, feedback paths and COMMON / INTERMEDIARY / MARKET STATUS boundaries. Native layout reflows the spine, without turning the parallel-process notes into a mandatory serial algorithm. Small unlabeled junctions are routing points, not participants or added business activities."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0019.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0019.png",
+      "rendered_png_sha256": "e6b7b2f8014e799904ffa4d9f7fd177ff58f2fcab4883da35e45fa8d8bf60e7a",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0020",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0020.md",
+      "original": "domains/securities/assets/src-000196/originals/image20.png",
+      "original_sha256": "9ceec114b817449beb6dd91c4ecf706faac95b8925eace101b6f855a50cab4e4",
+      "preview": "domains/securities/assets/src-000196/originals/image20.png",
+      "mermaid_sha256": "7500e0da7be5134c12b338b241d7ba7619c25231e6fa3b519192992769113ff6",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cancellation-request.md"
+      ],
+      "limitations": [
+        "Intermediary and market status boundaries, rejection, accepted, pending, denied and bilateral-cancellation paths are retained. Pending returns to its decision; awaiting counterparty cancellation returns to Both received?. Neither accepted status nor pending status means the cancellation request has been executed. Small unlabeled junctions reproduce the original process spine."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0020.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0020.png",
+      "rendered_png_sha256": "b5546a20c645956df0b04322329e248ee929d3e67f4a7d1362a93a2d71f3f7de",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0021",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0021.md",
+      "original": "domains/securities/assets/src-000196/originals/image21.png",
+      "original_sha256": "1e96f97d461c75de2d87ceb14772233da9f45bb0af84a71ba880df52853ebfab",
+      "preview": "domains/securities/assets/src-000196/originals/image21.png",
+      "mermaid_sha256": "af0291687456678a61796025f17063a1217326528a34a8772825b8089865e984",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cancellation-advice.md"
+      ],
+      "limitations": [
+        "The source shows one process box, a Y route to Cancellation Status and Reason, and an N loop back to the same process. Its label does not itself distinguish every cancellation-message type; see the linked flow’s documented source conflict."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0021.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0021.png",
+      "rendered_png_sha256": "051be183e3867d6d22e8a9c668f43f0a922fce9c6d9082ccfed6c833c9ea5a31",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0022",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0022.md",
+      "original": "domains/securities/assets/src-000196/originals/image22.jpeg",
+      "original_sha256": "6f4b3b57cae5dc39b9a261830e701d274c82f2e35b0250c66e8a6cacf1d38806",
+      "preview": "domains/securities/assets/src-000196/originals/image22.jpeg",
+      "mermaid_sha256": "f72019cda3977261e5d4abe9992d24640b4d8216405844545d9370ccfce3fcfa",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/intra-position-instruction.md"
+      ],
+      "limitations": [
+        "All source branches are retained, including bypassing technical validation and internal processing when the corresponding process box has an N branch. The bottom label is the source’s generic Intra-position advice; no exact message identifier is inferred from that label alone."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0022.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0022.png",
+      "rendered_png_sha256": "cc57e7a857ad43f7548ef620f5892254768db871794da37d0ec5e3eae6a541f9",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0023",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0023.md",
+      "original": "domains/securities/assets/src-000196/originals/image23.jpeg",
+      "original_sha256": "ed735c9c2ebb8bbacb61eb22b3b6e1efae4076031ec6293c625d1015d397a36c",
+      "preview": "domains/securities/assets/src-000196/originals/image23.jpeg",
+      "mermaid_sha256": "45b9a4dfdffbbe45c895d15b5b01e78d4aa967fdb77448fbec30fa599cd40375",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-pull.md"
+      ],
+      "limitations": [
+        "The source has no accepted-status output for this chart. Acceptance routes to Requested statement or status, while non-acceptance routes to Rejection Status."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0023.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0023.png",
+      "rendered_png_sha256": "00a669d307120d179893b42ca72d70bf585b12727decbfa08df40efb33fe8b25",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0024",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0024.md",
+      "original": "domains/securities/assets/src-000196/originals/image24.jpeg",
+      "original_sha256": "06edf0d19afd316ab01da0a64376771715a4583e173aa143d57cc5b4124e5a84",
+      "preview": "domains/securities/assets/src-000196/originals/image24.jpeg",
+      "mermaid_sha256": "a739eb758f21507dd695312c897f10ecac7d5070ff01d71937b0ad4221da6c6d",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-one-transaction.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-multiple-transactions.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-before-settlement.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-after-settlement.md"
+      ],
+      "limitations": [
+        "The final box is Modification process, not a confirmation of completed modification. Rejection, accepted and pending outputs and the pending feedback route are retained."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0024.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0024.png",
+      "rendered_png_sha256": "b0577fd8736e877e576841b3eebc49385acedfae6edb060b3138c866717eedca",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0013",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0013.md",
+      "original": "domains/securities/assets/src-000196/originals/image13.emf",
+      "original_sha256": "bcadf11a9a16db6b4da3f669574fd88870a2f75d6f79a58f72b0631698e5d068",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image13.emf.png",
+      "mermaid_sha256": "8a1a93db618dea2a606e2766953ebd92ae72a6106c6d03609c25469ce0e62c22",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-instruction-three-parties.md"
+      ],
+      "limitations": [
+        "Separate opening and closing instructions feed the settlement executing party. Opening and closing settlement checks, both status loops and four source bars remain distinct. The source outcome bars connect opening/closing outcomes onward without asserting that mutually exclusive routes must complete together."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0013.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0013.png",
+      "rendered_png_sha256": "9b7439f05728473bc92348499aef4405c56c81f3cac7245c0be8122efae12ef0",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0014",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0014.md",
+      "original": "domains/securities/assets/src-000196/originals/image14.emf",
+      "original_sha256": "5f2326578ecbbf4a5f3db96850c12c8d74d6e5f169d16104ca5ef30fc9d2de58",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image14.emf.png",
+      "mermaid_sha256": "688143b2d690c10422b9f476c546a9acf7f3ee26f03069fc1236a40fcdf9a27d",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-instruction-two-parties.md"
+      ],
+      "limitations": [
+        "The picture labels its left lane Settlement Instructing Party; the activity table uses Securities Financing Instruction Party, and the two-party sequence uses Securities Financing Instructing Party. The picture label is preserved. The linked financing participant is contextual, not a new unsupported global synonym.",
+        "The combined servicing/executing participant creates and processes both opening and closing legs. Both participants separately monitor opening and closing settlement, with source bars and return paths retained."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0014.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0014.png",
+      "rendered_png_sha256": "de8f4258806c62fcb4d61c878b5e482e686f80a526a89c005e9da3a8e4364808",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0015",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0015.md",
+      "original": "domains/securities/assets/src-000196/originals/image15.emf",
+      "original_sha256": "2ec22d38e90c13e8d4e1899d894c275856bfdc6be5dfbf788d4a2d995508cda3",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image15.emf.png",
+      "mermaid_sha256": "6b6748eda0950f76974324bcd6b26d6e0cfb16d70b671339ffcd20ac3a295479",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-modification-three-parties.md"
+      ],
+      "limitations": [
+        "The modification picture concerns replacement of the closing leg. Modified? No reaches an endpoint; Yes reaches Modify securities financing transaction. No further outgoing edge from that activity is invented. The settlement executing party’s matching/settlement process remains a separate lane."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0015.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0015.png",
+      "rendered_png_sha256": "0d809ae048ff6209f4ec0f100793c16057551aa628e192650209ed5b6116f2d4",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0016",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0016.md",
+      "original": "domains/securities/assets/src-000196/originals/image16.emf",
+      "original_sha256": "a2c5d8ec9dffd8d8cbc4c5f197d7e228bde704bc9be192f5f5e808574d0df140",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image16.emf.png",
+      "mermaid_sha256": "143e84b8cf475ab85b9eb0375429c308bb79cb746598b8c7ae2d6e04876a1ad1",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/financing-modification-two-parties.md"
+      ],
+      "limitations": [
+        "The combined servicing/executing party replaces the closing leg and enters matching/settlement processing. The source picture does not add an endpoint after Modify securities financing transaction or Matching and Settlement Process."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0016.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0016.png",
+      "rendered_png_sha256": "812b0ae5da739915424fe8c8a15dfd7871baddd8b6cc0f3012c8fa2064813b0f",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0017",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0017.md",
+      "original": "domains/securities/assets/src-000196/originals/image17.emf",
+      "original_sha256": "37905c9b9fdb7d0cbf1faa79f0265d793d7acd37d128a98f6138fd03aeec7dde",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image17.emf.png",
+      "mermaid_sha256": "9ce7ad96df74aa7468c18244cf30c34e7cba82f36ea86548e1aa6a4d672275e3",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/pair-off.md"
+      ],
+      "limitations": [
+        "The original settlement-processing branch is blue context; the pair-off/cancellation/cash-difference branch is green foreground. The cash difference may be wired or received, as the source activity explicitly states. No particular payment message is inferred."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0017.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0017.png",
+      "rendered_png_sha256": "e152e5dd6a96003644cf98857152a9b10cbbb0f2487340fcc095085131fe5a6e",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0018",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0018.md",
+      "original": "domains/securities/assets/src-000196/originals/image18.emf",
+      "original_sha256": "7f0b5d531565a73eb12177703b39ee91573f73abaabeb6d4b9898fa694bf4ca5",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image18.emf.png",
+      "mermaid_sha256": "cece558bf5d9558035b5c247ad841eeaa31a4e5d1b82a158468ecc5908cff150",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cash-securities-split.md"
+      ],
+      "limitations": [
+        "Four source swimlanes, separate cash/securities execution and both source bars are retained. Cash Settled? is checked before Securities Settled? in the source picture. No new start/end markers or cash-message identifiers are added. The activity’s Securities-cash instruction Executing party is linked to its cash/securities split scenario role, retaining the source label."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0018.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0018.png",
+      "rendered_png_sha256": "f0fdbcbb61de29089cacd48cecaf31d36935535c6902415c5573cbe3dbc3ef85",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0025",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0025.md",
+      "original": "domains/securities/assets/src-000196/originals/image25.emf",
+      "original_sha256": "a0e48f1f193a695b42b7f28075c1d738b9cf6fa2034581bf4007206315d472b3",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image25.emf.png",
+      "mermaid_sha256": "fde374bed001e25477f09bf34cd806c3ac69809cb76c6fbcaac89402f2e70acc",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/hold-release.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/released-held-released.md"
+      ],
+      "limitations": [
+        "The source decision is labeled Hold/Process needed?, followed by Hold or Release?. Both labels are preserved, including the wording difference. The source return from executing-party Update Status goes to both its processing activity and the instructing-party monitor. The short executing-party end connector has no clear arrowhead and remains plain."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0025.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0025.png",
+      "rendered_png_sha256": "53b39f89ea7433dda8ee3ce3657f323253020a8d6c30d3ec00284049c838af59",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0026",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0026.md",
+      "original": "domains/securities/assets/src-000196/originals/image26.emf",
+      "original_sha256": "19c4ac9088dc87bb23c6fb78a3f2bdfcc01428397560f725a83bc257e2a7bf4f",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image26.emf.png",
+      "mermaid_sha256": "59fcc4c330ee7decc0b27451089d01237f949cc4b685acdb55795db6e6fcf632",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-one-transaction.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/processing-change-multiple-transactions.md"
+      ],
+      "limitations": [
+        "The two source Processed? decisions are distinct: one is the executing party’s processing decision, the other the instructing party’s interpretation while monitoring. Both success and rejection paths and the source outcome bar are retained."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0026.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0026.png",
+      "rendered_png_sha256": "72581f35e3b6dd6973e200445ef14dd596f6c5b42290017088bbf4d1809a2c10",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0027",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0027.md",
+      "original": "domains/securities/assets/src-000196/originals/image27.emf",
+      "original_sha256": "886786a72df283c2f307694ca1172a039e0d4c969c7b625b5bb29a65269710c4",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image27.emf.png",
+      "mermaid_sha256": "9a6957648fe2c7bcfc50ba01c35b632539df9e7cb7e3e43ef11ef9eec8330707",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-before-settlement.md"
+      ],
+      "limitations": [
+        "The Counterparty lane is a separate participant instance. The matching sequence and P507–P514 identify the other instructing party; the generic role reference does not collapse both instances into one participant in this flow.",
+        "The source’s terminal horizontal bar has two incoming routes and no visible outgoing route. It is retained as a bar rather than replaced with an invented end state. The picture has no direct arrow from Request Modification to Monitor Modification Request; monitoring is entered from the returned modification status.",
+        "All validation, counterparty-response, pending and update-possible branches are retained. The enlarged connector inspection distinguishes line crossings with bridges from actual joins."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0027.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0027.png",
+      "rendered_png_sha256": "253ee04e2c4422bf49831b7fd6ef6f842e284df46215aab2a2a6accfb13d2b47",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0028",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0028.md",
+      "original": "domains/securities/assets/src-000196/originals/image28.emf",
+      "original_sha256": "be2eeb7b3bb981d440f5edd8a8a85d5747ab4b336d7c352613dfb649a5cb4a47",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image28.emf.png",
+      "mermaid_sha256": "3d18726492469ee4bdfa83283f524a95452821449fa92bc1bb8790a13cd219f9",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/modification-after-settlement.md"
+      ],
+      "limitations": [
+        "Settlement is shown before the modification decision in both lanes. Other Process is deliberately generic in the source. No extra business meaning or message is assigned to it. All four end markers, pending loops and status-return routes remain separate."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0028.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0028.png",
+      "rendered_png_sha256": "3b3e5eefa2596b6ad5b2583b86894606883abf0732ef5d0985f1e0446c5cba8a",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0029",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0029.md",
+      "original": "domains/securities/assets/src-000196/originals/image29.png",
+      "original_sha256": "cd3566163eadb084a28d9e5f00590633ee65581009755c5e90b42c39bb1195ad",
+      "preview": "domains/securities/assets/src-000196/originals/image29.png",
+      "mermaid_sha256": "e65baee5f7e30e6f96aa1ef9c70e3357ac2988ab09ad4fec135c11f3fa5309e4",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/bilateral-splitting.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/unilateral-splitting.md"
+      ],
+      "limitations": [
+        "The original dashed connection from the client’s Instruction processing to Instruct Split has no clear arrowhead and remains a dashed plain connection. It is distinct from the solid instruction-processing chain.",
+        "This activity picture has three lanes, whereas the detailed bilateral/unilateral sequences also show the opposite trade side and its client. The full flows retain those narrative/sequence participants."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0029.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0029.png",
+      "rendered_png_sha256": "7c78fc12dc267e59374c8f25f2862836901779ff6a0644d0bfbdbc7b4f19b579",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0030",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0030.md",
+      "original": "domains/securities/assets/src-000196/originals/image30.png",
+      "original_sha256": "06ffb3f02a29457a683967cf9c04345c92c75f718cc017d7201d97708843712f",
+      "preview": "domains/securities/assets/src-000196/originals/image30.png",
+      "mermaid_sha256": "f805866b1da704ab07a52fb20f8bbfd0b24573b68986cc0edab7e468dea22f15",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/allegement.md"
+      ],
+      "limitations": [
+        "The source contains decision annotations (InstructionSentOrNot?, InitiatorOrNot?, MatchedWithAllegedInstruction?) attached to diamonds. They are placed inside native decision nodes here. Original compact activity names and Yes/No branches are retained.",
+        "The activity picture does not separately draw the alleged client or counterparty as swimlanes. The full flow and sequence retain the two instructing-party instances and the parties named in the narrative."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0030.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0030.png",
+      "rendered_png_sha256": "c715694c0b75133c35b675de4cb374f8ba4087d4a3f2ff47be2693bde10d65a9",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0036",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0036.md",
+      "original": "domains/securities/assets/src-000196/originals/image36.emf",
+      "original_sha256": "e7ce5daf5c3bc1c3f48e01e30c0ae68f320efc03d47129a8eeb0432415207f46",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image36.emf.png",
+      "mermaid_sha256": "0feb521aec54160f9a4ee6072bacabf2ff6f403e9ddd0302034eedd6c5eefc21",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/portfolio-transfer.md"
+      ],
+      "limitations": [
+        "The receiving and delivering custodians are two instances of Executing/Servicing Party. The Client starts the move and participates in discrepancy investigation; it is not the unlabeled Third Party in the separate portfolio sequence.",
+        "CSD is named in the settlement-instruction actions but is not drawn as a swimlane. Its participant reference remains linked. The original SettlementDetais spelling is retained in the two send-activity labels."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0036.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0036.png",
+      "rendered_png_sha256": "8d02bf28da9def4c34e2bc421af8811ca4f9053bb4e518d12df8b4d58e96e6f5",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0031",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0031.md",
+      "original": "domains/securities/assets/src-000196/originals/image31.emf",
+      "original_sha256": "fc5e57d43dafcad4941586d2fc4dc36b6a2e4d323f4804222ada96d9c7750941",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image31.emf.png",
+      "mermaid_sha256": "8d99972879b4d1525129a9bcefa674d88265bc6ccc64a776d4c746d5dacc978a",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-push.md"
+      ],
+      "limitations": [
+        "The source separates blue settlement context from green reporting/reconciliation by a horizontal dashed divider. Named nested groups here make that separation explicit; the group captions are explanatory, not additional source participants.",
+        "Dashed dependencies from settlement activities to reports/reconciliation remain dashed. The original bars and both reconciliation routes are retained. Reports are selected by account setup and narrative conditions; the bars do not mean every report must be sent on every occasion.",
+        "The source picture shows only instructing and executing/servicing lanes. The narrative also includes a Third Party for audit-trail reporting; its linked canonical participant and flow remain available."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0031.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0031.png",
+      "rendered_png_sha256": "dd38e6159a4f8aa6e72c66025848a54e67e6a3df8d401b2582baff3d3cbd3cc5",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0032",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0032.md",
+      "original": "domains/securities/assets/src-000196/originals/image32.emf",
+      "original_sha256": "4dfb0ef5c8a0c069dc268de246927f8cf3ac47de1a5e433b714e43ead05b481a",
+      "preview": "domains/securities/assets/src-000196/derived-previews/image32.emf.png",
+      "mermaid_sha256": "937c0c3b2b420ba6e884aa865569daab101c2ba4a5a1b3e056fb28029455a69c",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reporting-pull.md"
+      ],
+      "limitations": [
+        "The source Statement requested? diamond distributes to three bars for transaction/intra-position, holdings and pending/allegement report categories. No Yes/No branch labels or default report are invented. Both result bars feed the reconciliation process.",
+        "The diagram shows only the two main parties. The full pull flow includes the Third Party named in the narrative and detailed sequence."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0032.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0032.png",
+      "rendered_png_sha256": "d5d9ed1886da48b5a01df938ab54fc8aa7ae061c8a950445c30a04b12f68bdfc",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    },
+    {
+      "source_id": "src-000196",
+      "source_figure_id": "fig-0001",
+      "path": "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/diagrams/settlement-activities/fig-0001.md",
+      "original": "domains/securities/assets/src-000196/originals/image1.png",
+      "original_sha256": "a47490206054ff2500bdfc2693fb57c0fbb0da7d118cd05a9cb63c12cb54c4cd",
+      "preview": "domains/securities/assets/src-000196/originals/image1.png",
+      "mermaid_sha256": "7736bcf215aadaaf6ccd2f8e8dd131aaa8102553e7dccada85b7eab09dc08456",
+      "flow_paths": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/instruction-confirmation.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/transaction-generation.md",
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/allegement.md"
+      ],
+      "limitations": [
+        "This is a communication-scope illustration, not a temporal sequence or a requirement to send every category. Generic message categories remain generic and are not assigned an exact message definition solely from this picture.",
+        "Customer, Custodian, Sub-Custodian, Broker, Broker’s Local Agent and Central Securities Depository are the source labels. The sub-custodian/local-agent appearances repeated in different parts of the original artwork are consolidated into one node per exact labeled participant here.",
+        "The original dotted account relationships explicitly pair Account Owner 3 with Account Servicer 3 and Account Owner 2 with Account Servicer 2. These are depicted relationships, not claims that an institution always holds that role. Institution pictograms are represented as labeled boxes; the original asset preserves their appearance."
+      ],
+      "visual_review": "pass",
+      "visual_review_date": "2026-11-09",
+      "visual_review_timezone": "Europe/Warsaw",
+      "render_result": "pass",
+      "renderer": "Mermaid browser API + Chromium 156.0.8078.81",
+      "renderer_version": "12.3.0",
+      "render_date_utc": "2026-11-08",
+      "svg": "domains/securities/assets/src-000196/settlement-activities/fig-0001.svg",
+      "png": "domains/securities/assets/src-000196/settlement-activities/fig-0001.png",
+      "rendered_png_sha256": "ea089df338449ed41ef87f1f6cd69cc5b91223d615cdbf349d70d2e9fb0f0f71",
+      "checks": [
+        "Original raster or full vector preview and final rendered reconstruction directly viewed.",
+        "All role/swimlane boundaries, activity labels, decisions and Yes/No branches compared.",
+        "Every connector endpoint, feedback loop, visible arrowhead/plain connector and explicit synchronization bar compared.",
+        "Start/end symbols and green/blue activity distinctions retained; native layout may reflow lanes.",
+        "Generic communication categories remain generic; no exact message or institution inferred from a pictogram."
+      ],
+      "review_scope": "Visual relationship fidelity only; full table/business review and explicitly recorded source ambiguities remain open."
+    }
+  ]
+}

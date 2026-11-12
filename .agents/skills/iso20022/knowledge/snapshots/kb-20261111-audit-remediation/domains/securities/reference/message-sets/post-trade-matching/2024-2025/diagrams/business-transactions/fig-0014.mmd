@@ -1,0 +1,25 @@
+---
+config:
+  themeCSS: ".messageText {stroke:#ffffff !important;stroke-width:4px !important;paint-order:stroke;stroke-linejoin:round;} .actor-line {stroke-dasharray:6 5;stroke:#999999;}"
+  sequence:
+    actorMargin: 35
+    messageMargin: 25
+    mirrorActors: false
+---
+sequenceDiagram
+    participant B as executingBroker:<br/>«FinancialInstitution»<br/>ExecutingBroker
+    participant C as centralMatchingUtility:<br/>«System»<br/>CentralMatchingUtility
+    participant I as investmentManager:<br/>«BusinessActor»<br/>InvestmentManager
+    participant T as trustee:<br/>«BusinessActor»<br/>Trustee
+    B->>+C: SecuritiesTradeConfirmation
+    deactivate C
+    I->>+C: SecuritiesTradeConfirmation
+    deactivate C
+    C->>+T: SecuritiesTradeConfirmation
+    deactivate T
+    C->>+T: SecuritiesTradeConfirmation
+    deactivate T
+    T->>+C: SecuritiesTradeConfirmationResponse
+    deactivate C
+    C->>+B: SecuritiesTradeConfirmationStatusAdvice
+    deactivate B

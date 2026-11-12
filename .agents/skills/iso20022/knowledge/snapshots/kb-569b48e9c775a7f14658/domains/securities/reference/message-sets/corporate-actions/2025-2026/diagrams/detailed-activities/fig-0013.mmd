@@ -1,0 +1,32 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;} .edgeLabel rect {fill:#ffffff !important;opacity:1!important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart TB
+ subgraph S["Account Servicer"]
+ START(("Start")) --> A("Announce new CA event")
+ REM("Reminder")
+ PROC("Process Instruction") --> B1["Source bar: Processed?"]
+ B1 -->|Yes| NEXT("Go to next activity")
+ B1 -->|Yes| REPORT("Report Instruction Status")
+ B1 -->|No| REPORT
+ N1["Response deadline approaching? Uninstructed balance remaining?"]
+ end
+ subgraph O["Account Owner"]
+ OA("Process new CA announcement") --> E1(("End"))
+ OA --> INSTR("Instruct election")
+ B2["Source bar"] --> E2(("End"))
+ B2 --> INSTR
+ STATUS("Process Instruction status") --> B3["Source bar: Status OK?"]
+ B3 -->|Yes| E3(("End"))
+ B3 -->|No| E4(("End"))
+ B3 -->|No| INSTR
+ end
+ A --> OA
+ REM --> B2
+ INSTR --> PROC
+ REPORT --> STATUS
+ N1 -.- REM
+ NOTE["See previous diagram for detailed Announcement and Confirmation activities."]

@@ -1,0 +1,23 @@
+flowchart LR
+  subgraph SERVICER["Account Servicer side"]
+    S["Account Servicer"]
+    SM["Market Data Provider"] --> S
+    SB["Broker"] --> S
+    SI["ICSD"] --> S
+    SC["CSD"] --> S
+    SX["Clearing"] --> S
+    SS["Stock Exchange"] --> S
+    SU["Sub Custodian"] --> S
+    SG["Global Custodian"] --> S
+  end
+  subgraph OWNER["Account Owner side"]
+    O["Account Owner"]
+    OG["Global Custodian"] --> O
+    OI["ICSD"] --> O
+    OB["Broker"] --> O
+    OF["Beneficial Owner"] --> O
+    OM["Fund Manager"] --> O
+    OC["CSD"] --> O
+    OS["Sub Custodian"] --> O
+    ON["Institutional Investor"] --> O
+  end

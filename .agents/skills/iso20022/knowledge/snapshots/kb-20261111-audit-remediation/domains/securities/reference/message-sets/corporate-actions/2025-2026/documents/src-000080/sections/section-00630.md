@@ -1,0 +1,70 @@
+---
+template: false
+document_kind: "source-section"
+review_status: "needs-review"
+domain: "securities"
+message_set: "Corporate Actions"
+source_ids: ["src-000080"]
+source_editions: ["February 2026"]
+message_ids: []
+heading_path: ["15 seev.044.001.13 CorporateActionMovementPreliminaryAdviceCancellationAdviceV13", "15.4 Message Building Blocks", "15.4.3 AccountDetails <AcctDtls>", "15.4.3.1 ForAllAccounts <ForAllAccts>"]
+file_pages: [821]
+content_origin: "source-text-extraction"
+mentioned_message_ids: ["seev.044.001.13"]
+---
+
+# 15.4.3.1 ForAllAccounts <ForAllAccts>
+
+Source: [src-000080](../../../../../../../../../evidence/omitted/dfb597659e5318b4c0abe01e.md). Locator: one-based file pages 821 to 821.
+
+PDF text evidence. Columns and vector figures require comparison with rendered pages. Printed page labels are retained in the extracted text; file page numbers below are authoritative file locators.
+
+## File page 821
+
+```text
+AccountDetails <AcctDtls> contains one of the following AccountIdentification73Choice elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+{Or   ForAllAccounts <ForAllAccts> [1..1] ± 821
+Or}   AccountsList <AcctsList> [1..*]  C10,
+C11,
+C12,
+C13
+821
+     SafekeepingAccount <SfkpgAcct> [0..1] Text 822
+     BlockChainAddressOrWallet <BlckChainAdrOrWllt> [0..1] Text 822
+     AccountOwner <AcctOwnr> [0..1] ± 822
+     SafekeepingPlace <SfkpgPlc> [0..1] ± 822
+15.4.3.1  ForAllAccounts <ForAllAccts>
+Presence: [1..1]
+Definition: All safekeeping accounts that own underlying financial instrument.
+ForAllAccounts <ForAllAccts> contains the following elements (see "AccountIdentification10" on
+page 830 for details)
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   IdentificationCode <IdCd> [1..1] CodeSet 830
+15.4.3.2  AccountsList <AcctsList>
+Presence: [1..*]
+Definition: Selected safekeeping accounts list to which the corporate action event applies.
+Impacted by: C10 "SafekeepingAccountOrBlockChainAddress1Rule", C11
+"SafekeepingAccountOrBlockChainAddress2Rule", C12
+"SafekeepingAccountOrBlockChainAddress3Rule", C13 "SafekeepingPlaceRule"
+AccountsList <AcctsList> contains the following AccountIdentification69 elements
+Or MessageElement<XML Tag> Mult. Type Constr.
+No.
+Page
+   SafekeepingAccount <SfkpgAcct> [0..1] Text 822
+   BlockChainAddressOrWallet <BlckChainAdrOrWllt> [0..1] Text 822
+   AccountOwner <AcctOwnr> [0..1] ± 822
+   SafekeepingPlace <SfkpgPlc> [0..1] ± 822
+Constraints
+• SafekeepingAccountOrBlockChainAddress1Rule
+Either SafekeepingAccount or BlockChainAddressOrWallet must be present but not both.
+Approved by the Securities SEG on 27 January 2026 seev.044.001.13
+CorporateActionMovementPreliminaryAdviceCancel
+lationAdviceV13
+Corporate Actions - Maintenance 2025 - 2026 821 February 2026
+```
+

@@ -1,0 +1,19 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Instructing Party"]
+    IP("Process confirmation")
+    IR("Process reversal")
+  end
+  subgraph E["Executing/Servicing Party"]
+    ST@{shape: f-circ, label: " "}
+    EC("Confirmation")
+    ER("Advice reversal")
+    ST --- EC
+    EC --> ER
+  end
+  EC --- IP
+  ER --- IR
+  classDef context fill:#bed0e9,stroke:#111,color:#111
+  classDef focus fill:#d1d8b8,stroke:#111,color:#111
+  class IP,EC context
+  class IR,ER focus

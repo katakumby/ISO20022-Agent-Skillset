@@ -1,0 +1,792 @@
+{
+  "date": "2026-11-09",
+  "checks": [
+    {
+      "test": "Family preserves multiple supplied definitions",
+      "pass": true,
+      "evidence": [
+        "domains/securities/reference/messages/semt.002.001.02/index.md",
+        "domains/securities/reference/messages/semt.002.001.12/index.md"
+      ],
+      "limitations": []
+    },
+    {
+      "test": "Exact identifier resolves once",
+      "pass": true,
+      "evidence": [
+        "domains/securities/reference/messages/sese.023.001.13/index.md"
+      ],
+      "limitations": []
+    },
+    {
+      "test": "head.001.001.04 retains its own header root",
+      "pass": true,
+      "evidence": {
+        "roots": [
+          "AppHdr"
+        ],
+        "path": "shared/reference/messages/head.001.001.04/index.md",
+        "source_id": "src-000013"
+      },
+      "limitations": []
+    },
+    {
+      "test": "head.002.001.01 retains its own header root",
+      "pass": true,
+      "evidence": {
+        "roots": [
+          "Xchg"
+        ],
+        "path": "shared/reference/messages/head.002.001.01/index.md",
+        "source_id": "src-000261"
+      },
+      "limitations": []
+    },
+    {
+      "test": "BAH versus Business File Header context exists",
+      "pass": true,
+      "evidence": "shared\\reference\\concepts\\business-application-header-and-business-file-header.md",
+      "limitations": []
+    },
+    {
+      "test": "Loose and archived duplicate has one canonical definition",
+      "pass": true,
+      "evidence": {
+        "source_id": "src-000235",
+        "occurrences": [
+          {
+            "path": "raw-input/target2securities_t2s/acmt.025.001.02.xsd",
+            "archive_member": null,
+            "sha256": "82b8174f96205ca412aeef71130ceded930dd37e9513884536c27e8bac46dcfd",
+            "size_bytes": 149525
+          },
+          {
+            "path": "raw-input/target2securities_t2s/ISO20022_MDR_Target2Securities_August_2026_v1.zip",
+            "archive_member": "ISO20022_MDR_Target2Securities_August_2026_v1/Target2-Securities_Schemas/acmt.025.001.02.xsd",
+            "sha256": "82b8174f96205ca412aeef71130ceded930dd37e9513884536c27e8bac46dcfd",
+            "size_bytes": 149525
+          }
+        ],
+        "canonical": [
+          "domains/securities/reference/messages/acmt.025.001.02/index.md"
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "test": "Account owner and servicer stay scoped across flows",
+      "pass": true,
+      "evidence": {
+        "owner_paths": [
+          "shared/reference/participants/bah-copy-context-account-owner.md",
+          "shared/reference/participants/btc-cash-account-owner.md",
+          "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+          "shared/reference/participants/participant-functionality-src-000005-party-authorised-by-account-owner.md",
+          "shared/reference/participants/participant-functionality-src-000360-account-owner-request-literal.md"
+        ],
+        "servicer_paths": [
+          "shared/reference/participants/btc-cash-account-servicer.md",
+          "shared/reference/participants/btc-securities-account-servicer.md",
+          "shared/reference/participants/participant-functionality-src-000197-securities-financing-account-servicer.md",
+          "shared/reference/participants/participant-narrative-src-000015-account-servicer.md",
+          "shared/reference/participants/participant-narrative-src-000096-account-servicer.md"
+        ]
+      },
+      "limitations": [
+        "Same source labels across collections do not establish institutional identity or equivalence."
+      ]
+    },
+    {
+      "test": "Same contextual participant reused in multiple processes",
+      "pass": true,
+      "evidence": [
+        {
+          "path": "shared/reference/participants/bah-authorised-signatory.md",
+          "flows": [
+            "bah-signed-message",
+            "bah-signing-business-message",
+            "bah-verifying-signature"
+          ]
+        },
+        {
+          "path": "shared/reference/participants/bah-business-intermediary.md",
+          "flows": [
+            "bah-business-message-exchange",
+            "bah-related-message"
+          ]
+        },
+        {
+          "path": "shared/reference/participants/bah-receiving-messaging-endpoint.md",
+          "flows": [
+            "bah-business-message-exchange",
+            "bah-character-set",
+            "bah-business-service",
+            "bah-market-practice",
+            "bah-business-processing-date"
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "test": "Cancellation request retains distinct source preconditions",
+      "pass": true,
+      "evidence": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/cancellation-request.md"
+      ],
+      "limitations": []
+    },
+    {
+      "test": "Settlement reversal retains distinct source preconditions",
+      "pass": true,
+      "evidence": [
+        "domains/securities/reference/message-sets/settlement-and-reconciliation/2025-2026/flows/reversal-advice.md"
+      ],
+      "limitations": []
+    },
+    {
+      "test": "Corporate-action movement reversal is retrievable",
+      "pass": true,
+      "evidence": [
+        "domains/securities/reference/message-sets/corporate-actions/2025-2026/flows/flow-src-000079-p153-movement-reversal.md"
+      ],
+      "limitations": []
+    },
+    {
+      "test": "Operational cash management and bank-to-customer reporting remain separate",
+      "pass": true,
+      "evidence": {
+        "camt.003.001.08": [
+          "cash-management"
+        ],
+        "camt.053.001.14": [
+          "bank-to-customer-cash-management"
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "test": "Schema-only message remains available with missing MDR visible",
+      "pass": true,
+      "evidence": {
+        "source_id": "src-000188",
+        "path": "domains/securities/reference/messages/seev.001.001.13/index.md",
+        "collection": "securities_events_general_meeting_proxy_voting"
+      },
+      "limitations": [
+        "Business actors and purpose are not inferred from the XSD alone."
+      ]
+    },
+    {
+      "test": "Search is bounded and carries provenance/status",
+      "pass": true,
+      "evidence": {
+        "query": "account owner",
+        "limit": 3,
+        "records": [
+          {
+            "path": "shared/reference/participants/bah-copy-context-account-owner.md",
+            "title": "Account owner in BAH copy-code definitions",
+            "review_status": "needs-review",
+            "domain": "shared",
+            "document_kind": "participant",
+            "participant_id": "bah-copy-context-account-owner",
+            "aliases": [
+              "account owner (CopyDuplicate1Code definitions)"
+            ],
+            "source_ids": [
+              "src-000011"
+            ],
+            "source_locations": [
+              "§2.4.10 p15; §2.4.14.10 p24; §3.2.1.3 p51"
+            ],
+            "message_sets": [
+              "business-application-header"
+            ],
+            "message_ids": [
+              "head.001.001.04"
+            ],
+            "flows": [],
+            "limitations": [
+              "Mentioned by code definitions; ownership relationship and responsibilities are not defined in this MDR.",
+              "No equivalence to settlement AccountOwnerRole is established."
+            ],
+            "source_editions": [
+              "Version 4 March 2024"
+            ]
+          },
+          {
+            "path": "shared/reference/participants/btc-cash-account-owner.md",
+            "title": "account owner — Bank Transaction Code context",
+            "review_status": "reviewed",
+            "domain": "shared",
+            "source_ids": [
+              "src-000003"
+            ],
+            "source_editions": [
+              "November 2025 Version 8.0"
+            ],
+            "message_ids": [],
+            "document_kind": "participant",
+            "participant_id": "btc-cash-account-owner",
+            "source_labels": [
+              "account owner"
+            ],
+            "aliases": [],
+            "source_locations": [
+              "P92 and P101; §3.1.1; rendered file/printed page 5",
+              "T5 row 3; Payments Families definition",
+              "T5 row 4; Payments Families definition",
+              "T5 row 7; Payments Families definition",
+              "T5 row 8; Payments Families definition"
+            ],
+            "message_sets": [
+              "external-code-sets"
+            ],
+            "flows": [
+              "btc-cash-reporting-and-reconciliation",
+              "btc-standing-order-processing"
+            ],
+            "limitations": [
+              "The publication describes this scoped role through transaction-code definitions; it does not provide a formal participant model or map it to exact message definitions.",
+              "No equivalence with same-named MDR roles, institutions or product-specific roles is asserted."
+            ]
+          },
+          {
+            "path": "shared/reference/participants/participant-corporate-actions-designated-agent.md",
+            "title": "Designated agent of the corporate-action account owner",
+            "document_kind": "participant",
+            "review_status": "needs-review",
+            "domain": "securities",
+            "participant_id": "participant-corporate-actions-designated-agent",
+            "source_labels": [
+              "its designated agent"
+            ],
+            "source_ids": [
+              "src-000080"
+            ],
+            "source_editions": [
+              "February 2026"
+            ],
+            "message_sets": [
+              "corporate-actions"
+            ],
+            "source_locations": [
+              {
+                "source_id": "src-000080",
+                "locator": "file page665, §9.1 Scope"
+              },
+              {
+                "source_id": "src-000080",
+                "locator": "file page813, §15.1 Scope"
+              },
+              {
+                "source_id": "src-000080",
+                "locator": "file page692, section10.1 MessageDefinition Functionality / Scope",
+                "message_id": "seev.038.001.09",
+                "evidence_id": "src-000080-seev.038.001.09-p692-c001"
+              }
+            ],
+            "role_type": "functional agent acting for the account owner; receiver for seev.037/044 and bidirectional participant for bilaterally agreed seev.038",
+            "aliases": [],
+            "flows": [
+              "flow-src-000079-p153-movement-reversal"
+            ],
+            "message_ids": [
+              "seev.037.001.17",
+              "seev.038.001.09",
+              "seev.044.001.13"
+            ],
+            "message_families": [
+              "seev.037",
+              "seev.038",
+              "seev.044"
+            ],
+            "limitations": [
+              "The cited functionality names this role but does not provide a separate definition, appointment procedure or identifier scheme.",
+              "The cited movement-reversal sequence drawings show direct delivery to Account Owner and omit this alternative receiver. Their two-actor scope does not limit the separately documented bidirectional CorporateActionNarrative usage."
+            ]
+          }
+        ],
+        "limitations": [
+          "Results are bounded; a missing result does not establish absence of a concept. Review status and source limitations remain applicable."
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "test": "Documentation-only semt.041.001.02 exposes unavailable schema and available role evidence",
+      "pass": true,
+      "evidence": {
+        "message": [
+          {
+            "path": "domains/securities/reference/messages/semt.041.001.02/index.md",
+            "title": "SecuritiesBalanceTransparencyReport",
+            "document_kind": "message-index",
+            "review_status": "needs-review",
+            "message_id": "semt.041.001.02",
+            "message_family": "semt.041",
+            "domain": "securities",
+            "source_ids": [
+              "src-000095"
+            ],
+            "source_editions": [
+              "March 2025"
+            ],
+            "message_sets": [
+              "investment-funds"
+            ],
+            "documentation_status": "business-examples-only",
+            "schema_status": "not-supplied",
+            "namespace": null,
+            "source_locations": [
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P941",
+                "heading_path": [
+                  "BusinessTransactions",
+                  "Statements",
+                  "Transparency of Holdings Statement "
+                ],
+                "xml_path": "/w:document/w:body/w:p[941]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P942",
+                "heading_path": [
+                  "BusinessTransactions",
+                  "Statements",
+                  "Transparency of Holdings Statement "
+                ],
+                "xml_path": "/w:document/w:body/w:p[942]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5806",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5806]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5807",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5807]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5808",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5808]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5809",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5809]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5810",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReport semt.041.001.02 - 1"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5810]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5811",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReport semt.041.001.02 - 1"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5811]"
+              }
+            ],
+            "limitations": [
+              "The supplied Part1 explicitly prints this exact identifier, but no corresponding supplied XSD or Part2 definition has been located. See issue-000042.",
+              "Source examples establish specific illustrated content and directions; they do not establish complete schema structure or all business rules."
+            ],
+            "participant_ids": [
+              "participant-src-000095-account-servicer",
+              "participant-src-000095-receiving-party-all-levels",
+              "participant-src-000095-example-cusa",
+              "participant-src-000095-example-cusb",
+              "participant-src-000095-example-cusc",
+              "participant-src-000095-example-icsd",
+              "participant-src-000095-example-trag"
+            ],
+            "flow_ids": [
+              "flow-src-000095-transparency-example-1",
+              "flow-src-000095-transparency-example-2"
+            ],
+            "truncated_metadata": {
+              "source_locations": {
+                "returned": 8,
+                "total": 9
+              }
+            },
+            "full_metadata_location": "domains/securities/reference/messages/semt.041.001.02/index.md"
+          }
+        ],
+        "roles": [
+          {
+            "message_id": "semt.041.001.02",
+            "message_family": "semt.041",
+            "namespace": null,
+            "path": "domains/securities/reference/messages/semt.041.001.02/index.md",
+            "source_locations": [
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P941",
+                "heading_path": [
+                  "BusinessTransactions",
+                  "Statements",
+                  "Transparency of Holdings Statement "
+                ],
+                "xml_path": "/w:document/w:body/w:p[941]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P942",
+                "heading_path": [
+                  "BusinessTransactions",
+                  "Statements",
+                  "Transparency of Holdings Statement "
+                ],
+                "xml_path": "/w:document/w:body/w:p[942]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5806",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5806]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5807",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5807]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5808",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5808]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5809",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5809]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5810",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReport semt.041.001.02 - 1"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5810]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5811",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReport semt.041.001.02 - 1"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5811]"
+              }
+            ],
+            "participant_ids": [
+              "participant-src-000095-account-servicer",
+              "participant-src-000095-receiving-party-all-levels",
+              "participant-src-000095-example-cusa",
+              "participant-src-000095-example-cusb",
+              "participant-src-000095-example-cusc",
+              "participant-src-000095-example-icsd",
+              "participant-src-000095-example-trag"
+            ],
+            "flow_ids": [
+              "flow-src-000095-transparency-example-1",
+              "flow-src-000095-transparency-example-2"
+            ],
+            "limitations": [
+              "The supplied Part1 explicitly prints this exact identifier, but no corresponding supplied XSD or Part2 definition has been located. See issue-000042.",
+              "Source examples establish specific illustrated content and directions; they do not establish complete schema structure or all business rules.",
+              "No exact Part2 Functionality role extraction exists. Read the linked canonical source-example evidence and its flow references for the documented directions."
+            ],
+            "status": "documentation-only-business-evidence",
+            "schema_status": "not-supplied",
+            "documentation_status": "business-examples-only",
+            "source_provenance": [
+              {
+                "source_id": "src-000095",
+                "sha256": "d640033388139e2ff01ffe803c40b6b53c89467808cbb47efd3a8cfb3d3a3c03",
+                "occurrences": [
+                  {
+                    "path": "raw-input/investment_funds/ISO20022_MDRPart1_InvestmentFunds_2025_2026_v2.docx",
+                    "archive_member": null,
+                    "sha256": "d640033388139e2ff01ffe803c40b6b53c89467808cbb47efd3a8cfb3d3a3c03",
+                    "size_bytes": 2474345
+                  }
+                ]
+              }
+            ],
+            "current_message_directions": [],
+            "directions_available_at": "domains/securities/reference/messages/semt.041.001.02/index.md",
+            "truncated_metadata": {
+              "source_locations": {
+                "returned": 8,
+                "total": 9
+              }
+            },
+            "full_metadata_location": "domains/securities/reference/messages/semt.041.001.02/index.md"
+          }
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "test": "Documentation-only semt.042.001.01 exposes unavailable schema and available role evidence",
+      "pass": true,
+      "evidence": {
+        "message": [
+          {
+            "path": "domains/securities/reference/messages/semt.042.001.01/index.md",
+            "title": "SecuritiesBalanceTransparencyReportStatusAdvice",
+            "document_kind": "message-index",
+            "review_status": "needs-review",
+            "message_id": "semt.042.001.01",
+            "message_family": "semt.042",
+            "domain": "securities",
+            "source_ids": [
+              "src-000095"
+            ],
+            "source_editions": [
+              "March 2025"
+            ],
+            "message_sets": [
+              "investment-funds"
+            ],
+            "documentation_status": "business-examples-only",
+            "schema_status": "not-supplied",
+            "namespace": null,
+            "source_locations": [
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5920",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5920]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5921",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5921]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5922",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5922]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5923",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5923]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5924",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5924]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5925",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5925]"
+              }
+            ],
+            "limitations": [
+              "The supplied Part1 explicitly prints this exact identifier, but no corresponding supplied XSD or Part2 definition has been located. See issue-000042.",
+              "Source examples establish specific illustrated content and directions; they do not establish complete schema structure or all business rules."
+            ],
+            "participant_ids": [
+              "participant-src-000095-example-icsd",
+              "participant-src-000095-example-cusa"
+            ],
+            "flow_ids": [
+              "flow-src-000095-transparency-status-advice-example"
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "message_id": "semt.042.001.01",
+            "message_family": "semt.042",
+            "namespace": null,
+            "path": "domains/securities/reference/messages/semt.042.001.01/index.md",
+            "source_locations": [
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5920",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5920]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5921",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5921]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5922",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5922]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5923",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5923]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5924",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5924]"
+              },
+              {
+                "source_id": "src-000095",
+                "paragraph_id": "P5925",
+                "heading_path": [
+                  "Business Examples",
+                  "Transparency Of Holdings",
+                  "SecuritiesBalanceTransparencyReportStatusAdvice semt.042.001.01"
+                ],
+                "xml_path": "/w:document/w:body/w:p[5925]"
+              }
+            ],
+            "participant_ids": [
+              "participant-src-000095-example-icsd",
+              "participant-src-000095-example-cusa"
+            ],
+            "flow_ids": [
+              "flow-src-000095-transparency-status-advice-example"
+            ],
+            "limitations": [
+              "The supplied Part1 explicitly prints this exact identifier, but no corresponding supplied XSD or Part2 definition has been located. See issue-000042.",
+              "Source examples establish specific illustrated content and directions; they do not establish complete schema structure or all business rules.",
+              "No exact Part2 Functionality role extraction exists. Read the linked canonical source-example evidence and its flow references for the documented directions."
+            ],
+            "status": "documentation-only-business-evidence",
+            "schema_status": "not-supplied",
+            "documentation_status": "business-examples-only",
+            "source_provenance": [
+              {
+                "source_id": "src-000095",
+                "sha256": "d640033388139e2ff01ffe803c40b6b53c89467808cbb47efd3a8cfb3d3a3c03",
+                "occurrences": [
+                  {
+                    "path": "raw-input/investment_funds/ISO20022_MDRPart1_InvestmentFunds_2025_2026_v2.docx",
+                    "archive_member": null,
+                    "sha256": "d640033388139e2ff01ffe803c40b6b53c89467808cbb47efd3a8cfb3d3a3c03",
+                    "size_bytes": 2474345
+                  }
+                ]
+              }
+            ],
+            "current_message_directions": [],
+            "directions_available_at": "domains/securities/reference/messages/semt.042.001.01/index.md"
+          }
+        ]
+      },
+      "limitations": []
+    },
+    {
+      "test": "Participant and flow identifiers resolve",
+      "pass": true,
+      "evidence": [],
+      "limitations": []
+    }
+  ],
+  "pass": true,
+  "scope": "Retrieval and cross-reference behavior on supplied evidence; not a claim of completed visual or business-semantic review."
+}

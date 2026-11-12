@@ -1,0 +1,84 @@
+flowchart TB
+q["Queries"]
+u["U2A"]
+a["A2A"]
+hub1(("#160;"))
+hub2(("#160;"))
+csd["CSDs"]
+sb["Settlement Banks"]
+pb["Payment Banks"]
+ncb["NCBs"]
+instructions["Instructions"]
+instructions1["Settlement Instruction"]
+instructions2["Settlement Instruction Current Status"]
+instructions3["Settlement Instruction Status Audit Trail"]
+instructions4["Settlement Instruction Audit Trail"]
+instructions5["Settlement Transaction"]
+security["Security account"]
+security1["Security Account Position"]
+security2["Security Account Position History"]
+cash["Cash account"]
+cash1["T2S Dedicated Cash Account Balance"]
+cash2["T2S Dedicated Cash Account Posting Query"]
+cash3["Outstanding Auto-Collateralisation Credit"]
+cash4["Overall Liquidity"]
+cash5["Cash Forecast"]
+cash6["Limit"]
+cash7["Immediate Liquidity Transfer Order List Query"]
+cash8["Limit Utilisation Journal"]
+cash9["Limit Utilisation"]
+cash10["Total Collateral Value"]
+cash11["Collateral Value per Cash Account"]
+cash12["Collateral Value of a Security"]
+cash13["Cash Account List"]
+cash14["Immediate Liquidity Transfer Order Detail Query"]
+day["Settlement day"]
+day1["T2S Calendar"]
+day2["T2S Diary"]
+dynamic["Dynamic data queries"]
+dynamic1["Report"]
+static["Static data"]
+static1["Several queries available (e.g. Liquidity Transfer Orders and Liquidity Transfer Order Link Set)"]
+q --> u
+q --> a
+u --- hub1
+a --- hub1
+hub1 --> csd
+csd --- hub2
+hub1 --> sb
+sb --- hub2
+hub1 --> pb
+pb --- hub2
+hub1 --> ncb
+ncb --- hub2
+hub2 --> instructions
+instructions --> instructions1
+instructions --> instructions2
+instructions --> instructions3
+instructions --> instructions4
+instructions --> instructions5
+hub2 --> security
+security --> security1
+security --> security2
+hub2 --> cash
+cash --> cash1
+cash --> cash2
+cash --> cash3
+cash --> cash4
+cash --> cash5
+cash --> cash6
+cash --> cash7
+cash --> cash8
+cash --> cash9
+cash --> cash10
+cash --> cash11
+cash --> cash12
+cash --> cash13
+cash --> cash14
+hub2 --> day
+day --> day1
+day --> day2
+hub2 --> dynamic
+dynamic --> dynamic1
+hub2 --> static
+static --> static1

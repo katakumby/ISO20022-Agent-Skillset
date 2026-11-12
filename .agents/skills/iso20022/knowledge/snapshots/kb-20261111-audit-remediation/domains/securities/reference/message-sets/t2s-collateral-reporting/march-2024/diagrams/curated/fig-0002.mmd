@@ -1,0 +1,46 @@
+flowchart TB
+ Q["Queries"] --> U["U2A"]
+ Q --> A["A2A"]
+ U --- Modes((" "))
+ A --- Modes
+ Modes --> C["CSDs"]
+ Modes --> S["Settlement Banks"]
+ Modes --> P["Payment Banks"]
+ Modes --> N["NCBs"]
+ C --- Actors((" "))
+ S --- Actors
+ P --- Actors
+ N --- Actors
+ Actors --> Ins["Instructions"]
+ Actors --> Sec["Security account"]
+ Actors --> Cash["Cash account"]
+ Actors --> Day["Settlement day"]
+ Actors --> Dyn["Dynamic data queries"]
+ Actors --> Static["Static data"]
+ Ins --> Ins0["Settlement Instruction"]
+ Ins --> Ins1["Settlement Instruction Current Status"]
+ Ins --> Ins2["Settlement Instruction Status Audit Trail"]
+ Ins --> Ins3["Settlement Instruction Audit Trail"]
+ Ins --> Ins4["Settlement Transaction"]
+ Sec --> Sec0["Security Account Position"]
+ Sec --> Sec1["Security Account Position History"]
+ Cash --> Cash0["T2S Dedicated Cash Account Balance"]
+ Cash --> Cash1["T2S Dedicated Cash Account Posting Query"]
+ Cash --> Cash2["Outstanding Auto-Collateralisation Credit"]
+ Cash --> Cash3["Overall Liquidity"]
+ Cash --> Cash4["Cash Forecast"]
+ Cash --> Cash5["Limit"]
+ Cash --> Cash6["Immediate Liquidity Transfer Order List Query"]
+ Cash --> Cash7["Limit Utilisation Journal"]
+ Cash --> Cash8["Limit Utilisation"]
+ Cash --> Cash9["Total Collateral Value"]
+ Cash --> Cash10["Collateral Value per Cash Account"]
+ Cash --> Cash11["Collateral Value of a Security"]
+ Cash --> Cash12["Cash Account List"]
+ Cash --> Cash13["Immediate Liquidity Transfer Order Detail Query"]
+ Day --> Day0["T2S Calendar"]
+ Day --> Day1["T2S Diary"]
+ Dyn --> Dyn0["Report"]
+ Static --> Static0["Several queries available (e.g. Liquidity Transfer Orders and Liquidity Transfer Order Link Set)"]
+ style Modes fill:none,stroke:none
+ style Actors fill:none,stroke:none

@@ -1,0 +1,307 @@
+[
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/security-csd-creation.md",
+    "title": "Security CSD Link Creation Request",
+    "message_id": "reda.045.001.01",
+    "narrative_paragraphs": [
+      233,
+      242
+    ],
+    "payload_paragraphs": [
+      244,
+      279
+    ],
+    "root": "SctyCSDLkCreReq",
+    "message_identifiers": [
+      "SECCSDLINKREQ"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      23,
+      24
+    ],
+    "original_instruction_ids": [],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/security-csd-maintenance.md",
+    "title": "Security CSD Link Modification Request",
+    "message_id": "reda.046.001.01",
+    "narrative_paragraphs": [
+      283,
+      287
+    ],
+    "payload_paragraphs": [
+      290,
+      316
+    ],
+    "root": "SctyCSDLkMntncReq",
+    "message_identifiers": [
+      "SECCSDLINKUPD"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      24,
+      25
+    ],
+    "original_instruction_ids": [],
+    "issue_ids": [],
+    "review_status": "reviewed"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/security-csd-status-completed.md",
+    "title": "Security CSD Link Status Advice — completed",
+    "message_id": "reda.047.001.01",
+    "narrative_paragraphs": [
+      326,
+      331
+    ],
+    "payload_paragraphs": [
+      334,
+      361
+    ],
+    "root": "SctyCSDLkStsAdvc",
+    "message_identifiers": [
+      "NONREF"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      25,
+      26
+    ],
+    "original_instruction_ids": [
+      " SECCSDLINCRE "
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/security-csd-status-queued.md",
+    "title": "Security CSD Link Status Advice — queued",
+    "message_id": "reda.047.001.01",
+    "narrative_paragraphs": [
+      365,
+      367
+    ],
+    "payload_paragraphs": [
+      370,
+      380
+    ],
+    "root": "SctyCSDLkStsAdvc",
+    "message_identifiers": [
+      "NONREF"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      27
+    ],
+    "original_instruction_ids": [
+      " SECCSDLINCRE "
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/security-csd-status-rejected.md",
+    "title": "Security CSD Link Status Advice — rejected",
+    "message_id": "reda.047.001.01",
+    "narrative_paragraphs": [
+      382,
+      385
+    ],
+    "payload_paragraphs": [
+      388,
+      404
+    ],
+    "root": "SctyCSDLkStsAdvc",
+    "message_identifiers": [
+      "NONREF"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      27,
+      28
+    ],
+    "original_instruction_ids": [
+      " SECCSDLINCRE "
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/account-link-creation.md",
+    "title": "Account Link Creation Request",
+    "message_id": "reda.049.001.01",
+    "narrative_paragraphs": [
+      408,
+      414
+    ],
+    "payload_paragraphs": [
+      417,
+      439
+    ],
+    "root": "AcctLkCreReq",
+    "message_identifiers": [
+      "CREACCLINK"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      28,
+      29
+    ],
+    "original_instruction_ids": [],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/account-link-maintenance.md",
+    "title": "Account Link Maintenance Request",
+    "message_id": "reda.050.001.01",
+    "narrative_paragraphs": [
+      443,
+      447
+    ],
+    "payload_paragraphs": [
+      450,
+      474
+    ],
+    "root": "AcctLkMntncReq",
+    "message_identifiers": [
+      "ACCTLINKMANT"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      29,
+      30
+    ],
+    "original_instruction_ids": [],
+    "issue_ids": [],
+    "review_status": "reviewed"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/account-link-status-completed.md",
+    "title": "Account Link Status Advice — completed",
+    "message_id": "reda.051.001.01",
+    "narrative_paragraphs": [
+      483,
+      488
+    ],
+    "payload_paragraphs": [
+      491,
+      516
+    ],
+    "root": "AcctLkStsAdvc",
+    "message_identifiers": [
+      "ACCLINKSTATCOMP"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      30,
+      31
+    ],
+    "original_instruction_ids": [
+      "ACCLINKCREAT"
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/account-link-status-queued.md",
+    "title": "Account Link Status Advice — queued",
+    "message_id": "reda.051.001.01",
+    "narrative_paragraphs": [
+      518,
+      520
+    ],
+    "payload_paragraphs": [
+      523,
+      533
+    ],
+    "root": "AcctLkStsAdvc",
+    "message_identifiers": [
+      "ACCLINKSTATQUE"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      31
+    ],
+    "original_instruction_ids": [
+      "ACCLINKCREAT"
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "source_id": "src-000365",
+    "path": "domains/securities/reference/message-sets/t2s-link-reference-data/december-2024/examples/account-link-status-rejected.md",
+    "title": "Account Link Status Advice — rejected",
+    "message_id": "reda.051.001.01",
+    "narrative_paragraphs": [
+      537,
+      540
+    ],
+    "payload_paragraphs": [
+      543,
+      559
+    ],
+    "root": "AcctLkStsAdvc",
+    "message_identifiers": [
+      "ACCLINKSTATREJ"
+    ],
+    "wellformedness": "pass",
+    "visual_review": "pass",
+    "date": "2026-11-09",
+    "word_pages": [
+      32
+    ],
+    "original_instruction_ids": [
+      "ACCLINKCREAT"
+    ],
+    "issue_ids": [
+      "issue-000053"
+    ],
+    "review_status": "needs-review"
+  }
+]

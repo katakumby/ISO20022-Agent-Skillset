@@ -1,0 +1,8 @@
+sequenceDiagram
+ participant S as Account Servicer
+ participant R as Recipient
+ participant O as Account Owner
+ S->>R: BankToCustomerDebitCreditNotification
+ R->>O: BankToCustomerDebitCreditNotification<br/>or similar internal message
+ S->>R: BankToCustomerStatement
+ R->>O: BankToCustomerStatement<br/>or similar internal message

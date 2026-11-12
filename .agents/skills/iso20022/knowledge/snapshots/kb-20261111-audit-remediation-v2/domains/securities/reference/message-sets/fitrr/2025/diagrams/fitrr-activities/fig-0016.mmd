@@ -1,0 +1,38 @@
+flowchart TB
+  subgraph laneRE["Reporting Entity"]
+    start(("Start"))
+    submit(["Generate and Submit Transactions Report Message"])
+    forkRE@{ shape: fork }
+    response(["Receive and Process Response"])
+    accepted{"#160;"}
+    correct(["Corrective Action"])
+    endRE((("End")))
+  end
+  subgraph laneCA["Competent Authority"]
+    receive(["Receive Messages"])
+    process(["Process Message and Generate Status Advice"])
+    forkCA@{ shape: fork }
+    exchange{"#160;"}
+    endCA((("End")))
+  end
+  subgraph laneRCA["Relevant Competent Authority"]
+    processRCA(["Process Exchanged Message and Generate Status Advice"])
+    endRCA((("End")))
+  end
+  start --> submit
+  submit --> forkRE
+  forkRE --> receive
+  forkRE --> response
+  receive --> process
+  process --> forkCA
+  forkCA --> response
+  forkCA --> exchange
+  exchange -->|"Exchanged Messages"| processRCA
+  exchange -->|"No Exchanged Messages"| endCA
+  processRCA --> endRCA
+  response --> accepted
+  accepted -->|"Rejected"| correct
+  accepted -->|"Accepted"| endRE
+  correct --> submit
+  classDef bar fill:#333,stroke:#333,color:#333;
+  class forkRE,forkCA bar;

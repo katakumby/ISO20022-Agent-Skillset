@@ -1,0 +1,10 @@
+sequenceDiagram
+ participant M as System<br/>Member
+ participant A as System<br/>Transaction<br/>Administrator
+ M->>A: CollateralValueQuery
+ alt 1: Rejection
+ A->>M: CollateralValueReport
+ Note right of A: Contains a<br/>rejection<br/>reason
+ else 2: Execution
+ A->>M: CollateralValueReport
+ end

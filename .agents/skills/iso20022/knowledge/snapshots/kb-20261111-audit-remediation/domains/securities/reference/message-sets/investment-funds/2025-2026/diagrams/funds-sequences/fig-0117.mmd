@@ -1,0 +1,11 @@
+%%{init: {"sequence": {"mirrorActors": false}, "themeVariables": {"actorBkg": "#ffffff", "actorBorder": "#000000", "actorLineColor": "#000000", "signalColor": "#000000"}, "themeCSS": ".actor-line { stroke-dasharray: 8 6 !important; stroke: #000 !important; }"}}%%
+sequenceDiagram
+  participant A as Transferor’s Bank / Instructing Party 1
+  participant B as Transfer Agent / Executing Party
+  participant C as Transferee’s Bank / Instructing Party 2
+  A-)C: TransferInInstruction
+  C-)A: TransferInstructionStatusReport
+  A-)B: TransferOutInstruction
+  B-)A: TransferInstructionStatusReport
+  B-)A: TransferOutConfirmation
+  B-)C: TransferInConfirmation

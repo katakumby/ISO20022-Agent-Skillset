@@ -1,0 +1,9 @@
+%%{init: {"sequence": {"mirrorActors": false,"width": 250}}}%%
+sequenceDiagram
+participant A as Instructing Party
+participant B as Servicing Party
+A->>B: Instruct Securities Transaction Cancellation Request (sese.020)
+B-->>A: Report processing status (sese.027)
+A->>B: Request Securities Transaction Cancellation Request Query (semt.032)
+B->>A: Securities Transaction Cancellation Report (semt.033)
+Note over A,B: PUSH/PULL

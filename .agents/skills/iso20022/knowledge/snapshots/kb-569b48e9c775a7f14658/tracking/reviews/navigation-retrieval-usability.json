@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-09",
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "configured_root": ".",
+  "checks": [
+    {
+      "case": "list",
+      "arguments": [
+        "list",
+        "--kind",
+        "message-index",
+        "--limit",
+        "2"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 2,
+      "reported_limit": 2,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "exact-bfh",
+      "arguments": [
+        "message",
+        "head.002.001.01",
+        "--limit",
+        "1"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 1,
+      "reported_limit": null,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "family-multiple",
+      "arguments": [
+        "message",
+        "semt.002",
+        "--limit",
+        "10"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 2,
+      "reported_limit": null,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "participant",
+      "arguments": [
+        "search",
+        "account servicer",
+        "--kind",
+        "participant",
+        "--limit",
+        "2"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 2,
+      "reported_limit": 2,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "flow",
+      "arguments": [
+        "search",
+        "reversal",
+        "--kind",
+        "business-flow",
+        "--limit",
+        "3"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 3,
+      "reported_limit": 3,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "roles",
+      "arguments": [
+        "roles",
+        "sese.023.001.13",
+        "--limit",
+        "1"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 1,
+      "reported_limit": 1,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "default-root",
+      "arguments": [
+        "message",
+        "sese.023",
+        "--limit",
+        "1"
+      ],
+      "working_directory": "..",
+      "explicit_root": false,
+      "exit_code": 0,
+      "records": 1,
+      "reported_limit": null,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    },
+    {
+      "case": "limit-clamp",
+      "arguments": [
+        "list",
+        "--kind",
+        "participant",
+        "--limit",
+        "0"
+      ],
+      "working_directory": "..",
+      "explicit_root": true,
+      "exit_code": 0,
+      "records": 1,
+      "reported_limit": 1,
+      "paths_exist": true,
+      "source_provenance_present": true,
+      "limitations_present": true,
+      "utf8_json_decode": "pass",
+      "replacement_character_count": 0,
+      "pass": true
+    }
+  ],
+  "guide_pages_checked": [
+    "AGENTS.md",
+    "README.md",
+    "templates\\README.md",
+    "tools\\README.md",
+    "catalog\\README.md",
+    "raw-input\\README.md",
+    "shared\\index.md",
+    "domains\\fx\\index.md",
+    "domains\\payments\\index.md",
+    "domains\\securities\\index.md",
+    "domains\\trade-finance\\index.md"
+  ],
+  "broken_links": [],
+  "notes": [
+    "Read-only queries run outside repository; explicit and script-relative default root tested.",
+    "Catalog regeneration and full repository validation are owned by the root agent and not rerun here.",
+    "Cards index was absent at audit and is scheduled for final catalog rebuild.",
+    "Unresolved source/native/PDF review limitations remain visible; these tests do not mark content reviewed.",
+    "Publication privacy update 2026-11-10: recorded locations are expressed relative to the repository root; original validation results are unchanged."
+  ]
+}

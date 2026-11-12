@@ -1,0 +1,17 @@
+---
+config:
+  themeCSS: ".edgeLabel p {background-color:#ffffff !important;} .edgeLabel {background-color:#ffffff !important;} .edgeLabel rect {fill:#ffffff !important;opacity:1!important;}"
+  flowchart:
+    htmlLabels: true
+---
+flowchart LR
+  S["Account Servicer"]
+  O["Account Owner"]
+  S -->|"Corporate Action Notification and Reminder"| O
+  S -->|"Corporate Action Balance And Entitlement"| O
+  O -->|"Corporate Action<br/>Instruction"| S
+  S -->|"Corporate Action Instruction Statement"| O
+  S -->|"Corporate Action Confirmation and Reversal"| O
+  S -->|"Corporate Action Event Processing Status"| O
+  S -->|"Corporate Action Instruction Status and Processing Advice"| O
+  S -->|"Corporate Action<br/>Narrative"| O

@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-09",
+  "changes": [
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-narrative-src-000015-member",
+      "source_id": "src-000015",
+      "labels": [
+        "Members of a system"
+      ],
+      "evidence_ids": [
+        "src-000015-camt.005.001.11-p98-c005",
+        "src-000015-camt.006.001.11-p206-c005",
+        "src-000015-camt.007.001.10-p326-c004",
+        "src-000015-camt.008.001.11-p347-c004"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-functionality-src-000005-account-servicing-institution",
+      "source_id": "src-000005",
+      "labels": [
+        "account servicing institution",
+        "one of its account servicing institutions"
+      ],
+      "evidence_ids": [
+        "src-000005-camt.060.001.07-p781-c001",
+        "src-000005-camt.060.001.07-p781-c002"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-narrative-src-000363-directly-connected-system-participant",
+      "source_id": "src-000363",
+      "labels": [
+        "directly connected system party"
+      ],
+      "evidence_ids": [
+        "src-000363-camt.065.001.01-p9-c001"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-narrative-src-000163-previous-agent",
+      "source_id": "src-000163",
+      "labels": [
+        "previous agent in the payment chain"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.004.001.15-p246-c001"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-src-000162-financial-institution",
+      "source_id": "src-000163",
+      "labels": [
+        "one financial institution"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.008.001.14-p702-c007"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-src-000162-debtor-agent",
+      "source_id": "src-000163",
+      "labels": [
+        "DebtorAgent"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.010.001.06-p1016-c001",
+        "src-000163-pacs.010.001.06-p1016-c002"
+      ]
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-settlement-reconciliation-account-servicer",
+      "source_id": "src-000197",
+      "labels": [
+        "delivering account servicer",
+        "receiving account servicer"
+      ],
+      "evidence_ids": [
+        "src-000197-sese.037.001.09-p1094-c003",
+        "src-000197-sese.037.001.09-p1094-c004",
+        "src-000197-sese.037.001.09-p1094-c005"
+      ]
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000344-requesting-party",
+      "source_id": "src-000344",
+      "labels": [
+        "requesting party"
+      ],
+      "evidence_ids": [
+        "src-000344-admi.006.001.01-p27-c002"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000344-requesting-party.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000363-central-system",
+      "source_id": "src-000363",
+      "labels": [
+        "central system"
+      ],
+      "evidence_ids": [
+        "src-000363-camt.064.001.01-p4-c001",
+        "src-000363-camt.065.001.01-p9-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000363-central-system.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000360-account-owner-request-literal",
+      "source_id": "src-000360",
+      "labels": [
+        "account owner/request"
+      ],
+      "evidence_ids": [
+        "src-000360-camt.085.001.02-p358-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000360-account-owner-request-literal.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000381-account-owner-request-literal",
+      "source_id": "src-000381",
+      "labels": [
+        "account owner/request"
+      ],
+      "evidence_ids": [
+        "src-000381-semt.034.001.01-p169-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000381-account-owner-request-literal.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000163-next-financial-institution",
+      "source_id": "src-000163",
+      "labels": [
+        "next financial institution in the payment chain"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.008.001.14-p702-c007"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000163-next-financial-institution.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000163-debtor-financial-institution",
+      "source_id": "src-000163",
+      "labels": [
+        "debtor financial institution"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.009.001.13-p830-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000163-debtor-financial-institution.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000163-creditor-financial-institution",
+      "source_id": "src-000163",
+      "labels": [
+        "creditor financial institution"
+      ],
+      "evidence_ids": [
+        "src-000163-pacs.009.001.13-p830-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000163-creditor-financial-institution.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000053-global-clearing-member-seller",
+      "source_id": "src-000053",
+      "labels": [
+        "global clearing member of the seller"
+      ],
+      "evidence_ids": [
+        "src-000053-secl.001.001.05-p6-c003"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000053-global-clearing-member-seller.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000053-global-clearing-member-buyer",
+      "source_id": "src-000053",
+      "labels": [
+        "global clearing member of the buyer"
+      ],
+      "evidence_ids": [
+        "src-000053-secl.001.001.05-p6-c003"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000053-global-clearing-member-buyer.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000197-direct-participant",
+      "source_id": "src-000197",
+      "labels": [
+        "direct participant"
+      ],
+      "evidence_ids": [
+        "src-000197-semt.022.001.07-p433-c001",
+        "src-000197-semt.022.001.07-p433-c002"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000197-direct-participant.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000096-transfer-transaction-party",
+      "source_id": "src-000096",
+      "labels": [
+        "any party in the transfer transaction",
+        "another party in the transfer transaction chain"
+      ],
+      "evidence_ids": [
+        "src-000096-sese.009.001.09-p784-c002",
+        "src-000096-sese.011.001.10-p816-c002"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000096-transfer-transaction-party.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000096-next-party",
+      "source_id": "src-000096",
+      "labels": [
+        "next party"
+      ],
+      "evidence_ids": [
+        "src-000096-sese.010.001.07-p809-c005",
+        "src-000096-setr.016.001.05-p4109-c003",
+        "src-000096-setr.016.001.05-p4109-c005",
+        "src-000096-setr.057.001.03-p4283-c002",
+        "src-000096-setr.057.001.03-p4283-c003",
+        "src-000096-setr.057.001.03-p4283-c005"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000096-next-party.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000096-authorised-representative",
+      "source_id": "src-000096",
+      "labels": [
+        "authorised representative"
+      ],
+      "evidence_ids": [
+        "src-000096-semt.001.001.03-p371-c002",
+        "src-000096-semt.004.001.02-p398-c001",
+        "src-000096-semt.006.001.02-p408-c001",
+        "src-000096-semt.007.001.02-p427-c001",
+        "src-000096-sese.001.001.10-p433-c001",
+        "src-000096-sese.002.001.09-p513-c001",
+        "src-000096-sese.003.001.10-p519-c001",
+        "src-000096-sese.004.001.09-p602-c001",
+        "src-000096-sese.005.001.10-p608-c001",
+        "src-000096-sese.006.001.09-p689-c001",
+        "src-000096-sese.007.001.10-p695-c001",
+        "src-000096-sese.008.001.09-p778-c001",
+        "src-000096-sese.009.001.09-p784-c001",
+        "src-000096-sese.014.001.09-p1302-c001",
+        "src-000096-setr.001.001.05-p1685-c001",
+        "src-000096-setr.002.001.05-p1887-c001",
+        "src-000096-setr.003.001.05-p1892-c001",
+        "src-000096-setr.004.001.05-p2101-c001",
+        "src-000096-setr.005.001.05-p2305-c001",
+        "src-000096-setr.006.001.06-p2310-c001",
+        "src-000096-setr.007.001.05-p2523-c001",
+        "src-000096-setr.008.001.05-p2761-c001",
+        "src-000096-setr.009.001.05-p2766-c001",
+        "src-000096-setr.010.001.05-p3001-c001",
+        "src-000096-setr.011.001.05-p3243-c001",
+        "src-000096-setr.012.001.06-p3248-c001",
+        "src-000096-setr.013.001.05-p3487-c001",
+        "src-000096-setr.014.001.05-p3797-c001",
+        "src-000096-setr.015.001.05-p3802-c001",
+        "src-000096-setr.016.001.05-p4109-c001",
+        "src-000096-setr.017.001.05-p4205-c001",
+        "src-000096-setr.018.001.05-p4232-c001",
+        "src-000096-setr.047.001.03-p4253-c001",
+        "src-000096-setr.049.001.03-p4259-c001",
+        "src-000096-setr.051.001.03-p4265-c001",
+        "src-000096-setr.053.001.03-p4271-c001",
+        "src-000096-setr.055.001.03-p4277-c001",
+        "src-000096-setr.057.001.03-p4283-c001",
+        "src-000096-setr.058.001.03-p4303-c001"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000096-authorised-representative.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000096-order-instructing-party",
+      "source_id": "src-000096",
+      "labels": [
+        "order instructing party"
+      ],
+      "evidence_ids": [
+        "src-000096-setr.057.001.03-p4283-c005"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000096-order-instructing-party.md"
+    },
+    {
+      "kind": "scoped-narrative-participant",
+      "participant_id": "participant-functionality-src-000096-order-executing-party",
+      "source_id": "src-000096",
+      "labels": [
+        "order executing party"
+      ],
+      "evidence_ids": [
+        "src-000096-setr.057.001.03-p4283-c005",
+        "src-000096-setr.057.001.03-p4283-c006"
+      ],
+      "path": "shared/reference/participants/participant-functionality-src-000096-order-executing-party.md"
+    },
+    {
+      "kind": "source-supported-label",
+      "participant_id": "participant-functionality-src-000096-authorised-representative",
+      "source_id": "src-000096",
+      "labels": [
+        "authorised representatives"
+      ],
+      "evidence_ids": [
+        "src-000096-sese.010.001.07-p809-c001",
+        "src-000096-sese.011.001.10-p816-c001"
+      ]
+    }
+  ],
+  "override_count": 19,
+  "limitations": [
+    "Literal account owner/request remains a qualified source label under issue62, not a repaired requestor alias.",
+    "Qualified actor expressions retain different instances/positions even when they reuse a functional participant definition."
+  ],
+  "final_plural_alias_note": "The two source96 clauses name alternative example recipients, not new sender directions."
+}

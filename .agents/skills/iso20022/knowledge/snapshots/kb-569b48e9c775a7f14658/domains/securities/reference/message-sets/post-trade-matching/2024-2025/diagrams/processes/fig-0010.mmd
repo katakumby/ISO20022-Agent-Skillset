@@ -1,0 +1,73 @@
+flowchart TB
+ subgraph Prior["Earlier lifecycle bands (gray in source)"]
+ EP["Execution process"]
+ AP["Allocation/Confirmation/Affirmation process"]
+ end
+ Context["Source blue rounded boundary: Matching process of Listed Derivatives (Through Type); contains confirmation and delivery-amount-report exchanges only"]
+ subgraph Trade["Trade Matching Process"]
+ subgraph BLane["Broker"]
+ direction TB
+ BSend["Send Confirmation"]
+ BIn["Incoming continuation<br/>(unlabelled source line)"]
+ BDelivery["Send Delivery<br/>Amount Report"]
+ BEOD["Send “End Of Day”<br/>Report of Confirmation"]
+ BEODDelivery["Send “End Of Day”<br/>Report of Delivery<br/>Amount Report"]
+ BEndCircle((" "))
+ BEndChoice{" "}
+ BEnd(("To settlement<br/>process"))
+ end
+ subgraph CLane["Central Matching Utility"]
+ direction TB
+ CConfB["Send Confirmation<br/>(Broker)"]
+ CConfI["Send Confirmation<br/>(IM)"]
+ CDelivery["Send Delivery<br/>Amount Report"]
+ CEODB["Send “End Of Day”<br/>Report of Confirmation<br/>(Broker)"]
+ CEODI["Send “End Of Day”<br/>Report of Confirmation<br/>(IM)"]
+ CEODDelivery["Send “End Of Day”<br/>Report of Delivery<br/>Amount Report"]
+ CEnd((" "))
+ end
+ subgraph ILane["IM"]
+ direction TB
+ ISend["Send Confirmation"]
+ IIn["Incoming continuation<br/>(unlabelled source line)"]
+ IEOD["Send “End Of Day”<br/>Report of Confirmation"]
+ end
+ subgraph TLane["Trustee"]
+ direction TB
+ TConf{" "}
+ TDelivery{" "}
+ TEOD((" "))
+ TDelReceipt((" "))
+ TSetDecision{" "}
+ TSet(("To settlement<br/>process"))
+ TNAVDecision{" "}
+ TNAV(("To NAV calculation<br/>process"))
+ end
+ BIn -.-> BSend
+ BSend --> CConfB
+ IIn -.-> ISend
+ ISend --> CConfI
+ CConfB --> TConf
+ CConfI --> TConf
+ BDelivery --> CDelivery
+ CDelivery --> TDelivery
+ BEOD --> CEODB
+ IEOD --> CEODI
+ CEODB --> TEOD
+ CEODI --> TEOD
+ BEODDelivery --> CEODDelivery
+ CEODDelivery --> TDelReceipt
+ BEOD -.-> BEndCircle
+ BEndCircle -.-> BEndChoice
+ BEndChoice -.-> BEnd
+ BEODDelivery -.-> BEndCircle
+ CEODDelivery -.-> CEnd
+ TDelReceipt -.-> TSetDecision
+ TSetDecision -.-> TSet
+ TEOD -.-> TNAVDecision
+ TNAVDecision -.-> TNAV
+ end
+ style Prior fill:#ddd,stroke:#ddd
+ style CLane fill:#b5b5b5,stroke:#777
+ linkStyle default stroke:#777
+ linkStyle 0,2,14,15,16,17,18,19,20,21,22 stroke:#3268d8

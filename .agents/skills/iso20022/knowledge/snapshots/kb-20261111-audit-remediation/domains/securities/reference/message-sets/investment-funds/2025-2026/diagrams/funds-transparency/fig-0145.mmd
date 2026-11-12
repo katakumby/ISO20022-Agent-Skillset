@@ -1,0 +1,13 @@
+%%{init: {"flowchart":{"htmlLabels":false,"curve":"linear","wrappingWidth":300},"theme":"neutral"}}%%
+flowchart TB
+  M["Sender [1.1] ICSDLULL<br/>Receiver [1.1] CUSALULL<br/>Statement General Details [1.1]<br/>Sender Business Role [1.1] ASER"]
+  S["Safekeeping Account And Holdings [1.1]<br/>Identification [1.1] Account 111111<br/>Owner [1.1] ICSDLULL<br/>Servicer [1.1] TRAGLULL"]
+  L1["Account Sub Level 1 [0.n] (Repetition 1)<br/>Identification [1.1] Account CUSA1111<br/>Owner [1.1] CUSALULL<br/>Servicer [1.1] ICSDLULL<br/>Balance Details [0.n]<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  C1["Account Sub Level 2 [0.n] (Repetition 1)<br/>Identification [1.1] Account AAXX-c1<br/>Owner [1.1] AAXXLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  C2["Account Sub Level 2 [0.n] (Repetition 2)<br/>Identification [1.1] Account AAYY-c2<br/>Owner [1.1] AAYYLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  C3["Account Sub Level 2 [0.n] (Repetition 3)<br/>Identification [1.1] Account AAZZ-c3<br/>Owner [1.1] AAYYLULL<br/>Servicer [1.1] CUSALULL<br/>Balance Details [0.n]<br/>Balance For Account [0.n]<br/>Financial Instrument ISIN [1.1]<br/>Balance For Financial Instrument [1..n]"]
+  M ---|"contains"| S
+  S ---|"contains"| L1
+  L1 ---|"contains"| C1
+  L1 ---|"contains"| C2
+  L1 ---|"contains"| C3

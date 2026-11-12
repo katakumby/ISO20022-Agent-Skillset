@@ -1,0 +1,97 @@
+%%{init: {"themeVariables": {"edgeLabelBackground": "#ffffff"}, "themeCSS": ".edgeLabel rect { fill: #fff !important; opacity: 1 !important; }"}}%%
+flowchart TB
+  subgraph I["Securities Financing Instructing Party"]
+    IS@{shape: f-circ, label: " "}
+    IA("Instruct securities financing transaction")
+    IS --> IA
+    IM("Monitor securities financing transaction")
+    IU("Update Status")
+    IOD{"Opening Settled?"}
+    ICD{"Closing settled?"}
+    IOS(["Settle Opening"])
+    ICS(["Settle Closing"])
+    ISJ@{shape: fork, label: " "}
+    IOJ@{shape: fork, label: " "}
+    IEnd@{shape: framed-circle, label: " "}
+    IM --> IOD
+    IOD -->|No| ISJ
+    IOD -->|Yes| IOS
+    IOS --> ICD
+    ICD -->|No| ISJ
+    ICD -->|Yes| ICS
+    ISJ --> IU
+    IU --> IM
+    IOS --> IOJ
+    ICS --> IOJ
+    ICS --> IEnd
+    IOJ --> IU
+  end
+  subgraph B["Securities Financing Servicing Party"]
+    BP("Process instruction")
+    BD{"Processed?"}
+    BR("Update Status")
+    BP --> BD
+    BD -->|No| BR
+    BA("Instruct settlement and monitor")
+    BD -->|Yes| BA
+    BM("Monitor securities financing transaction")
+    BU("Update Status")
+    BOD{"Opening Settled?"}
+    BCD{"Closing settled?"}
+    BOS(["Settle Opening"])
+    BCS(["Settle Closing"])
+    BSJ@{shape: fork, label: " "}
+    BOJ@{shape: fork, label: " "}
+    BEnd@{shape: framed-circle, label: " "}
+    BM --> BOD
+    BOD -->|No| BSJ
+    BOD -->|Yes| BOS
+    BOS --> BCD
+    BCD -->|No| BSJ
+    BCD -->|Yes| BCS
+    BSJ --> BU
+    BU --> BM
+    BOS --> BOJ
+    BCS --> BOJ
+    BCS --> BEnd
+  end
+  subgraph C["Settlement Executing Party"]
+    CO("Process instruction")
+    CC("Process instruction")
+    CD{"Processed?"}
+    CR("Update Status")
+    CM("Matching and Settlement Process")
+    CS{"Settled?"}
+    CU("Update Status")
+    CX(["Settle instruction"])
+    CE@{shape: framed-circle, label: " "}
+    CO --> CD
+    CC --> CD
+    CD -->|No| CR
+    CD -->|Yes| CM
+    CM --> CS
+    CS -->|No| CU
+    CU --> CM
+    CS -->|Yes| CX
+    CX --> CE
+  end
+  BA -->|Opening leg| CO
+  BA -->|Closing leg| CC
+  CR --> BA
+  CU -->|Opening Statuses / Closing Statuses| BM
+  CX -->|Opening Settlement / Closing Settlement| BM
+  IA --> BP
+  BR --> IA
+  BU --> IM
+  BOJ --> IM
+  classDef main fill:#d1d8b8,stroke:#111,color:#111
+  classDef context fill:#c0d1e5,stroke:#111,color:#111
+  class IA,IM,IOD,ICD,IOS,ICS,BP,BD,BA,BM,BOD,BCD,BOS,BCS main
+  class IU,BU,BR context
+  class CO,CC,CD,CR,CM,CS,CU,CX context
+  classDef fork fill:#111,stroke:#111
+  class ISJ,IOJ,BSJ,BOJ fork
+  classDef framedcircle fill:#fff,stroke:#111,stroke-width:3px
+  class IEnd,BEnd,CE framedcircle
+  classDef fcirc fill:#4472c4,stroke:#4472c4
+  class IS fcirc
