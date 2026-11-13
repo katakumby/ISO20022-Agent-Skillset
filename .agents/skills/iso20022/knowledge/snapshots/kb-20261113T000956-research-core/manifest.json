@@ -1,0 +1,34 @@
+{
+  "format_version": 1,
+  "snapshot_id": "kb-20261113T000956-research-core",
+  "label": "Supplied ISO 20022 corpus; self-contained research core",
+  "corpus_sources_sha256": "d4ed99dc72b34e20671c13c8555639074e3b2d4514e8de5d9d833b55f5bfbd08",
+  "inventory": "files.json",
+  "inventory_sha256": "95d4746d37a02f4e09146560094670665d676532e5dd5af084dc1aa129f442fd",
+  "text_file_count": 91621,
+  "indexed_documents": 91616,
+  "file_count": 91622,
+  "limitations": "Preserves existing review states and unresolved source issues. Packaging is not semantic review.",
+  "network_required": false,
+  "packaging_revision": 5,
+  "packaging_repairs": "evidence/export-map.json",
+  "previous_snapshot_id": "kb-20261111-audit-remediation-v2",
+  "package_profile": "research-core",
+  "evidence_archive": {
+    "snapshot_id": "kb-20261111-audit-remediation-v2",
+    "manifest_sha256": "d0d50821d4112968083374aedeab2a6d6cbc8d860fb57721bd17d8a52efce0cf",
+    "inventory_sha256": "f5938fecee19c566f08dce2a06167233f84aff5e2144242f75e7891695ab5c5a",
+    "index_sha256": "7f42788909a5463534a33536e24b5f79fe68836228c04e46505568c29cdd6cae",
+    "corpus_sources_sha256": "d4ed99dc72b34e20671c13c8555639074e3b2d4514e8de5d9d833b55f5bfbd08",
+    "externalized_file_count": 1029,
+    "externalized_bytes": 876531298,
+    "retained_base_file_count": 90593,
+    "archive_policy": "detached-no-runtime-access"
+  },
+  "evidence_separation": {
+    "partition_sha256": "4b35784122ca75c76a1d33b988a62d4d7d7f0a9652e396e7ce4f6d6e46e7ef98",
+    "availability_file_count": 1029,
+    "rewritten_document_count": 1443,
+    "link_substitution_count": 1979
+  }
+}

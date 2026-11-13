@@ -20,6 +20,18 @@ Source identity is independent of export identity. Preserve catalog/sources.json
 
 domains/, shared/ and catalog/ preserve canonical reference paths. Supporting text evidence and original XSD/JSON may be included at their historical relative paths. Binaries are not readable through the query helper.
 
+## Research-core package profile
+
+Format version 1 also supports package_profile: research-core. This changes package membership without changing the read-only storage interface. info exposes the profile and evidence_archive identity/counts; it never resolves an archive location. A manifest without package_profile describes the earlier full profile.
+
+Repacking reads and verifies a published snapshot. Retain every path in its documents table, every raw-input/ payload, catalog/sources.json, catalog/message-sets.json, catalog/coverage-summary.json, catalog/source-metadata.json and evidence/export-map.json. Rebuild index.sqlite, files.json and manifest.json, and add availability notices for links to externalized supporting artifacts. Do not classify by folder alone: indexed tracking qualifications remain searchable. Bounded republication from research-core must inherit this retention rule so it cannot silently restore unindexed supporting payloads.
+
+Retained reference content and typed metadata remain unchanged except for recorded Markdown link destinations. Rewrites use syntax-aware link parsing; literals, code and narrative are not rewritten. The export ledger preserves original destinations and fragments. An archived-derived-evidence notice gives the original packaged path, SHA-256, byte size, known source IDs and detached archive identity. It describes derived supporting material, not a missing original, and does not change or certify any review state.
+
+The previous verified full snapshot supplies both evidence storage and rollback. It is moved unchanged to an explicit external maintenance destination only after the candidate is verified, activated and checked, with verification readers closed. Partition reports and maintenance history stay outside that immutable archive. Reject collisions and redirects; do not overwrite an existing snapshot or archive. Before activation, revalidate the base to detect source drift. A failed archive move leaves the inactive full snapshot intact and a resumable checkpoint.
+
+Published identity/count metadata and notices contain portable archive identities and packaged paths, never absolute installation paths or an external attachment setting. The archive is not a retrieval dependency and is never automatically located, opened or substituted for retained evidence. Standalone retrieval must work without the canonical workspace or archive. The original-source evidence_pack facility below remains separate and must not authenticate derived archive files as originals.
+
 ## Search database
 
 SQLite with FTS5, opened mode=ro and query_only:

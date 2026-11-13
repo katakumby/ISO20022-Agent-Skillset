@@ -1,0 +1,38 @@
+---
+template: false
+review_status: "needs-review"
+document_kind: "worksheet-index"
+domain: "payments"
+source_ids: ["src-000006"]
+worksheet: "CashBalance"
+source_locations: ["CashBalance"]
+source_editions: ["2025-2026"]
+---
+
+
+
+
+
+# CashBalance
+
+Source: src-000006. [ISO20022_MDRPart3_BanktoCustomerCashManagement_2025_2026_v1.xlsx](../../../../../../../../../../evidence/omitted/5e0f6b7d43fcbbe816624756.md).
+
+Sheet state: visible. Source dimension: A1. Populated extent: no cell values.
+
+Merged ranges: none recorded. Only anchor cells contain stored values; blanks in merged areas are not zeros.
+
+## Complete table parts
+
+| Part | Source range |
+| --- | --- |
+
+## Drawings
+
+- [fig-0004](../../diagrams/fig-0004.md): A1:AF18; reconstruction rendered and compared with the original; reviewed.
+
+## Source formats and notes
+
+| Style ID | Cell count | Number format | Original style |
+| --- | --- | --- | --- |
+
+Exact cells, style definitions (including font and fill colors), merged ranges, hidden row/column state, hyperlinks, comments, formulas/caches, and drawing anchors are preserved in [extraction metadata](../../../../../../../../../../evidence/archived/6d53c2b2720458183ab2cbb3.md). Visual formatting semantics have not yet been verified.

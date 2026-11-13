@@ -373,6 +373,9 @@ class Corpus:
     def envelope(self,data):return {"snapshot_id":self.snapshot_id,**data}
     def info(self):
         return self.envelope({"label":self.manifest.get("label"),"format_version":1,
+            "package_profile":self.manifest.get("package_profile","full"),
+            "evidence_archive":self.manifest.get("evidence_archive"),
+            "archive_policy":"Detached derived evidence is not located, opened, or attached by retrieval.",
             "reference_files":self.manifest.get("text_file_count"),
             "indexed_documents":self.db.execute("SELECT count(*) FROM documents").fetchone()[0],
             "defaults":self.config,"evidence_policy":"Text only; original inspection requires explicit request and local evidence.",

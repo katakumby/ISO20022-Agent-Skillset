@@ -6,7 +6,7 @@ Global options precede the command: --snapshot ID, --budget CHARACTERS, and opti
 
 | Command arguments | Purpose |
 | --- | --- |
-| info | Snapshot identity, corpus size and active defaults |
+| info | Snapshot identity, package profile, archive identity/counts, corpus size and active defaults |
 | resolve pacs.008.001.14 | Exact message and focused navigation |
 | resolve semt.002 | All supplied versions of a family |
 | resolve urn:iso:std:iso:20022:tech:xsd:pacs.008.001.14 | Namespace resolution |
@@ -40,6 +40,8 @@ links returns actual inline, image and reference-style Markdown links. Code exam
 
 Zero hits means no indexed match under the displayed filters. Inspect resolved references, vary the search, or remove defaults with --all-scopes before concluding that evidence is unavailable.
 
-Source IDs, source hashes and original locations remain intact. Availability pages identify omitted binaries or working artifacts. They do not stand in for visual inspection. A missing schema, code enumeration, supplied dependency or unresolved source contradiction remains a limitation.
+Source IDs, source hashes and original locations remain intact. Availability pages identify omitted binaries or working artifacts. In a research-core snapshot, archived-derived-evidence notices identify detached supporting artifacts by their original packaged path, checksum, size, known source IDs and archive identity. These artifacts were intentionally archived; their availability notices do not establish missing originals, a review failure or a new review. Notices are packaging records and do not establish the contents of archived evidence. Follow retained reference qualifications and do not claim to have inspected an artifact through its notice.
+
+The maintenance archive is outside the installed skill and is not required for retrieval. The helper does not locate, open or attach it. Do not use evidence_pack for derived archive material: that optional facility authenticates separately supplied original-source bytes. A missing schema, code enumeration, supplied dependency or unresolved source contradiction remains a limitation. Availability pages do not stand in for visual inspection.
 
 The helper never renders or executes documents, contacts a network service, or mutates the active corpus. source hashes selected optional evidence files, checks their registered source identity, and verifies exact ZIP member bytes when a registered archive is attached. It returns verified locations and original occurrence/member provenance, not a semantic inspection result. If the index is missing/incompatible, report the problem for the separate maintenance workflow.

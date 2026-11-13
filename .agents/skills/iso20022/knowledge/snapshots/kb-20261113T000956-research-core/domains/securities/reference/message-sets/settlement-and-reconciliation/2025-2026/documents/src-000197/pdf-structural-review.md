@@ -1,0 +1,44 @@
+---
+template: false
+document_kind: "extraction-audit"
+review_status: "needs-review"
+domain: "securities"
+source_ids: ["src-000197"]
+source_editions: ["March 2026"]
+source_locations: [{"source_id": "src-000197", "file_pages": [1, 2193]}]
+pdf_geometry_reconciliation: "pass-with-scoped-limitations"
+pdf_table_text_reconciliation: "pass-with-recorded-character-mapping"
+pdf_markdown_cell_preservation: "pass"
+pdf_unclassified_painted_objects: 0
+visual_review_pages: [2040]
+updated: "2026-11-09"
+limitations: ["Geometric association with a table is not independent semantic review of its contents. All original lexical vector candidates remain available.", "PDFium omits unpainted clipping paths from its painted-object list; unsupported image/form/shading objects and non-axis paths remain unresolved.", "Cell text comparison normalizes only Unicode compatibility and whitespace, preserving case, digits and punctuation. Soft-hyphen control differences remain explicit exceptions.", "Span/null positions preserve missing separate extracted cells; their semantics require original page/table context.", "No claim that each page or each cell has been individually visually inspected. Text-only diagrams and source-level semantic ambiguities are outside this mechanical classification."]
+---
+
+# PDF table and painted-object reconciliation
+
+Source: [src-000197](../../../../../../../../evidence/omitted/e96bb98c659322ed5684b325.md). All 2193 file pages were enumerated, with the registered source checksum verified unchanged. 3837 extracted table candidates contain 131404 physical cells. Their complete Markdown cell matrices match the maintained extraction. Independent PDFium bounded cell text matched 131390 cells after Unicode compatibility/whitespace normalization. 14 remaining comparisons differ only by PDFium U+0002 representing a source hyphen; every exact source/cell locator and both strings remain in the audit. No other cell-text difference or uncertain grid mapping was found.
+
+[Per-page geometry and complete cell/exception index](../../../../../../../../evidence/archived/070c1f430932240fb52b8228.md) · [Method, limitations and corpus results](../../../../../../../../catalog/pdf-structural-review.md)
+
+## Geometry disposition
+
+| Painted geometry class | Objects |
+| --- | --- |
+| link-annotation-underline | 9628 |
+| margin-rule-template-candidate | 8768 |
+| table-associated-axis-line | 308490 |
+| table-associated-filled-rectangle | 8676 |
+| unclassified-painted-path | 5 |
+
+Painted path association is a structural classification, not an individual visual review of every page. Original lexical vector-candidate inventories remain unchanged; unpainted clipping operators do not create visible diagram content.
+
+| File page | Objects | Disposition | Evidence |
+| --- | --- | --- | --- |
+| 2040 | 5 | table-border-outside-estimated-bbox | [Inspected complete page](../../../../../../../../evidence/omitted/35e54717237de87ca3e909da.md) |
+
+- Page2040: Five painted lines are the right-hand Datatype column edges in the existing Currency/Ccy XML-attribute table. Source drawing extends about 1.72 points beyond the estimated table rectangle; all cell text is already preserved and independently matched.
+
+## Direct visual checks and limits
+
+Complete rendered pages 2040 were directly inspected for candidate semantics and template layout. Their fingerprints are in [the visual evidence report](../../../../../../../../evidence/archived/83d378ffe49d6ff696b2a7e3.md). The manually inspected template examples include message lists, nested choice tables, code tables, warning panels, text constraints, publisher branding and legal links. Header/row shading and all table borders are retained in originals. This check does not validate business applicability, resolve conflicting definitions, or certify each table layout and every cell by individual visual reading.
